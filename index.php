@@ -26,73 +26,67 @@ require_once 'includes/header.php';
 
     <!-- Hero Section -->
     <section class="hero animated-bg" id="home">
+        <!-- Background Elements -->
         <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-bg-shapes">
+            <div class="glow-circle circle-1"></div>
+            <div class="glow-circle circle-2"></div>
+            <div class="glow-circle circle-3"></div>
+        </div>
 
-        <!-- Floating Shapes -->
-        <div class="hero-shape shape-1"></div>
-        <div class="hero-shape shape-2"></div>
-        <div class="hero-shape shape-3"></div>
-        <div class="hero-shape shape-4"></div>
-        <div class="hero-shape shape-5"></div>
-
-        <!-- Geometric Shapes -->
-        <div class="geo-shape square"></div>
-        <div class="geo-shape triangle"></div>
-        <div class="geo-shape diamond"></div>
-
-        <!-- Scan Line -->
-        <div class="hero-scan-line"></div>
-
-        <!-- Grid Overlay -->
-        <div class="hero-grid"></div>
+        <!-- Left Side Diamond (AI & Development) -->
+        <div class="hero-diamond-left">
+            <div class="diamond-wrapper diamond-ai">
+                <div class="diamond-cut">
+                    <div class="diamond-inner">
+                        <i class="fas fa-gem"></i>
+                        <span>AI & Dev</span>
+                    </div>
+                </div>
+                <div class="diamond-ring ring-1"></div>
+                <div class="diamond-ring ring-2"></div>
+                <div class="diamond-ring ring-3"></div>
+            </div>
+        </div>
 
         <div class="container hero-container">
-            <div class="hero-content">
-                <div class="hero-badge" data-aos="fade-down">
+            <div class="hero-content" style="text-align:left; color:#ffffff; z-index:15; position:relative;">
+                <div class="hero-badge" data-aos="fade-down" style="display:inline-flex; color:#ffffff;">
                     <i class="fa fa-check-circle"></i>
                     <span>IT Solutions Experts Since 2015</span>
                 </div>
-                <h1 data-aos="fade-up">
+                <h1 class="hero-heading" data-aos="fade-up" style="color:#ffffff; font-size:clamp(2rem, 5vw, 3.5rem); font-weight:700; text-align:left; text-shadow:0 2px 15px rgba(0,0,0,0.5);">
                     Build Scalable <span class="gradient-text">IT</span> & AI-Powered<br>Digital Solutions
                 </h1>
-                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                <p class="hero-subtext" data-aos="fade-up" data-aos-delay="100" style="color:rgba(255,255,255,0.9); font-size:1.1rem; text-align:left;">
                     We specialize in <strong style="color:#00ccff;">Moodle development</strong>, AI integration, and enterprise learning platforms. Transform your educational vision into a powerful, scalable reality.
                 </p>
-                <div class="hero-actions" data-aos="fade-up" data-aos-delay="200">
-                    <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary btn-lg glow-pulse">
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200" style="display:flex; gap:1rem; justify-content:flex-start;">
+                    <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary glow-pulse">
                         <i class="fa fa-calendar-check"></i>
                         Get Free Consultation
                     </a>
-                    <a href="<?php echo base_url('what-we-do.php'); ?>" class="btn btn-outline btn-lg">
+                    <a href="<?php echo base_url('what-we-do.php'); ?>" class="btn btn-outline">
                         <i class="fa fa-arrow-right"></i>
                         View Services
                     </a>
                 </div>
-                <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
-                    <div class="hero-stat">
-                        <div class="stat-number counter" data-target="15000" data-suffix="+">0</div>
-                        <div class="stat-label">Users Empowered</div>
+                <div class="hero-stats" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:2rem; text-align:center;">
+                    <div class="hero-stat" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number counter" data-target="15000" data-suffix="+" style="color:#ffffff; font-size:2rem; font-weight:700;">0</div>
+                        <div class="stat-label" style="color:rgba(255,255,255,0.8);">Users Empowered</div>
                     </div>
-                    <div class="hero-stat">
-                        <div class="stat-number" style="color:var(--accent-cyan); font-weight:var(--font-weight-extrabold); font-size:var(--font-size-2xl);">8+</div>
-                        <div class="stat-label">Years Experience</div>
+                    <div class="hero-stat" data-aos="fade-up" data-aos-delay="350">
+                        <div class="stat-number" style="color:#ffffff; font-size:2rem; font-weight:700;">8+</div>
+                        <div class="stat-label" style="color:rgba(255,255,255,0.8);">Years Experience</div>
                     </div>
-                    <div class="hero-stat">
-                        <div class="stat-number counter" data-target="200" data-suffix="+">0</div>
-                        <div class="stat-label">Projects Delivered</div>
+                    <div class="hero-stat" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-number counter" data-target="200" data-suffix="+" style="color:#ffffff; font-size:2rem; font-weight:700;">0</div>
+                        <div class="stat-label" style="color:rgba(255,255,255,0.8);">Projects Delivered</div>
                     </div>
-                    <div class="hero-stat">
-                        <div class="stat-number" style="color:var(--accent-green); font-weight:var(--font-weight-extrabold); font-size:var(--font-size-2xl);">99%</div>
-                        <div class="stat-label">Client Satisfaction</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
-                <div class="floating-card">
-                    <div class="card-placeholder">
-                        <i class="fas fa-laptop-code"></i>
-                        <p>Digital Transformation</p>
+                    <div class="hero-stat" data-aos="fade-up" data-aos-delay="450">
+                        <div class="stat-number" style="color:#ffffff; font-size:2rem; font-weight:700;">99%</div>
+                        <div class="stat-label" style="color:rgba(255,255,255,0.8);">Client Satisfaction</div>
                     </div>
                 </div>
             </div>
