@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"C:\\\\wamp64\\\\www\\\\infinitysofthub.com\" -Recurse -File | Where-Object { $_.Name -match '\\\\.\\(html|css|php|js\\)$' } | Select-Object -First 30 FullName)",
+      "Bash(powershell.exe *)"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="12" fill="#3776AB"/>
+  <text x="60" y="75" font-family="Arial,sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">Py</text>
+  <text x="60" y="95" font-family="Arial,sans-serif" font-size="14" fill="white" text-anchor="middle">Python</text>
+</svg>

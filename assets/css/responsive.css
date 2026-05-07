@@ -1,0 +1,331 @@
+/* ==========================================
+   RESPONSIVE DESIGN - MOBILE-FIRST
+   ========================================== */
+
+/* ==========================================
+   EXTRA SMALL DEVICES (Portrait phones, <576px)
+   ========================================== */
+
+@media (max-width: 575.98px) {
+    :root {
+        --container-padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .section-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: auto;
+        padding: 120px 0 60px;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Process Grid */
+    .process-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .process-step .step-connector {
+        display: none;
+    }
+
+    /* Technologies Grid */
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    /* Industries Grid */
+    .industries-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .industries-grid .industry-card:first-child {
+        grid-template-columns: 1fr;
+    }
+
+    /* Content Grid */
+    .content-grid-2 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Stats */
+    .hero-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .cta-section h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: var(--font-size-sm);
+    }
+
+    .btn-lg {
+        padding: 0.875rem 2rem;
+    }
+
+    /* Cards */
+    .service-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    /* Form */
+    .form-card {
+        padding: 1.5rem;
+    }
+
+    /* Page Hero */
+    .page-hero {
+        padding: 120px 0 60px;
+    }
+
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* ==========================================
+   SMALL DEVICES (Landscape phones, 576px and up)
+   ========================================== */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .industries-grid .industry-card:first-child {
+        grid-column: span 2;
+    }
+}
+
+/* ==========================================
+   MEDIUM DEVICES (Tablets, 768px and up)
+   ========================================== */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================
+   LARGE DEVICES (Desktops, 992px and up)
+   ========================================== */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* ==========================================
+   EXTRA LARGE DEVICES (Large desktops, 1200px and up)
+   ========================================== */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: var(--container-max-width);
+    }
+}
+
+/* ==========================================
+   LANDSCAPE MODE (for mobile devices)
+   ========================================== */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 100px 0 40px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.875rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-stats {
+        margin-top: 2rem;
+    }
+}
+
+/* ==========================================
+   PRINT STYLES
+   ========================================== */
+
+@media print {
+    .header,
+    .footer,
+    .hero-particles,
+    .cta-section,
+    .btn {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .section {
+        padding: 2rem 0;
+    }
+}
+
+/* ==========================================
+   HIGH DPI / RETINA DISPLAYS
+   ========================================== */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Optimize images for retina displays if needed */
+}
+
+/* ==========================================
+   PREFERS REDUCED MOTION
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ==========================================
+   DARK MODE (already default, but for future use)
+   ========================================== */
+
+@media (prefers-color-scheme: light) {
+    /* If needed, add light mode overrides here */
+    /* Currently the site is dark-by-default */
+}

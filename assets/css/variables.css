@@ -1,0 +1,142 @@
+/* ==========================================
+   DESIGN SYSTEM - VARIABLES
+   Modern Dark Theme with Blue/Cyan Gradients
+   ========================================== */
+
+:root {
+    /* ==========================================
+       COLOR PALETTE - DARK THEME
+       ========================================== */
+
+    /* Background Colors */
+    --bg-primary: #0a0e27;
+    --bg-secondary: #111640;
+    --bg-tertiary: #1a1f3a;
+    --bg-card: #1a1f3a;
+    --bg-card-hover: #232a4d;
+    --bg-dark: #060918;
+
+    /* Text Colors */
+    --text-primary: #ffffff;
+    --text-secondary: #b8c5d9;
+    --text-muted: #7a8ba6;
+    --text-dark: #0a0e27;
+
+    /* Brand Gradient Colors */
+    --gradient-primary: linear-gradient(135deg, #0066ff 0%, #00ccff 100%);
+    --gradient-secondary: linear-gradient(135deg, #00ccff 0%, #00ffcc 100%);
+    --gradient-tertiary: linear-gradient(135deg, #0066ff 0%, #00ffcc 100%);
+    --gradient-dark: linear-gradient(135deg, #0a0e27 0%, #111640 100%);
+    --gradient-card: linear-gradient(145deg, #1a1f3a 0%, #232a4d 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(10, 14, 39, 0.95) 0%, rgba(17, 22, 64, 0.9) 100%);
+
+    /* Accent Colors */
+    --accent-blue: #0066ff;
+    --accent-cyan: #00ccff;
+    --accent-green: #00ffcc;
+    --accent-purple: #8b5cf6;
+
+    /* CTA Colors */
+    --cta-primary: linear-gradient(135deg, #0066ff 0%, #00ccff 100%);
+    --cta-hover: linear-gradient(135deg, #0052cc 0%, #00b3e6 100%);
+    --cta-secondary: linear-gradient(135deg, #00ccff 0%, #00ffcc 100%);
+
+    /* Glass Effect */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+
+    /* ==========================================
+       TYPOGRAPHY
+       ========================================== */
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-base: 1rem;      /* 16px */
+    --font-size-md: 1.125rem;    /* 18px */
+    --font-size-lg: 1.25rem;     /* 20px */
+    --font-size-xl: 1.5rem;      /* 24px */
+    --font-size-2xl: 2rem;       /* 32px */
+    --font-size-3xl: 2.5rem;     /* 40px */
+    --font-size-4xl: 3rem;       /* 48px */
+    --font-size-5xl: 3.75rem;    /* 60px */
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.6;
+    --line-height-relaxed: 1.8;
+
+    /* ==========================================
+       SPACING SCALE
+       ========================================== */
+    --space-xs: 0.25rem;   /* 4px */
+    --space-sm: 0.5rem;     /* 8px */
+    --space-md: 1rem;       /* 16px */
+    --space-lg: 1.5rem;     /* 24px */
+    --space-xl: 2rem;       /* 32px */
+    --space-2xl: 3rem;      /* 48px */
+    --space-3xl: 4rem;      /* 64px */
+    --space-4xl: 5rem;      /* 80px */
+    --space-5xl: 6rem;      /* 96px */
+
+    /* ==========================================
+       LAYOUT
+       ========================================== */
+    --container-max-width: 1200px;
+    --container-padding: 1.5rem;
+
+    /* Section Spacing */
+    --section-padding-desktop: 100px 0;
+    --section-padding-tablet: 80px 0;
+    --section-padding-mobile: 60px 0;
+
+    /* ==========================================
+       BORDER RADIUS
+       ========================================== */
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-2xl: 24px;
+    --radius-full: 9999px;
+
+    /* ==========================================
+       SHADOWS & EFFECTS
+       ========================================== */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --shadow-glow-blue: 0 0 20px rgba(0, 102, 255, 0.3);
+    --shadow-glow-cyan: 0 0 20px rgba(0, 204, 255, 0.3);
+
+    /* ==========================================
+       TRANSITIONS
+       ========================================== */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* ==========================================
+       BREAKPOINTS
+       ========================================== */
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+    /* ==========================================
+       Z-INDEX
+       ========================================== */
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal: 400;
+    --z-toast: 500;
+}

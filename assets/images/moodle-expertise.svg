@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#0a0e27"/>
+  <!-- Moodle expertise illustration -->
+  <rect x="50" y="50" width="500" height="300" rx="20" fill="#1a1f3a" stroke="#0066ff" stroke-width="2"/>
+  <!-- LMS Icon -->
+  <rect x="200" y="100" width="200" height="150" rx="15" fill="url(#grad2)"/>
+  <text x="300" y="160" font-family="Arial,sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">M</text>
+  <text x="300" y="190" font-family="Arial,sans-serif" font-size="16" fill="white" text-anchor="middle">Moodle</text>
+  <text x="300" y="280" font-family="Arial,sans-serif" font-size="18" fill="#00ccff" text-anchor="middle">Moodle Development Experts</text>
+  <text x="300" y="310" font-family="Arial,sans-serif" font-size="14" fill="#8b8fa3" text-anchor="middle">8+ Years Experience | 200+ Projects</text>
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ccff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

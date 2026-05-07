@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="12" fill="#EE4C2C"/>
+  <text x="60" y="65" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">PyTorch</text>
+  <text x="60" y="90" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle">Machine Learning</text>
+</svg>

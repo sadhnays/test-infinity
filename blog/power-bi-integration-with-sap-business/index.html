@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from snakconsultancy.com/blog/power-bi-integration-with-sap-business/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Apr 2026 08:14:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<meta name="description" content="Streamlining Business Intelligence: Power BI Integration with SAP Business One to unlock valuable insights and drive growth." />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Streamlining BI: Power BI Integration with SAP Business One" />
+<meta property="og:description" content="Streamlining Business Intelligence: Power BI Integration with SAP Business One to unlock valuable insights and drive growth." />
+<meta property="og:url" content="index.html" />
+<meta property="og:site_name" content="Top global IT service,consulting, and outsourcing company" />
+<meta property="article:publisher" content="https://www.facebook.com/snakindiaconsultancy" />
+<meta property="article:published_time" content="2024-03-20T13:26:33+00:00" />
+<meta property="og:image" content="../wp-content/uploads/2024/03/powerBI_SAPone.jpg" />
+<meta property="og:image:width" content="1085" />
+<meta property="og:image:height" content="560" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="author" content="Gaurav Bansal" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Streamlining BI: Power BI Integration with SAP Business One" />
+<meta name="twitter:description" content="Streamlining Business Intelligence: Power BI Integration with SAP Business One to unlock valuable insights and drive growth." />
+<meta name="twitter:creator" content="@SNAK_INDIA" />
+<meta name="twitter:site" content="@SNAK_INDIA" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Gaurav Bansal" />
+<meta name="twitter:label2" content="Est. reading time" />
+<meta name="twitter:data2" content="4 minutes" />
+<meta name="generator" content="WordPress 6.2.9" />
+<meta name="generator" content="Site Kit by Google 1.101.0" />
+<meta name="google-site-verification" content="l4hLoMOhzNR5cecCCwQWlSOzN_wi5SMam5Ad7g_LdwU">
+<meta name="msapplication-TileImage" content="../wp-content/uploads/2023/07/cropped-favicon-270x270.png" />
+
+
+
+<script id="bv-lazyload-images" data-cfasync="false" bv-exclude="true">var __defProp=Object.defineProperty;var __name=(target,value)=>__defProp(target,"name",{value,configurable:!0});var bv_lazyload_event_listener="load",bv_lazyload_events=["mousemove","click","keydown","wheel","touchmove","touchend"],bv_use_srcset_attr=!1,BV_DEBUG_MODE=!1,bv_style_observer,img_observer,picture_lazy_observer,bvImageLazyloadObserverOptions={rootMargin:"200px 0px",threshold:.01};function bvDebugLog(...args){BV_DEBUG_MODE&&console.log(...args)}__name(bvDebugLog,"bvDebugLog"),bv_lazyload_event_listener=="load"?window.addEventListener("load",event=>{handle_lazyload_images()}):bv_lazyload_event_listener=="readystatechange"&&document.addEventListener("readystatechange",event=>{document.readyState==="interactive"&&handle_lazyload_images()});function add_lazyload_image_event_listeners(handle_lazyload_images2){bv_lazyload_events.forEach(function(event){document.addEventListener(event,handle_lazyload_images2,!0)})}__name(add_lazyload_image_event_listeners,"add_lazyload_image_event_listeners");function remove_lazyload_image_event_listeners(){bv_lazyload_events.forEach(function(event){document.removeEventListener(event,handle_lazyload_images,!0)})}__name(remove_lazyload_image_event_listeners,"remove_lazyload_image_event_listeners");function bv_replace_lazyloaded_image_url(element2){let src_value=element2.getAttribute("bv-data-src"),srcset_value=element2.getAttribute("bv-data-srcset"),currentSrc=element2.getAttribute("src");currentSrc&&currentSrc.startsWith("data:image/svg+xml")&&(bv_use_srcset_attr&&srcset_value&&element2.setAttribute("srcset",srcset_value),src_value&&element2.setAttribute("src",src_value))}__name(bv_replace_lazyloaded_image_url,"bv_replace_lazyloaded_image_url");function bv_replace_inline_style_image_url(element2){let bv_style_attr=element2.getAttribute("bv-data-style");if(bvDebugLog(bv_style_attr),bv_style_attr){let currentStyles=element2.getAttribute("style")||"",newStyle=currentStyles+(currentStyles?";":"")+bv_style_attr;element2.setAttribute("style",newStyle)}else bvDebugLog("BV_STYLE_ATTRIBUTE_NOT_FOUND : "+entry)}__name(bv_replace_inline_style_image_url,"bv_replace_inline_style_image_url");function handleLazyloadImages(entries){entries.map(entry2=>{entry2.isIntersecting&&(bv_replace_lazyloaded_image_url(entry2.target),img_observer.unobserve(entry2.target))})}__name(handleLazyloadImages,"handleLazyloadImages");function handleOnscreenInlineStyleImages(entries){entries.map(entry2=>{entry2.isIntersecting&&(bv_replace_inline_style_image_url(entry2.target),bv_style_observer.unobserve(entry2.target))})}__name(handleOnscreenInlineStyleImages,"handleOnscreenInlineStyleImages");function handlePictureTags(entries){entries.map(entry2=>{entry2.isIntersecting&&(bv_replace_picture_tag_url(entry2.target),picture_lazy_observer.unobserve(entry2.target))})}__name(handlePictureTags,"handlePictureTags");function bv_replace_picture_tag_url(element2){const child_elements=element2.children;for(let i=0;i<child_elements.length;i++){let child_elem=child_elements[i],_srcset=child_elem.getAttribute("bv-data-srcset"),_src=child_elem.getAttribute("bv-data-src");_srcset&&child_elem.setAttribute("srcset",_srcset),_src&&child_elem.setAttribute("src",_src),bv_replace_picture_tag_url(child_elem)}}__name(bv_replace_picture_tag_url,"bv_replace_picture_tag_url"),"IntersectionObserver"in window&&(bv_style_observer=new IntersectionObserver(handleOnscreenInlineStyleImages,bvImageLazyloadObserverOptions),img_observer=new IntersectionObserver(handleLazyloadImages,bvImageLazyloadObserverOptions),picture_lazy_observer=new IntersectionObserver(handlePictureTags,bvImageLazyloadObserverOptions));function handle_lazyload_images(){"IntersectionObserver"in window?(document.querySelectorAll(".bv-lazyload-bg-style").forEach(target_element=>{bv_style_observer.observe(target_element)}),document.querySelectorAll(".bv-lazyload-tag-img").forEach(img_element=>{img_observer.observe(img_element)}),document.querySelectorAll(".bv-lazyload-picture").forEach(picture_element=>{picture_lazy_observer.observe(picture_element)})):(document.querySelectorAll(".bv-lazyload-bg-style").forEach(target_element=>{bv_replace_inline_style_image_url(target_element)}),document.querySelectorAll(".bv-lazyload-tag-img").forEach(target_element=>{bv_replace_lazyloaded_image_url(target_element)}),document.querySelectorAll(".bv-lazyload-picture").forEach(picture_element=>{bv_replace_picture_tag_url(element)}))}__name(handle_lazyload_images,"handle_lazyload_images");
+</script>
+
+<script id="bv-dl-scripts-list" data-cfasync="false" bv-exclude="true">
+var scriptAttrs = [{"attrs":{"defer":true,"data-cfasync":false,"bv_inline_delayed":true,"type":"text\/javascript","async":false},"bv_unique_id":"OoFnyp9ErisUxRW21dS7","reference":0},{"attrs":{"id":"ruigehond006_javascript-js-extra","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":true},"bv_unique_id":"pdhHIAG4ZyFnLApm8AoD","reference":1},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-content\/plugins\/wp-reading-progress\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-47985627426517a9df6704fa567a7b9c_wp-reading-progress.min.js?ver=1.5.2","id":"ruigehond006_javascript-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"8Q9UmokgBaAp505WrSyZ","reference":2},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-content\/plugins\/post-grid\/src\/blocks\/terms-list\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-e8b54e693087e9aeeebd62a57ddee7dc_front-scripts.js?ver=6.2.8","id":"pgtermslist_front_script-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"EnhGfrWFe9XZMTCPjxlx","reference":3},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-includes\/js\/jquery\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-d5e3ac37344874e411dee8a6b412dcb4_jquery.min.js?ver=3.6.4","id":"jquery-core-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"cb7zeiSSzClrFhTl30z0","reference":4},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-includes\/js\/jquery\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-5cfa2b481de6e87c2190a0e3538515d8_jquery-migrate.min.js?ver=3.4.0","id":"jquery-migrate-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"Y4KKkNXztvtgsYk28RwI","reference":5},{"attrs":{"id":"post_grid_scripts-js-extra","defer":true,"data-cfasync":false,"bv_inline_delayed":true,"type":"text\/javascript","async":false},"bv_unique_id":"6WXIlOe3ZqVK46ctcNaY","reference":6},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-content\/plugins\/post-grid\/assets\/frontend\/js\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-0a318eded56ccd5cc0ae7fb80418f3c3_scripts.js?ver=6.2.8","id":"post_grid_scripts-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"taz9oK7FG1x8TU7rDjlc","reference":7},{"attrs":{"src":"https:\/\/www.googletagmanager.com\/gtag\/js?id=UA-122119391-2","id":"google_gtagjs-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"gP2iuZBOcO6HCmr2YMDO","reference":8},{"attrs":{"id":"google_gtagjs-js-after","defer":true,"data-cfasync":false,"bv_inline_delayed":true,"type":"text\/javascript","async":false},"bv_unique_id":"zyAhOtL1tcJkpFMRJSWa","reference":9},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-includes\/js\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-3a56752b736635bf69cb069b8818cbfd_imagesloaded.min.js?ver=6.2.8","id":"imagesloaded-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"flC8uDg41OHWYtCIBv3n","reference":10},{"attrs":{"type":"text\/javascript","defer":true,"data-cfasync":false,"bv_inline_delayed":true,"async":false},"bv_unique_id":"zdp7kzEUaZxmDmsDjeLC","reference":11},{"attrs":{"defer":true,"data-cfasync":false,"bv_inline_delayed":true,"type":"text\/javascript","async":false},"bv_unique_id":"Kx2sAP40amOXr8MDPFz8","reference":12},{"attrs":{"src":"https:\/\/www.googletagmanager.com\/gtag\/js?id=G-J1FBHQ4K80","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"pNLPwTCWDLo7jWQ5tQD5","reference":13},{"attrs":{"defer":true,"data-cfasync":false,"bv_inline_delayed":true,"type":"text\/javascript","async":false},"bv_unique_id":"PZrdSeRWm5TKRtYELR8O","reference":14},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/bb-plugin\/cache\/1398-layout.js?ver=e4525a12f2d474d2b5800412f97d435a","id":"fl-builder-layout-1398-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"i0Wo1JIIY3WCkW1cXpg5","reference":15},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-content\/plugins\/bb-header-footer\/assets\/js\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-f16cf0396c9aebe2e4573251609b35e2_bb-header-footer.js?ver=1.2.2","id":"bb-header-footer-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"RpNLSRiFTMkYRKlcsN1d","reference":17},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-content\/uploads\/bb-plugin\/cache\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-a6d7a79e56a4eb22ccafddfcf80fed54_32-layout-partial.js?ver=8b47bcab60c13418b6f6768f70a05622","id":"fl-builder-layout-32-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"cQMYQ8qaLiFbEkqb2Tf1","reference":18},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-content\/uploads\/bb-plugin\/cache\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-8eae882cf0bdb84e56e5349efac4d363_123-layout-partial.js?ver=ba5fd5267e10560eb32523d945d7fbc2","id":"fl-builder-layout-123-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"sQreGTfiyUmf0eh3EGk2","reference":19},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-content\/plugins\/bb-plugin\/js\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-97669983f6540f2badeef6ab07e5b637_jquery.ba-throttle-debounce.min.js?ver=2.6.3.3","id":"jquery-throttle-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"G2BOK70ohZ43vtYGzTMC","reference":20},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-content\/plugins\/bb-plugin\/js\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-e93d7fa3e0f8cecb5f3636517d0573dc_jquery.magnificpopup.min.js?ver=2.6.3.3","id":"jquery-magnificpopup-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"PkzcNrj1rrx1yqxpe6Wp","reference":21},{"attrs":{"id":"fl-automator-js-extra","defer":true,"data-cfasync":false,"bv_inline_delayed":true,"type":"text\/javascript","async":false},"bv_unique_id":"NrdDyxvQy2Yllq6tUtYc","reference":22},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-content\/themes\/bb-theme\/js\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-bfd0a1c5974a00cd47fcd79419358a28_theme.min.js?ver=1.7.13","id":"fl-automator-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"8EkZGqi5pLOOyFNuoKsw","reference":23},{"attrs":{"id":"mbsocial_front-js-extra","defer":true,"data-cfasync":false,"bv_inline_delayed":true,"type":"text\/javascript","async":false},"bv_unique_id":"gXXQquzWCinyqeRvB7NM","reference":24},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-content\/plugins\/share-button\/js\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-9589ea26583a42f7edff04b2644af1d7_social-front.js?ver=1.19","id":"mbsocial_front-js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"v1oZh61Qs5LbZT89BOvG","reference":25},{"attrs":{"id":"scrolltop-custom-js","defer":true,"data-cfasync":false,"bv_inline_delayed":true,"type":"text\/javascript","async":false},"bv_unique_id":"uFJmf8fVoxDz2uQLpooe","reference":26},{"attrs":{"defer":true,"data-cfasync":false,"bv_inline_delayed":true,"type":"text\/javascript","async":false},"bv_unique_id":"afmwEFZpToKYrTpqvt1q","reference":27},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/js\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-e9fb5e73e98be13685c609eb74b6e184_contact_us.js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"cjPITOBC1qZEdf8NfMbK","reference":28},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/js\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-70d3fda195602fe8b75e0097eed74dde_popper.min.js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"sxhfm69RbsRp3u9dUSA4","reference":29},{"attrs":{"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/js\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-aa0866cb726715648a2e4ff6a7332b36_bootstrap.min.js","defer":true,"data-cfasync":false,"async":false,"bv_inline_delayed":false},"bv_unique_id":"A3uN897bwx1K5k5Z47Um","reference":30},{"attrs":{"defer":true,"src":"https:\/\/snakconsultancy.com\/blog\/wp-content\/uploads\/al_opt_content\/SCRIPT\/snakconsultancy.com\/.\/blog\/wp-content\/plugins\/scroll-top\/assets\/js\/6982223c190636cf5412c17d\/6982223c190636cf5412c17d-63bbf26c1fd78c531513dd6a4a2e4f51_jquery.scrollUp.min.js?ver=1.5","id":"scroll-top-js-js","data-cfasync":false,"async":false,"bv_inline_delayed":false,"is_first_defer_element":true},"bv_unique_id":"mLybYIV4WmN2iuYoNvad","reference":16},{"attrs":{"src":"data:text\/javascript;base64, ZnVuY3Rpb24gYnZfdHJpZ2dlcl9haXJsaWZ0X2V2ZW50KHRhcmdldCwgZXZlbnRfdHlwZSkgewoKICBpZiAoZXZlbnRfdHlwZSA9PT0gInJlYWR5c3RhdGVjaGFuZ2UiKSB7CiAgICBpZiAoYnZfc3RhdGVfY291bnRlciA9PT0gMCkgewogICAgICBidl9zdGF0ZV9jb3VudGVyICs9IDEKICAgICAgYnZfY3VzdG9tX3JlYWR5X3N0YXRlX3ZhbHVlID0gImludGVyYWN0aXZlIgogICAgfSBlbHNlIGlmKGJ2X3N0YXRlX2NvdW50ZXIgPT09IDEpIHsKICAgICAgYnZfc3RhdGVfY291bnRlciArPSAxCiAgICAgIGJ2X2N1c3RvbV9yZWFkeV9zdGF0ZV92YWx1ZSA9ICJjb21wbGV0ZSIKICAgIH0KICB9CgogIGxldCBldmVudF9uYW1lID0gIkFpcmxpZnQiICsgZXZlbnRfdHlwZTsKICBsZXQgc3ludGhldGljRXZlbnQgPSBuZXcgRXZlbnQoZXZlbnRfbmFtZSwgeyBidWJibGVzOiB0cnVlIH0pOwoKICBPYmplY3QuZGVmaW5lUHJvcGVydHkoc3ludGhldGljRXZlbnQsICJ0eXBlIiwgeyBnZXQ6IGZ1bmN0aW9uICgpIHsgcmV0dXJuIGV2ZW50X3R5cGU7IH0sIHNldDogZnVuY3Rpb24gKCkgeyB9IH0pOwogIE9iamVjdC5kZWZpbmVQcm9wZXJ0eShzeW50aGV0aWNFdmVudCwgInRhcmdldCIsIHsgZ2V0OiBmdW5jdGlvbiAoKSB7IHJldHVybiB0YXJnZXQ7IH0sIHNldDogZnVuY3Rpb24gKCkgeyB9IH0pOwoKICB0YXJnZXQuZGlzcGF0Y2hFdmVudChzeW50aGV0aWNFdmVudCk7Cn0KCmZ1bmN0aW9uIGJ2X2Rpc3BhdGNoRGVsYXllZEV2ZW50cygpIHsKICAgIGJ2X3RyaWdnZXJfYWlybGlmdF9ldmVudChkb2N1bWVudCwgInJlYWR5c3RhdGVjaGFuZ2UiKTsKICAgIGJ2X3RyaWdnZXJfYWlybGlmdF9ldmVudChkb2N1bWVudCwgIkRPTUNvbnRlbnRMb2FkZWQiKTsKCiAgICBzZXRUaW1lb3V0KCgpID0+IHsKICAgICAgICBidl90cmlnZ2VyX2FpcmxpZnRfZXZlbnQoZG9jdW1lbnQsICJyZWFkeXN0YXRlY2hhbmdlIik7CgogICAgICAgIHNldFRpbWVvdXQoKCkgPT4gewogICAgICAgICAgICBidl90cmlnZ2VyX2FpcmxpZnRfZXZlbnQod2luZG93LCAibG9hZCIpOwogICAgICAgICAgICBidl90cmlnZ2VyX2FpcmxpZnRfZXZlbnQod2luZG93LCAicGFnZXNob3ciKTsKICAgICAgICB9LCAwKTsKICAgIH0sIDApOwp9Cgp2YXIgYnZfc3RhdGVfY291bnRlciA9IDAKCmJ2X2Rpc3BhdGNoRGVsYXllZEV2ZW50cygpOwoK","id":"bv-trigger-listener","type":"text\/javascript","defer":true,"async":false},"bv_unique_id":"d6fe9c24159ed4a27d224d91c70f8fdc","reference":100000000}];
+</script>
+<script id="bv-web-worker" type="javascript/worker" data-cfasync="false" bv-exclude="true">var __defProp=Object.defineProperty;var __name=(target,value)=>__defProp(target,"name",{value,configurable:!0});self.onmessage=function(e){var counter=e.data.fetch_urls.length;e.data.fetch_urls.forEach(function(fetch_url){loadUrl(fetch_url,function(){console.log("DONE: "+fetch_url),counter=counter-1,counter===0&&self.postMessage({status:"SUCCESS"})})})};async function loadUrl(fetch_url,callback){try{var request=new Request(fetch_url,{mode:"no-cors",redirect:"follow"});await fetch(request),callback()}catch(fetchError){console.log("Fetch Error loading URL:",fetchError);try{var xhr=new XMLHttpRequest;xhr.onerror=callback,xhr.onload=callback,xhr.responseType="blob",xhr.open("GET.html",fetch_url,!0),xhr.send()}catch(xhrError){console.log("XHR Error loading URL:",xhrError),callback()}}}__name(loadUrl,"loadUrl");
+</script>
+<script id="bv-web-worker-handler" data-cfasync="false" bv-exclude="true">var __defProp=Object.defineProperty;var __name=(target,value)=>__defProp(target,"name",{value,configurable:!0});if(typeof scriptAttrs<"u"&&Array.isArray(scriptAttrs)&&scriptAttrs.length>0){const lastElement=scriptAttrs[scriptAttrs.length-1];if(lastElement.attrs&&lastElement.attrs.id==="bv-trigger-listener"){var bv_custom_ready_state_value="loading";Object.defineProperty(document,"readyState",{get:__name(function(){return bv_custom_ready_state_value},"get"),set:__name(function(){},"set")})}}if(typeof scriptAttrs>"u"||!Array.isArray(scriptAttrs))var scriptAttrs=[];if(typeof linkStyleAttrs>"u"||!Array.isArray(linkStyleAttrs))var linkStyleAttrs=[];function isMobileDevice(){return window.innerWidth<=500}__name(isMobileDevice,"isMobileDevice");var js_dom_loaded=!1;document.addEventListener("DOMContentLoaded",()=>{js_dom_loaded=!0});const EVENTS=["mousemove","click","keydown","wheel","touchmove","touchend"];var scriptUrls=[],styleUrls=[],bvEventCalled=!1,workerFinished=!1,functionExec=!1,scriptsInjected=!1,stylesInjected=!1,bv_load_event_fired=!1,autoInjectTimerStarted=!1;const BV_AUTO_INJECT_ENABLED=!0,BV_DESKTOP_AUTO_INJECT_DELAY=4e3,BV_MOBILE_AUTO_INJECT_DELAY=1e4,BV_WORKER_TIMEOUT_DURATION=3e3;scriptAttrs.forEach((scriptAttr,index)=>{scriptAttr.attrs.src&&!scriptAttr.attrs.src.includes("data:text/javascript")&&(scriptUrls[index]=scriptAttr.attrs.src)}),linkStyleAttrs.forEach((linkAttr,index)=>{styleUrls[index]=linkAttr.attrs.href});var fetchUrls=scriptUrls.concat(styleUrls);function addEventListeners(bvEventHandler2){EVENTS.forEach(function(event){document.addEventListener(event,bvEventFired,!0),document.addEventListener(event,bvEventHandler2,!0)})}__name(addEventListeners,"addEventListeners");function removeEventListeners(){EVENTS.forEach(function(event){document.removeEventListener(event,bvEventHandler,!0)})}__name(removeEventListeners,"removeEventListeners");function bvEventFired(){bvEventCalled||(bvEventCalled=!0,workerFinished=!0)}__name(bvEventFired,"bvEventFired");function bvGetElement(attributes,element){Object.keys(attributes).forEach(function(attr){attr==="async"?element.async=attributes[attr]:attr==="innerHTML"?element.innerHTML=atob(attributes[attr]):element.setAttribute(attr,attributes[attr])})}__name(bvGetElement,"bvGetElement");function bvAddElement(attr,element){var attributes=attr.attrs;if(attributes.bv_inline_delayed){let bvScriptId=attr.bv_unique_id,bvScriptElement=document.querySelector("[bv_unique_id='"+bvScriptId+"']");bvScriptElement?(!attributes.innerHTML&&!attributes.src&&bvScriptElement.textContent.trim()!==""&&(attributes.src="data:text/javascript;base64, "+btoa(unescape(encodeURIComponent(bvScriptElement.textContent)))),bvGetElement(attributes,element),bvScriptElement.after(element)):console.log(`Script not found for ${bvScriptId}`)}else{bvGetElement(attributes,element);var templateId=attr.bv_unique_id,targetElement=document.querySelector("[id='"+templateId+"']");targetElement&&targetElement.after(element)}}__name(bvAddElement,"bvAddElement");function injectStyles(){if(stylesInjected){console.log("Styles already injected, skipping");return}stylesInjected=!0,document.querySelectorAll('style[type="bv_inline_delayed_css"], template[id]').forEach(element=>{if(element.tagName.toLowerCase()==="style"){var new_style=document.createElement("style");new_style.type="text/css",new_style.textContent=element.textContent,element.after(new_style),new_style.parentNode?element.remove():console.log("PARENT NODE NOT FOUND")}else if(element.tagName.toLowerCase()==="template"){var templateId=element.id,linkStyleAttr=linkStyleAttrs.find(attr=>attr.bv_unique_id===templateId);if(linkStyleAttr){var link=document.createElement("link");bvAddElement(linkStyleAttr,link),element.parentNode&&element.parentNode.replaceChild(link,element),console.log("EXTERNAL STYLE ADDED")}else console.log(`No linkStyleAttr found for template ID ${templateId}`)}}),linkStyleAttrs.forEach((linkStyleAttr,index)=>{console.log("STYLE ADDED");var element=document.createElement("link");bvAddElement(linkStyleAttr,element)})}__name(injectStyles,"injectStyles");function injectScripts(){if(scriptsInjected){console.log("Scripts already injected, skipping");return}scriptsInjected=!0;let last_script_element;scriptAttrs.forEach((scriptAttr,index)=>{if(bv_custom_ready_state_value==="loading"&&scriptAttr.attrs&&scriptAttr.attrs.is_first_defer_element===!0)if(last_script_element){const readyStateScript=document.createElement("script");readyStateScript.src="data:text/javascript;base64, "+btoa(unescape(encodeURIComponent("bv_custom_ready_state_value = 'interactive';"))),readyStateScript.async=!1,last_script_element.after(readyStateScript)}else bv_custom_ready_state_value="interactive",console.log('Ready state manually set to "interactive"');console.log("JS ADDED");var element=document.createElement("script");last_script_element=element,bvAddElement(scriptAttr,element)})}__name(injectScripts,"injectScripts");function bvEventHandler(){console.log("EVENT FIRED"),js_dom_loaded&&bvEventCalled&&workerFinished&&!functionExec&&(functionExec=!0,injectStyles(),injectScripts(),removeEventListeners())}__name(bvEventHandler,"bvEventHandler");function autoInjectScriptsAfterLoad(){js_dom_loaded&&workerFinished&&!scriptsInjected&&!stylesInjected&&(console.log("Auto-injecting styles and scripts after timer"),injectStyles(),injectScripts())}__name(autoInjectScriptsAfterLoad,"autoInjectScriptsAfterLoad");function startAutoInjectTimer(){if(BV_AUTO_INJECT_ENABLED&&!autoInjectTimerStarted&&bv_load_event_fired&&!bvEventCalled){autoInjectTimerStarted=!0;var delay=isMobileDevice()?BV_MOBILE_AUTO_INJECT_DELAY:BV_DESKTOP_AUTO_INJECT_DELAY;console.log("Starting auto-inject timer with delay: "+delay+"ms"),setTimeout(function(){autoInjectScriptsAfterLoad()},delay)}}__name(startAutoInjectTimer,"startAutoInjectTimer"),addEventListeners(bvEventHandler);var requestObject=window.URL||window.webkitURL,bvWorker=new Worker(requestObject.createObjectURL(new Blob([document.getElementById("bv-web-worker").textContent],{type:"text/javascript"})));bvWorker.onmessage=function(e){e.data.status==="SUCCESS"&&(console.log("WORKER_FINISHED"),workerFinished=!0,bvEventHandler(),startAutoInjectTimer())},addEventListener("load",()=>{bvEventHandler(),bv_call_fetch_urls(),bv_load_event_fired=!0});function bv_call_fetch_urls(){!bv_load_event_fired&&!workerFinished&&(bvWorker.postMessage({fetch_urls:fetchUrls}),bv_initiate_worker_timer())}__name(bv_call_fetch_urls,"bv_call_fetch_urls"),setTimeout(function(){bv_call_fetch_urls()},5e3);function bv_initiate_worker_timer(){setTimeout(function(){workerFinished||(console.log("WORKER_TIMEDOUT"),workerFinished=!0,bvWorker.terminate()),bvEventHandler(),startAutoInjectTimer()},BV_WORKER_TIMEOUT_DURATION)}__name(bv_initiate_worker_timer,"bv_initiate_worker_timer");
+</script>
+
+
+
+
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+
+
+	
+	<title>Streamlining BI: Power BI Integration with SAP Business One</title>
+	
+	<link rel="canonical" href="index.html" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":["Article","BlogPosting"],"@id":"https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/#article","isPartOf":{"@id":"https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/"},"author":{"name":"Gaurav Bansal","@id":"https://snakconsultancy.com/blog/#/schema/person/160d5fe10e7e983eaa321f7102870af4"},"headline":"Streamlining Business Intelligence: Power BI Integration with SAP Business One","datePublished":"2024-03-20T13:26:33+00:00","dateModified":"2024-03-20T13:26:33+00:00","mainEntityOfPage":{"@id":"https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/"},"wordCount":780,"publisher":{"@id":"https://snakconsultancy.com/blog/#organization"},"image":{"@id":"https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/#primaryimage"},"thumbnailUrl":"https://snakconsultancy.com/blog/wp-content/uploads/2024/03/powerBI_SAPone.jpg","keywords":["BI solutions","Business Intelligence (BI) tools","Power BI Integration","SAP Business One","Scalability and Flexibility","Seamless Data Connectivity"],"articleSection":["Power BI Integration","SAP Business One"],"inLanguage":"en"},{"@type":"WebPage","@id":"https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/","url":"https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/","name":"Streamlining BI: Power BI Integration with SAP Business One","isPartOf":{"@id":"https://snakconsultancy.com/blog/#website"},"primaryImageOfPage":{"@id":"https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/#primaryimage"},"image":{"@id":"https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/#primaryimage"},"thumbnailUrl":"https://snakconsultancy.com/blog/wp-content/uploads/2024/03/powerBI_SAPone.jpg","datePublished":"2024-03-20T13:26:33+00:00","dateModified":"2024-03-20T13:26:33+00:00","description":"Streamlining Business Intelligence: Power BI Integration with SAP Business One to unlock valuable insights and drive growth.","breadcrumb":{"@id":"https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/#breadcrumb"},"inLanguage":"en","potentialAction":[{"@type":"ReadAction","target":["https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/"]}]},{"@type":"ImageObject","inLanguage":"en","@id":"https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/#primaryimage","url":"https://snakconsultancy.com/blog/wp-content/uploads/2024/03/powerBI_SAPone.jpg","contentUrl":"https://snakconsultancy.com/blog/wp-content/uploads/2024/03/powerBI_SAPone.jpg","width":1085,"height":560,"caption":"Power BI Integration with SAP"},{"@type":"BreadcrumbList","@id":"https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://snakconsultancy.com/blog/"},{"@type":"ListItem","position":2,"name":"blog/power-bi-integration-with-sap-business"}]},{"@type":"WebSite","@id":"https://snakconsultancy.com/blog/#website","url":"https://snakconsultancy.com/blog/","name":"Top global IT service,consulting, and outsourcing company","description":"SNAK Consultancy Service","publisher":{"@id":"https://snakconsultancy.com/blog/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://snakconsultancy.com/blog/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en"},{"@type":"Organization","@id":"https://snakconsultancy.com/blog/#organization","name":"Top global IT service,consulting, and outsourcing company","url":"https://snakconsultancy.com/blog/","logo":{"@type":"ImageObject","inLanguage":"en","@id":"https://snakconsultancy.com/blog/#/schema/logo/image/","url":"https://snakconsultancy.com/blog/wp-content/uploads/2023/05/logo.png","contentUrl":"https://snakconsultancy.com/blog/wp-content/uploads/2023/05/logo.png","width":96,"height":44,"caption":"Top global IT service,consulting, and outsourcing company"},"image":{"@id":"https://snakconsultancy.com/blog/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/snakindiaconsultancy","https://twitter.com/SNAK_INDIA","https://www.instagram.com/snak_consultancy_services/"]},{"@type":"Person","@id":"https://snakconsultancy.com/blog/#/schema/person/160d5fe10e7e983eaa321f7102870af4","name":"Gaurav Bansal","image":{"@type":"ImageObject","inLanguage":"en","@id":"https://snakconsultancy.com/blog/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/4f3a77457fdafb26f13402d011002ac7?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/4f3a77457fdafb26f13402d011002ac7?s=96&d=mm&r=g","caption":"Gaurav Bansal"},"url":"https://snakconsultancy.com/blog/author/gaurav-bansal/"}]}</script>
+	
+
+
+<link rel='dns-prefetch' href='http://www.googletagmanager.com/' />
+<link rel='dns-prefetch' href='http://use.fontawesome.com/' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Top global IT service,consulting, and outsourcing company &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Top global IT service,consulting, and outsourcing company &raquo; Comments Feed" href="../comments/feed/index.html" />
+<script type="bv_inline_delayed_js" bv_unique_id="OoFnyp9ErisUxRW21dS7" defer="1" data-cfasync="" bv_inline_delayed="1" async="">window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/snakconsultancy.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.9"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='../wp-includes/css/dist/block-library/style.min0192.css?ver=6.2.9' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<link rel='stylesheet' id='classic-theme-styles-css' href='../wp-includes/css/classic-themes.min0192.css?ver=6.2.9' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='fl-builder-layout-1398-css' href='../wp-content/uploads/bb-plugin/cache/1398-layout4c3d.css?ver=4a226101dd34d6aebc8d4f9d7d157dce' media='all' />
+<link rel='stylesheet' id='scroll-top-css-css' href='../wp-content/plugins/scroll-top/assets/css/scroll-top7ef2.css?ver=1.5' media='all' />
+<link rel='stylesheet' id='bbhf-style-css' href='../wp-content/plugins/bb-header-footer/assets/css/bb-header-footer8d1e.css?ver=1.2.2' media='all' />
+<link rel='stylesheet' id='fl-builder-layout-32-css' href='../wp-content/uploads/bb-plugin/cache/32-layout-partialbfbe.css?ver=8b47bcab60c13418b6f6768f70a05622' media='all' />
+<link rel='stylesheet' id='fl-builder-layout-123-css' href='../wp-content/uploads/bb-plugin/cache/123-layout-partial96e0.css?ver=7deed6bccf79ba30f199bc646f87ff41' media='all' />
+<link rel='stylesheet' id='parent-style-css' href='../wp-content/themes/bb-theme/style0192.css?ver=6.2.9' media='all' />
+<link rel='stylesheet' id='child-style-css' href='../wp-content/themes/beaver-builder-theme-child/style0192.css?ver=6.2.9' media='all' />
+<link rel='stylesheet' id='font-awesome-official-css' href='../../../use.fontawesome.com/releases/v6.4.0/css/all.css' media='all' integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0" crossorigin="anonymous" />
+<link rel='stylesheet' id='jquery-magnificpopup-css' href='../wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min8392.css?ver=2.6.3.3' media='all' />
+<link rel='stylesheet' id='base-css' href='../wp-content/themes/bb-theme/css/base.mine96c.css?ver=1.7.13' media='all' />
+<link rel='stylesheet' id='fl-automator-skin-css' href='../wp-content/uploads/bb-theme/skin-674d3d79908b3e96c.css?ver=1.7.13' media='all' />
+<link rel='stylesheet' id='fl-builder-google-fonts-405c7168e8549277e983f2588e380c31-css' href='http://fonts.googleapis.com/css?family=Poppins%3A600%2C700%2C500&amp;ver=6.2.9' media='all' />
+<link rel='stylesheet' id='font-awesome-official-v4shim-css' href='../../../use.fontawesome.com/releases/v6.4.0/css/v4-shims.css' media='all' integrity="sha384-TjXU13dTMPo+5ZlOUI1IGXvpmajjoetPqbUJqTx+uZ1bGwylKHNEItuVe/mg/H6l" crossorigin="anonymous" />
+<script type="bv_inline_delayed_js" bv_unique_id="pdhHIAG4ZyFnLApm8AoD" id="ruigehond006_javascript-js-extra" defer="1" data-cfasync="" async="">var ruigehond006_c = {"bar_attach":"sticky menu","stick_relative":"on","bar_color":"#ff8730","bar_height":".9vh","aria_label":"","mark_it_zero":"on","include_comments":"on","post_types":["post","page"],"archives":"on","post_identifier":"body","post_id":"1398"};</script>
+<template id="8Q9UmokgBaAp505WrSyZ"></template>
+<template id="EnhGfrWFe9XZMTCPjxlx"></template>
+<template id="cb7zeiSSzClrFhTl30z0"></template>
+<template id="Y4KKkNXztvtgsYk28RwI"></template>
+<script type="bv_inline_delayed_js" bv_unique_id="6WXIlOe3ZqVK46ctcNaY" id="post_grid_scripts-js-extra" defer="1" data-cfasync="" bv_inline_delayed="1" async="">var post_grid_ajax = {"post_grid_ajaxurl":"https:\/\/snakconsultancy.com\/blog\/wp-admin\/admin-ajax.php"};</script>
+<template id="taz9oK7FG1x8TU7rDjlc"></template>
+
+
+<template id="gP2iuZBOcO6HCmr2YMDO"></template>
+<script type="bv_inline_delayed_js" bv_unique_id="zyAhOtL1tcJkpFMRJSWa" id="google_gtagjs-js-after" defer="1" data-cfasync="" bv_inline_delayed="1" async="">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["snakconsultancy.com"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-122119391-2", {"anonymize_ip":true});
+gtag("config", "GT-PLT5HZQ");</script>
+
+
+<template id="flC8uDg41OHWYtCIBv3n"></template>
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/posts/1398.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" />
+
+<link rel='shortlink' href='../indexe6a5.html?p=1398' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embedad56.json?url=https%3A%2F%2Fsnakconsultancy.com%2Fblog%2Fpower-bi-integration-with-sap-business%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embedf4e1?url=https%3A%2F%2Fsnakconsultancy.com%2Fblog%2Fpower-bi-integration-with-sap-business%2F&amp;format=xml" />
+		<script type="bv_inline_delayed_js" bv_unique_id="zdp7kzEUaZxmDmsDjeLC" defer="1" data-cfasync="" bv_inline_delayed="1" async="">(function(c,l,a,r,i,t,y){
+					c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;
+					t.src="https://www.clarity.ms/tag/"+i+"?ref=wordpress";y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+				})(window, document, "clarity", "script", "dxtkgs5cc7");</script>
+		
+<style id="scrolltop-custom-style">
+		#scrollUp {border-radius:50%;opacity:0.7;bottom:20px;right:20px;background:#ff8831;;}
+		#scrollUp:hover{opacity:1;}
+        .top-icon{stroke:#ffffff;}
+        
+		
+		</style>
+
+<style>#ruigehond006_wrap{z-index:10001;position:fixed;display:block;left:0;width:100%;margin:0;overflow:visible}#ruigehond006_inner{position:absolute;height:0;width:inherit;background-color:rgba(255,255,255,.2);-webkit-transition:height .4s;transition:height .4s}html[dir=rtl] #ruigehond006_wrap{text-align:right}#ruigehond006_bar{width:0;height:100%;background-color:transparent}</style>
+
+<script type="bv_inline_delayed_js" bv_unique_id="Kx2sAP40amOXr8MDPFz8" defer="1" data-cfasync="" bv_inline_delayed="1" async="">( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-WJ92W2L' );</script>
+
+
+<link rel="icon" href="../wp-content/uploads/2023/07/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="../wp-content/uploads/2023/07/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../wp-content/uploads/2023/07/cropped-favicon-180x180.png" />
+
+		<style id="wp-custom-css">
+			.yarpp-related ul {
+    list-style: none !important;
+	list-style-type: none !important;
+}
+.yarpp-related a {
+    list-style: none !important;
+	list-style-type: none !important;
+    color: #666 !important;
+    text-decoration: underline !important;
+	font-weight: 400 !important;
+}
+.yarpp-related h3 {
+    color: #003b93 !important;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+}	
+ul.sub-menu {
+    width: 270px !important;
+}
+span.fl-terms-label::before {
+    content: "--- ";
+}
+/* h2.fl-post-grid-title {
+    margin-top: 40px;
+} */
+/* .fl-post-grid-meta {
+    position: absolute;
+    top: 0;
+} */
+/* .fl-post-grid-terms {
+    margin-top: 10px;
+} */
+.fl-post-grid-image {
+    margin-bottom: 5px;
+}
+.bhf-sticky-header .bhf-fixed {
+   box-shadow: 0 0px 0px rgba(0,0,0,0.2) !important; 
+    
+}
+.fl-node-gez3nslyj74c > .fl-row-content-wrap {
+   
+     box-shadow:unset !important;
+}
+#ruigehond006_wrap {
+    z-index: 0 !important;
+}
+
+.page-id-7 .maxsocial.maxsocial-1.horizontal {
+    position: absolute !important;
+    width: 50% !important;
+    top: -52px;
+    right: -5%;
+}
+span.publish-date {
+    font-size: 14px;
+}
+svg.svg-mbp-fa {
+    padding-top: 2px;
+}
+i.fa.fa-angle-left.mr-2 {
+    font-size: 11px;
+    margin-right: 3px;
+}
+
+.fl-post-grid-terms a {
+    pointer-events: none;
+}
+h5 {
+    color: #666 !important;
+    font-weight: 500;
+}
+h5 span {
+    color: #666 !important;
+    font-weight: 500;
+}
+span.brand-name {
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 3px;
+}
+.sharesbtn p em {
+    color: #6c757d!important;
+}
+h2.fl-post-grid-title {
+    height: 50px;
+}
+.sharesbtn .maxsocial.maxsocial-1.horizontal {
+    position: absolute !important;
+    top: 0;
+    left: 90px;
+}
+.sharesbtn .fl-rich-text {
+    position: relative;
+}
+
+
+ul.related-posts-wrapper li a {
+    list-style: none;
+    color: #666;
+    text-decoration: underline;
+}
+ul.social-buttons {
+    padding: 0 !important;
+}
+.section-title h4 {
+    color: #003b93;
+    font-weight: 600;
+    font-size: 22px;
+}
+ul.related-posts-wrapper li{
+	list-style:none;
+}
+
+p {
+    line-height: 30px;
+    font-size: 16px;
+}
+div#ruigehond006_bar {
+    position: relative;
+    top: 74px;
+}
+.maxsocial.maxsocial-1.horizontal {
+   z-index: 0 !important;   
+}
+ul.sub-menu {
+    background: url(../../images/tech-data.webp)!important;
+    
+    border-bottom: 5px solid #003b93 !important;
+}
+ul.sub-menu a {
+    margin: 5px 0px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 14px !important;
+    font-weight: 400;
+}
+ul.sub-menu a:hover {
+    background-color: #003b93;
+    border-radius: 4px;
+    color: #fff !important;
+}
+.fl-col.fl-node-mysugixaowlp.fl-col-small.brand:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 35%;
+    height: 100%;
+    top: 0;
+    left: -119px;
+    z-index: -1;
+    background: #fff;
+    transform-origin: bottom left;
+    transform: skew(-30deg, 0deg);
+
+}
+ .header-menu.menu a {
+    padding-bottom: 30px !important;
+    margin-top: 9px;
+}
+img.attachment-full.size-full.wp-post-image {
+    height: 230px !important;
+}
+/* jatin */
+.backbtn {
+	font-size: 14px;
+}
+.submenu {
+    background: url(../images/tech-data.html) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 2.25rem;
+    left: -1rem;
+    min-width: 18rem;
+    height: auto;
+    padding: 0.6rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(1rem);
+    border-radius: 0 0 0.25rem 0.25rem;
+    border-top: 2px solid var(--color-blue-500);
+    box-shadow: var(--shadow-large);
+    background-color: var(--bgColor);
+    transition: all .3s ease-in-out;
+    border-top: 12px solid var(--color-blue-500);
+    border-bottom: 4px solid var(--color-blue-500);
+}
+
+/* end */
+
+.fl-menu .fl-has-submenu-container {
+    position: relative;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+@media(max-width:768px){
+	.fl-menu .fl-has-submenu-container {
+    position: relative;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+	ul.sub-menu {
+    width: 100% !important;
+}
+	.fl-node-ng5kh9rld3y6 > .fl-module-content {
+    margin-bottom: -15px !important;
+}
+	footer .fl-menu .menu > li {
+    border-bottom: 1px solid #293360;
+    padding: 7px 0;
+}
+	.fl-builder-content .fl-node-4g0hrmsv3jex .menu > li > a, .fl-builder-content .fl-node-4g0hrmsv3jex .menu > li > .fl-has-submenu-container > a, .fl-builder-content .fl-node-4g0hrmsv3jex .sub-menu > li > a, .fl-builder-content .fl-node-4g0hrmsv3jex .sub-menu > li > .fl-has-submenu-container > a {
+   color: #000;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+	
+}
+	.fl-node-4g0hrmsv3jex .fl-menu .menu, .fl-node-4g0hrmsv3jex .fl-menu .menu > li {
+    text-align: left;
+    margin: 10px 0;
+}
+	.fl-node-4g0hrmsv3jex > .fl-module-content {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.fl-col.fl-node-mysugixaowlp.fl-col-small.brand:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #fff;
+    transform-origin: bottom left;
+    transform: skew(0deg, 0deg);
+}
+}
+.fl-node-gez3nslyj74c > .fl-row-content-wrap {
+    background-color: #003B93;
+    z-index: 999;
+	position:relative;
+}
+.fl-post-grid-text {
+    position: relative;
+}
+button.fl-menu-mobile-toggle.hamburger {
+    position: absolute;
+    top: 33px;
+    right: 0px;
+}
+h2.fl-post-grid-title {
+    margin-top: 30px;
+		overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+.fl-post-grid-meta-terms {
+    position: absolute;
+    top: 15px;
+	overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+}
+.fl-post-grid-content {
+    height: 90px;
+}
+.fl-post-grid-terms a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* BOLG PAGE CSS EDIT */
+html, *, body{ margin:0px; padding:0px; }
+img.attachment-full.size-full.wp-post-image{
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    transition: all 1s ease;
+}
+img.attachment-full.size-full.wp-post-image:hover {
+    transform: scale(1.05);
+}
+h2.fl-post-grid-title{ line-height:25px; }
+body{ overflow-x:hidden;}
+@media(min-width:1200px){
+
+
+header
+.fl-row-content-wrap:before{     
+	content: " ";
+    position: absolute;
+    display: block;
+    width: 35%;
+    height: 100%;
+    top: 0;
+    left: -119px;
+    z-index: -1;
+    background: #fff;
+    transform-origin: bottom left;
+    transform: skew(-30deg, 0deg);  }
+.fl-col.fl-node-mysugixaowlp.fl-col-small.brand:before{  display:none; }
+div#ruigehond006_bar{ top: 70px; }
+#ruigehond006_bar{ height:7px; }
+#menu-header-menu{ float:right; }
+.fl-node-4g0hrmsv3jex > .fl-module-content{ margin-right:0px; 
+ margin-top:0px;
+}
+header
+.fl-row-content-wrap .fl-col-group { align-items: center;
+    display: flex; }
+header
+.fl-row-content-wrap #menu-header-menu li a{ font-weight:400; }
+header .fl-rich-text p{ line-height:normal; }
+.fl-node-ygzux60vdnb5.fl-module-heading .fl-heading{ font-weight: 500;
+    max-width: 1164px;
+    margin: 0 auto !important; }
+
+.fl-node-hiqf0wmckun8 > .fl-row-content-wrap{ max-width:1366px; margin-left:auto; margin-right:auto; }
+ p{ font-weight:400 !important;  }
+}
+span.fl-terms-label::before{
+	content:"";
+	width:15px;
+	height:2px;
+	background:#000;
+	position:absolute;
+	top:0;
+	left:-10px;
+	margin:10px;
+}
+.fl-post-grid-terms{
+	padding-left:25px
+}
+
+#menu-quicklink li a {
+    padding-bottom: .3rem;
+    margin:0 8px .5rem;
+		padding: 8px 0;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+#menu-quicklink li a::after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 50%;
+        position: absolute;
+        background:#ff8831;
+        transition: width .3s ease 0s,
+          left .3s ease 0s;
+        width: 0;}
+	#menu-quicklink a:hover:after {
+        width: 100%;
+        left: 0
+      }
+#menu-services li a {
+    padding-bottom: .3rem;
+    margin: 0 8px .5rem;
+		padding: 8px 0;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+#menu-services li a::after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 50%;
+        position: absolute;
+        background:#ff8831;
+        transition: width .3s ease 0s,
+          left .3s ease 0s;
+        width: 0;}
+	#menu-services a:hover:after {
+        width: 100%;
+        left: 0
+      }
+
+.yarpp-template-list ul li a:visited{
+	color:purple !important;
+}
+.yarpp-template-list ul li a:hover{
+	color:#007bff !important;
+}
+.fl-node-0e1gdcfrtvxw .fl-post-grid-post.fl-post-grid-post{
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
+
+/* .maxsocial span:nth-child(3) a svg{
+display:none;
+}
+.maxsocial span:nth-child(3) a span span.mb-icon::before{
+    content: "𝕏";
+    font-size:1.2em;
+    font-family:sans-serif;
+} */
+.fl-rich-text p .brand-name{position:relative;}
+.fl-rich-text p .brand-name::after{content:"Services"; position:absolute !important; top:-4px;left:143px; white-space:nowrap}		</style>
+		</head>
+	
+<template id="pNLPwTCWDLo7jWQ5tQD5"></template>
+<script type="bv_inline_delayed_js" bv_unique_id="PZrdSeRWm5TKRtYELR8O" defer="1" data-cfasync="" bv_inline_delayed="1" async="">window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J1FBHQ4K80');</script>
+<body class="post-template post-template-tpl-full-width post-template-tpl-full-width-php single single-post postid-1398 single-format-standard fl-builder dhf-header dhf-footer bhf-sticky-header dhf-template-beaver-builder-theme dhf-stylesheet-beaver-builder-theme-child fl-framework-base fl-preset-default fl-full-width fl-search-active" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+<a aria-label="Skip to content" class="fl-screen-reader-text" href="#fl-main-content">Skip to content</a>		
+		
+		
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><div class="fl-page">
+				<header id="masthead" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+				<p class="main-title bhf-hidden" itemprop="headline"><a href="../index.html" title="Top global IT service,consulting, and outsourcing company" rel="home">Top global IT service,consulting, and outsourcing company</a></p>
+				<div class="bhf-fixed-header"><div class="fl-builder-content fl-builder-content-32 fl-builder-template fl-builder-layout-template fl-builder-global-templates-locked" data-post-id="32" itemscope="itemscope" data-type="header" itemtype="http://schema.org/WPHeader"><div class="fl-row fl-row-full-width fl-row-bg-color fl-node-gez3nslyj74c" data-node="gez3nslyj74c">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-ya9fm0xg54kv" data-node="ya9fm0xg54kv">
+			<div class="fl-col fl-node-mysugixaowlp fl-col-small brand" data-node="mysugixaowlp">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-qw1li3y0u8b5" data-node="qw1li3y0u8b5">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-1741 size-full" src="data:image/png+xml;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAsCAMAAACt3E0dAAAC91BMVEUAAAB5mMcAOpMAO5MBO5Tg2txqjL8GP5YANJBAa64AK4vz7eq0x9+ht9fM2On/yqJOdrQRR5plf7n/wZMCO5P/jTn/hy4VS50aT54nWaT/mk89aaz/n1dbgLkjVKJHcbFqiL3/rXGgtdVYfrlpi7//xJkmVKK8zOPv6ucIQpcNRpkHP5b/iTIORJkfU6D/izX/kkH/lEQoWqQxYaj/lEUuXqcCOJIuXqcoWKQHP5f/snOAnclIcbFuj8JFcLGYsNP/s3toi7+cs9X/1rb/2rmZsdX/2buyxN6ht9f45dXT3eyFoMr/jDgeUqAMOpMbUJ//gSMRQ5geUqAaT6H/l0n/m0lZf7hKc7P/qGc+aq4ANJBggrv/qmptjsP/sngQRZovXadghLv/o1//rnEAKor/xJdehMH/yKAAMo+yvtOft9f/uIT/q2z/06P/tn86Zaz/w5X/t4HT3Or/1bX+38fq6On/tn+7xtn/gyf/iTMEPZX/jz0XTp4AKor/kD44Zqv/iTD/m1AoWaRAbK7/k0Jvk8McSpz/qFwZTZ7/q2wAMo//oVr/mEtSe7b/pVQAOpP/oVv/qWl+nMiNps58m8f/pWB0lMRYfrj/tX4AOZIAG4MRR5r/nlaHossrWaUSR5qJpM1PdrQZTJyHos3/t4DS3esAKYpkh73/5NFQd7UENpEAMY7/hSv/fgn/jz0AJYgALKT/hiwRSZsQRpn/mU3/izUxVaEVSpv/mlFEbrAANpAXS548d84eSJseYb6iutf/olz/u4n/xZpJgNBojMB4m8iDnsn/w5WJpc4QRpr/u4kAGYH/hy7/giX/nFPL1+kbTqB8mscAO5P/iDEANI8ANpEAPZQAOJL/hy8AK4sAMo4CPZQAMI0AJYgAOpIALoz/fyIAHYP/hSwAI4YCP5UAKYr/gST/fR7/hCr/exv/eRcAFoAAIIUAGoEAH4T/gygAEX3/eBX/dhH/bwQADHr/dA//cwwABHUAAHD/fhT/ZwAPSJr/ggAQ+Q6HAAAA0nRSTlMAICi8VQKA/FUWVwc0Ih0MCOeCP/no5+XUzLCqn5aOh4FYQT40GRcVDPjz8PDt3NnYysjEv6+moJd/eHNzcFpWTUs3NjEsJxoRERAN8+vp4+Pc0L26t5+fkZCOjImFgYB7eHBuZWFcTUtKSUhEQzIoKCYiHxwUEwX59/Xh4N3Pzsu8t7KyqqiloZ2Xl5SOi4aGgXxza2lmZmFbV1NSUE5OSkdDPjs0LSofHPz4+PPy8ezg3c7LuqurqaKcmpeQj359cGhlY15cW1hYWFhRUE0tKCcVj6byAAAGj0lEQVRYw7WVc/jbQBjH36Gzbdu2bdu2bdu2bds2b8ml6ZImbbrq187e/th72Tolz7xvn6dN7829n7sXd/DLsgzqW77nrRtpV9wss6FX/yzwD2XpU6bd9Iajhg9VH92757Tesz6y5sidN9mshfG3wF8rY5k5DRP6VLfH437kdDLvVmQ4H7k9qur2efZOmNs5I/yx4s8tMMSnqo/QqakQpHr81rwtusf+E+9NhvufuL33fiqn6vflOHJ5IPyO+rfK/eSp+v2CrVan1+pWrU7nPbfKAvZ5a17f0yHJ0kaHX1T3ZOrX3tHtI7fP53Y7PeqjHbsSJkqYqE6iGkO9XqvXrXrwo8fQ6/ElmhEffkHXRr3wOEO+veqTJ15njTwNUsxpl7ZHhUoDBsWObsHCil51UMY+vXqkbdciRYM8OaxO/1M3bs73JG/HwfBjdczzwvcptlgl3hp5pxZb0ecnOYzdt0f7qQUSWtUn6pNniVr9qKw6536pu7d6/H419+T2G36nPPqmbTE2h/vJW3+TAWCu8gf9Klu6x+/Jk2JJJfgDxY5/poH32bMJZpMtTV74rLj2F94CxXrBXyhLmRT3niWrYIhOnZdWq9vvH9s+I/y94icbM73CN9QULz2P/L4xZ/vDP1L0c626V/0S/Tov/f6EM8rDP1WlAZZPT8WePnt6YGFs+E+KXuDtm8k94b9py5v3xarC/1PHnbO6djpVv1DJyt9bMsdLEylNPDwlY8VLkyZete+sMeJFYorXDb5Tp5aRIrVMD1AyTaRIzWPCkoYVzu8JPBClsMCC797c9NDhcLxOCbDmeTDMcfc768zXDqZX9b4HjMTRx9OgX9jjh4/lytATTjy2UUIItT2fCd8oPEEpCaJDOpHnXOG+89P4IWESDYAIOMoVhflBSh2N8X/LV4QS2wOJUu5xaSOABkvqgPvfA8Z/BNhyDjYBiG1gtEbs2hoMtKTgQJLC2ThKAyOMACLXhhhmgHqibsatmQAelAKeJ8ow7INS6N+WGHOm8ISXYhoBxBGrmmwEWOJKulXg05sA5LLrA5QGWYQ6UEqkuABVXDbCK+WMABqMVM1kB+FcHHonxB4obQIILEr5kNgdXQF3IOF72mnYKoo2RUxvsgOpdulhRkAGHr3fR7PW1gRga5qEI2J2dlLEFHlCubArkKpZqlQnY5kAqC1pTsEA6PpQIELNrHaipDIBkFxZCQk2Aqb8j12ESoH5IbsBQAQMhgGwSENDwbgCeVDQDCDYMXnpgCmWIlPikh5HMgcw2U0AqWViF5ru48mDpGYAnCImtnzq+cci7oEPpjYHMJkAjgaIICzGSEtxLUYAk5Y/NNItoLlYHi6aAQSemgLGiaxC80nEdr+yeYhsWauEhirWcrA8hMUwAUS+L5gCkiiEjxxuHH5rG40A6mJbuPRlsC4SXA9zWgwALld+iZoA4mSzESmbJTlm4kFZI0DIl91OHo4HVPrkyZMfKl61Fsv08+IGAF93sUswAcTE0lLiQqMAIUoJI0BJnVQiStborJNlWQ6GwcYgjw2eywAQtofLp5gA0sk8kUdDCQ1npTYC5E7N0fJwJf5dypY5EmBiEL3wlQ0ADeaFUSNgpYZZrN22PoflWNgIENdmkAkJa/QJYKvL2oEjvFjOAJChX8CkDy48sBMX95BDtljQJESl4J2NiNksGCI7xZbAcQEBD2Kw/EWNGjVT9RCAjwo1lRCgeibdhGqrkZBkvd4HZ4qKCgGkNpDvAd4H2MtlRTvhbcVjpsRfTmRnUdHIkSNzRT4DesPEsBCgiIgmPSJNH7BDiuPZ2a/fIusSRI68LW6c0GHXGuY9JDQM79voCTRKBU0UCXGF6V3fjOd5aUoIYO8NxR0hQCEBTYcBlRwBXJLWhe6jswSsobqgiUvwGVAUbgfwnGKhKf0cC93O2wmVHXqnzWYvfN4BvQOxJO4TYBpFE2NDfQWXnhq2EoHwSkUGYMWS8ysA5JIxgyypCxyaZCeCou3uBiEAdzwEIOEBkmqfbsZjLjRNAlRiUb94Nws8sStlGYAiILsOoHqIoHlQjxGq3KTsPOFrFckMupqhF5kFehOhmHdcXskg4biYLERYNTIrmoGChIASkPm+jdAHrNNW8QiIzAD7OQTgJbFewhjVBF39VkVby9zr2hwtYsTrGVjNRIwSMUq0anidRosYJUoWdo2haRkzZYkWBZ9igmU1mq6yEGWKGDFilNUWlm40ReuND8tx+vIPD9G2cdbhnPkAAAAASUVORK5CYII=" alt="Logo" itemprop="image" height="44" width="96" title="logo"  />
+					</div>
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-ng5kh9rld3y6" data-node="ng5kh9rld3y6">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><span data-teams="true"><span class="ui-provider dy tb sh tc td te tf tg th ti tj tk tl tm tn to tp tq tr ts tt tu tv tw tx ty tz ua ub uc ud ue uf ug uh" dir="ltr">Unlocking Potential Delivering Result</span></span></p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-etjfglqis0bu" data-node="etjfglqis0bu">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-menu fl-node-4g0hrmsv3jex header-menu" data-node="4g0hrmsv3jex">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-menu fl-menu-responsive-toggle-mobile">
+	<button class="fl-menu-mobile-toggle hamburger" aria-label="Menu"><span class="fl-menu-icon svg-container"><svg version="1.1" class="hamburger-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+<rect class="fl-hamburger-menu-top" width="512" height="102"/>
+<rect class="fl-hamburger-menu-middle" y="205" width="512" height="102"/>
+<rect class="fl-hamburger-menu-bottom" y="410" width="512" height="102"/>
+</svg>
+</span></button>	<div class="fl-clear"></div>
+	<nav aria-label="Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement"><ul id="menu-header-menu" class="menu fl-menu-horizontal fl-toggle-none"><li id="menu-item-62" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../index.html">Home</a></li><li id="menu-item-63" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children fl-has-submenu"><div class="fl-has-submenu-container"><a href="#">About SNAK</a><span class="fl-menu-toggle"></span></div><ul class="sub-menu">	<li id="menu-item-146" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../why-snak.html">Why Snak</a></li>	<li id="menu-item-147" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../our-customers.html">Our Customer</a></li>	<li id="menu-item-148" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../our-partner.html">Our Partners</a></li>	<li id="menu-item-325" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../our-team.html">Our Team</a></li>	<li id="menu-item-326" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../award-certification.html">Awards &#038; Certificates</a></li>	<li id="menu-item-327" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../career-culture.html">Careers and Culture</a></li>	<li id="menu-item-328" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../corporate-social-responsibility.html">Corporate Social Responsibility</a></li></ul></li><li id="menu-item-64" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children fl-has-submenu"><div class="fl-has-submenu-container"><a href="#">What We Do</a><span class="fl-menu-toggle"></span></div><ul class="sub-menu">	<li id="menu-item-329" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../data-analytics-solution.html">Data Analytics Solutions</a></li>	<li id="menu-item-1379" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../azure-service-platform.html">Azure Service Platform</a></li>	<li id="menu-item-1357" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../ms-power-platform.html">MS Power Platform</a></li>	<li id="menu-item-1993" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../sap-solutions.html">SAP Solutions</a></li>	<li id="menu-item-330" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../artificial-intelligence.html">Artificial Intelligence</a></li>	<li id="menu-item-331" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../salesforce-solutions.html">Salesforce Solutions</a></li>	<li id="menu-item-333" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../product-development.html">Product Development</a></li>	<li id="menu-item-334" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../consulting.html">Consulting</a></li></ul></li><li id="menu-item-65" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../industry-expertise.html">Industry Expertise</a></li><li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children fl-has-submenu"><div class="fl-has-submenu-container"><a href="#">Resources</a><span class="fl-menu-toggle"></span></div><ul class="sub-menu">	<li id="menu-item-335" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home"><a href="../index.html">Blog</a></li>	<li id="menu-item-336" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../case-studies.html">Case Studies</a></li>	<li id="menu-item-337" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../infography.html">Infographics</a></li></ul></li><li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children fl-has-submenu"><div class="fl-has-submenu-container"><a href="#">Get In Touch</a><span class="fl-menu-toggle"></span></div><ul class="sub-menu">	<li id="menu-item-338" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../our-locations.html">Our Location</a></li>	<li id="menu-item-339" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../contact-us.html">Contact us</a></li></ul></li></ul></nav></div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</div></div><div class="bhf-ffixed-header-fixer" style="display:none;"></div>			</header>
+			<div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
+
+		
+<div class="fl-content-full container">
+	<div class="row">
+		<div class="fl-content col-md-12">
+			<article class="fl-post post-1398 post type-post status-publish format-standard has-post-thumbnail hentry category-power-bi-integration category-sap-business-one tag-bi-solutions tag-business-intelligence-bi-tools tag-power-bi-integration tag-sap-business-one tag-scalability-and-flexibility tag-seamless-data-connectivity" id="fl-post-1398" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+
+			<div class="fl-post-content clearfix" itemprop="text">
+		<div class="fl-builder-content fl-builder-content-1398 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="1398"><div class="fl-row fl-row-full-width fl-row-bg-none fl-node-jvg62c43bple" data-node="jvg62c43bple">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-dzew25acsl46" data-node="dzew25acsl46">
+			<div class="fl-col fl-node-l8gnrqm0ueah" data-node="l8gnrqm0ueah">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-q98jm2xncsd4" data-node="q98jm2xncsd4">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><a class="text-muted" href="../index.html"><i class="fa fa-angle-left mr-2"></i> <span class="backbtn">Back to Blogs </span></a></p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-ksfd7rxuay4e" data-node="ksfd7rxuay4e">
+			<div class="fl-col fl-node-l4fmsix95h6w" data-node="l4fmsix95h6w">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-r17hkyeo0qdp" data-node="r17hkyeo0qdp">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><span class="publish-date">March 20, 2024 </span>  | <span class="brand-name">SNAK Consultancy </span></p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-uytrxjdc6opg fl-col-small" data-node="uytrxjdc6opg">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-0wovhegjf6pb sharesbtn" data-node="0wovhegjf6pb">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><em>Share on</em> :     <div class='maxsocial maxsocial-1 horizontal' data-collection='1'> 					   <span class='mb-item item-0'> 								<a href='https://www.facebook.com/sharer.php?u=https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/' class='mb-social' data-popup="{&quot;width&quot;:550,&quot;height&quot;:320}" rel="noopener nofollow"> 						<span class='mb-icon-wrapper'> 											 <span class='mb-icon'><svg class="svg-mbp-fa" width="15" height="15" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></span> </span><span class="mb-label">Share</span></a></span><span class='mb-item item-1'> 								<a href='https://www.linkedin.com/shareArticle?mini=true&amp;url=https://snakconsultancy.com/blog/power-bi-integration-with-sap-business/' class='mb-social' data-popup="{&quot;width&quot;:700,&quot;height&quot;:500}" rel="noopener nofollow"> 						<span class='mb-icon-wrapper'> 											 <span class='mb-icon'><svg class="svg-mbp-fa" width="15" height="15" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></span> </span><span class="mb-label">Share</span></a></span><span class='mb-item item-2'> 								<a href='https://twitter.com/intent/tweet/?url=https%3A%2F%2Fsnakconsultancy.com%2Fblog%2Fpower-bi-integration-with-sap-business%2F&amp;text=Streamlining+Business+Intelligence%3A+Power+BI+Integration+with+SAP+Business+One' class='mb-social' data-popup="{&quot;width&quot;:550,&quot;height&quot;:320}" rel="noopener nofollow"> 						<span class='mb-icon-wrapper'> 											 <span class='mb-icon'><svg class="svg-mbp-fa" width="15" height="15" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></span> </span><span class="mb-label">Tweet</span></a></span></div></p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-uksyep3argxl" data-node="uksyep3argxl">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-j74revmw5fz6" data-node="j74revmw5fz6">
+			<div class="fl-col fl-node-1w2fianm9kqy" data-node="1w2fianm9kqy">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-heading fl-node-2cvu3td8f7a4" data-node="2cvu3td8f7a4">
+	<div class="fl-module-content fl-node-content">
+		<h1 class="fl-heading">
+		<span class="fl-heading-text">Streamlining Business Intelligence: Power BI Integration with SAP Business One</span>
+	</h1>
+	</div>
+</div>
+<div class="fl-module fl-module-photo fl-node-8ge79t0p4rw2" data-node="8ge79t0p4rw2">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<img bv-data-src="https://snakconsultancy.com/blog/wp-content/uploads/al_opt_content/IMAGE/snakconsultancy.com/blog/wp-content/uploads/2024/03/powerBI_SAPone.jpg?bv_host=snakconsultancy.com&amp;bv-resized-infos=bv_resized_mobile%3A480%2A248%3Bbv_resized_ipad%3A820%2A423%3Bbv_resized_desktop%3A1085%2A560"  decoding="async" loading="lazy" class="fl-photo-img wp-image-1405 size-full bv-tag-attr-replace bv-lazyload-tag-img"   src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201085%20560'%3E%3C/svg%3E" alt="Power BI Integration with SAP" itemprop="image" height="560" width="1085" title="Power BI Integration with SAP" bv-data-srcset="https://snakconsultancy.com/blog/wp-content/uploads/al_opt_content/IMAGE/snakconsultancy.com/blog/wp-content/uploads/2024/03/powerBI_SAPone.jpg?bv_host=snakconsultancy.com&bv-resized-infos=bv_resized_mobile%3A480%2A248%3Bbv_resized_ipad%3A820%2A423%3Bbv_resized_desktop%3A1085%2A560 1085w, https://snakconsultancy.com/blog/wp-content/uploads/al_opt_content/IMAGE/snakconsultancy.com/blog/wp-content/uploads/2024/03/powerBI_SAPone-300x155.jpg?bv_host=snakconsultancy.com&bv-resized-infos=bv_resized_mobile%3A300%2A155%3Bbv_resized_ipad%3A300%2A155%3Bbv_resized_desktop%3A300%2A155 300w, https://snakconsultancy.com/blog/wp-content/uploads/al_opt_content/IMAGE/snakconsultancy.com/blog/wp-content/uploads/2024/03/powerBI_SAPone-1024x529.jpg?bv_host=snakconsultancy.com&bv-resized-infos=bv_resized_mobile%3A480%2A248%3Bbv_resized_ipad%3A820%2A424%3Bbv_resized_desktop%3A1024%2A529 1024w, https://snakconsultancy.com/blog/wp-content/uploads/al_opt_content/IMAGE/snakconsultancy.com/blog/wp-content/uploads/2024/03/powerBI_SAPone-768x396.jpg?bv_host=snakconsultancy.com&bv-resized-infos=bv_resized_mobile%3A480%2A248%3Bbv_resized_ipad%3A768%2A396%3Bbv_resized_desktop%3A768%2A396 768w"  sizes="(max-width: 1085px) 100vw, 1085px" />
+					</div>
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-nbe1a6wq7ruv" data-node="nbe1a6wq7ruv">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>In today's data-driven business landscape, harnessing the power of business intelligence (BI) tools is essential for making informed decisions and gaining a competitive edge. Among the plethora of BI solutions available, Power BI stands out for its user-friendly interface, robust analytics capabilities, and seamless integration options. When combined with SAP Business One, a leading ERP solution for small and medium-sized enterprises (SMEs), the result is a powerful synergy that empowers organizations to unlock valuable insights and drive growth.</p>
+<p>Here are some key insights into how Power BI integration with SAP Business One can revolutionize your business:</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-9ak3zdb2pnjr" data-node="9ak3zdb2pnjr">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-0r9hcjo5v3in" data-node="0r9hcjo5v3in">
+			<div class="fl-col fl-node-uv9ycmrbn8kq" data-node="uv9ycmrbn8kq">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-vqx0a2gkmlei" data-node="vqx0a2gkmlei">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h3><strong> 1. Unified Data Visualization:</strong></h3>
+<p>By integrating Power BI with SAP Business One, businesses can consolidate data from multiple sources into a single, unified dashboard. This allows stakeholders to gain a comprehensive view of key performance indicators (KPIs), financial metrics, sales trends, inventory levels, and more, all in real-time. With interactive visualizations and customizable reports, decision-makers can easily analyze complex data sets and identify actionable insights to drive business strategy.</p>
+<h3> <strong>2. Seamless Data Connectivity: </strong></h3>
+<p>Power BI offers seamless connectivity to SAP Business One databases, enabling users to extract, transform, and load (ETL) data effortlessly. Whether it's transactional data, customer information, inventory records, or sales forecasts, Power BI can pull data directly from SAP Business One with minimal configuration. This ensures data accuracy, eliminates manual data entry errors, and accelerates the reporting process, allowing teams to focus on analysis rather than data manipulation.</p>
+<h3> <strong>3. Advanced Analytics Capabilities:</strong></h3>
+<p>With Power BI's advanced analytics features, organizations can go beyond basic reporting to uncover hidden patterns, trends, and correlations within their SAP Business One data. Machine learning algorithms, predictive analytics, and natural language processing (NLP) empower users to forecast future outcomes, identify anomalies, and gain deeper insights into customer behavior and market dynamics. This predictive intelligence enables proactive decision-making and strategic planning to drive business growth and innovation.</p>
+<h4><strong> 4. Scalability and Flexibility: </strong></h4>
+<p>Power BI integration with SAP Business One offers scalability and flexibility to adapt to evolving business needs. Whether your organization is expanding geographically, entering new markets, or launching new product lines, Power BI can scale seamlessly to accommodate growing data volumes and complexity. Moreover, Power BI's cloud-based architecture enables users to access insights anytime, anywhere, from any device, ensuring agility and collaboration across the organization.</p>
+<p>Enhanced Business Performance: By leveraging Power BI's rich visualization capabilities and SAP Business One's comprehensive ERP functionalities, businesses can enhance operational efficiency, optimize resource allocation, and improve overall business performance. From inventory management and supply chain optimization to financial forecasting and customer relationship management (CRM), Power BI integration with SAP Business One empowers organizations to make data-driven decisions that drive profitability, productivity, and customer satisfaction.</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-color fl-node-jt5a4myh096c" data-node="jt5a4myh096c">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-tgsd65a3ob20" data-node="tgsd65a3ob20">
+			<div class="fl-col fl-node-5zg9vc3do7be" data-node="5zg9vc3do7be">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-qb61yj0vl5ei" data-node="qb61yj0vl5ei">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h3 class="blog-heading"><strong>Questionnaire</strong></h3>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-5msvru8aidbx" data-node="5msvru8aidbx">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h5><strong>Q1: What are the key benefits of integrating Power BI with SAP Business One? </strong></h5>
+<p>A1: Integrating Power Business Intelligence with SAP Business One offers unified data visualization, seamless data connectivity, advanced analytics capabilities, scalability, and flexibility. This integration enables organizations to gain comprehensive insights, streamline operations, and drive business growth.</p>
+<h5><strong>Q2: How does Power Business intelligence integration with SAP Business One enhance decision-making? </strong></h5>
+<p>A2: Power Business intelligence integration with SAP Business One empowers users to access real-time data, advanced analytics, and interactive visualizations, enabling informed decision-making based on actionable insights and trends.</p>
+<h5><strong>Q3: What role does scalability play in Power BI integration with SAP Business One? </strong></h5>
+<p>A3: Scalability ensures that organizations can adapt to changing business needs, accommodate growing data volumes, and scale their analytics capabilities as their business expands.</p>
+<h5><strong>Q4: How does Power BI integration with SAP Business One impact business performance? </strong></h5>
+<p>A4: The integration enhances operational efficiency, optimizes resource allocation, and improves overall business performance by enabling data-driven decision-making and process optimization.</p>
+<h5><strong>Q5: What are the next steps for organizations interested in Power Business intelligence integration with SAP Business One? </strong></h5>
+<p>A5: Organizations can explore implementation options, assess their data requirements, and develop a roadmap for integration to unlock the full potential of Power BI and SAP Business One for their business needs.</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-fmz9qjylth1r" data-node="fmz9qjylth1r">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-bcgdlx0i6fp3" data-node="bcgdlx0i6fp3">
+			<div class="fl-col fl-node-jyn3ocrib1g9" data-node="jyn3ocrib1g9">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-g4xdk8c7nuh5" data-node="g4xdk8c7nuh5">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h4><strong>Conclusion :</strong></h4>
+<p>The integration of Power BI with SAP Business One offers a compelling solution for SMEs seeking to harness the power of data analytics to drive business success. By combining Power BI's intuitive analytics platform with SAP Business One's robust ERP capabilities, organizations can gain actionable insights, optimize processes, and stay ahead of the competition in today's dynamic business environment.</p>
+<p>Stay tuned for our next blog post, where we'll delve deeper into the implementation process and best practices for Power Business intelligence integration with SAP Business One.</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-3kdo4xu8iz9q" data-node="3kdo4xu8iz9q">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-k8jlghvbxz13" data-node="k8jlghvbxz13">
+			<div class="fl-col fl-node-cbkjmt3uls42" data-node="cbkjmt3uls42">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-gtp6evqyjf07" data-node="gtp6evqyjf07">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><div class='yarpp yarpp-related yarpp-related-shortcode yarpp-related-none yarpp-template-list'>
+<p>No related posts.</p>
+</div>
+</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-roqtswdci6nz" data-node="roqtswdci6nz">
+			<div class="fl-col fl-node-0oefshxudmb9" data-node="0oefshxudmb9">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-m156x4i9eg3h" data-node="m156x4i9eg3h">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><a class="text-muted" href="../index.html"><i class="fa fa-angle-left mr-2"></i> <span class="backbtn">Back to Blogs </span></a></p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-12o3sct8hk5i" data-node="12o3sct8hk5i">
+			<div class="fl-col fl-node-1w0gzjxlsc6t" data-node="1w0gzjxlsc6t">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-dpzkwnuo9cl4" data-node="dpzkwnuo9cl4">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><span class="publish-date">March 20, 2024 </span>  | <span class="brand-name">SNAK Consultancy </span></p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</div>	</div>
+	
+</article>
+
+		</div>
+	</div>
+</div>
+
+
+	</div>
+				<footer itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+				<div class='footer-width-fixer'><div class="fl-builder-content fl-builder-content-123 fl-builder-template fl-builder-layout-template fl-builder-global-templates-locked" data-post-id="123" itemscope="itemscope" data-type="footer" itemtype="http://schema.org/WPFooter"><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-lr1kv2gpjiu9 fl-row-bg-overlay fl-row-bg-fixed" data-node="lr1kv2gpjiu9">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-lncid08qxjv5" data-node="lncid08qxjv5">
+			<div class="fl-col fl-node-0ilr4ksbzqpj" data-node="0ilr4ksbzqpj">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-msdw09a5irjy" data-node="msdw09a5irjy">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h3 class="section-heading"><strong>Want to understand how SNAK Consultancy Services can help your Business?</strong></h3>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-button fl-node-yiqplr18gh6j" data-node="yiqplr18gh6j">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-button-wrap fl-button-width-custom fl-button-center">
+			<a href="../../contact-us.html" target="_self" class="fl-button" role="button">
+							<span class="fl-button-text">Contact Us</span>
+					</a>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-ket402dlxjpa" data-node="ket402dlxjpa">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-ht3ql8x0eksa" data-node="ht3ql8x0eksa">
+			<div class="fl-col fl-node-a4z3vbke7g60 fl-col-small" data-node="a4z3vbke7g60">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-l7qkjuiacp6h" data-node="l7qkjuiacp6h">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img bv-data-src="https://snakconsultancy.com/blog/wp-content/uploads/al_opt_content/IMAGE/snakconsultancy.com/blog/wp-content/uploads/2023/05/logo-header.png?bv_host=snakconsultancy.com&amp;bv-resized-infos=bv_resized_mobile%3A96%2A44%3Bbv_resized_ipad%3A96%2A44%3Bbv_resized_desktop%3A96%2A44"  decoding="async" loading="lazy" class="fl-photo-img wp-image-1744 size-full bv-tag-attr-replace bv-lazyload-tag-img"   src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2096%2044'%3E%3C/svg%3E" alt="logo" itemprop="image" height="44" width="96" title="logo-header"  />
+					</div>
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-ly2xo03tdnuk" data-node="ly2xo03tdnuk">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>Learn How Our IT Solutions Can Help You</p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-3yf1ajhbr6uk" data-node="3yf1ajhbr6uk">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>SNAK focuses on providing business-driven and scalable IT solutions to help you run your business more efficiently. Contact us to drive your business forward.</p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-html fl-node-shkbmrxujc4p" data-node="shkbmrxujc4p">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<style>
+    .twitter {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 2px;
+    background-color: #f2f2f2;
+    border-color: #ededed;
+    color: #fff;
+}
+.social-buttons li a .twitter svg {
+    width: 12px;
+}
+</style>
+<ul class="social-buttons">        
+                <li>
+                  <a href="https://www.facebook.com/snakindiaconsultancy" target="_blank" title="Facebook" class="social-margin"> 
+                    <div class="social-icon facebook">
+                      <i class="fa fa-facebook" aria-hidden="true"></i> 
+                    </div>
+                  </a>
+                </li>
+                <li class="">
+                <a href="https://www.linkedin.com/company/snak-india-consultancy/" class="social-margin" target="_blank" title="Linkedin">
+                  <div class="social-icon linkedin">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </div> 
+                </a>
+                </li>
+              <li class="">
+                <a href="https://x.com/SNAK_INDIA" target="_blank" title="x" class="social-margin">
+                  <div class="social-icon twitter">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">                     <path                           d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                                            </svg>
+                                        </div>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.youtube.com/channel/UCXevjNRpFh4QNaJHGSTtxyA" target="_blank" title="Youtube" class="social-margin">
+                  <div class="social-icon youtube">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                  </div> 
+                </a>
+                </li>
+              </ul></div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-quft2e84ba0w fl-col-small" data-node="quft2e84ba0w">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-heading fl-node-q7adrpfx24ku" data-node="q7adrpfx24ku">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Quick Links</span>
+	</h2>
+	</div>
+</div>
+<div class="fl-module fl-module-menu fl-node-bvyenp2a9lr3" data-node="bvyenp2a9lr3">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-menu">
+		<div class="fl-clear"></div>
+	<nav aria-label="Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement"><ul id="menu-quicklink" class="menu fl-menu-vertical fl-toggle-none"><li id="menu-item-222" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../index-2.html">Home</a></li><li id="menu-item-223" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home"><a href="../index.html">Blogs</a></li><li id="menu-item-224" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../case-studies.html">Case Studies</a></li><li id="menu-item-225" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../infography.html">Infographics</a></li><li id="menu-item-226" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../award-certification.html">Awards &#038; Certifications</a></li><li id="menu-item-227" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../corporate-social-responsibility.html">CSR</a></li><li id="menu-item-228" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../industry-expertise.html">Industriy Expertise</a></li><li id="menu-item-230" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../contact-us.html">Contact Us</a></li></ul></nav></div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-n0f97cbtgzxq fl-col-small" data-node="n0f97cbtgzxq">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-heading fl-node-btnc65qz98du" data-node="btnc65qz98du">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Services</span>
+	</h2>
+	</div>
+</div>
+<div class="fl-module fl-module-menu fl-node-sxm3i046dwzl" data-node="sxm3i046dwzl">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-menu">
+		<div class="fl-clear"></div>
+	<nav aria-label="Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement"><ul id="menu-services" class="menu fl-menu-vertical fl-toggle-none"><li id="menu-item-231" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../data-analytics-solution.html">Data Analytics Solutions</a></li><li id="menu-item-1380" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../azure-service-platform.html">Azure Service Platform</a></li><li id="menu-item-1358" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../ms-power-platform.html">MS Power Platform</a></li><li id="menu-item-1994" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../sap-solutions.html">SAP Solutions</a></li><li id="menu-item-232" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../artificial-intelligence.html">Artificial Intelligence</a></li><li id="menu-item-233" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../salesforce-solutions.html">Salesforce Solutions</a></li><li id="menu-item-235" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../product-development.html">Product-Development</a></li><li id="menu-item-236" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../../consulting.html">Consulting</a></li></ul></nav></div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-esjv9xag58zr fl-col-small" data-node="esjv9xag58zr">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-heading fl-node-a37t8xwovezu" data-node="a37t8xwovezu">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">CONTACT US</span>
+	</h2>
+	</div>
+</div>
+<div class="fl-module fl-module-html fl-node-qkied4b1fhjn" data-node="qkied4b1fhjn">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	           
+            
+            <div class="mapp">
+              <img bv-data-src="https://snakconsultancy.com/blog/wp-content/uploads/al_opt_content/IMAGE/snakconsultancy.com/images/map-2.png?bv_host=snakconsultancy.com&amp;bv-resized-infos=bv_resized_mobile%3A480%2A330%3Bbv_resized_ipad%3A820%2A564%3Bbv_resized_desktop%3A820%2A564"  decoding="async" class="img-fluid bv-tag-attr-replace bv-lazyload-tag-img"   src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Footer Map">
+              <div class="plus-dot usa">
+                <a href="contact-us.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-dot-circle-o pulse" title="USA (Wyoming)"></i>
+                </a>  
+                <div class="dropdown-menu address-info foo-us_mobile" style="will-change: transform;">
+                  <div class="card-info">
+                    <div class="media">
+                      <img bv-data-src="https://snakconsultancy.com/blog/wp-content/uploads/al_opt_content/IMAGE/snakconsultancy.com/images/usa-los.jpg?bv_host=snakconsultancy.com&amp;bv-resized-infos=bv_resized_mobile%3A457%2A400%3Bbv_resized_ipad%3A457%2A400%3Bbv_resized_desktop%3A457%2A400"  decoding="async" class="mr-3 bv-tag-attr-replace bv-lazyload-tag-img"   src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="United State of America">
+                      <div class="media-body">
+                        <h6 class="mt-0" style="margin:0">United State of America</h6>
+                        <a href="https://www.google.com/maps/place/30+N+Gould+St+ste+r,+Sheridan,+WY+82801,+USA/@44.7977689,-106.9570921,17z/data=!3m1!4b1!4m5!3m4!1s0x5335fabc2a6d206b:0xd7c55bd374d4b750!8m2!3d44.7977689!4d-106.9549034" target="_blank">
+                          <img bv-data-src="https://snakconsultancy.com/svg/map view.svg"  decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="vew-map bv-tag-attr-replace bv-lazyload-tag-img"   title="View Map Location" alt="View Location">
+                        </a>
+                        SNAK Consultancy Services LLC<br>
+                        30 N Gould St Ste R, Sheridan, WY 82801
+                        
+                        <div class="email"><i class="fa fa-envelope mr-1" style="margin-right:8px"></i>info@snakconsultancy.com</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="plus-dot netherland">
+                <a href="contact-us.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-dot-circle-o pulse" title="Netherland(Amsterdam)"></i>
+                </a>
+                <div class="dropdown-menu address-info foo-nl_mobile" style="will-change: transform;">
+                  <div class="card-info">
+                    <div class="media">
+                      <img bv-data-src="https://snakconsultancy.com/blog/wp-content/uploads/al_opt_content/IMAGE/snakconsultancy.com/images/netherland.jpg?bv_host=snakconsultancy.com&amp;bv-resized-infos=bv_resized_mobile%3A225%2A225%3Bbv_resized_ipad%3A225%2A225%3Bbv_resized_desktop%3A225%2A225"  decoding="async" class="mr-3 bv-tag-attr-replace bv-lazyload-tag-img"   src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Netherland">
+                      <div class="media-body">
+                        <h6 class="mt-0" style="margin:0">Netherland</h6>
+                        <a href="https://maps.google.com/maps?ll=52.334194,4.932082&amp;z=14&amp;t=m&amp;hl=en&amp;gl=IN&amp;mapclient=embed&amp;q=Joop%20Geesinkweg%20501%201096%20AX%20Amsterdam%20Netherlands" target="_blank">
+                          <img bv-data-src="https://snakconsultancy.com/svg/map view.svg"  decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="vew-map bv-tag-attr-replace bv-lazyload-tag-img"   title="View Map Location" alt="View Location">
+                        </a>
+                        Joop Geesinkweg 501, 1114 AB Amsterdam Netherlands
+                        
+                        <div class="email"><i class="fa fa-envelope mr-1" style="margin-right:8px"></i>info@snakconsultancy.com</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="plus-dot delhi">
+                <a href="contact-us.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-dot-circle-o pulse" title="India(Gurugram)"></i>
+                </a>
+                <div class="dropdown-menu address-info foo-dl_mobile" style="will-change: transform;">
+                  <div class="card-info">
+                    <div class="media">
+                      <img bv-data-src="https://snakconsultancy.com/blog/wp-content/uploads/al_opt_content/IMAGE/snakconsultancy.com/images/global-logic.jpg?bv_host=snakconsultancy.com&amp;bv-resized-infos=bv_resized_mobile%3A408%2A544%3Bbv_resized_ipad%3A408%2A544%3Bbv_resized_desktop%3A408%2A544"  decoding="async" class="mr-3 bv-tag-attr-replace bv-lazyload-tag-img"   src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="India(Gurugram)">
+                      <div class="media-body" style="line-height:normal">
+                        <h6 class="mt-0" style="margin:0">India(Gurugram)</h6>
+                        <a href="https://www.google.com/maps/place/alt.f+Global+Business+Park+-+Coworking+Space+In+Gurgaon/@28.4799186,77.0996864,17z/data=!3m2!4b1!5s0x390ce02f62398e15:0xc4f7b137f0c983a8!4m6!3m5!1s0x390d198edaf7581f:0x4940e7973b362914!8m2!3d28.4799139!4d77.1022613!16s%2Fg%2F11t4h15vsw?entry=ttu&amp;g_ep=EgoyMDI2MDIwMy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D%20hl=en" target="_blank">
+                          <img bv-data-src="https://snakconsultancy.com/svg/map view.svg"  decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="vew-map bv-tag-attr-replace bv-lazyload-tag-img"   title="View Map Location" alt="View Location">
+                        </a>
+701-708, 7th Floor, Tower D, Global Business Park MG Road, Sikanderpur, Sector - 26<br> Gurugram, Haryana - 122002
+                        <div class="email"><i class="fa fa-envelope mr-1" style="margin-right:8px"></i>info@snakconsultancy.com</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<div class="plus-dot delhi" style="position:relative;top: -105px;right: -256px;">
+                <a href="contact-us.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-dot-circle-o pulse" style="color:orange;font-size: 9px;" title="India(Delhi)"></i>
+                </a>
+                <div class="dropdown-menu address-info foo-dl_mobile" style="will-change: transform;">
+                  <div class="card-info">
+                    <div class="media">
+                      <img bv-data-src="https://snakconsultancy.com/images/ndm1.jpg"  decoding="async" class="mr-3 bv-tag-attr-replace bv-lazyload-tag-img"   src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="India(Delhi)">
+                      <div class="media-body" style="line-height:normal">
+                        <h6 class="mt-0" style="margin:0">India(Delhi)</h6>
+                        <a href="https://www.google.com/maps/place/HB+Twin+Tower/@28.692007,77.1485754,17z/data=!3m1!5s0x390d023495cccfbb:0x4a14f2e49b812815!4m6!3m5!1s0x390d03d71af4f6c9:0x41e5376ad290680d!8m2!3d28.6932847!4d77.1517999!16s%2Fg%2F11fls1htyh?entry=ttu&amp;g_ep=EgoyMDI2MDIwMy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D" target="_blank">
+                          <img bv-data-src="https://snakconsultancy.com/svg/map view.svg"  decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="vew-map bv-tag-attr-replace bv-lazyload-tag-img"   title="View Map Location" alt="View Location">
+                        </a>
+5th Floor, HB Twin Tower, Plot No. A 2, 3 &amp; 4, Netaji Subhash Place,<br>
+                        Wazirpur, New Delhi - 110034
+                        <div class="email"><i class="fa fa-envelope mr-1" style="margin-right:8px"></i>info@snakconsultancy.com</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            
+            
+             
+         </div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-0f96kz8d2ni7" data-node="0f96kz8d2ni7">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-zr38wu09jklo" data-node="zr38wu09jklo">
+			<div class="fl-col fl-node-fp8kult0wb7r fl-col-small" data-node="fp8kult0wb7r">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-0o71bijqark6" data-node="0o71bijqark6">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>Copyright 2026 SNAK Consultancy. All rights reserved</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-8kspaox1vhlj fl-col-small" data-node="8kspaox1vhlj">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-t4sgwhvma86y" data-node="t4sgwhvma86y">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><a href="../../sitemap.html">Sitemap  </a><span class="ml-2 pr-2">|  </span><a href="../../privacy-policy.html">Privacy Policy</a></p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</div></div>			</footer>
+			</div>
+<style type='text/css'>.mb-item.item-0{display:inline-block;justify-content:center;align-items:center;box-sizing:border-box;position:relative;line-height:inherit;text-align:center;float:left;margin-right:10px}.mb-item.item-0 .mb-social{display:flex;justify-content:center;align-items:center;text-decoration:none;position:relative;border:0;border-radius:50% 50%;width:40px;height:40px;background-color:#3b5998;box-shadow:none}.mb-item.item-0 .mb-social:hover{background-color:#2d4373}.mb-item.item-0 .mb-social .mb-icon-wrapper{display:inline-block}.mb-item.item-0 .mb-social:hover .mb-icon-wrapper{display:none}.mb-item.item-0 .mb-social .mb-icon-wrapper .mb-icon{font-size:15px;font-style:normal;font-weight:normal;color:#fff}.mb-item.item-0 .mb-social:hover .mb-icon-wrapper .mb-icon{color:#fff}.mb-item.item-0 .mb-social .mb-label{font-size:12px;font-style:normal;font-weight:normal;text-transform:none;color:#fff;display:none}.mb-item.item-0 .mb-social:hover .mb-label{color:#fff;display:inline-block}.mb-item.item-1{display:inline-block;justify-content:center;align-items:center;box-sizing:border-box;position:relative;line-height:inherit;text-align:center;float:left;margin-right:10px}.mb-item.item-1 .mb-social{display:flex;justify-content:center;align-items:center;text-decoration:none;position:relative;border:0;border-radius:50% 50%;width:40px;height:40px;background-color:#007bb6;box-shadow:none}.mb-item.item-1 .mb-social:hover{background-color:#005983}.mb-item.item-1 .mb-social .mb-icon-wrapper{display:inline-block}.mb-item.item-1 .mb-social:hover .mb-icon-wrapper{display:none}.mb-item.item-1 .mb-social .mb-icon-wrapper .mb-icon{font-size:15px;font-style:normal;font-weight:normal;color:#fff}.mb-item.item-1 .mb-social:hover .mb-icon-wrapper .mb-icon{color:#fff}.mb-item.item-1 .mb-social .mb-label{font-size:12px;font-style:normal;font-weight:normal;text-transform:none;color:#fff;display:none}.mb-item.item-1 .mb-social:hover .mb-label{color:#fff;display:inline-block}.mb-item.item-2{display:inline-block;justify-content:center;align-items:center;box-sizing:border-box;position:relative;line-height:inherit;text-align:center;float:left;margin-right:10px}.mb-item.item-2 .mb-social{display:flex;justify-content:center;align-items:center;text-decoration:none;position:relative;border:0;border-radius:50% 50%;width:40px;height:40px;background-color:#00aced;box-shadow:none}.mb-item.item-2 .mb-social:hover{background-color:#0087ba}.mb-item.item-2 .mb-social .mb-icon-wrapper{display:inline-block}.mb-item.item-2 .mb-social:hover .mb-icon-wrapper{display:none}.mb-item.item-2 .mb-social .mb-icon-wrapper .mb-icon{font-size:15px;font-style:normal;font-weight:normal;color:#fff}.mb-item.item-2 .mb-social:hover .mb-icon-wrapper .mb-icon{color:#fff}.mb-item.item-2 .mb-social .mb-label{font-size:12px;font-style:normal;font-weight:normal;text-transform:none;color:#fff;display:none}.mb-item.item-2 .mb-social:hover .mb-label{color:#fff;display:inline-block}.maxsocial.maxsocial-1.horizontal{display:inline-block;clear:both;z-index:9999;position:relative;width:100%;max-width:none;line-height:1.1;box-sizing:border-box;margin:0px 0px 0px 0px}
+</style>
+<link rel='stylesheet' id='mbsocial-buttons-css' href='../wp-content/plugins/share-button/css/buttons0192.css?ver=6.2.9' media='all' />
+<link rel='stylesheet' id='yarppRelatedCss-css' href='../wp-content/plugins/yet-another-related-posts-plugin/style/related7f74.css?ver=5.30.11' media='all' />
+<link rel='stylesheet' id='fl-builder-google-fonts-9817945ff5e8f6659d9963ddaee94e86-css' href='http://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C700%2C500%2C600&amp;ver=6.2.9' media='all' />
+<template id="i0Wo1JIIY3WCkW1cXpg5"></template>
+<template id="mLybYIV4WmN2iuYoNvad"></template>
+<template id="RpNLSRiFTMkYRKlcsN1d"></template>
+<template id="cQMYQ8qaLiFbEkqb2Tf1"></template>
+<template id="sQreGTfiyUmf0eh3EGk2"></template>
+<template id="G2BOK70ohZ43vtYGzTMC"></template>
+<template id="PkzcNrj1rrx1yqxpe6Wp"></template>
+<script type="bv_inline_delayed_js" bv_unique_id="NrdDyxvQy2Yllq6tUtYc" id="fl-automator-js-extra" defer="1" data-cfasync="" bv_inline_delayed="1" async="">var themeopts = {"medium_breakpoint":"992","mobile_breakpoint":"768","scrollTopPosition":"800"};</script>
+<template id="8EkZGqi5pLOOyFNuoKsw"></template>
+<script type="bv_inline_delayed_js" bv_unique_id="gXXQquzWCinyqeRvB7NM" id="mbsocial_front-js-extra" defer="1" data-cfasync="" bv_inline_delayed="1" async="">var mbsocial = {"ajaxurl":"https:\/\/snakconsultancy.com\/blog\/wp-admin\/admin-ajax.php"};</script>
+<template id="v1oZh61Qs5LbZT89BOvG"></template>
+
+		<script type="bv_inline_delayed_js" bv_unique_id="uFJmf8fVoxDz2uQLpooe" id="scrolltop-custom-js" defer="1" data-cfasync="" bv_inline_delayed="1" async="">jQuery(document).ready(function($){
+			$.scrollUp({
+				scrollSpeed: 300,
+				animation: 'fade',
+				scrollText: '<span class="scroll-top"><svg width="36px" height="36px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><style>.top-icon{fill:none;stroke-linecap:round;stroke-linejoin:bevel;stroke-width:1.5px;}</style></defs><g id="ic-chevron-top"><path class="top-icon" d="M16.78,14.2l-4.11-4.11a1,1,0,0,0-1.41,0l-4,4"/></g></svg></span>',
+				scrollDistance: 300,
+				scrollTarget: ''
+			});
+		});</script>
+    <style>
+                /*Custom CSS*/
+            </style>
+
+    <style>
+            </style>
+
+    <script type="bv_inline_delayed_js" bv_unique_id="afmwEFZpToKYrTpqvt1q" defer="1" data-cfasync="" bv_inline_delayed="1" async="">var post_grid_vars = {"siteUrl":"https:\/\/snakconsultancy.com\/blog"}</script>
+      
+        <template id="cjPITOBC1qZEdf8NfMbK"></template>
+        <template id="sxhfm69RbsRp3u9dUSA4"></template>
+        <template id="A3uN897bwx1K5k5Z47Um"></template>
+        
+
+<script id="bv-override-listeners">var __defProp=Object.defineProperty;var __name=(target,value)=>__defProp(target,"name",{value,configurable:!0});function bv_override_browser_listener(target){var bv_og_add_event_listener=target.addEventListener,bv_og_remove_event_listener=target.removeEventListener;function bv_handle_event_listeners(type,listener,options){var handledEvents=["readystatechange","DOMContentLoaded","load","pageshow"],eventName=type;(!document.currentScript||!document.currentScript.hasAttribute("bv-exclude"))&&(eventName=handledEvents.indexOf(type)!==-1?"Airlift"+type:type),arguments[0]=eventName,bv_og_add_event_listener.apply(target,arguments)}__name(bv_handle_event_listeners,"bv_handle_event_listeners");function bv_handle_remove_event_listener(type,listener,options){var handledEvents=["readystatechange","DOMContentLoaded","load","pageshow"],eventName=type;(!document.currentScript||!document.currentScript.hasAttribute("bv-exclude"))&&(eventName=handledEvents.indexOf(type)!==-1?"Airlift"+type:type),arguments[0]=eventName,bv_og_remove_event_listener.apply(target,arguments)}__name(bv_handle_remove_event_listener,"bv_handle_remove_event_listener"),target.addEventListener=function(type,listener,options){bv_handle_event_listeners(type,listener,options)},target.removeEventListener=function(type,listener,options){bv_handle_remove_event_listener(type,listener,options)}}__name(bv_override_browser_listener,"bv_override_browser_listener"),bv_override_browser_listener(window),bv_override_browser_listener(document);function bv_override_property_listeners(target,eventType){if(!target||typeof target!="object"){console.error("bv_override_property_listeners: Invalid target",target);return}var airliftPropertyName="on"+eventType,existingDescriptor=Object.getOwnPropertyDescriptor(target,airliftPropertyName);if(existingDescriptor&&!existingDescriptor.configurable){console.warn("Cannot override "+airliftPropertyName+": property is not configurable");return}var bv_internalHandler=null,airliftEventName="Airlift"+eventType,bvWrapperFunction=__name(function(e){if(bv_internalHandler)try{bv_internalHandler(e)}catch(error){console.error("Error in "+airliftPropertyName+" handler:",error)}},"bvWrapperFunction");try{Object.defineProperty(target,airliftPropertyName,{get:__name(function(){return bv_internalHandler},"get"),set:__name(function(handler){if(handler!=null&&typeof handler!="function"){console.warn("Invalid handler for "+airliftPropertyName+", ignoring");return}handler?(bv_internalHandler||target.addEventListener(airliftEventName,bvWrapperFunction),bv_internalHandler=handler):(bv_internalHandler=null,target.removeEventListener(airliftEventName,bvWrapperFunction))},"set"),enumerable:!0,configurable:!0})}catch(error){console.error("Failed to override "+airliftPropertyName+":",error)}}__name(bv_override_property_listeners,"bv_override_property_listeners"),bv_override_property_listeners(window,"load"),bv_override_property_listeners(window,"pageshow"),bv_override_property_listeners(document,"DOMContentLoaded"),bv_override_property_listeners(document,"readystatechange");function bv_override_document_write(){var bv_original_write=document.write,bv_original_writeln=document.writeln;function bv_handle_document_write(scriptElement,content){try{if(content==null)return;if(content=String(content),scriptElement&&scriptElement.hasAttribute("bv-exclude"))return bv_original_write.call(document,content);var container=null;scriptElement&&scriptElement.documentWriteContainer?container=scriptElement.documentWriteContainer:(container=document.createElement("span"),scriptElement&&(scriptElement.documentWriteContainer=container)),container.innerHTML+=content;var insertPoint=scriptElement||document.currentScript;if(!container.parentNode)if(insertPoint&&insertPoint.parentNode)insertPoint.parentNode.insertBefore(container,insertPoint.nextSibling);else if(document.body)document.body.appendChild(container);else{console.warn("document.body not ready for document.write, deferring"),typeof window<"u"&&window.addEventListener("DOMContentLoaded",function(){document.body&&!container.parentNode&&document.body.appendChild(container)});return}var tempDiv=document.createElement("span");tempDiv.innerHTML=content;var scriptsInContent=tempDiv.querySelectorAll("script");scriptsInContent.length>0&&scriptsInContent.forEach(function(oldScript){try{var newScript=document.createElement("script"),attributes=oldScript.getAttributeNames();attributes.forEach(function(attr){try{newScript.setAttribute(attr,oldScript.getAttribute(attr))}catch{console.log("Not able to set Attribute:")}}),newScript.async=!1,!oldScript.src&&oldScript.textContent&&(newScript.textContent=oldScript.textContent),newScript.setAttribute("bv-document-write",""),setTimeout(function(){try{insertPoint&&insertPoint.parentNode?insertPoint.parentNode.insertBefore(newScript,insertPoint.nextSibling):document.head&&document.head.appendChild(newScript)}catch(error){console.error("Error inserting document.write script:",error)}},0)}catch(error){console.error("Error processing document.write script:",error)}})}catch(error){console.error("Error in document.write handler:",error);try{bv_original_write.call(document,content)}catch(e){console.error("Fallback document.write also failed:",e)}}}__name(bv_handle_document_write,"bv_handle_document_write"),document.write=function(content){bv_handle_document_write(document.currentScript,content)},document.writeln=function(content){bv_handle_document_write(document.currentScript,content+`
+`)}}__name(bv_override_document_write,"bv_override_document_write"),bv_override_document_write();
+</script>
+<template id=d6fe9c24159ed4a27d224d91c70f8fdc></template>
+<script id="bv-dynamic-image-lazyload" data-cfasync="false" bv-exclude="true">var __defProp=Object.defineProperty;var __name=(target,value)=>__defProp(target,"name",{value,configurable:!0});var BV_IS_RESIZE_ENABLED=!0,BV_IMAGES_NOT_TO_RESIZE=[],BV_DEBUG_MODE=!1;function bvDebugLog(...args){BV_DEBUG_MODE&&console.log(...args)}__name(bvDebugLog,"bvDebugLog");function getImageDeviceName(resized_infos_str,dimensions){let device_width=window.outerWidth;if(resized_infos_str){const device_size_infos=resized_infos_str.split(";");for(const device_info of device_size_infos){const[device_name,resized_dim]=device_info.split(":"),[width_str,height_str]=resized_dim.split("*"),width=parseInt(width_str,10),height=parseInt(height_str,10);if(dimensions.width<=width&&dimensions.height<=height&&device_width<=width)return device_name}return""}return device_width<=480?"bv_resized_mobile":device_width<=820?"bv_resized_ipad":device_width<=1536?"bv_resized_desktop":""}__name(getImageDeviceName,"getImageDeviceName");function isWebpSupported(){var elem=document.createElement("canvas");return elem.getContext&&elem.getContext("2d")?elem.toDataURL("image/webp").indexOf("data:image/webp")==0:!1}__name(isWebpSupported,"isWebpSupported");function getExtension(url){return url.split(".").pop().toLowerCase().split("?")[0]}__name(getExtension,"getExtension");function getNewImageUrlSVG(url,webp_status,encoded_url,dimensions){let url_and_query_string=url.split("?"),new_url=url_and_query_string[0],query_string=url_and_query_string[1];if(!webp_status)return query_string?url_and_query_string[0]+`?${query_string}`:url_and_query_string[0];var shouldResize=BV_IS_RESIZE_ENABLED&&!BV_IMAGES_NOT_TO_RESIZE.some(pattern=>new_url.includes(pattern));if(shouldResize){let resized_infos=get_bv_identifier(encoded_url,"bv-resized-infos"),device_name=getImageDeviceName(resized_infos,dimensions);if(device_name!=""){let img_ext=getExtension(new_url);new_url+="."+device_name+"."+img_ext}}return new_url+=".bv.webp",query_string&&(new_url+=`?${query_string}`),new_url}__name(getNewImageUrlSVG,"getNewImageUrlSVG");function get_bv_identifier(property,attr_identifier="bv-identifer"){let a=null;try{a=property.match(/.*?base64,(.*?)"/)}catch(error){bvDebugLog(error)}if(!a||!a[1])try{a=property.match(/.*?base64,(.*)/)}catch(error){bvDebugLog(error)}if(a&&a[1]){let b=null;if(attr_identifier=="bv-identifer"?b=atob(a[1]).match(/.*?bv-identifer="(.*?)"/):attr_identifier=="bv-bg-style"?b=atob(a[1]).match(/.*?bv-bg-style="(.*?)"/):attr_identifier=="bv-resized-infos"?b=atob(a[1]).match(/.*?bv-resized-infos="(.*?)"/):attr_identifier=="bv-img-url"&&(b=atob(a[1]).match(/.*?bv-img-url="(.*?)"/)),b&&b[1])return attr_identifier=="bv-bg-style"||attr_identifier=="bv-resized-infos"?atob(b[1]):b[1]}return!1}__name(get_bv_identifier,"get_bv_identifier");var bv_url_map=JSON.parse('{"0":"https://snakconsultancy.com/blog/wp-content/uploads/al_opt_content/IMAGE/snakconsultancy.com/blog/wp-content/uploads/2023/05/contact_us.jpg?bv_host=snakconsultancy.com","1":"https://snakconsultancy.com/blog/wp-content/uploads/al_opt_content/IMAGE/snakconsultancy.com/images/tech-data.webp?bv_host=snakconsultancy.com"}');const bvObservedNodesWithCounter=new Map,bv_webp_status=isWebpSupported();function bvObserveImgNode(node){const bv_counter=bvObservedNodesWithCounter.get(node)||0;bv_counter<50&&(bvObservedNodesWithCounter.set(node,bv_counter+1),other_image_observer.observe(node),bvDebugLog("NodeP with backgroundImage :",node))}__name(bvObserveImgNode,"bvObserveImgNode");function set_iframe_element_src_v2(iframe_element){let src_value=iframe_element.getAttribute("bv-data-src");src_value?(src_value.includes("autoplay=1")&&(src_value+="&mute=1"),iframe_element.setAttribute("src",src_value)):bvDebugLog("IFRAME_SRC_NOT_FOUND : "+entry)}__name(set_iframe_element_src_v2,"set_iframe_element_src_v2");function handleOtherImages(entries){entries.map(entry2=>{if(entry2.isIntersecting){const computedStyle=getComputedStyle(entry2.target),background=computedStyle.getPropertyValue("background")||"none",backgroundImage=computedStyle.getPropertyValue("background-image")||"none";let property_value=null,property_type=null;if(backgroundImage!=="none"&&backgroundImage.match(/url\(/)?(property_value=backgroundImage,property_type="background-image"):background!=="none"&&background.match(/url\(/)&&(property_value=background,property_type="background"),property_value){let bv_img_url=get_bv_identifier(property_value,"bv-img-url"),bv_bg_style=get_bv_identifier(property_value,"bv-bg-style"),url_identifier=get_bv_identifier(property_value),new_url=bv_img_url||(url_identifier?bv_url_map[url_identifier]:null);if(new_url){const regex=/url\(['"]?(data:image.*?)['"]?\)/g;if(bv_bg_style&&bv_bg_style.length>0){for(;(match=regex.exec(bv_bg_style))!==null;){let new_img_url=getNewImageUrlSVG(new_url,bv_webp_status,property_value,entry2.target.getBoundingClientRect());bv_bg_style=bv_bg_style.replace(match[1],new_img_url)}let new_bv_bg_style=entry2.target.getAttribute("style")||"";new_bv_bg_style=new_bv_bg_style+(new_bv_bg_style?";":"")+(bv_bg_style||""),entry2.target.setAttribute("style",new_bv_bg_style)}else{for(;(match=regex.exec(property_value))!==null;){let new_img_url=getNewImageUrlSVG(new_url,bv_webp_status,property_value,entry2.target.getBoundingClientRect());property_value=property_value.replace(match[1],new_img_url)}entry2.target.style.setProperty(property_type,property_value,"important")}}}bvObservedNodesWithCounter.delete(entry2.target),other_image_observer.unobserve(entry2.target)}})}__name(handleOtherImages,"handleOtherImages");function handleIframesV2(entries){entries.map(entry2=>{entry2.isIntersecting&&(set_iframe_element_src_v2(entry2.target),iframe_observer_v2.unobserve(entry2.target))})}__name(handleIframesV2,"handleIframesV2");const bvCheckNode=__name((node,currentLevel=1,maxLevel=1/0)=>{if(node.nodeType===1){const className=node.getAttribute("class");if(node.nodeName==="IFRAME"&&typeof className=="string"&&className.includes("bv-lazyload-iframe"))iframe_observer_v2.observe(node);else{const computedStyle=getComputedStyle(node),background=computedStyle.getPropertyValue("background")||"none",backgroundImage=computedStyle.getPropertyValue("background-image")||"none";backgroundImage!=="none"&&backgroundImage.match(/url\(/)?(get_bv_identifier(backgroundImage,"bv-img-url")||get_bv_identifier(backgroundImage))&&bvObserveImgNode(node):background!=="none"&&background.match(/url\(/)?(get_bv_identifier(background,"bv-img-url")||get_bv_identifier(background))&&bvObserveImgNode(node):typeof className=="string"&&className.includes("bv-lazyload-bg-style")?bv_style_observer.observe(node):typeof className=="string"&&className.includes("bv-lazyload-tag-img")?img_observer.observe(node):typeof className=="string"&&className.includes("bv-lazyload-picture")&&picture_lazy_observer.observe(node)}}currentLevel<maxLevel&&node.childNodes.length&&node.childNodes.forEach(childNode=>{bvCheckNode(childNode,currentLevel+1,maxLevel)})},"bvCheckNode");function bv_handle_mutations(mutations){mutations.forEach(mutation=>{if(mutation.type==="childList"&&mutation.addedNodes.length)mutation.addedNodes.forEach(node=>{setTimeout(function(){bvCheckNode(node)},0)});else if(mutation.type==="attributes"){const targetNode=mutation.target,attributeName=mutation.attributeName,attributeValue=targetNode.getAttribute(attributeName);if(attributeName==="style"&&targetNode.style.backgroundImage!==mutation_observer.prevBackgroundImage){const computedStyle=getComputedStyle(targetNode),background=computedStyle.getPropertyValue("background")||"none",backgroundImage=computedStyle.getPropertyValue("background-image")||"none";backgroundImage!=="none"&&backgroundImage.match(/url\(/)?(get_bv_identifier(backgroundImage,"bv-img-url")||get_bv_identifier(backgroundImage))&&bvObserveImgNode(targetNode):background!=="none"&&background.match(/url\(/)&&(get_bv_identifier(background,"bv-img-url")||get_bv_identifier(background))&&bvObserveImgNode(targetNode)}else attributeName==="class"&&setTimeout(function(){bvCheckNode(targetNode)},0)}})}__name(bv_handle_mutations,"bv_handle_mutations");function handle_mod_key_nodes(){let node_elements=document.querySelectorAll("[bv-img-mod-key]");for(let i=0;i<node_elements.length;i++){let element=node_elements[i],target_key=element.getAttribute("bv-img-mod-key"),mod_url=element.getAttribute(target_key);if(mod_url){let bv_img_url=get_bv_identifier(mod_url,"bv-img-url"),url_identifier=get_bv_identifier(mod_url),old_url=bv_img_url||(url_identifier?bv_url_map[url_identifier]:null);if(old_url){let dimensions=element.getBoundingClientRect(),new_img_url=getNewImageUrlSVG(old_url,bv_webp_status,mod_url,dimensions);element.setAttribute(target_key,new_img_url)}}}}__name(handle_mod_key_nodes,"handle_mod_key_nodes");function bvRemoveEventListeners(){for(const event of bv_lazyload_events)window.removeEventListener(event,handleLazyloadedStyleImages)}__name(bvRemoveEventListeners,"bvRemoveEventListeners");function handleLazyloadedStyleImages(){setTimeout(function(){bvRemoveEventListeners()},0),document.querySelectorAll("body *").forEach(_element=>{setTimeout(function(){bvCheckNode(_element,1,1)},0)})}__name(handleLazyloadedStyleImages,"handleLazyloadedStyleImages"),handle_mod_key_nodes();let other_image_observer,iframe_observer_v2,mutation_observer;var bvDynamicImageObserverOptions={rootMargin:"200px 0px",threshold:.01};"IntersectionObserver"in window&&(other_image_observer=new IntersectionObserver(handleOtherImages,bvDynamicImageObserverOptions),iframe_observer_v2=new IntersectionObserver(handleIframesV2,bvDynamicImageObserverOptions)),"MutationObserver"in window&&(mutation_observer=new MutationObserver(bv_handle_mutations),mutation_observer.prevBackground="",mutation_observer.prevBackgroundImage="",mutation_observer.observe(document.body,{childList:!0,subtree:!0,attributes:!0,characterData:!0})),"IntersectionObserver"in window&&"MutationObserver"in window&&window.addEventListener("load",event=>{for(const event2 of bv_lazyload_events)window.addEventListener(event2,handleLazyloadedStyleImages,{once:!0})});
+</script>
+
+<script id="bv-rename-images" type="text/javascript" data-cfasync="false" bv-exclude="true">var __defProp=Object.defineProperty;var __name=(target,value)=>__defProp(target,"name",{value,configurable:!0});const IMAGE_URL_ATTRIBUTES=["data-src","data-lazy-original","data-lazy-src","data-lazysrc","data-lazysrcset","data-lazy-srcset","data-envira-src","data-srcset","bv-data-src","bv-data-srcset","data-large_image","data-depicter-src","data-depicter-srcset","data-orig-src"],IMAGE_EXTENSIONS=["jpg","jpeg","png","gif","svg","jpe","webp"],BV_CDN_URL="",BV_SITE_OPT_PATH="al_opt_content";var BV_IS_RESIZE_ENABLED=!0,BV_IMAGES_NOT_TO_RESIZE=[];function isValidUrl(url){return!!/^https?:\/\//i.test(url)}__name(isValidUrl,"isValidUrl");function isImage(url){let img_ext=getExtension(url);return!!IMAGE_EXTENSIONS.includes(img_ext)}__name(isImage,"isImage");function getImageDeviceName(resized_infos_str,dimensions){let device_width=window.outerWidth;if(resized_infos_str){const device_size_infos=resized_infos_str.split(";");for(const device_info of device_size_infos){const[device_name,resized_dim]=device_info.split(":"),[width_str,height_str]=resized_dim.split("*"),width=parseInt(width_str,10),height=parseInt(height_str,10);if(dimensions.width<=width&&dimensions.height<=height&&device_width<=width)return device_name}return""}return device_width<=480?"bv_resized_mobile":device_width<=820?"bv_resized_ipad":device_width<=1536?"bv_resized_desktop":""}__name(getImageDeviceName,"getImageDeviceName");function isWebpSupported(){var elem=document.createElement("canvas");return elem.getContext&&elem.getContext("2d")?elem.toDataURL("image/webp").indexOf("data:image/webp")==0:!1}__name(isWebpSupported,"isWebpSupported");function getExtension(url){return url.split("?")[0].split(".").pop().toLowerCase()}__name(getExtension,"getExtension");function getNewImageUrlQuery(url,webp_status2,dimensions){let url_and_query_string=url.split("?"),new_url=url_and_query_string[0],query_string=url_and_query_string[1];if(!webp_status2)return query_string?url_and_query_string[0]+`?${query_string}`:url_and_query_string[0];let params=new URLSearchParams(query_string),resized_infos=params.get("bv-resized-infos");params.delete("bv-resized-infos"),query_string=params.toString();var shouldResize=BV_IS_RESIZE_ENABLED&&!BV_IMAGES_NOT_TO_RESIZE.some(pattern=>new_url.includes(pattern));if(shouldResize){let device_name=getImageDeviceName(resized_infos,dimensions),img_ext=getExtension(new_url);device_name!=""&&(new_url+="."+device_name+"."+img_ext)}return new_url+=".bv.webp",query_string&&(new_url+=`?${query_string}`),new_url}__name(getNewImageUrlQuery,"getNewImageUrlQuery");function isOurCdnImage(url){const hasCdnUrl=typeof BV_CDN_URL=="string"&&BV_CDN_URL.length>0,hasSiteOptPath=typeof BV_SITE_OPT_PATH=="string"&&BV_SITE_OPT_PATH.length>0;return!!(hasCdnUrl&&url.includes(BV_CDN_URL)||hasSiteOptPath&&url.includes(BV_SITE_OPT_PATH))}__name(isOurCdnImage,"isOurCdnImage");function canChangeUrl(url){return getExtension(url)==="svg"||url.includes("data:image")?!1:!!isOurCdnImage(url)}__name(canChangeUrl,"canChangeUrl");function handleNodeElements(node_elements,img_url_attrs,webp_status2){node_elements.forEach(node_element=>{img_url_attrs.forEach(attr=>{flag=!1,node_element.hasAttribute(attr)&&(attr_val=node_element.getAttribute(attr),new_val="",attr_val.split(",").forEach(src=>{let src_parts=src.trim().split(" "),clean_url=src_parts.shift();if(flag?new_val+=",":flag=!0,isValidUrl(clean_url)&&isImage(clean_url))if(canChangeUrl(clean_url)){let new_url=getNewImageUrlQuery(clean_url,webp_status2,node_element.getBoundingClientRect());new_val+=[new_url].concat(src_parts).join(" ")}else new_val+=src;else new_val+=src}),node_element.setAttribute(attr,new_val))})})}__name(handleNodeElements,"handleNodeElements");function handleTagWithStyle(tag_elements_with_style2,webp_status2){tag_elements_with_style2.forEach(tag_element=>{let img_url=tag_element.getAttribute("bv-style-url");if(img_url&&isValidUrl(img_url)&&isImage(img_url)&&canChangeUrl(img_url)){let new_img_url=getNewImageUrlQuery(img_url,webp_status2,tag_element.getBoundingClientRect()),style_attr_val=tag_element.getAttribute("bv-data-style");style_attr_val&&(new_style_val=style_attr_val.replace(img_url,new_img_url),tag_element.setAttribute("bv-data-style",new_style_val))}})}__name(handleTagWithStyle,"handleTagWithStyle");let webp_status=isWebpSupported(),img_tags=document.querySelectorAll(".bv-tag-attr-replace");handleNodeElements(img_tags,IMAGE_URL_ATTRIBUTES,webp_status);let tag_elements_with_style=document.querySelectorAll(".bv-style-attr-replace");handleTagWithStyle(tag_elements_with_style,webp_status);
+</script>
+
+</body>
+
+<!-- Mirrored from snakconsultancy.com/blog/power-bi-integration-with-sap-business/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Apr 2026 08:14:45 GMT -->
+</html><!-- This website is optimized by Airlift. Learn more: https://airlift.net. Template:. Learn more: https://airlift.net. Template: 6982223c190636cf5412c17d. Config Timestamp: 2026-02-03 16:28:43 UTC, Cached Timestamp: 2026-04-29 08:11:30 UTC -->

@@ -1,0 +1,337 @@
+/*
+Theme Name: Beaver Builder Theme
+Theme URI: http://www.wpbeaverbuilder.com/?utm_medium=bb-pro&utm_source=bb-theme&utm_campaign=themes-admin-page
+Version: 1.7.13
+Description: A customizable theme with a simple yet robust set of theme options.
+Author: The Beaver Builder Team
+Author URI: http://www.wpbeaverbuilder.com/?utm_medium=bb-pro&utm_source=bb-theme&utm_campaign=themes-admin-page
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: fl-automator
+*/
+/*
+
+WARNING! DO NOT EDIT THEME FILES IF YOU PLAN ON UPDATING!
+
+Theme files will be overwritten and your changes will be lost
+when updating. Instead, add custom code in the admin under
+Appearance > Theme Settings > Code or create a child theme.
+
+*/
+
+
+.social-buttons li{
+
+display: inline-block; margin: 1rem 0.8rem 1rem 0;
+
+}
+
+//Social list
+.social-buttons{list-style-type: none; margin:0; padding:0;}
+
+.dropdown-menu.address-info.foo-dl_mobile.show {
+    left: -150px !important;
+}
+.dropdown-menu.address-info.foo-nl_mobile.show {
+    left: -150px !important;
+}
+.dropdown-menu.address-info.foo-us_mobile.show{
+ left: -100px !important;
+}
+        
+        a .social-margin {margin-right: 15px;
+        }
+        a .social-margin:hover, .social-margin:focus, .social-margin:active{
+            text-decoration: none;
+        }
+       
+            .social-icon {
+                margin-bottom: 15px;
+                box-sizing: border-box;
+                -moz-border-radius: 138px;
+                -webkit-border-radius: 138px;
+                border-radius: 138px;
+                border: 5px solid;
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+                line-height: 1px;
+                padding-top: 11px;
+                transition: all 0.5s;
+               
+              }
+              .facebook {
+                font-size: 14px;
+                padding-top: 4px;
+                border-color: #3b5998;
+                background-color: #3b5998;
+                color:#fff;
+           
+              }
+              
+              .facebook:hover {
+                    background-color:#fff;
+                    color: #3b5998;
+                  }
+             
+              
+              
+              .twitter {
+                font-size: 14px;
+                padding-top: 4px;
+                padding-left: 2px;
+                border-color: #55acee;
+                background-color: #55acee;
+                color:#fff;
+                }
+                .twitter:hover {
+                    background-color:#fff;
+                    color: #55acee;
+                  
+              }
+              .google-plus {
+                font-size: 14px;
+                padding-top: 4px;
+                padding-left: 2px;
+                background-color:$--color-secondry;
+                color:#fff;
+                border-color:$--color-secondry;
+                }
+                .google-plus:hover {
+                    background-color:$--bgcolor;
+                    color:$--color-secondry;
+                  }
+             
+              .linkedin {
+                font-size: 14px;
+                padding-top: 4px;
+                padding-left: 1px;
+                background-color: #0976b4;
+    color: #fff;
+    border-color: #0976b4;
+                }
+                .linkedin:hover {
+                    background-color:#fff;
+                    color: #0976b4;
+                  
+              }
+              .youtube {
+                font-size: 14px;
+                padding-top: 4px;
+                padding-left: 0px;
+                background-color: #bb0000;
+                color:#fff;
+                border-color: #bb0000;
+                }
+                .youtube:hover {
+                    background-color:#fff;
+                    color: #bb0000;
+                  
+              }
+       
+    .social-icon:hover {
+        transform:scale(1.3);
+      }
+    
+
+.mapp {
+    transform: scale(1.5) !important;
+    transition: 0.3s !important;
+    position:relative !important;
+    width: 100% !important;
+}
+
+   .plus-dot{border-radius: 100px; display: inline-block;}
+    .plus-dot i{color:#fff; font-size: 0.650rem}
+      .plus-dot  a{text-decoration: none;} 
+  
+    .india{position: absolute; top: 90px;right: 74px;}
+    
+        .usa{position: absolute; top: 74px;left: 45px;}
+        .uk{position: absolute; top: 53px;left: 123px;}
+        .netherland{position: absolute; top: 59px;left: 137px;}
+        .noida{position: absolute; top: 83px;right: 70px;}
+        .delhi{position: absolute; top: 88px;right: 84px;}
+
+
+
+@media (max-width: 768px) {
+  .mapp .usa{position: absolute; top: 88px;left: 50px;}
+  .mapp .uk{position: absolute; top:67px;left: 137px;}
+  .mapp .netherland{position: absolute; top: 75px;left: 152px;}
+  .mapp .noida{position: absolute; top: 98px;right:76px;}
+  .mapp .delhi{position: absolute; top: 100px;right: 90px;}
+  }
+
+.pulse {display: block; width: 10px; height: 10px;
+    border-radius: 50%; cursor: pointer; box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+    animation: pulse 2s infinite;
+    }
+   .pulse:hover {animation: none;}
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+
+  a#backToTop {width: 40px; height: 40px; position: fixed; bottom: 3%;
+    right: 1%;display: none; outline: none; background:$--color-secondry; color:$--text-color;
+    text-align: center; border-radius: 100%; z-index: 1000; font-size: 1.5rem;
+    }
+    @media(max-width:540px){
+      bottom: 6%; right: 4%;
+    }
+    i{padding-top:5px}
+ 
+
+    //Address
+    .mapp{position: relative;}
+    .address-info{width:320px; padding:10px;
+        height: auto;
+        background: #fff;color:#000; font-size: 0.55rem;
+        position: absolute;
+        left: 0 !important;
+        right: 0;
+        top: 8px !important; border-radius:0.12rem;
+        bottom: 0;
+        a{color:#000;
+            .vew-map{width:15px; float:right}
+        }
+        
+        
+    .media{font-size: 0.570rem;
+        .media-body{ position: relative;
+            a{position: absolute; top:0; right:0}
+            img{width: 14px;}
+            p{margin-bottom:0.5rem;}
+            i{color:$--color-primary;}
+            .phone,.email{font-weight: 500;}
+        }
+        .media-body h6{font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem;}
+        img{width:87px;}
+    }
+}
+.dropdown-menu[x-placement^=bottom], .dropdown-menu[x-placement^=left], .dropdown-menu[x-placement^=right], .dropdown-menu[x-placement^=top] {
+    right: auto;
+    bottom: auto;
+}
+.address-info .media {
+    font-size: 11px;
+}
+.address-info .media img {
+    width: 87px;
+}
+.address-info .media .media-body {
+    position: relative;
+    font-size: 9px;
+}
+.address-info .media .media-body h6 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.address-info .media .media-body a {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.address-info .media .media-body img {
+    width: 14px;
+}
+.media-body {
+    -ms-flex: 1;
+    flex: 1;
+}
+.mr-3, .mx-3 {
+    margin-right: 1rem!important;
+}
+.address-info .media .media-body .phone, .address-info .media .media-body .email {
+    font-weight: 500;
+}
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.address-info .media .media-body i {
+    color: #003b93;
+}
+.mapp .plus-dot i {
+    color: #ff8831;
+    font-size: .65rem;
+}
+.address-info {
+    width: 320px;
+    padding: 10px;
+    height: auto;
+    background: #fff;
+    color: #000;
+    font-size: .55rem;
+    position: absolute;
+    left: 0 !important;
+    right: 0;
+    top: 8px !important;
+    border-radius: .12rem;
+    bottom: 0;
+}
+
+.address-info {
+    display:none;
+  }
+  
+  @media(max-width:768px){
+  .address-info {
+    display:none;
+  }
+    .foo-nl_mobile{margin-left:-8px; background: #fff;}
+  }
+  
+  @media(max-width:768px){
+    .foo-up_mobile{margin-left:0; background: #fff;}
+  }
+  
+  @media(max-width:768px){
+    .foo-dl_mobile{margin-left:0; background: #fff;}
+    
+    .dropdown-menu.address-info.foo-dl_mobile.show {
+    left: -130px !important;
+}
+.dropdown-menu.address-info.foo-nl_mobile.show {
+    left: -100px !important;
+}
+.dropdown-menu.address-info.foo-us_mobile.show{
+ left: -50px !important;
+}
+    
+    
+  }
+
+    
+  @media(min-width:1366px){
+    .address-info {
+    display:none;
+    left: -160px  }
+  }

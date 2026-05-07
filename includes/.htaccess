@@ -1,0 +1,8 @@
+# Prevent direct access to includes folder
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule .* - [F,L]
+</IfModule>
+<IfModule !mod_rewrite.c>
+    Deny from all
+</IfModule>
