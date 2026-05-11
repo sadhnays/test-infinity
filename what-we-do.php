@@ -121,28 +121,28 @@ require_once 'includes/header.php';
                 <p class="lead">We use industry-leading technologies to build robust, future-proof solutions.</p>
             </div>
             <div class="grid grid-4 stagger" style="margin-top:3rem;">
-                <div class="feature-card anim-scale">
+                <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fa fa-graduation-cap"></i>
                     </div>
                     <h4>IT Platforms</h4>
                     <p>Moodle, Canvas, Blackboard, Totara, LearnDash, Teachable</p>
                 </div>
-                <div class="feature-card anim-scale">
+                <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fa fa-brain"></i>
                     </div>
                     <h4>AI & ML</h4>
                     <p>Python, TensorFlow, PyTorch, OpenAI, NLP, Scikit-learn</p>
                 </div>
-                <div class="feature-card anim-scale">
+                <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fa fa-cloud"></i>
                     </div>
                     <h4>Cloud & DevOps</h4>
                     <p>AWS, Azure, Google Cloud, Docker, Kubernetes, Jenkins</p>
                 </div>
-                <div class="feature-card anim-scale">
+                <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fa fa-code"></i>
                     </div>
@@ -162,31 +162,31 @@ require_once 'includes/header.php';
                 <p class="lead">A proven 5-step process that ensures quality, timeliness, and your complete satisfaction.</p>
             </div>
             <div class="process-grid stagger" style="margin-top:3rem;">
-                <div class="process-step anim-scale">
+                <div class="process-step" data-aos="zoom-in">
                     <div class="step-number">1</div>
                     <div class="step-connector"></div>
                     <h4>Discovery</h4>
                     <p>Understand your goals, users, and technical requirements.</p>
                 </div>
-                <div class="process-step anim-scale">
+                <div class="process-step" data-aos="zoom-in">
                     <div class="step-number">2</div>
                     <div class="step-connector"></div>
                     <h4>Design</h4>
                     <p>Create wireframes, mockups, and technical architecture.</p>
                 </div>
-                <div class="process-step anim-scale">
+                <div class="process-step" data-aos="zoom-in">
                     <div class="step-number">3</div>
                     <div class="step-connector"></div>
                     <h4>Develop</h4>
                     <p>Agile development with regular demos and feedback.</p>
                 </div>
-                <div class="process-step anim-scale">
+                <div class="process-step" data-aos="zoom-in">
                     <div class="step-number">4</div>
                     <div class="step-connector"></div>
                     <h4>Test</h4>
                     <p>Comprehensive testing across devices and use cases.</p>
                 </div>
-                <div class="process-step anim-scale">
+                <div class="process-step" data-aos="zoom-in">
                     <div class="step-number">5</div>
                     <h4>Launch</h4>
                     <p>Smooth deployment with training and ongoing support.</p>

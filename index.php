@@ -23,6 +23,105 @@ $pageSchema = '{
 
 require_once 'includes/header.php';
 ?>
+<style>
+/* Consolidated styles previously inline */
+.hero-content {
+    text-align: left;
+    color: #ffffff;
+    z-index: 15;
+    position: relative;
+}
+.hero-badge {
+    display: inline-flex;
+    color: #ffffff;
+}
+.hero-heading {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    text-align: left;
+    text-shadow: 0 2px 15px rgba(0,0,0,0.5);
+}
+.hero-subtext {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.1rem;
+    text-align: left;
+}
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+.stat-number {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.stat-label {
+    color: rgba(255,255,255,0.8);
+}
+.service-link {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.cta-fullwidth h2 {
+    color: white;
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    margin-bottom: 1.5rem;
+}
+.cta-fullwidth p {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cta-fullwidth .btn:first-child {
+    background: white;
+    color: var(--accent);
+    font-weight: 600;
+}
+.cta-fullwidth .btn:last-child {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 480px) {
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 
     <!-- Hero Section -->
     <section class="hero animated-bg" id="home">
@@ -39,7 +138,7 @@ require_once 'includes/header.php';
             <div class="diamond-wrapper diamond-ai">
                 <div class="diamond-cut">
                     <div class="diamond-inner">
-                        <i class="fas fa-gem"></i>
+                        <i class="fas fa-laptop-code"></i>
                         <span>AI & Dev</span>
                     </div>
                 </div>
@@ -49,44 +148,58 @@ require_once 'includes/header.php';
             </div>
         </div>
 
+        <div class="hero-diamond-right">
+            <div class="diamond-wrapper diamond-ai">
+                <div class="diamond-cut">
+                    <div class="diamond-inner">
+                        <i class="fas fa-database"></i>
+                        <span>docker & Mysql</span>
+                    </div>
+                </div>
+                <div class="diamond-ring ring-1"></div>
+                <div class="diamond-ring ring-2"></div>
+                <div class="diamond-ring ring-3"></div>
+            </div>
+        </div>
+
         <div class="container hero-container">
-            <div class="hero-content" style="text-align:left; color:#ffffff; z-index:15; position:relative;">
-                <div class="hero-badge" data-aos="fade-down" style="display:inline-flex; color:#ffffff;">
-                    <i class="fa fa-check-circle"></i>
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="fade-down">
+                    <i aria-hidden="true" class="fa fa-check-circle"></i>
                     <span>IT Solutions Experts Since 2015</span>
                 </div>
-                <h1 class="hero-heading" data-aos="fade-up" style="color:#ffffff; font-size:clamp(2rem, 5vw, 3.5rem); font-weight:700; text-align:left; text-shadow:0 2px 15px rgba(0,0,0,0.5);">
+                <h1 class="hero-heading" data-aos="fade-up">
                     Build Scalable <span class="gradient-text">IT</span> & AI-Powered<br>Digital Solutions
                 </h1>
-                <p class="hero-subtext" data-aos="fade-up" data-aos-delay="100" style="color:rgba(255,255,255,0.9); font-size:1.1rem; text-align:left;">
+                <p class="hero-subtext" data-aos="fade-up" data-aos-delay="100">
                     We specialize in <strong style="color:#00ccff;">Moodle development</strong>, AI integration, and enterprise learning platforms. Transform your educational vision into a powerful, scalable reality.
                 </p>
-                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200" style="display:flex; gap:1rem; justify-content:flex-start;">
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
                     <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary glow-pulse">
-                        <i class="fa fa-calendar-check"></i>
+                        <i aria-hidden="true" class="fa fa-calendar-check"></i>
                         Get Free Consultation
                     </a>
                     <a href="<?php echo base_url('what-we-do.php'); ?>" class="btn btn-outline">
-                        <i class="fa fa-arrow-right"></i>
+                        <i aria-hidden="true" class="fa fa-arrow-right"></i>
                         View Services
                     </a>
                 </div>
-                <div class="hero-stats" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:2rem; text-align:center;">
+                <div class="hero-stats">
                     <div class="hero-stat" data-aos="fade-up" data-aos-delay="300">
-                        <div class="stat-number counter" data-target="15000" data-suffix="+" style="color:#ffffff; font-size:2rem; font-weight:700;">0</div>
-                        <div class="stat-label" style="color:rgba(255,255,255,0.8);">Users Empowered</div>
+                        <div class="stat-number counter" data-target="15000" data-suffix="+" >0</div>
+                        <div class="stat-label" >Users Empowered</div>
                     </div>
                     <div class="hero-stat" data-aos="fade-up" data-aos-delay="350">
-                        <div class="stat-number" style="color:#ffffff; font-size:2rem; font-weight:700;">8+</div>
-                        <div class="stat-label" style="color:rgba(255,255,255,0.8);">Years Experience</div>
+                        <div class="stat-number" >8+</div>
+                        <div class="stat-label" >Years Experience</div>
                     </div>
                     <div class="hero-stat" data-aos="fade-up" data-aos-delay="400">
-                        <div class="stat-number counter" data-target="200" data-suffix="+" style="color:#ffffff; font-size:2rem; font-weight:700;">0</div>
-                        <div class="stat-label" style="color:rgba(255,255,255,0.8);">Projects Delivered</div>
+                        <div class="stat-number counter" data-target="200" data-suffix="+" >0</div>
+                        <div class="stat-label" >Projects Delivered</div>
                     </div>
                     <div class="hero-stat" data-aos="fade-up" data-aos-delay="450">
-                        <div class="stat-number" style="color:#ffffff; font-size:2rem; font-weight:700;">99%</div>
-                        <div class="stat-label" style="color:rgba(255,255,255,0.8);">Client Satisfaction</div>
+                        <div class="stat-number" >99%</div>
+                        <div class="stat-label" >Client Satisfaction</div>
                     </div>
                 </div>
             </div>
@@ -104,67 +217,67 @@ require_once 'includes/header.php';
                 <!-- Web Development -->
                 <div class="value-card" data-aos="fade-up">
                     <div class="card-icon">
-                        <i class="fas fa-code"></i>
+                        <i aria-hidden="true" class="fas fa-code"></i>
                     </div>
                     <h3>Web Development</h3>
                     <p>Custom web solutions built with modern technologies, including LMS platforms and enterprise applications.</p>
-                    <a href="<?php echo base_url('services/web-development.php'); ?>" style="color:var(--accent); font-weight:600; font-size:0.9rem; display:inline-flex; align-items:center; gap:0.5rem; margin-top:1rem;">
-                        Learn More <i class="fas fa-arrow-right"></i>
+                    <a href="<?php echo base_url('services/web-development.php'); ?>" class="service-link">
+                        Learn More <i aria-hidden="true" class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 <!-- Mobile App Development -->
                 <div class="value-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i aria-hidden="true" class="fas fa-mobile-alt"></i>
                     </div>
                     <h3>Mobile App Development</h3>
                     <p>Native and cross-platform mobile apps for iOS and Android with seamless integration.</p>
-                    <a href="<?php echo base_url('services/mobile-app-development.php'); ?>" style="color:var(--accent); font-weight:600; font-size:0.9rem; display:inline-flex; align-items:center; gap:0.5rem; margin-top:1rem;">
-                        Learn More <i class="fas fa-arrow-right"></i>
+                    <a href="<?php echo base_url('services/mobile-app-development.php'); ?>" class="service-link">
+                        Learn More <i aria-hidden="true" class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 <!-- AI & ML Integration -->
                 <div class="value-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="card-icon">
-                        <i class="fas fa-brain"></i>
+                        <i aria-hidden="true" class="fas fa-brain"></i>
                     </div>
                     <h3>AI & ML Integration</h3>
                     <p>Integrate AI-powered features - personalized learning paths, intelligent assessments, and predictive analytics.</p>
-                    <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>" style="color:var(--accent); font-weight:600; font-size:0.9rem; display:inline-flex; align-items:center; gap:0.5rem; margin-top:1rem;">
-                        Learn More <i class="fas fa-arrow-right"></i>
+                    <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>" class="service-link">
+                        Learn More <i aria-hidden="true" class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 <!-- Cloud Solutions -->
                 <div class="value-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="card-icon">
-                        <i class="fas fa-cloud"></i>
+                        <i aria-hidden="true" class="fas fa-cloud"></i>
                     </div>
                     <h3>Cloud Solutions</h3>
                     <p>Secure, scalable cloud infrastructure and migration services for enterprises.</p>
-                    <a href="<?php echo base_url('services/cloud-solutions.php'); ?>" style="color:var(--accent); font-weight:600; font-size:0.9rem; display:inline-flex; align-items:center; gap:0.5rem; margin-top:1rem;">
-                        Learn More <i class="fas fa-arrow-right"></i>
+                    <a href="<?php echo base_url('services/cloud-solutions.php'); ?>" class="service-link">
+                        Learn More <i aria-hidden="true" class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 <!-- UI/UX Design -->
                 <div class="value-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="card-icon">
-                        <i class="fas fa-paint-brush"></i>
+                        <i aria-hidden="true" class="fas fa-paint-brush"></i>
                     </div>
                     <h3>UI/UX Design</h3>
                     <p>Beautiful, intuitive interfaces that enhance user experience and drive engagement.</p>
-                    <a href="<?php echo base_url('services/ui-ux-design.php'); ?>" style="color:var(--accent); font-weight:600; font-size:0.9rem; display:inline-flex; align-items:center; gap:0.5rem; margin-top:1rem;">
-                        Learn More <i class="fas fa-arrow-right"></i>
+                    <a href="<?php echo base_url('services/ui-ux-design.php'); ?>" class="service-link">
+                        Learn More <i aria-hidden="true" class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 <!-- Digital Marketing -->
                 <div class="value-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="card-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <i aria-hidden="true" class="fas fa-chart-line"></i>
                     </div>
                     <h3>Digital Marketing</h3>
                     <p>Data-driven marketing strategies to grow your online presence and reach.</p>
-                    <a href="<?php echo base_url('services/digital-marketing.php'); ?>" style="color:var(--accent); font-weight:600; font-size:0.9rem; display:inline-flex; align-items:center; gap:0.5rem; margin-top:1rem;">
-                        Learn More <i class="fas fa-arrow-right"></i>
+                    <a href="<?php echo base_url('services/digital-marketing.php'); ?>" class="service-link">
+                        Learn More <i aria-hidden="true" class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -189,7 +302,7 @@ require_once 'includes/header.php';
             <div class="values-cards">
                 <div class="value-card active" data-tab="1" data-aos="fade-up">
                     <div class="card-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <i aria-hidden="true" class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Integrity</h3>
                     <p>We uphold the highest standards of honesty and transparency in all engagements.</p>
@@ -197,7 +310,7 @@ require_once 'includes/header.php';
 
                 <div class="value-card" data-tab="2" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-icon">
-                        <i class="fas fa-lightbulb"></i>
+                        <i aria-hidden="true" class="fas fa-lightbulb"></i>
                     </div>
                     <h3>Innovation</h3>
                     <p>We embrace creative solutions and emerging technologies to solve complex challenges.</p>
@@ -205,7 +318,7 @@ require_once 'includes/header.php';
 
                 <div class="value-card" data-tab="3" data-aos="fade-up" data-aos-delay="200">
                     <div class="card-icon">
-                        <i class="fas fa-trophy"></i>
+                        <i aria-hidden="true" class="fas fa-trophy"></i>
                     </div>
                     <h3>Excellence</h3>
                     <p>We are committed to delivering exceptional quality in every project we undertake.</p>
@@ -213,7 +326,7 @@ require_once 'includes/header.php';
 
                 <div class="value-card" data-tab="4" data-aos="fade-up" data-aos-delay="300">
                     <div class="card-icon">
-                        <i class="fas fa-handshake"></i>
+                        <i aria-hidden="true" class="fas fa-handshake"></i>
                     </div>
                     <h3>Collaboration</h3>
                     <p>We work closely with clients to achieve shared goals and mutual success.</p>
@@ -233,42 +346,42 @@ require_once 'includes/header.php';
             <div class="industries-grid">
                 <div class="industry-card" data-aos="fade-up">
                     <div class="industry-icon">
-                        <i class="fas fa-hospital"></i>
+                        <i aria-hidden="true" class="fas fa-hospital"></i>
                     </div>
                     <h3>Healthcare</h3>
                 </div>
 
                 <div class="industry-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="industry-icon">
-                        <i class="fas fa-university"></i>
+                        <i aria-hidden="true" class="fas fa-university"></i>
                     </div>
                     <h3>Finance</h3>
                 </div>
 
                 <div class="industry-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="industry-icon">
-                        <i class="fas fa-shopping-cart"></i>
+                        <i aria-hidden="true" class="fas fa-shopping-cart"></i>
                     </div>
                     <h3>Retail</h3>
                 </div>
 
                 <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="industry-icon">
-                        <i class="fas fa-industry"></i>
+                        <i aria-hidden="true" class="fas fa-industry"></i>
                     </div>
                     <h3>Manufacturing</h3>
                 </div>
 
                 <div class="industry-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="industry-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                        <i aria-hidden="true" class="fas fa-graduation-cap"></i>
                     </div>
                     <h3>Education</h3>
                 </div>
 
                 <div class="industry-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="industry-icon">
-                        <i class="fas fa-shipping-fast"></i>
+                        <i aria-hidden="true" class="fas fa-shipping-fast"></i>
                     </div>
                     <h3>Logistics</h3>
                 </div>
@@ -305,25 +418,25 @@ require_once 'includes/header.php';
 
             <div class="about-cards" data-aos="fade-left">
                 <div class="mini-card">
-                    <i class="fas fa-rocket"></i>
+                    <i aria-hidden="true" class="fas fa-rocket"></i>
                     <h4>Digital Strategy</h4>
                     <p>Custom roadmaps for digital transformation.</p>
                 </div>
 
                 <div class="mini-card">
-                    <i class="fas fa-cloud"></i>
+                    <i aria-hidden="true" class="fas fa-cloud"></i>
                     <h4>Cloud Solutions</h4>
                     <p>Secure and scalable cloud infrastructure.</p>
                 </div>
 
                 <div class="mini-card">
-                    <i class="fas fa-mobile-alt"></i>
+                    <i aria-hidden="true" class="fas fa-mobile-alt"></i>
                     <h4>App Development</h4>
                     <p>Cross-platform mobile and web applications.</p>
                 </div>
 
                 <div class="mini-card">
-                    <i class="fas fa-shield-alt"></i>
+                    <i aria-hidden="true" class="fas fa-shield-alt"></i>
                     <h4>Cyber Security</h4>
                     <p>Enterprise-grade security solutions.</p>
                 </div>
@@ -432,28 +545,28 @@ require_once 'includes/header.php';
             <div class="features-grid">
                 <div class="feature-item" data-aos="fade-up">
                     <div class="feature-icon-wrapper">
-                        <i class="fas fa-award"></i>
+                        <i aria-hidden="true" class="fas fa-award"></i>
                     </div>
                     <h4>IT Consulting Expert</h4>
                     <p>15+ years of specialized IT consulting experience with 200+ successful implementations worldwide.</p>
                 </div>
                 <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-icon-wrapper">
-                        <i class="fas fa-users"></i>
+                        <i aria-hidden="true" class="fas fa-users"></i>
                     </div>
                     <h4>150+ Global Clients</h4>
                     <p>Our solutions empower businesses worldwide, delivering growth and competitive advantage.</p>
                 </div>
                 <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon-wrapper">
-                        <i class="fas fa-puzzle-piece"></i>
+                        <i aria-hidden="true" class="fas fa-puzzle-piece"></i>
                     </div>
                     <h4>Custom Solutions</h4>
                     <p>Tailor-made IT solutions that extend your platform's functionality exactly how you need it.</p>
                 </div>
                 <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-icon-wrapper">
-                        <i class="fas fa-expand-arrows-alt"></i>
+                        <i aria-hidden="true" class="fas fa-expand-arrows-alt"></i>
                     </div>
                     <h4>Scalable Systems</h4>
                     <p>Architectures designed to grow with you — from 100 to 100,000+ users without performance compromise.</p>
@@ -501,22 +614,22 @@ require_once 'includes/header.php';
             </div>
             <div class="clients-grid">
                 <div class="client-logo" data-aos="fade-up">
-                    <img src="<?php echo asset('images/clients/car-dekho.png'); ?>" alt="CarDekho" loading="lazy" onerror="this.style.display='none'">
+                    <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="CarDekho" loading="lazy" onerror="this.style.display='none'">
                 </div>
                 <div class="client-logo" data-aos="fade-up" data-aos-delay="100">
-                    <img src="<?php echo asset('images/clients/ey.png'); ?>" alt="EY" loading="lazy" onerror="this.style.display='none'">
+                    <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="EY" loading="lazy" onerror="this.style.display='none'">
                 </div>
                 <div class="client-logo" data-aos="fade-up" data-aos-delay="200">
-                    <img src="<?php echo asset('images/clients/jakson.png'); ?>" alt="Jakson" loading="lazy" onerror="this.style.display='none'">
+                    <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Jakson" loading="lazy" onerror="this.style.display='none'">
                 </div>
                 <div class="client-logo" data-aos="fade-up" data-aos-delay="300">
-                    <img src="<?php echo asset('images/clients/suzuki.png'); ?>" alt="Suzuki" loading="lazy" onerror="this.style.display='none'">
+                    <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Suzuki" loading="lazy" onerror="this.style.display='none'">
                 </div>
                 <div class="client-logo" data-aos="fade-up" data-aos-delay="400">
-                    <img src="<?php echo asset('images/clients/dbcl.png'); ?>" alt="DBCL" loading="lazy" onerror="this.style.display='none'">
+                    <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="DBCL" loading="lazy" onerror="this.style.display='none'">
                 </div>
                 <div class="client-logo" data-aos="fade-up" data-aos-delay="500">
-                    <img src="<?php echo asset('images/clients/orient.png'); ?>" alt="Orient" loading="lazy" onerror="this.style.display='none'">
+                    <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Orient" loading="lazy" onerror="this.style.display='none'">
                 </div>
             </div>
         </div>
@@ -526,18 +639,18 @@ require_once 'includes/header.php';
     <section class="cta-fullwidth">
         <div class="container">
             <div data-aos="fade-up" style="max-width:800px; margin:0 auto;">
-                <h2 style="color:white; font-size:clamp(1.75rem, 4vw, 3rem); margin-bottom:1.5rem;">
+                <h2>
                     Ready to Transform Your <span style="color:#60A5FA;">Business?</span>
                 </h2>
-                <p style="color:rgba(255,255,255,0.8); font-size:1.1rem; margin-bottom:2.5rem; line-height:1.8;">
+                <p>
                     Let's discuss how our IT consulting and digital transformation services can create powerful, engaging digital experiences for your users.
                 </p>
-                <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-                    <a href="<?php echo base_url('contact.php'); ?>" class="btn" style="background:white; color:var(--accent); font-weight:600;">
-                        <i class="fas fa-rocket"></i> Get Free Consultation
+                <div class="cta-buttons">
+                    <a href="<?php echo base_url('contact.php'); ?>" class="btn">
+                        <i class="fas fa-rocket" aria-hidden="true"></i> Get Free Consultation
                     </a>
-                    <a href="#services" class="btn" style="background:transparent; color:white; border:2px solid rgba(255,255,255,0.3);">
-                        <i class="fas fa-play-circle"></i> Learn More
+                    <a href="#services" class="btn">
+                        <i class="fas fa-play-circle" aria-hidden="true"></i> Learn More
                     </a>
                 </div>
             </div>

@@ -59,19 +59,19 @@ require_once 'includes/header.php';
     <section class="content-section bg-alt">
         <div class="container">
             <div class="grid grid-4 stagger">
-                <div class="stats-card anim-scale">
+                <div class="stats-card" data-aos="zoom-in">
                     <div class="stats-number counter" data-target="200">0</div>
                     <div class="stats-label">Projects Delivered</div>
                 </div>
-                <div class="stats-card anim-scale">
+                <div class="stats-card" data-aos="zoom-in">
                     <div class="stats-number counter" data-target="15000" data-suffix="+">0</div>
                     <div class="stats-label">Users Empowered</div>
                 </div>
-                <div class="stats-card anim-scale">
+                <div class="stats-card" data-aos="zoom-in">
                     <div class="stats-number" style="color:var(--accent-green);">99%</div>
                     <div class="stats-label">Client Satisfaction</div>
                 </div>
-                <div class="stats-card anim-scale">
+                <div class="stats-card" data-aos="zoom-in">
                     <div class="stats-number" style="color:var(--accent-cyan);">15+</div>
                     <div class="stats-label">Countries Served</div>
                 </div>
@@ -122,42 +122,42 @@ require_once 'includes/header.php';
                 <p class="lead">We're pioneering the future of learning by combining Moodle's robustness with cutting-edge AI capabilities.</p>
             </div>
             <div class="grid grid-3 stagger" style="margin-top:3rem;">
-                <div class="feature-card anim-scale">
+                <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fa fa-robot"></i>
                     </div>
                     <h4>Personalized Learning</h4>
                     <p>AI-powered learning paths that adapt to each student's pace, style, and goals.</p>
                 </div>
-                <div class="feature-card anim-scale">
+                <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fa fa-chart-line"></i>
                     </div>
                     <h4>Predictive Analytics</h4>
                     <p>Identify at-risk students early with machine learning models that analyze engagement patterns.</p>
                 </div>
-                <div class="feature-card anim-scale">
+                <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fa fa-language"></i>
                     </div>
                     <h4>Natural Language Processing</h4>
                     <p>Automated content tagging, sentiment analysis, and intelligent discussion forum moderation.</p>
                 </div>
-                <div class="feature-card anim-scale">
+                <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fa fa-brain"></i>
                     </div>
                     <h4>Smart Assessments</h4>
                     <p>AI-generated quizzes, automated grading, and intelligent feedback systems.</p>
                 </div>
-                <div class="feature-card anim-scale">
+                <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fa fa-voice"></i>
                     </div>
                     <h4>Voice-Enabled Learning</h4>
                     <p>Voice commands, speech-to-text, and AI voice assistants integrated into your LMS.</p>
                 </div>
-                <div class="feature-card anim-scale">
+                <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fa fa-shield-alt"></i>
                     </div>

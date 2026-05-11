@@ -39,6 +39,9 @@ $pageSchema = $pageSchema ?? null;
     <!-- New Premium Styles -->
     <link rel="stylesheet" href="<?php echo asset('css/new-style.css'); ?>">
 
+    <!-- Chatbot Styles -->
+    <link rel="stylesheet" href="<?php echo asset('css/chatbot.css'); ?>">
+
     <!-- Schema Markup -->
     <script type="application/ld+json">
     <?php
@@ -69,6 +72,7 @@ $pageSchema = $pageSchema ?? null;
                 <div class="nav-dropdown">
                     <a href="<?php echo base_url('what-we-do.php'); ?>" class="nav-link <?php echo $activePage === 'what-we-do' || $activePage === 'services' ? 'active' : ''; ?>">Services <i class="fas fa-angle-down"></i></a>
                     <div class="dropdown-menu">
+                         <a href="<?php echo base_url('services/moodle-all-development.php'); ?>" class="dropdown-link">Moodle Development</a>
                         <a href="<?php echo base_url('services/web-development.php'); ?>" class="dropdown-link">Web Development</a>
                         <a href="<?php echo base_url('services/mobile-app-development.php'); ?>" class="dropdown-link">Mobile App Development</a>
                         <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>" class="dropdown-link">AI & ML Integration</a>

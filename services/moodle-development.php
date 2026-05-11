@@ -124,37 +124,37 @@ require_once '../includes/header.php';
             <p class="lead">A proven 6-step process that ensures your Moodle platform exceeds expectations.</p>
         </div>
         <div class="process-grid stagger" style="margin-top:3rem;">
-            <div class="process-step anim-scale">
+            <div class="process-step" data-aos="zoom-in">
                 <div class="step-number">1</div>
                 <div class="step-connector"></div>
                 <h4>Discovery</h4>
                 <p>Understand your educational goals, user needs, and technical requirements.</p>
             </div>
-            <div class="process-step anim-scale">
+            <div class="process-step" data-aos="zoom-in">
                 <div class="step-number">2</div>
                 <div class="step-connector"></div>
                 <h4>Design</h4>
                 <p>Create wireframes, mockups, and technical architecture for your LMS.</p>
             </div>
-            <div class="process-step anim-scale">
+            <div class="process-step" data-aos="zoom-in">
                 <div class="step-number">3</div>
                 <div class="step-connector"></div>
                 <h4>Develop</h4>
                 <p>Agile development with regular demos and custom plugin creation.</p>
             </div>
-            <div class="process-step anim-scale">
+            <div class="process-step" data-aos="zoom-in">
                 <div class="step-number">4</div>
                 <div class="step-connector"></div>
                 <h4>Test</h4>
                 <p>Comprehensive testing across devices, browsers, and user scenarios.</p>
             </div>
-            <div class="process-step anim-scale">
+            <div class="process-step" data-aos="zoom-in">
                 <div class="step-number">5</div>
                 <div class="step-connector"></div>
                 <h4>Deploy</h4>
                 <p>Smooth go-live with data migration and user training.</p>
             </div>
-            <div class="process-step anim-scale">
+            <div class="process-step" data-aos="zoom-in">
                 <div class="step-number">6</div>
                 <h4>Support</h4>
                 <p>Ongoing maintenance, updates, and technical support.</p>
@@ -171,28 +171,28 @@ require_once '../includes/header.php';
             <h2>Our Moodle <span class="gradient-text">Tech Stack</span></h2>
         </div>
         <div class="tech-grid stagger" style="margin-top:3rem;">
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/technology-stack/moodle.svg'); ?>" alt="Moodle" loading="lazy" onerror="this.style.display='none'">
             </div>
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/technology-stack/php.svg'); ?>" alt="PHP" loading="lazy" onerror="this.style.display='none'">
             </div>
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/technology-stack/mysql.svg'); ?>" alt="MySQL" loading="lazy" onerror="this.style.display='none'">
             </div>
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/technology-stack/javascript.svg'); ?>" alt="JavaScript" loading="lazy" onerror="this.style.display='none'">
             </div>
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/technology-stack/react.svg'); ?>" alt="React" loading="lazy" onerror="this.style.display='none'">
             </div>
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/technology-stack/python.svg'); ?>" alt="Python" loading="lazy" onerror="this.style.display='none'">
             </div>
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/technology-stack/amazon-web-services.svg'); ?>" alt="AWS" loading="lazy" onerror="this.style.display='none'">
             </div>
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/technology-stack/microsoft-azure.svg'); ?>" alt="Azure" loading="lazy" onerror="this.style.display='none'">
             </div>
         </div>
@@ -203,19 +203,19 @@ require_once '../includes/header.php';
 <section class="content-section">
     <div class="container">
         <div class="grid grid-4 stagger">
-            <div class="stats-card anim-scale">
+            <div class="stats-card" data-aos="zoom-in">
                 <div class="stats-number counter" data-target="200">0</div>
                 <div class="stats-label">Projects Delivered</div>
             </div>
-            <div class="stats-card anim-scale">
+            <div class="stats-card" data-aos="zoom-in">
                 <div class="stats-number counter" data-target="15000" data-suffix="+">0</div>
                 <div class="stats-label">Users Empowered</div>
             </div>
-            <div class="stats-card anim-scale">
+            <div class="stats-card" data-aos="zoom-in">
                 <div class="stats-number" style="color:var(--accent-green);">50+</div>
                 <div class="stats-label">Custom Plugins</div>
             </div>
-            <div class="stats-card anim-scale">
+            <div class="stats-card" data-aos="zoom-in">
                 <div class="stats-number" style="color:var(--accent-cyan);">8+</div>
                 <div class="stats-label">Years Experience</div>
             </div>

@@ -56,32 +56,32 @@ require_once '../includes/header.php';
             <p class="lead">Complete hosting and migration solutions tailored to your needs.</p>
         </div>
         <div class="grid grid-3 stagger" style="margin-top:3rem;">
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-server"></i></div>
                 <h4>Managed Hosting</h4>
                 <p>Fully managed Moodle hosting with automatic updates, security patches, and performance optimization.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-exchange-alt"></i></div>
                 <h4>Zero-Downtime Migration</h4>
                 <p>Seamless migration from your existing LMS or Moodle version with zero user impact.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-tachometer-alt"></i></div>
                 <h4>Performance Optimization</h4>
                 <p>Caching, CDN, database optimization for lightning-fast performance.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-shield-alt"></i></div>
                 <h4>Security Management</h4>
                 <p>SSL certificates, firewall configuration, and proactive security monitoring.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-database"></i></div>
                 <h4>Backup & Recovery</h4>
                 <p>Automated daily backups with point-in-time recovery options.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-headset"></i></div>
                 <h4>24/7 Support</h4>
                 <p>Round-the-clock technical support via chat, email, and phone.</p>
@@ -99,7 +99,7 @@ require_once '../includes/header.php';
             <p class="lead">Choose the hosting plan that fits your organization's needs.</p>
         </div>
         <div class="grid grid-3 stagger" style="margin-top:3rem;">
-            <div class="card anim-scale" style="text-align:center; padding:2.5rem;">
+            <div class="card" style="text-align:center; padding:2.5rem;" data-aos="zoom-in">
                 <h4 style="color:var(--accent-cyan);">Starter</h4>
                 <div style="font-size:2.5rem; font-weight:var(--font-weight-extrabold); margin:1rem 0;">$49<span style="font-size:1rem; color:var(--text-muted);">/mo</span></div>
                 <ul class="check-list" style="text-align:left;">
@@ -111,7 +111,7 @@ require_once '../includes/header.php';
                 </ul>
                 <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-outline" style="margin-top:1.5rem; width:100%;">Get Started</a>
             </div>
-            <div class="card anim-scale" style="text-align:center; padding:2.5rem; border:2px solid var(--accent-cyan); position:relative;">
+            <div class="card" style="text-align:center; padding:2.5rem; border:2px solid var(--accent-cyan); position:relative;" data-aos="zoom-in">
                 <div style="position:absolute; top:-15px; left:50%; transform:translateX(-50%); background:var(--gradient-primary); color:white; padding:0.25rem 1rem; border-radius:var(--radius-full); font-size:var(--font-size-xs);">POPULAR</div>
                 <h4 style="color:var(--accent-blue);">Professional</h4>
                 <div style="font-size:2.5rem; font-weight:var(--font-weight-extrabold); margin:1rem 0;">$99<span style="font-size:1rem; color:var(--text-muted);">/mo</span></div>
@@ -124,7 +124,7 @@ require_once '../includes/header.php';
                 </ul>
                 <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary" style="margin-top:1.5rem; width:100%;">Get Started</a>
             </div>
-            <div class="card anim-scale" style="text-align:center; padding:2.5rem;">
+            <div class="card" style="text-align:center; padding:2.5rem;" data-aos="zoom-in">
                 <h4 style="color:var(--accent-green);">Enterprise</h4>
                 <div style="font-size:2.5rem; font-weight:var(--font-weight-extrabold); margin:1rem 0;">Custom</div>
                 <ul class="check-list" style="text-align:left;">

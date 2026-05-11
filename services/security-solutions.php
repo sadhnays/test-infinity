@@ -56,32 +56,32 @@ require_once '../includes/header.php';
             <p class="lead">Protect your LMS with industry-leading security practices.</p>
         </div>
         <div class="grid grid-3 stagger" style="margin-top:3rem;">
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-shield-check"></i></div>
                 <h4>Security Auditing</h4>
                 <p>Comprehensive vulnerability assessments and penetration testing for your LMS.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-lock"></i></div>
                 <h4>SSL/TLS Setup</h4>
                 <p>SSL certificate installation, configuration, and forced HTTPS.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-user-shield"></i></div>
                 <h4>Access Control</h4>
                 <p>Role-based access, 2FA, SSO integration for secure authentication.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-database"></i></div>
                 <h4>Data Encryption</h4>
                 <p>At-rest and in-transit encryption for all sensitive data.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-clipboard-check"></i></div>
                 <h4>Compliance Management</h4>
                 <p>GDPR, FERPA, COPPA compliance auditing and certification.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-eye"></i></div>
                 <h4>24/7 Monitoring</h4>
                 <p>Proactive threat detection and incident response services.</p>

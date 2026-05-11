@@ -56,32 +56,32 @@ require_once '../includes/header.php';
             <p class="lead">End-to-end learning management solutions tailored to your unique needs.</p>
         </div>
         <div class="grid grid-3 stagger" style="margin-top:3rem;">
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-graduation-cap"></i></div>
                 <h4>LMS Implementation</h4>
                 <p>Complete Moodle setup with custom themes, course structure, and user roles configured to your needs.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-users-cog"></i></div>
                 <h4>User Management</h4>
                 <p>Bulk user import, role management, cohort creation, and enrollment automation.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-book-open"></i></div>
                 <h4>Course Development</h4>
                 <p>Engaging, interactive course content with multimedia, quizzes, and assignments.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-chart-bar"></i></div>
                 <h4>Reporting & Analytics</h4>
                 <p>Custom reports, learning analytics, and compliance tracking dashboards.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-plug"></i></div>
                 <h4>Third-Party Integrations</h4>
                 <p>Zoom, Salesforce, SAP, HR systems, and payment gateways.</p>
             </div>
-            <div class="feature-card anim-scale">
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-mobile-alt"></i></div>
                 <h4>Mobile LMS</h4>
                 <p>Responsive design and custom mobile apps for on-the-go learning.</p>
@@ -98,22 +98,22 @@ require_once '../includes/header.php';
             <h2>Leading <span class="gradient-text">LMS Platforms</span></h2>
         </div>
         <div class="tech-grid stagger" style="margin-top:3rem;">
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/technology-stack/moodle.svg'); ?>" alt="Moodle" loading="lazy" onerror="this.style.display='none'">
             </div>
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/canvas-logo.svg'); ?>" alt="Canvas" loading="lazy" onerror="this.style.display='none'">
             </div>
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/totara-logo.svg'); ?>" alt="Totara" loading="lazy" onerror="this.style.display='none'">
             </div>
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/learndash-logo.svg'); ?>" alt="LearnDash" loading="lazy" onerror="this.style.display='none'">
             </div>
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/blackboard-logo.svg'); ?>" alt="Blackboard" loading="lazy" onerror="this.style.display='none'">
             </div>
-            <div class="tech-logo anim-scale">
+            <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/teachable-logo.svg'); ?>" alt="Teachable" loading="lazy" onerror="this.style.display='none'">
             </div>
         </div>

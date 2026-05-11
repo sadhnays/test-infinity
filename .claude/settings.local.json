@@ -5,7 +5,8 @@
       "Bash(powershell.exe *)",
       "PowerShell(New-Item *)",
       "Bash(Get-ChildItem -Recurse -Name -File)",
-      "Bash(Select-Object -First 100)"
+      "Bash(Select-Object -First 100)",
+      "Bash(Get-Content *)"
     ]
   }
 }
