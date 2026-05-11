@@ -6,7 +6,9 @@
       "PowerShell(New-Item *)",
       "Bash(Get-ChildItem -Recurse -Name -File)",
       "Bash(Select-Object -First 100)",
-      "Bash(Get-Content *)"
+      "Bash(Get-Content *)",
+      "Bash(findstr -i \"retail manufacture education logistics\")",
+      "Bash(dir *)"
     ]
   }
 }

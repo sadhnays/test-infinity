@@ -297,6 +297,7 @@ $project = $projects[$projectId];
                     <div class="project-meta-inline">
                         <span><i class="fas fa-clock"></i> <?php echo $project['duration']; ?></span>
                         <span><i class="fas fa-tag"></i> <?php echo $project['type']; ?></span>
+                        <span><i class="fas fa-building"></i> Industry: <?php echo $project['type']; ?></span>
                     </div>
                     <div class="project-hero-tech">
                         <?php foreach($project['tech'] as $t): ?>

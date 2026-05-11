@@ -31,6 +31,97 @@ require_once 'includes/header.php';
     z-index: 15;
     position: relative;
 }
+
+/* Industries Section Styles */
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.industry-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.industry-card {
+    background: var(--bg-color);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.industry-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.industry-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.industry-icon {
+    background: var(--accent);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 1.5rem auto 1rem;
+    color: white;
+}
+
+.industry-card h3 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive adjustments for industries section */
+@media (max-width: 768px) {
+    .industries-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .industry-image {
+        height: 150px;
+    }
+
+    .industry-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .industry-card h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .industries-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .industry-image {
+        height: 130px;
+    }
+}
 .hero-badge {
     display: inline-flex;
     color: #ffffff;
@@ -344,47 +435,65 @@ require_once 'includes/header.php';
             </div>
 
             <div class="industries-grid">
-                <div class="industry-card" data-aos="fade-up">
-                    <div class="industry-icon">
-                        <i aria-hidden="true" class="fas fa-hospital"></i>
+                <a href="<?php echo base_url('healthcare.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up">
+                        <img src="<?php echo asset('images/Industries-We-Serve/Healthcare.webp'); ?>" alt="Healthcare Industry" class="industry-image">
+                        <div class="industry-icon">
+                            <i aria-hidden="true" class="fas fa-hospital"></i>
+                        </div>
+                        <h3>Healthcare</h3>
                     </div>
-                    <h3>Healthcare</h3>
-                </div>
+                </a>
 
-                <div class="industry-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="industry-icon">
-                        <i aria-hidden="true" class="fas fa-university"></i>
+                <a href="<?php echo base_url('finance.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="<?php echo asset('images/Industries-We-Serve/Finance.webp'); ?>" alt="Finance Industry" class="industry-image">
+                        <div class="industry-icon">
+                            <i aria-hidden="true" class="fas fa-university"></i>
+                        </div>
+                        <h3>Finance</h3>
                     </div>
-                    <h3>Finance</h3>
-                </div>
+                </a>
 
-                <div class="industry-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="industry-icon">
-                        <i aria-hidden="true" class="fas fa-shopping-cart"></i>
+                <a href="<?php echo base_url('retail.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="<?php echo asset('images/Industries-We-Serve/Retail.webp'); ?>" alt="Retail Industry" class="industry-image">
+                        <div class="industry-icon">
+                            <i aria-hidden="true" class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Retail</h3>
                     </div>
-                    <h3>Retail</h3>
-                </div>
+                </a>
 
-                <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="industry-icon">
-                        <i aria-hidden="true" class="fas fa-industry"></i>
+                <a href="<?php echo base_url('manufacturing.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="<?php echo asset('images/Industries-We-Serve/Manufacturing.webp'); ?>" alt="Manufacturing Industry" class="industry-image">
+                        <div class="industry-icon">
+                            <i aria-hidden="true" class="fas fa-industry"></i>
+                        </div>
+                        <h3>Manufacturing</h3>
                     </div>
-                    <h3>Manufacturing</h3>
-                </div>
+                </a>
 
-                <div class="industry-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="industry-icon">
-                        <i aria-hidden="true" class="fas fa-graduation-cap"></i>
+                <a href="<?php echo base_url('education.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="400">
+                        <img src="<?php echo asset('images/Industries-We-Serve/Education.webp'); ?>" alt="Education Industry" class="industry-image">
+                        <div class="industry-icon">
+                            <i aria-hidden="true" class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
                     </div>
-                    <h3>Education</h3>
-                </div>
+                </a>
 
-                <div class="industry-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="industry-icon">
-                        <i aria-hidden="true" class="fas fa-shipping-fast"></i>
+                <a href="<?php echo base_url('logistics.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="500">
+                        <img src="<?php echo asset('images/Industries-We-Serve/Logistics.webp'); ?>" alt="Logistics Industry" class="industry-image">
+                        <div class="industry-icon">
+                            <i aria-hidden="true" class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3>Logistics</h3>
                     </div>
-                    <h3>Logistics</h3>
-                </div>
+                </a>
             </div>
         </div>
     </section>
