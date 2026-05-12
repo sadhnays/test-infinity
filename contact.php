@@ -90,18 +90,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
                         <div>
                             <label style="display:block; margin-bottom:0.5rem; font-weight:500;">Name *</label>
-                            <input type="text" name="name" required style="width:100%; padding:12px 16px; border:1px solid var(--border); border-radius:var(--radius-sm); font-family:var(--font-family);">
+                            <input type="text" name="name" required autocomplete="name" style="width:100%; padding:12px 16px; border:1px solid var(--border); border-radius:var(--radius-sm); font-family:var(--font-family);">
                         </div>
                         <div>
                             <label style="display:block; margin-bottom:0.5rem; font-weight:500;">Email *</label>
-                            <input type="email" name="email" required style="width:100%; padding:12px 16px; border:1px solid var(--border); border-radius:var(--radius-sm); font-family:var(--font-family);">
+                            <input type="email" name="email" required autocomplete="email" style="width:100%; padding:12px 16px; border:1px solid var(--border); border-radius:var(--radius-sm); font-family:var(--font-family);">
                         </div>
                     </div>
 
                     <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
                         <div>
                             <label style="display:block; margin-bottom:0.5rem; font-weight:500;">Phone</label>
-                            <input type="tel" name="phone" style="width:100%; padding:12px 16px; border:1px solid var(--border); border-radius:var(--radius-sm); font-family:var(--font-family);">
+                            <input type="tel" name="phone" autocomplete="tel" style="width:100%; padding:12px 16px; border:1px solid var(--border); border-radius:var(--radius-sm); font-family:var(--font-family);">
                         </div>
                         <div>
                             <label style="display:block; margin-bottom:0.5rem; font-weight:500;">Subject *</label>

@@ -1,12 +1,26 @@
 <?php
 // chatbot-lead.php - Handle chatbot lead submission
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: ' . $_SERVER['HTTP_ORIGIN'] ?? '*');
+
+// CORS: Whitelist specific allowed origins
+$allowed_origins = [
+    'https://infinitysofthub.com',
+    'https://www.infinitysofthub.com',
+    'http://localhost',
+    'http://localhost:8080',
+];
+
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+if (in_array($origin, $allowed_origins, true)) {
+    header('Access-Control-Allow-Origin: ' . $origin);
+}
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
+header('Access-Control-Max-Age: 86400');
 
 // Handle preflight
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(204);
     exit(0);
 }
 

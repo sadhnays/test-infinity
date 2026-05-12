@@ -1,7 +1,7 @@
 <?php
-$pageTitle = 'What We Do | IT Development, AI & Custom Software | Infinity SoftHub Technologies';
-$pageDescription = 'Discover what Infinity SoftHub Technologies does best - Moodle IT development, AI automation, custom software solutions, and enterprise learning platforms.';
-$pageKeywords = 'IT development, AI automation, custom software, Moodle development, eLearning platforms, Infinity SoftHub Technologies services';
+$pageTitle = 'What We Do | Infinity SoftHub - IT Services & Solutions';
+$pageDescription = 'Discover Infinity SoftHub services - Moodle development, AI integration, custom software, web & mobile app development for enterprises.';
+$pageKeywords = 'IT services, Moodle development, AI integration, custom software, web development, mobile apps';
 $activePage = 'what-we-do';
 require_once 'includes/header.php';
 ?>
@@ -9,205 +9,284 @@ require_once 'includes/header.php';
     <!-- Page Hero -->
     <section class="page-hero">
         <div class="container">
-            <div class="anim-fade-up">
-                <div class="badge badge-primary" style="margin-bottom:1.5rem; display:inline-flex;">
-                    <i class="fa fa-briefcase"></i> What We Do
-                </div>
-                <h1>Our <span class="gradient-text">Core Services</span></h1>
-                <p>We deliver end-to-end digital solutions with a focus on Moodle IT, AI automation, and custom software development for educational institutions and enterprises.</p>
+            <h1>What We <span class="gradient-text">Do</span></h1>
+            <p>End-to-end digital solutions for enterprises - from Moodle development to AI-powered learning platforms</p>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Core <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle">Delivering comprehensive IT solutions with expertise and innovation</p>
+            </div>
+
+            <div class="industries-grid">
+                <!-- Moodle Development -->
+                <a href="<?php echo base_url('services/moodle-development.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop" alt="Moodle LMS Development" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Moodle Development</h3>
+                    </div>
+                </a>
+
+                <!-- Web Development -->
+                <a href="<?php echo base_url('services/web-development.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Web Development" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                    </div>
+                </a>
+
+                <!-- Mobile App Development -->
+                <a href="<?php echo base_url('services/mobile-app-development.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop" alt="Mobile App Development" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Apps</h3>
+                    </div>
+                </a>
+
+                <!-- AI & ML Integration -->
+                <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" alt="AI and Machine Learning" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI & ML Integration</h3>
+                    </div>
+                </a>
+
+                <!-- Cloud Solutions -->
+                <a href="<?php echo base_url('services/cloud-solutions.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="400">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop" alt="Cloud Solutions" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Solutions</h3>
+                    </div>
+                </a>
+
+                <!-- UI/UX Design -->
+                <a href="<?php echo base_url('services/ui-ux-design.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="500">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop" alt="UI/UX Design" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                    </div>
+                </a>
+
+                <!-- LearnDash Development -->
+                <a href="<?php echo base_url('services/learndash-development.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="600">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop" alt="LearnDash LMS Development" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>LearnDash Development</h3>
+                    </div>
+                </a>
+
+                <!-- Joomla Development -->
+                <a href="<?php echo base_url('services/joomla-development.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="700">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=400&h=300&fit=crop" alt="Joomla Development" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i class="fab fa-joomla"></i>
+                        </div>
+                        <h3>Joomla Development</h3>
+                    </div>
+                </a>
+
+                <!-- E-commerce Solutions -->
+                <a href="<?php echo base_url('services/ecommerce-development.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="800">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop" alt="E-commerce Solutions" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-commerce Solutions</h3>
+                    </div>
+                </a>
+
+                <!-- Mobile e-Learning -->
+                <a href="<?php echo base_url('services/mobile-elearning.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="900">
+                        <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=400&h=300&fit=crop" alt="Mobile e-Learning Solutions" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i class="fas fa-tablet-alt"></i>
+                        </div>
+                        <h3>Mobile e-Learning</h3>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- IT Development Section -->
-    <section class="content-section" id="lms-development">
+    <!-- Moodle IT Development Detail -->
+    <section class="section bg-light">
         <div class="container">
-            <div class="content-grid-2 anim-fade-right">
-                <div>
-                    <div class="badge badge-primary" style="margin-bottom:1rem; display:inline-flex;">
-                        <i class="fa fa-graduation-cap"></i> Core Service
-                    </div>
-                    <h2 style="margin-bottom:1.5rem;">Moodle <span class="gradient-text">IT Development</span></h2>
-                    <p style="margin-bottom:1.5rem;">We are Moodle specialists with 8+ years of experience building custom learning management systems. From initial setup to complex customizations, we handle every aspect of your IT journey.</p>
-                    <ul class="check-list" style="margin-bottom:2rem;">
-                        <li><strong>Custom Theme Development</strong> - Responsive, accessible, branded themes</li>
-                        <li><strong>Plugin Development</strong> - 50+ custom plugins created</li>
-                        <li><strong>Course Development</strong> - Engaging, interactive course content</li>
-                        <li><strong>Third-Party Integrations</strong> - Salesforce, SAP, Zoom, and more</li>
-                        <li><strong>Performance Optimization</strong> - Lightning-fast IT performance</li>
-                        <li><strong>Mobile-Friendly Solutions</strong> - Responsive design for all devices</li>
-                        <li><strong>Multi-Tenant Architecture</strong> - Serve multiple organizations</li>
-                        <li><strong>Gamification</strong> - Badges, points, leaderboards</li>
+            <div class="about-container">
+                <div class="about-content" data-aos="fade-right">
+                    <h2 class="section-title" style="text-align:left;">Moodle <span class="gradient-text">IT Development</span></h2>
+                    <div class="blue-underline" style="margin-bottom:1.5rem;"></div>
+                    <p>We are Moodle specialists with 8+ years of experience building custom learning management systems. From initial setup to complex customizations, we handle every aspect of your IT journey.</p>
+
+                    <ul style="list-style:none; padding:0; margin:1.5rem 0;">
+                        <li style="padding:0.5rem 0; border-bottom:1px solid var(--border);"><i class="fas fa-check-circle" style="color:var(--accent); margin-right:0.75rem;"></i> Custom Theme Development - Responsive, branded themes</li>
+                        <li style="padding:0.5rem 0; border-bottom:1px solid var(--border);"><i class="fas fa-check-circle" style="color:var(--accent); margin-right:0.75rem;"></i> Plugin Development - 50+ custom plugins created</li>
+                        <li style="padding:0.5rem 0; border-bottom:1px solid var(--border);"><i class="fas fa-check-circle" style="color:var(--accent); margin-right:0.75rem;"></i> Third-Party Integrations - Salesforce, SAP, Zoom</li>
+                        <li style="padding:0.5rem 0; border-bottom:1px solid var(--border);"><i class="fas fa-check-circle" style="color:var(--accent); margin-right:0.75rem;"></i> Performance Optimization - Lightning-fast LMS</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check-circle" style="color:var(--accent); margin-right:0.75rem;"></i> Multi-Tenant Architecture - Serve multiple organizations</li>
                     </ul>
-                    <a href="<?php echo base_url('services/moodle-development.php'); ?>" class="btn btn-primary">
-                        <i class="fa fa-arrow-right"></i> Learn More About Moodle
+
+                    <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i> Get Started
                     </a>
                 </div>
-                <div class="anim-fade-left">
-                    <img src="<?php echo asset('images/about/moodle-lms-development.jpg'); ?>" alt="Moodle IT Development" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/0066ff/ffffff?text=Moodle+IT+Development'">
+                <div class="about-cards" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&h=400&fit=crop" alt="Moodle Development" style="width:100%; border-radius:var(--radius-xl); object-fit:cover;">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- AI Automation Section -->
-    <section class="content-section bg-alt" id="ai-automation">
+    <section class="section">
         <div class="container">
-            <div class="content-grid-2 reverse anim-fade-left">
-                <div>
-                    <div class="badge badge-success" style="margin-bottom:1rem; display:inline-flex;">
-                        <i class="fa fa-robot"></i> Innovation
-                    </div>
-                    <h2 style="margin-bottom:1.5rem;">AI <span class="gradient-text">Automation</span></h2>
-                    <p style="margin-bottom:1.5rem;">Transform your IT with cutting-edge AI technologies. We integrate machine learning, natural language processing, and predictive analytics into your learning platform.</p>
-                    <ul class="check-list" style="margin-bottom:2rem;">
-                        <li><strong>Personalized Learning Paths</strong> - AI-driven course recommendations</li>
-                        <li><strong>Automated Grading</strong> - Smart assessment and instant feedback</li>
-                        <li><strong>Predictive Analytics</strong> - Identify at-risk students early</li>
-                        <li><strong>Chatbots & Virtual Assistants</strong> - 24/7 student support</li>
-                        <li><strong>Content Generation</strong> - AI-powered quiz and content creation</li>
-                        <li><strong>Natural Language Processing</strong> - Smart discussion forums</li>
-                        <li><strong>Voice-Enabled Learning</strong> - Speech-to-text, voice commands</li>
-                        <li><strong>Learning Analytics</strong> - Deep insights into learning patterns</li>
-                    </ul>
-                    <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>" class="btn btn-secondary">
-                        <i class="fa fa-brain"></i> Explore AI Solutions
-                    </a>
-                </div>
-                <div class="anim-fade-right">
-                    <img src="<?php echo asset('images/about/AI-automation.jpg'); ?>" alt="AI Automation in IT" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/00ccff/ffffff?text=AI+Automation'">
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="about-container" style="direction:rtl;">
+                <div class="about-content" data-aos="fade-left" style="direction:ltr;">
+                    <h2 class="section-title" style="text-align:left;">AI <span class="gradient-text">Automation</span></h2>
+                    <div class="blue-underline" style="margin-bottom:1.5rem;"></div>
+                    <p>Transform your IT with cutting-edge AI technologies. We integrate machine learning, natural language processing, and predictive analytics into your learning platform.</p>
 
-    <!-- Custom Software Section -->
-    <section class="content-section" id="custom-software">
-        <div class="container">
-            <div class="content-grid-2 anim-fade-right">
-                <div>
-                    <div class="badge badge-primary" style="margin-bottom:1rem; display:inline-flex;">
-                        <i class="fa fa-code"></i> Development
-                    </div>
-                    <h2 style="margin-bottom:1.5rem;">Custom <span class="gradient-text">Software Solutions</span></h2>
-                    <p style="margin-bottom:1.5rem;">Beyond IT, we build custom web and mobile applications tailored to your unique business needs. Scalable, secure, and user-friendly solutions.</p>
-                    <ul class="check-list" style="margin-bottom:2rem;">
-                        <li><strong>Web Application Development</strong> - React, Node.js, Python, PHP</li>
-                        <li><strong>Mobile App Development</strong> - iOS, Android, React Native</li>
-                        <li><strong>E-commerce Solutions</strong> - Custom online stores and marketplaces</li>
-                        <li><strong>API Development</strong> - RESTful APIs, GraphQL, microservices</li>
-                        <li><strong>Database Design</strong> - MySQL, PostgreSQL, MongoDB</li>
-                        <li><strong>Cloud Integration</strong> - AWS, Azure, Google Cloud</li>
-                        <li><strong>DevOps & CI/CD</strong> - Automated deployment pipelines</li>
-                        <li><strong>Legacy Modernization</strong> - Upgrade older systems</li>
+                    <ul style="list-style:none; padding:0; margin:1.5rem 0;">
+                        <li style="padding:0.5rem 0; border-bottom:1px solid var(--border);"><i class="fas fa-check-circle" style="color:var(--accent); margin-right:0.75rem;"></i> Personalized Learning Paths - AI-driven recommendations</li>
+                        <li style="padding:0.5rem 0; border-bottom:1px solid var(--border);"><i class="fas fa-check-circle" style="color:var(--accent); margin-right:0.75rem;"></i> Automated Grading - Smart assessment & feedback</li>
+                        <li style="padding:0.5rem 0; border-bottom:1px solid var(--border);"><i class="fas fa-check-circle" style="color:var(--accent); margin-right:0.75rem;"></i> Chatbots & Virtual Assistants - 24/7 support</li>
+                        <li style="padding:0.5rem 0; border-bottom:1px solid var(--border);"><i class="fas fa-check-circle" style="color:var(--accent); margin-right:0.75rem;"></i> Predictive Analytics - Identify at-risk learners</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check-circle" style="color:var(--accent); margin-right:0.75rem;"></i> Learning Analytics - Deep insights & reporting</li>
                     </ul>
-                    <a href="<?php echo base_url('services/mobile-app-development.php'); ?>" class="btn btn-primary">
-                        <i class="fa fa-mobile-alt"></i> View Development Services
+
+                    <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i> Explore AI Solutions
                     </a>
                 </div>
-                <div class="anim-fade-left">
-                    <img src="<?php echo asset('images/about/custom.jpg'); ?>" alt="Custom Software Development" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/00ffcc/ffffff?text=Custom+Software'">
+                <div class="about-cards" data-aos="fade-right" style="direction:ltr;">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=400&fit=crop" alt="AI Automation" style="width:100%; border-radius:var(--radius-xl); object-fit:cover;">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Tech Stack Section -->
-    <section class="content-section bg-alt">
+    <section class="section bg-light">
         <div class="container">
-            <div class="section-header anim-fade-up">
-                <div class="section-tag">Our Tech Stack</div>
-                <h2>Technologies We <span class="gradient-text">Master</span></h2>
-                <p class="lead">We use industry-leading technologies to build robust, future-proof solutions.</p>
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Tech <span class="gradient-text">Stack</span></h2>
+                <p class="section-subtitle">Industry-leading technologies for robust, future-proof solutions</p>
             </div>
-            <div class="grid grid-4 stagger" style="margin-top:3rem;">
-                <div class="feature-card" data-aos="zoom-in">
-                    <div class="feature-icon">
-                        <i class="fa fa-graduation-cap"></i>
+
+            <div class="industries-grid" style="margin-top:2rem;">
+                <div class="industry-card" data-aos="fade-up">
+                    <div class="industry-icon">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h4>IT Platforms</h4>
-                    <p>Moodle, Canvas, Blackboard, Totara, LearnDash, Teachable</p>
+                    <h3>LMS Platforms</h3>
+                    <p style="padding:0 1rem;">Moodle, Canvas, Blackboard, Totara, LearnDash</p>
                 </div>
-                <div class="feature-card" data-aos="zoom-in">
-                    <div class="feature-icon">
-                        <i class="fa fa-brain"></i>
+
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="industry-icon">
+                        <i class="fas fa-brain"></i>
                     </div>
-                    <h4>AI & ML</h4>
-                    <p>Python, TensorFlow, PyTorch, OpenAI, NLP, Scikit-learn</p>
+                    <h3>AI & ML</h3>
+                    <p style="padding:0 1rem;">Python, TensorFlow, OpenAI, NLP, Scikit-learn</p>
                 </div>
-                <div class="feature-card" data-aos="zoom-in">
-                    <div class="feature-icon">
-                        <i class="fa fa-cloud"></i>
+
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="industry-icon">
+                        <i class="fas fa-cloud"></i>
                     </div>
-                    <h4>Cloud & DevOps</h4>
-                    <p>AWS, Azure, Google Cloud, Docker, Kubernetes, Jenkins</p>
+                    <h3>Cloud & DevOps</h3>
+                    <p style="padding:0 1rem;">AWS, Azure, Docker, Kubernetes, Jenkins</p>
                 </div>
-                <div class="feature-card" data-aos="zoom-in">
-                    <div class="feature-icon">
-                        <i class="fa fa-code"></i>
+
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="industry-icon">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <h4>Development</h4>
-                    <p>React, Node.js, PHP, Python, Java, Swift, Kotlin</p>
+                    <h3>Development</h3>
+                    <p style="padding:0 1rem;">React, Node.js, PHP, Python, Java, Swift</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Process Overview -->
-    <section class="content-section">
+    <!-- Process Section -->
+    <section class="section">
         <div class="container">
-            <div class="section-header anim-fade-up">
-                <div class="section-tag">Our Process</div>
-                <h2>How We <span class="gradient-text">Deliver</span></h2>
-                <p class="lead">A proven 5-step process that ensures quality, timeliness, and your complete satisfaction.</p>
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our <span class="gradient-text">Process</span></h2>
+                <p class="section-subtitle">A proven 5-step approach to deliver quality solutions</p>
             </div>
-            <div class="process-grid stagger" style="margin-top:3rem;">
-                <div class="process-step" data-aos="zoom-in">
-                    <div class="step-number">1</div>
-                    <div class="step-connector"></div>
-                    <h4>Discovery</h4>
-                    <p>Understand your goals, users, and technical requirements.</p>
+
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:2rem; margin-top:3rem;">
+                <div class="industry-card" data-aos="fade-up" style="text-align:center;">
+                    <div style="width:60px; height:60px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem; color:white; font-size:1.5rem; font-weight:bold;">1</div>
+                    <h3>Discovery</h3>
+                    <p>Understand your goals and requirements</p>
                 </div>
-                <div class="process-step" data-aos="zoom-in">
-                    <div class="step-number">2</div>
-                    <div class="step-connector"></div>
-                    <h4>Design</h4>
-                    <p>Create wireframes, mockups, and technical architecture.</p>
+
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="100" style="text-align:center;">
+                    <div style="width:60px; height:60px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem; color:white; font-size:1.5rem; font-weight:bold;">2</div>
+                    <h3>Design</h3>
+                    <p>Create wireframes and architecture</p>
                 </div>
-                <div class="process-step" data-aos="zoom-in">
-                    <div class="step-number">3</div>
-                    <div class="step-connector"></div>
-                    <h4>Develop</h4>
-                    <p>Agile development with regular demos and feedback.</p>
+
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="200" style="text-align:center;">
+                    <div style="width:60px; height:60px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem; color:white; font-size:1.5rem; font-weight:bold;">3</div>
+                    <h3>Develop</h3>
+                    <p>Agile development with regular demos</p>
                 </div>
-                <div class="process-step" data-aos="zoom-in">
-                    <div class="step-number">4</div>
-                    <div class="step-connector"></div>
-                    <h4>Test</h4>
-                    <p>Comprehensive testing across devices and use cases.</p>
+
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="300" style="text-align:center;">
+                    <div style="width:60px; height:60px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem; color:white; font-size:1.5rem; font-weight:bold;">4</div>
+                    <h3>Test</h3>
+                    <p>Comprehensive testing & QA</p>
                 </div>
-                <div class="process-step" data-aos="zoom-in">
-                    <div class="step-number">5</div>
-                    <h4>Launch</h4>
-                    <p>Smooth deployment with training and ongoing support.</p>
+
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="400" style="text-align:center;">
+                    <div style="width:60px; height:60px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem; color:white; font-size:1.5rem; font-weight:bold;">5</div>
+                    <h3>Launch</h3>
+                    <p>Deploy with training & support</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="content-section bg-alt">
-        <div class="container">
-            <div class="cta-section anim-fade-up" style="margin:0 auto; max-width:900px;">
-                <h2 style="color:white; margin-bottom:1rem;">Have a Project in <span style="color:#00ffcc;">Mind?</span></h2>
-                <p style="color:rgba(255,255,255,0.8); margin-bottom:2rem;">Let's discuss how our Moodle expertise and custom software development can bring your vision to life.</p>
-                <a href="<?php echo base_url('contact.php'); ?>" class="btn" style="background:white; color:var(--accent-blue); font-weight:var(--font-weight-bold);">
-                    <i class="fa fa-rocket"></i> Get Free Consultation
-                </a>
-            </div>
+    <section class="section bg-alt">
+        <div class="container" style="text-align:center;">
+            <h2 class="section-title" style="color:white;">Have a Project in <span class="gradient-text">Mind?</span></h2>
+            <p style="color:rgba(255,255,255,0.8); margin:1rem 0 2rem; max-width:600px; margin-left:auto; margin-right:auto;">Let's discuss how our expertise can bring your vision to life.</p>
+            <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary" style="background:white; color:var(--accent);">
+                <i class="fas fa-rocket"></i> Get Free Consultation
+            </a>
         </div>
     </section>
 
-<?php
-require_once 'includes/footer.php';
-?>
+<?php require_once 'includes/footer.php'; ?>

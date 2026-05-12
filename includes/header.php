@@ -13,6 +13,77 @@ $pageSchema = $pageSchema ?? null;
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+/* Loading Screen */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.loader-wrapper.loaded {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.loader-inner {
+    text-align: center;
+}
+.loader-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+.loader-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0066ff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.loader-text {
+    color: #0066ff;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+</style>
+</head>
+<body>
+<!-- Loading Screen with Logo -->
+<div class="loader-wrapper" id="loaderWrapper">
+    <div class="loader-inner">
+        <img src="<?php echo asset('images/ish-logo.svg'); ?>" alt="Loading" class="loader-logo">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">Loading...</div>
+    </div>
+</div>
+<script>
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.getElementById('loaderWrapper').classList.add('loaded');
+    }, 500);
+});
+setTimeout(function() {
+    var el = document.getElementById('loaderWrapper');
+    if (el && !el.classList.contains('loaded')) {
+        el.classList.add('loaded');
+    }
+}, 3000);
+</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -23,8 +94,27 @@ $pageSchema = $pageSchema ?? null;
     <meta property="og:title" content="<?php echo e($pageTitle); ?>">
     <meta property="og:description" content="<?php echo e($pageDescription); ?>">
     <meta property="og:url" content="<?php echo e(base_url($_SERVER['REQUEST_URI'])); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<?php echo asset('images/og-image.png'); ?>">
+    <meta property="og:site_name" content="<?php echo e(SITE_NAME); ?>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo e($pageTitle); ?>">
+    <meta name="twitter:description" content="<?php echo e($pageDescription); ?>">
+    <meta name="twitter:image" content="<?php echo asset('images/og-image.png'); ?>">
     <link rel="canonical" href="<?php echo e(base_url($_SERVER['REQUEST_URI'])); ?>">
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo asset('images/favicon.png'); ?>">
+    <link rel="icon" type="image/png" href="<?php echo asset('images/favicon.png'); ?>">
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -60,10 +150,12 @@ $pageSchema = $pageSchema ?? null;
     </script>
 </head>
 <body>
-    <!-- Transparent Sticky Navbar -->
+    <!-- Diagonal Sticky Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="<?php echo base_url('index.php'); ?>" class="logo">Infinity<span>Soft</span>Hub</a>
+            <a href="<?php echo base_url('index.php'); ?>" class="logo">
+                <img src="<?php echo asset('images/ish-logo.svg'); ?>" alt="Infinity SoftHub" style="height:50px; width:auto;">
+            </a>
 
             <div class="nav-menu" id="navMenu">
                 <a href="<?php echo base_url('index.php'); ?>" class="nav-link <?php echo $activePage === 'home' ? 'active' : ''; ?>">Home</a>

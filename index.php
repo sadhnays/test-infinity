@@ -207,9 +207,48 @@ require_once 'includes/header.php';
         align-items: center;
     }
 }
+/* Technology Stack Icons */
+.hero-tech-stack {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.tech-label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.tech-icons {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+.tech-icons i {
+    font-size: 1.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+.tech-icons i:hover {
+    color: #00ccff;
+    transform: translateY(-3px);
+}
+
 @media (max-width: 480px) {
     .hero-stats {
         grid-template-columns: 1fr;
+    }
+    .hero-tech-stack {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tech-icons {
+        gap: 1rem;
+    }
+    .tech-icons i {
+        font-size: 1.5rem;
     }
 }
 </style>
@@ -222,35 +261,6 @@ require_once 'includes/header.php';
             <div class="glow-circle circle-1"></div>
             <div class="glow-circle circle-2"></div>
             <div class="glow-circle circle-3"></div>
-        </div>
-
-        <!-- Left Side Diamond (AI & Development) -->
-        <div class="hero-diamond-left">
-            <div class="diamond-wrapper diamond-ai">
-                <div class="diamond-cut">
-                    <div class="diamond-inner">
-                        <i class="fas fa-laptop-code"></i>
-                        <span>AI & Dev</span>
-                    </div>
-                </div>
-                <div class="diamond-ring ring-1"></div>
-                <div class="diamond-ring ring-2"></div>
-                <div class="diamond-ring ring-3"></div>
-            </div>
-        </div>
-
-        <div class="hero-diamond-right">
-            <div class="diamond-wrapper diamond-ai">
-                <div class="diamond-cut">
-                    <div class="diamond-inner">
-                        <i class="fas fa-database"></i>
-                        <span>docker & Mysql</span>
-                    </div>
-                </div>
-                <div class="diamond-ring ring-1"></div>
-                <div class="diamond-ring ring-2"></div>
-                <div class="diamond-ring ring-3"></div>
-            </div>
         </div>
 
         <div class="container hero-container">
@@ -293,6 +303,22 @@ require_once 'includes/header.php';
                         <div class="stat-label" >Client Satisfaction</div>
                     </div>
                 </div>
+
+                <!-- Technology Stack Icons -->
+                <div class="hero-tech-stack" data-aos="fade-up" data-aos-delay="500">
+                    <span class="tech-label">Tech Stack:</span>
+                    <div class="tech-icons">
+                        <i class="fab fa-php" title="PHP"></i>
+                        <i class="fab fa-java" title="Java"></i>
+                        <i class="fab fa-python" title="Python"></i>
+                        <i class="fab fa-react" title="React"></i>
+                        <i class="fab fa-angular" title="Angular"></i>
+                        <i class="fab fa-node-js" title="Node.js"></i>
+                        <i class="fab fa-docker" title="Docker"></i>
+                        <i class="fab fa-aws" title="AWS"></i>
+                        <i class="fab fa-microsoft" title="Azure"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -304,73 +330,67 @@ require_once 'includes/header.php';
                 <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
                 <p class="section-subtitle">From custom development to AI-powered solutions, we deliver end-to-end digital transformation</p>
             </div>
-            <div class="services-grid">
+            <div class="industries-grid">
                 <!-- Web Development -->
-                <div class="value-card" data-aos="fade-up">
-                    <div class="card-icon">
-                        <i aria-hidden="true" class="fas fa-code"></i>
+                <a href="<?php echo base_url('services/web-development.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Web Development" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i aria-hidden="true" class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
                     </div>
-                    <h3>Web Development</h3>
-                    <p>Custom web solutions built with modern technologies, including LMS platforms and enterprise applications.</p>
-                    <a href="<?php echo base_url('services/web-development.php'); ?>" class="service-link">
-                        Learn More <i aria-hidden="true" class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+                </a>
                 <!-- Mobile App Development -->
-                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-icon">
-                        <i aria-hidden="true" class="fas fa-mobile-alt"></i>
+                <a href="<?php echo base_url('services/mobile-app-development.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop" alt="Mobile App Development" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i aria-hidden="true" class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Apps</h3>
                     </div>
-                    <h3>Mobile App Development</h3>
-                    <p>Native and cross-platform mobile apps for iOS and Android with seamless integration.</p>
-                    <a href="<?php echo base_url('services/mobile-app-development.php'); ?>" class="service-link">
-                        Learn More <i aria-hidden="true" class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+                </a>
                 <!-- AI & ML Integration -->
-                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-icon">
-                        <i aria-hidden="true" class="fas fa-brain"></i>
+                <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" alt="AI & ML Integration" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i aria-hidden="true" class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI & ML</h3>
                     </div>
-                    <h3>AI & ML Integration</h3>
-                    <p>Integrate AI-powered features - personalized learning paths, intelligent assessments, and predictive analytics.</p>
-                    <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>" class="service-link">
-                        Learn More <i aria-hidden="true" class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+                </a>
                 <!-- Cloud Solutions -->
-                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-icon">
-                        <i aria-hidden="true" class="fas fa-cloud"></i>
+                <a href="<?php echo base_url('services/cloud-solutions.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop" alt="Cloud Solutions" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i aria-hidden="true" class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Solutions</h3>
                     </div>
-                    <h3>Cloud Solutions</h3>
-                    <p>Secure, scalable cloud infrastructure and migration services for enterprises.</p>
-                    <a href="<?php echo base_url('services/cloud-solutions.php'); ?>" class="service-link">
-                        Learn More <i aria-hidden="true" class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+                </a>
                 <!-- UI/UX Design -->
-                <div class="value-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card-icon">
-                        <i aria-hidden="true" class="fas fa-paint-brush"></i>
+                <a href="<?php echo base_url('services/ui-ux-design.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="400">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop" alt="UI/UX Design" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i aria-hidden="true" class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
                     </div>
-                    <h3>UI/UX Design</h3>
-                    <p>Beautiful, intuitive interfaces that enhance user experience and drive engagement.</p>
-                    <a href="<?php echo base_url('services/ui-ux-design.php'); ?>" class="service-link">
-                        Learn More <i aria-hidden="true" class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+                </a>
                 <!-- Digital Marketing -->
-                <div class="value-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="card-icon">
-                        <i aria-hidden="true" class="fas fa-chart-line"></i>
+                <a href="<?php echo base_url('services/digital-marketing.php'); ?>" class="industry-link">
+                    <div class="industry-card" data-aos="fade-up" data-aos-delay="500">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Digital Marketing" class="industry-image" loading="lazy">
+                        <div class="industry-icon">
+                            <i aria-hidden="true" class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Digital Marketing</h3>
                     </div>
-                    <h3>Digital Marketing</h3>
-                    <p>Data-driven marketing strategies to grow your online presence and reach.</p>
-                    <a href="<?php echo base_url('services/digital-marketing.php'); ?>" class="service-link">
-                        Learn More <i aria-hidden="true" class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+                </a>
             </div>
         </div>
     </section>

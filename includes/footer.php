@@ -2,7 +2,7 @@
     <footer class="footer" id="contact">
         <div class="container footer-container">
             <div class="footer-col">
-                <h3>Infinity<span>Soft</span>Hub</h3>
+                <img src="<?php echo asset('images/ish-logo.svg'); ?>" alt="Infinity SoftHub" style="height:45px; margin-bottom:15px; filter:brightness(0) invert(1);">
                 <p>Premium enterprise digital solutions provider helping businesses transform and grow.</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/infinitysofthub" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -14,21 +14,20 @@
 
             <div class="footer-col">
                 <h4>Quick Links</h4>
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#values">Core Values</a>
-                <a href="#industries">Industries</a>
-                <a href="#offices">Global Offices</a>
+                <a href="<?php echo base_url('index.php'); ?>">Home</a>
+                <a href="<?php echo base_url('about.php'); ?>">About Us</a>
+                <a href="<?php echo base_url('what-we-do.php'); ?>">Services</a>
+                <a href="<?php echo base_url('portfolio.php'); ?>">Portfolio</a>
                 <a href="<?php echo base_url('contact.php'); ?>">Contact Us</a>
             </div>
 
             <div class="footer-col">
-                <h4>Services</h4>
+                <h4>Our Services</h4>
+                <a href="<?php echo base_url('services/moodle-development.php'); ?>">Moodle Development</a>
                 <a href="<?php echo base_url('services/web-development.php'); ?>">Web Development</a>
-                <a href="<?php echo base_url('services/mobile-app-development.php'); ?>">Mobile App Development</a>
-                <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>">AI & ML Integration</a>
+                <a href="<?php echo base_url('services/mobile-app-development.php'); ?>">Mobile Apps</a>
+                <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>">AI & ML Solutions</a>
                 <a href="<?php echo base_url('services/cloud-solutions.php'); ?>">Cloud Solutions</a>
-                <a href="<?php echo base_url('services/ui-ux-design.php'); ?>">UI/UX Design</a>
             </div>
 
             <div class="footer-col">
@@ -41,7 +40,7 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2026 Infinity SoftHub Technologies. All rights reserved.</p>
+                <p>&copy; <?php echo date('Y'); ?> Infinity SoftHub Technologies. All rights reserved.</p>
             </div>
         </div>
 
@@ -52,20 +51,22 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="<?php echo asset('js/new-script.js'); ?>"></script>
-    <script src="<?php echo asset('js/chatbot.js'); ?>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="<?php echo asset('js/new-script.js'); ?>" defer></script>
+    <script src="<?php echo asset('js/chatbot.js'); ?>" defer></script>
 
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 800,
-            once: true
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    once: true
+                });
+            }
         });
 
-        // Back to top
         window.addEventListener('scroll', function() {
             const btn = document.getElementById('backToTop');
             if (window.scrollY > 300) {

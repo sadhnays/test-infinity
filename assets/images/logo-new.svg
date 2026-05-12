@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0066ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ccff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0066ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0088ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo Icon - Infinity Symbol with Tech Elements -->
+  <g transform="translate(10, 20)">
+    <!-- Infinity Loop -->
+    <path d="M25,30 C25,20 15,20 15,30 C15,40 25,40 35,30 C45,20 55,20 55,30 C55,40 65,40 65,30 C65,20 55,20 55,30 C55,40 45,40 35,30 C25,20 15,20 15,30 C15,40 5,40 5,30 C5,20 15,20 15,30"
+          fill="none" stroke="url(#blueGrad)" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Tech Dots -->
+    <circle cx="35" cy="30" r="3" fill="#00ccff"/>
+    <circle cx="25" cy="22" r="2" fill="#0066ff"/>
+    <circle cx="45" cy="22" r="2" fill="#0066ff"/>
+
+    <!-- Digital Lines -->
+    <line x1="0" y1="30" x2="8" y2="30" stroke="#0066ff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="72" y1="30" x2="80" y2="30" stroke="#0066ff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Text: Infinity -->
+  <text x="105" y="50" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="url(#textGrad)">Infinity</text>
+
+  <!-- Text: SoftHub -->
+  <text x="105" y="78" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" fill="#333333">SoftHub</text>
+</svg>

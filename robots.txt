@@ -1,0 +1,16 @@
+# robots.txt for infinitysofthub.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas (if any)
+Disallow: /admin/
+Disallow: /includes/config.php
+Disallow: /includes/smtps.php
+Disallow: /chatbot-lead.php
+
+# Sitemap
+Sitemap: https://infinitysofthub.com/sitemap.xml
+
+# Crawl delay (optional, be kind to smaller sites)
+Crawl-delay: 1

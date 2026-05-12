@@ -8,7 +8,12 @@
       "Bash(Select-Object -First 100)",
       "Bash(Get-Content *)",
       "Bash(findstr -i \"retail manufacture education logistics\")",
-      "Bash(dir *)"
+      "Bash(dir *)",
+      "Bash(Get-ChildItem -Force)",
+      "Bash(Select-Object Name, Mode)",
+      "Bash(Get-ChildItem -Path \"C:\\\\wamp64\\\\www\\\\infinitysofthub.com\" -Force)",
+      "Bash(rm -rf \"C:/wamp64/www/infinitysofthub.com/assets/css - Copy\")",
+      "Bash(rm -f \"C:/wamp64/www/infinitysofthub.com/portfolio - Copy.php\")"
     ]
   }
 }

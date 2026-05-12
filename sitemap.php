@@ -63,28 +63,23 @@ require_once 'includes/header.php';
                                 <div class="col-sm-6 col-md-6 col-lg-3">
                                     <h2 class="lihead">About Infinity SoftHub</h2>
                                     <ul class="jList-inner">
-                                        <li><a href="why-snak.php">Why Infinity SoftHub</a></li>
-                                        <li><a href="our-customers.php">Our Customers</a></li>
-                                        <li><a href="our-partner.php">Our Partners</a></li>
+                                        <li><a href="about.php">About Us</a></li>
                                         <li><a href="our-team.php">Our Team</a></li>
                                         <li><a href="award-certification.php">Award and Certifications</a></li>
-                                        <li><a href="career-culture.php">Careers and Culture</a></li>
-                                        <li><a href="csr.php">Corporate Social Responsibility</a></li>
+                                        <li><a href="corporate-social-responsibility.php">Corporate Social Responsibility</a></li>
+                                        <li><a href="our-locations.php">Our Locations</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-lg-3">
                                     <h3 class="lihead">Services</h3>
                                     <ul class="jList-inner">
-                                        <li><a href="big-data-analytics-solution.php">Big Data & Analytics Solutions</a>
-                                        </li>
+                                        <li><a href="data-analytics-solution.php">Data Analytics Solutions</a></li>
                                         <li><a href="azure-service-platform.php">Azure Service Platform</a></li>
                                         <li><a href="ms-power-platform.php">MS Power Platform</a></li>
                                         <li><a href="artificial-intelligence.php">Artificial Intelligence</a></li>
-                                        <!-- <li><a href="cloud-solutions.php">Cloud Solutions</a></li> -->
                                         <li><a href="salesforce-solutions.php">Salesforce Solutions</a></li>
-                                        <!-- <li><a href="ERP-extended-applications.php">ERP Extended Applications</a></li> -->
-                                        <li><a href="product-development.php">Product-Development</a></li>
-                                        <li><a href="consulting.php">Consulting</a></li>
+                                        <li><a href="product-development.php">Product Development</a></li>
+                                        <li><a href="web-development.php">Web Development</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-lg-3">
@@ -114,7 +109,7 @@ require_once 'includes/header.php';
                                     <h6 class="mt-4 lihead">Get in Touch</h6>
                                     <ul class="jList-inner">
                                         <li><a href="our-locations.php">Our Locations</a></li>
-                                        <li><a href="contact-us.php">Contact Us</a></li>
+                                        <li><a href="contact.php">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
