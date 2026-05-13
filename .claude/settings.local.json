@@ -13,7 +13,10 @@
       "Bash(Select-Object Name, Mode)",
       "Bash(Get-ChildItem -Path \"C:\\\\wamp64\\\\www\\\\infinitysofthub.com\" -Force)",
       "Bash(rm -rf \"C:/wamp64/www/infinitysofthub.com/assets/css - Copy\")",
-      "Bash(rm -f \"C:/wamp64/www/infinitysofthub.com/portfolio - Copy.php\")"
+      "Bash(rm -f \"C:/wamp64/www/infinitysofthub.com/portfolio - Copy.php\")",
+      "Bash(Get-ChildItem -Path \"C:\\\\wamp64\\\\www\\\\infinitysofthub.com\" -Filter \"*.html\")",
+      "Bash(Select-Object Name)",
+      "Bash(powershell *)"
     ]
   }
 }

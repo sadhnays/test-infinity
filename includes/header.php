@@ -180,6 +180,10 @@ setTimeout(function() {
                 <a href="<?php echo base_url('case-studies.php'); ?>" class="nav-link <?php echo $activePage === 'case-studies' ? 'active' : ''; ?>">Case Studies</a>
                 <a href="<?php echo base_url('blog/'); ?>" class="nav-link <?php echo $activePage === 'blog' ? 'active' : ''; ?>">Blog</a>
                 <a href="<?php echo base_url('contact.php'); ?>" class="nav-cta">Get in Touch</a>
+
+                <div class="mobile-close-btn" id="navCloseBtn">
+                    <i class="fas fa-times"></i>
+                </div>
             </div>
 
             <div class="nav-toggle" id="navToggle">
@@ -187,3 +191,6 @@ setTimeout(function() {
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
