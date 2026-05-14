@@ -16,7 +16,15 @@
       "Bash(rm -f \"C:/wamp64/www/infinitysofthub.com/portfolio - Copy.php\")",
       "Bash(Get-ChildItem -Path \"C:\\\\wamp64\\\\www\\\\infinitysofthub.com\" -Filter \"*.html\")",
       "Bash(Select-Object Name)",
-      "Bash(powershell *)"
+      "Bash(powershell *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\wamp64\\\\www\\\\infinitysofthub.com\\\\wordpress\\\\blog\" -Recurse -Include \"*.php\" -Depth 2)",
+      "Bash(Select-Object FullName)",
+      "WebFetch(domain:infinitysofthub.com)",
+      "Bash(curl -s \"https://infinitysofthub.com/blog/\")",
+      "Bash(Select-String -Pattern \"\\(header|navbar|nav|site-title|logo\\)\" -Context 0,2)",
+      "Bash(curl -s \"https://infinitysofthub.com/\")",
+      "Bash(curl *)",
+      "Bash(php -l \"C:/wamp64/www/infinitysofthub.com/assets/css/new-style.css\")"
     ]
   }
 }

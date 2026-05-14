@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    /* ===== CSS Variables ===== */
+    :root {
+        --primary: #062B6F;
+        --primary-dark: #041E4D;
+        --secondary: #0B3D91;
+        --accent: #2563EB;
+        --accent-light: #3B82F6;
+        --bg-light: #F5F7FB;
+        --white: #FFFFFF;
+        --border: #E5EAF3;
+        --text-dark: #0F172A;
+        --text-gray: #64748B;
+        --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+        --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+        --shadow-lg: 0 10px 30px rgba(0,0,0,0.12);
+        --radius-sm: 8px;
+        --radius-md: 12px;
+        --radius-lg: 20px;
+        --radius-xl: 24px;
+        --transition: all 0.3s ease;
+        --font-family: 'Poppins', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--font-family); background: var(--white); color: var(--text-dark); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; transition: var(--transition); }
+    img { max-width: 100%; height: auto; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    /* ===== Navbar ===== */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+        box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+        z-index: 1000;
+        padding: 12px 0;
+    }
+
+    /* White Logo Background - Responsive */
+    .navbar::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100%;
+        background: #ffffff;
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+        z-index: -1;
+        box-shadow: 4px 0 20px rgba(0,0,0,0.1);
+        -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+        shape-rendering: crisp-edges;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .logo {
+        padding-left: 15px;
+        z-index: 1;
+    }
+    .logo img { height: 45px; width: auto; }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        list-style: none;
+        padding-right: 20px;
+        z-index: 1;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(255,255,255,0.9);
+        padding: 8px 0;
+        position: relative;
+    }
+
+    .nav-link:hover, .nav-link.active { color: var(--white); }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--accent-light);
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+
+    .nav-dropdown { position: relative; }
+
+    .nav-dropdown .fa-angle-down {
+        font-size: 10px;
+        margin-left: 4px;
+        transition: transform 0.3s;
+    }
+
+    .nav-dropdown:hover .fa-angle-down { transform: rotate(180deg); }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--white);
+        min-width: 200px;
+        box-shadow: var(--shadow-lg);
+        border-radius: var(--radius-sm);
+        padding: 0.5rem 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: var(--transition);
+        z-index: 100;
+    }
+
+    .nav-dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .dropdown-link {
+        display: block;
+        padding: 0.75rem 1.25rem;
+        color: var(--text-dark);
+        font-size: 13px;
+    }
+
+    .dropdown-link:hover {
+        background: var(--bg-light);
+        color: var(--accent);
+        padding-left: 1.75rem;
+    }
+
+    .nav-cta {
+        background: var(--accent);
+        color: var(--white);
+        padding: 8px 20px;
+        border-radius: var(--radius-sm);
+        font-weight: 600;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .nav-cta:hover {
+        background: var(--secondary);
+        color: var(--white);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(37,99,235,0.4);
+    }
+
+    /* Mobile Toggle */
+    .nav-toggle { display: none; cursor: pointer; font-size: 24px; color: var(--white); z-index: 1001; position: relative; }
+    .mobile-close-btn { display: none; }
+    .mobile-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999; }
+
+    /* ===== Tablet (1024px) ===== */
+    @media (max-width: 1200px) {
+        .navbar::before { width: 220px; }
+        .logo { padding-left: 10px; }
+        .logo img { height: 40px; }
+        .nav-menu { gap: 1rem; }
+        .nav-link { font-size: 13px; }
+    }
+
+    /* ===== Mobile Responsive ===== */
+    @media (max-width: 991px) {
+        .navbar::before { display: none; }
+
+        .nav-toggle { display: block; }
+
+        .mobile-close-btn {
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 60px;
+            font-size: 24px;
+            cursor: pointer;
+            background: var(--bg-light);
+            border: none;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            z-index: 1001;
+        }
+
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 280px;
+            max-width: 85%;
+            height: 100%;
+            background: white;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 70px 25px 25px;
+            gap: 0;
+            transition: right 0.3s ease;
+            z-index: 1001;
+            overflow-y: auto;
+            box-shadow: -5px 0 30px rgba(0,0,0,0.2);
+        }
+
+        .nav-menu.active { right: 0; }
+
+        .nav-menu li {
+            width: 100%;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-link {
+            display: block;
+            padding: 12px 0;
+            color: var(--text-dark);
+            font-size: 15px;
+        }
+
+        .nav-cta {
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+            padding: 12px 20px;
+        }
+
+        .mobile-overlay.active { display: block; }
+
+        .dropdown-menu {
+            position: static;
+            box-shadow: none;
+            padding-left: 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .nav-dropdown.active .dropdown-menu {
+            max-height: 500px;
+        }
+    }
+
+    /* ===== Chatbot Styles ===== */
+    .chatbot-widget { position: fixed; bottom: 2rem; left: 2rem; z-index: 2147483647; font-family: var(--font-family); }
+    .chatbot-toggle { width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #0066ff 0%, #00ccff 100%); display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 20px rgba(0, 102, 255, 0.4); transition: all 0.3s ease; color: white; font-size: 1.5rem; border: none; }
+    .chatbot-toggle:hover { transform: scale(1.1); box-shadow: 0 6px 25px rgba(0, 102, 255, 0.5); }
+    .chatbot-badge { position: absolute; top: -5px; right: -5px; background: #10B981; color: white; font-size: 0.7rem; font-weight: 700; width: 20px; height: 20px; border-radius: 50%; display: none; align-items: center; justify-content: center; border: 2px solid white; }
+    .chatbot-window { position: absolute; bottom: 80px; left: 0; width: 380px; height: 520px; background: white; border: 1px solid var(--border); border-radius: var(--radius-xl); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); display: none; flex-direction: column; overflow: hidden; animation: slideUp 0.3s ease; }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .chatbot-header { padding: 1rem 1.25rem; background: linear-gradient(135deg, var(--primary), var(--accent)); display: flex; align-items: center; justify-content: space-between; }
+    .chatbot-header-info { display: flex; align-items: center; gap: 0.75rem; }
+    .chatbot-avatar { width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.1rem; }
+    .chatbot-header h4 { font-size: 0.95rem; margin: 0; color: white; }
+    .chatbot-status { font-size: 0.75rem; color: #10B981; display: flex; align-items: center; gap: 0.3rem; }
+    .chatbot-status i { font-size: 0.5rem; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    .chatbot-close { background: transparent; border: none; color: white; cursor: pointer; font-size: 1.1rem; }
+    .chatbot-messages { flex: 1; padding: 1rem; overflow-y: auto; display: flex; flex-direction: column; gap: 0.75rem; background: var(--bg-light); }
+    .chat-message { display: flex; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .user-message { justify-content: flex-end; }
+    .bot-message { justify-content: flex-start; }
+    .message-content { max-width: 80%; padding: 0.75rem 1rem; border-radius: var(--radius-lg); font-size: 0.875rem; line-height: 1.5; }
+    .user-message .message-content { background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; border-bottom-right-radius: 4px; }
+    .bot-message .message-content { background: white; color: var(--text-dark); border: 1px solid var(--border); border-bottom-left-radius: 4px; }
+    .message-content p { margin: 0; }
+    .typing-indicator { display: flex; gap: 0.3rem; padding: 0.75rem 1rem; background: white; border: 1px solid var(--border); border-radius: var(--radius-lg); border-bottom-left-radius: 4px; max-width: 80px; }
+    .typing-indicator span { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; animation: typing 1.4s infinite; }
+    .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+    .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes typing { 0%, 60%, 100% { transform: translateY(0); opacity: 0.4; } 30% { transform: translateY(-6px); opacity: 1; } }
+    .chatbot-input-area { padding: 1rem; background: white; border-top: 1px solid var(--border); }
+    .chatbot-quick-actions { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+    .quick-action { padding: 0.375rem 0.75rem; background: rgba(37, 99, 235, 0.1); border: 1px solid rgba(37, 99, 235, 0.3); border-radius: 50px; color: var(--accent); font-size: 0.75rem; cursor: pointer; transition: all 0.3s ease; font-family: var(--font-family); }
+    .quick-action:hover { background: rgba(37, 99, 235, 0.2); }
+    .chatbot-input-wrapper { display: flex; gap: 0.5rem; }
+    .chatbot-input-wrapper input { flex: 1; padding: 0.625rem 1rem; background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius-md); color: var(--text-dark); font-size: 0.875rem; font-family: var(--font-family); outline: none; }
+    .chatbot-input-wrapper input:focus { border-color: var(--accent); }
+    .chatbot-send { width: 42px; height: 42px; background: linear-gradient(135deg, var(--primary), var(--accent)); border: none; border-radius: var(--radius-md); color: white; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; }
+    .chatbot-send:hover { transform: scale(1.05); }
+
+    @media (max-width: 480px) {
+        .chatbot-window { width: calc(100vw - 2rem); height: 450px; left: 0; bottom: 70px; }
+        .chatbot-widget { bottom: 1rem; left: 1rem; }
+        .chatbot-toggle { width: 55px; height: 55px; }
+    }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/ish-logo.svg" alt="Infinity SoftHub">
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="mobile-close-btn" id="navCloseBtn"><i class="fas fa-times"></i></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-dropdown" onclick="toggleDropdown(this)">
+                    <a href="#" class="nav-link">Services <i class="fas fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="services/moodle-all-development.html" class="dropdown-link">Moodle Development</a>
+                        <a href="services/web-development.html" class="dropdown-link">Web Development</a>
+                        <a href="services/mobile-app-development.html" class="dropdown-link">Mobile App Development</a>
+                        <a href="services/ai-ml-integration.html" class="dropdown-link">AI & ML Integration</a>
+                        <a href="services/cloud-solutions.html" class="dropdown-link">Cloud Solutions</a>
+                        <a href="services/ui-ux-design.html" class="dropdown-link">UI/UX Design</a>
+                        <a href="services/digital-marketing.html" class="dropdown-link">Digital Marketing</a>
+                    </div>
+                </li>
+                <li><a href="industry-expertise.html" class="nav-link">Industries</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="our-locations.html" class="nav-link">Locations</a></li>
+                <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget">
+        <div class="chatbot-toggle" onclick="toggleChat()">
+            <i class="fas fa-comment-dots" id="chat-icon"></i>
+            <i class="fas fa-times" id="close-icon" style="display:none;"></i>
+            <span class="chatbot-badge" id="chat-badge">1</span>
+        </div>
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar"><i class="fas fa-robot"></i></div>
+                    <div>
+                        <h4>Infinity Assistant</h4>
+                        <span class="chatbot-status"><i class="fas fa-circle"></i> Online</span>
+                    </div>
+                </div>
+                <button class="chatbot-close" onclick="toggleChat()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="chat-message bot-message">
+                    <div class="message-content">
+                        <p>Hello! I'm Infinity Assistant. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input-area">
+                <div class="chatbot-quick-actions">
+                    <button class="quick-action" onclick="sendQuickMessage('What services do you offer?')">Services</button>
+                    <button class="quick-action" onclick="sendQuickMessage('Get a quote')">Get Quote</button>
+                    <button class="quick-action" onclick="sendQuickMessage('Contact info')">Contact</button>
+                </div>
+                <div class="chatbot-input-wrapper">
+                    <input type="text" id="chatbot-input" placeholder="Type your message..." onkeypress="handleChatKeyPress(event)">
+                    <button class="chatbot-send" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content - Add your content here -->
+    <main style="padding-top: 80px;">
+        <!-- Your page content goes here -->
+    </main>
+
+    <script>
+    var chatOpen = false;
+
+    function toggleChat() {
+        chatOpen = !chatOpen;
+        document.getElementById('chatbot-window').style.display = chatOpen ? 'flex' : 'none';
+        document.getElementById('chat-icon').style.display = chatOpen ? 'none' : 'block';
+        document.getElementById('close-icon').style.display = chatOpen ? 'block' : 'none';
+        var badge = document.getElementById('chat-badge');
+        if (chatOpen && badge) badge.style.display = 'none';
+    }
+
+    function sendMessage() {
+        var input = document.getElementById('chatbot-input');
+        if (!input || !input.value.trim()) return;
+        var message = input.value.trim();
+        input.value = '';
+        addMessage(message, 'user');
+        setTimeout(function() {
+            var responses = [
+                "Thanks for your message! Visit our website or contact us at info@infinitysofthub.com for more details.",
+                "Great question! Our team is ready to help. Email us at info@infinitysofthub.com",
+                "We offer Web Development, Mobile Apps, AI & ML, Cloud Solutions, and more. Contact us for a free quote!"
+            ];
+            addMessage(responses[Math.floor(Math.random() * responses.length)], 'bot');
+        }, 1000);
+    }
+
+    function sendQuickMessage(message) {
+        addMessage(message, 'user');
+        setTimeout(function() {
+            addMessage("Thanks for your interest! Visit https://infinitysofthub.com or email info@infinitysofthub.com for more info.", 'bot');
+        }, 1000);
+    }
+
+    function handleChatKeyPress(event) {
+        if (event.key === 'Enter') sendMessage();
+    }
+
+    function addMessage(text, sender) {
+        var container = document.getElementById('chatbot-messages');
+        if (!container) return;
+        var div = document.createElement('div');
+        div.className = 'chat-message ' + sender + '-message';
+        div.innerHTML = '<div class="message-content"><p>' + escapeHtml(text) + '</p></div>';
+        container.appendChild(div);
+        container.scrollTop = container.scrollHeight;
+    }
+
+    function escapeHtml(text) {
+        var div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    // Toggle dropdown on mobile
+    function toggleDropdown(element) {
+        if (window.innerWidth <= 991) {
+            element.classList.toggle('active');
+        }
+    }
+
+    setTimeout(function() {
+        var badge = document.getElementById('chat-badge');
+        if (badge && !chatOpen) badge.style.display = 'flex';
+    }, 3000);
+
+    // Mobile Menu
+    document.addEventListener('DOMContentLoaded', function() {
+        var navToggle = document.getElementById('navToggle');
+        var navMenu = document.getElementById('navMenu');
+        var navCloseBtn = document.getElementById('navCloseBtn');
+        var mobileOverlay = document.getElementById('mobileOverlay');
+
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                mobileOverlay.classList.toggle('active');
+            });
+        }
+        if (navCloseBtn) {
+            navCloseBtn.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+            });
+        }
+        if (mobileOverlay) {
+            mobileOverlay.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+            });
+        }
+    });
+    </script>

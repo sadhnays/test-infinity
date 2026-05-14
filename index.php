@@ -253,61 +253,63 @@ require_once 'includes/header.php';
 }
 </style>
 
-    <!-- Hero Section -->
+    <!-- Hero Section - Clean & Impactful -->
     <section class="hero animated-bg" id="home">
-        <!-- Background Elements -->
-        <div class="hero-particles" id="heroParticles"></div>
-        <div class="hero-bg-shapes">
-            <div class="glow-circle circle-1"></div>
-            <div class="glow-circle circle-2"></div>
-            <div class="glow-circle circle-3"></div>
+        <!-- Floating Elements -->
+        <div class="hero-float-elements">
+            <div class="float-icon float-1"><i class="fas fa-code"></i></div>
+            <div class="float-icon float-2"><i class="fas fa-cloud"></i></div>
+            <div class="float-icon float-3"><i class="fas fa-robot"></i></div>
+            <div class="float-icon float-4"><i class="fas fa-graduation-cap"></i></div>
+            <div class="float-icon float-5"><i class="fas fa-chart-line"></i></div>
         </div>
 
-        <div class="container hero-container">
-            <div class="hero-content">
-                <div class="hero-badge" data-aos="fade-down">
-                    <i aria-hidden="true" class="fa fa-check-circle"></i>
-                    <span>IT Solutions Experts Since 2015</span>
-                </div>
-                <h1 class="hero-heading" data-aos="fade-up">
-                    Build Scalable <span class="gradient-text">IT</span> & AI-Powered<br>Digital Solutions
-                </h1>
-                <p class="hero-subtext" data-aos="fade-up" data-aos-delay="100">
-                    We specialize in <strong style="color:#00ccff;">Moodle development</strong>, AI integration, and enterprise learning platforms. Transform your educational vision into a powerful, scalable reality.
+        <div class="container">
+            <div class="hero-center">
+                <!-- Subtitle -->
+                <p class="hero-subtitle-tag">
+                    <span class="tag-dot"></span>
+                    Enterprise IT Solutions Since 2015
                 </p>
-                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
-                    <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary glow-pulse">
-                        <i aria-hidden="true" class="fa fa-calendar-check"></i>
-                        Get Free Consultation
+
+                <!-- Main Heading -->
+                <h1 class="hero-main-title">
+                    Transform Your Business with
+                    <span class="title-highlight">Intelligent Technology</span>
+                </h1>
+
+                <!-- Description -->
+                <p class="hero-main-desc">
+                    We build scalable digital solutions — from <strong>Moodle LMS</strong> to <strong>AI-powered apps</strong> —
+                    helping enterprises innovate, automate, and grow.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta-group">
+                    <a href="<?php echo base_url('contact.php'); ?>" class="cta-primary">
+                        <i class="fas fa-rocket"></i> Start Your Project
                     </a>
-                    <a href="<?php echo base_url('what-we-do.php'); ?>" class="btn btn-outline">
-                        <i aria-hidden="true" class="fa fa-arrow-right"></i>
-                        View Services
+                    <a href="<?php echo base_url('what-we-do.php'); ?>" class="cta-secondary">
+                        <i class="fas fa-eye"></i> View Services
                     </a>
                 </div>
-                <div class="hero-stats">
-                    <div class="hero-stat" data-aos="fade-up" data-aos-delay="300">
-                        <div class="stat-number counter" data-target="15000" data-suffix="+" >0</div>
-                        <div class="stat-label" >Users Empowered</div>
-                    </div>
-                    <div class="hero-stat" data-aos="fade-up" data-aos-delay="350">
-                        <div class="stat-number" >8+</div>
-                        <div class="stat-label" >Years Experience</div>
-                    </div>
-                    <div class="hero-stat" data-aos="fade-up" data-aos-delay="400">
-                        <div class="stat-number counter" data-target="200" data-suffix="+" >0</div>
-                        <div class="stat-label" >Projects Delivered</div>
-                    </div>
-                    <div class="hero-stat" data-aos="fade-up" data-aos-delay="450">
-                        <div class="stat-number" >99%</div>
-                        <div class="stat-label" >Client Satisfaction</div>
+
+                <!-- Trust Badges -->
+                <div class="hero-trust">
+                    <span class="trust-text">Trusted by 150+ companies worldwide</span>
+                    <div class="trust-icons">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
 
-                <!-- Technology Stack Icons -->
-                <div class="hero-tech-stack" data-aos="fade-up" data-aos-delay="500">
-                    <span class="tech-label">Tech Stack:</span>
-                    <div class="tech-icons">
+                <!-- Tech Stack Icons -->
+                <div class="hero-tech">
+                    <span class="tech-label">Powered by:</span>
+                    <div class="tech-icons-row">
                         <i class="fab fa-php" title="PHP"></i>
                         <i class="fab fa-java" title="Java"></i>
                         <i class="fab fa-python" title="Python"></i>
@@ -316,12 +318,283 @@ require_once 'includes/header.php';
                         <i class="fab fa-node-js" title="Node.js"></i>
                         <i class="fab fa-docker" title="Docker"></i>
                         <i class="fab fa-aws" title="AWS"></i>
-                        <i class="fab fa-microsoft" title="Azure"></i>
+                    </div>
+                </div>
+
+                <!-- Stats Numbers -->
+                <div class="hero-stats-numbers">
+                    <div class="stat-item-hero">
+                        <span class="stat-num counter" data-target="15000" data-suffix="+">0</span>
+                        <span class="stat-lbl">Users Empowered</span>
+                    </div>
+                    <div class="stat-item-hero">
+                        <span class="stat-num">200+</span>
+                        <span class="stat-lbl">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item-hero">
+                        <span class="stat-num">150+</span>
+                        <span class="stat-lbl">Global Clients</span>
+                    </div>
+                    <div class="stat-item-hero">
+                        <span class="stat-num">98%</span>
+                        <span class="stat-lbl">Success Rate</span>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Wave Divider -->
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path fill="#ffffff" d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z"></path>
+            </svg>
+        </div>
     </section>
+
+    <style>
+    /* Hero Center Layout */
+    .hero-center {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 3rem 0;
+    }
+
+    .hero-subtitle-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        background: rgba(255,255,255,0.1);
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        color: rgba(255,255,255,0.9);
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+    }
+
+    .tag-dot {
+        width: 10px;
+        height: 10px;
+        background: #00D4FF;
+        border-radius: 50%;
+        animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.3); opacity: 0.7; }
+    }
+
+    .hero-main-title {
+        color: #ffffff;
+        font-size: clamp(2.2rem, 5vw, 3.5rem);
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+    }
+
+    .title-highlight {
+        background: linear-gradient(135deg, #00D4FF, #00FF88);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .hero-main-desc {
+        color: rgba(255,255,255,0.85);
+        font-size: 1.15rem;
+        line-height: 1.7;
+        margin-bottom: 2.5rem;
+    }
+
+    .hero-main-desc strong {
+        color: #00D4FF;
+    }
+
+    /* CTA Buttons */
+    .hero-cta-group {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+
+    .cta-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: linear-gradient(135deg, #00D4FF, #0066FF);
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+    }
+
+    .cta-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 30px rgba(0, 212, 255, 0.5);
+    }
+
+    .cta-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: transparent;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-weight: 600;
+        text-decoration: none;
+        border: 2px solid rgba(255,255,255,0.3);
+        transition: all 0.3s ease;
+    }
+
+    .cta-secondary:hover {
+        background: rgba(255,255,255,0.1);
+        border-color: rgba(255,255,255,0.5);
+    }
+
+    /* Trust Badges */
+    .hero-trust {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .trust-text {
+        color: rgba(255,255,255,0.6);
+        font-size: 0.9rem;
+    }
+
+    .trust-icons {
+        color: #FFD700;
+        display: flex;
+        gap: 0.25rem;
+    }
+
+    /* Floating Elements */
+    .hero-float-elements {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    .float-icon {
+        position: absolute;
+        color: rgba(0, 212, 255, 0.15);
+        font-size: 2rem;
+        animation: float-around 20s ease-in-out infinite;
+    }
+
+    .float-1 { top: 15%; left: 10%; animation-delay: 0s; }
+    .float-2 { top: 25%; right: 15%; animation-delay: -5s; }
+    .float-3 { top: 60%; left: 5%; animation-delay: -10s; }
+    .float-4 { bottom: 20%; right: 10%; animation-delay: -15s; }
+    .float-5 { top: 40%; right: 5%; animation-delay: -8s; }
+
+    @keyframes float-around {
+        0%, 100% { transform: translate(0, 0) rotate(0deg); }
+        25% { transform: translate(20px, -30px) rotate(10deg); }
+        50% { transform: translate(-10px, 20px) rotate(-5deg); }
+        75% { transform: translate(15px, 10px) rotate(5deg); }
+    }
+
+    /* Wave Divider */
+    .hero-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+    }
+
+    .hero-wave svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Tech Stack Row */
+    .hero-tech {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .tech-label {
+        color: rgba(255,255,255,0.5);
+        font-size: 0.85rem;
+    }
+
+    .tech-icons-row {
+        display: flex;
+        gap: 1.25rem;
+    }
+
+    .tech-icons-row i {
+        font-size: 1.6rem;
+        color: rgba(255,255,255,0.5);
+        transition: all 0.3s ease;
+    }
+
+    .tech-icons-row i:hover {
+        color: #00D4FF;
+        transform: translateY(-3px);
+    }
+
+    /* Stats Numbers */
+    .hero-stats-numbers {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 2.5rem;
+        padding: 1.5rem 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .stat-item-hero {
+        text-align: center;
+    }
+
+    .stat-num {
+        display: block;
+        font-size: 2rem;
+        font-weight: 800;
+        color: #00D4FF;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+
+    .stat-lbl {
+        font-size: 0.85rem;
+        color: rgba(255,255,255,0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .hero-main-title { font-size: 2rem; }
+        .hero-main-desc { font-size: 1rem; }
+        .hero-cta-group { flex-direction: column; align-items: center; }
+        .cta-primary, .cta-secondary { width: 100%; max-width: 280px; justify-content: center; }
+        .float-icon { display: none; }
+        .hero-tech { flex-direction: column; gap: 0.5rem; }
+        .hero-stats-numbers { flex-wrap: wrap; gap: 1.5rem; }
+        .stat-num { font-size: 1.75rem; }
+    }
+    </style>
 
     <!-- Services Section -->
     <section class="section services" id="services">
