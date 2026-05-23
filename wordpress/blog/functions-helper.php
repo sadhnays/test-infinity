@@ -16,5 +16,8 @@ function get_ish_logo_url() {
 
 // Main site URL (parent website)
 function get_main_site_url($path = '') {
-    return 'https://infinitysofthub.com' . ($path ? '/' . ltrim($path, '/') : '');
+    $base = (isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) 
+        ? 'http://localhost/infinitysofthub.com' 
+        : 'https://infinitysofthub.com';
+    return $base . ($path ? '/' . ltrim($path, '/') : '');
 }

@@ -23,7 +23,7 @@
 
             <div class="footer-col">
                 <h4>Our Services</h4>
-                <a href="<?php echo base_url('services/moodle-development.php'); ?>">Moodle Development</a>
+                <a href="<?php echo base_url('services/moodle-all-development.php'); ?>">Moodle Development</a>
                 <a href="<?php echo base_url('services/web-development.php'); ?>">Web Development</a>
                 <a href="<?php echo base_url('services/mobile-app-development.php'); ?>">Mobile Apps</a>
                 <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>">AI & ML Solutions</a>
@@ -32,7 +32,7 @@
 
             <div class="footer-col">
                 <h4>Contact Us</h4>
-                <p><i class="fas fa-map-marker-alt"></i> 5th Floor, HB Twin Tower, New Delhi - 110034</p>
+                <p><i class="fas fa-map-marker-alt"></i> Wazirpur, Faridabad, Haryana</p>
                 <p><i class="fas fa-phone"></i> +91-120-5146-341</p>
                 <p><i class="fas fa-envelope"></i> info@infinitysofthub.com</p>
             </div>

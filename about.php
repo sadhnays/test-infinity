@@ -9,6 +9,9 @@ require_once 'includes/header.php';
 
     <!-- Page Hero -->
     <section class="page-hero">
+        <div class="hero-grid"></div>
+        <div class="hero-scan-line"></div>
+        <div class="hero-particles"></div>
         <div class="container">
             <div class="anim-fade-up" data-aos="fade-up">
                 <div class="badge badge-primary badge-mb">
@@ -41,7 +44,7 @@ require_once 'includes/header.php';
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div class="img-wrapper">
                         <img src="assets/images/about-illustration.svg" alt="Infinity SoftHub Team" class="img-rounded" onerror="this.src='https://via.placeholder.com/600x500/111640/ffffff?text=Team+Experts'">
-                        <div class="experience-badge">
+                        <div class="experience-badge glassmorphic">
                             <div class="exp-number">8+</div>
                             <div class="exp-label">Years Experience</div>
                         </div>
@@ -56,18 +59,22 @@ require_once 'includes/header.php';
         <div class="container">
             <div class="grid grid-4 stagger">
                 <div class="stats-card" data-aos="zoom-in">
+                    <i class="fas fa-cubes stats-card-icon"></i>
                     <div class="stats-number counter" data-target="200">0</div>
                     <div class="stats-label">Projects Delivered</div>
                 </div>
                 <div class="stats-card" data-aos="zoom-in">
+                    <i class="fas fa-users-gear stats-card-icon"></i>
                     <div class="stats-number counter" data-target="15000" data-suffix="+">0</div>
                     <div class="stats-label">Users Empowered</div>
                 </div>
                 <div class="stats-card" data-aos="zoom-in">
+                    <i class="fas fa-circle-check stats-card-icon" style="color: var(--accent-green);"></i>
                     <div class="stats-number stats-green">99%</div>
                     <div class="stats-label">Client Satisfaction</div>
                 </div>
                 <div class="stats-card" data-aos="zoom-in">
+                    <i class="fas fa-globe stats-card-icon" style="color: var(--accent-cyan);"></i>
                     <div class="stats-number stats-cyan">15+</div>
                     <div class="stats-label">Countries Served</div>
                 </div>
@@ -85,19 +92,21 @@ require_once 'includes/header.php';
             </div>
             <div class="content-grid-2 mt-3rem">
                 <div class="anim-fade-right" data-aos="fade-right">
-                    <img src="assets/images/about/Professional-businessman.jpg" alt="Moodle Development Expertise" class="img-rounded" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Moodle+Expertise'">
+                    <div class="img-wrapper">
+                        <img src="assets/images/about/Professional-businessman.jpg" alt="Moodle Development Expertise" class="img-rounded" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Moodle+Expertise'">
+                    </div>
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <h3 class="h3-mb">Why We're Moodle <span class="gradient-text">Experts</span></h3>
-                    <ul style="list-style:none; padding:0; margin:0;">
-                        <li style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.5rem 0; line-height:1.6; color:var(--text-gray, #64748B); font-size:0.95rem;"><span style="flex-shrink:0; color:var(--accent-cyan, #06B6D4); font-size:0.95rem; font-weight:700; margin-top:0.1rem;">✓</span><span style="flex:1; min-width:0;"><strong style="color:var(--text-dark, #0F172A);">8+ Years Specialized Experience</strong> - Dedicated Moodle development since 2015</span></li>
-                        <li style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.5rem 0; line-height:1.6; color:var(--text-gray, #64748B); font-size:0.95rem;"><span style="flex-shrink:0; color:var(--accent-cyan, #06B6D4); font-size:0.95rem; font-weight:700; margin-top:0.1rem;">✓</span><span style="flex:1; min-width:0;"><strong style="color:var(--text-dark, #0F172A);">Custom Plugin Development</strong> - 50+ custom Moodle plugins created</span></li>
-                        <li style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.5rem 0; line-height:1.6; color:var(--text-gray, #64748B); font-size:0.95rem;"><span style="flex-shrink:0; color:var(--accent-cyan, #06B6D4); font-size:0.95rem; font-weight:700; margin-top:0.1rem;">✓</span><span style="flex:1; min-width:0;"><strong style="color:var(--text-dark, #0F172A);">Theme Development</strong> - Beautiful, responsive, accessible themes</span></li>
-                        <li style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.5rem 0; line-height:1.6; color:var(--text-gray, #64748B); font-size:0.95rem;"><span style="flex-shrink:0; color:var(--accent-cyan, #06B6D4); font-size:0.95rem; font-weight:700; margin-top:0.1rem;">✓</span><span style="flex:1; min-width:0;"><strong style="color:var(--text-dark, #0F172A);">Performance Optimization</strong> - Lightning-fast LMS implementations</span></li>
-                        <li style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.5rem 0; line-height:1.6; color:var(--text-gray, #64748B); font-size:0.95rem;"><span style="flex-shrink:0; color:var(--accent-cyan, #06B6D4); font-size:0.95rem; font-weight:700; margin-top:0.1rem;">✓</span><span style="flex:1; min-width:0;"><strong style="color:var(--text-dark, #0F172A);">Third-Party Integrations</strong> - Salesforce, SAP, Zoom, and more</span></li>
-                        <li style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.5rem 0; line-height:1.6; color:var(--text-gray, #64748B); font-size:0.95rem;"><span style="flex-shrink:0; color:var(--accent-cyan, #06B6D4); font-size:0.95rem; font-weight:700; margin-top:0.1rem;">✓</span><span style="flex:1; min-width:0;"><strong style="color:var(--text-dark, #0F172A);">AI Integration</strong> - Smart learning paths, automated grading, predictive analytics</span></li>
-                        <li style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.5rem 0; line-height:1.6; color:var(--text-gray, #64748B); font-size:0.95rem;"><span style="flex-shrink:0; color:var(--accent-cyan, #06B6D4); font-size:0.95rem; font-weight:700; margin-top:0.1rem;">✓</span><span style="flex:1; min-width:0;"><strong style="color:var(--text-dark, #0F172A);">Migration Experts</strong> - Zero-downtime Moodle version upgrades</span></li>
-                        <li style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.5rem 0; line-height:1.6; color:var(--text-gray, #64748B); font-size:0.95rem;"><span style="flex-shrink:0; color:var(--accent-cyan, #06B6D4); font-size:0.95rem; font-weight:700; margin-top:0.1rem;">✓</span><span style="flex:1; min-width:0;"><strong style="color:var(--text-dark, #0F172A);">Scalable Architecture</strong> - From 100 to 100,000+ concurrent users</span></li>
+                    <ul class="premium-check-list">
+                        <li><i class="fas fa-circle-check"></i><span><strong>8+ Years Specialized Experience</strong> - Dedicated Moodle development since 2015</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Custom Plugin Development</strong> - 50+ custom Moodle plugins created</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Theme Development</strong> - Beautiful, responsive, accessible themes</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Performance Optimization</strong> - Lightning-fast LMS implementations</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Third-Party Integrations</strong> - Salesforce, SAP, Zoom, and more</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>AI Integration</strong> - Smart learning paths, automated grading, predictive analytics</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Migration Experts</strong> - Zero-downtime Moodle version upgrades</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Scalable Architecture</strong> - From 100 to 100,000+ concurrent users</span></li>
                     </ul>
                     <div class="mt-2rem">
                         <a href="<?php echo base_url('services/web-development.php'); ?>" class="btn btn-outline">
@@ -175,53 +184,65 @@ require_once 'includes/header.php';
             <div class="grid grid-2 mt-3rem">
                 <!-- Project 1 -->
                 <div class="card" data-aos="fade-up">
-                    <img src="<?php echo asset('images/about/moodle-lms-development.jpg'); ?>" alt="University LMS Transformation" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/0066ff/ffffff?text=University+LMS'">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo asset('images/about/moodle-lms-development.jpg'); ?>" alt="University LMS Transformation" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/0066ff/ffffff?text=University+LMS'">
+                        <div class="card-overlay"></div>
+                    </div>
                     <div class="card-body">
                         <div class="badge badge-primary mb-1rem">Education</div>
                         <h4>University LMS Transformation</h4>
                         <p>A complete Moodle overhaul for a leading university with 8,000+ students. Implemented custom themes, 15+ plugins, and AI-powered course recommendations.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> 8,000+ Active Users</span>
-                            <span class="check-item ml-1rem"><i class="fas fa-check-circle" aria-hidden="true"></i> 40% Engagement Boost</span>
+                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 8,000+ Active Users</span>
+                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 40% Engagement Boost</span>
                         </div>
                     </div>
                 </div>
                 <!-- Project 2 -->
                 <div class="card" data-aos="fade-up">
-                    <img src="<?php echo asset('images/about/ai-lms2.jpg'); ?>" alt="Enterprise Training Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/10B981/ffffff?text=Enterprise+Training'">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo asset('images/about/ai-lms2.jpg'); ?>" alt="Enterprise Training Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/10B981/ffffff?text=Enterprise+Training'">
+                        <div class="card-overlay"></div>
+                    </div>
                     <div class="card-body">
                         <div class="badge badge-success mb-1rem">Corporate</div>
                         <h4>Enterprise Training Platform</h4>
                         <p>Built a custom Moodle-based corporate training platform for a Fortune 500 company with 5,000+ employees. Integrated with SAP and Salesforce.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> 5,000+ Employees</span>
-                            <span class="check-item ml-1rem"><i class="fas fa-check-circle" aria-hidden="true"></i> 60% Faster Onboarding</span>
+                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 5,000+ Employees</span>
+                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 60% Faster Onboarding</span>
                         </div>
                     </div>
                 </div>
                 <!-- Project 3 -->
                 <div class="card" data-aos="fade-up">
-                    <img src="<?php echo asset('images/about/Professional.jpg'); ?>" alt="Medical Training LMS" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/0066ff/ffffff?text=Medical+Training'">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo asset('images/about/Professional.jpg'); ?>" alt="Medical Training LMS" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/0066ff/ffffff?text=Medical+Training'">
+                        <div class="card-overlay"></div>
+                    </div>
                     <div class="card-body">
                         <div class="badge badge-primary mb-1rem">Healthcare</div>
                         <h4>Medical Training LMS</h4>
                         <p>Developed a specialized Moodle platform for medical professionals with CME tracking, certification management, and AI-powered content recommendations.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> 2,000+ Doctors</span>
-                            <span class="check-item ml-1rem"><i class="fas fa-check-circle" aria-hidden="true"></i> 100% Compliance</span>
+                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 2,000+ Doctors</span>
+                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 100% Compliance</span>
                         </div>
                     </div>
                 </div>
                 <!-- Project 4 -->
                 <div class="card" data-aos="fade-up">
-                    <img src="<?php echo asset('images/about/Digital-Solutions.jpg'); ?>" alt="Product Training Portal" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/10B981/ffffff?text=Product+Training'">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo asset('images/about/Digital-Solutions.jpg'); ?>" alt="Product Training Portal" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/10B981/ffffff?text=Product+Training'">
+                        <div class="card-overlay"></div>
+                    </div>
                     <div class="card-body">
                         <div class="badge badge-success mb-1rem">E-commerce</div>
                         <h4>Product Training Portal</h4>
                         <p>Created a customer education portal with interactive courses, quizzes, and certification for a leading e-commerce platform.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> 10,000+ Customers</span>
-                            <span class="check-item ml-1rem"><i class="fas fa-check-circle" aria-hidden="true"></i> 85% Course Completion</span>
+                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 10,000+ Customers</span>
+                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 85% Course Completion</span>
                         </div>
                     </div>
                 </div>
@@ -232,7 +253,7 @@ require_once 'includes/header.php';
     <!-- CTA Section -->
     <section class="content-section bg-alt">
         <div class="container">
-            <div class="cta-section anim-fade-up cta-narrow" data-aos="fade-up">
+            <div class="cta-section anim-fade-up cta-narrow premium-cta" data-aos="fade-up">
                 <h2 class="cta-title">Ready to Build Your <span class="cta-highlight">Dream LMS?</span></h2>
                 <p class="cta-text">Let's discuss how our Moodle expertise and AI integration can transform your learning platform.</p>
                 <a href="<?php echo base_url('contact.php'); ?>" class="btn cta-btn">

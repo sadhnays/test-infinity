@@ -24,7 +24,9 @@
       "Bash(Select-String -Pattern \"\\(header|navbar|nav|site-title|logo\\)\" -Context 0,2)",
       "Bash(curl -s \"https://infinitysofthub.com/\")",
       "Bash(curl *)",
-      "Bash(php -l \"C:/wamp64/www/infinitysofthub.com/assets/css/new-style.css\")"
+      "Bash(php -l \"C:/wamp64/www/infinitysofthub.com/assets/css/new-style.css\")",
+      "Bash(Select-Object -First 20)",
+      "Bash(Get-ChildItem \"C:\\\\wamp64\\\\www\\\\infinitysofthub.com\\\\blog-posts\" -ErrorAction SilentlyContinue)"
     ]
   }
 }

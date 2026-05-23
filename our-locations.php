@@ -1,8 +1,8 @@
 <?php
 // our-locations.php
-$pageTitle = "Our Locations | Infinity SoftHub - Global Offices";
-$pageDescription = "Explore Infinity SoftHub's global office locations. We serve clients worldwide from our offices in USA, UK, India, Australia, and Singapore.";
-$pageKeywords = "our locations, global offices, Infinity SoftHub locations, USA office, India office, UK office";
+$pageTitle = "Our Locations | Infinity SoftHub - Countries Where We Have Services";
+$pageDescription = "Explore the countries where Infinity SoftHub provides digital and LMS services. We serve clients worldwide.";
+$pageKeywords = "our locations, countries we serve, Infinity SoftHub presence, global presence";
 $activePage = 'locations';
 
 require_once 'includes/header.php';
@@ -12,7 +12,7 @@ require_once 'includes/header.php';
     <section class="page-hero" data-aos="fade-up">
         <div class="container">
             <h1>Our <span class="gradient-text">Locations</span></h1>
-            <p>Global offices serving clients worldwide</p>
+            <p>Providing services to clients worldwide</p>
         </div>
     </section>
 
@@ -20,7 +20,7 @@ require_once 'includes/header.php';
     <section class="section offices">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Global <span class="gradient-text">Offices</span></h2>
+                <h2 class="section-title">Countries Where We Have <span class="gradient-text">Services</span></h2>
                 <p class="section-subtitle">Serving clients from strategic locations worldwide</p>
             </div>
 
@@ -55,12 +55,12 @@ require_once 'includes/header.php';
                     </a>
                 </div>
 
-                <!-- Delhi Office -->
+                <!-- Faridabad Office -->
                 <div class="office-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="flag">🇮🇳</div>
-                    <h3>India - Delhi</h3>
-                    <p>5th Floor, HB Twin Tower, Netaji Subhash Place, New Delhi - 110034</p>
-                    <a href="https://maps.app.goo.gl/yCpJX3cSqfvtGAfm6" target="_blank" style="color:var(--accent); font-size:0.85rem; display:inline-flex; align-items:center; gap:0.3rem; margin-top:0.5rem;">
+                    <h3>India - Faridabad</h3>
+                    <p>Wazirpur, Faridabad, Haryana</p>
+                    <a href="https://maps.google.com/?q=Wazirpur,+Faridabad,+Haryana" target="_blank" style="color:var(--accent); font-size:0.85rem; display:inline-flex; align-items:center; gap:0.3rem; margin-top:0.5rem;">
                         <i class="fas fa-map-marker-alt"></i> View on Map
                     </a>
                 </div>
@@ -128,7 +128,7 @@ require_once 'includes/header.php';
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <h3>Visit Us</h3>
-                    <p>5th Floor, HB Twin Tower, New Delhi - 110034</p>
+                    <p>Wazirpur, Faridabad, Haryana</p>
                 </div>
 
                 <div class="value-card" data-aos="fade-up" data-aos-delay="300">

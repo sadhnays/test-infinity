@@ -310,38 +310,85 @@
         .chatbot-widget { bottom: 1rem; left: 1rem; }
         .chatbot-toggle { width: 55px; height: 55px; }
     }
+    @media (min-width: 1553px) {
+    .navbar.scrolled::before {
+        width: 32%;
+        min-width: 220px;
+        max-width: 600px;
+    }
+    .navbar::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 32%;
+        min-width: 220px;
+        max-width: 600px;
+        height: 100%;
+        background: #ffffff;
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+        z-index: -1;
+        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+    }
+}
+/* ===== Responsive: Tablet/Laptop ===== */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .navbar::before {
+        width: 25%;
+        min-width: 200px;
+        max-width: 280px;
+    }
+
+    .navbar.scrolled::before {
+        width: 25%;
+        min-width: 200px;
+        max-width: 280px;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+}
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="images/ish-logo.svg" alt="Infinity SoftHub">
+            <a href="https://infinitysofthub.com/" class="logo">
+                <img src="https:///infinitysofthub.com/assets/images/ish-logo.svg" alt="Infinity SoftHub">
             </a>
 
             <ul class="nav-menu" id="navMenu">
                 <li class="mobile-close-btn" id="navCloseBtn"><i class="fas fa-times"></i></li>
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="https://infinitysofthub.com/" class="nav-link">Home</a></li>
+                <li><a href="https://infinitysofthub.com/about.php" class="nav-link">About</a></li>
                 <li class="nav-dropdown" onclick="toggleDropdown(this)">
                     <a href="#" class="nav-link">Services <i class="fas fa-angle-down"></i></a>
                     <div class="dropdown-menu">
-                        <a href="services/moodle-all-development.html" class="dropdown-link">Moodle Development</a>
-                        <a href="services/web-development.html" class="dropdown-link">Web Development</a>
-                        <a href="services/mobile-app-development.html" class="dropdown-link">Mobile App Development</a>
-                        <a href="services/ai-ml-integration.html" class="dropdown-link">AI & ML Integration</a>
-                        <a href="services/cloud-solutions.html" class="dropdown-link">Cloud Solutions</a>
-                        <a href="services/ui-ux-design.html" class="dropdown-link">UI/UX Design</a>
-                        <a href="services/digital-marketing.html" class="dropdown-link">Digital Marketing</a>
+                        <a href="https://infinitysofthub.com/services/moodle-all-development.php" class="dropdown-link">Moodle Development</a>
+                        <a href="https://infinitysofthub.com/services/web-development.php" class="dropdown-link">Web Development</a>
+                        <a href="https://infinitysofthub.com/services/mobile-app-development.php" class="dropdown-link">Mobile App Development</a>
+                        <a href="https://infinitysofthub.com/services/ai-ml-integration.php" class="dropdown-link">AI & ML Integration</a>
+                        <a href="https://infinitysofthub.com/services/cloud-solutions.php" class="dropdown-link">Cloud Solutions</a>
+                        <a href="https://infinitysofthub.com/services/ui-ux-design.php" class="dropdown-link">UI/UX Design</a>
+                        <a href="https://infinitysofthub.com/services/digital-marketing.php" class="dropdown-link">Digital Marketing</a>
                     </div>
                 </li>
-                <li><a href="industry-expertise.html" class="nav-link">Industries</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="our-locations.html" class="nav-link">Locations</a></li>
-                <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
-                <li><a href="blog.html" class="nav-link active">Blog</a></li>
-                <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+                <li><a href="https://infinitysofthub.com/industry-expertise.php" class="nav-link">Industries</a></li>
+                <li><a href="https://infinitysofthub.com/portfolio.php" class="nav-link">Portfolio</a></li>
+                <li><a href="https://infinitysofthub.com/our-locations.php" class="nav-link">Locations</a></li>
+                <li><a href="https://infinitysofthub.com/case-studies.php" class="nav-link">Case Studies</a></li>
+                <li><a href="https://infinitysofthub.com/blog" class="nav-link active">Blog</a></li>
+                <li><a href="https://infinitysofthub.com/contact.php" class="nav-cta">Get in Touch</a></li>
             </ul>
 
             <div class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></div>

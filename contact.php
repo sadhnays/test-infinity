@@ -132,7 +132,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                         <div>
                             <h4 style="margin-bottom:0.5rem;">Our Location</h4>
-                            <p style="color:var(--text-gray);">5th Floor, HB Twin Tower, Netaji Subhash Place, New Delhi - 110034, India</p>
+                            <p style="color:var(--text-gray);">Wazirpur, Faridabad, Haryana, India</p>
                         </div>
                     </div>
 
