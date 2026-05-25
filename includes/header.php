@@ -31,8 +31,8 @@ $pageSchema = $pageSchema ?? null;
     <meta name="twitter:description" content="<?php echo e($pageDescription); ?>">
     <meta name="twitter:image" content="<?php echo asset('images/og-image.png'); ?>">
     <link rel="canonical" href="<?php echo e(base_url($_SERVER['REQUEST_URI'])); ?>">
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo asset('images/favicon.png'); ?>">
-    <link rel="icon" type="image/png" href="<?php echo asset('images/favicon.png'); ?>">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo asset('images/ish-logo.svg'); ?>">
+    <link rel="icon" type="image/png" sizes="32x32"href="<?php echo asset('images/ish-logo.svg'); ?>">
 
     <!-- Security Headers -->
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
