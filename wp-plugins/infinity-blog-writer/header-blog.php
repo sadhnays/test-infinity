@@ -38,6 +38,7 @@ if (!function_exists('get_main_site_url')) {
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo get_main_site_url('assets/css/variables.css'); ?>">
     <link rel="stylesheet" href="<?php echo get_main_site_url('assets/css/new-style.css'); ?>">
+    <link rel="stylesheet" href="<?php echo get_main_site_url('assets/css/chatbot.css'); ?>">
     <style>
         /* WordPress Admin Bar Compatibility */
         body.admin-bar .navbar {
