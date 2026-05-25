@@ -5,7 +5,7 @@
  * Version: 1.0.0
  */
 
-get_header();
+include plugin_dir_path(__FILE__) . 'header-blog.php';
 ?>
 
 <style>
@@ -401,4 +401,4 @@ get_header();
     </div>
 </div>
 
-<?php get_footer(); ?>
+<?php include plugin_dir_path(__FILE__) . 'footer-blog.php'; ?>

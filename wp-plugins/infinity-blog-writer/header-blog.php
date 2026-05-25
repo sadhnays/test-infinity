@@ -1,7 +1,16 @@
 <?php
 /**
- * Header Template for WordPress Blog - Responsive Fixed
+ * Header Template for Infinity Blog Writer Plugin
  */
+
+if (!function_exists('get_main_site_url')) {
+    function get_main_site_url($path = '') {
+        $base = (isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) 
+            ? 'http://localhost/infinitysofthub.com' 
+            : 'https://infinitysofthub.com';
+        return $base . ($path ? '/' . ltrim($path, '/') : '');
+    }
+}
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -26,12 +35,12 @@
         }
     </style>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="<?php echo home_url(); ?>" class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/ish-logo.svg" alt="<?php bloginfo('name'); ?>">
+                <img src="<?php echo get_main_site_url('assets/images/ish-logo.svg'); ?>" alt="<?php bloginfo('name'); ?>">
             </a>
 
             <ul class="nav-menu" id="navMenu">

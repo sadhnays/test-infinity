@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-get_header();
+include plugin_dir_path(__FILE__) . 'header-blog.php';
 
 // Get post data
 $post_id = get_the_ID();
@@ -499,5 +499,5 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
 </div>
 
 <?php
-get_footer();
+include plugin_dir_path(__FILE__) . 'footer-blog.php';
 ?>

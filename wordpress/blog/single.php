@@ -1,15 +1,15 @@
 <?php
 /**
- * Template Name: Single Blog Post - Infinity SoftHub
- * Description: Beautiful single post layout for blog posts
+ * The template for displaying all single posts
+ *
+ * @package WordPress
+ * @subpackage ISH_Blog_Theme
  */
 
-if (!defined('ABSPATH')) {
-    wp_redirect(home_url());
-    exit;
-}
+get_header();
 
-include plugin_dir_path(dirname(__FILE__)) . 'header-blog.php';
+// Track views
+set_post_views(get_the_ID());
 
 // Get post data
 $post_id = get_the_ID();
@@ -19,7 +19,7 @@ $author_id = get_post_field('post_author', $post_id);
 $author_name = get_the_author();
 $author_avatar = get_avatar_url($author_id, array('size' => 80));
 $author_bio = get_the_author_meta('description', $author_id);
-$views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
+$views = get_post_views($post_id);
 ?>
 
 <style>
@@ -409,7 +409,7 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
         <!-- Hero Header -->
         <section class="post-hero">
             <div class="breadcrumb">
-                <a href="<?php echo home_url('/blog'); ?>">Blog</a>
+                <a href="<?php echo home_url('/'); ?>">Blog</a>
                 <span>/</span>
                 <span><?php the_title(); ?></span>
             </div>
@@ -427,7 +427,7 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
 
         <!-- Main Content Area -->
         <div class="post-container">
-            <a href="<?php echo home_url('/blog'); ?>" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+            <a href="<?php echo home_url('/'); ?>" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Blog</a>
             
             <?php if (has_post_thumbnail()): ?>
                 <img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>" class="featured-image">
@@ -506,5 +506,5 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
 </div>
 
 <?php
-include plugin_dir_path(dirname(__FILE__)) . 'footer-blog.php';
+get_footer();
 ?>

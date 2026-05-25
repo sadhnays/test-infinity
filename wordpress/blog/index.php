@@ -1,11 +1,10 @@
 <?php
 /**
- * Template Name: Blog Listing - Infinity SoftHub
- * Description: Beautiful grid layout for blog posts
- * Version: 1.0.0
+ * The main template file for ISH Blog Theme
+ * Displays the blog listing page
  */
 
-include plugin_dir_path(dirname(__FILE__)) . 'header-blog.php';
+get_header();
 ?>
 
 <style>
@@ -302,23 +301,10 @@ include plugin_dir_path(dirname(__FILE__)) . 'header-blog.php';
     <!-- Blog Content -->
     <div class="blog-container">
         <?php
-        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
-        $args = array(
-            'post_type' => 'post',
-            'post_status' => 'publish',
-            'posts_per_page' => 9,
-            'paged' => $paged,
-            'orderby' => 'date',
-            'order' => 'DESC'
-        );
-
-        $blog_query = new WP_Query($args);
-
-        if ($blog_query->have_posts()):
+        if (have_posts()):
         ?>
             <div class="blog-grid">
-                <?php while ($blog_query->have_posts()): $blog_query->the_post(); ?>
+                <?php while (have_posts()): the_post(); ?>
                     <article class="blog-card">
                         <?php if (has_post_thumbnail()): ?>
                             <div class="blog-card-image-wrapper">
@@ -375,19 +361,15 @@ include plugin_dir_path(dirname(__FILE__)) . 'header-blog.php';
             </div>
 
             <!-- Pagination -->
-            <?php if ($blog_query->max_num_pages > 1): ?>
-                <div class="blog-pagination">
-                    <?php
-                    echo paginate_links(array(
-                        'total' => $blog_query->max_num_pages,
-                        'current' => $paged,
-                        'prev_text' => '<i class="fas fa-chevron-left"></i>',
-                        'next_text' => '<i class="fas fa-chevron-right"></i>',
-                        'mid_size' => 2
-                    ));
-                    ?>
-                </div>
-            <?php endif; ?>
+            <div class="blog-pagination">
+                <?php
+                echo paginate_links(array(
+                    'prev_text' => '<i class="fas fa-chevron-left"></i>',
+                    'next_text' => '<i class="fas fa-chevron-right"></i>',
+                    'mid_size' => 2
+                ));
+                ?>
+            </div>
 
         <?php else: ?>
             <div class="no-posts">
@@ -396,9 +378,7 @@ include plugin_dir_path(dirname(__FILE__)) . 'header-blog.php';
                 <p>Check back soon for new content!</p>
             </div>
         <?php endif; ?>
-
-        <?php wp_reset_postdata(); ?>
     </div>
 </div>
 
-<?php include plugin_dir_path(dirname(__FILE__)) . 'footer-blog.php'; ?>
+<?php get_footer(); ?>
