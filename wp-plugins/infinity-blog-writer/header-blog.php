@@ -103,30 +103,4 @@ if (!function_exists('get_main_site_url')) {
         }
     }
 
-    // Mobile Menu
-    document.addEventListener('DOMContentLoaded', function() {
-        var navToggle = document.getElementById('navToggle');
-        var navMenu = document.getElementById('navMenu');
-        var navCloseBtn = document.getElementById('navCloseBtn');
-        var mobileOverlay = document.getElementById('mobileOverlay');
-
-        if (navToggle && navMenu) {
-            navToggle.addEventListener('click', function() {
-                navMenu.classList.toggle('active');
-                mobileOverlay.classList.toggle('active');
-            });
-        }
-        if (navCloseBtn) {
-            navCloseBtn.addEventListener('click', function() {
-                navMenu.classList.remove('active');
-                mobileOverlay.classList.remove('active');
-            });
-        }
-        if (mobileOverlay) {
-            mobileOverlay.addEventListener('click', function() {
-                navMenu.classList.remove('active');
-                mobileOverlay.classList.remove('active');
-            });
-        }
-    });
     </script>
