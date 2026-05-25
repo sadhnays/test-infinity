@@ -13,77 +13,6 @@ $pageSchema = $pageSchema ?? null;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-/* Loading Screen */
-.loader-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99999;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-.loader-wrapper.loaded {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-.loader-inner {
-    text-align: center;
-}
-.loader-logo {
-    width: 200px;
-    margin-bottom: 20px;
-}
-.loader-spinner {
-    width: 40px;
-    height: 40px;
-    border: 3px solid #f3f3f3;
-    border-top: 3px solid #0066ff;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin: 0 auto;
-}
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-.loader-text {
-    color: #0066ff;
-    font-size: 14px;
-    margin-top: 15px;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-</style>
-</head>
-<body>
-<!-- Loading Screen with Logo -->
-<div class="loader-wrapper" id="loaderWrapper">
-    <div class="loader-inner">
-        <img src="<?php echo asset('images/ish-logo.svg'); ?>" alt="Loading" class="loader-logo">
-        <div class="loader-spinner"></div>
-        <div class="loader-text">Loading...</div>
-    </div>
-</div>
-<script>
-window.addEventListener('load', function() {
-    setTimeout(function() {
-        document.getElementById('loaderWrapper').classList.add('loaded');
-    }, 500);
-});
-setTimeout(function() {
-    var el = document.getElementById('loaderWrapper');
-    if (el && !el.classList.contains('loaded')) {
-        el.classList.add('loaded');
-    }
-}, 3000);
-</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -148,8 +77,79 @@ setTimeout(function() {
     }
     <?php } ?>
     </script>
+
+    <!-- Loading Screen Styles -->
+    <style>
+    /* Loading Screen */
+    .loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99999;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    .loader-wrapper.loaded {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .loader-inner {
+        text-align: center;
+    }
+    .loader-logo {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .loader-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #0066ff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    .loader-text {
+        color: #0066ff;
+        font-size: 14px;
+        margin-top: 15px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    </style>
 </head>
 <body>
+    <!-- Loading Screen with Logo -->
+    <div class="loader-wrapper" id="loaderWrapper">
+        <div class="loader-inner">
+            <img src="<?php echo asset('images/ish-logo.svg'); ?>" alt="Loading" class="loader-logo">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.getElementById('loaderWrapper').classList.add('loaded');
+        }, 500);
+    });
+    setTimeout(function() {
+        var el = document.getElementById('loaderWrapper');
+        if (el && !el.classList.contains('loaded')) {
+            el.classList.add('loaded');
+        }
+    }, 3000);
+    </script>
     <!-- Diagonal Sticky Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
