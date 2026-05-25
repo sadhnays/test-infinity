@@ -95,111 +95,13 @@ if (!function_exists('get_main_site_url')) {
     <!-- Mobile Overlay -->
     <div class="mobile-overlay" id="mobileOverlay"></div>
 
-    <!-- Chatbot Widget -->
-    <div class="chatbot-widget">
-        <div class="chatbot-toggle" onclick="toggleChat()">
-            <i class="fas fa-comment-dots" id="chat-icon"></i>
-            <i class="fas fa-times" id="close-icon" style="display:none;"></i>
-            <span class="chatbot-badge" id="chat-badge">1</span>
-        </div>
-        <div class="chatbot-window" id="chatbot-window">
-            <div class="chatbot-header">
-                <div class="chatbot-header-info">
-                    <div class="chatbot-avatar"><i class="fas fa-robot"></i></div>
-                    <div>
-                        <h4>Infinity Assistant</h4>
-                        <span class="chatbot-status"><i class="fas fa-circle"></i> Online</span>
-                    </div>
-                </div>
-                <button class="chatbot-close" onclick="toggleChat()"><i class="fas fa-times"></i></button>
-            </div>
-            <div class="chatbot-messages" id="chatbot-messages">
-                <div class="chat-message bot-message">
-                    <div class="message-content">
-                        <p>Hello! I'm Infinity Assistant. How can I help you today?</p>
-                    </div>
-                </div>
-            </div>
-            <div class="chatbot-input-area">
-                <div class="chatbot-quick-actions">
-                    <button class="quick-action" onclick="sendQuickMessage('What services do you offer?')">Services</button>
-                    <button class="quick-action" onclick="sendQuickMessage('Get a quote')">Get Quote</button>
-                    <button class="quick-action" onclick="sendQuickMessage('Contact info')">Contact</button>
-                </div>
-                <div class="chatbot-input-wrapper">
-                    <input type="text" id="chatbot-input" placeholder=" screen karo..." onkeypress="handleChatKeyPress(event)">
-                    <button class="chatbot-send" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script>
-    var chatOpen = false;
-
-    function toggleChat() {
-        chatOpen = !chatOpen;
-        document.getElementById('chatbot-window').style.display = chatOpen ? 'flex' : 'none';
-        document.getElementById('chat-icon').style.display = chatOpen ? 'none' : 'block';
-        document.getElementById('close-icon').style.display = chatOpen ? 'block' : 'none';
-        var badge = document.getElementById('chat-badge');
-        if (chatOpen && badge) badge.style.display = 'none';
-    }
-
-    function sendMessage() {
-        var input = document.getElementById('chatbot-input');
-        if (!input || !input.value.trim()) return;
-        var message = input.value.trim();
-        input.value = '';
-        addMessage(message, 'user');
-        setTimeout(function() {
-            var responses = [
-                "Thanks for your message! Visit our website or contact us at info@infinitysofthub.com for more details.",
-                "Great question! Our team is ready to help. Email us at info@infinitysofthub.com",
-                "We offer Web Development, Mobile Apps, AI & ML, Cloud Solutions, and more. Contact us for a free quote!"
-            ];
-            addMessage(responses[Math.floor(Math.random() * responses.length)], 'bot');
-        }, 1000);
-    }
-
-    function sendQuickMessage(message) {
-        addMessage(message, 'user');
-        setTimeout(function() {
-            addMessage("Thanks for your interest! Visit https://infinitysofthub.com or email info@infinitysofthub.com for more info.", 'bot');
-        }, 1000);
-    }
-
-    function handleChatKeyPress(event) {
-        if (event.key === 'Enter') sendMessage();
-    }
-
-    function addMessage(text, sender) {
-        var container = document.getElementById('chatbot-messages');
-        if (!container) return;
-        var div = document.createElement('div');
-        div.className = 'chat-message ' + sender + '-message';
-        div.innerHTML = '<div class="message-content"><p>' + escapeHtml(text) + '</p></div>';
-        container.appendChild(div);
-        container.scrollTop = container.scrollHeight;
-    }
-
-    function escapeHtml(text) {
-        var div = document.createElement('div');
-        div.textContent = text;
-        return div.innerHTML;
-    }
-
     // Toggle dropdown on mobile
     function toggleDropdown(element) {
         if (window.innerWidth <= 991) {
             element.classList.toggle('active');
         }
     }
-
-    setTimeout(function() {
-        var badge = document.getElementById('chat-badge');
-        if (badge && !chatOpen) badge.style.display = 'flex';
-    }, 3000);
 
     // Mobile Menu
     document.addEventListener('DOMContentLoaded', function() {
