@@ -59,6 +59,24 @@
     }
     </script>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="<?php echo get_main_site_url('assets/js/new-script.js'); ?>" defer></script>
+    <script src="<?php echo get_main_site_url('assets/js/chatbot.js'); ?>" defer></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    once: true
+                });
+            }
+        });
+    </script>
+
     <?php wp_footer(); ?>
 </body>
 </html>

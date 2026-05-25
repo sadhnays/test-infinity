@@ -5,9 +5,24 @@
 
 if (!function_exists('get_main_site_url')) {
     function get_main_site_url($path = '') {
-        $base = (isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) 
-            ? 'http://localhost/infinitysofthub.com' 
-            : 'https://infinitysofthub.com';
+        $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
+        $is_local = (
+            strpos($host, 'localhost') !== false || 
+            strpos($host, '127.0.0.1') !== false || 
+            strpos($host, '.local') !== false ||
+            strpos($host, '.test') !== false ||
+            preg_match('/^192\.168\./', $host)
+        );
+        
+        if ($is_local) {
+            if ($host === 'localhost' || $host === '127.0.0.1') {
+                $base = 'http://' . $host . '/infinitysofthub.com';
+            } else {
+                $base = 'http://' . $host;
+            }
+        } else {
+            $base = 'https://infinitysofthub.com';
+        }
         return $base . ($path ? '/' . ltrim($path, '/') : '');
     }
 }
