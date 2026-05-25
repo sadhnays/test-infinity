@@ -178,7 +178,7 @@ setTimeout(function() {
                 <a href="<?php echo base_url('portfolio.php'); ?>" class="nav-link <?php echo $activePage === 'portfolio' ? 'active' : ''; ?>">Portfolio</a>
 <a href="<?php echo base_url('our-locations.php'); ?>" class="nav-link <?php echo $activePage === 'locations' ? 'active' : ''; ?>">Locations</a>
                 <a href="<?php echo base_url('case-studies.php'); ?>" class="nav-link <?php echo $activePage === 'case-studies' ? 'active' : ''; ?>">Case Studies</a>
-                <a href="<?php echo base_url('blog/'); ?>" class="nav-link <?php echo $activePage === 'blog' ? 'active' : ''; ?>">Blog</a>
+                <a href="<?php echo base_url('blog.php'); ?>" class="nav-link <?php echo $activePage === 'blog' ? 'active' : ''; ?>">Blog</a>
                 <a href="<?php echo base_url('contact.php'); ?>" class="nav-cta">Get in Touch</a>
 
                 <div class="mobile-close-btn" id="navCloseBtn">
