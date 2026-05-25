@@ -23,10 +23,10 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
 ?>
 
 <style>
-/* ===== Premium Single Post Page Styles ===== */
+/* ===== Premium Light Single Post Page Styles ===== */
 .post-detail-section {
-    background: #020B1E;
-    color: var(--text-light, #F8FAFC);
+    background: #F8FAFC;
+    color: #1E293B;
     font-family: 'Inter', sans-serif;
     padding-top: 100px;
     position: relative;
@@ -40,7 +40,7 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
     left: 0;
     width: 100%;
     height: 600px;
-    background: radial-gradient(circle at top, rgba(0, 102, 255, 0.15) 0%, transparent 60%);
+    background: radial-gradient(circle at top, rgba(37, 99, 235, 0.05) 0%, transparent 60%);
     pointer-events: none;
     z-index: 1;
 }
@@ -58,25 +58,25 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
     gap: 8px;
     margin-bottom: 20px;
     font-size: 0.9rem;
-    color: var(--text-gray, #94A3B8);
+    color: #64748B;
 }
 
 .post-hero .breadcrumb a {
-    color: var(--accent, #00E5FF);
+    color: #2563EB;
     text-decoration: none;
     transition: var(--transition, all 0.3s);
 }
 
 .post-hero .breadcrumb a:hover {
-    color: var(--white, #fff);
+    color: #1D4ED8;
 }
 
 .post-category {
     display: inline-block;
     padding: 6px 16px;
-    background: rgba(0, 229, 255, 0.1);
-    color: var(--accent, #00E5FF);
-    border: 1px solid rgba(0, 229, 255, 0.2);
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+    border: 1px solid rgba(37, 99, 235, 0.15);
     border-radius: 50px;
     font-size: 0.8rem;
     font-weight: 600;
@@ -89,7 +89,7 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
     font-family: 'Outfit', sans-serif;
     font-size: clamp(2rem, 4vw, 3.25rem);
     font-weight: 700;
-    color: var(--white, #fff);
+    color: #0F172A;
     line-height: 1.25;
     max-width: 900px;
     margin: 0 auto 25px;
@@ -101,7 +101,7 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    color: var(--text-gray, #94A3B8);
+    color: #64748B;
     font-size: 0.9rem;
 }
 
@@ -112,7 +112,7 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
 }
 
 .post-meta-item i {
-    color: var(--accent, #00E5FF);
+    color: #2563EB;
 }
 
 .post-container {
@@ -129,9 +129,9 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
     gap: 8px;
     margin-bottom: 30px;
     padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    color: var(--white, #fff);
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    color: #1E293B;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 500;
@@ -141,6 +141,7 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
 
 .back-btn:hover {
     background: var(--primary-gradient, linear-gradient(135deg, #0052D4, #4364F7));
+    color: var(--white, #fff);
     border-color: transparent;
     transform: translateX(-5px);
     box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
@@ -152,8 +153,8 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
     object-fit: cover;
     border-radius: 16px;
     margin-bottom: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .featured-placeholder {
@@ -176,7 +177,7 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
 .post-content {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.85);
+    color: #334155;
 }
 
 .post-content p {
@@ -185,14 +186,14 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
 
 .post-content h2 {
     font-family: 'Outfit', sans-serif;
-    color: var(--white, #fff);
+    color: #0F172A;
     font-size: 1.8rem;
     margin: 40px 0 20px;
 }
 
 .post-content h3 {
     font-family: 'Outfit', sans-serif;
-    color: var(--white, #fff);
+    color: #0F172A;
     font-size: 1.4rem;
     margin: 30px 0 15px;
 }
@@ -207,35 +208,35 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
 }
 
 .post-content a {
-    color: var(--accent, #00E5FF);
+    color: #2563EB;
     text-decoration: underline;
     transition: var(--transition, all 0.3s);
 }
 
 .post-content a:hover {
-    color: var(--white, #fff);
+    color: #1D4ED8;
 }
 
 .post-content blockquote {
-    border-left: 4px solid var(--accent, #00E5FF);
+    border-left: 4px solid #2563EB;
     padding: 20px 25px;
     margin: 35px 0;
-    background: rgba(255, 255, 255, 0.02);
+    background: #F1F5F9;
     border-radius: 0 12px 12px 0;
     font-style: italic;
-    color: var(--text-gray, #94A3B8);
+    color: #475569;
 }
 
 .post-tags-section {
     margin-top: 50px;
     padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid #E2E8F0;
 }
 
 .post-tags-title {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--white, #fff);
+    color: #0F172A;
     margin-bottom: 15px;
 }
 
@@ -247,9 +248,9 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
 
 .post-tag {
     padding: 6px 14px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    color: var(--text-gray, #94A3B8);
+    background: #F1F5F9;
+    border: 1px solid #E2E8F0;
+    color: #475569;
     border-radius: 50px;
     text-decoration: none;
     font-size: 0.85rem;
@@ -257,9 +258,9 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
 }
 
 .post-tag:hover {
-    background: rgba(0, 229, 255, 0.1);
-    color: var(--accent, #00E5FF);
-    border-color: rgba(0, 229, 255, 0.3);
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+    border-color: rgba(37, 99, 235, 0.2);
 }
 
 .post-share {
@@ -268,14 +269,15 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
     gap: 15px;
     margin-top: 40px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
     border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
 }
 
 .post-share-label {
     font-weight: 600;
-    color: var(--white, #fff);
+    color: #0F172A;
     font-size: 0.95rem;
 }
 
@@ -299,7 +301,7 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
 
 .share-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .facebook { background: #1877F2; }
@@ -312,11 +314,11 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
     align-items: center;
     gap: 24px;
     padding: 30px;
-    background: linear-gradient(135deg, rgba(6, 43, 111, 0.4) 0%, rgba(11, 61, 145, 0.4) 100%);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
     border-radius: 16px;
     margin-top: 50px;
-    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
 }
 
 .author-avatar {
@@ -324,19 +326,19 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--accent, #00E5FF);
+    border: 2px solid #2563EB;
 }
 
 .author-info h4 {
     font-family: 'Outfit', sans-serif;
     font-size: 1.2rem;
-    color: var(--white, #fff);
+    color: #0F172A;
     margin-bottom: 8px;
 }
 
 .author-info p {
     font-size: 0.95rem;
-    color: var(--text-gray, #94A3B8);
+    color: #475569;
     line-height: 1.5;
 }
 
@@ -348,7 +350,7 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
     font-family: 'Outfit', sans-serif;
     font-size: 1.75rem;
     font-weight: 700;
-    color: var(--white, #fff);
+    color: #0F172A;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -360,39 +362,40 @@ $views = get_post_meta($post_id, 'post_views_count', true) ?: rand(50, 500);
 }
 
 .related-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
     border-radius: 12px;
     overflow: hidden;
     text-decoration: none;
     color: inherit;
     transition: var(--transition, all 0.3s);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
 }
 
 .related-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(0, 229, 255, 0.3);
-    box-shadow: 0 10px 25px rgba(0, 229, 255, 0.1);
+    border-color: rgba(37, 99, 235, 0.3);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 }
 
 .related-image {
     width: 100%;
     height: 160px;
     object-fit: cover;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid #E2E8F0;
 }
 
 .related-card-title {
     padding: 15px;
     font-size: 0.95rem;
     font-weight: 600;
-    color: var(--white, #fff);
+    color: #0F172A;
     line-height: 1.4;
     transition: var(--transition, all 0.3s);
 }
 
 .related-card:hover .related-card-title {
-    color: var(--accent, #00E5FF);
+    color: #2563EB;
 }
 
 @media (max-width: 768px) {

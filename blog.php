@@ -77,10 +77,10 @@ require_once 'includes/header.php';
 ?>
 
 <style>
-/* ===== Standalone Blog Page Styles matching theme ===== */
+/* ===== Premium Light Blog Page Styles ===== */
 .blog-list-section {
-    background: #020B1E;
-    color: var(--text-light, #F8FAFC);
+    background: #F8FAFC;
+    color: #1E293B;
     font-family: 'Inter', sans-serif;
     padding-top: 120px;
     position: relative;
@@ -94,7 +94,7 @@ require_once 'includes/header.php';
     left: 0;
     width: 100%;
     height: 600px;
-    background: radial-gradient(circle at top, rgba(0, 102, 255, 0.15) 0%, transparent 60%);
+    background: radial-gradient(circle at top, rgba(37, 99, 235, 0.05) 0%, transparent 60%);
     pointer-events: none;
     z-index: 1;
 }
@@ -111,13 +111,13 @@ require_once 'includes/header.php';
     font-family: 'Outfit', sans-serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 800;
-    color: var(--white, #fff);
+    color: #0F172A;
     margin-bottom: 15px;
 }
 
 .page-hero-blog p {
     font-size: 1.1rem;
-    color: var(--text-gray, #94A3B8);
+    color: #64748B;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -140,18 +140,18 @@ require_once 'includes/header.php';
 
 /* Blog Card */
 .blog-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
     border-radius: 16px;
     overflow: hidden;
     transition: var(--transition, all 0.3s);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 }
 
 .blog-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(0, 229, 255, 0.3);
-    box-shadow: 0 15px 35px rgba(0, 229, 255, 0.1);
+    border-color: rgba(37, 99, 235, 0.3);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .blog-card-image {
@@ -168,7 +168,7 @@ require_once 'includes/header.php';
 .blog-card-image-wrapper {
     overflow: hidden;
     position: relative;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid #E2E8F0;
 }
 
 .blog-card-image-wrapper::after {
@@ -178,7 +178,7 @@ require_once 'includes/header.php';
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, transparent 60%, rgba(2, 11, 30, 0.5));
+    background: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.05));
 }
 
 .blog-card-content {
@@ -188,9 +188,9 @@ require_once 'includes/header.php';
 .blog-card-category {
     display: inline-block;
     padding: 4px 12px;
-    background: rgba(0, 229, 255, 0.1);
-    color: var(--accent, #00E5FF);
-    border: 1px solid rgba(0, 229, 255, 0.2);
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+    border: 1px solid rgba(37, 99, 235, 0.15);
     border-radius: 50px;
     font-size: 0.75rem;
     font-weight: 600;
@@ -203,7 +203,7 @@ require_once 'includes/header.php';
     font-family: 'Outfit', sans-serif;
     font-size: 1.35rem;
     font-weight: 700;
-    color: var(--white, #fff);
+    color: #0F172A;
     margin-bottom: 12px;
     line-height: 1.4;
     display: -webkit-box;
@@ -219,11 +219,11 @@ require_once 'includes/header.php';
 }
 
 .blog-card-title a:hover {
-    color: var(--accent, #00E5FF);
+    color: #2563EB;
 }
 
 .blog-card-excerpt {
-    color: var(--text-gray, #94A3B8);
+    color: #475569;
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -238,26 +238,26 @@ require_once 'includes/header.php';
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid #F1F5F9;
 }
 
 .blog-card-date {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: var(--text-gray, #94A3B8);
+    color: #64748B;
     font-size: 0.85rem;
 }
 
 .blog-card-date i {
-    color: var(--accent, #00E5FF);
+    color: #2563EB;
 }
 
 .blog-card-read-more {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: var(--accent, #00E5FF);
+    color: #2563EB;
     font-weight: 600;
     font-size: 0.9rem;
     text-decoration: none;
@@ -266,7 +266,7 @@ require_once 'includes/header.php';
 
 .blog-card-read-more:hover {
     gap: 12px;
-    color: var(--white, #fff);
+    color: #1D4ED8;
 }
 
 .no-posts {
@@ -276,13 +276,13 @@ require_once 'includes/header.php';
 
 .no-posts i {
     font-size: 64px;
-    color: rgba(255, 255, 255, 0.1);
+    color: #CBD5E1;
     margin-bottom: 20px;
     display: block;
 }
 
 .no-posts h3 {
-    color: var(--text-gray, #94A3B8);
+    color: #475569;
     margin-bottom: 10px;
 }
 
