@@ -24,6 +24,11 @@
                 top: 46px;
             }
         }
+        /* Reset list styles for navigation menu to remove black dots */
+        .nav-menu, .nav-menu li, .dropdown-menu, .dropdown-menu a {
+            list-style: none !important;
+            list-style-type: none !important;
+        }
     </style>
 </head>
 <body>
