@@ -2,7 +2,7 @@
     <footer class="footer" id="contact">
         <div class="container footer-container">
             <div class="footer-col">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/ish-logo.svg" alt="<?php bloginfo('name'); ?>" style="height:45px; margin-bottom:15px; filter:brightness(0) invert(1);">
+                <img src="<?php echo get_main_site_url('assets/images/ish-logo.svg'); ?>" alt="<?php bloginfo('name'); ?>" style="height:45px; margin-bottom:15px; filter:brightness(0) invert(1);">
                 <p>Premium enterprise digital solutions provider helping businesses transform and grow.</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/infinitysofthub" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -57,6 +57,24 @@
     if (backToTop) {
         backToTop.addEventListener('click', function(e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
     }
+    </script>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="<?php echo get_main_site_url('assets/js/new-script.js'); ?>" defer></script>
+    <script src="<?php echo get_main_site_url('assets/js/chatbot.js'); ?>" defer></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    once: true
+                });
+            }
+        });
     </script>
 
     <?php wp_footer(); ?>

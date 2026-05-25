@@ -31,7 +31,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="<?php echo home_url(); ?>" class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/ish-logo.svg" alt="<?php bloginfo('name'); ?>">
+                <img src="<?php echo get_main_site_url('assets/images/ish-logo.svg'); ?>" alt="<?php bloginfo('name'); ?>">
             </a>
 
             <ul class="nav-menu" id="navMenu">

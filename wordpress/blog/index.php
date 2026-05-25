@@ -360,16 +360,69 @@ get_header();
                 <?php endwhile; ?>
             </div>
 
-            <!-- Pagination -->
-            <div class="blog-pagination">
-                <?php
-                echo paginate_links(array(
-                    'prev_text' => '<i class="fas fa-chevron-left"></i>',
-                    'next_text' => '<i class="fas fa-chevron-right"></i>',
-                    'mid_size' => 2
-                ));
-                ?>
+            <!-- Loading Indicator -->
+            <div id="blog-loading-indicator" style="display: none; text-align: center; padding: 40px 0; width: 100%; z-index: 10;">
+                <div style="margin: 0 auto; width: 40px; height: 40px; border: 3px solid rgba(255, 255, 255, 0.1); border-top: 3px solid var(--accent, #00E5FF); border-radius: 50%; animation: spin 1s linear infinite;"></div>
             </div>
+
+            <style>
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+            </style>
+
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+                var page = 2;
+                var loading = false;
+                var maxPages = <?php echo $GLOBALS['wp_query']->max_num_pages; ?>;
+
+                if (maxPages <= 1) return;
+
+                window.addEventListener('scroll', function() {
+                    if (loading || page > maxPages) return;
+
+                    // Trigger load when scrolled 300px from the bottom
+                    if ((window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 300)) {
+                        loading = true;
+                        document.getElementById('blog-loading-indicator').style.display = 'block';
+
+                        var xhr = new XMLHttpRequest();
+                        xhr.open('POST', ajaxurl, true);
+                        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;');
+                        xhr.onload = function() {
+                            if (xhr.status >= 200 && xhr.status < 400) {
+                                var response = xhr.responseText.trim();
+                                if (response !== '') {
+                                    var tempDiv = document.createElement('div');
+                                    tempDiv.innerHTML = response;
+                                    
+                                    var grid = document.querySelector('.blog-grid');
+                                    if (grid) {
+                                        while (tempDiv.firstChild) {
+                                            grid.appendChild(tempDiv.firstChild);
+                                        }
+                                    }
+                                    page++;
+                                    loading = false;
+                                    
+                                    // Re-init AOS if it is active
+                                    if (typeof AOS !== 'undefined') {
+                                        AOS.refresh();
+                                    }
+                                } else {
+                                    maxPages = page - 1;
+                                }
+                            }
+                            document.getElementById('blog-loading-indicator').style.display = 'none';
+                        };
+                        xhr.send('action=load_more_posts&page=' + page);
+                    }
+                });
+            });
+            </script>
 
         <?php else: ?>
             <div class="no-posts">
