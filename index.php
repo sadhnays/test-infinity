@@ -1136,24 +1136,75 @@ require_once 'includes/header.php';
         }
     }
 
-    /* Modern Tech Stack Grid and Cards */
+    /* ===== Modern Tech Stack Section ===== */
+    .technologies-section {
+        background: #f8fafc;
+        position: relative;
+    }
+
+    .tech-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+        margin-top: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .tech-tab-btn {
+        background: #ffffff;
+        color: var(--text-dark);
+        border: 1px solid rgba(229, 234, 243, 0.8);
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    }
+
+    .tech-tab-btn:hover {
+        background: #f1f5f9;
+        border-color: rgba(0, 102, 255, 0.3);
+        color: #0066ff;
+        transform: translateY(-1px);
+    }
+
+    .tech-tab-btn.active {
+        background: linear-gradient(135deg, #0066ff, #0052cc);
+        color: #ffffff;
+        border-color: transparent;
+        box-shadow: 0 4px 12px rgba(0, 102, 255, 0.25);
+    }
+
     .tech-grid-v2 {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 2rem;
-        margin-top: 3rem;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.75rem;
+        margin-top: 2rem;
     }
 
     .tech-card {
         background: #ffffff;
         border-radius: 20px;
-        padding: 2.5rem 1.5rem;
-        border: 1px solid rgba(229, 234, 243, 0.7);
-        text-align: center;
-        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        padding: 2.25rem 1.75rem;
+        border: 1px solid rgba(229, 234, 243, 0.8);
+        text-align: left;
+        transition: opacity 0.35s ease, transform 0.35s ease, box-shadow 0.4s ease, border-color 0.4s ease;
         position: relative;
         overflow: hidden;
         cursor: default;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+    .tech-card.filtering {
+        opacity: 0;
+        transform: scale(0.92) translateY(15px);
     }
 
     .tech-card::before {
@@ -1164,12 +1215,12 @@ require_once 'includes/header.php';
         width: 100%;
         height: 4px;
         background: var(--tech-color);
-        opacity: 0.7;
+        opacity: 0.8;
         transition: height 0.3s ease;
     }
 
     .tech-card:hover {
-        transform: translateY(-8px);
+        transform: translateY(-6px);
         box-shadow: 0 15px 30px var(--tech-bg);
         border-color: var(--tech-color);
     }
@@ -1179,20 +1230,20 @@ require_once 'includes/header.php';
     }
 
     .tech-card-icon {
-        width: 60px;
-        height: 60px;
-        border-radius: 16px;
+        width: 54px;
+        height: 54px;
+        border-radius: 14px;
         background: var(--tech-bg);
         color: var(--tech-color);
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 auto 1.5rem;
+        margin-bottom: 1.5rem;
         transition: all 0.3s ease;
     }
 
     .tech-card-icon i {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .tech-card:hover .tech-card-icon {
@@ -1203,26 +1254,47 @@ require_once 'includes/header.php';
     }
 
     .tech-card h4 {
-        font-size: 1.15rem;
+        font-size: 1.25rem;
         font-weight: 700;
         color: var(--text-dark);
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.35rem;
     }
 
     .tech-use {
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: var(--text-gray);
+        font-size: 0.825rem;
+        font-weight: 700;
+        color: var(--tech-color);
+        margin-bottom: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
         display: block;
+    }
+
+    .tech-card p {
+        font-size: 0.9rem;
+        color: var(--text-gray);
+        line-height: 1.6;
+        margin: 0;
+        flex-grow: 1;
+    }
+
+    @media (max-width: 768px) {
+        .tech-tabs {
+            margin-bottom: 2.5rem;
+        }
+        .tech-tab-btn {
+            padding: 0.65rem 1.35rem;
+            font-size: 0.85rem;
+        }
     }
 
     @media (max-width: 576px) {
         .tech-grid-v2 {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             gap: 1.25rem;
         }
         .tech-card {
-            padding: 1.75rem 1rem;
+            padding: 2rem 1.5rem;
         }
     }
     </style>
@@ -1232,14 +1304,14 @@ require_once 'includes/header.php';
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
-                <p class="section-subtitle">From custom development to AI-powered solutions, we deliver end-to-end digital transformation</p>
+                <p class="section-subtitle">From custom Moodle LMS development and enterprise web applications to AI-powered automation and cloud migration — we deliver end-to-end digital transformation services for global businesses.</p>
             </div>
             <div class="services-grid">
                 <!-- Moodle Development -->
                 <a href="<?php echo base_url('services/moodle-all-development.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up">
                         <div class="service-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=400&h=300&fit=crop" alt="Moodle Development" class="service-image" loading="lazy">
+                            <img src="<?php echo asset('images/about/service_moodle.png'); ?>" alt="Moodle LMS Development and Platform Setup" class="service-image" loading="lazy" width="400" height="300">
                             <div class="service-badge">Core Speciality</div>
                         </div>
                         <div class="service-card-content">
@@ -1256,7 +1328,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/web-development.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Web Development" class="service-image" loading="lazy">
+                            <img src="<?php echo asset('images/about/service_web.png'); ?>" alt="Custom Enterprise Web Development and Systems Integration" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1272,7 +1344,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/mobile-app-development.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop" alt="Mobile App Development" class="service-image" loading="lazy">
+                            <img src="<?php echo asset('images/about/service_mobile.png'); ?>" alt="Native and Hybrid Mobile App Development" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1288,7 +1360,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" alt="AI & ML Integration" class="service-image" loading="lazy">
+                            <img src="<?php echo asset('images/about/service_ai.png'); ?>" alt="Intelligent Artificial Intelligence and Machine Learning Models" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1304,7 +1376,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/cloud-solutions.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop" alt="Cloud Solutions" class="service-image" loading="lazy">
+                            <img src="<?php echo asset('images/about/service_cloud.png'); ?>" alt="Cloud Server Deployments and DevOps Architecture" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1320,7 +1392,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/ui-ux-design.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="500">
                         <div class="service-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop" alt="UI/UX Design" class="service-image" loading="lazy">
+                            <img src="<?php echo asset('images/about/service_uiux.png'); ?>" alt="UI UX Wireframing and Prototyping Systems" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1416,7 +1488,7 @@ require_once 'includes/header.php';
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Industries We <span class="gradient-text">Serve</span></h2>
-                <p class="section-subtitle">Delivering tailored, high-performance digital solutions across sectors</p>
+                <p class="section-subtitle">We specialize in delivering industry-specific IT solutions for Healthcare, Finance, Retail, Manufacturing, Education, and Logistics — each built for compliance, scalability, and real-world performance.</p>
             </div>
 
             <div class="services-grid">
@@ -1533,8 +1605,8 @@ require_once 'includes/header.php';
                 <h2 class="section-title">About Infinity SoftHub</h2>
                 <div class="blue-underline"></div>
                 <p class="about-text">
-                    We are a leading IT consulting firm dedicated to helping enterprises navigate the digital landscape.
-                    With over 15 years of experience, we deliver solutions that drive growth, efficiency, and competitive advantage.
+                    Infinity SoftHub is a leading IT consulting and software development company specializing in Learning Management Systems (LMS), enterprise web applications, AI/ML integration, and cloud solutions.
+                    With over 15 years of experience serving 150+ clients across 6 countries, we deliver secure, scalable, and cost-effective digital solutions that drive measurable business growth.
                 </p>
 
                 <div class="about-stats">
@@ -1630,60 +1702,14 @@ require_once 'includes/header.php';
         </div>
     </section>
 
-    <!-- Global Offices Section -->
-    <section class="section offices" id="offices">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Countries Where We Have Services</h2>
-                <p class="section-subtitle">Serving clients worldwide</p>
-            </div>
 
-            <div class="offices-grid">
-                <div class="office-card active" data-aos="fade-up">
-                    <div class="office-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>United States</h3>
-                    <p>Sheridan, WY</p>
-                </div>
-
-                <div class="office-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="office-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>United Kingdom</h3>
-                    <p>London, UK</p>
-                </div>
-
-                <div class="office-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="office-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>Netherlands</h3>
-                    <p>Amsterdam, NL</p>
-                </div>
-
-                <div class="office-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="office-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>India</h3>
-                    <p>Faridabad, HR</p>
-                </div>
-
-                <div class="office-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="office-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>Australia</h3>
-                    <p>Sydney, NSW</p>
-                </div>
-
-                <div class="office-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="office-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>Singapore</h3>
-                    <p>Singapore</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Why Choose Us Section -->
     <section class="section why-choose-section" id="why-us">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Why Choose <span class="gradient-text">Infinity SoftHub</span></h2>
-                <p class="section-subtitle">We combine deep expertise with cutting-edge technology to deliver exceptional results</p>
+                <p class="section-subtitle">15+ years of enterprise IT expertise, 200+ successful project deliveries, and a 98% client retention rate — we combine deep domain knowledge with cutting-edge technology to deliver exceptional, measurable results.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-item" data-aos="fade-up">
@@ -1723,107 +1749,421 @@ require_once 'includes/header.php';
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Built with <span class="gradient-text">Modern Tech Stack</span></h2>
-                <p class="section-subtitle">We leverage industry-leading technologies to build robust, future-proof solutions</p>
+                <p class="section-subtitle">We leverage robust, industry-leading technologies to build scalable enterprise solutions and intelligent digital platforms.</p>
             </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="tech-tabs" data-aos="fade-up">
+                <button class="tech-tab-btn active" data-filter="all">All Tech</button>
+                <button class="tech-tab-btn" data-filter="lms">LMS & E-Learning</button>
+                <button class="tech-tab-btn" data-filter="frontend">Frontend</button>
+                <button class="tech-tab-btn" data-filter="backend">Backend & APIs</button>
+                <button class="tech-tab-btn" data-filter="cloud">Cloud & DevOps</button>
+                <button class="tech-tab-btn" data-filter="ai">AI & Automation</button>
+            </div>
+
             <div class="tech-grid-v2">
-                <!-- Moodle -->
-                <div class="tech-card" data-aos="fade-up" style="--tech-color: #F98012; --tech-bg: rgba(249, 128, 18, 0.08);">
+                <!-- Moodle LMS -->
+                <div class="tech-card cat-lms" data-aos="fade-up" style="--tech-color: #F98012; --tech-bg: rgba(249, 128, 18, 0.08);">
                     <div class="tech-card-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                     </div>
                     <h4>Moodle LMS</h4>
-                    <span class="tech-use">E-Learning & Custom LMS</span>
+                    <span class="tech-use">E-Learning Systems</span>
+                    <p>Custom educational platforms, bespoke plugin development, secure installations, and LMS optimization for global institutions.</p>
                 </div>
-                <!-- Python -->
-                <div class="tech-card" data-aos="fade-up" data-aos-delay="100" style="--tech-color: #3776AB; --tech-bg: rgba(55, 118, 171, 0.08);">
+                <!-- Custom LMS Plugins -->
+                <div class="tech-card cat-lms" data-aos="fade-up" data-aos-delay="50" style="--tech-color: #4F46E5; --tech-bg: rgba(79, 70, 229, 0.08);">
                     <div class="tech-card-icon">
-                        <i class="fab fa-python"></i>
+                        <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
                     </div>
-                    <h4>Python</h4>
-                    <span class="tech-use">AI Models & Automation</span>
+                    <h4>LMS Plugins</h4>
+                    <span class="tech-use">Feature Extensions</span>
+                    <p>Designing modular code, customized enrollment plugins, third-party API hook-ins, and dynamic dashboard reports.</p>
                 </div>
-                <!-- AWS -->
-                <div class="tech-card" data-aos="fade-up" data-aos-delay="200" style="--tech-color: #FF9900; --tech-bg: rgba(255, 153, 0, 0.08);">
+                <!-- H5P & SCORM -->
+                <div class="tech-card cat-lms" data-aos="fade-up" data-aos-delay="100" style="--tech-color: #0D9488; --tech-bg: rgba(13, 148, 136, 0.08);">
                     <div class="tech-card-icon">
-                        <i class="fab fa-aws"></i>
+                        <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
                     </div>
-                    <h4>AWS</h4>
-                    <span class="tech-use">Cloud Infrastructure</span>
+                    <h4>H5P & SCORM</h4>
+                    <span class="tech-use">Interactive Content</span>
+                    <p>Developing rich self-assessment tools, learning modules, and SCORM/xAPI compliance for accurate learner progress tracking.</p>
                 </div>
-                <!-- Azure -->
-                <div class="tech-card" data-aos="fade-up" data-aos-delay="300" style="--tech-color: #0078D4; --tech-bg: rgba(0, 120, 212, 0.08);">
+                <!-- ReactJS -->
+                <div class="tech-card cat-frontend" data-aos="fade-up" data-aos-delay="150" style="--tech-color: #61DAFB; --tech-bg: rgba(97, 218, 251, 0.08);">
                     <div class="tech-card-icon">
-                        <i class="fab fa-microsoft"></i>
-                    </div>
-                    <h4>MS Azure</h4>
-                    <span class="tech-use">Enterprise Cloud</span>
-                </div>
-                <!-- React -->
-                <div class="tech-card" data-aos="fade-up" data-aos-delay="400" style="--tech-color: #61DAFB; --tech-bg: rgba(97, 218, 251, 0.08);">
-                    <div class="tech-card-icon">
-                        <i class="fab fa-react"></i>
+                        <i class="fab fa-react" aria-hidden="true"></i>
                     </div>
                     <h4>ReactJS</h4>
-                    <span class="tech-use">Interactive Frontends</span>
+                    <span class="tech-use">Frontend Framework</span>
+                    <p>Architecting highly interactive, responsive single page applications (SPAs) and component-driven user dashboards.</p>
+                </div>
+                <!-- JS ES6 -->
+                <div class="tech-card cat-frontend" data-aos="fade-up" data-aos-delay="200" style="--tech-color: #F59E0B; --tech-bg: rgba(245, 158, 11, 0.08);">
+                    <div class="tech-card-icon">
+                        <i class="fab fa-js" aria-hidden="true"></i>
+                    </div>
+                    <h4>JavaScript (ES6+)</h4>
+                    <span class="tech-use">Client-Side Logic</span>
+                    <p>Writing highly performant, custom-tailored scripting to power smooth user interactions and client-side integrations.</p>
+                </div>
+                <!-- HTML5 CSS3 -->
+                <div class="tech-card cat-frontend" data-aos="fade-up" data-aos-delay="250" style="--tech-color: #E34F26; --tech-bg: rgba(227, 79, 38, 0.08);">
+                    <div class="tech-card-icon">
+                        <i class="fab fa-html5" aria-hidden="true"></i>
+                    </div>
+                    <h4>HTML5 & CSS3</h4>
+                    <span class="tech-use">Structure & Styling</span>
+                    <p>Utilizing semantic elements for search engine friendliness and advanced styling techniques for pixel-perfect screens.</p>
+                </div>
+                <!-- PHP & Laravel -->
+                <div class="tech-card cat-backend" data-aos="fade-up" data-aos-delay="300" style="--tech-color: #777BB4; --tech-bg: rgba(119, 123, 180, 0.08);">
+                    <div class="tech-card-icon">
+                        <i class="fab fa-php" aria-hidden="true"></i>
+                    </div>
+                    <h4>PHP & Laravel</h4>
+                    <span class="tech-use">Backend & APIs</span>
+                    <p>Engineering secure server controllers, database schema management, RESTful endpoint routers, and backend services.</p>
+                </div>
+                <!-- Node.js -->
+                <div class="tech-card cat-backend" data-aos="fade-up" data-aos-delay="350" style="--tech-color: #339933; --tech-bg: rgba(51, 153, 51, 0.08);">
+                    <div class="tech-card-icon">
+                        <i class="fab fa-node-js" aria-hidden="true"></i>
+                    </div>
+                    <h4>Node.js</h4>
+                    <span class="tech-use">Event-Driven Services</span>
+                    <p>Developing lightweight, asynchronous backend services, WebSocket communication layers, and API microservices.</p>
+                </div>
+                <!-- Python -->
+                <div class="tech-card cat-backend cat-ai" data-aos="fade-up" data-aos-delay="400" style="--tech-color: #3776AB; --tech-bg: rgba(55, 118, 171, 0.08);">
+                    <div class="tech-card-icon">
+                        <i class="fab fa-python" aria-hidden="true"></i>
+                    </div>
+                    <h4>Python</h4>
+                    <span class="tech-use">AI Models & Scripts</span>
+                    <p>Writing analytics pipelines, automated scheduling routines, background workers, and statistical data calculations.</p>
+                </div>
+                <!-- AWS -->
+                <div class="tech-card cat-cloud" data-aos="fade-up" data-aos-delay="450" style="--tech-color: #FF9900; --tech-bg: rgba(255, 153, 0, 0.08);">
+                    <div class="tech-card-icon">
+                        <i class="fab fa-aws" aria-hidden="true"></i>
+                    </div>
+                    <h4>AWS Cloud</h4>
+                    <span class="tech-use">Cloud Infrastructure</span>
+                    <p>Configuring highly available cloud computing instances, data backups, CDN delivery networks, and identity policies.</p>
+                </div>
+                <!-- Microsoft Azure -->
+                <div class="tech-card cat-cloud" data-aos="fade-up" data-aos-delay="500" style="--tech-color: #0078D4; --tech-bg: rgba(0, 120, 212, 0.08);">
+                    <div class="tech-card-icon">
+                        <i class="fab fa-microsoft" aria-hidden="true"></i>
+                    </div>
+                    <h4>MS Azure</h4>
+                    <span class="tech-use">Enterprise Hosting</span>
+                    <p>Managing enterprise level network structures, cloud integrations, and robust single-sign-on (SSO) frameworks.</p>
+                </div>
+                <!-- Docker -->
+                <div class="tech-card cat-cloud" data-aos="fade-up" data-aos-delay="550" style="--tech-color: #2496ED; --tech-bg: rgba(36, 150, 237, 0.08);">
+                    <div class="tech-card-icon">
+                        <i class="fab fa-docker" aria-hidden="true"></i>
+                    </div>
+                    <h4>Docker</h4>
+                    <span class="tech-use">Containerization</span>
+                    <p>Standardizing system environments using container images for error-free deployment operations across environments.</p>
+                </div>
+                <!-- AI & ML -->
+                <div class="tech-card cat-ai" data-aos="fade-up" data-aos-delay="600" style="--tech-color: #10B981; --tech-bg: rgba(16, 185, 129, 0.08);">
+                    <div class="tech-card-icon">
+                        <i class="fas fa-brain" aria-hidden="true"></i>
+                    </div>
+                    <h4>AI & ML</h4>
+                    <span class="tech-use">Intelligent Systems</span>
+                    <p>Integrating machine learning classification tools, recommender engines, predictive math formulas, and analytics.</p>
                 </div>
                 <!-- TensorFlow -->
-                <div class="tech-card" data-aos="fade-up" data-aos-delay="500" style="--tech-color: #FF6F00; --tech-bg: rgba(255, 111, 0, 0.08);">
+                <div class="tech-card cat-ai" data-aos="fade-up" data-aos-delay="650" style="--tech-color: #FF6F00; --tech-bg: rgba(255, 111, 0, 0.08);">
                     <div class="tech-card-icon">
-                        <i class="fas fa-microchip"></i>
+                        <i class="fas fa-microchip" aria-hidden="true"></i>
                     </div>
                     <h4>TensorFlow</h4>
-                    <span class="tech-use">Deep Learning & NLP</span>
+                    <span class="tech-use">Deep Learning</span>
+                    <p>Training and serving neural networks to power custom computer vision tasks and advanced pattern calculations.</p>
+                </div>
+                <!-- RPA Automation -->
+                <div class="tech-card cat-ai" data-aos="fade-up" data-aos-delay="700" style="--tech-color: #EC4899; --tech-bg: rgba(236, 72, 153, 0.08);">
+                    <div class="tech-card-icon">
+                        <i class="fas fa-cogs" aria-hidden="true"></i>
+                    </div>
+                    <h4>RPA & Integration</h4>
+                    <span class="tech-use">Workflow Automation</span>
+                    <p>Designing workflows to automate business routines, scheduling tasks, and handling dynamic software API triggers.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Clients Showcase Section -->
+    <!-- JavaScript for Technology Section Filtering -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tech-tab-btn');
+            const techCards = document.querySelectorAll('.tech-card');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filter = btn.getAttribute('data-filter');
+
+                    // Set filtering transition class
+                    techCards.forEach(card => {
+                        card.classList.add('filtering');
+                    });
+
+                    setTimeout(() => {
+                        techCards.forEach(card => {
+                            const isAll = (filter === 'all');
+                            const matches = isAll || card.classList.contains('cat-' + filter);
+                            if (matches) {
+                                card.style.display = '';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+
+                        // Trigger reflow/repaint, then fade back in
+                        requestAnimationFrame(() => {
+                            techCards.forEach(card => {
+                                card.classList.remove('filtering');
+                            });
+                        });
+                    }, 250); // Match this with CSS transition duration
+                });
+            });
+        });
+    </script>
+
+    <!-- Trusted By Industry Leaders Section -->
     <section class="section clients-section" id="clients">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Trusted By <span class="gradient-text">Industry Leaders</span></h2>
-                <p class="section-subtitle">We've had the privilege of working with leading organizations across multiple sectors</p>
+                <p class="section-subtitle">Partnering with world-class organizations across Education, Healthcare, Automotive, Finance, and more to deliver mission-critical IT solutions.</p>
             </div>
-            <div class="clients-grid">
-                <div class="client-logo" data-aos="fade-up">
-                    <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="CarDekho" loading="lazy" onerror="this.style.display='none'">
+        </div>
+
+        <!-- Infinite Auto-Scroll Marquee -->
+        <div class="logo-marquee-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <div class="logo-marquee">
+                <div class="logo-marquee-track">
+                    <!-- First set -->
+                    <div class="marquee-logo-item">
+                        <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="CarDekho - Trusted Client of Infinity SoftHub" loading="lazy" width="160" height="60">
+                    </div>
+                    <div class="marquee-logo-item">
+                        <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="Datasosi - Trusted Client of Infinity SoftHub" loading="lazy" width="160" height="60">
+                    </div>
+                    <div class="marquee-logo-item">
+                        <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Jakson Group - Trusted Client of Infinity SoftHub" loading="lazy" width="160" height="60">
+                    </div>
+                    <div class="marquee-logo-item">
+                        <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Maruti Suzuki - Trusted Automotive Client" loading="lazy" width="160" height="60">
+                    </div>
+                    <div class="marquee-logo-item">
+                        <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="XD Academy - Education Platform Client" loading="lazy" width="160" height="60">
+                    </div>
+                    <div class="marquee-logo-item">
+                        <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Orient Electric - Enterprise Client" loading="lazy" width="160" height="60">
+                    </div>
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="marquee-logo-item">
+                        <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="CarDekho" loading="lazy" width="160" height="60">
+                    </div>
+                    <div class="marquee-logo-item">
+                        <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="Datasosi" loading="lazy" width="160" height="60">
+                    </div>
+                    <div class="marquee-logo-item">
+                        <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Jakson Group" loading="lazy" width="160" height="60">
+                    </div>
+                    <div class="marquee-logo-item">
+                        <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Maruti Suzuki" loading="lazy" width="160" height="60">
+                    </div>
+                    <div class="marquee-logo-item">
+                        <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="XD Academy" loading="lazy" width="160" height="60">
+                    </div>
+                    <div class="marquee-logo-item">
+                        <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Orient Electric" loading="lazy" width="160" height="60">
+                    </div>
                 </div>
-                <div class="client-logo" data-aos="fade-up" data-aos-delay="100">
-                    <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="EY" loading="lazy" onerror="this.style.display='none'">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="trust-stats-bar" data-aos="fade-up" data-aos-delay="200">
+                <div class="trust-stat">
+                    <i class="fas fa-handshake" aria-hidden="true"></i>
+                    <div><strong>150+</strong> Global Clients</div>
                 </div>
-                <div class="client-logo" data-aos="fade-up" data-aos-delay="200">
-                    <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Jakson" loading="lazy" onerror="this.style.display='none'">
+                <div class="trust-stat">
+                    <i class="fas fa-globe" aria-hidden="true"></i>
+                    <div><strong>6</strong> Countries Served</div>
                 </div>
-                <div class="client-logo" data-aos="fade-up" data-aos-delay="300">
-                    <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Suzuki" loading="lazy" onerror="this.style.display='none'">
+                <div class="trust-stat">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <div><strong>98%</strong> Client Retention</div>
                 </div>
-                <div class="client-logo" data-aos="fade-up" data-aos-delay="400">
-                    <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="DBCL" loading="lazy" onerror="this.style.display='none'">
-                </div>
-                <div class="client-logo" data-aos="fade-up" data-aos-delay="500">
-                    <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Orient" loading="lazy" onerror="this.style.display='none'">
+                <div class="trust-stat">
+                    <i class="fas fa-award" aria-hidden="true"></i>
+                    <div><strong>4.9/5</strong> Avg Rating</div>
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+    /* ===== Infinite Logo Marquee ===== */
+    .logo-marquee-wrapper {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding: 2rem 0;
+    }
+    .logo-marquee-wrapper::before,
+    .logo-marquee-wrapper::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 120px;
+        z-index: 2;
+        pointer-events: none;
+    }
+    .logo-marquee-wrapper::before {
+        left: 0;
+        background: linear-gradient(to right, var(--bg-color, #ffffff) 0%, transparent 100%);
+    }
+    .logo-marquee-wrapper::after {
+        right: 0;
+        background: linear-gradient(to left, var(--bg-color, #ffffff) 0%, transparent 100%);
+    }
+    .logo-marquee {
+        overflow: hidden;
+    }
+    .logo-marquee-track {
+        display: flex;
+        gap: 3.5rem;
+        animation: marquee-scroll 30s linear infinite;
+        width: max-content;
+    }
+    .logo-marquee-track:hover {
+        animation-play-state: paused;
+    }
+    @keyframes marquee-scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    .marquee-logo-item {
+        flex-shrink: 0;
+        background: #ffffff;
+        border: 1px solid rgba(229, 234, 243, 0.7);
+        border-radius: 16px;
+        padding: 1.75rem 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 200px;
+        min-height: 100px;
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .marquee-logo-item:hover {
+        border-color: rgba(37, 99, 235, 0.3);
+        box-shadow: 0 12px 30px rgba(11, 61, 145, 0.08);
+        transform: translateY(-4px);
+    }
+    .marquee-logo-item img {
+        max-width: 140px;
+        max-height: 55px;
+        object-fit: contain;
+        filter: grayscale(100%) opacity(0.5);
+        transition: all 0.4s ease;
+    }
+    .marquee-logo-item:hover img {
+        filter: grayscale(0%) opacity(1);
+    }
+
+    /* Trust Stats Bar */
+    .trust-stats-bar {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+        margin-top: 2.5rem;
+        padding: 1.75rem 2.5rem;
+        background: linear-gradient(135deg, rgba(37, 99, 235, 0.04) 0%, rgba(0, 212, 255, 0.04) 100%);
+        border: 1px solid rgba(229, 234, 243, 0.7);
+        border-radius: 20px;
+    }
+    .trust-stat {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 0.95rem;
+        color: var(--text-gray);
+    }
+    .trust-stat i {
+        font-size: 1.25rem;
+        background: linear-gradient(135deg, #0066FF, #00CCFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .trust-stat strong {
+        color: var(--text-dark);
+        font-weight: 800;
+    }
+
+    @media (max-width: 768px) {
+        .logo-marquee-wrapper::before,
+        .logo-marquee-wrapper::after {
+            width: 40px;
+        }
+        .marquee-logo-item {
+            min-width: 160px;
+            padding: 1.25rem 1.75rem;
+        }
+        .trust-stats-bar {
+            gap: 1.5rem;
+            padding: 1.25rem 1.5rem;
+        }
+        .trust-stat {
+            font-size: 0.85rem;
+        }
+    }
+    @media (max-width: 480px) {
+        .trust-stats-bar {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+    </style>
 
     <!-- CTA Section -->
     <section class="cta-fullwidth">
         <div class="container">
             <div data-aos="fade-up" style="max-width:800px; margin:0 auto;">
                 <h2>
-                    Ready to Transform Your <span style="color:#60A5FA;">Business?</span>
+                    Ready to Accelerate Your <span style="color:#60A5FA;">Digital Transformation?</span>
                 </h2>
                 <p>
-                    Let's discuss how our IT consulting and digital transformation services can create powerful, engaging digital experiences for your users.
+                    Whether you need a custom LMS, enterprise web application, AI-powered automation, or cloud migration — our team of 50+ engineers is ready to deliver scalable, secure solutions tailored to your business goals.
                 </p>
                 <div class="cta-buttons">
                     <a href="<?php echo base_url('contact.php'); ?>" class="btn">
                         <i class="fas fa-rocket" aria-hidden="true"></i> Get Free Consultation
                     </a>
-                    <a href="#services" class="btn">
-                        <i class="fas fa-play-circle" aria-hidden="true"></i> Learn More
+                    <a href="<?php echo base_url('what-we-do.php'); ?>" class="btn">
+                        <i class="fas fa-th-large" aria-hidden="true"></i> Explore Our Services
                     </a>
                 </div>
             </div>

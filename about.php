@@ -1,7 +1,7 @@
 <?php
 // about.php
-$pageTitle = "About Infinity SoftHub | Enterprise IT Consulting Experts";
-$pageKeywords = "about Infinity SoftHub, IT consulting, digital transformation, enterprise solutions, company story";
+$pageTitle = "About Infinity SoftHub | Premium Enterprise IT Consulting & Software Engineering";
+$pageKeywords = "about Infinity SoftHub, IT consulting, custom software development, enterprise solutions, LMS experts, cloud DevOps, company story";
 $activePage = 'about';
 
 require_once 'includes/header.php';
@@ -17,8 +17,8 @@ require_once 'includes/header.php';
                 <div class="badge badge-primary badge-mb">
                     <i class="fas fa-info-circle" aria-hidden="true"></i> About Infinity SoftHub Technologies
                 </div>
-                <h1>Building the Future of <span class="gradient-text">Digital Learning</span></h1>
-                <p>From custom Web development to AI-powered LMS solutions, we're on a mission to transform how the world learns.</p>
+                <h1>Architecting the Future of <span class="gradient-text">Enterprise IT</span></h1>
+                <p>We build highly scalable software solutions, intelligent digital workspaces, and cloud infrastructure to drive business growth.</p>
             </div>
         </div>
     </section>
@@ -31,22 +31,22 @@ require_once 'includes/header.php';
                     <div class="badge badge-primary badge-mb-sm">
                         <i class="fas fa-clock-rotate-left" aria-hidden="true"></i> Our Story
                     </div>
-                    <h2 class="h2-mb">A Decade of <span class="gradient-text">Moodle Excellence</span></h2>
-                    <p>Founded in 2015, Infinity SoftHub Technologies began with a simple mission: to make learning management systems more accessible, powerful, and user-friendly.</p>
-                    <p>Over the past 8+ years, we've grown from a small Moodle customization shop to a full-service Web Development and AI integration powerhouse. Our team has delivered 200+ projects across 15+ countries.</p>
-                    <p>Today, we're proud to serve educational institutions, corporations, and training organizations worldwide, empowering 15,000+ learners through our solutions.</p>
+                    <h2 class="h2-mb">A Legacy of <span class="gradient-text">Technical Innovation</span></h2>
+                    <p>Established with a vision to deliver premium enterprise software engineering, Infinity SoftHub Technologies has evolved into a trusted global IT consulting partner. We bridge the gap between complex backend engineering and elegant, user-centric interfaces.</p>
+                    <p>Over the years, we have scaled our capabilities from advanced online learning architectures to complete custom product designs, enterprise database configurations, and robust cloud integrations. Our engineering team has successfully shipped over 200 high-performance platforms across 15+ countries.</p>
+                    <p>Today, we empower global corporations, healthcare institutions, and educational academies by designing resilient software products that effortlessly support hundreds of thousands of active users worldwide.</p>
                     <div class="mt-2rem">
                         <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary">
-                            <i class="fas fa-handshake" aria-hidden="true"></i> Work With Us
+                            <i class="fas fa-handshake" aria-hidden="true"></i> Collaborate With Us
                         </a>
                     </div>
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div class="img-wrapper">
-                        <img src="assets/images/about-illustration.svg" alt="Infinity SoftHub Team" class="img-rounded" onerror="this.src='https://via.placeholder.com/600x500/111640/ffffff?text=Team+Experts'">
+                        <img src="<?php echo asset('images/about/about_team_collaboration.png'); ?>" alt="Infinity SoftHub Software Engineering Team" class="img-rounded" loading="lazy">
                         <div class="experience-badge glassmorphic">
-                            <div class="exp-number">8+</div>
-                            <div class="exp-label">Years Experience</div>
+                            <div class="exp-number">15+</div>
+                            <div class="exp-label">Years IT Expertise</div>
                         </div>
                     </div>
                 </div>
@@ -61,56 +61,56 @@ require_once 'includes/header.php';
                 <div class="stats-card" data-aos="zoom-in">
                     <i class="fas fa-cubes stats-card-icon"></i>
                     <div class="stats-number counter" data-target="200">0</div>
-                    <div class="stats-label">Projects Delivered</div>
+                    <div class="stats-label">Platforms Delivered</div>
                 </div>
                 <div class="stats-card" data-aos="zoom-in">
                     <i class="fas fa-users-gear stats-card-icon"></i>
                     <div class="stats-number counter" data-target="15000" data-suffix="+">0</div>
-                    <div class="stats-label">Users Empowered</div>
+                    <div class="stats-label">Active Users Empowered</div>
                 </div>
                 <div class="stats-card" data-aos="zoom-in">
                     <i class="fas fa-circle-check stats-card-icon" style="color: var(--accent-green);"></i>
                     <div class="stats-number stats-green">99%</div>
-                    <div class="stats-label">Client Satisfaction</div>
+                    <div class="stats-label">Client Retention & Satisfaction</div>
                 </div>
                 <div class="stats-card" data-aos="zoom-in">
                     <i class="fas fa-globe stats-card-icon" style="color: var(--accent-cyan);"></i>
                     <div class="stats-number stats-cyan">15+</div>
-                    <div class="stats-label">Countries Served</div>
+                    <div class="stats-label">Countries Served Globally</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Moodle Expertise Section -->
+    <!-- Expertise Section -->
     <section class="content-section">
         <div class="container">
             <div class="section-header anim-fade-up" data-aos="fade-up">
-                <div class="section-tag">Our Expertise</div>
-                <h2>Web Development <span class="gradient-text">Specialists</span></h2>
-                <p class="lead">We don't just work with Moodle - we've mastered it. Here's what sets us apart.</p>
+                <div class="section-tag">Our Competencies</div>
+                <h2>Custom Software & LMS <span class="gradient-text">Specialists</span></h2>
+                <p class="lead">We deliver scalable architectures, custom modules, and high-performance server logic tailored to your exact requirements.</p>
             </div>
             <div class="content-grid-2 mt-3rem">
                 <div class="anim-fade-right" data-aos="fade-right">
                     <div class="img-wrapper">
-                        <img src="assets/images/about/Professional-businessman.jpg" alt="Moodle Development Expertise" class="img-rounded" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Moodle+Expertise'">
+                        <img src="<?php echo asset('images/about/about_developers_team.png'); ?>" alt="Infinity SoftHub Software Developers Coding Workstations" class="img-rounded" loading="lazy">
                     </div>
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
-                    <h3 class="h3-mb">Why We're Moodle <span class="gradient-text">Experts</span></h3>
+                    <h3 class="h3-mb">Why Partners <span class="gradient-text">Trust Us</span></h3>
                     <ul class="premium-check-list">
-                        <li><i class="fas fa-circle-check"></i><span><strong>8+ Years Specialized Experience</strong> - Dedicated Moodle development since 2015</span></li>
-                        <li><i class="fas fa-circle-check"></i><span><strong>Custom Plugin Development</strong> - 50+ custom Moodle plugins created</span></li>
-                        <li><i class="fas fa-circle-check"></i><span><strong>Theme Development</strong> - Beautiful, responsive, accessible themes</span></li>
-                        <li><i class="fas fa-circle-check"></i><span><strong>Performance Optimization</strong> - Lightning-fast LMS implementations</span></li>
-                        <li><i class="fas fa-circle-check"></i><span><strong>Third-Party Integrations</strong> - Salesforce, SAP, Zoom, and more</span></li>
-                        <li><i class="fas fa-circle-check"></i><span><strong>AI Integration</strong> - Smart learning paths, automated grading, predictive analytics</span></li>
-                        <li><i class="fas fa-circle-check"></i><span><strong>Migration Experts</strong> - Zero-downtime Moodle version upgrades</span></li>
-                        <li><i class="fas fa-circle-check"></i><span><strong>Scalable Architecture</strong> - From 100 to 100,000+ concurrent users</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>15+ Years IT Consulting Expertise</strong> - Delivering robust results for workflows.</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Custom Application Development</strong> - Tailored web, desktop, and mobile products.</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Custom LMS & Extension Design</strong> - Rich plugin creation and specialized platforms.</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Cloud Infrastructure & DevOps</strong> - Highly available, auto-scaling setups on AWS and Azure.</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Enterprise Integrations</strong> - Connecting database operations directly to SAP and Salesforce APIs.</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Intelligent Automation</strong> - Introducing analytics formulas and workflow schedulers.</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Database Management</strong> - Handling seamless upgrades, security audits, and backups.</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Scalable Engineering</strong> - Architectures built to support over 100,000 active concurrent users.</span></li>
                     </ul>
                     <div class="mt-2rem">
-                        <a href="<?php echo base_url('services/web-development.php'); ?>" class="btn btn-outline">
-                            <i class="fas fa-graduation-cap" aria-hidden="true"></i> Explore Moodle Services
+                        <a href="<?php echo base_url('what-we-do.php'); ?>" class="btn btn-outline">
+                            <i class="fas fa-rocket" aria-hidden="true"></i> View Our Services
                         </a>
                     </div>
                 </div>
@@ -118,56 +118,56 @@ require_once 'includes/header.php';
         </div>
     </section>
 
-    <!-- AI + LMS Integration -->
+    <!-- AI + Smart Automation -->
     <section class="content-section bg-alt">
         <div class="container">
             <div class="section-header anim-fade-up" data-aos="fade-up">
                 <div class="section-tag">Innovation</div>
-                <h2>AI + LMS <span class="gradient-text">Integration</span></h2>
-                <p class="lead">We're pioneering the future of learning by combining Moodle's robustness with cutting-edge AI capabilities.</p>
+                <h2>Intelligent AI & Cloud <span class="gradient-text">Solutions</span></h2>
+                <p class="lead">We shape modern digital workflows by combining scalable application code with intelligent AI processing elements.</p>
             </div>
             <div class="grid grid-3 stagger mt-3rem">
                 <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fas fa-robot" aria-hidden="true"></i>
                     </div>
-                    <h4>Personalized Learning</h4>
-                    <p>AI-powered learning paths that adapt to each student's pace, style, and goals.</p>
+                    <h4>Intelligent Workflows</h4>
+                    <p>Dynamic recommendation engines and algorithms that optimize daily operating paths for team members.</p>
                 </div>
                 <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fas fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <h4>Predictive Analytics</h4>
-                    <p>Identify at-risk students early with machine learning models that analyze engagement patterns.</p>
+                    <p>Identify critical patterns early using machine learning models built to compute database trends.</p>
                 </div>
                 <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fas fa-language" aria-hidden="true"></i>
                     </div>
                     <h4>Natural Language Processing</h4>
-                    <p>Automated content tagging, sentiment analysis, and intelligent discussion forum moderation.</p>
+                    <p>Automated text categorization, chat interfaces, content taggers, and intelligent forum scanners.</p>
                 </div>
                 <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fas fa-brain" aria-hidden="true"></i>
                     </div>
-                    <h4>Smart Assessments</h4>
-                    <p>AI-generated quizzes, automated grading, and intelligent feedback systems.</p>
+                    <h4>Smart Platforms</h4>
+                    <p>Automated assessment generators, digital grading tools, and real-time database validation rules.</p>
                 </div>
                 <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fas fa-microphone" aria-hidden="true"></i>
                     </div>
-                    <h4>Voice-Enabled Learning</h4>
-                    <p>Voice commands, speech-to-text, and AI voice assistants integrated into your LMS.</p>
+                    <h4>Voice & Media Tools</h4>
+                    <p>Speech parsing, audio-to-text converters, and audio transcription services integrated directly.</p>
                 </div>
                 <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt" aria-hidden="true"></i>
                     </div>
-                    <h4>AI Security Monitoring</h4>
-                    <p>Proactive threat detection and anomaly monitoring powered by machine learning.</p>
+                    <h4>Smart Cyber Safeguards</h4>
+                    <p>Machine learning analytics monitors that identify network activity threats and database abnormalities.</p>
                 </div>
             </div>
         </div>
@@ -177,23 +177,23 @@ require_once 'includes/header.php';
     <section class="content-section">
         <div class="container">
             <div class="section-header anim-fade-up" data-aos="fade-up">
-                <div class="section-tag">Portfolio</div>
-                <h2>Featured <span class="gradient-text">Projects</span></h2>
-                <p class="lead">Take a look at some of our most impactful Moodle and LMS implementations.</p>
+                <div class="section-tag">Case Studies</div>
+                <h2>Featured Enterprise <span class="gradient-text">Deliveries</span></h2>
+                <p class="lead">A closer look at some of our custom software solutions and system migrations.</p>
             </div>
             <div class="grid grid-2 mt-3rem">
                 <!-- Project 1 -->
                 <div class="card" data-aos="fade-up">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/moodle-lms-development.jpg'); ?>" alt="University LMS Transformation" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/0066ff/ffffff?text=University+LMS'">
+                        <img src="<?php echo asset('images/about/about_university_lms.png'); ?>" alt="Scalable Academic LMS Platform Customization" class="card-img" loading="lazy">
                         <div class="card-overlay"></div>
                     </div>
                     <div class="card-body">
                         <div class="badge badge-primary mb-1rem">Education</div>
-                        <h4>University LMS Transformation</h4>
-                        <p>A complete Moodle overhaul for a leading university with 8,000+ students. Implemented custom themes, 15+ plugins, and AI-powered course recommendations.</p>
+                        <h4>Scalable E-Learning Platform Transformation</h4>
+                        <p>A complete software overhaul for an academic institution supporting 10,000+ active users. Implemented secure plugin modules, custom theme styling, and cloud database indexing.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 8,000+ Active Users</span>
+                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 10,000+ Active Users</span>
                             <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 40% Engagement Boost</span>
                         </div>
                     </div>
@@ -201,48 +201,48 @@ require_once 'includes/header.php';
                 <!-- Project 2 -->
                 <div class="card" data-aos="fade-up">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/ai-lms2.jpg'); ?>" alt="Enterprise Training Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/10B981/ffffff?text=Enterprise+Training'">
+                        <img src="<?php echo asset('images/about/about_enterprise_training.png'); ?>" alt="Custom Corporate Training Dashboard Portal" class="card-img" loading="lazy">
                         <div class="card-overlay"></div>
                     </div>
                     <div class="card-body">
                         <div class="badge badge-success mb-1rem">Corporate</div>
-                        <h4>Enterprise Training Platform</h4>
-                        <p>Built a custom Moodle-based corporate training platform for a Fortune 500 company with 5,000+ employees. Integrated with SAP and Salesforce.</p>
+                        <h4>Enterprise Performance Portal</h4>
+                        <p>Developed a secure database portal for a multinational organization with 5,000+ team members. Integrated with CRM platforms and custom ERP tools.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 5,000+ Employees</span>
-                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 60% Faster Onboarding</span>
+                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 5,000+ Daily Members</span>
+                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 60% Process Optimization</span>
                         </div>
                     </div>
                 </div>
                 <!-- Project 3 -->
                 <div class="card" data-aos="fade-up">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/Professional.jpg'); ?>" alt="Medical Training LMS" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/0066ff/ffffff?text=Medical+Training'">
+                        <img src="<?php echo asset('images/about/about_medical_training.png'); ?>" alt="Specialized Medical Education Platform" class="card-img" loading="lazy">
                         <div class="card-overlay"></div>
                     </div>
                     <div class="card-body">
                         <div class="badge badge-primary mb-1rem">Healthcare</div>
-                        <h4>Medical Training LMS</h4>
-                        <p>Developed a specialized Moodle platform for medical professionals with CME tracking, certification management, and AI-powered content recommendations.</p>
+                        <h4>Medical Knowledge Base LMS</h4>
+                        <p>Built a customized web platform for clinical certification, professional CME metrics tracker, and compliance verification modules.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 2,000+ Doctors</span>
-                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 100% Compliance</span>
+                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 2,000+ Medical Professionals</span>
+                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 100% Audit Compliance</span>
                         </div>
                     </div>
                 </div>
                 <!-- Project 4 -->
                 <div class="card" data-aos="fade-up">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/Digital-Solutions.jpg'); ?>" alt="Product Training Portal" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/10B981/ffffff?text=Product+Training'">
+                        <img src="<?php echo asset('images/about/about_product_training.png'); ?>" alt="Ecommerce Customer Portal with Automated Certificates" class="card-img" loading="lazy">
                         <div class="card-overlay"></div>
                     </div>
                     <div class="card-body">
                         <div class="badge badge-success mb-1rem">E-commerce</div>
-                        <h4>Product Training Portal</h4>
-                        <p>Created a customer education portal with interactive courses, quizzes, and certification for a leading e-commerce platform.</p>
+                        <h4>Interactive Service & Onboarding System</h4>
+                        <p>Engineered a custom service and onboarding workspace featuring interactive content widgets, quizzes, and automated certificate issuance.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 10,000+ Customers</span>
-                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 85% Course Completion</span>
+                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 10,000+ Customers Served</span>
+                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 85% Target Success Rate</span>
                         </div>
                     </div>
                 </div>
@@ -250,14 +250,14 @@ require_once 'includes/header.php';
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Footer CTA -->
     <section class="content-section bg-alt">
         <div class="container">
             <div class="cta-section anim-fade-up cta-narrow premium-cta" data-aos="fade-up">
-                <h2 class="cta-title">Ready to Build Your <span class="cta-highlight">Dream LMS?</span></h2>
-                <p class="cta-text">Let's discuss how our Moodle expertise and AI integration can transform your learning platform.</p>
+                <h2 class="cta-title">Ready to Design Your <span class="cta-highlight">Enterprise Platform?</span></h2>
+                <p class="cta-text">Let's discuss how our consulting expertise, custom software development, and AI tools can transform your business.</p>
                 <a href="<?php echo base_url('contact.php'); ?>" class="btn cta-btn">
-                    <i class="fas fa-rocket" aria-hidden="true"></i> Get Free Consultation
+                    <i class="fas fa-rocket" aria-hidden="true"></i> Get Free Tech Consultation
                 </a>
             </div>
         </div>
