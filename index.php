@@ -284,7 +284,7 @@ require_once 'includes/header.php';
 
                     <!-- Description -->
                     <p class="hero-main-desc" data-aos="fade-up" data-aos-delay="200">
-                        We build scalable digital solutions — from <strong>Moodle LMS</strong> to <strong>AI-powered apps</strong> — helping enterprises innovate, automate, and grow globally.
+                        We build scalable digital solutions — from <strong>Learning Management Systems</strong> to <strong>AI-powered apps</strong> — helping enterprises innovate, automate, and grow globally.
                     </p>
 
                     <!-- CTA Buttons -->
@@ -342,7 +342,7 @@ require_once 'includes/header.php';
                     <div class="floating-glass-card card-bottom">
                         <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
                         <div class="card-content">
-                            <h4>Moodle LMS</h4>
+                            <h4> LMS</h4>
                             <p>Premium learning systems</p>
                         </div>
                     </div>

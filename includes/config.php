@@ -1,7 +1,7 @@
 <?php
 // config.php - Site-wide configuration
 define('SITE_NAME', 'Infinity SoftHub Technologies');
-define('SITE_URL', 'http://localhost/infinitysofthub.com/');
+define('SITE_URL', 'https://infinitysofthub.com/');
 define('ASSETS_PATH', __DIR__ . '/../assets');
 define('INCLUDES_PATH', __DIR__);
 

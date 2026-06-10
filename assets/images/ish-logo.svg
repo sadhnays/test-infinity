@@ -1,32 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 90" width="380" height="90">
   <defs>
-    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#0066ff"/>
-      <stop offset="100%" style="stop-color:#00aaff"/>
+    <!-- Original color gradients, preserved but formatted beautifully -->
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066ff" />
+      <stop offset="100%" stop-color="#00aaff" />
     </linearGradient>
-    <linearGradient id="cyanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00ccff"/>
-      <stop offset="100%" style="stop-color:#00ffcc"/>
+    
+    <linearGradient id="cyanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ccff" />
+      <stop offset="100%" stop-color="#00ffcc" />
     </linearGradient>
+
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066ff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#00ffcc" stop-opacity="0.03" />
+    </linearGradient>
+
+    <!-- Filters for premium glows and shadows -->
+    <filter id="crossoverShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#002266" flood-opacity="0.3" />
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0066ff" flood-opacity="0.2" />
+    </filter>
   </defs>
 
-  <!-- Infinity Symbol Icon -->
-  <g transform="translate(5, 15)">
-    <!-- Main infinity loop -->
-    <path d="M15,30 C15,15 25,15 30,30 C35,45 45,45 55,30 C65,15 75,15 75,30 C75,45 65,45 55,30 C45,15 35,15 30,30 C25,45 15,45 15,30"
-          fill="none" stroke="url(#blueGradient)" stroke-width="4" stroke-linecap="round"/>
-    <!-- Inner glow effect -->
-    <circle cx="45" cy="30" r="5" fill="url(#cyanGradient)"/>
-    <circle cx="45" cy="30" r="3" fill="#ffffff"/>
-    <!-- Accent dots -->
-    <circle cx="25" cy="20" r="2" fill="#0066ff"/>
-    <circle cx="65" cy="20" r="2" fill="#00aaff"/>
+  <!-- Background Glow Aura (Adds premium depth) -->
+  <circle cx="45" cy="45" r="34" fill="url(#bgGlow)" />
+
+  <!-- The Symbol: Premium 3D Infinity Loop with original colors -->
+  <g filter="url(#softGlow)">
+    <!-- Path A (Underpass Loop) - Blue Gradient -->
+    <path d="M 20,45 C 20,25 33,25 45,45 C 57,65 70,65 70,45" 
+          fill="none" 
+          stroke="url(#blueGradient)" 
+          stroke-width="11" 
+          stroke-linecap="round" />
+          
+    <!-- Path B (Overpass Loop with Shadow to create 3D crossover effect) - Cyan Gradient -->
+    <path d="M 70,45 C 70,25 57,25 45,45 C 33,65 20,65 20,45" 
+          fill="none" 
+          stroke="url(#cyanGradient)" 
+          stroke-width="11" 
+          stroke-linecap="round"
+          filter="url(#crossoverShadow)" />
   </g>
 
   <!-- Company Name -->
-  <text x="95" y="35" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" fill="#0066ff">Infinity</text>
-  <text x="95" y="60" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" fill="#333333">SoftHub</text>
+  <text x="95" y="37" 
+        font-family="'Outfit', 'Inter', 'Segoe UI', Arial, sans-serif" 
+        font-size="28" 
+        font-weight="bold" 
+        fill="#0066ff">Infinity</text>
+  <text x="95" y="60" 
+        font-family="'Outfit', 'Inter', 'Segoe UI', Arial, sans-serif" 
+        font-size="22" 
+        font-weight="600" 
+        fill="#333333">SoftHub</text>
 
   <!-- Tagline (optional) -->
-  <text x="95" y="78" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#666666" letter-spacing="2">TECHNOLOGIES</text>
+  <text x="95" y="78" 
+        font-family="'Outfit', 'Inter', 'Segoe UI', Arial, sans-serif" 
+        font-size="10" 
+        font-weight="600" 
+        fill="#666666" 
+        letter-spacing="2">TECHNOLOGIES</text>
 </svg>
