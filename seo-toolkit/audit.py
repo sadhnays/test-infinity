@@ -142,14 +142,35 @@ class SEOAuditor:
     # ================= LOCAL MODE =================
     def scan_local_dir(self):
         print(f"Scanning local directory recursively: {self.local_dir}")
+        
+        blacklisted_dirs = {
+            '.git', 'node_modules', 'includes', 'blog-admin', 'wp-plugins',
+            'blog2', 'blog', 'local-blog-writer', 'assets', 'font-awesome',
+            'fonts', 'svg', 'wp-admin', 'wp-includes', 'wp-content', 'html',
+            'blogold serv', 'signals'
+        }
+        blacklisted_files = {
+            'config.php', 'functions.php', 'smtps.php', 'chatbot-lead.php',
+            'wp-header.html', 'wp-footer.html', 'html-header.html', 'html-footer.html',
+            'sitemap.php', 'privacy-policy.php', 'terms.php'
+        }
+        
         for root, dirs, files in os.walk(self.local_dir):
-            # Skip hidden files/directories and common node/git folders
-            dirs[:] = [d for d in dirs if d not in ['.git', 'node_modules', 'includes', 'blog-admin', 'wp-plugins']]
+            # Skip blacklisted directories from descending
+            dirs[:] = [d for d in dirs if d not in blacklisted_dirs]
+            
             for file in files:
                 if file.endswith('.php') or file.endswith('.html'):
                     filepath = os.path.join(root, file)
                     rel_path = os.path.relpath(filepath, self.local_dir)
                     
+                    # Extra safety check on the full relative path
+                    parts = rel_path.replace('\\', '/').split('/')
+                    if any(part in blacklisted_dirs for part in parts[:-1]):
+                        continue
+                    if parts[-1] in blacklisted_files:
+                        continue
+                        
                     # Read file content and audit it
                     try:
                         with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
