@@ -47,14 +47,60 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if (empty($subject)) { $errors[] = 'Subject is required.'; }
             if (empty($message)) { $errors[] = 'Message is required.'; }
 
-            // If no errors, send email via SMTP
+            // If no errors, process form (save to DB, then send email)
             if (empty($errors)) {
-                $sent = send_contact_notification($name, $email, $phone, $subject, $message);
-                if ($sent) {
-                    $success = true;
-                } else {
-                    $errors[] = 'Failed to send message via email. Our team has been notified. You can also email us directly at info@infinitysofthub.com';
+                // 1. Create table if not exists
+                try {
+                    $pdo = get_db_connection();
+                    $pdo->exec("
+                        CREATE TABLE IF NOT EXISTS contact_messages (
+                            id INT AUTO_INCREMENT PRIMARY KEY,
+                            name VARCHAR(255) NOT NULL,
+                            email VARCHAR(255) NOT NULL,
+                            phone VARCHAR(50) DEFAULT NULL,
+                            subject VARCHAR(255) NOT NULL,
+                            message TEXT NOT NULL,
+                            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                            status ENUM('new', 'read', 'replied') DEFAULT 'new',
+                            INDEX idx_email (email),
+                            INDEX idx_created (created_at)
+                        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+                    ");
+                } catch (Exception $e) {
+                    error_log("Contact table creation failed: " . $e->getMessage());
                 }
+
+                // 2. Save to database
+                $db_saved = false;
+                try {
+                    $stmt = $pdo->prepare("
+                        INSERT INTO contact_messages (name, email, phone, subject, message)
+                        VALUES (?, ?, ?, ?, ?)
+                    ");
+                    $stmt->execute([$name, $email, $phone, $subject, $message]);
+                    $db_saved = true;
+                } catch (Exception $e) {
+                    error_log("Saving contact message failed: " . $e->getMessage());
+                }
+
+                // 3. Send email notification via SMTP
+                if ($db_saved) {
+                    $success = true;
+                    try {
+                        send_contact_notification($name, $email, $phone, $subject, $message);
+                    } catch (Exception $e) {
+                        error_log("Contact email sending failed: " . $e->getMessage());
+                    }
+                } else {
+                    // Fallback to direct SMTP if database failed
+                    $sent = send_contact_notification($name, $email, $phone, $subject, $message);
+                    if ($sent) {
+                        $success = true;
+                    } else {
+                        $errors[] = 'Failed to submit form. Please email us directly at info@infinitysofthub.com';
+                    }
+                }
+
                 // Regenerate CSRF token after submission
                 $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
             }
