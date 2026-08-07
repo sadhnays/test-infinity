@@ -47,6 +47,13 @@ $name = sanitize_input($input['name'] ?? '');
 $email = sanitize_input($input['email'] ?? '');
 $mobile = sanitize_input($input['mobile'] ?? '');
 $message = sanitize_input($input['message'] ?? '');
+$honey = sanitize_input($input['honey'] ?? '');
+
+// Honeypot anti-spam check
+if (!empty($honey)) {
+    echo json_encode(['success' => false, 'message' => 'Verification failed.']);
+    exit;
+}
 
 // Validate
 if (empty($name) || empty($email) || empty($mobile)) {

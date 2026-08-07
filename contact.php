@@ -6,6 +6,7 @@ $activePage = 'contact';
 
 require_once 'includes/config.php';
 require_once 'includes/functions.php';
+require_once 'includes/smtps.php';
 
 // Initialize variables
 $errors = [];
@@ -23,29 +24,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($submittedToken) || !hash_equals($_SESSION['csrf_token'] ?? '', $submittedToken)) {
         $errors[] = 'Invalid CSRF token. Please try again.';
     } else {
-        // Sanitize and validate inputs
-        $name = sanitize_input(filter_input(INPUT_POST, 'name', FILTER_DEFAULT) ?? '');
-        $email = sanitize_input(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL) ?? '');
-        $phone = sanitize_input(filter_input(INPUT_POST, 'phone', FILTER_DEFAULT) ?? '');
-        $subject = sanitize_input(filter_input(INPUT_POST, 'subject', FILTER_DEFAULT) ?? '');
-        $message = sanitize_input(filter_input(INPUT_POST, 'message', FILTER_DEFAULT) ?? '');
+        // Honeypot anti-spam check (bots fill this field, real users don't see it)
+        $honeypot = filter_input(INPUT_POST, 'email_verify', FILTER_DEFAULT);
+        if (!empty($honeypot)) {
+            // Silent reject as spam bot
+            $errors[] = 'Request could not be processed due to verification failure.';
+        } else {
+            // Sanitize and validate inputs
+            $name = sanitize_input(filter_input(INPUT_POST, 'name', FILTER_DEFAULT) ?? '');
+            $email = sanitize_input(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL) ?? '');
+            $phone = sanitize_input(filter_input(INPUT_POST, 'phone', FILTER_DEFAULT) ?? '');
+            $subject = sanitize_input(filter_input(INPUT_POST, 'subject', FILTER_DEFAULT) ?? '');
+            $message = sanitize_input(filter_input(INPUT_POST, 'message', FILTER_DEFAULT) ?? '');
 
-        // Validation
-        if (empty($name)) { $errors[] = 'Name is required.'; }
-        if (empty($email)) {
-            $errors[] = 'Email is required.';
-        } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $errors[] = 'Invalid email format.';
-        }
-        if (empty($subject)) { $errors[] = 'Subject is required.'; }
-        if (empty($message)) { $errors[] = 'Message is required.'; }
+            // Validation
+            if (empty($name)) { $errors[] = 'Name is required.'; }
+            if (empty($email)) {
+                $errors[] = 'Email is required.';
+            } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $errors[] = 'Invalid email format.';
+            }
+            if (empty($subject)) { $errors[] = 'Subject is required.'; }
+            if (empty($message)) { $errors[] = 'Message is required.'; }
 
-        // If no errors, process form (send email or save to database)
-        if (empty($errors)) {
-            // Here you would typically send an email or save to database
-            $success = true;
-            // Regenerate CSRF token after successful submission
-            $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+            // If no errors, send email via SMTP
+            if (empty($errors)) {
+                $sent = send_contact_notification($name, $email, $phone, $subject, $message);
+                if ($sent) {
+                    $success = true;
+                } else {
+                    $errors[] = 'Failed to send message via email. Our team has been notified. You can also email us directly at info@infinitysofthub.com';
+                }
+                // Regenerate CSRF token after submission
+                $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+            }
         }
     }
 }
@@ -86,6 +98,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <form method="POST" action="" style="display:flex; flex-direction:column; gap:1.5rem;">
                     <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                    
+                    <!-- Honeypot field for anti-spam security (hidden from users) -->
+                    <div style="display: none; visibility: hidden; opacity: 0; position: absolute; left: -9999px;">
+                        <input type="text" name="email_verify" tabindex="-1" autocomplete="off" value="">
+                    </div>
 
                     <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
                         <div>

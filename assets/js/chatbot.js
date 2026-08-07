@@ -336,6 +336,12 @@ function showLeadForm() {
             <div class="chatbot-form-group">
                 <textarea id="lead-message" placeholder="Your Message (Optional)" class="chatbot-form-textarea" rows="3"></textarea>
             </div>
+            
+            <!-- Honeypot anti-spam field -->
+            <div style="display: none; visibility: hidden; opacity: 0; position: absolute; left: -9999px;">
+                <input type="text" id="lead-honey" tabindex="-1" autocomplete="off" value="">
+            </div>
+            
             <button class="chatbot-form-submit" onclick="submitLeadForm()">Submit & Get Free Consultation</button>
             <div id="lead-form-error" class="lead-form-error"></div>
         </div>
@@ -351,6 +357,7 @@ async function submitLeadForm() {
     const email = document.getElementById('lead-email')?.value.trim();
     const mobile = document.getElementById('lead-mobile')?.value.trim();
     const message = document.getElementById('lead-message')?.value.trim() || '';
+    const honey = document.getElementById('lead-honey')?.value.trim() || '';
     const errorDiv = document.getElementById('lead-form-error');
 
     // Validate
@@ -383,7 +390,7 @@ async function submitLeadForm() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ name, email, mobile, message })
+            body: JSON.stringify({ name, email, mobile, message, honey })
         });
 
         const result = await response.json();

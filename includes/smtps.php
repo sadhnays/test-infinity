@@ -160,12 +160,70 @@ function send_lead_thank_you($name, $email) {
             </div>
             <div class="footer">
                 <p>Infinity SoftHub Technologies</p>
-                <p>Email: info@infinitysofthub.com | Phone: +91-120-5146-341</p>
+                 <p>Email: info@infinitysofthub.com | Phone: +91-129-2985010</p>
             </div>
         </div>
     </body>
     </html>';
 
     return send_smtp_email($email, $name, $subject, $body_html);
+}
+
+/**
+ * Send contact form submission email to admin
+ */
+function send_contact_notification($name, $email, $phone, $subject_line, $message) {
+    $subject = "New Contact Us Message: " . $subject_line;
+
+    $body_html = '
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+            .header { background: #062B6F; color: white; padding: 20px; text-align: center; }
+            .content { padding: 20px; background: #f5f7fb; }
+            .field { margin-bottom: 15px; }
+            .label { font-weight: bold; color: #062B6F; }
+            .value { margin-top: 5px; padding: 10px; background: white; border-radius: 5px; }
+            .footer { padding: 20px; text-align: center; font-size: 12px; color: #666; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2>New Contact Us Form Message</h2>
+            </div>
+            <div class="content">
+                <div class="field">
+                    <div class="label">Name:</div>
+                    <div class="value">' . htmlspecialchars($name) . '</div>
+                </div>
+                <div class="field">
+                    <div class="label">Email:</div>
+                    <div class="value"><a href="mailto:' . htmlspecialchars($email) . '">' . htmlspecialchars($email) . '</a></div>
+                </div>
+                <div class="field">
+                    <div class="label">Phone:</div>
+                    <div class="value">' . ($phone ? htmlspecialchars($phone) : \'Not Provided\') . '</div>
+                </div>
+                <div class="field">
+                    <div class="label">Subject:</div>
+                    <div class="value">' . htmlspecialchars($subject_line) . '</div>
+                </div>
+                <div class="field">
+                    <div class="label">Message:</div>
+                    <div class="value">' . nl2br(htmlspecialchars($message)) . '</div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Sent from Infinity SoftHub Contact Page</p>
+            </div>
+        </div>
+    </body>
+    </html>';
+
+    return send_smtp_email(LEAD_RECEIVER_EMAIL, LEAD_RECEIVER_NAME, $subject, $body_html);
 }
 ?>
