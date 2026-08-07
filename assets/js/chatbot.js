@@ -231,7 +231,7 @@ Company Info:
 - Name: Infinity SoftHub Technologies
 - Website: infinitysofthub.com
 - Email: info@infinitysofthub.com
-- Phone: +91-120-5146-341
+- Phone: +91-129-2985010
 - Address: Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014
 
 Services offered:
@@ -268,7 +268,7 @@ Be helpful, professional, and concise. Keep responses under 150 words. If asked 
         removeTypingIndicator();
 
         const fallbacks = [
-            "Thanks for your message! Our team will get back to you soon. For immediate assistance, please email us at info@infinitysofthub.com or call +91-120-5146-341.",
+            "Thanks for your message! Our team will get back to you soon. For immediate assistance, please email us at info@infinitysofthub.com or call +91-129-2985010.",
             "I'm currently experiencing connectivity issues. Please reach out to us directly at info@infinitysofthub.com and we'll respond within 24 hours.",
             "Thank you for contacting Infinity SoftHub! Our team is here to help. Please email info@infinitysofthub.com for a quick response."
         ];
@@ -286,19 +286,19 @@ function getOfflineResponse(message) {
         return "We offer: 1) Web Development, 2) Mobile App Development, 3) AI & ML Integration, 4) Cloud Solutions, 5) UI/UX Design, and 6) Digital Marketing. Visit our Services page or contact us at info@infinitysofthub.com!";
     }
     if (msg.includes('quote') || msg.includes('pricing') || msg.includes('cost')) {
-        return "For a custom quote, please email us at info@infinitysofthub.com or call +91-120-5146-341. We'll respond within 24 hours with a tailored solution for your needs.";
+        return "For a custom quote, please email us at info@infinitysofthub.com or call +91-129-2985010. We'll respond within 24 hours with a tailored solution for your needs.";
     }
     if (msg.includes('timeline') || msg.includes('time') || msg.includes('long')) {
         return "Project timelines vary by scope. Simple websites take 2-4 weeks, while complex platforms can take 3-6 months. Contact us at info@infinitysofthub.com for a detailed timeline estimate.";
     }
     if (msg.includes('contact') || msg.includes('phone') || msg.includes('email')) {
-        return "You can reach us at: Email: info@infinitysofthub.com, Phone: +91-120-5146-341, Address: Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014.";
+        return "You can reach us at: Email: info@infinitysofthub.com, Phone: +91-129-2985010, Address: Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014.";
     }
     if (msg.includes('hello') || msg.includes('hi ') || msg.includes('hey')) {
         return "Hello! Welcome to Infinity SoftHub. How can I help you today? You can ask about our services, request a quote, or get our contact information.";
     }
 
-    return "Thank you for your message! For detailed assistance, please contact our team at info@infinitysofthub.com or call +91-120-5146-341. We typically respond within 24 hours.";
+    return "Thank you for your message! For detailed assistance, please contact our team at info@infinitysofthub.com or call +91-129-2985010. We typically respond within 24 hours.";
 }
 
 // Escape HTML to prevent XSS

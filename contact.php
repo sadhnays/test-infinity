@@ -142,7 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                         <div>
                             <h4 style="margin-bottom:0.5rem;">Call Us</h4>
-                            <p style="color:var(--text-gray);">+91-120-5146-341</p>
+                             <p style="color:var(--text-gray);">+91-129-2985010</p>
                         </div>
                     </div>
 

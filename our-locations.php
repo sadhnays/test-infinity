@@ -120,7 +120,7 @@ require_once 'includes/header.php';
                         <i class="fas fa-phone"></i>
                     </div>
                     <h3>Call Us</h3>
-                    <p>+91-120-5146-341</p>
+                    <p>+91-129-2985010</p>
                 </div>
 
                 <div class="value-card" data-aos="fade-up" data-aos-delay="200">
