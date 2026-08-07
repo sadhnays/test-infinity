@@ -132,7 +132,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                         <div>
                             <h4 style="margin-bottom:0.5rem;">Our Location</h4>
-                            <p style="color:var(--text-gray);">Wazirpur, Faridabad, Haryana, India</p>
+                             <p style="color:var(--text-gray);">Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014</p>
                         </div>
                     </div>
 

@@ -59,8 +59,8 @@ require_once 'includes/header.php';
                 <div class="office-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="flag">🇮🇳</div>
                     <h3>India - Faridabad</h3>
-                    <p>Wazirpur, Faridabad, Haryana</p>
-                    <a href="https://maps.google.com/?q=Wazirpur,+Faridabad,+Haryana" target="_blank" style="color:var(--accent); font-size:0.85rem; display:inline-flex; align-items:center; gap:0.3rem; margin-top:0.5rem;">
+                    <p>Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014</p>
+                    <a href="https://www.google.com/maps?q=28.4315947,77.343365&z=17&hl=en" target="_blank" style="color:var(--accent); font-size:0.85rem; display:inline-flex; align-items:center; gap:0.3rem; margin-top:0.5rem;">
                         <i class="fas fa-map-marker-alt"></i> View on Map
                     </a>
                 </div>
@@ -128,7 +128,7 @@ require_once 'includes/header.php';
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <h3>Visit Us</h3>
-                    <p>Wazirpur, Faridabad, Haryana</p>
+                    <p>Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014</p>
                 </div>
 
                 <div class="value-card" data-aos="fade-up" data-aos-delay="300">

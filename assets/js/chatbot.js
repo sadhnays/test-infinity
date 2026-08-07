@@ -232,7 +232,7 @@ Company Info:
 - Website: infinitysofthub.com
 - Email: info@infinitysofthub.com
 - Phone: +91-120-5146-341
-- Address: Wazirpur, Faridabad, Haryana, India
+- Address: Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014
 
 Services offered:
 1. Web Development (custom websites, e-commerce, web apps)
@@ -292,7 +292,7 @@ function getOfflineResponse(message) {
         return "Project timelines vary by scope. Simple websites take 2-4 weeks, while complex platforms can take 3-6 months. Contact us at info@infinitysofthub.com for a detailed timeline estimate.";
     }
     if (msg.includes('contact') || msg.includes('phone') || msg.includes('email')) {
-        return "You can reach us at: Email: info@infinitysofthub.com, Phone: +91-120-5146-341, Address: Wazirpur, Faridabad, Haryana, India.";
+        return "You can reach us at: Email: info@infinitysofthub.com, Phone: +91-120-5146-341, Address: Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014.";
     }
     if (msg.includes('hello') || msg.includes('hi ') || msg.includes('hey')) {
         return "Hello! Welcome to Infinity SoftHub. How can I help you today? You can ask about our services, request a quote, or get our contact information.";
