@@ -6,7 +6,7 @@
                 <p>Premium enterprise digital solutions provider helping businesses transform and grow.</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/infinitysofthub" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/InfinitySoftHub" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <!-- <a href="https://twitter.com/InfinitySoftHub" target="_blank"><i class="fab fa-x-twitter"></i></a> -->
                     <a href="https://www.linkedin.com/company/infinitysofthub/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://www.youtube.com/@infinitysofthub" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>

@@ -329,7 +329,7 @@ require_once 'includes/header.php';
                 <div class="hero-right-visual" data-aos="fade-left" data-aos-delay="200">
                     <div class="visual-glow"></div>
                     <div class="visual-image-wrapper">
-                        <img src="<?php echo asset('images/hero_tech_visual.png'); ?>" alt="Infinity SoftHub Technology Solutions" class="hero-premium-image">
+                        <img src="<?php echo asset('images/hero_tech_visual.webp'); ?>" alt="Infinity SoftHub Technology Solutions" class="hero-premium-image">
                     </div>
                     <!-- Floating glassmorphic cards -->
                     <div class="floating-glass-card card-top">
@@ -1311,7 +1311,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/moodle-all-development.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/about/service_moodle.png'); ?>" alt="Moodle LMS Development and Platform Setup" class="service-image" loading="lazy" width="400" height="300">
+                            <img src="<?php echo asset('images/about/service_moodle.webp'); ?>" alt="Moodle LMS Development and Platform Setup" class="service-image" loading="lazy" width="400" height="300">
                             <div class="service-badge">Core Speciality</div>
                         </div>
                         <div class="service-card-content">
@@ -1328,7 +1328,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/web-development.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/about/service_web.png'); ?>" alt="Custom Enterprise Web Development and Systems Integration" class="service-image" loading="lazy" width="400" height="300">
+                            <img src="<?php echo asset('images/about/service_web.webp'); ?>" alt="Custom Enterprise Web Development and Systems Integration" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1344,7 +1344,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/mobile-app-development.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/about/service_mobile.png'); ?>" alt="Native and Hybrid Mobile App Development" class="service-image" loading="lazy" width="400" height="300">
+                            <img src="<?php echo asset('images/about/service_mobile.webp'); ?>" alt="Native and Hybrid Mobile App Development" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1360,7 +1360,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/about/service_ai.png'); ?>" alt="Intelligent Artificial Intelligence and Machine Learning Models" class="service-image" loading="lazy" width="400" height="300">
+                            <img src="<?php echo asset('images/about/service_ai.webp'); ?>" alt="Intelligent Artificial Intelligence and Machine Learning Models" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1376,7 +1376,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/cloud-solutions.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/about/service_cloud.png'); ?>" alt="Cloud Server Deployments and DevOps Architecture" class="service-image" loading="lazy" width="400" height="300">
+                            <img src="<?php echo asset('images/about/service_cloud.webp'); ?>" alt="Cloud Server Deployments and DevOps Architecture" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1392,7 +1392,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/ui-ux-design.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="500">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/about/service_uiux.png'); ?>" alt="UI UX Wireframing and Prototyping Systems" class="service-image" loading="lazy" width="400" height="300">
+                            <img src="<?php echo asset('images/about/service_uiux.webp'); ?>" alt="UI UX Wireframing and Prototyping Systems" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
