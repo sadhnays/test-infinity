@@ -1,7 +1,7 @@
 <?php
-$pageTitle = "Moodle Development Services | Custom LMS Solutions | Infinity SoftHub Technologies";
-$pageDescription = "Expert Moodle development services - custom themes, plugin development, LMS migration, and full-scale Moodle solutions. 8+ years experience, 200+ projects delivered.";
-$pageKeywords = "Moodle development, custom Moodle themes, Moodle plugin development, Moodle migration, LMS development, eLearning solutions";
+$pageTitle = "Custom Moodle™ LMS Development & Integration | Infinity SoftHub";
+$pageDescription = "Custom services for Moodle™ LMS. We build custom plugins, interactive SQL/Python coding playgrounds, AI study assistants, and custom theme designs.";
+$pageKeywords = "Moodle plugin development, custom Moodle themes, Moodle developer, SQL coding playgrounds, Python coding labs inside Moodle, LMS customization services";
 $activePage = 'services';
 require_once '../includes/header.php';
 ?>
@@ -59,57 +59,57 @@ require_once '../includes/header.php';
                 <div class="feature-icon">
                     <i class="fa fa-palette"></i>
                 </div>
-                <h4>Custom Theme Development</h4>
-                <p>Beautiful, responsive, accessible themes that reflect your brand and provide an exceptional user experience across all devices.</p>
+                <h4>Custom Moodle™ Themes & UI/UX</h4>
+                <p>Responsive, modern, and accessible interface designs that reflect your brand identity and simplify student navigation.</p>
             </div>
             <div class="feature-card anim-fade-left">
                 <div class="feature-icon">
                     <i class="fa fa-puzzle-piece"></i>
                 </div>
-                <h4>Plugin Development</h4>
-                <p>Custom Moodle plugins that extend functionality - from gradebook enhancements to interactive content types.</p>
+                <h4>Custom Moodle™ Plugin Development</h4>
+                <p>Tailored plugin creation built around your specific workflow, including gradebook extensions and custom activity blocks.</p>
             </div>
             <div class="feature-card anim-fade-right">
                 <div class="feature-icon">
-                    <i class="fa fa-exchange-alt"></i>
+                    <i class="fa fa-code"></i>
                 </div>
-                <h4>Moodle Migration</h4>
-                <p>Seamless migration from older Moodle versions or other LMS platforms with zero data loss and minimal downtime.</p>
+                <h4>Interactive SQL & Python Coding Labs</h4>
+                <p>Browser-based query editors, database builders, and sandbox coding environments integrated directly into LMS courses.</p>
             </div>
             <div class="feature-card anim-fade-left">
                 <div class="feature-icon">
-                    <i class="fa fa-tachometer-alt"></i>
+                    <i class="fa fa-robot"></i>
                 </div>
-                <h4>Performance Optimization</h4>
-                <p>Lightning-fast Moodle implementations with caching, database optimization, and CDN integration.</p>
+                <h4>AI-Powered Study & Coding Assistants</h4>
+                <p>Integrating document Q&A (RAG-based search on course materials) and smart AI debugging guides inside courses.</p>
             </div>
             <div class="feature-card anim-fade-right">
                 <div class="feature-icon">
                     <i class="fa fa-plug"></i>
                 </div>
-                <h4>Third-Party Integrations</h4>
-                <p>Connect Moodle with Salesforce, SAP, Zoom, Google Workspace, Microsoft 365, and more.</p>
+                <h4>Third-Party Integrations & REST APIs</h4>
+                <p>Connect Moodle™ seamlessly with external systems, including Salesforce, SAP, Active Directory, Zoom, and custom REST APIs.</p>
             </div>
             <div class="feature-card anim-fade-left">
                 <div class="feature-icon">
-                    <i class="fa fa-mobile-alt"></i>
+                    <i class="fa fa-users-cog"></i>
                 </div>
-                <h4>Mobile-First Solutions</h4>
-                <p>Responsive designs and custom mobile apps that deliver seamless learning on any device.</p>
+                <h4>Moodle™ Multi-Tenancy & Administration</h4>
+                <p>Multi-tenant architecture (Moodle Workplace / IOMAD) setup, version upgrades, security audits, and cloud deployments.</p>
             </div>
             <div class="feature-card anim-fade-right">
                 <div class="feature-icon">
                     <i class="fa fa-shield-alt"></i>
                 </div>
-                <h4>Security Hardening</h4>
-                <p>Comprehensive security audits, SSL implementation, and compliance with educational data regulations.</p>
+                <h4>LMS Security & Performance Tuning</h4>
+                <p>Optimization of database structures, caching, CDN integration, security hardening, and database server scaling.</p>
             </div>
             <div class="feature-card anim-fade-left">
                 <div class="feature-icon">
-                    <i class="fa fa-chalkboard-teacher"></i>
+                    <i class="fa fa-chart-bar"></i>
                 </div>
-                <h4>Course Development</h4>
-                <p>Engaging, interactive course content with multimedia, quizzes, assignments, and gamification.</p>
+                <h4>E-Learning Analytics & Reporting</h4>
+                <p>Custom dashboards for student progress tracking, instructor feedback, manager reports, and data visualization tools.</p>
             </div>
         </div>
     </div>

@@ -51,6 +51,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://infinitysofthub.com/demos/sql-playground.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://infinitysofthub.com/digital-portfolio.php</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -247,6 +252,66 @@
   </url>
   <url>
     <loc>https://infinitysofthub.com/services/moodle-development.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-australia.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-brazil.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-canada.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-denmark.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-netherlands.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-norway.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-poland.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-singapore.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-spain.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-sweden.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-uk.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-usa.php</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
