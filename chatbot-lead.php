@@ -104,6 +104,8 @@ try {
 }
 
 // Save to database
+$db_saved = false;
+$lead_id = null;
 try {
     $pdo = get_db_connection();
     $stmt = $pdo->prepare("
@@ -111,12 +113,10 @@ try {
         VALUES (?, ?, ?, ?)
     ");
     $stmt->execute([$name, $email, $mobile, $message]);
-
     $lead_id = $pdo->lastInsertId();
+    $db_saved = true;
 } catch (Exception $e) {
     error_log("Lead save failed: " . $e->getMessage());
-    echo json_encode(['success' => false, 'message' => 'Failed to save your information. Please email us at info@infinitysofthub.com']);
-    exit;
 }
 
 // Send notification email to admin
@@ -127,20 +127,30 @@ try {
     error_log("Lead notification email failed: " . $e->getMessage());
 }
 
-// Send thank you email to user
-try {
-    send_lead_thank_you($name, $email);
-} catch (Exception $e) {
-    error_log("Thank you email failed: " . $e->getMessage());
+// If either DB saved or email sent succeeded, we consider it a success!
+if ($db_saved || $email_sent) {
+    // Send thank you email to user
+    try {
+        send_lead_thank_you($name, $email);
+    } catch (Exception $e) {
+        error_log("Thank you email failed: " . $e->getMessage());
+    }
+
+    // Log the lead
+    error_log("Chatbot Lead Processed: ID=" . ($lead_id ?? 'None') . ", Name=$name, Email=$email, Mobile=$mobile, MailSent=" . ($email_sent ? 'Yes' : 'No'));
+
+    echo json_encode([
+        'success' => true,
+        'message' => 'Thank you! Our team will contact you within 24 hours.',
+        'email_sent' => $email_sent
+    ]);
+    exit;
+} else {
+    // Both failed
+    echo json_encode([
+        'success' => false,
+        'message' => 'Failed to process your request. Please email us directly at info@infinitysofthub.com'
+    ]);
+    exit;
 }
-
-// Log the lead
-error_log("Chatbot Lead: ID=$lead_id, Name=$name, Email=$email, Mobile=$mobile");
-
-echo json_encode([
-    'success' => true,
-    'message' => 'Thank you! Our team will contact you within 24 hours.',
-    'email_sent' => $email_sent
-]);
-exit;
 ?>

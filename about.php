@@ -1,7 +1,7 @@
 <?php
 // about.php
-$pageTitle = "About Infinity SoftHub | Premium Enterprise IT Consulting & Software Engineering";
-$pageKeywords = "about Infinity SoftHub, IT consulting, custom software development, enterprise solutions, LMS experts, cloud DevOps, company story";
+$pageTitle = "About Infinity SoftHub | Moodle™ LMS & Full-Stack Software Engineering";
+$pageKeywords = "about Infinity SoftHub, Moodle specialist, LMS development, custom Moodle plugins, SQL coding playgrounds, Python coding labs, full-stack software development";
 $activePage = 'about';
 
 require_once 'includes/header.php';
@@ -17,8 +17,8 @@ require_once 'includes/header.php';
                 <div class="badge badge-primary badge-mb">
                     <i class="fas fa-info-circle" aria-hidden="true"></i> About Infinity SoftHub Technologies
                 </div>
-                <h1>Architecting the Future of <span class="gradient-text">Enterprise IT</span></h1>
-                <p>We build highly scalable software solutions, intelligent digital workspaces, and cloud infrastructure to drive business growth.</p>
+                <h1>Connecting Innovation with <span class="gradient-text">Custom LMS & Tech</span></h1>
+                <p>We build interactive Moodle™ LMS platforms, customized learning tools, AI features, and full-stack software applications.</p>
             </div>
         </div>
     </section>
@@ -31,10 +31,10 @@ require_once 'includes/header.php';
                     <div class="badge badge-primary badge-mb-sm">
                         <i class="fas fa-clock-rotate-left" aria-hidden="true"></i> Our Story
                     </div>
-                    <h2 class="h2-mb">A Legacy of <span class="gradient-text">Technical Innovation</span></h2>
-                    <p>Established with a vision to deliver premium enterprise software engineering, Infinity SoftHub Technologies has evolved into a trusted global IT consulting partner. We bridge the gap between complex backend engineering and elegant, user-centric interfaces.</p>
-                    <p>Over the years, we have scaled our capabilities from advanced online learning architectures to complete custom product designs, enterprise database configurations, and robust cloud integrations. Our engineering team has successfully shipped over 200 high-performance platforms across 15+ countries.</p>
-                    <p>Today, we empower global corporations, healthcare institutions, and educational academies by designing resilient software products that effortlessly support hundreds of thousands of active users worldwide.</p>
+                    <h2 class="h2-mb">A Legacy of <span class="gradient-text">E-Learning & Tech</span></h2>
+                    <p>Established with a vision to deliver premium LMS customization and software engineering, Infinity SoftHub Technologies has evolved into a trusted global IT partner. Led by our founder, a Moodle™ Specialist and Full-Stack Developer with 7+ years of experience, we specialize in building custom, high-performance e-learning ecosystems.</p>
+                    <p>Over the years, we have scaled our capabilities to build interactive LMS tools such as browser-based SQL/Python coding labs, RAG-based AI study assistants, custom Moodle™ plugins, and student reporting dashboards. Our engineering team has successfully shipped over 200 high-performance platforms across 15+ countries.</p>
+                    <p>Today, we empower universities, corporate training organizations, schools, and businesses by designing resilient software products and learning platforms that support hundreds of thousands of active users worldwide.</p>
                     <div class="mt-2rem">
                         <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary">
                             <i class="fas fa-handshake" aria-hidden="true"></i> Collaborate With Us

@@ -41,6 +41,9 @@
         <div class="footer-bottom">
             <div class="container">
                 <p>&copy; <?php echo date('Y'); ?> Infinity SoftHub Technologies. All rights reserved.</p>
+                <p style="font-size:0.75rem; color:var(--text-gray); margin-top:0.5rem; line-height:1.4;">
+                    Moodle™ is a registered trademark of Moodle Pty Ltd. Infinity SoftHub Technologies is an independent custom development agency and is not affiliated with, sponsored by, or endorsed by Moodle Pty Ltd.
+                </p>
             </div>
         </div>
 

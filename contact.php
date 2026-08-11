@@ -50,6 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // If no errors, process form (save to DB, then send email)
             if (empty($errors)) {
                 // 1. Create table if not exists
+                $pdo = null;
                 try {
                     $pdo = get_db_connection();
                     $pdo->exec("
@@ -68,19 +69,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     ");
                 } catch (Exception $e) {
                     error_log("Contact table creation failed: " . $e->getMessage());
+                    $pdo = null; // Ensure $pdo is null if connection or table creation fails
                 }
 
                 // 2. Save to database
                 $db_saved = false;
-                try {
-                    $stmt = $pdo->prepare("
-                        INSERT INTO contact_messages (name, email, phone, subject, message)
-                        VALUES (?, ?, ?, ?, ?)
-                    ");
-                    $stmt->execute([$name, $email, $phone, $subject, $message]);
-                    $db_saved = true;
-                } catch (Exception $e) {
-                    error_log("Saving contact message failed: " . $e->getMessage());
+                if ($pdo !== null) {
+                    try {
+                        $stmt = $pdo->prepare("
+                            INSERT INTO contact_messages (name, email, phone, subject, message)
+                            VALUES (?, ?, ?, ?, ?)
+                        ");
+                        $stmt->execute([$name, $email, $phone, $subject, $message]);
+                        $db_saved = true;
+                    } catch (Exception $e) {
+                        error_log("Saving contact message failed: " . $e->getMessage());
+                    }
                 }
 
                 // 3. Send email notification via SMTP

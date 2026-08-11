@@ -5,8 +5,8 @@
 // SMTP Configuration
 define('SMTP_HOST', 'smtp.gmail.com'); // Change to your SMTP host (e.g., smtp.gmail.com, smtp.outlook.com)
 define('SMTP_PORT', 587); // TLS port (465 for SSL)
-define('SMTP_USER', 'your-email@gmail.com'); // Your email address
-define('SMTP_PASS', 'your-app-password'); // Your email password or app password
+define('SMTP_USER', 'sandeeplms263@gmail.com'); // Your email address
+define('SMTP_PASS', 'dugt tyzu lgji qiuo'); // Your email password or app password
 define('SMTP_SECURE', 'tls'); // tls or ssl
 define('SMTP_FROM', 'info@infinitysofthub.com'); // From email address
 define('SMTP_FROM_NAME', 'Infinity SoftHub'); // From name
@@ -22,18 +22,32 @@ define('LEAD_RECEIVER_NAME', 'Infinity SoftHub Team');
  * Or download from: https://github.com/PHPMailer/PHPMailer
  */
 function send_smtp_email($to_email, $to_name, $subject, $body_html, $body_text = '') {
-    // Check if PHPMailer exists
-    $phpmailer_paths = [
-        __DIR__ . '/../vendor/phpmailer/phpmailer/src/PHPMailer.php',
-        __DIR__ . '/../PHPMailer/PHPMailer.php',
-    ];
-
     $phpmailer_loaded = false;
-    foreach ($phpmailer_paths as $path) {
-        if (file_exists($path)) {
-            require_once $path;
-            $phpmailer_loaded = true;
-            break;
+
+    // 1. Check if Composer Autoloader exists (loads all classes automatically)
+    $autoload_path = __DIR__ . '/../vendor/autoload.php';
+    if (file_exists($autoload_path)) {
+        require_once $autoload_path;
+        $phpmailer_loaded = true;
+    } else {
+        // 2. Fallback to manual folder path (loads dependencies explicitly)
+        $manual_paths = [
+            __DIR__ . '/../PHPMailer/',
+            __DIR__ . '/PHPMailer/',
+            __DIR__ . '/../vendor/phpmailer/phpmailer/src/',
+        ];
+        foreach ($manual_paths as $base_path) {
+            if (file_exists($base_path . 'PHPMailer.php')) {
+                try {
+                    require_once $base_path . 'Exception.php';
+                    require_once $base_path . 'PHPMailer.php';
+                    require_once $base_path . 'SMTP.php';
+                    $phpmailer_loaded = true;
+                    break;
+                } catch (Exception $e) {
+                    error_log("Failed to load PHPMailer files manually: " . $e->getMessage());
+                }
+            }
         }
     }
 
@@ -206,7 +220,7 @@ function send_contact_notification($name, $email, $phone, $subject_line, $messag
                 </div>
                 <div class="field">
                     <div class="label">Phone:</div>
-                    <div class="value">' . ($phone ? htmlspecialchars($phone) : \'Not Provided\') . '</div>
+                    <div class="value">' . ($phone ? htmlspecialchars($phone) : 'Not Provided') . '</div>
                 </div>
                 <div class="field">
                     <div class="label">Subject:</div>

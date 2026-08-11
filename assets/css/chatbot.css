@@ -365,11 +365,16 @@
     border-radius: var(--radius-sm);
     font-size: 0.8rem;
     font-family: var(--font-family);
-    background: var(--bg-light);
-    color: #e2e8f0;
+    background: #ffffff;
+    color: #1e293b !important;
     outline: none;
     transition: all 0.3s ease;
     box-sizing: border-box;
+}
+
+.chatbot-form-input::placeholder,
+.chatbot-form-textarea::placeholder {
+    color: #94a3b8;
 }
 
 .chatbot-form-input:focus,

@@ -1,8 +1,8 @@
 <?php
 // index.php - Homepage
-$pageTitle = "Connecting Innovation With Modern Digital Solutions | Infinity SoftHub";
-$pageDescription = "Premium enterprise IT consulting and digital transformation services. We connect innovation with modern digital solutions for global enterprises.";
-$pageKeywords = "IT consulting, digital transformation, enterprise solutions, web development, AI integration, cloud solutions";
+$pageTitle = "Moodle LMS Specialist & Custom Software Developer | Infinity SoftHub";
+$pageDescription = "Custom Moodle™ LMS development, LearnDash platforms, AI integration, interactive coding playgrounds (SQL/Python), and full-stack software development.";
+$pageKeywords = "Moodle LMS development, LMS specialist, LearnDash developer, custom Moodle plugins, SQL coding playgrounds, Python coding labs, AI in LMS, full-stack software engineering";
 $activePage = 'home';
 
 // Page-specific schema
@@ -278,13 +278,13 @@ require_once 'includes/header.php';
 
                     <!-- Main Heading -->
                     <h1 class="hero-main-title" data-aos="fade-up" data-aos-delay="100">
-                        Transform Your Business with
-                        <span class="title-highlight">Intelligent Technology</span>
+                        Connecting Innovation with
+                        <span class="title-highlight">Custom LMS & Software</span>
                     </h1>
 
                     <!-- Description -->
                     <p class="hero-main-desc" data-aos="fade-up" data-aos-delay="200">
-                        We build scalable digital solutions — from <strong>Learning Management Systems</strong> to <strong>AI-powered apps</strong> — helping enterprises innovate, automate, and grow globally.
+                        We build custom Moodle™ LMS platforms, interactive learning tools (SQL/Python labs), custom web & mobile applications, and AI integrations for global organizations.
                     </p>
 
                     <!-- CTA Buttons -->
