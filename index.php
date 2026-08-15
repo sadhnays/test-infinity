@@ -1904,6 +1904,41 @@ require_once 'includes/header.php';
                 <h2 class="section-title">Experience Across <span class="gradient-text">Multiple Industries</span></h2>
                 <p class="section-subtitle">Project experience spanning education, corporate training, healthcare, automotive, finance, and technology.</p>
             </div>
+
+            <div class="upwork-trust-card" id="upwork-trust" data-aos="fade-up" data-aos-delay="100">
+                <div class="upwork-trust-brand">
+                    <div class="upwork-brand-lockup" aria-label="Upwork">
+                        <img src="<?php echo asset('images/upwork-logo.svg'); ?>" alt="" width="42" height="42">
+                        <span>upwork</span>
+                    </div>
+                    <span class="upwork-top-rated">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i> Top Rated profile
+                    </span>
+                </div>
+
+                <div class="upwork-trust-copy">
+                    <span class="upwork-eyebrow">Independent marketplace profile</span>
+                    <h3>5-Star Client Feedback for Moodle™ &amp; LMS Work</h3>
+                    <p>Review Sadhna Y.'s public work history, Moodle and custom LMS portfolio, and client feedback directly on Upwork.</p>
+                </div>
+
+                <div class="upwork-rating" aria-label="Five-star client feedback shown on the linked Upwork profile">
+                    <div class="upwork-stars" aria-hidden="true">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <strong>5-star feedback</strong>
+                    <span>See verified project reviews on Upwork</span>
+                </div>
+
+                <a class="upwork-profile-link" href="https://www.upwork.com/freelancers/sadhnay" target="_blank" rel="noopener noreferrer" aria-label="View Sadhna Y.'s Upwork profile in a new tab">
+                    View Upwork Profile <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                </a>
+            </div>
+            <p class="upwork-trademark-note">Upwork is a registered trademark of Upwork Global LLC. Infinity SoftHub Technologies is independent and is not endorsed by Upwork.</p>
         </div>
 
         <!-- Infinite Auto-Scroll Marquee -->
