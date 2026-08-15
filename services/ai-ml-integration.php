@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "AI & ML LMS Integration Services | Infinity SoftHub";
-$pageDescription = "AI & ML integration for LMS. We integrate RAG-based learning assistants, semantic course search, PDF Q&A, and OpenAI/Claude/Gemini APIs.";
-$pageKeywords = "AI in LMS, RAG learning assistant, semantic search across courses, vector database, custom AI agents, OpenAI integration, LangChain developers";
+$pageDescription = "AI & ML integration for learning platforms: RAG learning assistants, adaptive learning pathways, AI tutors, and automated quiz generators.";
+$pageKeywords = "AI powered learning assistant, RAG course search, AI tutor integration, adaptive learning platform, AI automated quiz generator, intelligent tutoring system, OpenAI LangChain learning";
 $activePage = 'services';
 
 require_once '../includes/header.php';

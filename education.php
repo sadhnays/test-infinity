@@ -1,7 +1,7 @@
 <?php
-$pageTitle = "Education IT Solutions | Infinity SoftHub";
-$pageDescription = "Specialized education IT solutions including e-learning platforms, LMS systems, virtual classrooms, and educational software for schools and universities.";
-$pageKeywords = "education IT, e-learning, LMS, virtual classroom, educational software, school management";
+$pageTitle = "Education IT & Virtual Classroom Solutions | Infinity SoftHub";
+$pageDescription = "Specialized education IT solutions: virtual classroom software, higher education LMS, online exam management systems, and distance learning platforms.";
+$pageKeywords = "virtual classroom software, distance learning platform, higher education LMS, K12 learning management system, online exam software, virtual school portal";
 $activePage = 'industries';
 
 require_once 'includes/header.php';

@@ -1,7 +1,7 @@
 <?php
-$pageTitle = "eLearning Development & LMS Solutions | Infinity SoftHub";
-$pageDescription = "Custom eLearning development, LMS implementation, interactive training content, virtual classrooms, assessments and learning integrations.";
-$pageKeywords = "eLearning development services, custom eLearning development, LMS solutions, virtual classroom development, corporate training LMS";
+$pageTitle = "Enterprise LMS & Corporate Training Systems | Infinity SoftHub";
+$pageDescription = "Custom enterprise LMS & corporate training platforms: SCORM compliant systems, employee onboarding portals, virtual classrooms, and LMS solutions.";
+$pageKeywords = "enterprise LMS development, corporate training platform, custom learning management system, SCORM compliant LMS, employee onboarding software, staff training portal, virtual classroom software";
 $activePage = 'services';
 require_once '../includes/header.php';
 ?>

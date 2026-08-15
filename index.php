@@ -2,7 +2,7 @@
 // index.php - Homepage
 $pageTitle = "Custom LMS & AI-Powered Learning Solutions | Infinity SoftHub";
 $pageDescription = "Founder-led LMS development for organizations worldwide: custom plugins, SQL and Python coding labs, AI learning assistants, integrations, migrations, and cloud deployment.";
-$pageKeywords = "custom LMS development, LMS specialist, LearnDash developer, custom LMS plugins, SQL coding lab, Python coding lab, AI learning assistant, LMS integration";
+$pageKeywords = "custom LMS development, corporate training platform, virtual classroom software, SCORM compliant LMS, LearnDash developer, SQL coding lab, AI learning assistant, employee onboarding portal";
 $activePage = 'home';
 
 // Page-specific schema
