@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.bak
+*.backup
+*.tmp
+
+# Generated local audit output.
+/optimization_log.md
+/pagespeed_desktop.json
+/seo_report.md
