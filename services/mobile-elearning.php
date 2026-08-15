@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "Mobile e-Learning Solutions | Responsive LMS | Infinity SoftHub Technologies";
-$pageDescription = "Professional mobile e-Learning development services. Build responsive learning platforms that work seamlessly on smartphones, tablets & desktop devices.";
-$pageKeywords = "mobile e-Learning, responsive LMS, m-learning, mobile learning solutions, responsive elearning";
+$pageDescription = "Mobile learning solutions with responsive LMS design, offline access, microlearning, push notifications, and cross-device progress sync.";
+$pageKeywords = "mobile learning solutions, mobile-first eLearning development, responsive LMS, microlearning development, offline learning app";
 $activePage = 'services';
 require_once '../includes/header.php';
 ?>
@@ -207,6 +207,7 @@ require_once '../includes/header.php';
                     <li><strong>Push Notifications</strong> - Keep learners engaged and on track</li>
                     <li><strong>Progress Sync</strong> - Seamless sync across all devices</li>
                     <li><strong>Native Apps</strong> - iOS and Android native options</li>
+                    <li><strong>Mobile Microlearning</strong> - Short, focused modules for learning in the flow of work</li>
                 </ul>
                 <div style="margin-top:2rem;">
                     <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary" style="padding:1rem 2rem; border-radius:50px;">
@@ -271,6 +272,20 @@ require_once '../includes/header.php';
                 </div>
                 <h4>Mobile Video Streaming</h4>
                 <p style="color:var(--text-secondary);">Optimized video delivery with adaptive streaming for the best viewing experience.</p>
+            </div>
+            <div class="feature-card anim-fade-right">
+                <div class="feature-icon">
+                    <i class="fa fa-layer-group"></i>
+                </div>
+                <h4>Mobile Microlearning</h4>
+                <p style="color:var(--text-secondary);">Deliver short self-paced modules, knowledge checks, and just-in-time training for busy learners.</p>
+            </div>
+            <div class="feature-card anim-fade-left">
+                <div class="feature-icon">
+                    <i class="fa fa-route"></i>
+                </div>
+                <h4>Scenario-Based Learning</h4>
+                <p style="color:var(--text-secondary);">Create branching mobile learning journeys, simulations, badges, and game-based activities that improve engagement.</p>
             </div>
         </div>
     </div>

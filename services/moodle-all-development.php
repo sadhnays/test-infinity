@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "Moodle Development Services | Complete LMS Solutions | Infinity SoftHub";
-$pageDescription = "Complete Moodle development services - custom themes, plugin development, LMS migration, AI integration, and full-scale Moodle solutions. 8+ years experience, 200+ projects delivered.";
-$pageKeywords = "Moodle development, custom Moodle themes, Moodle plugin development, LMS migration, Moodle AI integration, eLearning solutions, Moodle customization";
+$pageDescription = "Moodle development services for custom plugins, themes, integrations, AI learning tools, accessibility, migration and scalable LMS platforms.";
+$pageKeywords = "Moodle development services, Moodle customization, custom Moodle plugins, Moodle accessibility, Moodle learner portals, Moodle AI integration";
 $activePage = 'services';
 
 require_once '../includes/header.php';
@@ -34,13 +34,13 @@ require_once '../includes/header.php';
                     <div class="badge badge-primary badge-mb-sm">
                         <i class="fas fa-graduation-cap" aria-hidden="true"></i> Moodle Expertise
                     </div>
-                    <h2 class="h2-mb">Your Trusted <span class="gradient-text">infinitysofthub</span></h2>
-                    <p class="text-secondary mb-1rem">With 8+ years of specialized Moodle development experience, we deliver comprehensive LMS solutions that transform how organizations teach and learn.</p>
-                    <p class="text-secondary mb-1-5rem">From initial setup to complex customizations, AI integration, and enterprise-scale deployments - we handle every aspect of your Moodle journey.</p>
+                    <h2 class="h2-mb">Your Moodle LMS <span class="gradient-text">Development Partner</span></h2>
+                    <p class="text-secondary mb-1rem">Since 2019, we have delivered specialized Moodle development for schools, universities, training organizations, and businesses.</p>
+                    <p class="text-secondary mb-1-5rem">From setup and custom modules to AI integration, accessible learner experiences, certification portals, and enterprise deployments, we build around your real learning workflow.</p>
                     <ul class="check-list">
-                        <li><span class="li-icon">✓</span><span class="li-text"><strong>8+ Years Specialized Experience</strong> - Dedicated Moodle experts</span></li>
-                        <li><span class="li-icon">✓</span><span class="li-text"><strong>200+ Projects Delivered</strong> - Proven track record</span></li>
-                        <li><span class="li-icon">✓</span><span class="li-text"><strong>Custom Plugin Development</strong> - 50+ plugins created</span></li>
+                        <li><span class="li-icon">✓</span><span class="li-text"><strong>6+ Years of Moodle Experience</strong> - Development work since 2019</span></li>
+                        <li><span class="li-icon">✓</span><span class="li-text"><strong>Full-Stack Delivery</strong> - Database, API, frontend, cloud, and LMS</span></li>
+                        <li><span class="li-icon">✓</span><span class="li-text"><strong>Custom Plugin Development</strong> - Features matched to your workflow</span></li>
                         <li><span class="li-icon">✓</span><span class="li-text"><strong>AI Integration Ready</strong> - Smart learning capabilities</span></li>
                     </ul>
                     <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary mt-2rem">
@@ -51,8 +51,8 @@ require_once '../includes/header.php';
                     <div style="position:relative;">
                         <img src="<?php echo asset('images/about/moodle-lms-development.jpg'); ?>" alt="Moodle Development Services" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Moodle+Development'">
                         <div class="exp-number-badge">
-                            <div class="exp-number">200+</div>
-                            <div class="exp-label">Projects Delivered</div>
+                            <div class="exp-number">6+</div>
+                            <div class="exp-label">Years with Moodle</div>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ require_once '../includes/header.php';
                         <i class="fas fa-mobile-alt" aria-hidden="true"></i>
                     </div>
                     <h4>Mobile-First Solutions</h4>
-                    <p>Responsive designs and custom mobile apps that deliver seamless learning on any device.</p>
+                    <p>Responsive Moodle design, mobile-first learner journeys, and custom apps for learning on any device.</p>
                 </div>
                 <!-- Feature 7 -->
                 <div class="feature-card" data-aos="zoom-in">
@@ -125,7 +125,7 @@ require_once '../includes/header.php';
                         <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
                     </div>
                     <h4>Course Development</h4>
-                    <p>Engaging, interactive course content with multimedia, quizzes, assignments, and gamification.</p>
+                    <p>Interactive course workflows with quizzes, assignments, certifications, badges, and learner progress tracking.</p>
                 </div>
                 <!-- Feature 8 -->
                 <div class="feature-card" data-aos="zoom-in">
@@ -133,7 +133,7 @@ require_once '../includes/header.php';
                         <i class="fas fa-shield-alt" aria-hidden="true"></i>
                     </div>
                     <h4>Security Hardening</h4>
-                    <p>Comprehensive security audits, SSL implementation, and compliance with educational data regulations.</p>
+                    <p>Security reviews, SSL implementation, role controls, and accessibility-focused UX for inclusive learning.</p>
                 </div>
                 <!-- Feature 9 -->
                 <div class="feature-card" data-aos="zoom-in">
@@ -205,22 +205,22 @@ require_once '../includes/header.php';
                     <div class="feature-icon">
                         <i class="fas fa-clock" aria-hidden="true"></i>
                     </div>
-                    <h4>8+ Years Experience</h4>
-                    <p>Dedicated Moodle development since 2015 with deep platform expertise.</p>
+                    <h4>6+ Years of Moodle Experience</h4>
+                    <p>Hands-on Moodle development since 2019 with full-stack platform expertise.</p>
                 </div>
                 <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fas fa-rocket" aria-hidden="true"></i>
                     </div>
                     <h4>Scalable Architecture</h4>
-                    <p>From 100 to 100,000+ concurrent users without performance compromise.</p>
+                    <p>Architecture, caching, database tuning, and infrastructure planned around your expected usage.</p>
                 </div>
                 <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fas fa-users" aria-hidden="true"></i>
                     </div>
-                    <h4>150+ Global Clients</h4>
-                    <p>Trusted by educational institutions and enterprises worldwide.</p>
+                    <h4>International Delivery</h4>
+                    <p>Remote collaboration for organizations in the USA, UK, Canada, Australia, and other markets.</p>
                 </div>
                 <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
@@ -240,7 +240,7 @@ require_once '../includes/header.php';
                     <div class="feature-icon">
                         <i class="fas fa-headset" aria-hidden="true"></i>
                     </div>
-                    <h4>24/7 Support</h4>
+                    <h4>Ongoing Support</h4>
                     <p>Ongoing maintenance, updates, and technical support for your LMS.</p>
                 </div>
             </div>
@@ -297,20 +297,20 @@ require_once '../includes/header.php';
         <div class="container">
             <div class="grid grid-4 stagger">
                 <div class="stats-card" data-aos="zoom-in">
-                    <div class="stats-number counter" data-target="200">0</div>
-                    <div class="stats-label">Projects Delivered</div>
+                    <div class="stats-number counter" data-target="6" data-suffix="+">0</div>
+                    <div class="stats-label">Years with Moodle</div>
                 </div>
                 <div class="stats-card" data-aos="zoom-in">
-                    <div class="stats-number counter" data-target="15000" data-suffix="+">0</div>
-                    <div class="stats-label">Users Empowered</div>
+                    <div class="stats-number counter" data-target="4">0</div>
+                    <div class="stats-label">Priority Global Markets</div>
                 </div>
                 <div class="stats-card" data-aos="zoom-in">
-                    <div class="stats-number" style="color:var(--accent-green);">50+</div>
-                    <div class="stats-label">Custom Plugins</div>
+                    <div class="stats-number" style="color:var(--accent-green);">Full-Stack</div>
+                    <div class="stats-label">Database to Cloud Delivery</div>
                 </div>
                 <div class="stats-card" data-aos="zoom-in">
-                    <div class="stats-number" style="color:var(--accent-cyan);">8+</div>
-                    <div class="stats-label">Years Experience</div>
+                    <div class="stats-number" style="color:var(--accent-cyan);">AI + LMS</div>
+                    <div class="stats-label">Integration Focus</div>
                 </div>
             </div>
         </div>
