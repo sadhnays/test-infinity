@@ -1,34 +1,23 @@
 <?php
 // services/moodle-lms-development-canada.php
-$pageTitle = "Custom Moodle™ LMS Developer Canada | Infinity SoftHub";
-$pageDescription = "Custom services for Moodle™ LMS in Canada. We build custom Moodle™ plugins, themes, and secure PIPEDA-compliant cloud portals.";
-$pageKeywords = "Custom Moodle Developer Canada, Moodle plugin development Toronto, LMS customization Vancouver, PIPEDA compliant LMS, e-learning developer Canada";
+$pageTitle = "Moodle™ LMS Development for Canadian Organizations | Infinity SoftHub";
+$pageDescription = "Remote Moodle™ LMS development for Canadian organizations, including custom plugins, integrations, bilingual setup, coding labs, migrations and cloud support.";
+$pageKeywords = "Moodle LMS development Canada, remote Moodle developer Canada, custom Moodle plugins Canada, bilingual LMS Canada, eLearning development Canada";
 $activePage = 'services';
 
-// Add Service Schema for Google Rich Snippets (Rating Stars)
-$pageSchema = '{
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Custom Moodle™ LMS Development & Customization Services",
-    "serviceType": "LMS Plugin Development, Theme Customization & Cloud Hosting",
-    "provider": {
-        "@type": "LocalBusiness",
-        "name": "Infinity SoftHub Technologies",
-        "image": "https://infinitysofthub.com/assets/images/logo.png",
-        "priceRange": "$$"
-    },
-    "areaServed": {
-        "@type": "Country",
-        "name": "CA"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "22",
-        "bestRating": "5",
-        "worstRating": "1"
-    }
-}';
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'Service',
+    'name' => 'Remote Moodle LMS Development for Canadian Organizations',
+    'serviceType' => 'LMS development, customization, integration and support',
+    'provider' => [
+        '@type' => 'Organization',
+        'name' => 'Infinity SoftHub Technologies',
+        'url' => 'https://infinitysofthub.com/',
+    ],
+    'areaServed' => ['@type' => 'Country', 'name' => 'Canada'],
+    'availableChannel' => ['@type' => 'ServiceChannel', 'serviceUrl' => 'https://infinitysofthub.com/contact.php'],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
 require_once '../includes/header.php';
 ?>
@@ -38,10 +27,10 @@ require_once '../includes/header.php';
     <div class="container">
         <div class="anim-fade-up">
             <div class="badge badge-primary" style="margin-bottom:1.5rem; display:inline-flex;">
-                <i class="fa fa-map-marker-alt"></i> Canada E-Learning
+                <i class="fa fa-globe"></i> Remote Delivery for Canadian Organizations
             </div>
-            <h1>Custom Moodle™ <span class="gradient-text">Developer Canada</span></h1>
-            <p>Bespoke Moodle™ and LearnDash development services tailored for Canadian schools, universities, and corporate academies. 100% PIPEDA-compliant, secure local cloud hosting.</p>
+            <h1>Moodle™ LMS Development <span class="gradient-text">for Canadian Organizations</span></h1>
+            <p>Custom Moodle™ and LearnDash engineering for Canadian schools, universities and training organizations—delivered remotely by our team in Faridabad, India.</p>
         </div>
     </div>
 </section>
@@ -51,12 +40,12 @@ require_once '../includes/header.php';
     <div class="container">
         <div class="content-grid-2 anim-fade-right">
             <div>
-                <h2 style="margin-bottom:1.5rem;">PIPEDA-Compliant <span class="gradient-text">E-Learning Ecosystems</span></h2>
-                <p style="margin-bottom:1.5rem;">We help Canadian organizations build, customize, and maintain secure LMS architectures. Our full-stack development workflow supports complex local integrations and custom module builds matching Canadian data safety rules.</p>
+                <h2 style="margin-bottom:1.5rem;">Secure, Flexible <span class="gradient-text">E-Learning Ecosystems</span></h2>
+                <p style="margin-bottom:1.5rem;">We help Canadian organizations build, customize and maintain LMS platforms. Our full-stack workflow supports integrations, custom modules and technical safeguards configured around your privacy requirements.</p>
                 <ul class="check-list">
-                    <li><strong>PIPEDA Data Protection</strong> - Complete alignment with Canadian privacy principles.</li>
-                    <li><strong>Canada Timezone Alignment</strong> - Communication tailored to Eastern, Mountain, and Pacific timezones.</li>
-                    <li><strong>Local Data Residency</strong> - Deployed in AWS Canada (Central) region for local database compliance.</li>
+                    <li><strong>Privacy Controls</strong> - Role permissions, audit logs and data workflows configured around your organizational policies.</li>
+                    <li><strong>Canada Timezone Overlap</strong> - Communication planned around agreed Eastern, Mountain or Pacific hours.</li>
+                    <li><strong>Canadian Cloud Regions</strong> - Canadian hosting regions selected when your data-residency policy requires them.</li>
                     <li><strong>Coding Sandboxes</strong> - Custom SQL & Python labs built directly into course structures.</li>
                 </ul>
                 <div style="margin-top:2rem;">
@@ -72,7 +61,7 @@ require_once '../includes/header.php';
                     <div style="display: flex; gap: 1rem;">
                         <span style="background: #1e2e4a; color: #60a5fa; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.8rem; font-weight: 600;">Moodle™</span>
                         <span style="background: #1e2e4a; color: #60a5fa; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.8rem; font-weight: 600;">LearnDash</span>
-                        <span style="background: #1e2e4a; color: #60a5fa; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.8rem; font-weight: 600;">PIPEDA</span>
+                        <span style="background: #1e2e4a; color: #60a5fa; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.8rem; font-weight: 600;">Bilingual LMS</span>
                     </div>
                 </div>
             </div>
@@ -84,25 +73,25 @@ require_once '../includes/header.php';
 <section class="content-section bg-alt">
     <div class="container">
         <div class="section-header anim-fade-up">
-            <div class="section-tag">Canadian Standards</div>
-            <h2>Built with Canadian <span class="gradient-text">Privacy Standards</span></h2>
-            <p class="lead">Delivering secure, localized e-learning databases across all provinces.</p>
+            <div class="section-tag">Privacy, Hosting & Localization</div>
+            <h2>Configured Around <span class="gradient-text">Canadian Requirements</span></h2>
+            <p class="lead">Practical security controls, hosting-region choices and bilingual platform options for Canadian teams.</p>
         </div>
         <div class="grid grid-3" style="margin-top:3rem;">
             <div class="feature-card anim-fade-up">
                 <div class="feature-icon"><i class="fa fa-shield-halved"></i></div>
-                <h4>PIPEDA Compliance</h4>
-                <p>We deploy secure database schemas and server setups that align with the Personal Information Protection and Electronic Documents Act (PIPEDA).</p>
+                <h4>Privacy-Supporting Controls</h4>
+                <p>We can configure access control, retention and secure data-handling workflows around requirements defined by your organization and legal advisers.</p>
             </div>
             <div class="feature-card anim-fade-up" style="animation-delay: 0.1s;">
                 <div class="feature-icon"><i class="fa fa-server"></i></div>
                 <h4>Canada Data Residency</h4>
-                <p>Host your courses on AWS Canada (Montreal) or secure local data centers to ensure student profiles remain within Canadian borders.</p>
+                <p>When required, we can deploy to selected Canadian cloud regions so your team can implement its chosen data-residency approach.</p>
             </div>
             <div class="feature-card anim-fade-up" style="animation-delay: 0.2s;">
                 <div class="feature-icon"><i class="fa fa-globe"></i></div>
                 <h4>Multi-Lingual Setup</h4>
-                <p>Configure Moodle™ translations and localized layouts to support English and French languages smoothly for public sector compliance.</p>
+                <p>Configure Moodle™ language packs, translated content workflows and localized layouts for English and French learner experiences.</p>
             </div>
         </div>
     </div>

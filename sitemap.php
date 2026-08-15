@@ -13,7 +13,7 @@ $sitemapSections = [
         'Services Overview' => 'what-we-do.php',
         'Portfolio' => 'portfolio.php',
         'Case Studies' => 'case-studies.php',
-        'Locations' => 'our-locations.php',
+        'Global Delivery' => 'our-locations.php',
         'Contact Us' => 'contact.php',
     ],
     'LMS & Learning Solutions' => [
@@ -24,6 +24,12 @@ $sitemapSections = [
         'Mobile e-Learning' => 'services/mobile-elearning.php',
         'AI for Learning Platforms' => 'services/ai-ml-integration.php',
         'Interactive SQL Coding Lab' => 'demos/sql-playground.php',
+    ],
+    'International LMS Delivery' => [
+        'Moodle LMS Development for US Organizations' => 'services/moodle-lms-development-usa.php',
+        'Moodle LMS Development for UK Organizations' => 'services/moodle-lms-development-uk.php',
+        'Moodle LMS Development for Canadian Organizations' => 'services/moodle-lms-development-canada.php',
+        'Moodle LMS Development for Australian Organizations' => 'services/moodle-lms-development-australia.php',
     ],
     'Engineering Services' => [
         'Web Development' => 'services/web-development.php',

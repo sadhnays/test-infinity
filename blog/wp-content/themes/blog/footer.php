@@ -1,82 +1,70 @@
-    <!-- Footer - Same as Main Site -->
-    <footer class="footer" id="contact">
-        <div class="container footer-container">
-            <div class="footer-col">
-                <img src="<?php echo get_main_site_url('assets/images/ish-logo.svg'); ?>" alt="<?php bloginfo('name'); ?>" style="height:45px; margin-bottom:15px; filter:brightness(0) invert(1);">
-                <p>Premium enterprise digital solutions provider helping businesses transform and grow.</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/infinitysofthub" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/InfinitySoftHub" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                    <a href="https://www.linkedin.com/company/infinitysofthub/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.youtube.com/@infinitysofthub" target="_blank"><i class="fab fa-youtube"></i></a>
-                </div>
+<?php
+/**
+ * Site footer.
+ *
+ * @package Infinity_Softhub_Blog
+ */
+?>
+<footer class="footer ish-site-footer" id="site-footer">
+    <div class="container footer-container">
+        <section class="footer-col footer-brand" aria-labelledby="footer-about-title">
+            <a href="<?php echo esc_url(get_main_site_url()); ?>" class="footer-logo" aria-label="<?php esc_attr_e('Infinity Softhub Technologies home', 'ish-blog-theme'); ?>">
+                <img src="<?php echo esc_url(get_main_site_url('assets/images/ish-logo.svg')); ?>" alt="Infinity Softhub Technologies" width="230" height="58">
+            </a>
+            <h2 id="footer-about-title" class="screen-reader-text"><?php esc_html_e('About Infinity Softhub Technologies', 'ish-blog-theme'); ?></h2>
+            <p>Founder-led custom LMS development, AI-powered learning tools, coding labs, integrations, and cloud deployment for organizations worldwide.</p>
+            <div class="social-icons" aria-label="<?php esc_attr_e('Social media links', 'ish-blog-theme'); ?>">
+                <a href="https://www.facebook.com/infinitysofthub" target="_blank" rel="noopener noreferrer" aria-label="Infinity Softhub Technologies on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/company/infinitysofthub/" target="_blank" rel="noopener noreferrer" aria-label="Infinity Softhub Technologies on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/@infinitysofthub" target="_blank" rel="noopener noreferrer" aria-label="Infinity Softhub Technologies on YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
             </div>
+        </section>
 
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <a href="<?php echo get_main_site_url(); ?>">Home</a>
-                <a href="<?php echo get_main_site_url('about'); ?>">About Us</a>
-                <a href="<?php echo get_main_site_url('what-we-do'); ?>">Services</a>
-                <a href="<?php echo get_main_site_url('portfolio'); ?>">Portfolio</a>
-                <a href="<?php echo get_main_site_url('contact'); ?>">Contact Us</a>
-            </div>
+        <nav class="footer-col" aria-labelledby="footer-links-title">
+            <h2 id="footer-links-title">Quick Links</h2>
+            <a href="<?php echo esc_url(get_main_site_url()); ?>">Home</a>
+            <a href="<?php echo esc_url(get_main_site_url('about.php')); ?>">About Us</a>
+            <a href="<?php echo esc_url(get_main_site_url('what-we-do.php')); ?>">Services</a>
+            <a href="<?php echo esc_url(get_main_site_url('portfolio.php')); ?>">Portfolio</a>
+            <a href="<?php echo esc_url(home_url('/')); ?>">Blog</a>
+            <a href="<?php echo esc_url(get_main_site_url('contact.php')); ?>">Contact Us</a>
+        </nav>
 
-            <div class="footer-col">
-                <h4>Our Services</h4>
-                <a href="<?php echo get_main_site_url('services/moodle-all-development'); ?>">Moodle Development</a>
-                <a href="<?php echo get_main_site_url('services/web-development'); ?>">Web Development</a>
-                <a href="<?php echo get_main_site_url('services/mobile-app-development'); ?>">Mobile Apps</a>
-                <a href="<?php echo get_main_site_url('services/ai-ml-integration'); ?>">AI & ML Solutions</a>
-                <a href="<?php echo get_main_site_url('services/cloud-solutions'); ?>">Cloud Solutions</a>
-            </div>
+        <nav class="footer-col" aria-labelledby="footer-services-title">
+            <h2 id="footer-services-title">Our Services</h2>
+            <a href="<?php echo esc_url(get_main_site_url('services/moodle-all-development.php')); ?>">LMS Development</a>
+            <a href="<?php echo esc_url(get_main_site_url('services/web-development.php')); ?>">Web Development</a>
+            <a href="<?php echo esc_url(get_main_site_url('services/mobile-app-development.php')); ?>">Mobile Apps</a>
+            <a href="<?php echo esc_url(get_main_site_url('services/ai-ml-integration.php')); ?>">AI &amp; ML Solutions</a>
+            <a href="<?php echo esc_url(get_main_site_url('services/cloud-solutions.php')); ?>">Cloud Solutions</a>
+        </nav>
 
-            <div class="footer-col">
-                <h4>Contact Us</h4>
-                <p><i class="fas fa-map-marker-alt"></i> Wazirpur, Faridabad, Haryana</p>
-                <p><i class="fas fa-phone"></i> +91-120-5146-341</p>
-                <p><i class="fas fa-envelope"></i> info@infinitysofthub.com</p>
-            </div>
+        <section class="footer-col footer-contact" aria-labelledby="footer-contact-title">
+            <h2 id="footer-contact-title">Contact Us</h2>
+            <address>
+                <p><i class="fas fa-location-dot" aria-hidden="true"></i><span>Plot No. 6 &amp; 7, Wazirpur Road, Jeevan Nagar, Sector 87, Faridabad, Haryana 121014</span></p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:+911292985010">+91-129-2985010</a></p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:info@infinitysofthub.com">info@infinitysofthub.com</a></p>
+            </address>
+        </section>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+            <p>&copy; <?php echo esc_html(wp_date('Y')); ?> Infinity Softhub Technologies. All rights reserved.</p>
+            <nav class="footer-legal" aria-label="<?php esc_attr_e('Legal links', 'ish-blog-theme'); ?>">
+                <a href="<?php echo esc_url(get_main_site_url('privacy-policy.php')); ?>">Privacy Policy</a>
+                <a href="<?php echo esc_url(get_main_site_url('terms.php')); ?>">Terms</a>
+            </nav>
+            <p class="moodle-disclaimer">Moodle&#8482; is a registered trademark of Moodle Pty Ltd. Infinity Softhub Technologies is an independent custom development agency and is not affiliated with, sponsored by, or endorsed by Moodle Pty Ltd.</p>
         </div>
+    </div>
 
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
-            </div>
-        </div>
+    <button id="backToTop" class="back-to-top" type="button" aria-label="<?php esc_attr_e('Back to top', 'ish-blog-theme'); ?>">
+        <i class="fas fa-angle-up" aria-hidden="true"></i>
+    </button>
+</footer>
 
-        <!-- Back to Top Button -->
-        <a href="#" id="backToTop" class="back-to-top"><i class="fas fa-angle-up"></i></a>
-    </footer>
-
-    <script>
-    window.addEventListener('scroll', function() {
-        var btn = document.getElementById('backToTop');
-        if (window.scrollY > 300) { btn.classList.add('visible'); } else { btn.classList.remove('visible'); }
-    });
-    var backToTop = document.getElementById('backToTop');
-    if (backToTop) {
-        backToTop.addEventListener('click', function(e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
-    }
-    </script>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="<?php echo get_main_site_url('assets/js/new-script.js'); ?>" defer></script>
-    <script src="<?php echo get_main_site_url('assets/js/chatbot.js'); ?>" defer></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof AOS !== 'undefined') {
-                AOS.init({
-                    duration: 800,
-                    once: true
-                });
-            }
-        });
-    </script>
-
-    <?php wp_footer(); ?>
+<?php wp_footer(); ?>
 </body>
 </html>

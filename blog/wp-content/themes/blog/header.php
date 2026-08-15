@@ -1,84 +1,66 @@
 <?php
 /**
- * Header Template for WordPress Blog - Responsive Fixed
+ * Site header.
+ *
+ * @package Infinity_Softhub_Blog
  */
 ?>
-<!DOCTYPE html>
+<!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#062b6f">
     <?php wp_head(); ?>
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_main_site_url('assets/images/favicon.png'); ?>">
-    <link rel="icon" type="image/png" href="<?php echo get_main_site_url('assets/images/favicon.png'); ?>">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo get_main_site_url('assets/css/variables.css'); ?>">
-    <link rel="stylesheet" href="<?php echo get_main_site_url('assets/css/new-style.css'); ?>">
-    <link rel="stylesheet" href="<?php echo get_main_site_url('assets/css/chatbot.css'); ?>">
-    <style>
-        /* WordPress Admin Bar Compatibility */
-        body.admin-bar .navbar {
-            top: 32px;
-        }
-        @media screen and (max-width: 782px) {
-            body.admin-bar .navbar {
-                top: 46px;
-            }
-        }
-        /* Reset list styles for navigation menu to remove black dots */
-        .nav-menu, .nav-menu li, .dropdown-menu, .dropdown-menu a {
-            list-style: none !important;
-            list-style-type: none !important;
-        }
-    </style>
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="<?php echo get_main_site_url(); ?>" class="logo">
-                <img src="<?php echo get_main_site_url('assets/images/ish-logo.svg'); ?>" alt="<?php bloginfo('name'); ?>">
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+
+<a class="skip-link screen-reader-text" href="#main-content"><?php esc_html_e('Skip to content', 'ish-blog-theme'); ?></a>
+
+<header class="site-header" id="site-header">
+    <nav class="navbar" id="navbar" aria-label="<?php esc_attr_e('Primary navigation', 'ish-blog-theme'); ?>">
+        <div class="container nav-container">
+            <a href="<?php echo esc_url(get_main_site_url()); ?>" class="logo ish-site-logo" aria-label="<?php esc_attr_e('Infinity Softhub Technologies home', 'ish-blog-theme'); ?>">
+                <?php
+                $custom_logo_id = get_theme_mod('custom_logo');
+                if ($custom_logo_id) {
+                    echo wp_get_attachment_image(
+                        $custom_logo_id,
+                        'full',
+                        false,
+                        array('alt' => 'Infinity Softhub Technologies')
+                    );
+                } else {
+                    ?>
+                    <img src="<?php echo esc_url(get_main_site_url('assets/images/ish-logo.svg')); ?>" alt="Infinity Softhub Technologies" width="230" height="58">
+                    <?php
+                }
+                ?>
             </a>
 
-            <ul class="nav-menu" id="navMenu">
-                <li class="mobile-close-btn" id="navCloseBtn"><i class="fas fa-times"></i></li>
-                <li><a href="<?php echo get_main_site_url(); ?>" class="nav-link">Home</a></li>
-                <li><a href="<?php echo get_main_site_url('about.php'); ?>" class="nav-link">About</a></li>
-                <li class="nav-dropdown" onclick="toggleDropdown(this)">
-                    <a href="#" class="nav-link">Services <i class="fas fa-angle-down"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="<?php echo get_main_site_url('services/moodle-all-development.php'); ?>" class="dropdown-link">Moodle Development</a>
-                        <a href="<?php echo get_main_site_url('services/web-development.php'); ?>" class="dropdown-link">Web Development</a>
-                        <a href="<?php echo get_main_site_url('services/mobile-app-development.php'); ?>" class="dropdown-link">Mobile App Development</a>
-                        <a href="<?php echo get_main_site_url('services/ai-ml-integration.php'); ?>" class="dropdown-link">AI & ML Integration</a>
-                        <a href="<?php echo get_main_site_url('services/cloud-solutions.php'); ?>" class="dropdown-link">Cloud Solutions</a>
-                        <a href="<?php echo get_main_site_url('services/ui-ux-design.php'); ?>" class="dropdown-link">UI/UX Design</a>
-                        <a href="<?php echo get_main_site_url('services/digital-marketing'); ?>" class="dropdown-link">Digital Marketing</a>
-                    </div>
-                </li>
-                <li><a href="<?php echo get_main_site_url('industry-expertise.php'); ?>" class="nav-link">Industries</a></li>
-                <li><a href="<?php echo get_main_site_url('portfolio.php'); ?>" class="nav-link">Portfolio</a></li>
-                <li><a href="<?php echo get_main_site_url('our-locations.php'); ?>" class="nav-link">Locations</a></li>
-                <li><a href="<?php echo get_main_site_url('case-studies.php'); ?>" class="nav-link">Case Studies</a></li>
-                <li><a href="<?php echo get_main_site_url('blog'); ?>" class="nav-link active">Blog</a></li>
-                <li><a href="<?php echo get_main_site_url('contact.php'); ?>" class="nav-cta">Get in Touch</a></li>
-            </ul>
+            <div class="ish-nav-panel" id="navMenu">
+                <button class="mobile-close-btn" id="navCloseBtn" type="button" aria-label="<?php esc_attr_e('Close navigation', 'ish-blog-theme'); ?>">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+                <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'primary',
+                        'container'      => false,
+                        'menu_class'     => 'ish-nav-menu',
+                        'menu_id'        => 'primary-menu',
+                        'fallback_cb'    => 'ish_blog_primary_menu_fallback',
+                        'depth'          => 2,
+                    )
+                );
+                ?>
+            </div>
 
-            <div class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></div>
+            <button class="nav-toggle" id="navToggle" type="button" aria-controls="navMenu" aria-expanded="false" aria-label="<?php esc_attr_e('Open navigation', 'ish-blog-theme'); ?>">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
         </div>
     </nav>
-
-    <!-- Mobile Overlay -->
-    <div class="mobile-overlay" id="mobileOverlay"></div>
-
-    <script>
-    // Toggle dropdown on mobile
-    function toggleDropdown(element) {
-        if (window.innerWidth <= 991) {
-            element.classList.toggle('active');
-        }
-    }
-
-    </script>
+    <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+</header>

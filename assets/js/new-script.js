@@ -222,15 +222,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ===== Office Card Active State =====
-    const officeCards = document.querySelectorAll('.office-card');
-    officeCards.forEach(function(card) {
-        card.addEventListener('click', function() {
-            officeCards.forEach(function(c) { c.classList.remove('active'); });
-            this.classList.add('active');
-        });
-    });
-
     // ===== Back to Top Button =====
     const backToTop = document.getElementById('backToTop');
     if (backToTop) {

@@ -1,34 +1,23 @@
 <?php
 // services/moodle-lms-development-australia.php
-$pageTitle = "Custom Moodle™ LMS Developer Australia | Infinity SoftHub";
-$pageDescription = "Custom services for Moodle™ LMS in Australia. We build custom plugins, themes, and secure Privacy Act-compliant cloud portals.";
-$pageKeywords = "Custom Moodle Developer Australia, Moodle plugin development Sydney, LMS customization Melbourne, Privacy Act compliant LMS, e-learning developer Australia";
+$pageTitle = "Moodle™ LMS Development for Australian Organizations | Infinity SoftHub";
+$pageDescription = "Remote Moodle™ LMS development for Australian organizations, including custom plugins, integrations, coding labs, reporting, migrations and cloud support.";
+$pageKeywords = "Moodle LMS development Australia, remote Moodle developer Australia, custom Moodle plugins Australia, LMS integrations Australia, eLearning development Australia";
 $activePage = 'services';
 
-// Add Service Schema for Google Rich Snippets (Rating Stars)
-$pageSchema = '{
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Custom Moodle™ LMS Development & Customization Services",
-    "serviceType": "LMS Plugin Development, Theme Customization & Cloud Hosting",
-    "provider": {
-        "@type": "LocalBusiness",
-        "name": "Infinity SoftHub Technologies",
-        "image": "https://infinitysofthub.com/assets/images/logo.png",
-        "priceRange": "$$"
-    },
-    "areaServed": {
-        "@type": "Country",
-        "name": "AU"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "19",
-        "bestRating": "5",
-        "worstRating": "1"
-    }
-}';
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'Service',
+    'name' => 'Remote Moodle LMS Development for Australian Organizations',
+    'serviceType' => 'LMS development, customization, integration and support',
+    'provider' => [
+        '@type' => 'Organization',
+        'name' => 'Infinity SoftHub Technologies',
+        'url' => 'https://infinitysofthub.com/',
+    ],
+    'areaServed' => ['@type' => 'Country', 'name' => 'Australia'],
+    'availableChannel' => ['@type' => 'ServiceChannel', 'serviceUrl' => 'https://infinitysofthub.com/contact.php'],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
 require_once '../includes/header.php';
 ?>
@@ -38,10 +27,10 @@ require_once '../includes/header.php';
     <div class="container">
         <div class="anim-fade-up">
             <div class="badge badge-primary" style="margin-bottom:1.5rem; display:inline-flex;">
-                <i class="fa fa-map-marker-alt"></i> Australia E-Learning
+                <i class="fa fa-globe"></i> Remote Delivery for Australian Organizations
             </div>
-            <h1>Custom Moodle™ <span class="gradient-text">Developer Australia</span></h1>
-            <p>Bespoke Moodle™ and LearnDash development services tailored for Australian universities, TAFE colleges, and corporates. 100% Privacy Act-compliant, secure AWS Sydney hosting.</p>
+            <h1>Moodle™ LMS Development <span class="gradient-text">for Australian Organizations</span></h1>
+            <p>Custom Moodle™ and LearnDash engineering for Australian universities, training providers and businesses—delivered remotely by our team in Faridabad, India.</p>
         </div>
     </div>
 </section>
@@ -51,12 +40,12 @@ require_once '../includes/header.php';
     <div class="container">
         <div class="content-grid-2 anim-fade-right">
             <div>
-                <h2 style="margin-bottom:1.5rem;">Compliant & High-Performance <span class="gradient-text">LMS Environments</span></h2>
+                <h2 style="margin-bottom:1.5rem;">Secure, High-Performance <span class="gradient-text">LMS Environments</span></h2>
                 <p style="margin-bottom:1.5rem;">We help Australian educational academies and businesses build custom, high-speed LMS infrastructures. Our engineers specialize in building bespoke plugin integrations, interactive coding widgets, and custom administrative reports.</p>
                 <ul class="check-list">
-                    <li><strong>Australian Privacy Principles (APPs)</strong> - Complete compliance with national data laws.</li>
-                    <li><strong>Australia Timezone Alignment</strong> - Communication and standups scheduled during AEST and AWST business hours.</li>
-                    <li><strong>AWS Sydney Data Residency</strong> - Deployed locally in AWS Sydney for low latency and data residency requirements.</li>
+                    <li><strong>Privacy Controls</strong> - Access, retention and secure data workflows configured around your organizational requirements.</li>
+                    <li><strong>Australia Timezone Overlap</strong> - Communication and standups scheduled during agreed AEST or AWST hours.</li>
+                    <li><strong>Australian Cloud Regions</strong> - Sydney-based hosting selected when your project requires Australian data residency.</li>
                     <li><strong>Interactive CS Sandboxes</strong> - Web-based SQL and Python workspaces built inside courses.</li>
                 </ul>
                 <div style="margin-top:2rem;">
@@ -84,20 +73,20 @@ require_once '../includes/header.php';
 <section class="content-section bg-alt">
     <div class="container">
         <div class="section-header anim-fade-up">
-            <div class="section-tag">Australian Standards</div>
-            <h2>LMS Security Aligned with <span class="gradient-text">Australian Principles</span></h2>
-            <p class="lead">Delivering secure, localized platforms for Australian schools and businesses.</p>
+            <div class="section-tag">Privacy, Hosting & Reporting</div>
+            <h2>Configured Around <span class="gradient-text">Australian Requirements</span></h2>
+            <p class="lead">Practical security controls, regional hosting choices and custom reporting for Australian learning teams.</p>
         </div>
         <div class="grid grid-3" style="margin-top:3rem;">
             <div class="feature-card anim-fade-up">
                 <div class="feature-icon"><i class="fa fa-user-lock"></i></div>
-                <h4>APP Privacy Standards</h4>
-                <p>Our code structures and security configurations strictly follow the Australian Privacy Principles (APPs) to keep student profiles secure.</p>
+                <h4>Privacy-Supporting Controls</h4>
+                <p>We can implement role permissions, audit logs and data-handling workflows around requirements defined by your organization and legal advisers.</p>
             </div>
             <div class="feature-card anim-fade-up" style="animation-delay: 0.1s;">
                 <div class="feature-icon"><i class="fa fa-database"></i></div>
                 <h4>AWS Sydney Hosting</h4>
-                <p>Deploy cloud platforms inside the local AWS Sydney data center to guarantee compliance and extremely low page load times.</p>
+                <p>When required, we can deploy to selected Australian cloud regions to support your data-residency and performance requirements.</p>
             </div>
             <div class="feature-card anim-fade-up" style="animation-delay: 0.2s;">
                 <div class="feature-icon"><i class="fa fa-puzzle-piece"></i></div>

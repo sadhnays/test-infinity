@@ -32,6 +32,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-usa.php</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-uk.php</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-canada.php</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-australia.php</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://infinitysofthub.com/services/learndash-development.php</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -153,6 +177,7 @@
   </url>
   <url>
     <loc>https://infinitysofthub.com/our-locations.php</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

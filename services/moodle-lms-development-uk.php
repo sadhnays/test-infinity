@@ -1,34 +1,23 @@
 <?php
 // services/moodle-lms-development-uk.php
-$pageTitle = "Custom Moodle™ LMS Specialist UK | Infinity SoftHub";
-$pageDescription = "Custom services for Moodle™ LMS in the United Kingdom. We build custom Moodle™ plugins, themes, and GDPR-compliant secure hosting architectures.";
-$pageKeywords = "Moodle LMS Specialist UK, custom Moodle plugins London, LearnDash developer UK, GDPR compliant LMS, UK e-learning services";
+$pageTitle = "Moodle™ LMS Development for UK Organizations | Infinity SoftHub";
+$pageDescription = "Remote Moodle™ LMS development for UK organizations, including custom plugins, integrations, migrations, dashboards, accessibility improvements and hosting support.";
+$pageKeywords = "Moodle LMS development UK, remote Moodle developer UK, custom Moodle plugins UK, LearnDash developer UK, UK eLearning services";
 $activePage = 'services';
 
-// Add Service Schema for Google Rich Snippets (Rating Stars)
-$pageSchema = '{
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Custom Moodle™ LMS Development & Customization Services",
-    "serviceType": "LMS Plugin Development, Theme Customization & Cloud Hosting",
-    "provider": {
-        "@type": "LocalBusiness",
-        "name": "Infinity SoftHub Technologies",
-        "image": "https://infinitysofthub.com/assets/images/logo.png",
-        "priceRange": "$$"
-    },
-    "areaServed": {
-        "@type": "Country",
-        "name": "GB"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "27",
-        "bestRating": "5",
-        "worstRating": "1"
-    }
-}';
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'Service',
+    'name' => 'Remote Moodle LMS Development for UK Organizations',
+    'serviceType' => 'LMS development, customization, integration and support',
+    'provider' => [
+        '@type' => 'Organization',
+        'name' => 'Infinity SoftHub Technologies',
+        'url' => 'https://infinitysofthub.com/',
+    ],
+    'areaServed' => ['@type' => 'Country', 'name' => 'United Kingdom'],
+    'availableChannel' => ['@type' => 'ServiceChannel', 'serviceUrl' => 'https://infinitysofthub.com/contact.php'],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
 require_once '../includes/header.php';
 ?>
@@ -38,10 +27,10 @@ require_once '../includes/header.php';
     <div class="container">
         <div class="anim-fade-up">
             <div class="badge badge-primary" style="margin-bottom:1.5rem; display:inline-flex;">
-                <i class="fa fa-union-jack"></i> UK E-Learning Specialists
+                <i class="fa fa-globe"></i> Remote Delivery for UK Organizations
             </div>
-            <h1>Moodle™ LMS <span class="gradient-text">Specialist UK</span></h1>
-            <p>Bespoke Moodle™ and LearnDash development services tailored for UK colleges, training academies, and corporates. Fully GDPR-compliant cloud systems.</p>
+            <h1>Moodle™ LMS Development <span class="gradient-text">for UK Organizations</span></h1>
+            <p>Custom Moodle™ and LearnDash engineering for UK colleges, training providers and businesses—delivered remotely by our team in Faridabad, India.</p>
         </div>
     </div>
 </section>
@@ -51,11 +40,11 @@ require_once '../includes/header.php';
     <div class="container">
         <div class="content-grid-2 anim-fade-right">
             <div>
-                <h2 style="margin-bottom:1.5rem;">GDPR-Compliant <span class="gradient-text">Learning Environments</span></h2>
+                <h2 style="margin-bottom:1.5rem;">Privacy-Conscious <span class="gradient-text">Learning Environments</span></h2>
                 <p style="margin-bottom:1.5rem;">We help businesses, educational institutions, and training organizations across the United Kingdom maximize their e-learning potential. Our approach emphasizes user experience, responsive mobile-first structures, and robust data protection.</p>
                 <ul class="check-list">
-                    <li><strong>Strict GDPR Compliance</strong> - Secure data controls and encryption.</li>
-                    <li><strong>UK Timezone Alignment</strong> - Communication and meetings during GMT and BST hours.</li>
+                    <li><strong>Privacy Controls</strong> - Access, retention, export and deletion workflows configured around your requirements.</li>
+                    <li><strong>UK Timezone Overlap</strong> - Planned communication and meetings during agreed GMT or BST hours.</li>
                     <li><strong>Bespoke Plugin Workflows</strong> - Grading automation, reporting modules, and custom widgets.</li>
                     <li><strong>H5P & SCORM Support</strong> - Smooth integration of next-gen interactive learning files.</li>
                 </ul>
@@ -71,7 +60,7 @@ require_once '../includes/header.php';
                     <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">We build custom functionality aligned with UK educational standards. From school platforms to corporate compliance academies running multi-tenant (Moodle Workplace / IOMAD) environments.</p>
                     <div style="display: flex; gap: 1rem;">
                         <span style="background: #1e2e4a; color: #60a5fa; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.8rem; font-weight: 600;">Moodle Workplace</span>
-                        <span style="background: #1e2e4a; color: #60a5fa; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.8rem; font-weight: 600;">GDPR Audit</span>
+                        <span style="background: #1e2e4a; color: #60a5fa; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.8rem; font-weight: 600;">Security Review</span>
                         <span style="background: #1e2e4a; color: #60a5fa; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.8rem; font-weight: 600;">IOMAD</span>
                     </div>
                 </div>
@@ -84,25 +73,25 @@ require_once '../includes/header.php';
 <section class="content-section bg-alt">
     <div class="container">
         <div class="section-header anim-fade-up">
-            <div class="section-tag">GDPR & Data Safety</div>
-            <h2>Secure UK & EU <span class="gradient-text">Data Architectures</span></h2>
-            <p class="lead">We deploy LMS systems matching strict data residency and EU/UK security standards.</p>
+            <div class="section-tag">Data Protection & Hosting Options</div>
+            <h2>Security Designed Around <span class="gradient-text">Your Requirements</span></h2>
+            <p class="lead">We implement technical safeguards and hosting choices that can support your organization’s privacy and data-residency requirements.</p>
         </div>
         <div class="grid grid-3" style="margin-top:3rem;">
             <div class="feature-card anim-fade-up">
                 <div class="feature-icon"><i class="fa fa-user-shield"></i></div>
                 <h4>Data Anonymisation</h4>
-                <p>We configure Moodle™ clean-up routines to strip student PII before external API transfers (like automated OpenAI evaluations) ensuring full GDPR alignment.</p>
+                <p>We can configure data-minimization and anonymisation workflows before approved information is sent to external services or AI integrations.</p>
             </div>
             <div class="feature-card anim-fade-up" style="animation-delay: 0.1s;">
                 <div class="feature-icon"><i class="fa fa-location-dot"></i></div>
                 <h4>UK Data Residency</h4>
-                <p>Deploy cloud platforms inside AWS London or EU (Dublin/Frankfurt) locations to satisfy legal data storage and regional residency constraints.</p>
+                <p>When required, we can deploy to selected UK or EU cloud regions. The final provider and region remain subject to your technical and legal review.</p>
             </div>
             <div class="feature-card anim-fade-up" style="animation-delay: 0.2s;">
                 <div class="feature-icon"><i class="fa fa-universal-access"></i></div>
-                <h4>Accessibility Compliance</h4>
-                <p>Themes and UI improvements created matching WCAG 2.1 AA accessibility standards for public sector and university LMS deployments in the UK.</p>
+                <h4>Accessibility Improvements</h4>
+                <p>We can implement WCAG-aligned interface improvements and support independent accessibility testing for public-sector and education projects.</p>
             </div>
         </div>
     </div>
