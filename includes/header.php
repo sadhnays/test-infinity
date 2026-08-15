@@ -25,11 +25,16 @@ $pageSchema = $pageSchema ?? null;
     <meta property="og:url" content="<?php echo e(base_url($_SERVER['REQUEST_URI'])); ?>">
     <meta property="og:type" content="website">
     <meta property="og:image" content="<?php echo asset('images/og-image.png'); ?>">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Infinity SoftHub Technologies — custom LMS and AI-powered learning solutions">
     <meta property="og:site_name" content="<?php echo e(SITE_NAME); ?>">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?php echo e($pageTitle); ?>">
     <meta name="twitter:description" content="<?php echo e($pageDescription); ?>">
     <meta name="twitter:image" content="<?php echo asset('images/og-image.png'); ?>">
+    <meta name="twitter:image:alt" content="Infinity SoftHub Technologies — custom LMS and AI-powered learning solutions">
     <link rel="canonical" href="<?php echo e(base_url($_SERVER['REQUEST_URI'])); ?>">
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo asset('images/favicon.png?v=3'); ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo asset('images/favicon.png?v=3'); ?>">
@@ -53,16 +58,16 @@ $pageSchema = $pageSchema ?? null;
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="<?php echo asset('css/chatbot.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="<?php echo versioned_asset('css/chatbot.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-        <link rel="stylesheet" href="<?php echo asset('css/chatbot.css'); ?>">
+        <link rel="stylesheet" href="<?php echo versioned_asset('css/chatbot.css'); ?>">
     </noscript>
 
     <!-- New Premium Styles (Synchronous to prevent Flash of Unstyled Content) -->
-    <link rel="stylesheet" href="<?php echo asset('css/new-style.css'); ?>">
+    <link rel="stylesheet" href="<?php echo versioned_asset('css/new-style.css'); ?>">
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -141,17 +146,18 @@ $pageSchema = $pageSchema ?? null;
         </div>
     </div>
     <script>
-    window.addEventListener('load', function() {
-        setTimeout(function() {
-            document.getElementById('loaderWrapper').classList.add('loaded');
-        }, 500);
+    document.addEventListener('DOMContentLoaded', function() {
+        var loader = document.getElementById('loaderWrapper');
+        if (loader) {
+            loader.classList.add('loaded');
+        }
     });
     setTimeout(function() {
         var el = document.getElementById('loaderWrapper');
         if (el && !el.classList.contains('loaded')) {
             el.classList.add('loaded');
         }
-    }, 3000);
+    }, 2000);
     </script>
     <!-- Diagonal Sticky Navbar -->
     <nav class="navbar" id="navbar">
@@ -167,7 +173,7 @@ $pageSchema = $pageSchema ?? null;
                 <div class="nav-dropdown">
                     <a href="<?php echo base_url('what-we-do.php'); ?>" class="nav-link <?php echo $activePage === 'what-we-do' || $activePage === 'services' ? 'active' : ''; ?>">Services <i class="fas fa-angle-down"></i></a>
                     <div class="dropdown-menu">
-                         <a href="<?php echo base_url('services/moodle-all-development.php'); ?>" class="dropdown-link">Moodle Development</a>
+                         <a href="<?php echo base_url('services/moodle-all-development.php'); ?>" class="dropdown-link">LMS Development</a>
                         <a href="<?php echo base_url('services/web-development.php'); ?>" class="dropdown-link">Web Development</a>
                         <a href="<?php echo base_url('services/mobile-app-development.php'); ?>" class="dropdown-link">Mobile App Development</a>
                         <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>" class="dropdown-link">AI & ML Integration</a>

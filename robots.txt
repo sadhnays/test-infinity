@@ -11,6 +11,7 @@ Disallow: /chatbot-lead.php
 
 # Sitemap
 Sitemap: https://infinitysofthub.com/sitemap.xml
+Sitemap: https://infinitysofthub.com/blog/sitemap_index.xml
 
 # Crawl delay (optional, be kind to smaller sites)
 Crawl-delay: 1

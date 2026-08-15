@@ -43,6 +43,15 @@ function asset($path) {
     return base_url('assets/' . ltrim($path, '/'));
 }
 
+// Add a content timestamp so long-lived browser caches receive updated assets.
+function versioned_asset($path) {
+    $relativePath = ltrim($path, '/');
+    $filePath = ASSETS_PATH . '/' . $relativePath;
+    $url = asset($relativePath);
+
+    return is_file($filePath) ? $url . '?v=' . filemtime($filePath) : $url;
+}
+
 // Sanitize GET/POST data
 function sanitize_request_data($data) {
     if (is_array($data)) {

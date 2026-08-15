@@ -2,10 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
 		<loc>https://infinitysofthub.com/blog/post-sitemap.xml</loc>
-		<lastmod>2026-05-25T17:54:55+00:00</lastmod>
+		<lastmod>2026-08-11T22:46:43+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://infinitysofthub.com/blog/page-sitemap.xml</loc>
+		<lastmod>2026-08-13T19:22:15+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://infinitysofthub.com/blog/category-sitemap.xml</loc>
-		<lastmod>2026-05-25T17:54:55+00:00</lastmod>
+		<lastmod>2026-08-11T22:46:43+00:00</lastmod>
 	</sitemap>
 </sitemapindex>

@@ -2,16 +2,12 @@
    AI CHATBOT - OpenRouter API INTEGRATION
    ========================================== */
 
-// OpenRouter API Configuration
-const OPENROUTER_API_KEY = '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';
-const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions';
-
 // Chat state
 let chatOpen = false;
 let conversationHistory = [
     {
         role: 'assistant',
-        content: 'Hello! I\'m Infinity Assistant, powered by AI. How can I help you today? I can answer questions about our services, pricing, or help you get started with your project.'
+        content: 'Hello! I\'m Infinity Assistant. How can I help you today? I can answer questions about our services, pricing, or help you get started with your project.'
     }
 ];
 
@@ -41,12 +37,12 @@ function injectChatWidget() {
     console.log('Chatbot: injectChatWidget() called');
     const widgetHTML = `
     <div id="chatbot-widget" class="chatbot-widget">
-        <div id="chatbot-toggle" class="chatbot-toggle" onclick="toggleChat()">
-            <i class="fas fa-comment-dots" id="chat-icon"></i>
-            <i class="fas fa-times" id="close-icon" style="display:none;"></i>
+        <button type="button" id="chatbot-toggle" class="chatbot-toggle" onclick="toggleChat()" aria-label="Open chat assistant" aria-expanded="false" aria-controls="chatbot-window">
+            <i class="fas fa-comment-dots" id="chat-icon" aria-hidden="true"></i>
+            <i class="fas fa-times" id="close-icon" style="display:none;" aria-hidden="true"></i>
             <span class="chatbot-badge" id="chat-badge">1</span>
-        </div>
-        <div id="chatbot-window" class="chatbot-window" style="display:none;">
+        </button>
+        <div id="chatbot-window" class="chatbot-window" style="display:none;" role="dialog" aria-label="Infinity Assistant">
             <div class="chatbot-header">
                 <div class="chatbot-header-info">
                     <div class="chatbot-avatar">
@@ -57,12 +53,12 @@ function injectChatWidget() {
                         <span class="chatbot-status"><i class="fas fa-circle"></i> Online</span>
                     </div>
                 </div>
-                <button class="chatbot-close" onclick="toggleChat()"><i class="fas fa-times"></i></button>
+                <button type="button" class="chatbot-close" onclick="toggleChat()" aria-label="Close chat assistant"><i class="fas fa-times" aria-hidden="true"></i></button>
             </div>
-            <div class="chatbot-messages" id="chatbot-messages">
+            <div class="chatbot-messages" id="chatbot-messages" aria-live="polite">
                 <div class="chat-message bot-message">
                     <div class="message-content">
-                        <p>Hello! I'm Infinity Assistant, powered by AI. How can I help you today? I can answer questions about our services, pricing, or help you get started with your project.</p>
+                        <p>Hello! I'm Infinity Assistant. How can I help you today? I can answer questions about our services, pricing, or help you get started with your project.</p>
                     </div>
                 </div>
             </div>
@@ -73,8 +69,8 @@ function injectChatWidget() {
                     <button class="quick-action" onclick="sendQuickMessage('What is your typical project timeline?')">Timeline</button>
                 </div>
                 <div class="chatbot-input-wrapper">
-                    <input type="text" id="chatbot-input" placeholder="Type your message..." onkeypress="handleChatKeyPress(event)">
-                    <button class="chatbot-send" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+                    <input type="text" id="chatbot-input" placeholder="Type your message..." aria-label="Chat message" onkeypress="handleChatKeyPress(event)">
+                    <button type="button" class="chatbot-send" onclick="sendMessage()" aria-label="Send chat message"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
@@ -100,6 +96,7 @@ function toggleChat() {
     const chatIcon = document.getElementById('chat-icon');
     const closeIcon = document.getElementById('close-icon');
     const badge = document.getElementById('chat-badge');
+    const toggle = document.getElementById('chatbot-toggle');
 
     console.log('Chatbot: Elements found - chatWindow:', !!chatWindow, 'chatIcon:', !!chatIcon, 'closeIcon:', !!closeIcon);
 
@@ -110,6 +107,10 @@ function toggleChat() {
 
     chatOpen = !chatOpen;
     chatWindow.style.display = chatOpen ? 'flex' : 'none';
+    if (toggle) {
+        toggle.setAttribute('aria-expanded', chatOpen ? 'true' : 'false');
+        toggle.setAttribute('aria-label', chatOpen ? 'Close chat assistant' : 'Open chat assistant');
+    }
     if (chatIcon) chatIcon.style.display = chatOpen ? 'none' : 'block';
     if (closeIcon) closeIcon.style.display = chatOpen ? 'block' : 'none';
 
@@ -131,14 +132,14 @@ function sendMessage() {
     input.value = '';
     addMessage(message, 'user');
     conversationHistory.push({ role: 'user', content: message });
-    processWithAI(message);
+    processMessage(message);
 }
 
 // Send quick action message
 function sendQuickMessage(message) {
     addMessage(message, 'user');
     conversationHistory.push({ role: 'user', content: message });
-    processWithAI(message);
+    processMessage(message);
 }
 
 // Handle Enter key press
@@ -195,87 +196,17 @@ function removeTypingIndicator() {
     }
 }
 
-// Process message with OpenRouter AI
-async function processWithAI(userMessage) {
+// Process messages locally. Any future AI integration must use a protected
+// server-side endpoint so provider credentials never reach the browser.
+function processMessage(userMessage) {
     showTypingIndicator();
 
-    // Check if API key is configured
-    if (OPENROUTER_API_KEY === 'YOUR_API_KEY') {
-        // No API key - use offline fallback responses
+    window.setTimeout(() => {
         removeTypingIndicator();
         const fallbackResponse = getOfflineResponse(userMessage);
-        setTimeout(() => {
-            addMessage(fallbackResponse, 'bot');
-            conversationHistory.push({ role: 'assistant', content: fallbackResponse });
-        }, 1000);
-        return;
-    }
-
-    try {
-        const response = await fetch(OPENROUTER_API_URL, {
-            method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
-                'Content-Type': 'application/json',
-                'HTTP-Referer': 'https://infinitysofthub.com',
-                'X-Title': 'Infinity SoftHub Chatbot'
-            },
-            body: JSON.stringify({
-                model: 'openai/gpt-oss-120b:free',
-                messages: [
-                    {
-                        role: 'system',
-                        content: `You are Infinity Assistant, an AI assistant for Infinity SoftHub Technologies.
-
-Company Info:
-- Name: Infinity SoftHub Technologies
-- Website: infinitysofthub.com
-- Email: info@infinitysofthub.com
-- Phone: +91-129-2985010
-- Address: Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014
-
-Services offered:
-1. Web Development (custom websites, e-commerce, web apps)
-2. Mobile App Development (iOS, Android, cross-platform)
-3. AI & ML Integration (chatbots, predictive analytics, automation)
-4. Cloud Solutions (AWS, Azure, Google Cloud migration and management)
-5. UI/UX Design (user research, prototyping, design systems)
-6. Digital Marketing (SEO, social media, content marketing)
-
-Be helpful, professional, and concise. Keep responses under 150 words. If asked about pricing, mention that you'll connect them with a team member for a custom quote. Always be ready to help schedule consultations or collect contact information for follow-up.`
-                    },
-                    ...conversationHistory.slice(-10)
-                ],
-                temperature: 0.7,
-                max_tokens: 300
-            })
-        });
-
-        removeTypingIndicator();
-
-        if (!response.ok) {
-            throw new Error(`API Error: ${response.status}`);
-        }
-
-        const data = await response.json();
-        const aiResponse = data.choices[0].message.content;
-
-        addMessage(aiResponse, 'bot');
-        conversationHistory.push({ role: 'assistant', content: aiResponse });
-
-    } catch (error) {
-        console.error('OpenRouter API Error:', error);
-        removeTypingIndicator();
-
-        const fallbacks = [
-            "Thanks for your message! Our team will get back to you soon. For immediate assistance, please email us at info@infinitysofthub.com or call +91-129-2985010.",
-            "I'm currently experiencing connectivity issues. Please reach out to us directly at info@infinitysofthub.com and we'll respond within 24 hours.",
-            "Thank you for contacting Infinity SoftHub! Our team is here to help. Please email info@infinitysofthub.com for a quick response."
-        ];
-        const fallback = fallbacks[Math.floor(Math.random() * fallbacks.length)];
-        addMessage(fallback, 'bot');
-        conversationHistory.push({ role: 'assistant', content: fallback });
-    }
+        addMessage(fallbackResponse, 'bot');
+        conversationHistory.push({ role: 'assistant', content: fallbackResponse });
+    }, 600);
 }
 
 // Offline response system (when no API key is configured)
@@ -283,13 +214,13 @@ function getOfflineResponse(message) {
     const msg = message.toLowerCase();
 
     if (msg.includes('service') || msg.includes('offer') || msg.includes('what do you')) {
-        return "We offer: 1) Web Development, 2) Mobile App Development, 3) AI & ML Integration, 4) Cloud Solutions, 5) UI/UX Design, and 6) Digital Marketing. Visit our Services page or contact us at info@infinitysofthub.com!";
+        return "We help with custom LMS development, plugins, SQL and Python coding labs, AI learning assistants, integrations, migrations, performance optimization, and cloud deployment. Tell us what you are building, or email info@infinitysofthub.com.";
     }
     if (msg.includes('quote') || msg.includes('pricing') || msg.includes('cost')) {
         return "For a custom quote, please email us at info@infinitysofthub.com or call +91-129-2985010. We'll respond within 24 hours with a tailored solution for your needs.";
     }
     if (msg.includes('timeline') || msg.includes('time') || msg.includes('long')) {
-        return "Project timelines vary by scope. Simple websites take 2-4 weeks, while complex platforms can take 3-6 months. Contact us at info@infinitysofthub.com for a detailed timeline estimate.";
+        return "Project timelines depend on the LMS, integrations, learner volume, and custom functionality required. Send your requirements to info@infinitysofthub.com and we will recommend a practical delivery plan.";
     }
     if (msg.includes('contact') || msg.includes('phone') || msg.includes('email')) {
         return "You can reach us at: Email: info@infinitysofthub.com, Phone: +91-129-2985010, Address: Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014.";

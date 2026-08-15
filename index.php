@@ -1,8 +1,8 @@
 <?php
 // index.php - Homepage
-$pageTitle = "Moodle LMS Specialist & Custom Software Developer | Infinity SoftHub";
-$pageDescription = "Custom Moodle™ LMS development, LearnDash platforms, AI integration, interactive coding playgrounds (SQL/Python), and full-stack software development.";
-$pageKeywords = "Moodle LMS development, LMS specialist, LearnDash developer, custom Moodle plugins, SQL coding playgrounds, Python coding labs, AI in LMS, full-stack software engineering";
+$pageTitle = "Custom LMS & AI-Powered Learning Solutions | Infinity SoftHub";
+$pageDescription = "Founder-led LMS development for organizations worldwide: custom plugins, SQL and Python coding labs, AI learning assistants, integrations, migrations, and cloud deployment.";
+$pageKeywords = "custom LMS development, LMS specialist, LearnDash developer, custom LMS plugins, SQL coding lab, Python coding lab, AI learning assistant, LMS integration";
 $activePage = 'home';
 
 // Page-specific schema
@@ -12,12 +12,20 @@ $pageSchema = '{
     "name": "Infinity SoftHub Technologies",
     "alternateName": "Infinity SoftHub",
     "url": "https://infinitysofthub.com/",
-    "logo": "https://infinitysofthub.com/assets/images/logo.png",
-    "description": "Premium enterprise IT consulting and digital transformation services.",
+    "logo": "https://infinitysofthub.com/assets/images/ish-logo.svg",
+    "description": "Founder-led custom LMS development, AI-powered learning tools, coding labs, integrations, and cloud deployment for organizations worldwide.",
+    "areaServed": "Worldwide",
+    "knowsAbout": [
+        "Learning management systems",
+        "Custom LMS plugins",
+        "SQL and Python coding labs",
+        "AI learning assistants",
+        "LMS integrations and cloud deployment"
+    ],
     "sameAs": [
         "https://www.facebook.com/infinitysofthub",
-        "https://twitter.com/InfinitySoftHub",
-        "https://www.linkedin.com/company/infinitysofthub/"
+        "https://www.linkedin.com/company/infinitysofthub/",
+        "https://www.youtube.com/@infinitysofthub"
     ]
 }';
 
@@ -273,52 +281,45 @@ require_once 'includes/header.php';
                     <!-- Subtitle -->
                     <p class="hero-subtitle-tag" data-aos="fade-down">
                         <span class="tag-dot"></span>
-                        Enterprise IT Solutions Since 2015
+                        Founder-Led LMS Engineering • 6+ Years of Experience
                     </p>
 
                     <!-- Main Heading -->
                     <h1 class="hero-main-title" data-aos="fade-up" data-aos-delay="100">
-                        Connecting Innovation with
-                        <span class="title-highlight">Custom LMS & Software</span>
+                        Custom LMS & AI-Powered
+                        <span class="title-highlight">Learning Solutions</span>
                     </h1>
 
                     <!-- Description -->
                     <p class="hero-main-desc" data-aos="fade-up" data-aos-delay="200">
-                        We build custom Moodle™ LMS platforms, interactive learning tools (SQL/Python labs), custom web & mobile applications, and AI integrations for global organizations.
+                        We build custom learning platforms, plugins, SQL and Python coding labs, AI study assistants, dashboards, integrations, and cloud deployments. Our experience includes solutions for Moodle™ LMS and LearnDash.
                     </p>
 
                     <!-- CTA Buttons -->
                     <div class="hero-cta-group" data-aos="fade-up" data-aos-delay="300">
                         <a href="<?php echo base_url('contact.php'); ?>" class="cta-primary">
-                            <i class="fas fa-rocket"></i> Start Your Project
+                            <i class="fas fa-comments"></i> Discuss Your LMS Project
                         </a>
                         <a href="<?php echo base_url('what-we-do.php'); ?>" class="cta-secondary">
-                            <i class="fas fa-eye"></i> View Services
+                            <i class="fas fa-layer-group"></i> Explore LMS Solutions
                         </a>
                     </div>
 
                     <!-- Trust Badges -->
                     <div class="hero-trust" data-aos="fade-up" data-aos-delay="400">
-                        <span class="trust-text">Trusted by 150+ companies worldwide</span>
+                        <span class="trust-text">Built for schools, universities, training providers, and EdTech teams worldwide</span>
                         <div class="trust-icons">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
                         </div>
                     </div>
 
                     <!-- Tech Stack Icons -->
                     <div class="hero-tech" data-aos="fade-up" data-aos-delay="500">
-                        <span class="tech-label">Powered by:</span>
+                        <span class="tech-label">Core stack:</span>
                         <div class="tech-icons-row">
                             <i class="fab fa-php" title="PHP"></i>
-                            <i class="fab fa-java" title="Java"></i>
                             <i class="fab fa-python" title="Python"></i>
                             <i class="fab fa-react" title="React"></i>
-                            <i class="fab fa-angular" title="Angular"></i>
-                            <i class="fab fa-node-js" title="Node.js"></i>
                             <i class="fab fa-docker" title="Docker"></i>
                             <i class="fab fa-aws" title="AWS"></i>
                         </div>
@@ -335,15 +336,15 @@ require_once 'includes/header.php';
                     <div class="floating-glass-card card-top">
                         <div class="card-icon"><i class="fas fa-brain"></i></div>
                         <div class="card-content">
-                            <h4>AI & Automation</h4>
-                            <p>Smart enterprise solutions</p>
+                            <h4>AI Learning Assistants</h4>
+                            <p>Document Q&amp;A and semantic search</p>
                         </div>
                     </div>
                     <div class="floating-glass-card card-bottom">
                         <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
                         <div class="card-content">
-                            <h4> LMS</h4>
-                            <p>Premium learning systems</p>
+                            <h4>SQL &amp; Python Labs</h4>
+                            <p>Interactive practice inside your LMS</p>
                         </div>
                     </div>
                 </div>
@@ -353,20 +354,20 @@ require_once 'includes/header.php';
             <div class="hero-stats-numbers-container" data-aos="fade-up" data-aos-delay="600">
                 <div class="hero-stats-numbers">
                     <div class="stat-item-hero">
-                        <span class="stat-num counter" data-target="15000" data-suffix="+">0</span>
-                        <span class="stat-lbl">Users Empowered</span>
+                        <span class="stat-num">6+</span>
+                        <span class="stat-lbl">Years of LMS Experience</span>
                     </div>
                     <div class="stat-item-hero">
-                        <span class="stat-num">200+</span>
-                        <span class="stat-lbl">Projects Delivered</span>
+                        <span class="stat-num"><i class="fas fa-puzzle-piece" aria-hidden="true"></i></span>
+                        <span class="stat-lbl">Custom Plugins &amp; APIs</span>
                     </div>
                     <div class="stat-item-hero">
-                        <span class="stat-num">150+</span>
-                        <span class="stat-lbl">Global Clients</span>
+                        <span class="stat-num"><i class="fas fa-code" aria-hidden="true"></i></span>
+                        <span class="stat-lbl">Interactive Coding Labs</span>
                     </div>
                     <div class="stat-item-hero">
-                        <span class="stat-num">98%</span>
-                        <span class="stat-lbl">Success Rate</span>
+                        <span class="stat-num"><i class="fas fa-globe" aria-hidden="true"></i></span>
+                        <span class="stat-lbl">Remote Collaboration Worldwide</span>
                     </div>
                 </div>
             </div>
@@ -698,7 +699,7 @@ require_once 'includes/header.php';
     .hero-stats-numbers-container {
         border-top: 1px solid rgba(255,255,255,0.08);
         margin-top: 3rem;
-        padding-top: 2rem;
+        padding: 2rem 0 6rem;
         position: relative;
         z-index: 15;
     }
@@ -725,7 +726,9 @@ require_once 'includes/header.php';
 
     .stat-lbl {
         font-size: 0.85rem;
-        color: rgba(255,255,255,0.55);
+        color: rgba(255,255,255,0.82);
+        font-weight: 600;
+        line-height: 1.4;
     }
 
     /* Responsive */
@@ -1304,7 +1307,7 @@ require_once 'includes/header.php';
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
-                <p class="section-subtitle">From custom Moodle LMS development and enterprise web applications to AI-powered automation and cloud migration — we deliver end-to-end digital transformation services for global businesses.</p>
+                <p class="section-subtitle">From LMS architecture and custom plugins to coding labs, AI learning tools, integrations, and deployment — we provide focused engineering support across the complete learning-platform lifecycle.</p>
             </div>
             <div class="services-grid">
                 <!-- Moodle Development -->
@@ -1312,14 +1315,14 @@ require_once 'includes/header.php';
                     <div class="service-card" data-aos="fade-up">
                         <div class="service-image-wrapper">
                             <img src="<?php echo asset('images/about/service_moodle.webp'); ?>" alt="Moodle LMS Development and Platform Setup" class="service-image" loading="lazy" width="400" height="300">
-                            <div class="service-badge">Core Speciality</div>
+                            <div class="service-badge">Core Specialty</div>
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
                                 <i aria-hidden="true" class="fas fa-graduation-cap"></i>
                             </div>
-                            <h3>Moodle LMS Development</h3>
-                            <p>Custom LMS hosting, bespoke theme development, plugin integrations, and scalable learning platforms.</p>
+                            <h3>Solutions for Moodle™ LMS</h3>
+                            <p>Custom plugins, themes, integrations, upgrades, migrations, reporting, and performance optimization.</p>
                             <span class="learn-more-link">Explore Service <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -1334,8 +1337,8 @@ require_once 'includes/header.php';
                             <div class="service-icon-box">
                                 <i aria-hidden="true" class="fas fa-code"></i>
                             </div>
-                            <h3>Web Development</h3>
-                            <p>High-performance websites, customized CMS solutions, and secure portal integrations for enterprises.</p>
+                            <h3>Custom LMS Applications</h3>
+                            <p>Secure learning portals, APIs, dashboards, reporting systems, and applications built around your workflow.</p>
                             <span class="learn-more-link">Explore Service <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -1350,8 +1353,8 @@ require_once 'includes/header.php';
                             <div class="service-icon-box">
                                 <i aria-hidden="true" class="fas fa-mobile-alt"></i>
                             </div>
-                            <h3>Mobile Apps</h3>
-                            <p>Native & hybrid mobile applications featuring clean UI, offline mode support, and seamless performance.</p>
+                            <h3>Mobile Learning Apps</h3>
+                            <p>Cross-platform learning applications with clean UX, offline access, notifications, and LMS integration.</p>
                             <span class="learn-more-link">Explore Service <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -1366,8 +1369,8 @@ require_once 'includes/header.php';
                             <div class="service-icon-box">
                                 <i aria-hidden="true" class="fas fa-brain"></i>
                             </div>
-                            <h3>AI & ML Integration</h3>
-                            <p>Intelligent bots, semantic search, predictive analytics, and task automation to scale your operations.</p>
+                            <h3>AI for Learning Platforms</h3>
+                            <p>Document Q&amp;A, RAG assistants, semantic search, coding guidance, and workflow automation.</p>
                             <span class="learn-more-link">Explore Service <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -1382,8 +1385,8 @@ require_once 'includes/header.php';
                             <div class="service-icon-box">
                                 <i aria-hidden="true" class="fas fa-cloud"></i>
                             </div>
-                            <h3>Cloud Solutions</h3>
-                            <p>Secure, elastic hosting on AWS/Azure, custom microservice design, and DevOps optimization.</p>
+                            <h3>LMS Cloud &amp; DevOps</h3>
+                            <p>Secure AWS deployment, Docker-based services, SSL, backups, monitoring, and server migration.</p>
                             <span class="learn-more-link">Explore Service <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -1398,8 +1401,8 @@ require_once 'includes/header.php';
                             <div class="service-icon-box">
                                 <i aria-hidden="true" class="fas fa-paint-brush"></i>
                             </div>
-                            <h3>UI/UX Design</h3>
-                            <p>Modern design systems, user journeys, layout wireframing, and highly polished visual prototypes.</p>
+                            <h3>LMS UX &amp; Dashboards</h3>
+                            <p>Accessible learner journeys and purpose-built dashboards for students, instructors, managers, and administrators.</p>
                             <span class="learn-more-link">Explore Service <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -1602,143 +1605,94 @@ require_once 'includes/header.php';
     <section class="section about" id="about">
         <div class="container about-container">
             <div class="about-content" data-aos="fade-right">
-                <h2 class="section-title">About Infinity SoftHub</h2>
+                <h2 class="section-title">A Founder-Led <span class="gradient-text">LMS Engineering Partner</span></h2>
                 <div class="blue-underline"></div>
                 <p class="about-text">
-                    Infinity SoftHub is a leading IT consulting and software development company specializing in Learning Management Systems (LMS), enterprise web applications, AI/ML integration, and cloud solutions.
-                    With over 15 years of experience serving 150+ clients across 6 countries, we deliver secure, scalable, and cost-effective digital solutions that drive measurable business growth.
+                    Infinity SoftHub Technologies is led by an LMS specialist and full-stack developer with 6+ years of hands-on experience. We help schools, universities, training providers, EdTech teams, and businesses build, customize, integrate, and scale online learning platforms.
+                </p>
+                <p class="about-text">
+                    Our work goes beyond standard LMS configuration. We develop interactive SQL and Python labs, AI-powered document assistants, semantic search, custom plugins, dashboards, reporting systems, integrations, and the cloud infrastructure behind them.
                 </p>
 
                 <div class="about-stats">
                     <div class="stat-item">
-                        <h3 class="counter" data-target="150">0</h3>
-                        <p>Global Clients</p>
+                        <h3>6+</h3>
+                        <p>Years of LMS Experience</p>
                     </div>
                     <div class="stat-item">
-                        <h3 class="counter" data-target="200">0</h3>
-                        <p>Projects Completed</p>
+                        <h3>End-to-End</h3>
+                        <p>Development Capability</p>
                     </div>
                     <div class="stat-item">
-                        <h3 class="counter" data-target="15">0</h3>
-                        <p>Years Experience</p>
+                        <h3>Worldwide</h3>
+                        <p>Remote Collaboration</p>
                     </div>
                 </div>
             </div>
 
             <div class="about-cards" data-aos="fade-left">
                 <div class="mini-card">
-                    <i aria-hidden="true" class="fas fa-rocket"></i>
-                    <h4>Digital Strategy</h4>
-                    <p>Custom roadmaps for digital transformation.</p>
+                    <i aria-hidden="true" class="fas fa-puzzle-piece"></i>
+                    <h4>Custom Plugins</h4>
+                    <p>Functionality designed around your learning and business workflow.</p>
                 </div>
 
                 <div class="mini-card">
-                    <i aria-hidden="true" class="fas fa-cloud"></i>
-                    <h4>Cloud Solutions</h4>
-                    <p>Secure and scalable cloud infrastructure.</p>
+                    <i aria-hidden="true" class="fas fa-code"></i>
+                    <h4>Coding Labs</h4>
+                    <p>Interactive SQL and Python practice environments inside the LMS.</p>
                 </div>
 
                 <div class="mini-card">
-                    <i aria-hidden="true" class="fas fa-mobile-alt"></i>
-                    <h4>App Development</h4>
-                    <p>Cross-platform mobile and web applications.</p>
+                    <i aria-hidden="true" class="fas fa-brain"></i>
+                    <h4>AI Assistants</h4>
+                    <p>Document Q&amp;A, semantic search, and guided coding support.</p>
                 </div>
 
                 <div class="mini-card">
-                    <i aria-hidden="true" class="fas fa-shield-alt"></i>
-                    <h4>Cyber Security</h4>
-                    <p>Enterprise-grade security solutions.</p>
+                    <i aria-hidden="true" class="fas fa-cloud-upload-alt"></i>
+                    <h4>Deployment &amp; Support</h4>
+                    <p>Upgrades, migrations, optimization, backups, and cloud operations.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Awards & Recognition Section -->
-    <section class="section awards">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Awards & Recognition</h2>
-                <p class="section-subtitle">Industry accolades we're proud of</p>
-            </div>
-
-            <div class="swiper awards-swiper" data-aos="fade-up" data-aos-delay="100">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="award-card">
-                            <div class="award-icon"><i class="fas fa-trophy"></i></div>
-                            <p>Best IT Consultancy 2025</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="award-card">
-                            <div class="award-icon"><i class="fas fa-medal"></i></div>
-                            <p>Top Digital Transformation</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="award-card">
-                            <div class="award-icon"><i class="fas fa-lightbulb"></i></div>
-                            <p>Excellence in Innovation</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="award-card">
-                            <div class="award-icon"><i class="fas fa-award"></i></div>
-                            <p>Client Satisfaction Award</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="award-card">
-                            <div class="award-icon"><i class="fas fa-chart-line"></i></div>
-                            <p>Fastest Growing Tech Firm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
 
     <!-- Why Choose Us Section -->
     <section class="section why-choose-section" id="why-us">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Why Choose <span class="gradient-text">Infinity SoftHub</span></h2>
-                <p class="section-subtitle">15+ years of enterprise IT expertise, 200+ successful project deliveries, and a 98% client retention rate — we combine deep domain knowledge with cutting-edge technology to deliver exceptional, measurable results.</p>
+                <p class="section-subtitle">Work directly with a specialist who understands the complete LMS stack—from database and APIs to learner experience, AI integration, and production infrastructure.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-item" data-aos="fade-up">
                     <div class="feature-icon-wrapper">
                         <i aria-hidden="true" class="fas fa-award"></i>
                     </div>
-                    <h4>IT Consulting Expert</h4>
-                    <p>15+ years of specialized IT consulting experience with 200+ successful implementations worldwide.</p>
+                    <h4>6+ Years of LMS Experience</h4>
+                    <p>Hands-on experience with LMS architecture, customization, integrations, upgrades, troubleshooting, and long-term maintenance.</p>
                 </div>
                 <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-icon-wrapper">
                         <i aria-hidden="true" class="fas fa-users"></i>
                     </div>
-                    <h4>150+ Global Clients</h4>
-                    <p>Our solutions empower businesses worldwide, delivering growth and competitive advantage.</p>
+                    <h4>Direct Technical Collaboration</h4>
+                    <p>Clear communication, practical recommendations, defined milestones, and regular progress updates throughout delivery.</p>
                 </div>
                 <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon-wrapper">
                         <i aria-hidden="true" class="fas fa-puzzle-piece"></i>
                     </div>
-                    <h4>Custom Solutions</h4>
-                    <p>Tailor-made IT solutions that extend your platform's functionality exactly how you need it.</p>
+                    <h4>LMS + AI + Full-Stack</h4>
+                    <p>One engineering partner for plugins, backends, APIs, interfaces, AI workflows, databases, and deployment.</p>
                 </div>
                 <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-icon-wrapper">
                         <i aria-hidden="true" class="fas fa-expand-arrows-alt"></i>
                     </div>
-                    <h4>Scalable Systems</h4>
-                    <p>Architectures designed to grow with you — from 100 to 100,000+ users without performance compromise.</p>
+                    <h4>Maintainable, Scalable Systems</h4>
+                    <p>Solutions designed for security, performance, future integrations, growing learner volumes, and easier maintenance.</p>
                 </div>
             </div>
         </div>
@@ -1947,8 +1901,8 @@ require_once 'includes/header.php';
     <section class="section clients-section" id="clients">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Trusted By <span class="gradient-text">Industry Leaders</span></h2>
-                <p class="section-subtitle">Partnering with world-class organizations across Education, Healthcare, Automotive, Finance, and more to deliver mission-critical IT solutions.</p>
+                <h2 class="section-title">Experience Across <span class="gradient-text">Multiple Industries</span></h2>
+                <p class="section-subtitle">Project experience spanning education, corporate training, healthcare, automotive, finance, and technology.</p>
             </div>
         </div>
 
@@ -1958,22 +1912,22 @@ require_once 'includes/header.php';
                 <div class="logo-marquee-track">
                     <!-- First set -->
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="CarDekho - Trusted Client of Infinity SoftHub" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="CarDekho logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="Datasosi - Trusted Client of Infinity SoftHub" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="Datasosi logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Jakson Group - Trusted Client of Infinity SoftHub" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Jakson Group logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Maruti Suzuki - Trusted Automotive Client" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Maruti Suzuki logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="XD Academy - Education Platform Client" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="XD Academy logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Orient Electric - Enterprise Client" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Orient Electric logo" loading="lazy" width="160" height="60">
                     </div>
                     <!-- Duplicate set for seamless loop -->
                     <div class="marquee-logo-item">
@@ -2002,19 +1956,19 @@ require_once 'includes/header.php';
             <div class="trust-stats-bar" data-aos="fade-up" data-aos-delay="200">
                 <div class="trust-stat">
                     <i class="fas fa-handshake" aria-hidden="true"></i>
-                    <div><strong>150+</strong> Global Clients</div>
+                    <div><strong>LMS</strong> Custom Development</div>
                 </div>
                 <div class="trust-stat">
                     <i class="fas fa-globe" aria-hidden="true"></i>
-                    <div><strong>6</strong> Countries Served</div>
+                    <div><strong>Remote</strong> Worldwide Delivery</div>
                 </div>
                 <div class="trust-stat">
                     <i class="fas fa-star" aria-hidden="true"></i>
-                    <div><strong>98%</strong> Client Retention</div>
+                    <div><strong>AI</strong> Learning Workflows</div>
                 </div>
                 <div class="trust-stat">
                     <i class="fas fa-award" aria-hidden="true"></i>
-                    <div><strong>4.9/5</strong> Avg Rating</div>
+                    <div><strong>Full-Stack</strong> Engineering</div>
                 </div>
             </div>
         </div>
@@ -2153,17 +2107,17 @@ require_once 'includes/header.php';
         <div class="container">
             <div data-aos="fade-up" style="max-width:800px; margin:0 auto;">
                 <h2>
-                    Ready to Accelerate Your <span style="color:#60A5FA;">Digital Transformation?</span>
+                    Ready to Build or Improve Your <span style="color:#60A5FA;">Learning Platform?</span>
                 </h2>
                 <p>
-                    Whether you need a custom LMS, enterprise web application, AI-powered automation, or cloud migration — our team of 50+ engineers is ready to deliver scalable, secure solutions tailored to your business goals.
+                    Tell us about your LMS, coding-lab, integration, migration, or AI-learning requirement. We will review the challenge and recommend a practical technical approach for your platform.
                 </p>
                 <div class="cta-buttons">
                     <a href="<?php echo base_url('contact.php'); ?>" class="btn">
-                        <i class="fas fa-rocket" aria-hidden="true"></i> Get Free Consultation
+                        <i class="fas fa-comments" aria-hidden="true"></i> Discuss Your LMS Project
                     </a>
                     <a href="<?php echo base_url('what-we-do.php'); ?>" class="btn">
-                        <i class="fas fa-th-large" aria-hidden="true"></i> Explore Our Services
+                        <i class="fas fa-th-large" aria-hidden="true"></i> Explore LMS Solutions
                     </a>
                 </div>
             </div>

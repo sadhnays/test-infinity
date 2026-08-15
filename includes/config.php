@@ -1,7 +1,8 @@
 <?php
 // config.php - Site-wide configuration
 define('SITE_NAME', 'Infinity SoftHub Technologies');
-define('SITE_URL', 'https://infinitysofthub.com/');
+$configuredSiteUrl = getenv('INFINITY_SITE_URL') ?: 'https://infinitysofthub.com/';
+define('SITE_URL', rtrim($configuredSiteUrl, '/') . '/');
 define('ASSETS_PATH', __DIR__ . '/../assets');
 define('INCLUDES_PATH', __DIR__);
 
@@ -17,7 +18,9 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// Error reporting (set to 0 in production)
+// Log errors in production without exposing server details to visitors.
+$debugMode = getenv('INFINITY_DEBUG') === '1';
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
+ini_set('display_errors', $debugMode ? '1' : '0');
+ini_set('log_errors', '1');
 ?>
