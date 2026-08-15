@@ -181,7 +181,7 @@ $projectsData = [
         'title' => 'K12 School Learning Platform',
         'badge' => 'Education',
         'badgeClass' => 'badge-primary',
-        'image' => asset('images/avatar-icon.png'),
+        'image' => asset('images/about/moodle-lms-development.webp'),
         'description' => 'Complete digital learning ecosystem for K-12 schools featuring parent portals, grade tracking, attendance management, and interactive learning modules. Deployed across multiple school districts.',
         'highlights' => ['School-wide deployment', 'Parent portal integration', 'Grade tracking system', 'Attendance management', 'Interactive modules', 'Mobile responsive'],
         'tech' => ['Moodle', 'PHP', 'MySQL', 'JavaScript', 'Responsive Design'],
@@ -195,7 +195,7 @@ $projectsData = [
         'title' => 'Multi-Talent Management System',
         'badge' => 'Multi-Talent',
         'badgeClass' => 'badge-success',
-        'image' => asset('images/about/businessman.jpg'),
+        'image' => asset('images/about/Professional-businessman.webp'),
         'description' => 'Talent management platform with comprehensive skill assessment tools, automated course allocation, performance analytics, and workforce planning capabilities.',
         'highlights' => ['Skill assessment engine', 'Automated course allocation', 'Performance analytics', 'Workforce planning', 'Multi-tenant architecture', 'Real-time dashboard'],
         'tech' => ['Angular', 'Node.js', 'MongoDB', 'Express', 'REST API'],
@@ -639,7 +639,7 @@ $projectsData = [
             <div class="grid grid-3 stagger">
                 <div class="card portfolio-card" data-aos="zoom-in" data-project="client-k12" onclick="openProjectDetail('client-k12')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/avatar-icon.png'); ?>" alt="K12 School Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/0066ff/ffffff?text=K12+School'">
+                        <img src="<?php echo asset('images/about/moodle-lms-development.webp'); ?>" alt="K12 School Platform" class="card-img" loading="lazy">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -663,7 +663,7 @@ $projectsData = [
 
                 <div class="card portfolio-card" data-aos="zoom-in" data-aos-delay="100" data-project="client-talent" onclick="openProjectDetail('client-talent')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/businessman.jpg'); ?>" alt="Multi-Talent Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/10B981/ffffff?text=Multi-Talent'">
+                        <img src="<?php echo asset('images/about/Professional-businessman.webp'); ?>" alt="Multi-Talent Platform" class="card-img" loading="lazy">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>

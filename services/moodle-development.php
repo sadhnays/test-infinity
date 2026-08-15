@@ -175,13 +175,13 @@ require_once '../includes/header.php';
                 <img src="<?php echo asset('images/technology-stack/moodle.svg'); ?>" alt="Moodle" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/technology-stack/php.svg'); ?>" alt="PHP" loading="lazy" onerror="this.style.display='none'">
+                <span class="tech-logo-label"><i class="fab fa-php" aria-hidden="true"></i>PHP</span>
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/technology-stack/mysql.svg'); ?>" alt="MySQL" loading="lazy" onerror="this.style.display='none'">
+                <span class="tech-logo-label"><i class="fas fa-database" aria-hidden="true"></i>MySQL</span>
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/technology-stack/javascript.svg'); ?>" alt="JavaScript" loading="lazy" onerror="this.style.display='none'">
+                <span class="tech-logo-label"><i class="fab fa-js" aria-hidden="true"></i>JavaScript</span>
             </div>
             <div class="tech-logo" data-aos="zoom-in">
                 <img src="<?php echo asset('images/technology-stack/react.svg'); ?>" alt="React" loading="lazy" onerror="this.style.display='none'">

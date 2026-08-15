@@ -51,6 +51,12 @@ $sitemapSections = [
         'Automotive' => 'automotive.php',
         'Blog' => 'blog/',
     ],
+    'Latest LMS Articles' => [
+        'How to Build an SQL Coding Lab in Moodle' => 'blog/2026/08/15/sql-coding-lab-in-moodle/',
+        'How to Build a Cross-Platform LMS Mobile App with Ionic' => 'blog/2026/05/25/why-ionic-is-the-perfect-choice-for-cross-platform-enterprise-app-development/',
+        'Why Choose Moodle for Corporate Training?' => 'blog/2026/05/25/why-choosing-moodle-open-source-lms-is-the-smartest-move-for-your-organization/',
+        'AI Integration for LMS: Practical Use Cases' => 'blog/2026/05/25/ai-integration/',
+    ],
 ];
 ?>
 

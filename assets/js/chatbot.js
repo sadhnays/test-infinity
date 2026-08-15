@@ -201,6 +201,20 @@ function removeTypingIndicator() {
 function processMessage(userMessage) {
     showTypingIndicator();
 
+    const normalizedMessage = userMessage.toLowerCase();
+    if (
+        normalizedMessage.includes('contact me') ||
+        normalizedMessage.includes('call me') ||
+        normalizedMessage.includes('get in touch') ||
+        normalizedMessage.includes('speak to someone')
+    ) {
+        window.setTimeout(() => {
+            removeTypingIndicator();
+            showLeadForm();
+        }, 500);
+        return;
+    }
+
     window.setTimeout(() => {
         removeTypingIndicator();
         const fallbackResponse = getOfflineResponse(userMessage);
@@ -367,18 +381,5 @@ sendQuickMessage = function(message) {
         return;
     }
     originalSendQuickMessage(message);
-};
-
-// Also trigger lead form when user asks for contact
-const originalProcessWithAI = processWithAI;
-processWithAI = function(userMessage) {
-    const msg = userMessage.toLowerCase();
-    if (msg.includes('contact me') || msg.includes('call me') || msg.includes('get in touch') || msg.includes('speak to someone')) {
-        addMessage(userMessage, 'user');
-        conversationHistory.push({ role: 'user', content: userMessage });
-        setTimeout(() => showLeadForm(), 500);
-        return;
-    }
-    originalProcessWithAI(userMessage);
 };
 

@@ -102,19 +102,19 @@ require_once '../includes/header.php';
                 <img src="<?php echo asset('images/technology-stack/moodle.svg'); ?>" alt="Moodle" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/canvas-logo.svg'); ?>" alt="Canvas" loading="lazy" onerror="this.style.display='none'">
+                <span class="tech-logo-label"><i class="fas fa-layer-group" aria-hidden="true"></i>Canvas LMS</span>
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/totara-logo.svg'); ?>" alt="Totara" loading="lazy" onerror="this.style.display='none'">
+                <span class="tech-logo-label"><i class="fas fa-users" aria-hidden="true"></i>Totara</span>
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/learndash-logo.svg'); ?>" alt="LearnDash" loading="lazy" onerror="this.style.display='none'">
+                <span class="tech-logo-label"><i class="fab fa-wordpress-simple" aria-hidden="true"></i>LearnDash</span>
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/blackboard-logo.svg'); ?>" alt="Blackboard" loading="lazy" onerror="this.style.display='none'">
+                <span class="tech-logo-label"><i class="fas fa-chalkboard-user" aria-hidden="true"></i>Blackboard</span>
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/teachable-logo.svg'); ?>" alt="Teachable" loading="lazy" onerror="this.style.display='none'">
+                <span class="tech-logo-label"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Teachable</span>
             </div>
         </div>
     </div>

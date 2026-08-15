@@ -44,7 +44,7 @@ require_once '../includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/about/cloud-ai.jpg'); ?>" alt="Cloud Solutions Services" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Cloud+Solutions'">
+                    <img src="<?php echo asset('images/about/Cloud-ai.webp'); ?>" alt="Cloud Solutions Services" class="img-rounded" loading="lazy">
                     <div class="exp-number-badge">
                         <div class="exp-number">99.9%</div>
                         <div class="exp-label">Uptime Guarantee</div>

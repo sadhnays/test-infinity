@@ -2467,6 +2467,23 @@ img {
     object-fit: contain;
 }
 
+.tech-logo-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    color: var(--primary-dark);
+    font-family: var(--font-headings);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tech-logo-label i {
+    color: var(--accent);
+    font-size: 1.7rem;
+}
+
 /* ===== Clients Showcase Section ===== */
 .clients-section {
     background: var(--bg-light);

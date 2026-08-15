@@ -104,7 +104,7 @@ require_once 'includes/header.php';
                         <li><strong>Scalable Architecture</strong> - From 100 to 100,000+ concurrent users</li>
                     </ul>
                     <div style="margin-top:2rem;">
-                        <a href="services/moodle-development.html" class="btn btn-outline">
+                        <a href="services/moodle-development.php" class="btn btn-outline">
                             <i class="fa fa-graduation-cap"></i> Explore Moodle Services
                         </a>
                     </div>
