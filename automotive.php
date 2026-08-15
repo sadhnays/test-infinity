@@ -1,27 +1,10 @@
 <?php
-$pageTitle = 'OCR Based Document Management System - Automotive | Infinity SoftHub Technologies';
+$pageTitle = 'Automotive OCR Document Management | Infinity SoftHub';
 $pageDescription = 'OCR Based Document Management System to extract card information and store it in the system together with the check sheet cards - Infinity SoftHub';
 $pageKeywords = 'OCR Based Document Management System,Document Management System,sheet cards, OCR,Infinity SoftHub, Digital Transformation Process';
 $activePage = 'services';
 require_once 'includes/header.php';
 ?>
-
-    <!-- Header Section -->
-    <section class="header-section">
-        <div class="content-wrapper-container">
-            <div class="container-fluid pl-0 pr-0">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="header-caption">
-                            <div class="capation-inner">
-                                <h1 class="aos-init" data-aos="fade-up" data-aos-delay="100">Awards & Certificates</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section class="header-section">
         <div class="content-wrapper-container">

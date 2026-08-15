@@ -1,6 +1,6 @@
 <?php
 // services/moodle-lms-development-canada.php
-$pageTitle = "Moodle™ LMS Development for Canadian Organizations | Infinity SoftHub";
+$pageTitle = "Moodle™ LMS Development Canada | Infinity SoftHub";
 $pageDescription = "Remote Moodle™ LMS development for Canadian organizations, including custom plugins, integrations, bilingual setup, coding labs, migrations and cloud support.";
 $pageKeywords = "Moodle LMS development Canada, remote Moodle developer Canada, custom Moodle plugins Canada, bilingual LMS Canada, eLearning development Canada";
 $activePage = 'services';

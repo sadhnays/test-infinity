@@ -1,7 +1,7 @@
 <?php
-$pageTitle = "Job Description for Current open position for Sales or B.D";
-$pageDescription = "Job Description for Current open position for Sales or Business Development at Infinity SoftHub for Big Data, Data warehouse and Analytics solution with min. 14 year exp.";
-$pageKeywords = "Careers, Jobs, Careers in snakconsultancy, current open jobs, Sales, Business Development,Big Data,Digital marketing,App development,Web developer, Software developer,Data Science, Data warehouse, Analytics solution";
+$pageTitle = "Careers & Current Openings | Infinity SoftHub";
+$pageDescription = "Explore careers and current open positions at Infinity SoftHub. Join our software engineering, LMS, and data analytics consulting team.";
+$pageKeywords = "Careers, Jobs, Sales, Business Development, Big Data, LMS development, Software developer";
 $activePage = "job-description";
 require_once 'includes/header.php';
 ?>
@@ -11,7 +11,7 @@ require_once 'includes/header.php';
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-7 pl-0 aos-init" data-aos="">
-        <h2 class="heading--h2 pb-0">Current open position</h2>
+        <h1 class="heading--h2 pb-0">Current Open Position</h1>
       </div>
     </div>
   </div>

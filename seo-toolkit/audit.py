@@ -147,12 +147,13 @@ class SEOAuditor:
             '.git', 'node_modules', 'includes', 'blog-admin', 'wp-plugins',
             'blog2', 'blog', 'local-blog-writer', 'assets', 'font-awesome',
             'fonts', 'svg', 'wp-admin', 'wp-includes', 'wp-content', 'html',
-            'blogold serv', 'signals'
+            'blogold serv', 'signals', 'vendor', 'demos', 'schema.org'
         }
         blacklisted_files = {
             'config.php', 'functions.php', 'smtps.php', 'chatbot-lead.php',
             'wp-header.html', 'wp-footer.html', 'html-header.html', 'html-footer.html',
-            'sitemap.php', 'privacy-policy.php', 'terms.php'
+            'sitemap.php', 'privacy-policy.php', 'terms.php', 'googled4bf97b36618d99c.html',
+            'portfolio-detail.php', 'job-description.php'
         }
         
         for root, dirs, files in os.walk(self.local_dir):

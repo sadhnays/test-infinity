@@ -1908,7 +1908,7 @@ require_once 'includes/header.php';
             <div class="upwork-trust-card" id="upwork-trust" data-aos="fade-up" data-aos-delay="100">
                 <div class="upwork-trust-brand">
                     <div class="upwork-brand-lockup" aria-label="Upwork">
-                        <img src="<?php echo asset('images/upwork-logo.svg'); ?>" alt="" width="42" height="42">
+                        <img src="<?php echo asset('images/upwork-logo.svg'); ?>" alt="Upwork Top Rated Moodle Development Agency" width="42" height="42">
                         <span>upwork</span>
                     </div>
                     <span class="upwork-top-rated">

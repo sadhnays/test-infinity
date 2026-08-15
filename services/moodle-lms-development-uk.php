@@ -1,6 +1,6 @@
 <?php
 // services/moodle-lms-development-uk.php
-$pageTitle = "Moodle™ LMS Development for UK Organizations | Infinity SoftHub";
+$pageTitle = "Moodle™ LMS Development UK | Infinity SoftHub";
 $pageDescription = "Remote Moodle™ LMS development for UK organizations, including custom plugins, integrations, migrations, dashboards, accessibility improvements and hosting support.";
 $pageKeywords = "Moodle LMS development UK, remote Moodle developer UK, custom Moodle plugins UK, LearnDash developer UK, UK eLearning services";
 $activePage = 'services';

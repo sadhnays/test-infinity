@@ -1,6 +1,6 @@
 <?php
 // services/moodle-lms-development-usa.php
-$pageTitle = "Moodle™ LMS Development for US Organizations | Infinity SoftHub";
+$pageTitle = "Moodle™ LMS Development USA | Infinity SoftHub";
 $pageDescription = "Remote Moodle™ LMS development for US organizations, including custom plugins, integrations, coding labs, dashboards, migrations and cloud deployment support.";
 $pageKeywords = "Moodle LMS development USA, remote Moodle developer USA, custom Moodle plugins USA, LMS integrations USA, eLearning development USA";
 $activePage = 'services';

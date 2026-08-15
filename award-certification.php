@@ -1,7 +1,7 @@
 <?php
-$pageTitle = 'Assess our achievements, awards, and certifications to gauge - Infinity SoftHub';
-$pageDescription = 'Infinity SoftHub (Infinity SoftHub Consulting Services) is Assess our achievements, awards, and certifications to gauge our unprecedented growth of your Business of Digital transformation';
-$pageKeywords = 'Infinity SoftHub (Infinity SoftHub Consulting Services),Assess our achievements,Digital transformation, certifications';
+$pageTitle = 'Awards & Certifications | Infinity SoftHub';
+$pageDescription = 'Explore Infinity SoftHub awards, recognitions, and ISO certifications demonstrating our digital transformation and software engineering excellence.';
+$pageKeywords = 'Infinity SoftHub achievements, IT awards, ISO certifications, Digital transformation awards';
 $activePage = 'about';
 require_once 'includes/header.php';
 ?>
@@ -48,20 +48,20 @@ require_once 'includes/header.php';
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-3 col-md-3 col-lg-3">
-                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/cloud-award.png'); ?>" alt="" loading="lazy"></a></div>
+                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/cloud-award.png'); ?>" alt="Cloud Excellence Award" loading="lazy"></a></div>
                                         </div>
                                         <div class="col-sm-3 col-md-3 col-lg-3">
-                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/enterprise-world.png'); ?>" alt="" loading="lazy"></a></div>
+                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/enterprise-world.png'); ?>" alt="Enterprise World Recognition" loading="lazy"></a></div>
                                         </div>
                                         <div class="col-sm-3 col-md-3 col-lg-3">
-                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/global-excellence.png'); ?>" alt="" loading="lazy"></a></div>
+                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/global-excellence.png'); ?>" alt="Global Excellence Award" loading="lazy"></a></div>
                                         </div>
                                         <div class="col-sm-3 col-md-3 col-lg-3">
-                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/iso.png'); ?>" alt="" loading="lazy"></a></div>
+                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/iso.png'); ?>" alt="ISO Certification" loading="lazy"></a></div>
                                         </div>
 
                                         <div class="col-sm-3 col-md-3 col-lg-3 mt-4">
-                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/iso_2013.png'); ?>" alt="" loading="lazy"></a></div>
+                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/iso_2013.png'); ?>" alt="ISO 27001 Security Certification" loading="lazy"></a></div>
                                         </div>
 
                                     </div>
@@ -74,13 +74,13 @@ require_once 'includes/header.php';
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-3 col-md-3 col-lg-3">
-                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/cloud-award.png'); ?>" alt="" loading="lazy"></a></div>
+                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/cloud-award.png'); ?>" alt="Cloud Excellence Award" loading="lazy"></a></div>
                                         </div>
                                         <div class="col-sm-3 col-md-3 col-lg-3">
-                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/enterprise-world.png'); ?>" alt="" loading="lazy"></a></div>
+                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/enterprise-world.png'); ?>" alt="Enterprise World Recognition" loading="lazy"></a></div>
                                         </div>
                                         <div class="col-sm-3 col-md-3 col-lg-3">
-                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/global-excellence.png'); ?>" alt="" loading="lazy"></a></div>
+                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/global-excellence.png'); ?>" alt="Global Excellence Award" loading="lazy"></a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -92,10 +92,10 @@ require_once 'includes/header.php';
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-3 col-md-3 col-lg-3">
-                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/iso.png'); ?>" alt="" loading="lazy"></a></div>
+                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/iso.png'); ?>" alt="ISO Certification" loading="lazy"></a></div>
                                         </div>
                                         <div class="col-sm-3 col-md-3 col-lg-3">
-                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/iso_2013.png'); ?>" alt="" loading="lazy"></a></div>
+                                            <div class="award-content"><a href="javascript:void(0);"><img src="<?php echo asset('images/awards/iso_2013.png'); ?>" alt="ISO 27001 Security Certification" loading="lazy"></a></div>
                                         </div>
                                     </div>
                                 </div>

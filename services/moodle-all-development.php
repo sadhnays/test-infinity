@@ -1,10 +1,7 @@
 <?php
-$pageTitle = "Moodle Development Services | Complete LMS Solutions | Infinity SoftHub";
+$pageTitle = "Moodle Development Services | Infinity SoftHub";
 $pageDescription = "Moodle development services for custom plugins, themes, integrations, AI learning tools, accessibility, migration and scalable LMS platforms.";
 $pageKeywords = "Moodle development services, Moodle customization, custom Moodle plugins, Moodle accessibility, Moodle learner portals, Moodle AI integration";
-$activePage = 'services';
-
-require_once '../includes/header.php';
 ?>
 
     <!-- Page Hero -->

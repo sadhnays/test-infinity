@@ -1,6 +1,6 @@
 <?php
 // services/moodle-lms-development-australia.php
-$pageTitle = "Moodle™ LMS Development for Australian Organizations | Infinity SoftHub";
+$pageTitle = "Moodle™ LMS Development Australia | Infinity SoftHub";
 $pageDescription = "Remote Moodle™ LMS development for Australian organizations, including custom plugins, integrations, coding labs, reporting, migrations and cloud support.";
 $pageKeywords = "Moodle LMS development Australia, remote Moodle developer Australia, custom Moodle plugins Australia, LMS integrations Australia, eLearning development Australia";
 $activePage = 'services';
