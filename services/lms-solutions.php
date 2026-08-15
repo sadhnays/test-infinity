@@ -1,7 +1,7 @@
 <?php
-$pageTitle = "LMS Solutions | Learning Management Systems | Infinity SoftHub Technologies";
-$pageDescription = "Complete LMS solutions - implementation, customization, and integration services for educational institutions and enterprises. Moodle, Canvas, and custom platforms.";
-$pageKeywords = "LMS solutions, learning management system, Moodle LMS, eLearning platforms, corporate training platforms";
+$pageTitle = "Enterprise LMS & Corporate Training Systems | Infinity SoftHub";
+$pageDescription = "Custom enterprise LMS & corporate training platforms: SCORM compliant systems, employee onboarding portals, virtual classrooms, and LMS solutions.";
+$pageKeywords = "enterprise LMS development, corporate training platform, custom learning management system, SCORM compliant LMS, employee onboarding software, staff training portal, virtual classroom software";
 $activePage = 'services';
 require_once '../includes/header.php';
 ?>
@@ -13,8 +13,8 @@ require_once '../includes/header.php';
             <div class="badge badge-primary" style="margin-bottom:1.5rem; display:inline-flex;">
                 <i class="fa fa-laptop"></i> Core Service
             </div>
-            <h1>LMS <span class="gradient-text">Solutions</span></h1>
-            <p>Complete learning management system implementation, customization, and integration services for educational institutions and enterprises worldwide.</p>
+            <h1>eLearning Development & <span class="gradient-text">LMS Solutions</span></h1>
+            <p>Custom eLearning content and learning management system implementation for schools, universities, training providers, and businesses worldwide.</p>
         </div>
     </div>
 </section>
@@ -25,10 +25,12 @@ require_once '../includes/header.php';
         <div class="content-grid-2 anim-fade-right">
             <div>
                 <h2 style="margin-bottom:1.5rem;">Complete <span class="gradient-text">LMS Ecosystem</span></h2>
-                <p style="margin-bottom:1.5rem;">We design, build, and deploy comprehensive learning management systems that serve educational institutions, corporations, and training organizations of all sizes.</p>
+                <p style="margin-bottom:1.5rem;">We design, build, and deploy comprehensive learning systems plus interactive digital training experiences for educational institutions, corporations, and training organizations.</p>
                 <ul class="check-list">
                     <li><strong>Moodle Implementation</strong> - Full setup, configuration, and deployment</li>
                     <li><strong>Custom LMS Development</strong> - Bespoke platforms built from scratch</li>
+                    <li><strong>Custom eLearning Development</strong> - Multimedia, scenario-based, and self-paced modules</li>
+                    <li><strong>Virtual & Blended Learning</strong> - VILT, virtual classrooms, and blended delivery</li>
                     <li><strong>Multi-Tenant Architecture</strong> - Serve multiple organizations</li>
                     <li><strong>SCORM/xAPI Compliance</strong> - Industry-standard content packaging</li>
                     <li><strong>SSO Integration</strong> - Seamless authentication</li>
@@ -68,8 +70,8 @@ require_once '../includes/header.php';
             </div>
             <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-book-open"></i></div>
-                <h4>Course Development</h4>
-                <p>Engaging, interactive course content with multimedia, quizzes, and assignments.</p>
+                <h4>Custom eLearning Content</h4>
+                <p>Interactive learning content with multimedia, quizzes, simulations, scenario-based activities, and self-paced modules.</p>
             </div>
             <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-chart-bar"></i></div>
@@ -84,7 +86,22 @@ require_once '../includes/header.php';
             <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-mobile-alt"></i></div>
                 <h4>Mobile LMS</h4>
-                <p>Responsive design and custom mobile apps for on-the-go learning.</p>
+                <p>Mobile-first learning solutions, responsive design, offline access, and custom apps for on-the-go learning.</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in">
+                <div class="feature-icon"><i class="fa fa-video"></i></div>
+                <h4>Virtual & Blended Learning</h4>
+                <p>Virtual classroom development, VILT workflows, webinar integrations, and blended learning programs.</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in">
+                <div class="feature-icon"><i class="fa fa-certificate"></i></div>
+                <h4>Assessments & Certifications</h4>
+                <p>Interactive online assessments, automated feedback, certificates, accreditation workflows, and compliance tracking.</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in">
+                <div class="feature-icon"><i class="fa fa-universal-access"></i></div>
+                <h4>Accessible Learning Portals</h4>
+                <p>Responsive learner portals designed for clear navigation, inclusive access, customer education, and workforce upskilling.</p>
             </div>
         </div>
     </div>
@@ -102,19 +119,19 @@ require_once '../includes/header.php';
                 <img src="<?php echo asset('images/technology-stack/moodle.svg'); ?>" alt="Moodle" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/canvas-logo.svg'); ?>" alt="Canvas" loading="lazy" onerror="this.style.display='none'">
+                <span class="tech-logo-label"><i class="fas fa-layer-group" aria-hidden="true"></i>Canvas LMS</span>
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/totara-logo.svg'); ?>" alt="Totara" loading="lazy" onerror="this.style.display='none'">
+                <span class="tech-logo-label"><i class="fas fa-users" aria-hidden="true"></i>Totara</span>
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/learndash-logo.svg'); ?>" alt="LearnDash" loading="lazy" onerror="this.style.display='none'">
+                <span class="tech-logo-label"><i class="fab fa-wordpress-simple" aria-hidden="true"></i>LearnDash</span>
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/blackboard-logo.svg'); ?>" alt="Blackboard" loading="lazy" onerror="this.style.display='none'">
+                <span class="tech-logo-label"><i class="fas fa-chalkboard-user" aria-hidden="true"></i>Blackboard</span>
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/teachable-logo.svg'); ?>" alt="Teachable" loading="lazy" onerror="this.style.display='none'">
+                <span class="tech-logo-label"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Teachable</span>
             </div>
         </div>
     </div>

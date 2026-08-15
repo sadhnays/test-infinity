@@ -184,18 +184,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ===== GSAP Hero Animations (Enhanced) =====
-    if (typeof gsap !== 'undefined') {
+    const hero = document.querySelector('.hero');
+    if (typeof gsap !== 'undefined' && hero) {
         const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+        const addHeroAnimation = function(selector, options, position) {
+            const targets = hero.querySelectorAll(selector);
+            if (targets.length) {
+                heroTl.from(targets, options, position);
+            }
+        };
 
-        heroTl
-            .from('.hero', { opacity: 0, duration: 0.5 })
-            .from('.hero-badge', { y: -30, opacity: 0, duration: 0.8 }, '-=0.3')
-            .from('.hero-content h1', { y: 60, opacity: 0, duration: 1 }, '-=0.5')
-            .from('.hero-subtitle', { y: 40, opacity: 0, duration: 0.8 }, '-=0.5')
-            .from('.hero-actions', { y: 40, opacity: 0, duration: 0.8 }, '-=0.4')
-            .from('.hero-stats', { y: 40, opacity: 0, duration: 0.8 }, '-=0.4')
-            .from('.hero-image', { x: 60, opacity: 0, duration: 1 }, '-=0.6')
-            .from('.floating-card', { scale: 0.8, opacity: 0, duration: 0.8 }, '-=0.5');
+        heroTl.from(hero, { opacity: 0, duration: 0.5 });
+        addHeroAnimation('.hero-subtitle-tag, .hero-badge', { y: -30, opacity: 0, duration: 0.8 }, '-=0.3');
+        addHeroAnimation('.hero-main-title, .hero-content h1', { y: 60, opacity: 0, duration: 1 }, '-=0.5');
+        addHeroAnimation('.hero-main-desc, .hero-subtitle', { y: 40, opacity: 0, duration: 0.8 }, '-=0.5');
+        addHeroAnimation('.hero-cta-group, .hero-actions', { y: 40, opacity: 0, duration: 0.8 }, '-=0.4');
+        addHeroAnimation('.hero-stats-numbers-container, .hero-stats', { y: 40, opacity: 0, duration: 0.8 }, '-=0.4');
+        addHeroAnimation('.hero-right-visual, .hero-image', { x: 60, opacity: 0, duration: 1 }, '-=0.6');
+        addHeroAnimation('.floating-glass-card, .floating-card', { scale: 0.8, opacity: 0, duration: 0.8 }, '-=0.5');
     }
 
     // ===== Swiper Awards Slider =====
@@ -221,15 +227,6 @@ document.addEventListener('DOMContentLoaded', function() {
             },
         });
     }
-
-    // ===== Office Card Active State =====
-    const officeCards = document.querySelectorAll('.office-card');
-    officeCards.forEach(function(card) {
-        card.addEventListener('click', function() {
-            officeCards.forEach(function(c) { c.classList.remove('active'); });
-            this.classList.add('active');
-        });
-    });
 
     // ===== Back to Top Button =====
     const backToTop = document.getElementById('backToTop');

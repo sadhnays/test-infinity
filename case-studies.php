@@ -33,16 +33,16 @@ require_once 'includes/header.php';
                 <!-- Case Study 1 -->
                 <div class="case-card" data-aos="fade-up">
                     <div class="case-card-image" style="background: linear-gradient(135deg, #062B6F, #2563EB);">
-                        <i class="fas fa-graduation-cap"></i>
+                        <i class="fas fa-code"></i>
                     </div>
                     <div class="case-card-content">
-                        <span class="case-card-tag">Education</span>
-                        <h3 class="case-card-title">Moodle LMS for Global University</h3>
-                        <p class="case-card-desc">Delivered a custom Moodle platform serving 10,000+ students with AI-powered personalized learning paths.</p>
+                        <span class="case-card-tag">LMS Customization</span>
+                        <h3 class="case-card-title">Interactive SQL & Python Coding Labs</h3>
+                        <p class="case-card-desc">Integrated browser-based query editors, database schema explorers, and sandbox coding environments directly into Moodle™ courses for automated coding practice.</p>
                         <div class="case-card-tech">
-                            <span class="case-tech-tag">Moodle</span>
-                            <span class="case-tech-tag">AI Integration</span>
-                            <span class="case-tech-tag">Cloud</span>
+                            <span class="case-tech-tag">Moodle™</span>
+                            <span class="case-tech-tag">JavaScript / React</span>
+                            <span class="case-tech-tag">SQL Labs</span>
                         </div>
                     </div>
                 </div>
@@ -50,15 +50,16 @@ require_once 'includes/header.php';
                 <!-- Case Study 2 -->
                 <div class="case-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="case-card-image" style="background: linear-gradient(135deg, #0B3D91, #3B82F6);">
-                        <i class="fas fa-hospital"></i>
+                        <i class="fas fa-robot"></i>
                     </div>
                     <div class="case-card-content">
-                        <span class="case-card-tag">Healthcare</span>
-                        <h3 class="case-card-title">Healthcare Portal Development</h3>
-                        <p class="case-card-desc">Built a HIPAA-compliant patient portal with telemedicine features, serving 50+ clinics nationwide.</p>
+                        <span class="case-card-tag">AI E-Learning</span>
+                        <h3 class="case-card-title">RAG-Based AI Study Assistant</h3>
+                        <p class="case-card-desc">Developed an intelligent learning bot inside LMS platforms allowing students to query PDFs, class notes, and course files using semantic search and AI Q&A.</p>
                         <div class="case-card-tech">
-                            <span class="case-tech-tag">Web Development</span>
-                            <span class="case-tech-tag">Security</span>
+                            <span class="case-tech-tag">Vector Databases</span>
+                            <span class="case-tech-tag">LangChain</span>
+                            <span class="case-tech-tag">FastAPI</span>
                         </div>
                     </div>
                 </div>
@@ -66,15 +67,16 @@ require_once 'includes/header.php';
                 <!-- Case Study 3 -->
                 <div class="case-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="case-card-image" style="background: linear-gradient(135deg, #2563EB, #60A5FA);">
-                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="case-card-content">
-                        <span class="case-card-tag">Retail</span>
-                        <h3 class="case-card-title">E-Commerce Platform Migration</h3>
-                        <p class="case-card-desc">Migrated a retail chain's e-commerce platform to a scalable cloud architecture, increasing sales by 40%.</p>
+                        <span class="case-card-tag">LMS Automation</span>
+                        <h3 class="case-card-title">AI-Powered Automated Grading</h3>
+                        <p class="case-card-desc">Connected LearnDash and Moodle™ platforms with OpenAI & Claude APIs to automatically grade student essays and code files, returning descriptive feedback in seconds.</p>
                         <div class="case-card-tech">
-                            <span class="case-tech-tag">Cloud</span>
-                            <span class="case-tech-tag">DevOps</span>
+                            <span class="case-tech-tag">OpenAI / Claude</span>
+                            <span class="case-tech-tag">API Integration</span>
+                            <span class="case-tech-tag">Automated Grading</span>
                         </div>
                     </div>
                 </div>

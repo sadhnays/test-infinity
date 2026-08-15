@@ -6,6 +6,7 @@ $activePage = 'contact';
 
 require_once 'includes/config.php';
 require_once 'includes/functions.php';
+require_once 'includes/smtps.php';
 
 // Initialize variables
 $errors = [];
@@ -23,29 +24,90 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($submittedToken) || !hash_equals($_SESSION['csrf_token'] ?? '', $submittedToken)) {
         $errors[] = 'Invalid CSRF token. Please try again.';
     } else {
-        // Sanitize and validate inputs
-        $name = sanitize_input(filter_input(INPUT_POST, 'name', FILTER_DEFAULT) ?? '');
-        $email = sanitize_input(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL) ?? '');
-        $phone = sanitize_input(filter_input(INPUT_POST, 'phone', FILTER_DEFAULT) ?? '');
-        $subject = sanitize_input(filter_input(INPUT_POST, 'subject', FILTER_DEFAULT) ?? '');
-        $message = sanitize_input(filter_input(INPUT_POST, 'message', FILTER_DEFAULT) ?? '');
+        // Honeypot anti-spam check (bots fill this field, real users don't see it)
+        $honeypot = filter_input(INPUT_POST, 'email_verify', FILTER_DEFAULT);
+        if (!empty($honeypot)) {
+            // Silent reject as spam bot
+            $errors[] = 'Request could not be processed due to verification failure.';
+        } else {
+            // Sanitize and validate inputs
+            $name = sanitize_input(filter_input(INPUT_POST, 'name', FILTER_DEFAULT) ?? '');
+            $email = sanitize_input(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL) ?? '');
+            $phone = sanitize_input(filter_input(INPUT_POST, 'phone', FILTER_DEFAULT) ?? '');
+            $subject = sanitize_input(filter_input(INPUT_POST, 'subject', FILTER_DEFAULT) ?? '');
+            $message = sanitize_input(filter_input(INPUT_POST, 'message', FILTER_DEFAULT) ?? '');
 
-        // Validation
-        if (empty($name)) { $errors[] = 'Name is required.'; }
-        if (empty($email)) {
-            $errors[] = 'Email is required.';
-        } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $errors[] = 'Invalid email format.';
-        }
-        if (empty($subject)) { $errors[] = 'Subject is required.'; }
-        if (empty($message)) { $errors[] = 'Message is required.'; }
+            // Validation
+            if (empty($name)) { $errors[] = 'Name is required.'; }
+            if (empty($email)) {
+                $errors[] = 'Email is required.';
+            } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $errors[] = 'Invalid email format.';
+            }
+            if (empty($subject)) { $errors[] = 'Subject is required.'; }
+            if (empty($message)) { $errors[] = 'Message is required.'; }
 
-        // If no errors, process form (send email or save to database)
-        if (empty($errors)) {
-            // Here you would typically send an email or save to database
-            $success = true;
-            // Regenerate CSRF token after successful submission
-            $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+            // If no errors, process form (save to DB, then send email)
+            if (empty($errors)) {
+                // 1. Create table if not exists
+                $pdo = null;
+                try {
+                    $pdo = get_db_connection();
+                    $pdo->exec("
+                        CREATE TABLE IF NOT EXISTS contact_messages (
+                            id INT AUTO_INCREMENT PRIMARY KEY,
+                            name VARCHAR(255) NOT NULL,
+                            email VARCHAR(255) NOT NULL,
+                            phone VARCHAR(50) DEFAULT NULL,
+                            subject VARCHAR(255) NOT NULL,
+                            message TEXT NOT NULL,
+                            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                            status ENUM('new', 'read', 'replied') DEFAULT 'new',
+                            INDEX idx_email (email),
+                            INDEX idx_created (created_at)
+                        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+                    ");
+                } catch (Exception $e) {
+                    error_log("Contact table creation failed: " . $e->getMessage());
+                    $pdo = null; // Ensure $pdo is null if connection or table creation fails
+                }
+
+                // 2. Save to database
+                $db_saved = false;
+                if ($pdo !== null) {
+                    try {
+                        $stmt = $pdo->prepare("
+                            INSERT INTO contact_messages (name, email, phone, subject, message)
+                            VALUES (?, ?, ?, ?, ?)
+                        ");
+                        $stmt->execute([$name, $email, $phone, $subject, $message]);
+                        $db_saved = true;
+                    } catch (Exception $e) {
+                        error_log("Saving contact message failed: " . $e->getMessage());
+                    }
+                }
+
+                // 3. Send email notification via SMTP
+                if ($db_saved) {
+                    $success = true;
+                    try {
+                        send_contact_notification($name, $email, $phone, $subject, $message);
+                    } catch (Exception $e) {
+                        error_log("Contact email sending failed: " . $e->getMessage());
+                    }
+                } else {
+                    // Fallback to direct SMTP if database failed
+                    $sent = send_contact_notification($name, $email, $phone, $subject, $message);
+                    if ($sent) {
+                        $success = true;
+                    } else {
+                        $errors[] = 'Failed to submit form. Please email us directly at info@infinitysofthub.com';
+                    }
+                }
+
+                // Regenerate CSRF token after submission
+                $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+            }
         }
     }
 }
@@ -86,6 +148,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <form method="POST" action="" style="display:flex; flex-direction:column; gap:1.5rem;">
                     <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                    
+                    <!-- Honeypot field for anti-spam security (hidden from users) -->
+                    <div style="display: none; visibility: hidden; opacity: 0; position: absolute; left: -9999px;">
+                        <input type="text" name="email_verify" tabindex="-1" autocomplete="off" value="">
+                    </div>
 
                     <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
                         <div>
@@ -132,7 +199,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                         <div>
                             <h4 style="margin-bottom:0.5rem;">Our Location</h4>
-                            <p style="color:var(--text-gray);">Wazirpur, Faridabad, Haryana, India</p>
+                             <p style="color:var(--text-gray);">Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014</p>
                         </div>
                     </div>
 
@@ -142,7 +209,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                         <div>
                             <h4 style="margin-bottom:0.5rem;">Call Us</h4>
-                            <p style="color:var(--text-gray);">+91-120-5146-341</p>
+                             <p style="color:var(--text-gray);">+91-129-2985010</p>
                         </div>
                     </div>
 

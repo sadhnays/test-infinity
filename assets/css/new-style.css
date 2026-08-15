@@ -428,6 +428,38 @@
     transform: scale(1);
 }
 
+/*
+ * These utility classes are used across the PHP pages without data-aos.
+ * Give them a native CSS reveal so content never remains permanently hidden
+ * when AOS does not attach the .aos-animate class.
+ */
+.anim-fade-down,
+.anim-fade-up,
+.anim-fade-left,
+.anim-fade-right,
+.anim-scale {
+    animation: revealContent 0.6s ease forwards;
+}
+
+@keyframes revealContent {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .anim-fade-down,
+    .anim-fade-up,
+    .anim-fade-left,
+    .anim-fade-right,
+    .anim-scale {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -1677,7 +1709,7 @@ img {
 
 .back-to-top {
     position: fixed;
-    bottom: 2rem;
+    bottom: 7rem;
     right: 2rem;
     width: 45px;
     height: 45px;
@@ -2435,9 +2467,191 @@ img {
     object-fit: contain;
 }
 
+.tech-logo-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    color: var(--primary-dark);
+    font-family: var(--font-headings);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tech-logo-label i {
+    color: var(--accent);
+    font-size: 1.7rem;
+}
+
 /* ===== Clients Showcase Section ===== */
 .clients-section {
     background: var(--bg-light);
+}
+
+.upwork-trust-card {
+    display: grid;
+    grid-template-columns: minmax(170px, 0.65fr) minmax(280px, 1.6fr) minmax(180px, 0.75fr) auto;
+    align-items: center;
+    gap: 1.75rem;
+    margin-top: 2.5rem;
+    padding: 1.75rem;
+    background: var(--white);
+    border: 1px solid rgba(20, 168, 0, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.upwork-trust-card:hover {
+    border-color: rgba(20, 168, 0, 0.42);
+    box-shadow: 0 24px 55px rgba(15, 23, 42, 0.12);
+    transform: translateY(-3px);
+}
+
+.upwork-trust-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.upwork-brand-lockup {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: #181818;
+    font-size: 1.65rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.upwork-brand-lockup img {
+    display: block;
+    width: 42px;
+    height: 42px;
+}
+
+.upwork-top-rated {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.42rem 0.7rem;
+    color: #0d6b00;
+    background: rgba(20, 168, 0, 0.09);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.upwork-eyebrow {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #108a00;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+
+.upwork-trust-copy h3 {
+    margin: 0 0 0.45rem;
+    color: var(--text-dark);
+    font-size: clamp(1.2rem, 2vw, 1.55rem);
+    line-height: 1.25;
+}
+
+.upwork-trust-copy p {
+    margin: 0;
+    color: var(--text-gray);
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+.upwork-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+
+.upwork-stars {
+    display: flex;
+    gap: 0.2rem;
+    color: #f59e0b;
+    font-size: 1rem;
+}
+
+.upwork-rating strong {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.upwork-rating span {
+    color: var(--text-gray);
+    font-size: 0.75rem;
+}
+
+.upwork-profile-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    min-height: 48px;
+    padding: 0.8rem 1.15rem;
+    color: #ffffff;
+    background: #14a800;
+    border-radius: 12px;
+    font-size: 0.88rem;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.upwork-profile-link:hover,
+.upwork-profile-link:focus-visible {
+    color: #ffffff;
+    background: #108a00;
+    transform: translateY(-2px);
+}
+
+.upwork-trademark-note {
+    margin: 0.65rem 0 0;
+    color: #7b8498;
+    font-size: 0.68rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .upwork-trust-card {
+        grid-template-columns: 0.75fr 1.7fr 0.8fr;
+    }
+
+    .upwork-profile-link {
+        grid-column: 1 / -1;
+        justify-self: stretch;
+    }
+}
+
+@media (max-width: 760px) {
+    .upwork-trust-card {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 1.4rem;
+        text-align: center;
+    }
+
+    .upwork-trust-brand,
+    .upwork-rating {
+        align-items: center;
+    }
+
+    .upwork-profile-link {
+        grid-column: auto;
+        width: 100%;
+    }
 }
 
 .clients-grid {

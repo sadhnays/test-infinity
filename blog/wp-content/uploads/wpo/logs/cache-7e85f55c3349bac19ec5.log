@@ -1,0 +1,35 @@
+[2026-08-15 16:38:40 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2026-08-15 16:38:51 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2026-08-15 16:39:11 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2026-08-15 16:39:17 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2026-08-15 19:04:03 : INFO] - Setting changed, purging cache 
+[2026-08-15 19:04:04 : INFO] - Pruning the Cache log file 
+[2026-08-15 19:04:10 : INFO] - Pruning the Cache log file 
+[2026-08-15 19:04:28 : INFO] - Full Cache Purge triggered by: WPO_Page_Cache::handle_purge_single_page_cache 
+[2026-08-15 19:18:52 : INFO] - Cache for URL: https://infinitysofthub.com/blog/sql-coding-lab-in-moodle/ has been purged, triggered by action: save_post 
+[2026-08-15 19:18:52 : INFO] - Cache for author page URL: https://infinitysofthub.com/blog/author/admin/ associated with post_type: page and Title: "How to Build an SQL Coding Lab in Moodle™: Architecture, Security &amp; Workflow" has been purged, triggered by action: save_post 
+[2026-08-15 19:21:11 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:21:11 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:24:00 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:25:14 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:31:11 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:34:49 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:35:04 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:35:59 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:36:00 : INFO] - Cache for URL: https://infinitysofthub.com/blog/2026/08/15/sql-coding-lab-in-moodle/ has been purged, triggered by action: save_post 
+[2026-08-15 19:36:00 : INFO] - Cache for previous post (with URL: https://infinitysofthub.com/blog/2026/05/25/why-ionic-is-the-perfect-choice-for-cross-platform-enterprise-app-development/) adjacent to post with id: 33 has been purged, triggered by action: save_post 
+[2026-08-15 19:36:00 : INFO] - Cache for all archives page associated with post_type: post and Title: "How to Build an SQL Coding Lab in Moodle™: Architecture, Security &amp; Workflow" have been purged, triggered by action: save_post 
+[2026-08-15 19:36:00 : INFO] - Cache for author page URL: https://infinitysofthub.com/blog/author/admin/ associated with post_type: post and Title: "How to Build an SQL Coding Lab in Moodle™: Architecture, Security &amp; Workflow" has been purged, triggered by action: save_post 
+[2026-08-15 19:36:23 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:43:48 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:44:31 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:47:38 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:49:53 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:56:51 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2026-08-15 19:56:52 : INFO] - Cache for URL: https://infinitysofthub.com/blog/2026/08/15/sql-coding-lab-in-moodle/ has been purged, triggered by action: save_post 
+[2026-08-15 19:56:52 : INFO] - Cache for previous post (with URL: https://infinitysofthub.com/blog/2026/05/25/why-ionic-is-the-perfect-choice-for-cross-platform-enterprise-app-development/) adjacent to post with id: 33 has been purged, triggered by action: save_post 
+[2026-08-15 19:56:52 : INFO] - Cache for all archives page associated with post_type: post and Title: "How to Build an SQL Coding Lab in Moodle™: Architecture, Security &amp; Workflow" have been purged, triggered by action: save_post 
+[2026-08-15 19:56:52 : INFO] - Cache for author page URL: https://infinitysofthub.com/blog/author/admin/ associated with post_type: post and Title: "How to Build an SQL Coding Lab in Moodle™: Architecture, Security &amp; Workflow" has been purged, triggered by action: save_post 
+[2026-08-15 20:12:22 : INFO] - Full Cache Purge triggered by: WPO_Page_Cache::handle_purge_single_page_cache 
+[2026-08-15 20:14:04 : INFO] - Cache for URL: https://infinitysofthub.com/blog/sql-coding-lab-in-moodle/ has been purged, triggered by action: wp_trash_post 
+[2026-08-15 20:14:10 : INFO] - Cache for URL: https://infinitysofthub.com/blog/moodle-lms-ai-blog-infinity-softhub-technologies/ has been purged, triggered by action: wp_trash_post 

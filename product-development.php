@@ -42,7 +42,7 @@ require_once 'includes/header.php';
                             <div class="expertise__item">
                                 <a href="#section1" class="anchorLink">
                                     <div class="expertise__card">
-                                        <img class="card__icon" src="<?php echo asset('svg/software%20development.svg'); ?>" alt="Software Development" loading="lazy">
+                                        <img class="card__icon" src="<?php echo asset('images/custom-software.svg'); ?>" alt="Software Development" loading="lazy">
                                         <h3>Custom Software Development</h3>
                                         <div class="expertise__description text-muted">
                                         Infinity SoftHub   aims to adapt quickly to market competition, minimize development time, and handle multiple platforms.
@@ -55,7 +55,7 @@ require_once 'includes/header.php';
                             <div class="expertise__item">
                                 <a href="#section2" class="anchorLink">
                                     <div class="expertise__card">
-                                        <img class="card__icon" src="<?php echo asset('svg/mobility.svg'); ?>" alt="Mobility" loading="lazy">
+                                        <img class="card__icon" src="<?php echo asset('images/mobility.webp'); ?>" alt="Mobility" loading="lazy">
                                         <h3>Mobility Solution</h3>
                                         <div class="expertise__description text-muted">
                                         Let our mobile strategy blended with modern mobility solutions help you transform your traditional workspace into a modern one in an optimized and secured way.
@@ -69,7 +69,7 @@ require_once 'includes/header.php';
                             <div class="expertise__item">
                                 <a href="#section3" class="anchorLink">
                                     <div class="expertise__card">
-                                        <img class="card__icon" src="<?php echo asset('svg/startup.svg'); ?>" alt="Startup" loading="lazy">
+                                        <img class="card__icon" src="<?php echo asset('images/startup.webp'); ?>" alt="Startup" loading="lazy">
                                         <h3>Start-up Solution</h3>
                                         <div class="expertise__description text-muted">
                                         In today's competitive world, it is challenging to start your business and take the market by storm.
@@ -104,7 +104,7 @@ require_once 'includes/header.php';
                                 <li><i class="fa fa-check"></i>Hadoop</li>
                                 <li><i class="fa fa-check"></i>AWS, Azure, Google cloud services</li>
                             </ul>
-                            <p class="pt-4">For more details, don't hesitate to <a href="contact-us.php#contactUS"  target="_blank" class="downloadLink">Contact us</a>.</p>
+                            <p class="pt-4">For more details, don't hesitate to <a href="<?php echo base_url('contact.php'); ?>" class="downloadLink">Contact us</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ require_once 'includes/header.php';
                                 <li><i class="fa fa-check"></i>UI/UX design & implementation</li>
                                 <li><i class="fa fa-check"></i>Integration of enterprise middleware into mobile applications</li>
                             </ul>
-                            <p class="pt-4"><a href="contact-us.php" class="downloadLink">Contact us</a> for more information.</p>
+                            <p class="pt-4"><a href="<?php echo base_url('contact.php'); ?>" class="downloadLink">Contact us</a> for more information.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 right-side"><img src="<?php echo asset('images/mobility.png'); ?>" class="objectFit aos-init" data-aos="fade-right" data-aos-delay="100" alt="Mobility Solution" loading="lazy"></div>
@@ -161,7 +161,7 @@ require_once 'includes/header.php';
                                 <li><i class="fa fa-check"></i>System for online commerce</li>
                                 <li><i class="fa fa-check"></i>Mobility system for SOS Helpdesk e-Ticketing</li>
                             </ul>
-                            <p class="pt-4">We will be glad to help you with more details. <a href="contact-us.php#contactUS"  target="_blank" class="downloadLink">Contact us</a></p>
+                            <p class="pt-4">We will be glad to help you with more details. <a href="<?php echo base_url('contact.php'); ?>" class="downloadLink">Contact us</a></p>
                         </div>
                     </div>
                 </div>
@@ -173,8 +173,7 @@ require_once 'includes/header.php';
         <div class="content-wrapper-container">
             <div class="button-effect aos-init aos-animate" data-aos="zoom-in" data-aos-delay="50">
                 <h3 class="section-heading"><span>Want to understand how Infinity SoftHub Technologies  Services   </span> can help your Business?</h3>
-                <a href="contact-us.php" class="custom_btn">Contact Us</a>
-                <!-- <a href="contact-us.php" class="custom_btn">Contact Us</a> -->
+                <a href="<?php echo base_url('contact.php'); ?>" class="custom_btn">Contact Us</a>
             </div>
         </div>
     </section>

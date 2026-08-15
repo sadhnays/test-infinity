@@ -1,7 +1,7 @@
 <?php
-$pageTitle = "Hosting & Migration | Moodle Hosting Solutions | Infinity SoftHub Technologies";
-$pageDescription = "Secure, scalable Moodle hosting solutions with zero-downtime migration services and 24/7 technical support.";
-$pageKeywords = "Moodle hosting, LMS hosting, Moodle migration, zero-downtime migration, scalable hosting";
+$pageTitle = "Moodle Setup, Deployment & Managed Hosting | Infinity SoftHub";
+$pageDescription = "Moodle LMS setup and deployment, managed hosting, cloud migration, monitoring, upgrades, backups, recovery and performance optimization.";
+$pageKeywords = "Moodle LMS setup and deployment, managed Moodle services, Moodle cloud deployment, Moodle hosting, Moodle backup and recovery";
 $activePage = 'services';
 require_once '../includes/header.php';
 ?>
@@ -13,8 +13,8 @@ require_once '../includes/header.php';
             <div class="badge badge-primary" style="margin-bottom:1.5rem; display:inline-flex;">
                 <i class="fa fa-cloud-upload-alt"></i> Hosting & Migration
             </div>
-            <h1>Hosting & <span class="gradient-text">Migration</span></h1>
-            <p>Secure, scalable Moodle hosting with zero-downtime migration services and 24/7 expert support.</p>
+            <h1>Moodle Setup, Hosting & <span class="gradient-text">Migration</span></h1>
+            <p>Production-ready Moodle deployment, managed hosting, monitoring, upgrades, backups, recovery, and migration support.</p>
         </div>
     </div>
 </section>
@@ -24,9 +24,11 @@ require_once '../includes/header.php';
     <div class="container">
         <div class="content-grid-2 anim-fade-right">
             <div>
-                <h2 style="margin-bottom:1.5rem;">Reliable <span class="gradient-text">Moodle Hosting</span></h2>
-                <p style="margin-bottom:1.5rem;">We provide secure, high-performance Moodle hosting solutions that scale with your organization. From small schools to large universities - we've got you covered.</p>
+                <h2 style="margin-bottom:1.5rem;">Moodle LMS Setup & <span class="gradient-text">Managed Hosting</span></h2>
+                <p style="margin-bottom:1.5rem;">We configure and launch secure Moodle environments on cloud or client-managed infrastructure, then support performance, updates, monitoring, and recovery as your platform grows.</p>
                 <ul class="check-list">
+                    <li><strong>Setup & Configuration</strong> - Moodle installation, roles, email, cron, SSL, and launch checks</li>
+                    <li><strong>Cloud Deployment</strong> - AWS, Azure, Google Cloud, or a suitable VPS environment</li>
                     <li><strong>Managed Moodle Hosting</strong> - Fully managed, worry-free hosting</li>
                     <li><strong>Auto-Scaling</strong> - Resources scale with your traffic</li>
                     <li><strong>Daily Backups</strong> - Automated backups with 30-day retention</li>
@@ -57,6 +59,11 @@ require_once '../includes/header.php';
         </div>
         <div class="grid grid-3 stagger" style="margin-top:3rem;">
             <div class="feature-card" data-aos="zoom-in">
+                <div class="feature-icon"><i class="fa fa-rocket"></i></div>
+                <h4>Moodle Setup & Deployment</h4>
+                <p>Server configuration, database setup, scheduled tasks, email delivery, SSL, staging, launch checks, and post-launch support.</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-server"></i></div>
                 <h4>Managed Hosting</h4>
                 <p>Fully managed Moodle hosting with automatic updates, security patches, and performance optimization.</p>
@@ -83,8 +90,8 @@ require_once '../includes/header.php';
             </div>
             <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-headset"></i></div>
-                <h4>24/7 Support</h4>
-                <p>Round-the-clock technical support via chat, email, and phone.</p>
+                <h4>Ongoing Moodle Support</h4>
+                <p>Platform health checks, upgrade planning, patch management, performance reviews, and issue resolution.</p>
             </div>
         </div>
     </div>

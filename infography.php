@@ -157,7 +157,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="blog-card aos-init" data-aos="fade-up" data-aos-delay="200">
                     <div class="figImg"><a href="<?php echo base_url('vendor-mgmt.php'); ?>"><img src="<?php echo asset('images/infography/vendor_mangement.jpg'); ?>"
-                                class="objectFit" alt="" loading="lazy"></a>
+                                class="objectFit" alt="Vendor management with SAP integration" loading="lazy"></a>
                         <div class="shareIc">
                             <div class="dropdown">
                                 <div id="menuItem" data-toggle="dropdown" aria-haspopup="true"
@@ -190,7 +190,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="blog-card aos-init" data-aos="fade-up" data-aos-delay="200">
                     <div class="figImg"><a href="<?php echo base_url('vehicle-service.php'); ?>"><img
-                                src="<?php echo asset('images/infography/vehicle-service-2.jpg'); ?>" class="objectFit" alt="" loading="lazy"></a>
+                                src="<?php echo asset('images/infography/vehicle-service-2.jpg'); ?>" class="objectFit" alt="Vehicle Service Care Solutions" loading="lazy"></a>
                         <div class="shareIc">
                             <div class="dropdown">
                                 <div id="menuItem" data-toggle="dropdown" aria-haspopup="true"
@@ -222,7 +222,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="blog-card aos-init" data-aos="fade-up" data-aos-delay="200">
                     <div class="figImg"><a href="<?php echo base_url('harvest-infography.php'); ?>"><img
-                                src="<?php echo asset('images/infography/value-harvest.jpg'); ?>" class="objectFit" alt="" loading="lazy"></a>
+                                src="<?php echo asset('images/infography/value-harvest.jpg'); ?>" class="objectFit" alt="Harvest Trading Online Solution" loading="lazy"></a>
                         <div class="shareIc">
                             <div class="dropdown">
                                 <div id="menuItem" data-toggle="dropdown" aria-haspopup="true"
@@ -287,7 +287,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="blog-card aos-init" data-aos="fade-up" data-aos-delay="100">
                     <div class="figImg"><a href="<?php echo base_url('infography-ceo.php'); ?>"><img
-                                src="<?php echo asset('images/infography/ceo\'s_solutions.jpg'); ?>" class="objectFit" alt="" loading="lazy"></a>
+                                src="<?php echo asset('images/infography/ceo\'s_solutions.jpg'); ?>" class="objectFit" alt="CEO's Solution Offering" loading="lazy"></a>
                         <div class="shareIc">
                             <div class="dropdown">
                                 <div id="menuItem" data-toggle="dropdown" aria-haspopup="true"
@@ -320,7 +320,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="blog-card aos-init" data-aos="fade-up" data-aos-delay="100">
                     <div class="figImg"><a href="<?php echo base_url('infography-data-lakes.php'); ?>"><img
-                                src="<?php echo asset('images/infography/data-lake-infographic.jpg'); ?>" class="objectFit" alt="" loading="lazy"></a>
+                                src="<?php echo asset('images/infography/data-lake-infographic.jpg'); ?>" class="objectFit" alt="Data Lake Analytics Infographic" loading="lazy"></a>
                         <div class="shareIc">
                             <div class="dropdown">
                                 <div id="menuItem" data-toggle="dropdown" aria-haspopup="true"

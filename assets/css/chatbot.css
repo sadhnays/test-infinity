@@ -6,7 +6,8 @@
 .chatbot-widget {
     position: fixed !important;
     bottom: 2rem !important;
-    left: 2rem !important;
+    right: 2rem !important;
+    left: auto !important;
     z-index: 2147483647 !important;
     font-family: var(--font-family);
     display: block !important;
@@ -68,7 +69,8 @@
 .chatbot-window {
     position: absolute;
     bottom: 80px;
-    left: 0;
+    right: 0;
+    left: auto;
     width: 380px;
     height: 520px;
     background: var(--white);
@@ -365,11 +367,16 @@
     border-radius: var(--radius-sm);
     font-size: 0.8rem;
     font-family: var(--font-family);
-    background: var(--bg-light);
-    color: #e2e8f0;
+    background: #ffffff;
+    color: #1e293b !important;
     outline: none;
     transition: all 0.3s ease;
     box-sizing: border-box;
+}
+
+.chatbot-form-input::placeholder,
+.chatbot-form-textarea::placeholder {
+    color: #94a3b8;
 }
 
 .chatbot-form-input:focus,
@@ -422,18 +429,20 @@
     .chatbot-window {
         width: calc(100vw - 2rem);
         height: 450px;
-        left: 0;
+        right: 0;
+        left: auto;
         bottom: 70px;
     }
 
     .chatbot-widget {
-        bottom: 1rem;
-        left: 1rem;
+        bottom: 1rem !important;
+        right: 1rem !important;
+        left: auto !important;
     }
 
     .chatbot-toggle {
-        width: 55px;
-        height: 55px;
-        font-size: 1.3rem;
+        width: 55px !important;
+        height: 55px !important;
+        font-size: 1.3rem !important;
     }
 }

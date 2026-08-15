@@ -1,0 +1,13 @@
+# Infinity SoftHub Technologies
+> Founder-led custom Moodle™ LMS development, AI-powered learning solutions, interactive coding playgrounds (SQL & Python), plugin engineering, and full-stack software consulting.
+
+## Core Services & Solutions
+- [Moodle LMS Development](https://infinitysofthub.com/services/moodle-all-development.php): Custom plugin development, theme customization, LMS integrations, and cloud deployment.
+- [AI & ML LMS Integration](https://infinitysofthub.com/services/ai-ml-integration.php): RAG-based AI learning assistants, course Q&A, PDF Q&A, and OpenAI/Claude/Gemini API integrations.
+- [Interactive Coding Playgrounds](https://infinitysofthub.com/demos/sql-playground.php): Browser-based SQL and Python coding labs with auto-grading for Moodle & LearnDash.
+- [Cloud & Migration Services](https://infinitysofthub.com/services/cloud-solutions.php): AWS/Azure cloud hosting, zero-downtime LMS migrations, and 24/7 technical support.
+
+## Company Details
+- Website: https://infinitysofthub.com/
+- Headquarter: Faridabad, Haryana, India - 121014
+- Contact: info@infinitysofthub.com | +91-129-2985010

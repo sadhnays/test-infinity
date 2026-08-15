@@ -1,7 +1,7 @@
 <?php
-$pageTitle = "AI & ML Integration | Infinity SoftHub";
-$pageDescription = "AI & ML integration services - personalized solutions, predictive analytics, and intelligent automation.";
-$pageKeywords = "AI integration, machine learning, predictive analytics, intelligent automation";
+$pageTitle = "AI & ML LMS Integration Services | Infinity SoftHub";
+$pageDescription = "AI & ML integration for learning platforms: RAG learning assistants, adaptive learning pathways, AI tutors, and automated quiz generators.";
+$pageKeywords = "AI powered learning assistant, RAG course search, AI tutor integration, adaptive learning platform, AI automated quiz generator, intelligent tutoring system, OpenAI LangChain learning";
 $activePage = 'services';
 
 require_once '../includes/header.php';
@@ -29,13 +29,13 @@ require_once '../includes/header.php';
                         <i class="fas fa-microchip" aria-hidden="true"></i> AI & ML Expertise
                     </div>
                     <h2 class="h2-mb">Smart Solutions with <span class="gradient-text">AI Power</span></h2>
-                    <p class="text-secondary mb-1rem">We integrate advanced AI and machine learning technologies to create personalized, adaptive, and intelligent solutions.</p>
-                    <p class="text-secondary mb-1-5rem">Our AI experts design systems that learn and adapt, delivering smarter automation and predictive capabilities for your business.</p>
+                    <p class="text-secondary mb-1rem">We integrate modern AI capabilities and machine learning into existing LMS platforms and custom business software.</p>
+                    <p class="text-secondary mb-1-5rem">Our engineers build custom AI agents and workflow automations using OpenAI, Claude, Gemini, and LangChain frameworks.</p>
                     <ul class="check-list">
-                        <li><span class="li-icon">✓</span><span class="li-text"><strong>Personalized Learning Paths</strong> - AI-driven recommendations</span></li>
-                        <li><span class="li-icon">✓</span><span class="li-text"><strong>Predictive Analytics</strong> - Identify trends early</span></li>
-                        <li><span class="li-icon">✓</span><span class="li-text"><strong>Automated Grading</strong> - Smart assessment & feedback</span></li>
-                        <li><span class="li-icon">✓</span><span class="li-text"><strong>Chatbots</strong> - 24/7 automated support</span></li>
+                        <li><span class="li-icon">✓</span><span class="li-text"><strong>AI Document Q&A / Knowledge Assistants</strong> - RAG-based search on PDFs and course materials</span></li>
+                        <li><span class="li-icon">✓</span><span class="li-text"><strong>Semantic Search Integration</strong> - Search across all documents and courses using Vector Databases</span></li>
+                        <li><span class="li-icon">✓</span><span class="li-text"><strong>AI Coding & Debugging Assistants</strong> - Explanations and guidance for SQL/Python coding sandboxes</span></li>
+                        <li><span class="li-icon">✓</span><span class="li-text"><strong>Custom AI Agents</strong> - Automation of administrative grading workflows and feedback</span></li>
                     </ul>
                     <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary mt-2rem">
                         <i class="fas fa-handshake" aria-hidden="true"></i> Get Free Consultation
