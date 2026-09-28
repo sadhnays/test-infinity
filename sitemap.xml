@@ -206,6 +206,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://infinitysofthub.com/services/iomad-multi-tenant-lms.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://infinitysofthub.com/services/moodle-development.php</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

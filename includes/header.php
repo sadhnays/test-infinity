@@ -16,6 +16,15 @@ $pageSchema = $pageSchema ?? null;
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Google Tag Manager -->
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7V2VKMT');</script>
+<!-- End Google Tag Manager -->
+    <!-- End Google Tag Manager -->
     <title><?php echo e($pageTitle); ?></title>
     <meta name="description" content="<?php echo e($pageDescription); ?>">
     <meta name="keywords" content="<?php echo e($pageKeywords); ?>">
@@ -137,6 +146,10 @@ $pageSchema = $pageSchema ?? null;
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7V2VKMT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Loading Screen with Logo -->
     <div class="loader-wrapper" id="loaderWrapper">
         <div class="loader-inner">
@@ -173,7 +186,8 @@ $pageSchema = $pageSchema ?? null;
                 <div class="nav-dropdown">
                     <a href="<?php echo base_url('what-we-do.php'); ?>" class="nav-link <?php echo $activePage === 'what-we-do' || $activePage === 'services' ? 'active' : ''; ?>">Services <i class="fas fa-angle-down"></i></a>
                     <div class="dropdown-menu">
-                         <a href="<?php echo base_url('services/moodle-all-development.php'); ?>" class="dropdown-link">LMS Development</a>
+                        <a href="<?php echo base_url('services/moodle-all-development.php'); ?>" class="dropdown-link">LMS Development</a>
+                        <a href="<?php echo base_url('services/iomad-multi-tenant-lms.php'); ?>" class="dropdown-link">IOMAD Multi-Tenant LMS</a>
                         <a href="<?php echo base_url('services/web-development.php'); ?>" class="dropdown-link">Web Development</a>
                         <a href="<?php echo base_url('services/mobile-app-development.php'); ?>" class="dropdown-link">Mobile App Development</a>
                         <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>" class="dropdown-link">AI & ML Integration</a>

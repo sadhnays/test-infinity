@@ -11,3 +11,4 @@ Disallow: /chatbot-lead.php
 
 # Sitemap
 Sitemap: https://infinitysofthub.com/sitemap.xml
+Sitemap: https://infinitysofthub.com/blog/sitemap_index.xml

@@ -2,6 +2,9 @@
 $pageTitle = "Moodle Development Services | Infinity SoftHub";
 $pageDescription = "Moodle development services for custom plugins, themes, integrations, AI learning tools, accessibility, migration and scalable LMS platforms.";
 $pageKeywords = "Moodle development services, Moodle customization, custom Moodle plugins, Moodle accessibility, Moodle learner portals, Moodle AI integration";
+$activePage = 'services';
+
+require_once '../includes/header.php';
 ?>
 
     <!-- Page Hero -->
@@ -224,7 +227,8 @@ $pageKeywords = "Moodle development services, Moodle customization, custom Moodl
                         <i class="fas fa-code-branch" aria-hidden="true"></i>
                     </div>
                     <h4>Multi-Tenant Architecture</h4>
-                    <p>Serve multiple organizations from a single Moodle installation.</p>
+                    <p>Manage multiple organizations with delegated administration, course allocation and tenant-aware reporting.</p>
+                    <a href="<?php echo base_url('services/iomad-multi-tenant-lms.php'); ?>" class="btn btn-outline mt-2rem">Explore IOMAD Services</a>
                 </div>
                 <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
