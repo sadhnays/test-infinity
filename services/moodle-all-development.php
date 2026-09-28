@@ -49,7 +49,7 @@ require_once '../includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div style="position:relative;">
-                        <img src="<?php echo asset('images/about/moodle-lms-development.jpg'); ?>" alt="Moodle Development Services" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Moodle+Development'">
+                        <img src="<?php echo asset('images/about/moodle-lms-development.webp'); ?>" alt="Moodle Development Services" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Moodle+Development'">
                         <div class="exp-number-badge">
                             <div class="exp-number">6+</div>
                             <div class="exp-label">Years with Moodle</div>

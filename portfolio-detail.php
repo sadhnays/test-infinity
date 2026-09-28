@@ -5,7 +5,7 @@ $pageDescription = "Detailed view of Infinity SoftHub's portfolio projects and c
 $pageKeywords = "portfolio detail, project case study, project details";
 $activePage = 'portfolio';
 
-require_once 'includes/header.php';
+require_once 'includes/functions.php';
 
 // Get project ID from URL
 $projectId = isset($_GET['id']) ? sanitize_input($_GET['id']) : '';
@@ -16,7 +16,7 @@ $projects = [
         'title' => 'University LMS Transformation',
         'badge' => 'Moodle / LMS',
         'badgeClass' => 'badge-primary',
-        'image' => asset('images/about/moodle-lms-development.jpg'),
+        'image' => asset('images/about/moodle-lms-development.webp'),
         'description' => 'A comprehensive transformation of a university\'s learning management system serving over 10,000 students. We completely redesigned the Moodle platform with custom themes, 20+ plugins, and integrated AI-powered course recommendation engine. The platform now supports mobile learning, gamified assessments, and real-time analytics dashboards for both students and faculty.',
         'highlights' => ['10,000+ active students', '40% engagement boost', '20+ custom plugins', 'AI-powered course recommendations', 'Mobile-responsive design', 'Real-time analytics'],
         'tech' => ['Moodle', 'PHP', 'JavaScript', 'MySQL', 'AI/ML', 'REST API'],
@@ -30,7 +30,7 @@ $projects = [
         'title' => 'Enterprise Dashboard Platform',
         'badge' => 'Angular / Web',
         'badgeClass' => 'badge-success',
-        'image' => asset('images/about/custom.jpg'),
+        'image' => asset('images/about/custom.webp'),
         'description' => 'Built an enterprise-grade dashboard platform using Angular 17+ with TypeScript. Features real-time data analytics, role-based access control, and AI-driven insights. The platform serves 5,000+ enterprise users across multiple departments with seamless data integration from various sources.',
         'highlights' => ['5,000+ enterprise users', '60% faster load time', 'Real-time analytics', 'Role-based access control', 'AI-driven insights', 'Microservices architecture'],
         'tech' => ['Angular', 'TypeScript', 'RxJS', 'NgRx', 'Node.js', 'Docker'],
@@ -44,7 +44,7 @@ $projects = [
         'title' => 'Corporate Website & Blog Portal',
         'badge' => 'WordPress / CMS',
         'badgeClass' => 'badge-primary',
-        'image' => asset('images/about/hosting-migration.jpg'),
+        'image' => asset('images/about/hosting-migration.webp'),
         'description' => 'Developed a corporate website with headless WordPress CMS architecture. Features custom theme design, advanced SEO optimization, WooCommerce integration, and a blog portal with content management workflow. Achieved 85% traffic boost within 6 months of launch.',
         'highlights' => ['200+ pages created', '85% traffic boost', 'Headless CMS architecture', 'WooCommerce integration', 'Advanced SEO', 'Content workflow'],
         'tech' => ['WordPress', 'PHP', 'React', 'WooCommerce', 'Yoast SEO'],
@@ -58,7 +58,7 @@ $projects = [
         'title' => 'Retail Mobile App & CMS',
         'badge' => 'Mobile CMS',
         'badgeClass' => 'badge-success',
-        'image' => asset('images/about/Mobile-app.jpg'),
+        'image' => asset('images/about/Mobile-app.webp'),
         'description' => 'Cross-platform mobile application with headless CMS backend for a retail enterprise. Features include push notifications, offline sync, real-time inventory tracking, and personalized shopping experience. The app achieved 4.8★ rating with 50,000+ downloads.',
         'highlights' => ['50,000+ downloads', '4.8★ app rating', 'Offline sync capability', 'Push notifications', 'Real-time inventory', 'Personalized UX'],
         'tech' => ['React Native', 'Firebase', 'GraphQL', 'Headless CMS', 'AWS'],
@@ -72,7 +72,7 @@ $projects = [
         'title' => 'Fitness Tracking Application',
         'badge' => 'Mobile App',
         'badgeClass' => 'badge-primary',
-        'image' => asset('images/about/Mobile-app2.jpg'),
+        'image' => asset('images/about/Mobile-app2.webp'),
         'description' => 'A comprehensive fitness tracking app built with React Native. Features personalized workout plans, health monitoring, social sharing, and real-time analytics. Users can track their fitness goals, view progress charts, and connect with fitness communities.',
         'highlights' => ['100,000+ active users', '4.9★ app rating', 'Personalized workout plans', 'Social sharing features', 'Health tracking integration', 'Real-time analytics'],
         'tech' => ['React Native', 'Node.js', 'MongoDB', 'Firebase', 'Health API'],
@@ -86,7 +86,7 @@ $projects = [
         'title' => 'Cloud Migration Platform',
         'badge' => 'Cloud Solutions',
         'badgeClass' => 'badge-success',
-        'image' => asset('images/about/Cloud-ai.jpg'),
+        'image' => asset('images/about/Cloud-ai.webp'),
         'description' => 'Successfully migrated 50+ enterprise servers to AWS cloud infrastructure with zero-downtime strategy. Implemented auto-scaling, containerized services with Docker and Kubernetes, and achieved 40% cost reduction while improving performance and reliability.',
         'highlights' => ['50+ servers migrated', '40% cost reduction', 'Zero downtime', 'Auto-scaling enabled', 'Containerized architecture', '99.99% uptime'],
         'tech' => ['AWS', 'Docker', 'Kubernetes', 'Terraform', 'CI/CD', 'Monitoring'],
@@ -100,7 +100,7 @@ $projects = [
         'title' => 'Medical Training LMS',
         'badge' => 'Healthcare / LMS',
         'badgeClass' => 'badge-primary',
-        'image' => asset('images/about/ai-lms2.jpg'),
+        'image' => asset('images/about/ai-lms2.webp'),
         'description' => 'Specialized Moodle-based learning management system for medical professionals. Features CME tracking, AI-powered content recommendations, HIPAA-compliant architecture, and certification management. Currently serving 2,000+ doctors and medical staff.',
         'highlights' => ['2,000+ medical professionals', '100% HIPAA compliance', 'CME tracking system', 'AI content recommendations', 'Certification management', 'Multi-tenant architecture'],
         'tech' => ['Moodle', 'PHP', 'AI/ML', 'HIPAA Compliance', 'MySQL', 'REST API'],
@@ -114,7 +114,7 @@ $projects = [
         'title' => 'E-Learning Platform',
         'badge' => 'E-Learning',
         'badgeClass' => 'badge-primary',
-        'image' => asset('images/about/Moodle development services, e-learning platform development, LMS customization, Moodle experts, online education technology, learning management system, educational software development, Moodle programming, course .jpg'),
+        'image' => asset('images/about/Moodle development services, e-learning platform development, LMS customization, Moodle experts, online education technology, learning management system, educational software development, Moodle programming, course .webp'),
         'description' => 'Scalable e-learning platform serving 5,000+ students with real-time progress tracking, interactive course content, and AI-powered assessments. Built on Moodle with custom plugins and modern front-end interface.',
         'highlights' => ['5,000+ enrolled students', 'AI-powered assessments', 'Interactive course content', 'Real-time progress tracking', 'Mobile-responsive', 'Multi-language support'],
         'tech' => ['Moodle', 'React', 'PHP', 'MySQL', 'AI/ML', 'WebRTC'],
@@ -128,7 +128,7 @@ $projects = [
         'title' => 'Enterprise Training Portal',
         'badge' => 'Corporate / Training',
         'badgeClass' => 'badge-success',
-        'image' => asset('images/about/hosting-migration.jpg'),
+        'image' => asset('images/about/hosting-migration.webp'),
         'description' => 'Angular-based corporate training portal integrated with Moodle LMS. Features employee progress tracking, certification management, automated reporting, and AI analytics for training effectiveness measurement.',
         'highlights' => ['5,000+ employees trained', '60% faster onboarding', 'Automated reporting', 'Certification management', 'AI analytics', 'SSO integration'],
         'tech' => ['Angular', 'TypeScript', 'Moodle', 'Node.js', 'AI Analytics'],
@@ -142,7 +142,7 @@ $projects = [
         'title' => 'Enterprise Security Solutions',
         'badge' => 'Security',
         'badgeClass' => 'badge-primary',
-        'image' => asset('images/about/security-solutions.jpg'),
+        'image' => asset('images/about/security-solutions.webp'),
         'description' => 'Comprehensive cybersecurity platform providing threat detection, real-time monitoring, automated incident response, and compliance management. Achieved 99.9% uptime with zero security breaches since deployment.',
         'highlights' => ['99.9% uptime', 'Zero security breaches', 'Threat detection', 'Automated response', 'SOC2 compliance', '24/7 monitoring'],
         'tech' => ['CyberSec', 'AI/ML', 'SOC2', 'Cloud', 'Monitoring'],
@@ -170,7 +170,7 @@ $projects = [
         'title' => 'UI/UX Design System',
         'badge' => 'Design',
         'badgeClass' => 'badge-primary',
-        'image' => asset('images/about/ui-ux.jpg'),
+        'image' => asset('images/about/ui-ux.webp'),
         'description' => 'Complete design system with 50+ reusable components, accessibility compliance (WCAG 2.1), developer documentation, and Figma-to-code handoff tools. Streamlined design consistency across all products.',
         'highlights' => ['50+ UI components', 'WCAG 2.1 compliant', 'Figma integration', 'Storybook documentation', 'Developer handoff', 'Design tokens'],
         'tech' => ['Figma', 'Storybook', 'CSS/Tailwind', 'React', 'Accessibility'],
@@ -184,7 +184,7 @@ $projects = [
         'title' => 'K12 School Learning Platform',
         'badge' => 'Education',
         'badgeClass' => 'badge-primary',
-        'image' => asset('images/about/moodle-lms-development.jpg'),
+        'image' => asset('images/about/moodle-lms-development.webp'),
         'description' => 'Complete digital learning ecosystem for K-12 schools featuring parent portals, grade tracking, attendance management, and interactive learning modules. Deployed across multiple school districts.',
         'highlights' => ['School-wide deployment', 'Parent portal integration', 'Grade tracking system', 'Attendance management', 'Interactive modules', 'Mobile responsive'],
         'tech' => ['Moodle', 'PHP', 'MySQL', 'JavaScript', 'Responsive Design'],
@@ -212,7 +212,7 @@ $projects = [
         'title' => 'Networking Training Platform',
         'badge' => 'Networking',
         'badgeClass' => 'badge-primary',
-        'image' => asset('images/about/ai-lms.jpg'),
+        'image' => asset('images/about/ai-lms.webp'),
         'description' => 'Professional networking and IT certification training platform with lab simulations, interactive assessments, progress tracking, and industry-recognized certification pathways.',
         'highlights' => ['Lab simulations', 'IT certification prep', 'Interactive assessments', 'Progress tracking', 'Industry certifications', 'Global reach'],
         'tech' => ['React', 'AWS', 'Docker', 'Node.js', 'MongoDB'],
@@ -226,7 +226,7 @@ $projects = [
         'title' => 'Video Learning Platform',
         'badge' => 'Video Learning',
         'badgeClass' => 'badge-primary',
-        'image' => asset('images/about/ai-lms.jpg'),
+        'image' => asset('images/about/ai-lms.webp'),
         'description' => 'Cross-platform video learning platform featuring live classes, recorded sessions, interactive Q&A, community forums, and AI-powered content recommendations for enhanced learning experience.',
         'highlights' => ['Live streaming classes', 'Recorded sessions library', 'Interactive Q&A', 'Community forums', 'AI recommendations', 'Multi-device support'],
         'tech' => ['React', 'Node.js', 'WebRTC', 'Socket.io', 'MongoDB'],
@@ -240,7 +240,7 @@ $projects = [
         'title' => 'Next-Gen Adaptive Learning Platform',
         'badge' => 'Innovation',
         'badgeClass' => 'badge-success',
-        'image' => asset('images/Power-BI-consulting.jpg'),
+        'image' => asset('images/Power-BI-consulting.webp'),
         'description' => 'AI-driven adaptive learning platform that personalizes course content based on learner behavior, performance, and preferences. Features intelligent assessments, spaced repetition, and predictive analytics.',
         'highlights' => ['AI adaptive learning', 'Personalized pathways', 'Intelligent assessments', 'Spaced repetition', 'Predictive analytics', 'Multi-language'],
         'tech' => ['AI/ML', 'Python', 'Vue.js', 'FastAPI', 'PostgreSQL'],
@@ -271,6 +271,17 @@ if (!isset($projects[$projectId]) || empty($projectId)) {
     $projectId = 'university-lms'; // Default fallback
 }
 $project = $projects[$projectId];
+
+// Per-project SEO: unique title, description and canonical (keeps ?id=)
+$pageTitle = $project['title'] . ' | Portfolio | Infinity SoftHub';
+$pageDescription = $project['description'];
+if (strlen($pageDescription) > 158) {
+    $pageDescription = rtrim(substr($pageDescription, 0, strrpos(substr($pageDescription, 0, 155), ' ')), ' .,;:') . '...';
+}
+$canonicalPath = 'portfolio-detail.php?id=' . rawurlencode($projectId);
+$ogImage = $project['image'];
+
+require_once 'includes/header.php';
 ?>
 
     <!-- Page Hero -->

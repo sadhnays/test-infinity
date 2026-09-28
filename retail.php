@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Retail IT Solutions | Infinity SoftHub";
-$pageDescription = "Specialized retail IT solutions including e-commerce platforms, POS systems, inventory management, and customer experience software for modern retail businesses.";
+$pageDescription = "Retail software solutions: e-commerce stores, POS and inventory integrations, customer experience apps and staff training LMS for modern retail businesses.";
 $pageKeywords = "retail IT, e-commerce, POS, inventory management, customer experience, retail software";
 $activePage = 'industries';
 

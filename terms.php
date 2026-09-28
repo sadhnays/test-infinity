@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Terms of Service | Infinity SoftHub Technologies';
-$pageDescription = 'Infinity SoftHub Technologies Terms of Service - Terms and conditions governing the use of our services.';
+$pageDescription = "Terms of Service for Infinity SoftHub Technologies: the terms and conditions that govern use of our website, LMS development and software services.";
 $pageKeywords = 'terms of service, terms and conditions';
 $activePage = 'terms';
 require_once 'includes/header.php';

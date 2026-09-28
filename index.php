@@ -1,33 +1,49 @@
 <?php
 // index.php - Homepage
-$pageTitle = "Custom LMS & AI-Powered Learning Solutions | Infinity SoftHub";
-$pageDescription = "Founder-led LMS development for organizations worldwide: custom plugins, SQL and Python coding labs, AI learning assistants, integrations, migrations, and cloud deployment.";
+$pageTitle = "Custom LMS & AI Learning Solutions | Infinity SoftHub";
+$pageDescription = "Founder-led LMS development for organizations worldwide: custom Moodle plugins, SQL and Python coding labs, AI learning assistants, integrations and hosting.";
 $pageKeywords = "custom LMS development, corporate training platform, virtual classroom software, SCORM compliant LMS, LearnDash developer, SQL coding lab, AI learning assistant, employee onboarding portal";
 $activePage = 'home';
 
-// Page-specific schema
-$pageSchema = '{
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Infinity SoftHub Technologies",
-    "alternateName": "Infinity SoftHub",
-    "url": "https://infinitysofthub.com/",
-    "logo": "https://infinitysofthub.com/assets/images/ish-logo.svg",
-    "description": "Founder-led custom LMS development, AI-powered learning tools, coding labs, integrations, and cloud deployment for organizations worldwide.",
-    "areaServed": "Worldwide",
-    "knowsAbout": [
-        "Learning management systems",
-        "Custom LMS plugins",
-        "SQL and Python coding labs",
-        "AI learning assistants",
-        "LMS integrations and cloud deployment"
+// Homepage FAQ: one source for the visible FAQ section and the FAQPage schema
+$homeFaqs = [
+    [
+        'q' => 'What does Infinity SoftHub do?',
+        'a' => 'Infinity SoftHub Technologies is a founder-led software company that builds custom learning management systems. We develop Moodle, LearnDash and IOMAD platforms, custom LMS plugins and themes, SQL and Python coding labs, AI learning assistants, integrations, migrations and cloud hosting.',
     ],
-    "sameAs": [
-        "https://www.facebook.com/infinitysofthub",
-        "https://www.linkedin.com/company/infinitysofthub/",
-        "https://www.youtube.com/@infinitysofthub"
-    ]
-}';
+    [
+        'q' => 'Do you work with clients outside India?',
+        'a' => 'Yes. We are based in Faridabad, India and deliver projects remotely for organizations in the USA, UK, Canada, Australia, Europe and Singapore.',
+    ],
+    [
+        'q' => 'Can you add AI features to an existing Moodle or LearnDash site?',
+        'a' => 'Yes. We integrate AI learning assistants into existing LMS platforms, including course Q&A and PDF Q&A built on retrieval-augmented generation (RAG) with OpenAI, Claude or Gemini APIs, without rebuilding your current courses.',
+    ],
+    [
+        'q' => 'What is an interactive SQL or Python coding lab?',
+        'a' => 'It is a browser-based coding environment embedded inside your LMS. Learners write and run SQL or Python directly in a lesson and get auto-graded feedback, so no local software installation is needed. You can try our SQL coding lab demo on this website.',
+    ],
+    [
+        'q' => 'Do you migrate and host LMS platforms?',
+        'a' => 'Yes. We handle LMS setup, upgrades and migrations to AWS or Azure, plus managed hosting with monitoring, backups, security hardening and performance optimization.',
+    ],
+    [
+        'q' => 'Is Infinity SoftHub affiliated with Moodle?',
+        'a' => 'No. Moodle is a registered trademark of Moodle Pty Ltd. Infinity SoftHub Technologies is an independent custom development agency and is not affiliated with, sponsored by, or endorsed by Moodle Pty Ltd.',
+    ],
+];
+
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'FAQPage',
+    'mainEntity' => array_map(function ($f) {
+        return [
+            '@type' => 'Question',
+            'name' => $f['q'],
+            'acceptedAnswer' => ['@type' => 'Answer', 'text' => $f['a']],
+        ];
+    }, $homeFaqs),
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 
 require_once 'includes/header.php';
 ?>
@@ -2135,6 +2151,32 @@ require_once 'includes/header.php';
             gap: 1rem;
         }
     }
+    </style>
+
+    <!-- FAQ Section -->
+    <section class="section home-faq" id="faq">
+        <div class="container" style="max-width:900px;">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+            <div class="home-faq-list">
+                <?php foreach ($homeFaqs as $faqItem): ?>
+                    <details class="home-faq-item">
+                        <summary><?php echo e($faqItem['q']); ?></summary>
+                        <p><?php echo e($faqItem['a']); ?></p>
+                    </details>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+    <style>
+    .home-faq-list { display:grid; gap:1rem; margin-top:2rem; }
+    .home-faq-item { background:#fff; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.06); padding:1.1rem 1.5rem; }
+    .home-faq-item summary { cursor:pointer; font-weight:600; font-size:1.05rem; color:var(--accent, #062b6f); list-style:none; }
+    .home-faq-item summary::-webkit-details-marker { display:none; }
+    .home-faq-item summary::after { content:'+'; float:right; font-weight:700; }
+    .home-faq-item[open] summary::after { content:'\2212'; }
+    .home-faq-item p { margin:0.9rem 0 0; line-height:1.7; color:var(--text-secondary, #4b5563); }
     </style>
 
     <!-- CTA Section -->

@@ -52,6 +52,50 @@ function versioned_asset($path) {
     return is_file($filePath) ? $url . '?v=' . filemtime($filePath) : $url;
 }
 
+// Clean canonical URL for the current page: no query string, no index.php,
+// always on the production domain. Pages can override with $canonicalPath.
+function canonical_url($path = null) {
+    if ($path === null) {
+        $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
+    }
+    $path = preg_replace('#(^|/)index\.php$#', '$1', $path);
+    return base_url(ltrim($path, '/'));
+}
+
+// Human-readable breadcrumb label from a file name.
+function breadcrumb_label($slug) {
+    $slug = preg_replace('/\.php$/', '', $slug);
+    $label = ucwords(str_replace(['-', '_'], ' ', $slug));
+    $fixes = ['Lms' => 'LMS', 'Ai ' => 'AI ', 'Ml ' => 'ML ', 'Ui Ux' => 'UI/UX', 'Uk' => 'UK', 'Usa' => 'USA', 'Iomad' => 'IOMAD', 'Sql' => 'SQL'];
+    return trim(str_replace(array_keys($fixes), array_values($fixes), $label . ' '));
+}
+
+// BreadcrumbList schema built from the URL path (Home > Section > Page).
+function breadcrumb_schema($pageTitle = '') {
+    $path = trim(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/', '/');
+    $path = preg_replace('#(^|/)index\.php$#', '', $path);
+    if ($path === '') {
+        return null;
+    }
+    $items = [[
+        '@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => base_url(''),
+    ]];
+    $parts = explode('/', $path);
+    $position = 2;
+    if (count($parts) > 1 && $parts[0] === 'services') {
+        $items[] = ['@type' => 'ListItem', 'position' => $position++, 'name' => 'Services', 'item' => base_url('what-we-do.php')];
+    } elseif (count($parts) > 1 && $parts[0] === 'demos') {
+        $items[] = ['@type' => 'ListItem', 'position' => $position++, 'name' => 'Demos', 'item' => base_url('what-we-do.php')];
+    }
+    $name = $pageTitle ? trim(explode('|', $pageTitle)[0]) : breadcrumb_label(end($parts));
+    $items[] = ['@type' => 'ListItem', 'position' => $position, 'name' => $name, 'item' => base_url($path)];
+    return json_encode([
+        '@context' => 'https://schema.org',
+        '@type' => 'BreadcrumbList',
+        'itemListElement' => $items,
+    ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+}
+
 // Sanitize GET/POST data
 function sanitize_request_data($data) {
     if (is_array($data)) {

@@ -1,6 +1,6 @@
 <?php
-$pageTitle = "Product Development approach is to develop innovative products";
-$pageDescription = "Product Development approach is to develop innovative products with Custom Software development, Mobility Solution And Start-up Solution by utilizing digital technologies ";
+$pageTitle = "Custom Software & Product Development | Infinity SoftHub";
+$pageDescription = "Custom software and product development for startups and enterprises: MVPs, web and mobile apps, SaaS platforms and cloud-ready architecture, built end to end.";
 $pageKeywords = "Product Development approach, Custom Software development, Mobility Solution,Start-up Solution, Product Development";
 $activePage = "product-development";
 require_once 'includes/header.php';
@@ -55,7 +55,7 @@ require_once 'includes/header.php';
                             <div class="expertise__item">
                                 <a href="#section2" class="anchorLink">
                                     <div class="expertise__card">
-                                        <img class="card__icon" src="<?php echo asset('images/mobility.webp'); ?>" alt="Mobility" loading="lazy">
+                                        <img class="card__icon" src="<?php echo asset('images/mobility.webp'); ?>" alt="Mobility solutions icon" loading="lazy">
                                         <h3>Mobility Solution</h3>
                                         <div class="expertise__description text-muted">
                                         Let our mobile strategy blended with modern mobility solutions help you transform your traditional workspace into a modern one in an optimized and secured way.
@@ -69,7 +69,7 @@ require_once 'includes/header.php';
                             <div class="expertise__item">
                                 <a href="#section3" class="anchorLink">
                                     <div class="expertise__card">
-                                        <img class="card__icon" src="<?php echo asset('images/startup.webp'); ?>" alt="Startup" loading="lazy">
+                                        <img class="card__icon" src="<?php echo asset('images/startup.webp'); ?>" alt="Startup solutions icon" loading="lazy">
                                         <h3>Start-up Solution</h3>
                                         <div class="expertise__description text-muted">
                                         In today's competitive world, it is challenging to start your business and take the market by storm.
@@ -89,7 +89,7 @@ require_once 'includes/header.php';
         <div class="content-wrapper-container" id="section1">
             <div class="container-fluid pl-0 pr-0">
                 <div class="row no-gutters vh-center">
-                    <div class="col-lg-6 left-side"><img src="<?php echo asset('images/custom-software-development.png'); ?>" class="objectFit aos-init" data-aos="fade-right" data-aos-delay="100" alt="Custom Software Development" loading="lazy"></div>
+                    <div class="col-lg-6 left-side"><img src="<?php echo asset('images/custom-software-development.webp'); ?>" class="objectFit aos-init" data-aos="fade-right" data-aos-delay="100" alt="Custom Software Development" loading="lazy"></div>
                     <div class="col-lg-6">
                         <div class="right-section aos-init" data-aos="fade-left" data-aos-delay="100">
                             <h3>Custom Software Development</h3>
@@ -133,7 +133,7 @@ require_once 'includes/header.php';
                             <p class="pt-4"><a href="<?php echo base_url('contact.php'); ?>" class="downloadLink">Contact us</a> for more information.</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 right-side"><img src="<?php echo asset('images/mobility.png'); ?>" class="objectFit aos-init" data-aos="fade-right" data-aos-delay="100" alt="Mobility Solution" loading="lazy"></div>
+                    <div class="col-lg-6 right-side"><img src="<?php echo asset('images/mobility.webp'); ?>" class="objectFit aos-init" data-aos="fade-right" data-aos-delay="100" alt="Mobility Solution" loading="lazy"></div>
                 </div>
             </div>
         </div>
@@ -147,7 +147,7 @@ require_once 'includes/header.php';
         <div class="content-wrapper-container" id="section3">
             <div class="container-fluid pl-0 pr-0">
                 <div class="row no-gutters vh-center">
-                    <div class="col-lg-6 left-side"><img src="<?php echo asset('images/startup.png'); ?>" class="objectFit aos-init" data-aos="fade-left" data-aos-delay="100" alt="Start-up Solution" loading="lazy"></div>
+                    <div class="col-lg-6 left-side"><img src="<?php echo asset('images/startup.webp'); ?>" class="objectFit aos-init" data-aos="fade-left" data-aos-delay="100" alt="Start-up Solution" loading="lazy"></div>
                     <div class="col-lg-6">
                         <div class="right-section aos-init" data-aos="fade-right" data-aos-delay="100">
                             <h3>Start-up Solution</h3>

@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Financial Services IT Solutions | Infinity SoftHub";
-$pageDescription = "Specialized financial services IT solutions including banking software, fintech applications, payment processing, and regulatory compliance systems. Secure and scalable.";
+$pageDescription = "Financial services software: banking and fintech apps, payment integrations, compliance training LMS and secure, scalable platforms for regulated teams.";
 $pageKeywords = "financial IT, banking software, fintech, payment processing, regulatory compliance, financial analytics";
 $activePage = 'industries';
 

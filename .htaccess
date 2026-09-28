@@ -1,24 +1,100 @@
+Options -Indexes
+DirectoryIndex index.php index.html
+
 # Serve SVG files with the correct MIME type
 <IfModule mod_mime.c>
     AddType image/svg+xml .svg .svgz
     AddEncoding gzip .svgz
+    AddType image/webp .webp
 </IfModule>
 
-# Canonical URL redirects for retired duplicate pages
+# ------------------------------------------------------------------
+# One canonical host: https://infinitysofthub.com (no www, HTTPS only)
+# ------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # www -> non-www
+    RewriteCond %{HTTP_HOST} ^www\.infinitysofthub\.com$ [NC]
+    RewriteRule ^(.*)$ https://infinitysofthub.com/$1 [R=301,L]
+
+    # http -> https (proxy/CDN safe)
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteCond %{HTTP_HOST} ^infinitysofthub\.com$ [NC]
+    RewriteRule ^(.*)$ https://infinitysofthub.com/$1 [R=301,L]
+
+    # /index.php -> / (only when typed in the URL, not the internal DirectoryIndex lookup)
+    RewriteCond %{THE_REQUEST} \s/index\.php[\s?] [NC]
+    RewriteRule ^index\.php$ https://infinitysofthub.com/ [R=301,L]
+
+    # Block private project files from the web (source, tooling, VCS, dumps)
+    RewriteRule (^|/)\.(git|claude|env) - [F,L,NC]
+    RewriteRule ^(vendor|seo-toolkit|_to_delete)(/|$) - [F,L,NC]
+    RewriteRule ^(composer\.(json|lock)|database_schema\.sql|README\.md|run_seo\.bat|.*\.bak)$ - [F,L,NC]
+</IfModule>
+
+# ------------------------------------------------------------------
+# 301 redirects for retired / duplicate pages
+# ------------------------------------------------------------------
 <IfModule mod_alias.c>
-    Redirect 301 /index.php https://infinitysofthub.com/
-    Redirect 301 /blog.php https://infinitysofthub.com/blog/
-    Redirect 301 /services/ai-ml-integration.html https://infinitysofthub.com/services/ai-ml-integration.php
-    Redirect 301 /services/hosting-migration.html https://infinitysofthub.com/services/hosting-migration.php
-    Redirect 301 /services/lms-solutions.html https://infinitysofthub.com/services/lms-solutions.php
-    Redirect 301 /services/mobile-app-development.html https://infinitysofthub.com/services/mobile-app-development.php
-    Redirect 301 /services/moodle-development.html https://infinitysofthub.com/services/moodle-development.php
-    Redirect 301 /services/security-solutions.html https://infinitysofthub.com/services/security-solutions.php
+    RedirectMatch 301 ^/blog\.php$ https://infinitysofthub.com/blog/
+    RedirectMatch 301 ^/services/ai-ml-integration\.html$ https://infinitysofthub.com/services/ai-ml-integration.php
+    RedirectMatch 301 ^/services/hosting-migration\.html$ https://infinitysofthub.com/services/hosting-migration.php
+    RedirectMatch 301 ^/services/lms-solutions\.html$ https://infinitysofthub.com/services/lms-solutions.php
+    RedirectMatch 301 ^/services/mobile-app-development\.html$ https://infinitysofthub.com/services/mobile-app-development.php
+    RedirectMatch 301 ^/services/moodle-development\.html$ https://infinitysofthub.com/services/moodle-development.php
+    RedirectMatch 301 ^/services/security-solutions\.html$ https://infinitysofthub.com/services/security-solutions.php
+
+    # Legacy pages from the previous site (removed Sep 2026)
+    RedirectMatch 301 ^/artificial-intelligence\.php$ https://infinitysofthub.com/services/ai-ml-integration.php
+    RedirectMatch 301 ^/data-analytics-solution\.php$ https://infinitysofthub.com/services/ai-ml-integration.php
+    RedirectMatch 301 ^/azure-service-platform\.php$ https://infinitysofthub.com/services/cloud-solutions.php
+    RedirectMatch 301 ^/ms-power-platform\.php$ https://infinitysofthub.com/what-we-do.php
+    RedirectMatch 301 ^/salesforce-solutions\.php$ https://infinitysofthub.com/what-we-do.php
+    RedirectMatch 301 ^/sap-solutions\.php$ https://infinitysofthub.com/what-we-do.php
+    RedirectMatch 301 ^/award-certification\.php$ https://infinitysofthub.com/about.php
+    RedirectMatch 301 ^/our-team\.php$ https://infinitysofthub.com/about.php
+    RedirectMatch 301 ^/corporate-social-responsibility\.php$ https://infinitysofthub.com/about.php
+    RedirectMatch 301 ^/job-description\.php$ https://infinitysofthub.com/contact.php
+    RedirectMatch 301 ^/infography\.php$ https://infinitysofthub.com/case-studies.php
+    RedirectMatch 301 ^/infographics\.php$ https://infinitysofthub.com/case-studies.php
+    RedirectMatch 301 ^/harvest-infography\.php$ https://infinitysofthub.com/case-studies.php
+    RedirectMatch 301 ^/smart-product-development\.php$ https://infinitysofthub.com/case-studies.php
+    RedirectMatch 301 ^/manufacture\.php$ https://infinitysofthub.com/manufacturing.php
+    RedirectMatch 301 ^/web-development\.php$ https://infinitysofthub.com/services/web-development.php
+    RedirectMatch 301 ^/digital-portfolio\.php$ https://infinitysofthub.com/portfolio.php
+    RedirectMatch 301 ^/contact-us\.php$ https://infinitysofthub.com/contact.php
+    RedirectMatch 301 ^/contact\.html$ https://infinitysofthub.com/contact.php
+
+    # Stray folders from an old site download
+    RedirectMatch 301 ^/(signals|schema\.org)(/.*)?$ https://infinitysofthub.com/
+</IfModule>
+
+# Custom 404 page
+ErrorDocument 404 /404.php
+
+# ------------------------------------------------------------------
+# Security headers (these do nothing as <meta> tags, so they live here)
+# ------------------------------------------------------------------
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Strict-Transport-Security "max-age=31536000" env=HTTPS
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+
+    # Long cache for static assets; HTML stays fresh
+    <FilesMatch "\.(css|js|webp|png|jpe?g|gif|svg|ico|woff2?|ttf|otf)$">
+        Header set Cache-Control "public, max-age=31536000"
+    </FilesMatch>
 </IfModule>
 
 # Enable compression
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/ld+json
     AddOutputFilterByType DEFLATE application/rss+xml
     AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
     AddOutputFilterByType DEFLATE application/x-font
@@ -45,12 +121,13 @@
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 1 month"
-    
-    # CSS & JS
+    ExpiresByType text/html "access plus 0 seconds"
+
+    # CSS & JS (files are versioned with ?v=filemtime)
     ExpiresByType text/css "access plus 1 year"
     ExpiresByType application/javascript "access plus 1 year"
     ExpiresByType text/javascript "access plus 1 year"
-    
+
     # Images
     ExpiresByType image/jpg "access plus 1 year"
     ExpiresByType image/jpeg "access plus 1 year"
@@ -59,7 +136,7 @@
     ExpiresByType image/webp "access plus 1 year"
     ExpiresByType image/svg+xml "access plus 1 year"
     ExpiresByType image/x-icon "access plus 1 year"
-    
+
     # Fonts
     ExpiresByType font/ttf "access plus 1 year"
     ExpiresByType font/otf "access plus 1 year"

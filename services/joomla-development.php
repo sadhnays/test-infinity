@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Joomla Development Services | Custom CMS Solutions | Infinity SoftHub Technologies";
+$pageTitle = "Joomla Development Services | Infinity SoftHub";
 $pageDescription = "Professional Joomla development services. Custom Joomla websites, extensions, templates, and enterprise CMS solutions with 8+ years of experience.";
 $pageKeywords = "Joomla development, Joomla website, Joomla customization, Joomla extensions, Joomla templates, CMS development";
 $activePage = 'services';

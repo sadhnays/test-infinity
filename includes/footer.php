@@ -14,10 +14,12 @@
 
             <div class="footer-col">
                 <h4>Quick Links</h4>
-                <a href="<?php echo base_url('index.php'); ?>">Home</a>
+                <a href="<?php echo base_url(''); ?>">Home</a>
                 <a href="<?php echo base_url('about.php'); ?>">About Us</a>
                 <a href="<?php echo base_url('what-we-do.php'); ?>">Services</a>
                 <a href="<?php echo base_url('portfolio.php'); ?>">Portfolio</a>
+                <a href="<?php echo base_url('case-studies.php'); ?>">Case Studies</a>
+                <a href="<?php echo base_url('blog/'); ?>">Blog</a>
                 <a href="<?php echo base_url('contact.php'); ?>">Contact Us</a>
             </div>
 
@@ -28,19 +30,22 @@
                 <a href="<?php echo base_url('services/mobile-app-development.php'); ?>">Mobile Apps</a>
                 <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>">AI & ML Solutions</a>
                 <a href="<?php echo base_url('services/cloud-solutions.php'); ?>">Cloud Solutions</a>
+                <a href="<?php echo base_url('services/iomad-multi-tenant-lms.php'); ?>">IOMAD Multi-Tenant LMS</a>
+                <a href="<?php echo base_url('demos/sql-playground.php'); ?>">SQL Coding Lab Demo</a>
             </div>
 
             <div class="footer-col">
                 <h4>Contact Us</h4>
                 <p><i class="fas fa-map-marker-alt"></i> Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014</p>
-                <p><i class="fas fa-phone"></i> +91-129-2985010</p>
-                <p><i class="fas fa-envelope"></i> info@infinitysofthub.com</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+911292985010">+91-129-2985010</a></p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@infinitysofthub.com">info@infinitysofthub.com</a></p>
             </div>
         </div>
 
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; <?php echo date('Y'); ?> Infinity SoftHub Technologies. All rights reserved.</p>
+                <p>&copy; <?php echo date('Y'); ?> Infinity SoftHub Technologies. All rights reserved.
+                    <span style="margin-left:0.75rem;"><a href="<?php echo base_url('privacy-policy.php'); ?>">Privacy Policy</a> &middot; <a href="<?php echo base_url('terms.php'); ?>">Terms</a> &middot; <a href="<?php echo base_url('sitemap.php'); ?>">Sitemap</a></span></p>
                 <p style="font-size:0.75rem; color:var(--text-gray); margin-top:0.5rem; line-height:1.4;">
                     Moodle™ is a registered trademark of Moodle Pty Ltd. Infinity SoftHub Technologies is an independent custom development agency and is not affiliated with, sponsored by, or endorsed by Moodle Pty Ltd.
                 </p>

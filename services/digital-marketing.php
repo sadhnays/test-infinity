@@ -44,7 +44,7 @@ require_once '../includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/digital-marketing.jpg'); ?>" alt="Digital Marketing Services" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Digital+Marketing'">
+                    <img src="<?php echo asset('images/digital-marketing.webp'); ?>" alt="Digital Marketing Services" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Digital+Marketing'">
                     <div class="exp-number-badge">
                         <div class="exp-number">3x</div>
                         <div class="exp-label">Average ROI</div>

@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Logistics IT Solutions | Infinity SoftHub";
-$pageDescription = "Specialized logistics IT solutions including supply chain management, transportation software, warehouse automation, and tracking systems for efficient logistics operations.";
+$pageDescription = "Logistics software and training solutions: supply chain dashboards, transport and warehouse apps, tracking systems and driver/staff training LMS platforms.";
 $pageKeywords = "logistics IT, supply chain, transportation, warehouse management, tracking systems, logistics software";
 $activePage = 'industries';
 

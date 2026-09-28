@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "LearnDash Development Services | WordPress LMS Expert | Infinity SoftHub Technologies";
+$pageTitle = "LearnDash Development | WordPress LMS | Infinity SoftHub";
 $pageDescription = "Professional LearnDash development services. Custom WordPress LMS solutions with LearnDash - course building, quiz systems, certificates & more.";
 $pageKeywords = "LearnDash development, LearnDash WordPress LMS, LearnDash course development, LearnDash customization, WordPress LMS";
 $activePage = 'services';

@@ -1,7 +1,7 @@
 <?php
 // about.php
-$pageTitle = "About Infinity SoftHub | Moodle™ LMS & Full-Stack Software Engineering";
-$pageDescription = 'Founder-led custom Moodle LMS development, AI learning assistants, SQL/Python coding labs, theme design, and full-stack software development.';
+$pageTitle = "About Infinity SoftHub | Moodle LMS & Software Engineering";
+$pageDescription = "Founder-led team building custom Moodle LMS platforms, AI learning assistants, SQL/Python coding labs, LMS themes and full-stack software for clients worldwide.";
 $pageKeywords = "about Infinity SoftHub, Moodle specialist, LMS development, custom Moodle plugins, SQL coding playgrounds, Python coding labs, full-stack software development";
 $activePage = 'about';
 
@@ -44,7 +44,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div class="img-wrapper">
-                        <img src="<?php echo asset('images/about/about_team_collaboration.png'); ?>" alt="Infinity SoftHub Software Engineering Team" class="img-rounded" loading="lazy">
+                        <img src="<?php echo asset('images/about/about_team_collaboration.webp'); ?>" alt="Infinity SoftHub Software Engineering Team" class="img-rounded" loading="lazy">
                         <div class="experience-badge glassmorphic">
                             <div class="exp-number">15+</div>
                             <div class="exp-label">Years IT Expertise</div>
@@ -94,7 +94,7 @@ require_once 'includes/header.php';
             <div class="content-grid-2 mt-3rem">
                 <div class="anim-fade-right" data-aos="fade-right">
                     <div class="img-wrapper">
-                        <img src="<?php echo asset('images/about/about_developers_team.png'); ?>" alt="Infinity SoftHub Software Developers Coding Workstations" class="img-rounded" loading="lazy">
+                        <img src="<?php echo asset('images/about/about_developers_team.webp'); ?>" alt="Infinity SoftHub Software Developers Coding Workstations" class="img-rounded" loading="lazy">
                     </div>
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
@@ -186,7 +186,7 @@ require_once 'includes/header.php';
                 <!-- Project 1 -->
                 <div class="card" data-aos="fade-up">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/about_university_lms.png'); ?>" alt="Scalable Academic LMS Platform Customization" class="card-img" loading="lazy">
+                        <img src="<?php echo asset('images/about/about_university_lms.webp'); ?>" alt="Scalable Academic LMS Platform Customization" class="card-img" loading="lazy">
                         <div class="card-overlay"></div>
                     </div>
                     <div class="card-body">
@@ -202,7 +202,7 @@ require_once 'includes/header.php';
                 <!-- Project 2 -->
                 <div class="card" data-aos="fade-up">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/about_enterprise_training.png'); ?>" alt="Custom Corporate Training Dashboard Portal" class="card-img" loading="lazy">
+                        <img src="<?php echo asset('images/about/about_enterprise_training.webp'); ?>" alt="Custom Corporate Training Dashboard Portal" class="card-img" loading="lazy">
                         <div class="card-overlay"></div>
                     </div>
                     <div class="card-body">
@@ -218,7 +218,7 @@ require_once 'includes/header.php';
                 <!-- Project 3 -->
                 <div class="card" data-aos="fade-up">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/about_medical_training.png'); ?>" alt="Specialized Medical Education Platform" class="card-img" loading="lazy">
+                        <img src="<?php echo asset('images/about/about_medical_training.webp'); ?>" alt="Specialized Medical Education Platform" class="card-img" loading="lazy">
                         <div class="card-overlay"></div>
                     </div>
                     <div class="card-body">
@@ -234,7 +234,7 @@ require_once 'includes/header.php';
                 <!-- Project 4 -->
                 <div class="card" data-aos="fade-up">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/about_product_training.png'); ?>" alt="Ecommerce Customer Portal with Automated Certificates" class="card-img" loading="lazy">
+                        <img src="<?php echo asset('images/about/about_product_training.webp'); ?>" alt="Ecommerce Customer Portal with Automated Certificates" class="card-img" loading="lazy">
                         <div class="card-overlay"></div>
                     </div>
                     <div class="card-body">

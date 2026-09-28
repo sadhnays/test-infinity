@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Custom Moodle™ LMS Development & Integration | Infinity SoftHub";
+$pageTitle = "Custom Moodle LMS Development & Plugins | Infinity SoftHub";
 $pageDescription = "Custom services for Moodle™ LMS. We build custom plugins, interactive SQL/Python coding playgrounds, AI study assistants, and custom theme designs.";
 $pageKeywords = "Moodle plugin development, custom Moodle themes, Moodle developer, SQL coding playgrounds, Python coding labs inside Moodle, LMS customization services";
 $activePage = 'services';
@@ -40,7 +40,7 @@ require_once '../includes/header.php';
                 </div>
             </div>
             <div class="anim-fade-left">
-                <img src="<?php echo asset('images/about/moodle-development.jpg'); ?>" alt="Moodle Development Services" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/0066ff/ffffff?text=Moodle+Development'">
+                <img src="<?php echo asset('images/about/moodle-development.webp'); ?>" alt="Moodle Development Services" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/0066ff/ffffff?text=Moodle+Development'">
             </div>
         </div>
     </div>

@@ -1,13 +1,42 @@
 # Infinity SoftHub Technologies
-> Founder-led custom Moodle™ LMS development, AI-powered learning solutions, interactive coding playgrounds (SQL & Python), plugin engineering, and full-stack software consulting.
 
-## Core Services & Solutions
-- [Moodle LMS Development](https://infinitysofthub.com/services/moodle-all-development.php): Custom plugin development, theme customization, LMS integrations, and cloud deployment.
-- [AI & ML LMS Integration](https://infinitysofthub.com/services/ai-ml-integration.php): RAG-based AI learning assistants, course Q&A, PDF Q&A, and OpenAI/Claude/Gemini API integrations.
-- [Interactive Coding Playgrounds](https://infinitysofthub.com/demos/sql-playground.php): Browser-based SQL and Python coding labs with auto-grading for Moodle & LearnDash.
-- [Cloud & Migration Services](https://infinitysofthub.com/services/cloud-solutions.php): AWS/Azure cloud hosting, zero-downtime LMS migrations, and 24/7 technical support.
+> Founder-led custom LMS development company based in Faridabad, India, delivering remotely worldwide. We build Moodle™, LearnDash and IOMAD learning platforms, custom LMS plugins and themes, interactive SQL & Python coding labs, AI learning assistants (RAG, OpenAI/Claude/Gemini), LMS integrations, migrations and cloud hosting.
 
-## Company Details
+Moodle™ is a registered trademark of Moodle Pty Ltd. Infinity SoftHub is an independent development agency, not affiliated with Moodle Pty Ltd.
+
+## Core LMS services
+- [LMS & Moodle Development](https://infinitysofthub.com/services/moodle-all-development.php): End-to-end custom LMS builds, plugins, themes, integrations and deployment.
+- [Custom Moodle Plugins & Integrations](https://infinitysofthub.com/services/moodle-development.php): Plugin engineering, coding playgrounds, AI study assistants, theme design.
+- [IOMAD Multi-Tenant LMS](https://infinitysofthub.com/services/iomad-multi-tenant-lms.php): Multi-company / multi-tenant training platforms.
+- [Enterprise LMS & Corporate Training](https://infinitysofthub.com/services/lms-solutions.php): SCORM-compliant corporate training, onboarding portals, virtual classrooms.
+- [LearnDash Development](https://infinitysofthub.com/services/learndash-development.php): WordPress LMS builds, quizzes, certificates, course selling.
+- [Mobile e-Learning](https://infinitysofthub.com/services/mobile-elearning.php): Responsive LMS, offline access, microlearning, LMS mobile apps.
+- [AI & ML LMS Integration](https://infinitysofthub.com/services/ai-ml-integration.php): RAG-based learning assistants, course Q&A, PDF Q&A.
+- [Interactive SQL Coding Lab (demo)](https://infinitysofthub.com/demos/sql-playground.php): Browser-based SQL lab with auto-grading for Moodle & LearnDash.
+- [LMS Hosting, Setup & Migration](https://infinitysofthub.com/services/hosting-migration.php): AWS/Azure hosting, upgrades, zero-downtime migrations, backups.
+- [LMS Security](https://infinitysofthub.com/services/security-solutions.php): SSL, data protection, compliance, monitoring.
+
+## Engineering services
+- [Web Development](https://infinitysofthub.com/services/web-development.php)
+- [Mobile App Development](https://infinitysofthub.com/services/mobile-app-development.php)
+- [Cloud Solutions](https://infinitysofthub.com/services/cloud-solutions.php)
+- [UI/UX Design](https://infinitysofthub.com/services/ui-ux-design.php)
+- [E-commerce Development](https://infinitysofthub.com/services/ecommerce-development.php)
+- [Digital Marketing](https://infinitysofthub.com/services/digital-marketing.php)
+
+## Regions served (remote delivery)
+- [USA](https://infinitysofthub.com/services/moodle-lms-development-usa.php), [UK](https://infinitysofthub.com/services/moodle-lms-development-uk.php), [Canada](https://infinitysofthub.com/services/moodle-lms-development-canada.php), [Australia](https://infinitysofthub.com/services/moodle-lms-development-australia.php), [Singapore](https://infinitysofthub.com/services/moodle-lms-development-singapore.php), [Netherlands](https://infinitysofthub.com/services/moodle-lms-development-netherlands.php), [Sweden](https://infinitysofthub.com/services/moodle-lms-development-sweden.php), [Norway](https://infinitysofthub.com/services/moodle-lms-development-norway.php), [Denmark](https://infinitysofthub.com/services/moodle-lms-development-denmark.php), [Poland](https://infinitysofthub.com/services/moodle-lms-development-poland.php), [Spain](https://infinitysofthub.com/services/moodle-lms-development-spain.php), [Brazil](https://infinitysofthub.com/services/moodle-lms-development-brazil.php)
+
+## Proof & resources
+- [Portfolio](https://infinitysofthub.com/portfolio.php)
+- [Case Studies](https://infinitysofthub.com/case-studies.php)
+- [Industries](https://infinitysofthub.com/industry-expertise.php)
+- [Blog](https://infinitysofthub.com/blog/)
+- [About](https://infinitysofthub.com/about.php)
+
+## Contact
 - Website: https://infinitysofthub.com/
-- Headquarter: Faridabad, Haryana, India - 121014
-- Contact: info@infinitysofthub.com | +91-129-2985010
+- Address: Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana 121014, India
+- Email: info@infinitysofthub.com
+- Phone: +91-129-2985010
+- [Contact form](https://infinitysofthub.com/contact.php)

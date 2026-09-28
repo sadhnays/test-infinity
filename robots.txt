@@ -3,12 +3,24 @@
 User-agent: *
 Allow: /
 
-# Disallow admin or private areas (if any)
-Disallow: /admin/
-Disallow: /includes/config.php
-Disallow: /includes/smtps.php
+# Private / non-content areas
+Disallow: /includes/
+Disallow: /vendor/
+Disallow: /seo-toolkit/
 Disallow: /chatbot-lead.php
+Disallow: /404.php
 
-# Sitemap
+# WordPress admin (blog)
+Disallow: /blog/wp-admin/
+Allow: /blog/wp-admin/admin-ajax.php
+Disallow: /blog/?s=
+Disallow: /blog/search/
+
+# Keep CSS/JS/images crawlable so Google can render pages
+Allow: /assets/
+Allow: /blog/wp-content/
+Allow: /blog/wp-includes/
+
+# Sitemaps
 Sitemap: https://infinitysofthub.com/sitemap.xml
 Sitemap: https://infinitysofthub.com/blog/sitemap_index.xml

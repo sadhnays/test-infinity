@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Mobile e-Learning Solutions | Responsive LMS | Infinity SoftHub Technologies";
+$pageTitle = "Mobile e-Learning & Responsive LMS | Infinity SoftHub";
 $pageDescription = "Mobile learning solutions with responsive LMS design, offline access, microlearning, push notifications, and cross-device progress sync.";
 $pageKeywords = "mobile learning solutions, mobile-first eLearning development, responsive LMS, microlearning development, offline learning app";
 $activePage = 'services';

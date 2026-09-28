@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Enterprise LMS & Corporate Training Systems | Infinity SoftHub";
+$pageTitle = "Enterprise LMS & Corporate Training | Infinity SoftHub";
 $pageDescription = "Custom enterprise LMS & corporate training platforms: SCORM compliant systems, employee onboarding portals, virtual classrooms, and LMS solutions.";
 $pageKeywords = "enterprise LMS development, corporate training platform, custom learning management system, SCORM compliant LMS, employee onboarding software, staff training portal, virtual classroom software";
 $activePage = 'services';
@@ -43,7 +43,7 @@ require_once '../includes/header.php';
                 </div>
             </div>
             <div class="anim-fade-left">
-                <img src="<?php echo asset('images/about/lms-solutions.jpg'); ?>" alt="LMS Solutions" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/0066ff/ffffff?text=LMS+Solutions'">
+                <img src="<?php echo asset('images/about/lms-solutions.webp'); ?>" alt="LMS Solutions" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/0066ff/ffffff?text=LMS+Solutions'">
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 <?php
 // what-we-do.php
-$pageTitle = 'What We Do | Infinity SoftHub - Premium IT Services & Digital Solutions';
+$pageTitle = "Our Services | LMS, AI & Software | Infinity SoftHub";
 $pageDescription = 'Discover Infinity SoftHub services - custom software engineering, LMS development, AI/ML integrations, cloud solutions, and mobile app design.';
 $pageKeywords = 'IT services, custom software, LMS development, AI integration, web development, mobile apps, DevOps cloud';
 $activePage = 'what-we-do';
@@ -311,7 +311,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div class="img-wrapper">
-                        <img src="<?php echo asset('images/about/what_we_do_lms.png'); ?>" alt="Infinity SoftHub Moodle IT Development Workspace Design" class="img-rounded" loading="lazy">
+                        <img src="<?php echo asset('images/about/what_we_do_lms.webp'); ?>" alt="Infinity SoftHub Moodle IT Development Workspace Design" class="img-rounded" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -345,7 +345,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="anim-fade-right" data-aos="fade-right">
                     <div class="img-wrapper">
-                        <img src="<?php echo asset('images/about/what_we_do_ai.png'); ?>" alt="Infinity SoftHub AI Cloud Automation Network Layout" class="img-rounded" loading="lazy">
+                        <img src="<?php echo asset('images/about/what_we_do_ai.webp'); ?>" alt="Infinity SoftHub AI Cloud Automation Network Layout" class="img-rounded" loading="lazy">
                     </div>
                 </div>
             </div>

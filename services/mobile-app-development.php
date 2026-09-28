@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Mobile App Development | iOS & Android | Infinity SoftHub";
-$pageDescription = "Mobile app development services - native iOS, Android, and cross-platform apps with seamless integration.";
+$pageDescription = "Mobile app development for iOS, Android and cross-platform (Flutter, Ionic, React Native), including LMS mobile apps, offline learning and API integrations.";
 $pageKeywords = "mobile app development, iOS app, Android app, React Native, cross-platform apps, Flutter";
 $activePage = 'services';
 
@@ -49,7 +49,7 @@ require_once '../includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div style="position:relative;">
-                        <img src="<?php echo asset('images/about/Mobile-app2.jpg'); ?>" alt="Mobile App Development" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Mobile+Apps'">
+                        <img src="<?php echo asset('images/about/Mobile-app2.webp'); ?>" alt="Mobile App Development" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Mobile+Apps'">
                         <div class="exp-number-badge">
                             <div class="exp-number">50+</div>
                             <div class="exp-label">Apps Delivered</div>

@@ -8,3 +8,6 @@ Thumbs.db
 /optimization_log.md
 /pagespeed_desktop.json
 /seo_report.md
+
+# Files parked by cleanup-unused-files.sh
+/_to_delete/

@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Healthcare IT Solutions | Infinity SoftHub";
-$pageDescription = "Specialized healthcare IT solutions including EHR/EMR systems, telemedicine platforms, healthcare analytics, and medical device integration. HIPAA-compliant and secure.";
+$pageDescription = "Healthcare IT and medical training solutions: telemedicine platforms, compliance training LMS, analytics dashboards and secure, HIPAA-aware integrations.";
 $pageKeywords = "healthcare IT, EHR EMR, telemedicine, medical software, healthcare analytics, HIPAA compliance";
 $activePage = 'industries';
 

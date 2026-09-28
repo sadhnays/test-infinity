@@ -43,7 +43,7 @@ require_once '../includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div style="position:relative;">
-                        <img src="<?php echo asset('images/about/ai-lms.jpg'); ?>" alt="AI & ML Integration Services" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=AI+ML+Integration'">
+                        <img src="<?php echo asset('images/about/ai-lms.webp'); ?>" alt="AI & ML Integration Services" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=AI+ML+Integration'">
                         <div class="exp-number-badge">
                             <div class="exp-number">85%</div>
                             <div class="exp-label">Accuracy Rate</div>

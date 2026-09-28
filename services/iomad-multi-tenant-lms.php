@@ -110,7 +110,7 @@ require_once '../includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div style="position:relative;">
-                        <img src="<?php echo asset('images/about/moodle-lms-development.jpg'); ?>" alt="IOMAD multi-tenant LMS dashboard planning for multiple organizations" class="img-rounded" loading="lazy">
+                        <img src="<?php echo asset('images/about/moodle-lms-development.webp'); ?>" alt="IOMAD multi-tenant LMS dashboard planning for multiple organizations" class="img-rounded" loading="lazy">
                         <div class="exp-number-badge">
                             <div class="exp-number"><i class="fas fa-sitemap" aria-hidden="true"></i></div>
                             <div class="exp-label">Tenant-Aware Structure</div>
