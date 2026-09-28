@@ -58,7 +58,8 @@ $siteGraph = [
             '@type' => 'WebSite',
             '@id' => base_url('') . '#website',
             'url' => base_url(''),
-            'name' => SITE_NAME,
+            'name' => 'Infinity SoftHub',
+            'alternateName' => [SITE_NAME, 'infinitysofthub.com'],
             'publisher' => ['@id' => $orgId],
             'inLanguage' => 'en',
         ],
@@ -130,9 +131,12 @@ $breadcrumbSchema = breadcrumb_schema($pageTitle);
     <meta name="twitter:image" content="<?php echo e($ogImage); ?>">
     <meta name="twitter:image:alt" content="Infinity SoftHub Technologies — custom LMS and AI-powered learning solutions">
 
-    <link rel="icon" type="image/svg+xml" href="<?php echo asset('images/infinity-svg.svg?v=3'); ?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo asset('images/favicon.png?v=3'); ?>">
-    <link rel="apple-touch-icon" href="<?php echo asset('images/favicon.png?v=3'); ?>">
+    <!-- Favicons (Google Search needs a square icon, multiple of 48px, on a stable URL) -->
+    <link rel="icon" href="<?php echo base_url('favicon.ico'); ?>" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo asset('images/favicon-96x96.png'); ?>">
+    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo asset('images/favicon-192x192.png'); ?>">
+    <link rel="icon" type="image/svg+xml" href="<?php echo asset('images/infinity-svg.svg'); ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo asset('images/apple-touch-icon.png'); ?>">
     <meta name="format-detection" content="telephone=no">
 
     <!-- Google Tag Manager -->

@@ -127,9 +127,11 @@ function ish_blog_fallback_favicon() {
         return;
     }
     ?>
-    <link rel="icon" type="image/png" sizes="512x512" href="<?php echo esc_url(get_main_site_url('assets/images/favicon.png?v=4')); ?>">
-    <link rel="icon" type="image/svg+xml" href="<?php echo esc_url(get_main_site_url('assets/images/infinity-svg.svg?v=4')); ?>">
-    <link rel="apple-touch-icon" href="<?php echo esc_url(get_main_site_url('assets/images/favicon.png?v=4')); ?>">
+    <link rel="icon" href="<?php echo esc_url(get_main_site_url('favicon.ico')); ?>" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo esc_url(get_main_site_url('assets/images/favicon-96x96.png')); ?>">
+    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo esc_url(get_main_site_url('assets/images/favicon-192x192.png')); ?>">
+    <link rel="icon" type="image/svg+xml" href="<?php echo esc_url(get_main_site_url('assets/images/infinity-svg.svg')); ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_main_site_url('assets/images/apple-touch-icon.png')); ?>">
     <?php
 }
 add_action('wp_head', 'ish_blog_fallback_favicon', 1);
