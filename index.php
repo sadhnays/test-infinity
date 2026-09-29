@@ -1959,6 +1959,28 @@ require_once 'includes/header.php';
                     View Upwork Profile <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                 </a>
             </div>
+            <div class="upwork-reviews" aria-label="Client reviews from Upwork">
+                <figure class="upwork-review">
+                    <div class="upwork-review-stars" aria-label="Rated 5.0 out of 5"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><span>5.0</span></div>
+                    <blockquote>&ldquo;This freelancer helped us save a lot of money, thanks to her advanced knowledge of Moodle plug-ins and customizations which are feasible without purchasing extra plug-ins.&rdquo;</blockquote>
+                    <figcaption><strong>Moodle-based LMS &amp; Branded Mobile App Setup</strong><span>Upwork client &middot; Dec 2025 – May 2026</span></figcaption>
+                </figure>
+                <figure class="upwork-review">
+                    <div class="upwork-review-stars" aria-label="Rated 5.0 out of 5"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><span>5.0</span></div>
+                    <blockquote>&ldquo;Sadhna Yadav is highly skilled and very cooperative. She delivered a secure, user-friendly Moodle payment plugin that met all our needs. Her communication was excellent&hellip;&rdquo;</blockquote>
+                    <figcaption><strong>Moodle Payment Integration Plugin</strong><span>Upwork client &middot; May 2025</span></figcaption>
+                </figure>
+                <figure class="upwork-review">
+                    <div class="upwork-review-stars" aria-label="Rated 5.0 out of 5"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><span>5.0</span></div>
+                    <blockquote>&ldquo;Sadhna was friendly, approachable, and easy to communicate with. She showed great patience and professionalism throughout our short project, ensuring our requests were accommodated smoothly.&rdquo;</blockquote>
+                    <figcaption><strong>Moodle Setup</strong><span>Upwork client &middot; Oct 2025</span></figcaption>
+                </figure>
+                <figure class="upwork-review">
+                    <div class="upwork-review-stars" aria-label="Rated 5.0 out of 5"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><span>5.0</span></div>
+                    <blockquote>&ldquo;Sadhna responded very quickly to our request for a review and went into a lot of detail.&rdquo;</blockquote>
+                    <figcaption><strong>Moodle Project Review</strong><span>Upwork client &middot; Jun 2026</span></figcaption>
+                </figure>
+            </div>
             <p class="upwork-trademark-note">Upwork is a registered trademark of Upwork Global LLC. Infinity SoftHub Technologies is independent and is not endorsed by Upwork.</p>
         </div>
 

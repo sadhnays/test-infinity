@@ -2643,6 +2643,65 @@ img {
     transform: translateY(-2px);
 }
 
+.upwork-reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.upwork-review {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    margin: 0;
+    padding: 1.4rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+}
+
+.upwork-review-stars {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+    color: #f59e0b;
+    font-size: 0.85rem;
+}
+
+.upwork-review-stars span {
+    margin-left: 0.4rem;
+    color: var(--text-dark);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.upwork-review blockquote {
+    margin: 0;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.upwork-review figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin-top: auto;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--border);
+}
+
+.upwork-review figcaption strong {
+    color: var(--text-dark);
+    font-size: 0.85rem;
+}
+
+.upwork-review figcaption span {
+    color: var(--text-gray);
+    font-size: 0.75rem;
+}
+
 .upwork-trademark-note {
     margin: 0.65rem 0 0;
     color: #7b8498;
