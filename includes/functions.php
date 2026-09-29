@@ -96,6 +96,28 @@ function breadcrumb_schema($pageTitle = '') {
     ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 }
 
+// FAQ helpers: one array drives both the visible FAQ and its FAQPage schema.
+function faq_schema_array($faqs) {
+    return [
+        '@type' => 'FAQPage',
+        'mainEntity' => array_map(function ($f) {
+            return [
+                '@type' => 'Question',
+                'name' => $f['q'],
+                'acceptedAnswer' => ['@type' => 'Answer', 'text' => $f['a']],
+            ];
+        }, $faqs),
+    ];
+}
+
+function render_faq($faqs) {
+    $html = '<div class="faq-list">';
+    foreach ($faqs as $f) {
+        $html .= '<details class="faq-item"><summary>' . e($f['q']) . '</summary><p>' . e($f['a']) . '</p></details>';
+    }
+    return $html . '</div>';
+}
+
 // Sanitize GET/POST data
 function sanitize_request_data($data) {
     if (is_array($data)) {

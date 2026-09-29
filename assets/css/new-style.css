@@ -4615,3 +4615,61 @@ section.hero.animated-bg div.container.hero-container div.hero-content div.hero-
 
 
 
+
+/* Shared FAQ accordion (country and service pages) */
+.faq-list {
+    display: grid;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 2.5rem auto 0;
+}
+
+.faq-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.1rem 1.5rem;
+}
+
+.faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    color: var(--text-dark);
+    font-weight: 700;
+    font-size: 1.02rem;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '+';
+    float: right;
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.faq-item[open] summary::after {
+    content: '\2212';
+}
+
+.faq-item p {
+    margin: 0.85rem 0 0;
+    color: var(--text-gray);
+    line-height: 1.7;
+}
+
+.proof-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    color: var(--text-gray);
+    font-size: 0.92rem;
+}
+
+.proof-strip strong {
+    color: var(--text-dark);
+}
