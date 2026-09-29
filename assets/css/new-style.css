@@ -2568,6 +2568,33 @@ img {
     line-height: 1.65;
 }
 
+.upwork-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.5rem;
+    margin: 0.9rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.upwork-stats li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.35rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.upwork-stats strong {
+    color: var(--text-dark);
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+.upwork-stats span {
+    color: var(--text-gray);
+    font-size: 0.8rem;
+}
+
 .upwork-rating {
     display: flex;
     flex-direction: column;
@@ -2646,6 +2673,10 @@ img {
     .upwork-trust-brand,
     .upwork-rating {
         align-items: center;
+    }
+
+    .upwork-stats {
+        justify-content: center;
     }
 
     .upwork-profile-link {
