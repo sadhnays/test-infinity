@@ -43,7 +43,7 @@ require_once '../includes/header.php';
                 </div>
             </div>
             <div class="anim-fade-left">
-                <img src="<?php echo asset('images/about/hosting-migration.webp'); ?>" alt="Moodle Hosting & Migration" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/0066ff/ffffff?text=Hosting+Migration'">
+                <img src="<?php echo asset('images/about/hosting-migration.webp'); ?>" alt="Moodle hosting, upgrade and LMS migration services" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/0066ff/ffffff?text=Hosting+Migration'">
             </div>
         </div>
     </div>

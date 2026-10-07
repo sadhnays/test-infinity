@@ -220,3 +220,50 @@ function ish_blog_menu_item_classes($classes, $menu_item, $args) {
     return $classes;
 }
 add_filter('nav_menu_css_class', 'ish_blog_menu_item_classes', 10, 3);
+
+/**
+ * SEO: keep <title> under ~60 characters.
+ * Rank Math appends " - Infinity Softhub Technologies" to every post title, which
+ * pushes long post titles past what Google shows. Use a short brand suffix, and
+ * drop it entirely when the post title alone is already long.
+ */
+function ish_blog_short_seo_title($title) {
+    $brands = array(' - Infinity Softhub Technologies', ' | Infinity Softhub Technologies', ' - Infinity SoftHub Technologies', ' | Infinity SoftHub Technologies');
+    foreach ($brands as $brand) {
+        $len = strlen($brand);
+        if (strlen($title) > $len && substr($title, -$len) === $brand) {
+            $base = substr($title, 0, -$len);
+            $short = $base . ' | Infinity SoftHub';
+            if (mb_strlen($short) <= 60) {
+                return $short;
+            }
+            return $base;
+        }
+    }
+    return $title;
+}
+add_filter('rank_math/frontend/title', 'ish_blog_short_seo_title', 20);
+
+/**
+ * SEO: meta descriptions for category archives that have no description set
+ * in WordPress (Posts > Categories). A description entered in WordPress wins.
+ */
+function ish_blog_category_meta_description($description) {
+    if (!is_category() || trim((string) $description) !== '') {
+        return $description;
+    }
+    $fallbacks = array(
+        'moodle-lms-development' => 'Guides on Moodle LMS development: custom plugins, themes, IOMAD, upgrades, hosting and integrations from the Infinity SoftHub team.',
+        'ai-in-elearning'        => 'How to use AI in e-learning: AI tutors, course Q&A assistants, RAG chatbots and automation for Moodle and LearnDash platforms.',
+        'mobile-app-development' => 'Articles on mobile app development for learning and business: Ionic, Flutter, React Native and LMS mobile apps.',
+    );
+    $term = get_queried_object();
+    if ($term && isset($term->slug) && isset($fallbacks[$term->slug])) {
+        return $fallbacks[$term->slug];
+    }
+    if ($term && isset($term->name)) {
+        return sprintf('Articles about %s from Infinity SoftHub: practical guides on LMS, Moodle, AI and software development.', $term->name);
+    }
+    return $description;
+}
+add_filter('rank_math/frontend/description', 'ish_blog_category_meta_description', 20);

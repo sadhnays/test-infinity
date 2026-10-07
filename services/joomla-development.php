@@ -73,7 +73,7 @@ require_once '../includes/header.php';
                 </div>
             </div>
             <div class="anim-fade-left overview-image">
-                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&h=500&fit=crop" alt="Joomla Development" style="width:100%; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.2);" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&h=500&fit=crop" alt="Custom Joomla website and extension development" style="width:100%; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.2);" loading="lazy">
             </div>
         </div>
     </div>

@@ -49,7 +49,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div style="position:relative;">
-                        <img src="<?php echo asset('images/Industries-We-Serve/Healthcare.webp'); ?>" alt="Healthcare IT Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Healthcare+IT'">
+                        <img src="<?php echo asset('images/Industries-We-Serve/Healthcare.webp'); ?>" alt="Healthcare LMS for medical training and CME courses" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Healthcare+IT'">
                         <div class="exp-number-badge">
                             <div class="exp-number">200+</div>
                             <div class="exp-label">Healthcare Projects</div>

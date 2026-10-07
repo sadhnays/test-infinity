@@ -216,7 +216,7 @@ require_once '../includes/header.php';
                 </div>
             </div>
             <div class="anim-fade-left overview-image">
-                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&h=500&fit=crop" alt="Mobile e-Learning Solutions" style="width:100%; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.2);" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&h=500&fit=crop" alt="Mobile e-learning app with offline Moodle course access" style="width:100%; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.2);" loading="lazy">
             </div>
         </div>
     </div>

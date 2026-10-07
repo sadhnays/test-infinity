@@ -44,7 +44,7 @@ require_once '../includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/about/ui-ux.webp'); ?>" alt="UI UX Design Services" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=UI+UX+Design'">
+                    <img src="<?php echo asset('images/about/ui-ux.webp'); ?>" alt="UI/UX design for LMS dashboards and web apps" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=UI+UX+Design'">
                     <div class="exp-number-badge">
                         <div class="exp-number">98%</div>
                         <div class="exp-label">Client Satisfaction</div>

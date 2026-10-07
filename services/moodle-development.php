@@ -40,7 +40,7 @@ require_once '../includes/header.php';
                 </div>
             </div>
             <div class="anim-fade-left">
-                <img src="<?php echo asset('images/about/moodle-development.webp'); ?>" alt="Moodle Development Services" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/0066ff/ffffff?text=Moodle+Development'">
+                <img src="<?php echo asset('images/about/moodle-development.webp'); ?>" alt="Custom Moodle plugin and integration development" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/0066ff/ffffff?text=Moodle+Development'">
             </div>
         </div>
     </div>
@@ -172,7 +172,7 @@ require_once '../includes/header.php';
         </div>
         <div class="tech-grid stagger" style="margin-top:3rem;">
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/technology-stack/moodle.svg'); ?>" alt="Moodle" loading="lazy" onerror="this.style.display='none'">
+                <img src="<?php echo asset('images/technology-stack/moodle.svg'); ?>" alt="Moodle LMS logo" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="tech-logo" data-aos="zoom-in">
                 <span class="tech-logo-label"><i class="fab fa-php" aria-hidden="true"></i>PHP</span>
@@ -184,16 +184,16 @@ require_once '../includes/header.php';
                 <span class="tech-logo-label"><i class="fab fa-js" aria-hidden="true"></i>JavaScript</span>
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/technology-stack/react.svg'); ?>" alt="React" loading="lazy" onerror="this.style.display='none'">
+                <img src="<?php echo asset('images/technology-stack/react.svg'); ?>" alt="React logo" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/technology-stack/python.svg'); ?>" alt="Python" loading="lazy" onerror="this.style.display='none'">
+                <img src="<?php echo asset('images/technology-stack/python.svg'); ?>" alt="Python logo" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/technology-stack/amazon-web-services.svg'); ?>" alt="AWS" loading="lazy" onerror="this.style.display='none'">
+                <img src="<?php echo asset('images/technology-stack/amazon-web-services.svg'); ?>" alt="Amazon Web Services (AWS) logo" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="tech-logo" data-aos="zoom-in">
-                <img src="<?php echo asset('images/technology-stack/microsoft-azure.svg'); ?>" alt="Azure" loading="lazy" onerror="this.style.display='none'">
+                <img src="<?php echo asset('images/technology-stack/microsoft-azure.svg'); ?>" alt="Microsoft Azure logo" loading="lazy" onerror="this.style.display='none'">
             </div>
         </div>
     </div>

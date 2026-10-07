@@ -1,7 +1,7 @@
 <?php
 // industry-expertise.php
 $pageTitle = "Industries We Serve | LMS & Software | Infinity SoftHub";
-$pageDescription = "LMS, e-learning and custom software for education, healthcare, finance, retail, manufacturing, logistics, automotive and government organizations worldwide.";
+$pageDescription = "LMS, e-learning and custom software for education, healthcare, finance, retail, manufacturing, logistics and automotive organizations.";
 $pageKeywords = "Industry Expertise, Healthcare, Finance, Retail, Manufacturing, Education, Logistics, IT solutions";
 $activePage = 'industries';
 
@@ -172,7 +172,7 @@ require_once 'includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/industry/it-opt.webp'); ?>" alt="IT & Software Training Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=IT+Training'">
+                    <img src="<?php echo asset('images/industry/it-opt.webp'); ?>" alt="Coding labs and LMS for IT and software training" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=IT+Training'">
                     <div class="exp-number-badge">
                         <div class="exp-number">95%</div>
                         <div class="exp-label">Completion Rate</div>
@@ -213,7 +213,7 @@ require_once 'includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/industry/education-opt.webp'); ?>" alt="Education & E-Learning Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Education'">
+                    <img src="<?php echo asset('images/industry/education-opt.webp'); ?>" alt="Moodle LMS for schools, colleges and e-learning providers" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Education'">
                     <div class="exp-number-badge">
                         <div class="exp-number">15K+</div>
                         <div class="exp-label">Active Learners</div>
@@ -249,7 +249,7 @@ require_once 'includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/industry/corporate-opt.webp'); ?>" alt="Corporate Training Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Corporate+Training'">
+                    <img src="<?php echo asset('images/industry/corporate-opt.webp'); ?>" alt="Corporate training LMS and onboarding portals" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Corporate+Training'">
                     <div class="exp-number-badge">
                         <div class="exp-number">60%</div>
                         <div class="exp-label">Faster Onboarding</div>
@@ -290,7 +290,7 @@ require_once 'includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/industry/healthcare-opt.webp'); ?>" alt="Healthcare IT Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Healthcare'">
+                    <img src="<?php echo asset('images/industry/healthcare-opt.webp'); ?>" alt="Healthcare LMS for medical and CME training" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Healthcare'">
                     <div class="exp-number-badge">
                         <div class="exp-number">100%</div>
                         <div class="exp-label">HIPAA Compliant</div>
@@ -331,7 +331,7 @@ require_once 'includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/industry/manufacturing-opt.webp'); ?>" alt="Manufacturing IT Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Manufacturing'">
+                    <img src="<?php echo asset('images/industry/manufacturing-opt.webp'); ?>" alt="Manufacturing workforce training LMS" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Manufacturing'">
                     <div class="exp-number-badge">
                         <div class="exp-number">25%</div>
                         <div class="exp-label">Throughput Increase</div>
@@ -372,7 +372,7 @@ require_once 'includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/industry/finance-opt.webp'); ?>" alt="Banking & Finance Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Finance'">
+                    <img src="<?php echo asset('images/industry/finance-opt.webp'); ?>" alt="Compliance training LMS for banking and finance" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Finance'">
                     <div class="exp-number-badge">
                         <div class="exp-number">99.9%</div>
                         <div class="exp-label">Uptime & Security</div>
@@ -413,7 +413,7 @@ require_once 'includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/industry/retail-opt.webp'); ?>" alt="Retail IT Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Retail'">
+                    <img src="<?php echo asset('images/industry/retail-opt.webp'); ?>" alt="Retail staff training LMS" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Retail'">
                     <div class="exp-number-badge">
                         <div class="exp-number">40%</div>
                         <div class="exp-label">Conversion Boost</div>
@@ -454,7 +454,7 @@ require_once 'includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/industry/logistics-opt.webp'); ?>" alt="Logistics Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Logistics'">
+                    <img src="<?php echo asset('images/industry/logistics-opt.webp'); ?>" alt="Logistics driver and staff training LMS" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Logistics'">
                     <div class="exp-number-badge">
                         <div class="exp-number">30%</div>
                         <div class="exp-label">Route Efficiency</div>
@@ -495,7 +495,7 @@ require_once 'includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/industry/automotive-opt.webp'); ?>" alt="Automotive Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Automotive'">
+                    <img src="<?php echo asset('images/industry/automotive-opt.webp'); ?>" alt="Automotive dealer and technician training LMS" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Automotive'">
                     <div class="exp-number-badge">
                         <div class="exp-number">90%</div>
                         <div class="exp-label">Effort Reduced</div>
@@ -531,7 +531,7 @@ require_once 'includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/industry/government-opt.webp'); ?>" alt="Government & NGO Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Government'">
+                    <img src="<?php echo asset('images/industry/government-opt.webp'); ?>" alt="LMS for government and NGO training programs" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/062B6F/ffffff?text=Government'">
                     <div class="exp-number-badge">
                         <div class="exp-number">100%</div>
                         <div class="exp-label">Data Encryption</div>

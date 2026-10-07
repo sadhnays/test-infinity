@@ -1,7 +1,7 @@
 <?php
 // services/moodle-lms-development-usa.php
-$pageTitle = "Moodle Developer USA | Custom LMS Development | Infinity SoftHub";
-$pageDescription = "Top Rated Moodle developers for US schools, universities and companies: custom plugins, SSO, payment integration, branded mobile apps, upgrades and AWS hosting.";
+$pageTitle = "Moodle Developer USA | Custom LMS | Infinity SoftHub";
+$pageDescription = "Top Rated Moodle developers for US schools and companies: custom plugins, SSO, payments, branded mobile apps, upgrades and AWS hosting.";
 $pageKeywords = "Moodle developer USA, Moodle development company USA, custom Moodle plugins, Moodle SSO integration, Moodle mobile app, LearnDash developer USA";
 $activePage = 'services';
 

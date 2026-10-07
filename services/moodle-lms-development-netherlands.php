@@ -1,6 +1,6 @@
 <?php
 // services/moodle-lms-development-netherlands.php
-$pageTitle = "Custom Moodle™ LMS Developer Netherlands | Infinity SoftHub";
+$pageTitle = "Moodle™ LMS Developer Netherlands | Infinity SoftHub";
 $pageDescription = "Custom services for Moodle™ LMS in the Netherlands. We build custom Moodle™ plugins, themes, and secure GDPR-compliant cloud portals.";
 $pageKeywords = "Custom Moodle Developer Netherlands, Moodle plugin development Amsterdam, LMS customization Netherlands, GDPR compliant LMS, e-learning developer Netherlands";
 $activePage = 'services';

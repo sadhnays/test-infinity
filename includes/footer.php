@@ -2,7 +2,7 @@
     <footer class="footer" id="contact">
         <div class="container footer-container">
             <div class="footer-col">
-                <img src="<?php echo asset('images/ish-logo.svg'); ?>" alt="Infinity SoftHub" style="height:45px; margin-bottom:15px; filter:brightness(0) invert(1);">
+                <img src="<?php echo asset('images/ish-logo.svg'); ?>" alt="Infinity SoftHub Technologies - Moodle and LMS development company logo" style="height:45px; margin-bottom:15px; filter:brightness(0) invert(1);">
                 <p>Founder-led custom LMS development, AI-powered learning tools, coding labs, integrations, and cloud deployment for organizations worldwide.</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/infinitysofthub" target="_blank" rel="noopener noreferrer" aria-label="Infinity SoftHub on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>

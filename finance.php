@@ -49,7 +49,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div style="position:relative;">
-                        <img src="<?php echo asset('images/Industries-We-Serve/Finance.webp'); ?>" alt="Financial Services IT Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Financial+IT'">
+                        <img src="<?php echo asset('images/Industries-We-Serve/Finance.webp'); ?>" alt="Compliance training LMS and software for banks and financial services" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Financial+IT'">
                         <div class="exp-number-badge">
                             <div class="exp-number">150+</div>
                             <div class="exp-label">Financial Projects</div>

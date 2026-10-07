@@ -1,7 +1,7 @@
 <?php
 // our-locations.php
 $pageTitle = "Remote LMS Delivery Worldwide | Infinity SoftHub";
-$pageDescription = "Based in Faridabad, India, Infinity SoftHub remotely delivers Moodle, LMS, AI and software development to clients in the USA, UK, Canada, Australia and Europe.";
+$pageDescription = "Based in Faridabad, India, we deliver Moodle, LMS, AI and software development remotely to clients in the USA, UK, Canada, Australia and Europe.";
 $pageKeywords = 'Infinity SoftHub Faridabad, global LMS development, remote Moodle developers, countries we serve';
 $activePage = 'locations';
 $pageSchema = json_encode([

@@ -1,7 +1,7 @@
 <?php
 // index.php - Homepage
 $pageTitle = "Custom LMS & AI Learning Solutions | Infinity SoftHub";
-$pageDescription = "Founder-led LMS development for organizations worldwide: custom Moodle plugins, SQL and Python coding labs, AI learning assistants, integrations and hosting.";
+$pageDescription = "Custom LMS development worldwide: Moodle plugins, IOMAD, SQL and Python coding labs, AI learning assistants, integrations and hosting.";
 $pageKeywords = "custom LMS development, corporate training platform, virtual classroom software, SCORM compliant LMS, LearnDash developer, SQL coding lab, AI learning assistant, employee onboarding portal";
 $activePage = 'home';
 
@@ -346,7 +346,7 @@ require_once 'includes/header.php';
                 <div class="hero-right-visual" data-aos="fade-left" data-aos-delay="200">
                     <div class="visual-glow"></div>
                     <div class="visual-image-wrapper">
-                        <img src="<?php echo asset('images/hero_tech_visual.webp'); ?>" alt="Infinity SoftHub Technology Solutions" class="hero-premium-image">
+                        <img src="<?php echo asset('images/hero_tech_visual.webp'); ?>" alt="Custom Moodle LMS and AI learning platform development" class="hero-premium-image" width="1024" height="1024" fetchpriority="high" decoding="async">
                     </div>
                     <!-- Floating glassmorphic cards -->
                     <div class="floating-glass-card card-top">
@@ -1515,7 +1515,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('healthcare.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/Industries-We-Serve/Healthcare.webp'); ?>" alt="Healthcare Industry" class="service-image" loading="lazy">
+                            <img src="<?php echo asset('images/Industries-We-Serve/Healthcare.webp'); ?>" alt="Healthcare LMS and medical training solutions" class="service-image" loading="lazy">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1532,7 +1532,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('finance.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/Industries-We-Serve/Finance.webp'); ?>" alt="Finance Industry" class="service-image" loading="lazy">
+                            <img src="<?php echo asset('images/Industries-We-Serve/Finance.webp'); ?>" alt="Finance compliance training LMS" class="service-image" loading="lazy">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1549,7 +1549,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('retail.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/Industries-We-Serve/Retail.webp'); ?>" alt="Retail Industry" class="service-image" loading="lazy">
+                            <img src="<?php echo asset('images/Industries-We-Serve/Retail.webp'); ?>" alt="Retail staff training LMS and e-commerce" class="service-image" loading="lazy">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1566,7 +1566,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('manufacturing.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/Industries-We-Serve/Manufacturing.webp'); ?>" alt="Manufacturing Industry" class="service-image" loading="lazy">
+                            <img src="<?php echo asset('images/Industries-We-Serve/Manufacturing.webp'); ?>" alt="Manufacturing workforce training LMS" class="service-image" loading="lazy">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1583,7 +1583,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('education.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/Industries-We-Serve/Education.webp'); ?>" alt="Education Industry" class="service-image" loading="lazy">
+                            <img src="<?php echo asset('images/Industries-We-Serve/Education.webp'); ?>" alt="Moodle LMS for schools and universities" class="service-image" loading="lazy">
                             <div class="service-badge">Key Focus</div>
                         </div>
                         <div class="service-card-content">
@@ -1601,7 +1601,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('logistics.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="500">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/Industries-We-Serve/Logistics.webp'); ?>" alt="Logistics Industry" class="service-image" loading="lazy">
+                            <img src="<?php echo asset('images/Industries-We-Serve/Logistics.webp'); ?>" alt="Logistics training and software solutions" class="service-image" loading="lazy">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -2009,22 +2009,22 @@ require_once 'includes/header.php';
                     </div>
                     <!-- Duplicate set for seamless loop -->
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="CarDekho" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="" aria-hidden="true" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="Datasosi" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="" aria-hidden="true" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Jakson Group" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="" aria-hidden="true" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Maruti Suzuki" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="" aria-hidden="true" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="XD Academy" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="" aria-hidden="true" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Orient Electric" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="" aria-hidden="true" loading="lazy" width="160" height="60">
                     </div>
                 </div>
             </div>

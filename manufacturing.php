@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Manufacturing IT Solutions | Infinity SoftHub";
-$pageDescription = "Specialized manufacturing IT solutions including smart factory systems, IoT integration, supply chain management, and quality control software for Industry 4.0.";
+$pageDescription = "Manufacturing IT solutions: smart factory systems, IoT integration, supply chain software, quality control and workforce training LMS.";
 $pageKeywords = "manufacturing IT, Industry 4.0, smart factory, IoT, supply chain, quality control";
 $activePage = 'industries';
 
@@ -49,7 +49,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div style="position:relative;">
-                        <img src="<?php echo asset('images/Industries-We-Serve/Manufacturing.webp'); ?>" alt="Manufacturing IT Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Manufacturing+IT'">
+                        <img src="<?php echo asset('images/Industries-We-Serve/Manufacturing.webp'); ?>" alt="Manufacturing workforce training LMS and factory software" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Manufacturing+IT'">
                         <div class="exp-number-badge">
                             <div class="exp-number">120+</div>
                             <div class="exp-label">Manufacturing Projects</div>

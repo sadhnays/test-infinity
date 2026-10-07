@@ -73,7 +73,7 @@ require_once '../includes/header.php';
                 </div>
             </div>
             <div class="anim-fade-left overview-image">
-                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=500&fit=crop" alt="LearnDash Development" style="width:100%; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.2);" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=500&fit=crop" alt="LearnDash WordPress LMS development and customization" style="width:100%; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.2);" loading="lazy">
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 <?php
-$pageTitle = 'Contact Us | Infinity SoftHub - Enterprise IT Solutions';
-$pageDescription = 'Contact Infinity SoftHub for expert IT consulting, digital transformation, and enterprise solutions. Get in touch with our team today.';
-$pageKeywords = 'Contact Infinity SoftHub, IT consulting contact, enterprise solutions, digital transformation inquiry';
+$pageTitle = 'Contact Us | Moodle & LMS Development | Infinity SoftHub';
+$pageDescription = 'Contact Infinity SoftHub for Moodle, IOMAD, LearnDash and custom LMS development. Share your brief and get a reply within 24 hours.';
+$pageKeywords = 'Contact Infinity SoftHub, Moodle developer contact, LMS development quote, hire Moodle developer';
 $activePage = 'contact';
 
 require_once 'includes/config.php';
@@ -107,6 +107,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 // Regenerate CSRF token after submission
                 $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+
+                // Send successful submissions to the Thank You page (Post/Redirect/Get,
+                // also lets analytics track conversions on /thank-you.php)
+                if ($success) {
+                    $_SESSION['contact_thanks_name'] = $name;
+                    header('Location: ' . base_url('thank-you.php'), true, 303);
+                    exit;
+                }
             }
         }
     }

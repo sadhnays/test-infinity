@@ -1,7 +1,7 @@
 <?php
 // services/moodle-lms-development-uk.php
-$pageTitle = "Moodle Developer UK | Custom LMS Development | Infinity SoftHub";
-$pageDescription = "Top Rated Moodle developers for UK colleges, training providers and businesses: custom plugins, Microsoft 365 SSO, upgrades, IOMAD, UK hosting and WCAG fixes.";
+$pageTitle = "Moodle Developer UK | Custom LMS | Infinity SoftHub";
+$pageDescription = "Top Rated Moodle developers for UK colleges and businesses: custom plugins, Microsoft 365 SSO, upgrades, IOMAD, UK hosting and WCAG fixes.";
 $pageKeywords = "Moodle developer UK, Moodle development company UK, Moodle upgrade UK, custom Moodle plugins UK, IOMAD UK, Moodle hosting UK";
 $activePage = 'services';
 

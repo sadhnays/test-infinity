@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "E-commerce Development Services | Infinity SoftHub";
-$pageDescription = "Custom e-commerce development with WooCommerce, Magento, Shopify and bespoke platforms: online stores, marketplaces, payment integrations and course selling.";
+$pageDescription = "E-commerce development with WooCommerce, Magento, Shopify and custom platforms: online stores, marketplaces, payments and course selling.";
 $pageKeywords = "e-commerce development, online store, WooCommerce, Magento, Shopify, custom e-commerce, marketplace development";
 $activePage = 'services';
 require_once '../includes/header.php';
@@ -73,7 +73,7 @@ require_once '../includes/header.php';
                 </div>
             </div>
             <div class="anim-fade-left overview-image">
-                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=500&fit=crop" alt="E-commerce Development" style="width:100%; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.2);" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=500&fit=crop" alt="WooCommerce and custom e-commerce store development" style="width:100%; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.2);" loading="lazy">
             </div>
         </div>
     </div>

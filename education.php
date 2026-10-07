@@ -1,6 +1,6 @@
 <?php
-$pageTitle = "Education LMS & Virtual Classroom Solutions | Infinity SoftHub";
-$pageDescription = "Education technology for schools, universities and training providers: virtual classrooms, higher-ed LMS, online exams and distance learning platforms.";
+$pageTitle = "Education LMS & Virtual Classrooms | Infinity SoftHub";
+$pageDescription = "LMS and e-learning for schools, universities and training providers: virtual classrooms, online exams and distance learning platforms.";
 $pageKeywords = "virtual classroom software, distance learning platform, higher education LMS, K12 learning management system, online exam software, virtual school portal";
 $activePage = 'industries';
 
@@ -49,7 +49,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div style="position:relative;">
-                        <img src="<?php echo asset('images/Industries-We-Serve/Education.webp'); ?>" alt="Education IT Solutions" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Education+IT'">
+                        <img src="<?php echo asset('images/Industries-We-Serve/Education.webp'); ?>" alt="Moodle LMS and virtual classroom solutions for schools and universities" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Education+IT'">
                         <div class="exp-number-badge">
                             <div class="exp-number">100+</div>
                             <div class="exp-label">Education Projects</div>
