@@ -67,6 +67,9 @@ DirectoryIndex index.php index.html
     RedirectMatch 301 ^/contact-us\.php$ https://infinitysofthub.com/contact.php
     RedirectMatch 301 ^/contact\.html$ https://infinitysofthub.com/contact.php
 
+    # Duplicate blog post removed Oct 2026 (merged into the main SSO guide)
+    RedirectMatch 301 ^/blog/moodle-sso-integration-guide-openid-connect-oauth-2-0-saml/?$ https://infinitysofthub.com/blog/2026/09/15/moodle-sso-integration/
+
     # Stray folders from an old site download
     RedirectMatch 301 ^/(signals|schema\.org)(/.*)?$ https://infinitysofthub.com/
 </IfModule>
