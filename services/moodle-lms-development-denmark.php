@@ -5,7 +5,7 @@ $pageDescription = "Custom services for Moodle™ LMS in Denmark. We build custo
 $pageKeywords = "Custom Moodle Developer Denmark, Moodle plugin development Copenhagen, LMS customization Denmark, GDPR compliant LMS, e-learning developer Denmark";
 $activePage = 'services';
 
-// Add Service Schema for Google Rich Snippets (Rating Stars)
+// Service schema
 $pageSchema = '{
     "@context": "https://schema.org",
     "@type": "Service",
@@ -20,13 +20,6 @@ $pageSchema = '{
     "areaServed": {
         "@type": "Country",
         "name": "DK"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "13",
-        "bestRating": "5",
-        "worstRating": "1"
     }
 }';
 

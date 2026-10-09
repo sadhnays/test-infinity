@@ -5,7 +5,7 @@ $pageDescription = "Custom services for Moodle™ LMS in Brazil. We build custom
 $pageKeywords = "Custom Moodle Developer Brazil, Moodle plugin development Sao Paulo, LMS customization Brazil, LGPD compliant LMS, e-learning developer Brazil";
 $activePage = 'services';
 
-// Add Service Schema for Google Rich Snippets (Rating Stars)
+// Service schema
 $pageSchema = '{
     "@context": "https://schema.org",
     "@type": "Service",
@@ -20,13 +20,6 @@ $pageSchema = '{
     "areaServed": {
         "@type": "Country",
         "name": "BR"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "18",
-        "bestRating": "5",
-        "worstRating": "1"
     }
 }';
 

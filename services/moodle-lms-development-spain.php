@@ -5,7 +5,7 @@ $pageDescription = "Custom services for Moodle™ LMS in Spain. We build custom 
 $pageKeywords = "Custom Moodle Developer Spain, Moodle plugin development Madrid, LMS customization Spain, GDPR compliant LMS, e-learning developer Spain";
 $activePage = 'services';
 
-// Add Service Schema for Google Rich Snippets (Rating Stars)
+// Service schema
 $pageSchema = '{
     "@context": "https://schema.org",
     "@type": "Service",
@@ -20,13 +20,6 @@ $pageSchema = '{
     "areaServed": {
         "@type": "Country",
         "name": "ES"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "14",
-        "bestRating": "5",
-        "worstRating": "1"
     }
 }';
 

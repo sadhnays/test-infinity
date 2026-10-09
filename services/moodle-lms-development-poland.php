@@ -5,7 +5,7 @@ $pageDescription = "Custom services for Moodle™ LMS in Poland. We build custom
 $pageKeywords = "Custom Moodle Developer Poland, Moodle plugin development Warsaw, LMS customization Poland, GDPR compliant LMS, e-learning developer Poland";
 $activePage = 'services';
 
-// Add Service Schema for Google Rich Snippets (Rating Stars)
+// Service schema
 $pageSchema = '{
     "@context": "https://schema.org",
     "@type": "Service",
@@ -20,13 +20,6 @@ $pageSchema = '{
     "areaServed": {
         "@type": "Country",
         "name": "PL"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "12",
-        "bestRating": "5",
-        "worstRating": "1"
     }
 }';
 

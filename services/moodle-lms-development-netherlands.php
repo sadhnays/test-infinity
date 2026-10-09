@@ -5,7 +5,7 @@ $pageDescription = "Custom services for Moodle™ LMS in the Netherlands. We bui
 $pageKeywords = "Custom Moodle Developer Netherlands, Moodle plugin development Amsterdam, LMS customization Netherlands, GDPR compliant LMS, e-learning developer Netherlands";
 $activePage = 'services';
 
-// Add Service Schema for Google Rich Snippets (Rating Stars)
+// Service schema
 $pageSchema = '{
     "@context": "https://schema.org",
     "@type": "Service",
@@ -20,13 +20,6 @@ $pageSchema = '{
     "areaServed": {
         "@type": "Country",
         "name": "NL"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "17",
-        "bestRating": "5",
-        "worstRating": "1"
     }
 }';
 
