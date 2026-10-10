@@ -174,7 +174,7 @@ function send_lead_thank_you($name, $email) {
             </div>
             <div class="footer">
                 <p>Infinity SoftHub Technologies</p>
-                 <p>Email: info@infinitysofthub.com | Phone: +91-129-2985010</p>
+                 <p>Email: info@infinitysofthub.com | Phone: +91-8130940062</p>
             </div>
         </div>
     </body>
