@@ -1984,51 +1984,28 @@ require_once 'includes/header.php';
             <p class="upwork-trademark-note">Upwork is a registered trademark of Upwork Global LLC. Infinity SoftHub Technologies is independent and is not endorsed by Upwork.</p>
         </div>
 
-        <!-- Infinite Auto-Scroll Marquee -->
-        <div class="logo-marquee-wrapper" data-aos="fade-up" data-aos-delay="100">
-            <div class="logo-marquee">
-                <div class="logo-marquee-track">
-                    <!-- First set -->
-                    <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="CarDekho logo" loading="lazy" width="160" height="60">
-                    </div>
-                    <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="Datasosi logo" loading="lazy" width="160" height="60">
-                    </div>
-                    <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Jakson Group logo" loading="lazy" width="160" height="60">
-                    </div>
-                    <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Maruti Suzuki logo" loading="lazy" width="160" height="60">
-                    </div>
-                    <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="XD Academy logo" loading="lazy" width="160" height="60">
-                    </div>
-                    <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Orient Electric logo" loading="lazy" width="160" height="60">
-                    </div>
-                    <!-- Duplicate set for seamless loop -->
-                    <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="CarDekho client logo" loading="lazy" width="160" height="60">
-                    </div>
-                    <div class="marquee-logo-item">
+        <!-- Clients we have worked with -->
+        <div class="container">
+            <div class="client-strip" data-aos="fade-up" data-aos-delay="100">
+                <p class="client-strip-title">Clients we have worked with</p>
+                <div class="client-strip-row">
+                    <div class="client-strip-item">
                         <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="Datasosi client logo" loading="lazy" width="160" height="60">
                     </div>
-                    <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Jakson Group client logo" loading="lazy" width="160" height="60">
-                    </div>
-                    <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Maruti Suzuki client logo" loading="lazy" width="160" height="60">
-                    </div>
-                    <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="XD Academy client logo" loading="lazy" width="160" height="60">
-                    </div>
-                    <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Orient Electric client logo" loading="lazy" width="160" height="60">
-                    </div>
+                    <div class="client-strip-item client-strip-name">Snak Consultancy</div>
+                    <div class="client-strip-item client-strip-name">Cherish Club</div>
+                    <div class="client-strip-item client-strip-name">Growth Source</div>
                 </div>
             </div>
         </div>
+        <style>
+            .client-strip { margin: 2.5rem auto 1rem; text-align: center; }
+            .client-strip-title { font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text-gray, #6b7280); margin-bottom: 1rem; }
+            .client-strip-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem; }
+            .client-strip-item { min-width: 160px; height: 64px; padding: 0 1.25rem; display: flex; align-items: center; justify-content: center; background: #fff; border: 1px solid rgba(0,0,0,.08); border-radius: 12px; }
+            .client-strip-item img { max-height: 44px; width: auto; }
+            .client-strip-name { font-weight: 700; font-size: 1.05rem; color: #1f2937; }
+        </style>
 
         <div class="container">
             <div class="trust-stats-bar" data-aos="fade-up" data-aos-delay="200">
