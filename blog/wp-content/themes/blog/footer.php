@@ -66,5 +66,6 @@
 </footer>
 
 <?php wp_footer(); ?>
+<!--email_on-->
 </body>
 </html>

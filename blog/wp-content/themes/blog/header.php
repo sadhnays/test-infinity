@@ -14,6 +14,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<!--email_off-->
 <?php wp_body_open(); ?>
 
 <a class="skip-link screen-reader-text" href="#main-content"><?php esc_html_e('Skip to content', 'ish-blog-theme'); ?></a>

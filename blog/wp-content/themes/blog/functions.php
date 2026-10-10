@@ -309,3 +309,22 @@ add_filter('the_content', function ($html) {
         return ish_blog_webp_url($m[1]);
     }, $html);
 }, 20);
+
+/**
+ * Blog home has no featured image, so Rank Math outputs no og:image there.
+ * Add the site's default share image so LinkedIn/WhatsApp previews show a picture.
+ */
+function ish_blog_home_og_image() {
+    if (!is_home() || is_paged()) {
+        return;
+    }
+    $img = get_main_site_url('assets/images/og-image.png');
+    ?>
+    <meta property="og:image" content="<?php echo esc_url($img); ?>">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Infinity SoftHub blog: Moodle, LMS and AI guides">
+    <meta name="twitter:image" content="<?php echo esc_url($img); ?>">
+    <?php
+}
+add_action('wp_head', 'ish_blog_home_og_image', 30);
