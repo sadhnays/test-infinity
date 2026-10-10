@@ -39,7 +39,7 @@ require_once __DIR__ . '/includes/header.php';
             <div><strong>3. Quick call (optional)</strong>A short video call to agree scope, timeline and budget.</div>
         </div>
 
-        <p>Need a faster answer? Email <a href="mailto:info@infinitysofthub.com">info@infinitysofthub.com</a> or call <a href="tel:+918130940062">+91-8130940062</a>.</p>
+        <p>Need a faster answer? Email <a href="mailto:info@infinitysofthub.com">info@infinitysofthub.com</a> or call <a href="tel:+911292985010">+91-129-2985010</a>.</p>
 
         <h2 style="margin-top:2.5rem;">While you wait</h2>
         <div class="thanks-links">

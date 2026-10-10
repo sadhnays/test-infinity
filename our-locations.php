@@ -10,7 +10,7 @@ $pageSchema = json_encode([
     'name' => 'Infinity SoftHub Technologies',
     'url' => 'https://infinitysofthub.com/',
     'email' => 'info@infinitysofthub.com',
-    'telephone' => '+91-8130940062',
+    'telephone' => '+91-129-2985010',
     'address' => [
         '@type' => 'PostalAddress',
         'streetAddress' => 'Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar',
@@ -301,7 +301,7 @@ require_once 'includes/header.php';
                 <div class="value-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
                     <h3>Call Us</h3>
-                    <p><a href="tel:+918130940062">+91-8130940062</a></p>
+                    <p><a href="tel:+911292985010">+91-129-2985010</a></p>
                 </div>
 
                 <div class="value-card" data-aos="fade-up" data-aos-delay="200">

@@ -37,7 +37,7 @@
             <div class="footer-col">
                 <h4>Contact Us</h4>
                 <p><i class="fas fa-map-marker-alt"></i> Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014</p>
-                <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+918130940062">+91-8130940062</a></p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+911292985010">+91-129-2985010</a></p>
                 <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@infinitysofthub.com">info@infinitysofthub.com</a></p>
             </div>
         </div>
