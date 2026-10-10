@@ -267,3 +267,45 @@ function ish_blog_category_meta_description($description) {
     return $description;
 }
 add_filter('rank_math/frontend/description', 'ish_blog_category_meta_description', 20);
+
+/**
+ * Performance/SEO: serve the compressed WebP copy of an uploaded JPG/PNG
+ * when one exists next to it (image.jpg -> image.jpg.webp). Keeps every
+ * image on blog pages under 100 KB without touching the media library.
+ */
+function ish_blog_webp_url($url) {
+    if (!is_string($url) || !preg_match('~\.(jpe?g|png)$~i', $url)) {
+        return $url;
+    }
+    static $uploads = null;
+    if ($uploads === null) {
+        $uploads = wp_get_upload_dir();
+    }
+    if (empty($uploads['baseurl']) || strpos($url, $uploads['baseurl']) !== 0) {
+        return $url;
+    }
+    $path = $uploads['basedir'] . substr($url, strlen($uploads['baseurl']));
+    return file_exists($path . '.webp') ? $url . '.webp' : $url;
+}
+
+function ish_blog_webp_srcset($srcset) {
+    return preg_replace_callback('~(https?://[^\s,]+\.(?:jpe?g|png))(\s)~i', function ($m) {
+        return ish_blog_webp_url($m[1]) . $m[2];
+    }, $srcset . ' ');
+}
+
+add_filter('wp_get_attachment_image_attributes', function ($attr) {
+    if (!empty($attr['src'])) {
+        $attr['src'] = ish_blog_webp_url($attr['src']);
+    }
+    if (!empty($attr['srcset'])) {
+        $attr['srcset'] = trim(ish_blog_webp_srcset($attr['srcset']));
+    }
+    return $attr;
+}, 20);
+
+add_filter('the_content', function ($html) {
+    return preg_replace_callback('~(https?://[^"\'\s,]+/wp-content/uploads/[^"\'\s,]+\.(?:jpe?g|png))~i', function ($m) {
+        return ish_blog_webp_url($m[1]);
+    }, $html);
+}, 20);

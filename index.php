@@ -2009,22 +2009,22 @@ require_once 'includes/header.php';
                     </div>
                     <!-- Duplicate set for seamless loop -->
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="" aria-hidden="true" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="CarDekho client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="" aria-hidden="true" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="Datasosi client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="" aria-hidden="true" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Jakson Group client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="" aria-hidden="true" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Maruti Suzuki client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="" aria-hidden="true" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="XD Academy client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="" aria-hidden="true" loading="lazy" width="160" height="60">
+                        <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Orient Electric client logo" loading="lazy" width="160" height="60">
                     </div>
                 </div>
             </div>

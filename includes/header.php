@@ -247,7 +247,7 @@ $breadcrumbSchema = breadcrumb_schema($pageTitle);
     <!-- Loading Screen with Logo -->
     <div class="loader-wrapper" id="loaderWrapper" aria-hidden="true">
         <div class="loader-inner">
-            <img src="<?php echo asset('images/ish-logo.svg'); ?>" alt="" class="loader-logo" width="200" height="50">
+            <img src="<?php echo asset('images/ish-logo.svg'); ?>" alt="Infinity SoftHub Technologies logo" class="loader-logo" width="200" height="50">
             <div class="loader-spinner"></div>
             <div class="loader-text">Loading...</div>
         </div>
