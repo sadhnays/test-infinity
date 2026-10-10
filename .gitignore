@@ -11,3 +11,11 @@ Thumbs.db
 
 # Files parked by cleanup-unused-files.sh
 /_to_delete/
+
+# Runtime caches written by WordPress plugins on the server.
+# Never commit these: a pull would restore stale sitemaps/pages.
+/blog/wp-content/uploads/rank-math/
+/blog/wp-content/cache/wpo-cache/*/
+/blog/wp-content/cache/supercache/*/
+/blog/wp-content/cache/meta/*
+!/blog/wp-content/cache/meta/index.html
