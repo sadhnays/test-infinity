@@ -3,8 +3,34 @@ $pageTitle = 'Cloud Solutions | Infinity SoftHub Technologies';
 $pageDescription = 'Modern cloud solutions including AI integration, cloud migration, AWS/Azure services, and scalable cloud infrastructure for businesses of all sizes.';
 $pageKeywords = 'cloud solutions, cloud migration, AWS services, Azure cloud, AI integration, cloud security, scalable infrastructure, DevOps, cloud consulting';
 $activePage = 'services';
+$pageModified = '2026-10-18';
 
-require_once '../includes/header.php';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$cloudFaqs = [
+    ['q' => 'What does cloud migration involve?', 'a' => 'We review your current servers and applications, choose the right AWS or Azure services, move data and applications in stages with backups at every step, and test everything before switching traffic to the new setup.'],
+    ['q' => 'Should we use AWS or Azure?', 'a' => 'Both are reliable. AWS has the widest range of services; Azure fits organisations already using Microsoft 365 and Entra ID. We recommend one after looking at your existing tools, budget and data-location needs.'],
+    ['q' => 'Can you reduce our cloud bill?', 'a' => 'Often, yes. We look for oversized servers, unused resources and missing caching, then suggest changes with the expected saving before making them.'],
+    ['q' => 'Do you provide ongoing cloud support?', 'a' => 'Yes. We offer monthly support for monitoring, updates, backups and scaling, with agreed response times.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'Cloud Solutions',
+            'serviceType' => 'Cloud migration and AWS/Azure infrastructure',
+            'url' => 'https://infinitysofthub.com/services/cloud-solutions.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
+        ],
+        faq_schema_array($cloudFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- Hero Section -->
@@ -150,6 +176,14 @@ require_once '../includes/header.php';
                 <p>Continuous monitoring, cost optimization, and performance tuning for your cloud environment.</p>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="content-section">
+    <div class="container" style="max-width:900px;">
+        <h2 style="text-align:center;">Frequently asked questions</h2>
+        <?php echo render_faq($cloudFaqs); ?>
     </div>
 </section>
 

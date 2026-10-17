@@ -186,10 +186,10 @@ require_once __DIR__ . '/../includes/header.php';
 <section class="content-section service-guide">
     <div class="container" style="max-width:900px; line-height:1.8;">
 
-            <h2>AI features that work inside your LMS</h2>
+            <h2>How can AI work inside your LMS?</h2>
             <p>Most AI tools for education sit outside the learning platform, which means learners copy and paste between tabs and teachers lose track of what happened. We build AI features directly into Moodle, LearnDash or your custom LMS, so they use your course content, respect your user roles and save results where teachers already look.</p>
 
-            <h2>What we build</h2>
+            <h2>Which AI features can we add to Moodle or LearnDash?</h2>
             <ul style="padding-left:1.25rem;">
                 <li><strong>Course Q&amp;A assistants:</strong> a chat block that answers learner questions from your own PDFs, lessons and notes using retrieval-augmented generation.</li>
                 <li><strong>Assisted grading:</strong> draft scores and feedback for essays, short answers and code, checked by a teacher before release.</li>
@@ -199,10 +199,10 @@ require_once __DIR__ . '/../includes/header.php';
                 <li><strong>Analytics:</strong> early warnings for learners who are falling behind, based on activity and grades.</li>
             </ul>
 
-            <h2>How we approach AI projects</h2>
+            <h2>How do we run an AI project?</h2>
             <p>We start small. First we pick one task where AI clearly saves time, such as answering repeated learner questions, and build a working prototype on a copy of your site. We test it with real course content and check the answers for accuracy. Only when it works well do we roll it out, with usage limits, logging and a clear way for teachers to switch it off.</p>
 
-            <h2>Responsible use</h2>
+            <h2>How do we keep AI use responsible?</h2>
             <p>AI can be wrong. Every feature we build shows where an answer came from, keeps a human in the loop for grades, and limits the personal data sent to any provider. You decide which model is used and where your data is processed. See our <a href="<?php echo base_url('demos/sql-playground.php'); ?>">coding lab demo</a> and <a href="<?php echo base_url('case-studies.php'); ?>">case studies</a> for related work.</p>
 
             <h2>Frequently asked questions</h2>

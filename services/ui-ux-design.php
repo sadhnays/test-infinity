@@ -3,8 +3,34 @@ $pageTitle = 'UI/UX Design Services | Infinity SoftHub Technologies';
 $pageDescription = 'Professional UI/UX design services for web and mobile applications. User-centered design, prototyping, and AI-driven user experience optimization.';
 $pageKeywords = 'UI UX design, user experience, user interface, web design, mobile app design, prototyping, Figma, Adobe XD, user research, AI design tools';
 $activePage = 'services';
+$pageModified = '2026-10-18';
 
-require_once '../includes/header.php';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$uxFaqs = [
+    ['q' => 'What is the difference between UI and UX design?', 'a' => 'UX design is about how a product works: the user flows, structure and ease of use. UI design is how it looks: layout, colours, type and components. We do both, starting with UX.'],
+    ['q' => 'Which tools do you design in?', 'a' => 'Mainly Figma, with clickable prototypes you can test and share before any code is written.'],
+    ['q' => 'Can you redesign an existing LMS or web app?', 'a' => 'Yes. We review the current product, find where users struggle, and redesign key screens without forcing a full rebuild.'],
+    ['q' => 'Who owns the code and designs?', 'a' => 'You do. All custom code, designs and documentation created for your project are handed over to you at the end.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'UI/UX Design',
+            'serviceType' => 'User interface and user experience design',
+            'url' => 'https://infinitysofthub.com/services/ui-ux-design.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
+        ],
+        faq_schema_array($uxFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- Hero Section -->
@@ -150,6 +176,14 @@ require_once '../includes/header.php';
                 <p>Hand off design assets, style guides, and specifications to development team for implementation.</p>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="content-section">
+    <div class="container" style="max-width:900px;">
+        <h2 style="text-align:center;">Frequently asked questions</h2>
+        <?php echo render_faq($uxFaqs); ?>
     </div>
 </section>
 

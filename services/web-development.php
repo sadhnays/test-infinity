@@ -3,8 +3,34 @@ $pageTitle = "Web Development Services | Infinity SoftHub";
 $pageDescription = "Custom web development services including CMS, eCommerce, enterprise web applications, and AI-powered solutions. Get a free quote today.";
 $pageKeywords = "web development, custom web applications, CMS development, eCommerce solutions, responsive design, enterprise web development";
 $activePage = 'services';
+$pageModified = '2026-10-18';
 
-require_once '../includes/header.php';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$webFaqs = [
+    ['q' => 'Which technologies do you build websites with?', 'a' => 'PHP and Laravel, WordPress, React and Vue.js on the front end, and Node.js where it fits. We choose based on your project, not habit.'],
+    ['q' => 'How long does a website take?', 'a' => 'A business website usually takes a few weeks. A custom web application takes longer, depending on features and integrations. You get a written scope and timeline before we start.'],
+    ['q' => 'Do you provide hosting and maintenance?', 'a' => 'Yes. We can host on AWS, Azure or DigitalOcean and offer monthly maintenance for updates, backups and small changes.'],
+    ['q' => 'Who owns the code and designs?', 'a' => 'You do. All custom code, designs and documentation created for your project are handed over to you at the end.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'Web Development',
+            'serviceType' => 'Custom web application and website development',
+            'url' => 'https://infinitysofthub.com/services/web-development.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
+        ],
+        faq_schema_array($webFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
     <!-- Page Hero -->
@@ -194,6 +220,14 @@ require_once '../includes/header.php';
             </div>
         </div>
     </section>
+
+<!-- FAQ -->
+<section class="content-section">
+    <div class="container" style="max-width:900px;">
+        <h2 style="text-align:center;">Frequently asked questions</h2>
+        <?php echo render_faq($webFaqs); ?>
+    </div>
+</section>
 
     <!-- CTA Section -->
     <section class="content-section">

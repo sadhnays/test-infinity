@@ -3,8 +3,33 @@ $pageTitle = "E-commerce Development Services | Infinity SoftHub";
 $pageDescription = "E-commerce development with WooCommerce, Magento, Shopify and custom platforms: online stores, marketplaces, payments and course selling.";
 $pageKeywords = "e-commerce development, online store, WooCommerce, Magento, Shopify, custom e-commerce, marketplace development";
 $activePage = 'services';
-$pageModified = '2026-10-17';
-require_once '../includes/header.php';
+$pageModified = '2026-10-18';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$shopFaqs = [
+    ['q' => 'WooCommerce, Shopify or Magento: which is right for us?', 'a' => 'WooCommerce suits businesses already on WordPress or selling courses alongside content. Shopify is quickest to launch with low maintenance. Magento (Adobe Commerce) fits large catalogues and complex B2B needs. We recommend one after looking at your products, budget and team.'],
+    ['q' => 'Can we sell online courses through our store?', 'a' => 'Yes. We connect WooCommerce or Stripe to LearnDash or Moodle so buyers are enrolled automatically after payment.'],
+    ['q' => 'Which payment gateways do you integrate?', 'a' => 'Stripe, PayPal, Razorpay and other gateways your market needs, tested end to end before launch.'],
+    ['q' => 'Who owns the code and designs?', 'a' => 'You do. All custom code, designs and documentation created for your project are handed over to you at the end.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'E-commerce Development',
+            'serviceType' => 'Online store and marketplace development',
+            'url' => 'https://infinitysofthub.com/services/ecommerce-development.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
+        ],
+        faq_schema_array($shopFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <style>
@@ -182,6 +207,14 @@ require_once '../includes/header.php';
                 <div class="stats-label">Tested before every release</div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="content-section">
+    <div class="container" style="max-width:900px;">
+        <h2 style="text-align:center;">Frequently asked questions</h2>
+        <?php echo render_faq($shopFaqs); ?>
     </div>
 </section>
 

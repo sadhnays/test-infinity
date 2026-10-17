@@ -36,8 +36,8 @@ require_once 'includes/header.php';
                     </div>
                     <h2 class="h2-mb">A Legacy of <span class="gradient-text">E-Learning & Tech</span></h2>
                     <p>Established with a vision to deliver premium LMS customization and software engineering, Infinity SoftHub Technologies has evolved into a trusted global IT partner. Led by our founder, a Moodle™ Specialist and Full-Stack Developer with 7+ years of experience, we specialize in building custom, high-performance e-learning ecosystems.</p>
-                    <p>Over the years, we have scaled our capabilities to build interactive LMS tools such as browser-based SQL/Python coding labs, RAG-based AI study assistants, custom Moodle™ plugins, and student reporting dashboards. Our engineering team has successfully shipped over 200 high-performance platforms across 15+ countries.</p>
-                    <p>Today, we empower universities, corporate training organizations, schools, and businesses by designing resilient software products and learning platforms that support hundreds of thousands of active users worldwide.</p>
+                    <p>Over the years, we have scaled our capabilities to build interactive LMS tools such as browser-based SQL/Python coding labs, RAG-based AI study assistants, custom Moodle™ plugins, and student reporting dashboards. We deliver this work remotely for clients in several countries.</p>
+                    <p>Today, we empower universities, corporate training organizations, schools, and businesses by designing reliable learning platforms and software products, built and tested on staging, documented, and handed over with full code ownership.</p>
                     <div class="mt-2rem">
                         <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary">
                             <i class="fas fa-handshake" aria-hidden="true"></i> Collaborate With Us

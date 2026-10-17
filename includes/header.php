@@ -16,6 +16,12 @@ $ogImage = $ogImage ?? asset('images/og-image.png');
 $robotsMeta = $robotsMeta ?? 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 $pageType = $pageType ?? 'WebPage';
 $pageModified = $pageModified ?? null;
+// Speakable sections for voice assistants: the answer-first summary and FAQ answers.
+$pageSource = @file_get_contents($_SERVER['SCRIPT_FILENAME'] ?? '') ?: '';
+$speakSelectors = [];
+if (strpos($pageSource, 'render_summary_box(') !== false) { $speakSelectors[] = '.summary-box'; }
+if (strpos($pageSource, 'render_faq(') !== false) { $speakSelectors[] = '.faq-item'; }
+$speakable = $speakSelectors ? ['@type' => 'SpeakableSpecification', 'cssSelector' => $speakSelectors] : null;
 
 // Site-wide entity graph: one Organization + WebSite + this WebPage.
 $orgId = base_url('') . '#organization';
@@ -106,6 +112,7 @@ $siteGraph = [
             'about' => ['@id' => $orgId],
             'primaryImageOfPage' => ['@type' => 'ImageObject', 'url' => $ogImage],
             'dateModified' => $pageModified,
+            'speakable' => $speakable,
             'inLanguage' => 'en',
         ], function ($v) { return $v !== null; }),
     ],

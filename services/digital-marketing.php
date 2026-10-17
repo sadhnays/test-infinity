@@ -3,8 +3,34 @@ $pageTitle = 'Digital Marketing Services | Infinity SoftHub Technologies';
 $pageDescription = 'Comprehensive digital marketing services including SEO, AI-powered marketing, social media, and PPC campaigns to grow your business online.';
 $pageKeywords = 'digital marketing, SEO services, AI marketing, social media marketing, PPC campaigns, content marketing, email marketing, web analytics';
 $activePage = 'services';
+$pageModified = '2026-10-18';
 
-require_once '../includes/header.php';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$marketingFaqs = [
+    ['q' => 'How long does SEO take to show results?', 'a' => 'Most sites see early movement in two to three months and steadier results after six months, depending on competition, content and the site\'s technical health.'],
+    ['q' => 'Do you guarantee first-page rankings?', 'a' => 'No. No one can honestly guarantee rankings. We do promise clear monthly reports showing the work done and how traffic, rankings and leads change.'],
+    ['q' => 'Which marketing channels do you handle?', 'a' => 'Search engine optimisation, Google and social media ads, social media content, email campaigns and analytics setup.'],
+    ['q' => 'Can you market an online course or LMS?', 'a' => 'Yes. We help education and training businesses promote courses with SEO, landing pages and paid campaigns, and track enrolments as conversions.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'Digital Marketing',
+            'serviceType' => 'SEO, PPC and digital marketing',
+            'url' => 'https://infinitysofthub.com/services/digital-marketing.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
+        ],
+        faq_schema_array($marketingFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- Hero Section -->
@@ -150,6 +176,14 @@ require_once '../includes/header.php';
                 <p>Continuous AI-powered optimization based on performance data to maximize ROI.</p>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="content-section">
+    <div class="container" style="max-width:900px;">
+        <h2 style="text-align:center;">Frequently asked questions</h2>
+        <?php echo render_faq($marketingFaqs); ?>
     </div>
 </section>
 

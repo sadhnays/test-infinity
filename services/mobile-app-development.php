@@ -3,8 +3,34 @@ $pageTitle = "Mobile App Development | iOS & Android | Infinity SoftHub";
 $pageDescription = "iOS, Android and cross-platform app development (Flutter, Ionic, React Native), including LMS mobile apps and offline learning.";
 $pageKeywords = "mobile app development, iOS app, Android app, React Native, cross-platform apps, Flutter";
 $activePage = 'services';
+$pageModified = '2026-10-18';
 
-require_once '../includes/header.php';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$appFaqs = [
+    ['q' => 'Native or cross-platform: which should we choose?', 'a' => 'Cross-platform frameworks like Flutter or React Native let one codebase run on iOS and Android, which saves time and cost for most business and learning apps. Native Swift or Kotlin makes sense when you need heavy device features or maximum performance.'],
+    ['q' => 'How long does it take to build an app?', 'a' => 'A focused first version usually takes a few months, depending on the number of screens, integrations and back-end work. We agree on a scope and timeline before starting.'],
+    ['q' => 'Do you publish the app to the App Store and Google Play?', 'a' => 'Yes. We prepare store listings, handle submission and review feedback, and publish under your own developer accounts so you keep ownership.'],
+    ['q' => 'Can the app connect to our LMS?', 'a' => 'Yes. We build apps that use the same accounts, courses and progress as your Moodle or LearnDash site, including offline learning.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'Mobile App Development',
+            'serviceType' => 'iOS, Android and cross-platform app development',
+            'url' => 'https://infinitysofthub.com/services/mobile-app-development.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
+        ],
+        faq_schema_array($appFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
     <!-- Page Hero -->
@@ -194,6 +220,14 @@ require_once '../includes/header.php';
             </div>
         </div>
     </section>
+
+<!-- FAQ -->
+<section class="content-section">
+    <div class="container" style="max-width:900px;">
+        <h2 style="text-align:center;">Frequently asked questions</h2>
+        <?php echo render_faq($appFaqs); ?>
+    </div>
+</section>
 
     <!-- CTA Section -->
     <section class="content-section">

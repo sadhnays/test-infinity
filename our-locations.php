@@ -296,7 +296,7 @@ require_once 'includes/header.php';
             </div>
 
             <div class="remote-how" data-aos="fade-up" style="max-width:900px; margin:3rem auto 0; line-height:1.8;">
-                <h2>How remote delivery works</h2>
+                <h2>How does remote delivery work?</h2>
                 <p>Every project is run from our Faridabad office. Here is what working with us looks like from another country:</p>
                 <ul style="padding-left:1.25rem;">
                     <li><strong>Overlapping hours:</strong> India (IST, UTC+5:30) overlaps with UK and European mornings and afternoons, Singapore and Australian business days, and US early mornings or late evenings. We agree on regular call times at the start.</li>

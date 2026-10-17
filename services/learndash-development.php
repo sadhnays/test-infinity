@@ -218,10 +218,10 @@ require_once __DIR__ . '/../includes/header.php';
 <section class="content-section service-guide">
     <div class="container" style="max-width:900px; line-height:1.8;">
 
-            <h2>What we do with LearnDash</h2>
+            <h2>What can a LearnDash developer do for you?</h2>
             <p>LearnDash turns a WordPress website into a learning platform. Out of the box it gives you courses, lessons, quizzes and certificates. Most businesses need more than that: a design that matches their brand, a checkout that works with their payment provider, reports their managers can read, and integrations with the tools they already use. That is where we come in.</p>
 
-            <h2>Typical LearnDash projects</h2>
+            <h2>What kinds of LearnDash projects do we build?</h2>
             <ul style="padding-left:1.25rem;">
                 <li><strong>Course-selling websites:</strong> LearnDash with WooCommerce or Stripe, coupons, bundles and subscriptions.</li>
                 <li><strong>Employee and partner training:</strong> groups, group leaders, assigned courses, due dates and completion reports.</li>
@@ -231,10 +231,10 @@ require_once __DIR__ . '/../includes/header.php';
                 <li><strong>Speed and stability fixes:</strong> slow course pages, plugin conflicts and broken upgrades.</li>
             </ul>
 
-            <h2>How a LearnDash project runs</h2>
+            <h2>How does a LearnDash project work?</h2>
             <p>We start with a short call to understand your courses, learners and how you sell or assign training. We then send a written scope with a fixed price or an hourly estimate. Work is done on a staging site that you can review at any time. Once you approve, we move it live, check payments and emails end to end, and hand over admin notes so your team can add courses on their own.</p>
 
-            <h2>Why work with us on LearnDash</h2>
+            <h2>Why work with us on LearnDash?</h2>
             <p>We are full-stack PHP and WordPress developers who also build Moodle platforms, so we understand both the WordPress side and how learning platforms should work for teachers and learners. You talk directly to the developer, you get a reply within 24 hours, and you own every line of custom code we write. Read our guide to <a href="https://infinitysofthub.com/blog/">LMS development on our blog</a>, or compare with our <a href="<?php echo base_url('services/moodle-all-development.php'); ?>">Moodle development services</a>.</p>
 
             <h2>Frequently asked questions</h2>

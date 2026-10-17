@@ -4,8 +4,25 @@ $pageTitle = "Our Services | LMS, AI & Software | Infinity SoftHub";
 $pageDescription = 'Discover Infinity SoftHub services - custom software engineering, LMS development, AI/ML integrations, cloud solutions, and mobile app design.';
 $pageKeywords = 'IT services, custom software, LMS development, AI integration, web development, mobile apps, DevOps cloud';
 $activePage = 'what-we-do';
+$pageModified = '2026-10-18';
 
-require_once 'includes/header.php';
+require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/includes/functions.php';
+
+$servicesFaqs = [
+    ['q' => 'What does Infinity SoftHub specialise in?', 'a' => 'Moodle and LMS development: custom Moodle plugins and themes, IOMAD multi-tenant platforms, LearnDash sites, LMS mobile apps, coding labs and AI learning tools. We also build websites, web apps and cloud infrastructure.'],
+    ['q' => 'Where is Infinity SoftHub based?', 'a' => 'In Faridabad, India. We work remotely with clients in the USA, UK, Canada, Australia, Europe and Singapore.'],
+    ['q' => 'How do projects usually start?', 'a' => 'With a short call or email about your goals. We then send a written scope with a fixed price or an hourly estimate, and start work once you approve it.'],
+    ['q' => 'How quickly do you reply?', 'a' => 'We reply to every enquiry within 24 hours.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        faq_schema_array($servicesFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/includes/header.php';
 ?>
 
     <style>
@@ -439,6 +456,14 @@ require_once 'includes/header.php';
             </div>
         </div>
     </section>
+
+<!-- FAQ -->
+<section class="content-section">
+    <div class="container" style="max-width:900px;">
+        <h2 style="text-align:center;">Frequently asked questions</h2>
+        <?php echo render_faq($servicesFaqs); ?>
+    </div>
+</section>
 
     <!-- CTA Section -->
     <section class="content-section bg-alt">

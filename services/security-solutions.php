@@ -124,10 +124,10 @@ require_once __DIR__ . '/../includes/header.php';
 <section class="content-section service-guide">
     <div class="container" style="max-width:900px; line-height:1.8;">
 
-            <h2>Why LMS platforms need extra security</h2>
+            <h2>Why do LMS platforms need extra security?</h2>
             <p>A learning platform holds personal data about students and staff: names, emails, grades, certificates and sometimes payment details. It also has many users with different roles, many third-party plugins and regular file uploads. Each of these is a common way in for attackers. Most LMS breaches we see come from outdated plugins, weak admin passwords and permissions that grant more access than a role needs.</p>
 
-            <h2>How we secure a Moodle or LearnDash site</h2>
+            <h2>How do we secure a Moodle or LearnDash site?</h2>
             <ol style="padding-left:1.25rem;">
                 <li><strong>Audit:</strong> we scan the core version, plugins and themes, review roles and capabilities, and check server, PHP and database settings.</li>
                 <li><strong>Report:</strong> you get a plain-language list of issues ranked high, medium or low, with the fix for each.</li>
@@ -136,7 +136,7 @@ require_once __DIR__ . '/../includes/header.php';
                 <li><strong>Back up and monitor:</strong> automatic off-site backups, a tested restore process, uptime alerts and error logging.</li>
             </ol>
 
-            <h2>Common fixes we make</h2>
+            <h2>What are the most common LMS security fixes?</h2>
             <ul style="padding-left:1.25rem;">
                 <li>Removing unused or abandoned plugins and updating the rest.</li>
                 <li>Enforcing strong passwords and adding multi-factor authentication for managers and admins.</li>
@@ -146,7 +146,7 @@ require_once __DIR__ . '/../includes/header.php';
                 <li>Configuring the Moodle privacy tools for data export and deletion requests.</li>
             </ul>
 
-            <h2>Who this service is for</h2>
+            <h2>Who is this service for?</h2>
             <p>Universities, schools, training companies and HR teams that run Moodle, LearnDash or a custom LMS and want an independent review, need to pass a client or IT security questionnaire, or have had a security incident and want to prevent the next one.</p>
 
             <h2>Frequently asked questions</h2>

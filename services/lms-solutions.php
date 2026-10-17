@@ -171,10 +171,10 @@ require_once __DIR__ . '/../includes/header.php';
 <section class="content-section service-guide">
     <div class="container" style="max-width:900px; line-height:1.8;">
 
-            <h2>Training platforms built around how your organisation works</h2>
-            <p>Corporate training has different needs from a school or university. Courses are assigned by role, deadlines matter, managers need reports, and compliance training has to be tracked and renewed. We build and customise learning platforms, usually on Moodle&trade; or LearnDash, that handle these needs without forcing your teams into a rigid off-the-shelf product.</p>
+            <h2>What is an enterprise LMS?</h2>
+            <p>An enterprise LMS is a learning platform built for staff training rather than academic teaching. Corporate training has different needs from a school or university. Courses are assigned by role, deadlines matter, managers need reports, and compliance training has to be tracked and renewed. We build and customise learning platforms, usually on Moodle&trade; or LearnDash, that handle these needs without forcing your teams into a rigid off-the-shelf product.</p>
 
-            <h2>What an enterprise LMS can include</h2>
+            <h2>What can an enterprise LMS include?</h2>
             <ul style="padding-left:1.25rem;">
                 <li><strong>Onboarding programmes:</strong> new hires are enrolled automatically into the right courses for their role and location.</li>
                 <li><strong>Compliance training:</strong> mandatory courses with due dates, reminders, certificates and automatic renewal.</li>
@@ -186,10 +186,10 @@ require_once __DIR__ . '/../includes/header.php';
                 <li><strong>Mobile learning:</strong> responsive design and native iOS and Android apps where needed.</li>
             </ul>
 
-            <h2>Our process</h2>
+            <h2>How does an enterprise LMS project work?</h2>
             <p>We begin with discovery: who your learners are, how training is assigned today and which systems the LMS must connect to. We then recommend a platform, write a scope and build on a staging site that your team can test. After launch we train your administrators and offer ongoing support for updates, new features and integrations.</p>
 
-            <h2>Why companies choose us</h2>
+            <h2>Why do companies choose us?</h2>
             <p>We have worked with Moodle since 2019 and build both the platform and the integrations around it. You deal directly with the developers doing the work, get a reply within 24 hours, and own all custom code. Learn more about our <a href="<?php echo base_url('services/moodle-all-development.php'); ?>">Moodle development services</a> and <a href="<?php echo base_url('services/security-solutions.php'); ?>">LMS security services</a>.</p>
 
             <h2>Frequently asked questions</h2>

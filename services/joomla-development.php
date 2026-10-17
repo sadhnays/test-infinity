@@ -1,10 +1,36 @@
 <?php
 $pageTitle = "Joomla Development Services | Infinity SoftHub";
-$pageDescription = "Professional Joomla development services. Custom Joomla websites, extensions, templates, and enterprise CMS solutions with 8+ years of experience.";
+$pageDescription = "Professional Joomla development services. Custom Joomla websites, extensions, templates, and CMS upgrades and maintenance, tested on staging.";
 $pageKeywords = "Joomla development, Joomla website, Joomla customization, Joomla extensions, Joomla templates, CMS development";
 $activePage = 'services';
+$pageModified = '2026-10-18';
 $pageModified = '2026-10-17';
-require_once '../includes/header.php';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$joomlaFaqs = [
+    ['q' => 'Can you upgrade an old Joomla site?', 'a' => 'Yes. We upgrade older Joomla 3 sites to current Joomla versions, replace extensions that are no longer supported, and test the upgraded site on staging before it goes live.'],
+    ['q' => 'Do you build custom Joomla extensions?', 'a' => 'Yes. We build components, modules and plugins in PHP that follow Joomla coding standards, so they keep working through future updates.'],
+    ['q' => 'Should we stay on Joomla or move to WordPress?', 'a' => 'If your site works well and your team knows Joomla, upgrading is usually cheaper. If you need plugins that only exist for WordPress or want an easier editor, a migration can make sense. We can advise after a short review.'],
+    ['q' => 'Who owns the code and designs?', 'a' => 'You do. All custom code, designs and documentation created for your project are handed over to you at the end.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'Joomla Development',
+            'serviceType' => 'Joomla website and extension development',
+            'url' => 'https://infinitysofthub.com/services/joomla-development.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
+        ],
+        faq_schema_array($joomlaFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <style>
@@ -182,6 +208,14 @@ require_once '../includes/header.php';
                 <div class="stats-label">Satisfaction</div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="content-section">
+    <div class="container" style="max-width:900px;">
+        <h2 style="text-align:center;">Frequently asked questions</h2>
+        <?php echo render_faq($joomlaFaqs); ?>
     </div>
 </section>
 

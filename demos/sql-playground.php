@@ -313,7 +313,7 @@ require_once __DIR__ . '/../includes/header.php';
             <h2 style="color:#f8fafc;">What is an LMS coding lab?</h2>
             <p>An LMS coding lab is a code editor that sits inside an online course. Learners write and run code on the course page instead of switching to another tool, and the course can check their answers. This page shows a small SQL version of the labs we build for Moodle&trade; and LearnDash courses.</p>
 
-            <h2 style="color:#f8fafc; margin-top:2.5rem;">How this demo works</h2>
+            <h2 style="color:#f8fafc; margin-top:2.5rem;">How does this demo work?</h2>
             <p>The sandbox above holds three sample tables: <code>students</code>, <code>courses</code> and <code>grades</code>. Click a table name to load a query, edit it, then press <strong>Run Query</strong>. The query runs in your browser against an in-memory dataset, so nothing is sent to a server and nothing is stored. Try these:</p>
             <ul style="padding-left:1.25rem;">
                 <li><code>SELECT * FROM students WHERE gpa &gt; 3.5;</code> lists high-scoring students.</li>
@@ -321,7 +321,7 @@ require_once __DIR__ . '/../includes/header.php';
                 <li><code>SELECT * FROM grades WHERE grade = 'A';</code> filters grades.</li>
             </ul>
 
-            <h2 style="color:#f8fafc; margin-top:2.5rem;">What a production lab adds</h2>
+            <h2 style="color:#f8fafc; margin-top:2.5rem;">What does a production coding lab add?</h2>
             <p>A demo shows the editor. A lab built for a real course also needs:</p>
             <ul style="padding-left:1.25rem;">
                 <li><strong>Exercises with expected results</strong>, written with the course author for each lesson.</li>
@@ -332,7 +332,7 @@ require_once __DIR__ . '/../includes/header.php';
                 <li><strong>Reports</strong> that show teachers where learners get stuck.</li>
             </ul>
 
-            <h2 style="color:#f8fafc; margin-top:2.5rem;">Who uses coding labs</h2>
+            <h2 style="color:#f8fafc; margin-top:2.5rem;">Who uses coding labs?</h2>
             <p>Coding labs suit data and programming courses at universities, bootcamps and training companies, and internal training teams that teach SQL or Python to analysts. They replace screenshots and copy-paste exercises with practice that learners can run and teachers can grade.</p>
 
             <h2 style="color:#f8fafc; margin-top:2.5rem;">Frequently asked questions</h2>
