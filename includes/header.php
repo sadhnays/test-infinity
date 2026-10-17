@@ -74,6 +74,7 @@ $siteGraph = [
                 'https://www.facebook.com/infinitysofthub',
                 'https://www.linkedin.com/company/infinitysofthub/',
                 'https://www.youtube.com/@infinitysofthub',
+                'https://www.goodfirms.co/company/infinity-softhub-technologies',
             ],
         ],
         [
