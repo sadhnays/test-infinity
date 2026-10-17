@@ -3,6 +3,7 @@ $pageTitle = "LMS Security Services & Hardening | Infinity SoftHub";
 $pageDescription = "Comprehensive security solutions for LMS platforms - SSL implementation, data protection, compliance management, and proactive monitoring.";
 $pageKeywords = "LMS security, Moodle security, SSL implementation, data protection, GDPR compliance, security auditing";
 $activePage = 'services';
+$pageModified = '2026-10-17';
 require_once __DIR__ . '/../includes/config.php';
 require_once __DIR__ . '/../includes/functions.php';
 
@@ -23,7 +24,7 @@ $pageSchema = json_encode([
             'url' => 'https://infinitysofthub.com/services/security-solutions.php',
             'description' => $pageDescription,
             'areaServed' => 'Worldwide',
-            'provider' => ['@type' => 'Organization', 'name' => 'Infinity SoftHub Technologies', 'url' => 'https://infinitysofthub.com/'],
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
         ],
         faq_schema_array($securityFaqs),
     ],

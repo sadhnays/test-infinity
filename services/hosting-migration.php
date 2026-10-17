@@ -3,7 +3,34 @@ $pageTitle = "Moodle Hosting, Setup & Migration | Infinity SoftHub";
 $pageDescription = "Moodle LMS setup and deployment, managed hosting, cloud migration, monitoring, upgrades, backups, recovery and performance optimization.";
 $pageKeywords = "Moodle LMS setup and deployment, managed Moodle services, Moodle cloud deployment, Moodle hosting, Moodle backup and recovery";
 $activePage = 'services';
-require_once '../includes/header.php';
+$pageModified = '2026-10-18';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$hostingFaqs = [
+    ['q' => 'How long does a Moodle migration take?', 'a' => 'A small site can move in a few days. Larger sites with many courses, plugins and users take longer because we test the full migration on a staging server before switching over.'],
+    ['q' => 'Will we lose courses, users or grades during migration?', 'a' => 'No. We copy the database and the Moodle data folder in full, check courses, users, grades and files on the new server, and keep the old server until you confirm everything works.'],
+    ['q' => 'Can you upgrade an old Moodle version?', 'a' => 'Yes. We upgrade step by step through the supported versions, check every plugin for compatibility, and replace plugins that are no longer maintained. All of this is tested on staging first.'],
+    ['q' => 'Where can our Moodle site be hosted?', 'a' => 'On AWS, Azure, DigitalOcean or another provider you choose, in the region you need, such as the EU or the US. You keep ownership of the server account.'],
+    ['q' => 'Do you offer ongoing Moodle support after migration?', 'a' => 'Yes. We offer monthly support for updates, backups, monitoring and small fixes, with agreed response times.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'Moodle Setup, Hosting & Migration',
+            'serviceType' => 'Moodle hosting, upgrades and migration',
+            'url' => 'https://infinitysofthub.com/services/hosting-migration.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
+        ],
+        faq_schema_array($hostingFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- Page Hero -->
@@ -144,6 +171,15 @@ require_once '../includes/header.php';
                 <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-secondary" style="margin-top:1.5rem; width:100%;">Contact Us</a>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="content-section">
+    <div class="container" style="max-width:900px;">
+        <h2 style="text-align:center;">Frequently asked questions</h2>
+        <?php echo render_faq($hostingFaqs); ?>
+        <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem; text-align:center;">Page last updated: October 2026</p>
     </div>
 </section>
 

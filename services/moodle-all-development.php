@@ -3,6 +3,7 @@ $pageTitle = "Moodle Development Company & Custom LMS | Infinity SoftHub";
 $pageDescription = "Founder-led Moodle development company: custom plugins, themes, upgrades, integrations, IOMAD and AI tools. Clear process, fixed or hourly pricing.";
 $pageKeywords = "Moodle development company, Moodle development agency, Moodle development services, custom Moodle plugins, Moodle upgrade, Moodle developer";
 $activePage = 'services';
+$pageModified = '2026-10-17';
 
 require_once __DIR__ . '/../includes/config.php';
 require_once __DIR__ . '/../includes/functions.php';
@@ -33,7 +34,7 @@ $pageSchema = json_encode([
             '@type' => 'Service',
             'name' => 'Moodle Development Services',
             'serviceType' => 'Moodle LMS development, customization, upgrades, integration and support',
-            'provider' => ['@type' => 'Organization', 'name' => 'Infinity SoftHub Technologies', 'url' => 'https://infinitysofthub.com/'],
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
             'areaServed' => 'Worldwide',
             'url' => 'https://infinitysofthub.com/services/moodle-all-development.php',
             'availableChannel' => ['@type' => 'ServiceChannel', 'serviceUrl' => 'https://infinitysofthub.com/contact.php'],

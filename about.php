@@ -4,6 +4,8 @@ $pageTitle = "About Infinity SoftHub | Moodle LMS & Software Engineering";
 $pageDescription = "Founder-led team building custom Moodle LMS platforms, AI learning assistants, coding labs, LMS themes and full-stack software worldwide.";
 $pageKeywords = "about Infinity SoftHub, Moodle specialist, LMS development, custom Moodle plugins, SQL coding playgrounds, Python coding labs, full-stack software development";
 $activePage = 'about';
+$pageType = 'AboutPage';
+$pageModified = '2026-10-17';
 
 require_once 'includes/header.php';
 ?>

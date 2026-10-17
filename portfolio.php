@@ -4,6 +4,7 @@ $pageTitle = "Portfolio | Infinity SoftHub - Our Work & Projects";
 $pageDescription = "Explore Infinity SoftHub's portfolio of digital transformation projects, web development, mobile apps, and enterprise solutions.";
 $pageKeywords = "portfolio, our work, digital transformation projects, web development portfolio, mobile app portfolio";
 $activePage = 'portfolio';
+$pageType = 'CollectionPage';
 
 require_once 'includes/header.php';
 

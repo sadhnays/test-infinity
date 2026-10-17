@@ -3,7 +3,33 @@ $pageTitle = "Mobile e-Learning & Responsive LMS | Infinity SoftHub";
 $pageDescription = "Mobile learning solutions with responsive LMS design, offline access, microlearning, push notifications, and cross-device progress sync.";
 $pageKeywords = "mobile learning solutions, mobile-first eLearning development, responsive LMS, microlearning development, offline learning app";
 $activePage = 'services';
-require_once '../includes/header.php';
+$pageModified = '2026-10-17';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$mobileFaqs = [
+    ['q' => 'Can learners use Moodle on their phones?', 'a' => 'Yes. Moodle works in mobile browsers, and the official Moodle app for iOS and Android lets learners download courses and study offline. We set up and brand the app experience, or build a custom app when you need features the standard app does not offer.'],
+    ['q' => 'Do you build custom iOS and Android apps for an LMS?', 'a' => 'Yes. We build native or cross-platform apps that use the same accounts, courses and progress as your Moodle or LearnDash site, so learners can switch between phone and laptop.'],
+    ['q' => 'Can courses work offline?', 'a' => 'Yes, for most content types. Learners download lessons, videos and quizzes while online, study offline, and their progress syncs when they reconnect.'],
+    ['q' => 'Will our existing courses work on mobile?', 'a' => 'Most do. We review your courses, fix layouts and media that do not work on small screens, and test on real iOS and Android devices before launch.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'Mobile e-Learning Development',
+            'serviceType' => 'Mobile LMS apps and responsive e-learning',
+            'url' => 'https://infinitysofthub.com/services/mobile-elearning.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
+        ],
+        faq_schema_array($mobileFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <style>
@@ -350,6 +376,15 @@ require_once '../includes/header.php';
                 <div class="stats-label">Years Focus</div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="content-section">
+    <div class="container" style="max-width:900px;">
+        <h2 style="text-align:center;">Frequently asked questions</h2>
+        <?php echo render_faq($mobileFaqs); ?>
+        <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem; text-align:center;">Page last updated: October 2026</p>
     </div>
 </section>
 

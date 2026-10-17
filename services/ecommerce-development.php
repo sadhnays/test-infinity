@@ -3,6 +3,7 @@ $pageTitle = "E-commerce Development Services | Infinity SoftHub";
 $pageDescription = "E-commerce development with WooCommerce, Magento, Shopify and custom platforms: online stores, marketplaces, payments and course selling.";
 $pageKeywords = "e-commerce development, online store, WooCommerce, Magento, Shopify, custom e-commerce, marketplace development";
 $activePage = 'services';
+$pageModified = '2026-10-17';
 require_once '../includes/header.php';
 ?>
 

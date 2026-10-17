@@ -5,6 +5,7 @@ $pageTitle = "Moodle Developer Europe | Custom Moodle LMS | Infinity SoftHub";
 $pageDescription = "Moodle developers for European universities and training teams: custom plugins, upgrades, EU-region hosting, local language packs and GDPR-aware setup.";
 $pageKeywords = "Moodle developer Europe, Moodle development Netherlands, Moodle developer Sweden, Moodle developer Denmark, Moodle developer Norway, Moodle Poland, Moodle Spain, GDPR LMS";
 $activePage = 'services';
+$pageModified = '2026-10-17';
 
 require_once '../includes/functions.php';
 
@@ -30,7 +31,7 @@ $pageSchema = json_encode([
             '@type' => 'Service',
             'name' => 'Moodle LMS Development for European Organisations',
             'serviceType' => 'Moodle LMS development, upgrades, integration, hosting and support',
-            'provider' => ['@type' => 'Organization', 'name' => 'Infinity SoftHub Technologies', 'url' => 'https://infinitysofthub.com/'],
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
             'areaServed' => array_map(function ($c) { return ['@type' => 'Country', 'name' => $c]; },
                 ['Denmark', 'Netherlands', 'Norway', 'Poland', 'Spain', 'Sweden', 'Germany', 'Ireland']),
             'availableChannel' => ['@type' => 'ServiceChannel', 'serviceUrl' => 'https://infinitysofthub.com/contact.php'],

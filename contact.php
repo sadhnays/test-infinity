@@ -3,6 +3,7 @@ $pageTitle = 'Contact Us | Moodle & LMS Development | Infinity SoftHub';
 $pageDescription = 'Contact Infinity SoftHub for Moodle, IOMAD, LearnDash and custom LMS development. Share your brief and get a reply within 24 hours.';
 $pageKeywords = 'Contact Infinity SoftHub, Moodle developer contact, LMS development quote, hire Moodle developer';
 $activePage = 'contact';
+$pageType = 'ContactPage';
 
 require_once 'includes/config.php';
 require_once 'includes/functions.php';

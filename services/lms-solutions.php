@@ -3,6 +3,7 @@ $pageTitle = "Enterprise LMS & Corporate Training | Infinity SoftHub";
 $pageDescription = "Custom enterprise LMS & corporate training platforms: SCORM compliant systems, employee onboarding portals, virtual classrooms, and LMS solutions.";
 $pageKeywords = "enterprise LMS development, corporate training platform, custom learning management system, SCORM compliant LMS, employee onboarding software, staff training portal, virtual classroom software";
 $activePage = 'services';
+$pageModified = '2026-10-17';
 require_once __DIR__ . '/../includes/config.php';
 require_once __DIR__ . '/../includes/functions.php';
 
@@ -23,7 +24,7 @@ $pageSchema = json_encode([
             'url' => 'https://infinitysofthub.com/services/lms-solutions.php',
             'description' => $pageDescription,
             'areaServed' => 'Worldwide',
-            'provider' => ['@type' => 'Organization', 'name' => 'Infinity SoftHub Technologies', 'url' => 'https://infinitysofthub.com/'],
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
         ],
         faq_schema_array($lmsFaqs),
     ],

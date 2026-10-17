@@ -53,11 +53,7 @@ $pageSchema = json_encode([
             'serviceType' => 'IOMAD multi-tenant LMS setup, customization, migration and integration',
             'description' => $pageDescription,
             'url' => 'https://infinitysofthub.com/services/iomad-multi-tenant-lms.php',
-            'provider' => [
-                '@type' => 'Organization',
-                'name' => 'Infinity SoftHub Technologies',
-                'url' => 'https://infinitysofthub.com/',
-            ],
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
             'areaServed' => 'Worldwide',
         ],
         [

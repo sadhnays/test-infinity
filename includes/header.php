@@ -1,7 +1,8 @@
 <?php
 // header.php - Contains head section, header, and navigation
 // Expected variables: $pageTitle, $pageDescription, $pageKeywords, $activePage
-// Optional: $pageSchema (JSON-LD string), $canonicalPath, $ogImage, $robotsMeta
+// Optional: $pageSchema (JSON-LD string), $canonicalPath, $ogImage, $robotsMeta,
+//           $pageType (schema.org WebPage subtype, e.g. AboutPage), $pageModified (Y-m-d)
 require_once 'config.php';
 require_once 'functions.php';
 
@@ -13,6 +14,8 @@ $pageSchema = $pageSchema ?? null;
 $canonical = canonical_url($canonicalPath ?? null);
 $ogImage = $ogImage ?? asset('images/og-image.png');
 $robotsMeta = $robotsMeta ?? 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+$pageType = $pageType ?? 'WebPage';
+$pageModified = $pageModified ?? null;
 
 // Site-wide entity graph: one Organization + WebSite + this WebPage.
 $orgId = base_url('') . '#organization';
@@ -25,12 +28,23 @@ $siteGraph = [
             'name' => SITE_NAME,
             'alternateName' => 'Infinity SoftHub',
             'url' => base_url(''),
-            'logo' => ['@type' => 'ImageObject', 'url' => asset('images/ish-logo.svg')],
+            'logo' => [
+                '@type' => 'ImageObject',
+                '@id' => base_url('') . '#logo',
+                'url' => asset('images/logo.png'),
+                'contentUrl' => asset('images/logo.png'),
+                'width' => 500,
+                'height' => 500,
+                'caption' => SITE_NAME,
+            ],
             'image' => asset('images/og-image.png'),
             'description' => 'Founder-led custom LMS development, AI-powered learning tools, coding labs, integrations, and cloud deployment for organizations worldwide.',
             'email' => 'info@infinitysofthub.com',
             'telephone' => '+91-129-2985010',
             'priceRange' => '$$',
+            'foundingDate' => '2021-09',
+            'founder' => ['@id' => base_url('') . '#founder'],
+            'numberOfEmployees' => ['@type' => 'QuantitativeValue', 'minValue' => 1, 'maxValue' => 10],
             'address' => [
                 '@type' => 'PostalAddress',
                 'streetAddress' => 'Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar',
@@ -39,6 +53,14 @@ $siteGraph = [
                 'postalCode' => '121014',
                 'addressCountry' => 'IN',
             ],
+            'geo' => ['@type' => 'GeoCoordinates', 'latitude' => 28.4315947, 'longitude' => 77.343365],
+            'hasMap' => 'https://www.google.com/maps?q=28.4315947,77.343365',
+            'openingHoursSpecification' => [[
+                '@type' => 'OpeningHoursSpecification',
+                'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                'opens' => '09:00',
+                'closes' => '18:00',
+            ]],
             'areaServed' => 'Worldwide',
             'knowsAbout' => ['Learning management systems', 'Moodle development', 'LearnDash development', 'IOMAD multi-tenant LMS', 'SQL and Python coding labs', 'AI learning assistants', 'LMS integrations', 'Cloud hosting and migration'],
             'contactPoint' => [[
@@ -55,6 +77,16 @@ $siteGraph = [
             ],
         ],
         [
+            '@type' => 'Person',
+            '@id' => base_url('') . '#founder',
+            'name' => 'Sadhna Yadav',
+            'jobTitle' => 'Founder',
+            'worksFor' => ['@id' => $orgId],
+            'url' => base_url('about.php'),
+            'knowsAbout' => ['Moodle development', 'IOMAD', 'LearnDash', 'LMS integrations', 'AI in e-learning', 'PHP'],
+            'sameAs' => ['https://www.upwork.com/freelancers/sadhnay'],
+        ],
+        [
             '@type' => 'WebSite',
             '@id' => base_url('') . '#website',
             'url' => base_url(''),
@@ -63,16 +95,18 @@ $siteGraph = [
             'publisher' => ['@id' => $orgId],
             'inLanguage' => 'en',
         ],
-        [
-            '@type' => 'WebPage',
+        array_filter([
+            '@type' => $pageType,
             '@id' => $canonical . '#webpage',
             'url' => $canonical,
             'name' => $pageTitle,
             'description' => $pageDescription,
             'isPartOf' => ['@id' => base_url('') . '#website'],
             'about' => ['@id' => $orgId],
+            'primaryImageOfPage' => ['@type' => 'ImageObject', 'url' => $ogImage],
+            'dateModified' => $pageModified,
             'inLanguage' => 'en',
-        ],
+        ], function ($v) { return $v !== null; }),
     ],
 ];
 
@@ -94,6 +128,7 @@ if ($pageSchema) {
         'url' => $canonical,
         'provider' => ['@id' => $orgId],
         'areaServed' => 'Worldwide',
+        'mainEntityOfPage' => ['@id' => $canonical . '#webpage'],
     ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 }
 $breadcrumbSchema = breadcrumb_schema($pageTitle);

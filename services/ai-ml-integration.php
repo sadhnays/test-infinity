@@ -3,6 +3,7 @@ $pageTitle = "AI & ML LMS Integration Services | Infinity SoftHub";
 $pageDescription = "AI & ML integration for learning platforms: RAG learning assistants, adaptive learning pathways, AI tutors, and automated quiz generators.";
 $pageKeywords = "AI powered learning assistant, RAG course search, AI tutor integration, adaptive learning platform, AI automated quiz generator, intelligent tutoring system, OpenAI LangChain learning";
 $activePage = 'services';
+$pageModified = '2026-10-17';
 
 require_once __DIR__ . '/../includes/config.php';
 require_once __DIR__ . '/../includes/functions.php';
@@ -24,7 +25,7 @@ $pageSchema = json_encode([
             'url' => 'https://infinitysofthub.com/services/ai-ml-integration.php',
             'description' => $pageDescription,
             'areaServed' => 'Worldwide',
-            'provider' => ['@type' => 'Organization', 'name' => 'Infinity SoftHub Technologies', 'url' => 'https://infinitysofthub.com/'],
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
         ],
         faq_schema_array($aiFaqs),
     ],

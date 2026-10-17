@@ -29,7 +29,7 @@ $pageSchema = json_encode([
             '@type' => 'Service',
             'name' => 'Moodle LMS Development for US Organizations',
             'serviceType' => 'Moodle LMS development, integration, mobile app, hosting and support',
-            'provider' => ['@type' => 'Organization', 'name' => 'Infinity SoftHub Technologies', 'url' => 'https://infinitysofthub.com/'],
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
             'areaServed' => ['@type' => 'Country', 'name' => 'United States'],
             'availableChannel' => ['@type' => 'ServiceChannel', 'serviceUrl' => 'https://infinitysofthub.com/contact.php'],
         ],

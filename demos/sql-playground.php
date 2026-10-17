@@ -4,6 +4,7 @@ $pageTitle = "Interactive SQL Coding Lab Demo | Infinity SoftHub";
 $pageDescription = "Try our interactive browser coding sandbox. Custom SQL & Python labs, automated code grading, database query editors, and compiler widgets for LMS.";
 $pageKeywords = "browser coding sandbox, online SQL editor for learning, Python interactive coding lab, automated code grading software, web compiler widget, coding assessment platform";
 $activePage = 'demos';
+$pageModified = '2026-10-17';
 
 require_once __DIR__ . '/../includes/config.php';
 require_once __DIR__ . '/../includes/functions.php';

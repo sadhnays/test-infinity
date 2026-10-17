@@ -3,6 +3,7 @@ $pageTitle = "Joomla Development Services | Infinity SoftHub";
 $pageDescription = "Professional Joomla development services. Custom Joomla websites, extensions, templates, and enterprise CMS solutions with 8+ years of experience.";
 $pageKeywords = "Joomla development, Joomla website, Joomla customization, Joomla extensions, Joomla templates, CMS development";
 $activePage = 'services';
+$pageModified = '2026-10-17';
 require_once '../includes/header.php';
 ?>
 

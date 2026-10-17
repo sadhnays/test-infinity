@@ -4,6 +4,8 @@ $pageTitle = "Moodle & LMS Case Studies | Infinity SoftHub";
 $pageDescription = "Moodle and LMS case studies from Infinity SoftHub: a bilingual Moodle platform with iOS and Android apps, SQL coding labs, AI study assistants and automated grading.";
 $pageKeywords = "Moodle case study, LMS case study, custom Moodle project, Moodle mobile app, coding lab Moodle, AI grading LMS";
 $activePage = 'case-studies';
+$pageType = 'CollectionPage';
+$pageModified = '2026-10-17';
 
 require_once __DIR__ . '/includes/config.php';
 require_once __DIR__ . '/includes/functions.php';
@@ -17,13 +19,6 @@ $caseFaqs = [
 $pageSchema = json_encode([
     '@context' => 'https://schema.org',
     '@graph' => [
-        [
-            '@type' => 'CollectionPage',
-            'name' => 'Moodle & LMS Case Studies',
-            'url' => 'https://infinitysofthub.com/case-studies.php',
-            'description' => $pageDescription,
-            'dateModified' => '2026-10-17',
-        ],
         faq_schema_array($caseFaqs),
     ],
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
