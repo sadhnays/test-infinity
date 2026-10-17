@@ -78,6 +78,9 @@ require_once __DIR__ . '/../includes/header.php';
     </div>
 </section>
 
+<?php echo render_summary_box('Infinity SoftHub builds online stores and marketplaces on WooCommerce, Shopify and Magento, and custom stores in PHP. We connect payments, shipping and tax, speed up slow stores, and link shops to learning platforms so course buyers are enrolled automatically. Everything is tested on staging before launch, and you own the custom code.'); ?>
+
+
 <!-- Service Overview -->
 <section class="content-section">
     <div class="container">
@@ -207,6 +210,49 @@ require_once __DIR__ . '/../includes/header.php';
                 <div class="stats-label">Tested before every release</div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Detailed guide -->
+<section class="content-section service-guide">
+    <div class="container" style="max-width:900px; line-height:1.8;">
+            <h2>What does an e-commerce developer build?</h2>
+            <p>An e-commerce developer builds the part of your business that takes orders online: the product catalogue, cart and checkout, payment, shipping and tax rules, order emails, and the admin screens your team uses every day. We build new stores, rebuild slow or hard-to-maintain ones, and add features that standard themes and plugins do not cover.</p>
+
+            <h2>Which e-commerce platform should you choose?</h2>
+            <table class="data-table" style="width:100%; border-collapse:collapse;">
+                <thead><tr><th style="text-align:left; padding:10px; border-bottom:2px solid var(--border);">Platform</th><th style="text-align:left; padding:10px; border-bottom:2px solid var(--border);">Best for</th><th style="text-align:left; padding:10px; border-bottom:2px solid var(--border);">Watch out for</th></tr></thead>
+                <tbody>
+                    <tr><td style="padding:10px; border-bottom:1px solid var(--border);"><strong>WooCommerce</strong></td><td style="padding:10px; border-bottom:1px solid var(--border);">Sites already on WordPress, content-led stores, selling courses with LearnDash</td><td style="padding:10px; border-bottom:1px solid var(--border);">Needs good hosting and regular updates</td></tr>
+                    <tr><td style="padding:10px; border-bottom:1px solid var(--border);"><strong>Shopify</strong></td><td style="padding:10px; border-bottom:1px solid var(--border);">Fast launch, low maintenance, standard shops</td><td style="padding:10px; border-bottom:1px solid var(--border);">Monthly fees and limits on deep customisation</td></tr>
+                    <tr><td style="padding:10px; border-bottom:1px solid var(--border);"><strong>Magento (Adobe Commerce)</strong></td><td style="padding:10px; border-bottom:1px solid var(--border);">Large catalogues, complex B2B pricing, multiple stores</td><td style="padding:10px; border-bottom:1px solid var(--border);">Higher build and hosting cost</td></tr>
+                    <tr><td style="padding:10px;"><strong>Custom (PHP / Laravel)</strong></td><td style="padding:10px;">Marketplaces and unusual workflows</td><td style="padding:10px;">Longest build; you maintain more code</td></tr>
+                </tbody>
+            </table>
+
+            <h2>How does an e-commerce project work with us?</h2>
+            <ol style="padding-left:1.25rem;">
+                <li><strong>Scope:</strong> we agree what you sell, how you ship, which payments and integrations you need, and write it down with a price or an hourly estimate.</li>
+                <li><strong>Design:</strong> layouts for product, cart and checkout pages that work well on phones.</li>
+                <li><strong>Build:</strong> development on a staging site you can review at any time.</li>
+                <li><strong>Test:</strong> test orders, payment and refund checks, emails, and speed checks before anything goes live.</li>
+                <li><strong>Launch and support:</strong> go-live in a quiet period, then optional monthly support for updates, backups and fixes.</li>
+            </ol>
+
+            <h2>What can we connect to your store?</h2>
+            <ul style="padding-left:1.25rem;">
+                <li>Payment gateways such as Stripe, PayPal and Razorpay.</li>
+                <li>Shipping, tax and invoicing tools.</li>
+                <li>CRMs and email marketing tools.</li>
+                <li>Moodle and LearnDash, so a purchase enrols the buyer in the course automatically.</li>
+                <li>Custom reports and stock or ERP syncs.</li>
+            </ul>
+
+            <h2>Why do online stores run slowly?</h2>
+            <p>The usual causes are heavy images, too many plugins, cheap shared hosting and no caching. We measure the store first, then fix the biggest causes one by one. Test with Google PageSpeed Insights before and after so the result is something you can check yourself.</p>
+
+            <?php echo render_references([['label' => 'WooCommerce documentation', 'url' => 'https://woocommerce.com/documentation/'], ['label' => 'Shopify Help Center', 'url' => 'https://help.shopify.com/'], ['label' => 'Adobe Commerce documentation', 'url' => 'https://experienceleague.adobe.com/docs/commerce.html'], ['label' => 'Google PageSpeed Insights', 'url' => 'https://pagespeed.web.dev/']]); ?>
+            <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem;">Page last updated: October 2026</p>
     </div>
 </section>
 

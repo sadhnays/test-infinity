@@ -4,7 +4,6 @@ $pageDescription = "Professional Joomla development services. Custom Joomla webs
 $pageKeywords = "Joomla development, Joomla website, Joomla customization, Joomla extensions, Joomla templates, CMS development";
 $activePage = 'services';
 $pageModified = '2026-10-18';
-$pageModified = '2026-10-17';
 require_once __DIR__ . '/../includes/config.php';
 require_once __DIR__ . '/../includes/functions.php';
 
@@ -78,6 +77,9 @@ require_once __DIR__ . '/../includes/header.php';
         </div>
     </div>
 </section>
+
+<?php echo render_summary_box('Infinity SoftHub builds and maintains Joomla websites: custom templates, extensions, upgrades from older versions and security fixes. Joomla 3 stopped receiving updates in August 2023, so sites still running it should be upgraded. We upgrade on a staging copy first, replace extensions that are no longer supported, and hand over all custom code.'); ?>
+
 
 <!-- Service Overview -->
 <section class="content-section">
@@ -208,6 +210,41 @@ require_once __DIR__ . '/../includes/header.php';
                 <div class="stats-label">Satisfaction</div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Detailed guide -->
+<section class="content-section service-guide">
+    <div class="container" style="max-width:900px; line-height:1.8;">
+            <h2>What does a Joomla developer do?</h2>
+            <p>A Joomla developer builds and looks after websites that run on the Joomla content management system. That includes designing templates, writing custom components, modules and plugins in PHP, upgrading to supported versions, fixing security problems and keeping the site fast. We work with new Joomla sites and with older ones that other teams built.</p>
+
+            <h2>Why should you upgrade an old Joomla site?</h2>
+            <p>Joomla 3 reached the end of its life in August 2023 and no longer gets security fixes. A site that still runs it is exposed to known problems, and many extensions have stopped supporting it. Upgrading means moving to a current Joomla version, checking each extension, and rebuilding any that are no longer maintained.</p>
+
+            <h2>How do we upgrade a Joomla site safely?</h2>
+            <ol style="padding-left:1.25rem;">
+                <li><strong>Audit:</strong> list the Joomla version, extensions, template overrides and custom code.</li>
+                <li><strong>Back up:</strong> full copy of files and database, stored off the server.</li>
+                <li><strong>Upgrade on staging:</strong> run the upgrade on a copy of the site, never on the live site first.</li>
+                <li><strong>Fix:</strong> replace or rebuild extensions and template parts that break.</li>
+                <li><strong>Test and go live:</strong> check forms, logins, search and key pages on desktop and mobile, then switch over in a quiet period.</li>
+            </ol>
+
+            <h2>What Joomla work can we take on?</h2>
+            <ul style="padding-left:1.25rem;">
+                <li>Custom templates matched to your brand, and mobile-friendly redesigns.</li>
+                <li>Custom components, modules and plugins in PHP.</li>
+                <li>Migrations from other systems into Joomla, and from Joomla to WordPress when that suits you better.</li>
+                <li>Speed work: caching, image handling and database clean-up.</li>
+                <li>Security hardening, backups and monthly maintenance.</li>
+            </ul>
+
+            <h2>Joomla or WordPress?</h2>
+            <p>Joomla handles complex content structures and user permissions well. WordPress has a larger plugin market and a simpler editor. If your site works and your team knows Joomla, upgrading is usually cheaper than moving. If you want to sell courses with LearnDash or use many third-party plugins, WordPress can be the better fit. We can tell you which after a short review.</p>
+
+            <?php echo render_references([['label' => 'Joomla official site', 'url' => 'https://www.joomla.org/'], ['label' => 'Joomla documentation', 'url' => 'https://docs.joomla.org/'], ['label' => 'Joomla security announcements', 'url' => 'https://developer.joomla.org/security-centre.html']]); ?>
+            <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem;">Page last updated: October 2026</p>
     </div>
 </section>
 
