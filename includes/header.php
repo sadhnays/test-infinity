@@ -6,6 +6,24 @@
 require_once 'config.php';
 require_once 'functions.php';
 
+// Fallback definitions in case an older functions.php is still cached on the server.
+if (!function_exists('render_summary_box')) {
+    function render_summary_box($html) {
+        return '<section class="summary-section"><div class="container"><div class="summary-box">'
+            . '<p><strong>In short:</strong> ' . $html . '</p></div></div></section>';
+    }
+}
+if (!function_exists('render_references')) {
+    function render_references($refs) {
+        $html = '<aside class="references"><h3>References</h3><ul>';
+        foreach ($refs as $r) {
+            $html .= '<li><a href="' . htmlspecialchars($r['url'], ENT_QUOTES, 'UTF-8') . '" target="_blank" rel="noopener">'
+                . htmlspecialchars($r['label'], ENT_QUOTES, 'UTF-8') . '</a></li>';
+        }
+        return $html . '</ul></aside>';
+    }
+}
+
 $pageTitle = $pageTitle ?? SITE_NAME;
 $pageDescription = $pageDescription ?? 'Founder-led custom LMS development, AI-powered learning tools, coding labs, integrations, and cloud deployment for organizations worldwide.';
 $pageKeywords = $pageKeywords ?? 'custom LMS development, Moodle development, AI learning assistant, LMS integration, e-learning development';
