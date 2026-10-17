@@ -61,18 +61,18 @@ require_once 'includes/header.php';
             <div class="grid grid-4 stagger">
                 <div class="stats-card" data-aos="zoom-in">
                     <i class="fas fa-cubes stats-card-icon"></i>
-                    <div class="stats-number counter" data-target="200">0</div>
-                    <div class="stats-label">Platforms Delivered</div>
+                    <div class="stats-number">2019</div>
+                    <div class="stats-label">Working with Moodle since</div>
                 </div>
                 <div class="stats-card" data-aos="zoom-in">
                     <i class="fas fa-users-gear stats-card-icon"></i>
-                    <div class="stats-number counter" data-target="15000" data-suffix="+">0</div>
-                    <div class="stats-label">Active Users Empowered</div>
+                    <div class="stats-number">24h</div>
+                    <div class="stats-label">Reply to every enquiry</div>
                 </div>
                 <div class="stats-card" data-aos="zoom-in">
                     <i class="fas fa-circle-check stats-card-icon" style="color: var(--accent-green);"></i>
-                    <div class="stats-number stats-green">99%</div>
-                    <div class="stats-label">Client Retention & Satisfaction</div>
+                    <div class="stats-number stats-green">You</div>
+                    <div class="stats-label">Own all custom code</div>
                 </div>
                 <div class="stats-card" data-aos="zoom-in">
                     <i class="fas fa-globe stats-card-icon" style="color: var(--accent-cyan);"></i>
@@ -100,7 +100,7 @@ require_once 'includes/header.php';
                 <div class="anim-fade-left" data-aos="fade-left">
                     <h3 class="h3-mb">Why Partners <span class="gradient-text">Trust Us</span></h3>
                     <ul class="premium-check-list">
-                        <li><i class="fas fa-circle-check"></i><span><strong>15+ Years IT Consulting Expertise</strong> - Delivering robust results for workflows.</span></li>
+                        <li><i class="fas fa-circle-check"></i><span><strong>Moodle Experience Since 2019</strong> - Founder-led, hands-on LMS development.</span></li>
                         <li><i class="fas fa-circle-check"></i><span><strong>Custom Application Development</strong> - Tailored web, desktop, and mobile products.</span></li>
                         <li><i class="fas fa-circle-check"></i><span><strong>Custom LMS & Extension Design</strong> - Rich plugin creation and specialized platforms.</span></li>
                         <li><i class="fas fa-circle-check"></i><span><strong>Cloud Infrastructure & DevOps</strong> - Highly available, auto-scaling setups on AWS and Azure.</span></li>
@@ -192,10 +192,10 @@ require_once 'includes/header.php';
                     <div class="card-body">
                         <div class="badge badge-primary mb-1rem">Education</div>
                         <h4>Scalable E-Learning Platform Transformation</h4>
-                        <p>A complete software overhaul for an academic institution supporting 10,000+ active users. Implemented secure plugin modules, custom theme styling, and cloud database indexing.</p>
+                        <p>A complete platform overhaul for an academic institution. Implemented secure plugin modules, custom theme styling, and cloud database indexing.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 10,000+ Active Users</span>
-                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 40% Engagement Boost</span>
+                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> Custom Plugins</span>
+                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> Custom Theme</span>
                         </div>
                     </div>
                 </div>
@@ -208,10 +208,10 @@ require_once 'includes/header.php';
                     <div class="card-body">
                         <div class="badge badge-success mb-1rem">Corporate</div>
                         <h4>Enterprise Performance Portal</h4>
-                        <p>Developed a secure database portal for a multinational organization with 5,000+ team members. Integrated with CRM platforms and custom ERP tools.</p>
+                        <p>Developed a secure database portal for a large organization. Integrated with CRM platforms and custom ERP tools.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 5,000+ Daily Members</span>
-                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 60% Process Optimization</span>
+                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> CRM Integration</span>
+                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> ERP Integration</span>
                         </div>
                     </div>
                 </div>
@@ -226,8 +226,8 @@ require_once 'includes/header.php';
                         <h4>Medical Knowledge Base LMS</h4>
                         <p>Built a customized web platform for clinical certification, professional CME metrics tracker, and compliance verification modules.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 2,000+ Medical Professionals</span>
-                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 100% Audit Compliance</span>
+                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> CME Tracking</span>
+                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> Compliance Modules</span>
                         </div>
                     </div>
                 </div>
@@ -242,8 +242,8 @@ require_once 'includes/header.php';
                         <h4>Interactive Service & Onboarding System</h4>
                         <p>Engineered a custom service and onboarding workspace featuring interactive content widgets, quizzes, and automated certificate issuance.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> 10,000+ Customers Served</span>
-                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> 85% Target Success Rate</span>
+                            <span class="check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> Interactive Quizzes</span>
+                            <span class="check-item ml-1rem"><i class="fas fa-circle-check" aria-hidden="true"></i> Auto Certificates</span>
                         </div>
                     </div>
                 </div>

@@ -334,14 +334,12 @@ require_once '../includes/header.php';
     <div class="container">
         <div class="grid grid-4 stagger">
             <div class="stats-card" data-aos="zoom-in">
-                <div class="stats-number counter" data-target="95">0</div>
-                <div class="stats-suffix">%</div>
-                <div class="stats-label">Mobile Traffic</div>
+                <div class="stats-number">iOS + Android</div>
+                <div class="stats-label">Apps connected to your LMS</div>
             </div>
             <div class="stats-card" data-aos="zoom-in">
-                <div class="stats-number counter" data-target="50">0</div>
-                <div class="stats-suffix">+</div>
-                <div class="stats-label">Projects</div>
+                <div class="stats-number">24h</div>
+                <div class="stats-label">Reply to every enquiry</div>
             </div>
             <div class="stats-card" data-aos="zoom-in">
                 <div class="stats-number">24/7</div>

@@ -40,6 +40,13 @@ DirectoryIndex index.php index.html
 <IfModule mod_alias.c>
     RedirectMatch 301 ^/blog\.php$ https://infinitysofthub.com/blog/
     RedirectMatch 301 ^/services/moodle-development\.php$ https://infinitysofthub.com/services/moodle-all-development.php
+    RedirectMatch 301 ^/services/moodle-lms-development-denmark\.php$ https://infinitysofthub.com/services/moodle-lms-development-europe.php
+    RedirectMatch 301 ^/services/moodle-lms-development-netherlands\.php$ https://infinitysofthub.com/services/moodle-lms-development-europe.php
+    RedirectMatch 301 ^/services/moodle-lms-development-norway\.php$ https://infinitysofthub.com/services/moodle-lms-development-europe.php
+    RedirectMatch 301 ^/services/moodle-lms-development-poland\.php$ https://infinitysofthub.com/services/moodle-lms-development-europe.php
+    RedirectMatch 301 ^/services/moodle-lms-development-spain\.php$ https://infinitysofthub.com/services/moodle-lms-development-europe.php
+    RedirectMatch 301 ^/services/moodle-lms-development-sweden\.php$ https://infinitysofthub.com/services/moodle-lms-development-europe.php
+    RedirectMatch 301 ^/services/moodle-lms-development-brazil\.php$ https://infinitysofthub.com/services/moodle-all-development.php
     RedirectMatch 301 ^/services/ai-ml-integration\.html$ https://infinitysofthub.com/services/ai-ml-integration.php
     RedirectMatch 301 ^/services/hosting-migration\.html$ https://infinitysofthub.com/services/hosting-migration.php
     RedirectMatch 301 ^/services/lms-solutions\.html$ https://infinitysofthub.com/services/lms-solutions.php

@@ -165,14 +165,12 @@ require_once '../includes/header.php';
     <div class="container">
         <div class="grid grid-4 stagger">
             <div class="stats-card" data-aos="zoom-in">
-                <div class="stats-number counter" data-target="80">0</div>
-                <div class="stats-suffix">+</div>
-                <div class="stats-label">Projects</div>
+                <div class="stats-number">Full-Stack</div>
+                <div class="stats-label">PHP, database &amp; front end</div>
             </div>
             <div class="stats-card" data-aos="zoom-in">
-                <div class="stats-number counter" data-target="100">0</div>
-                <div class="stats-suffix">+</div>
-                <div class="stats-label">Extensions</div>
+                <div class="stats-number">24h</div>
+                <div class="stats-label">Reply to every enquiry</div>
             </div>
             <div class="stats-card" data-aos="zoom-in">
                 <div class="stats-number">8+</div>

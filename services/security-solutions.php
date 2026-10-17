@@ -3,7 +3,33 @@ $pageTitle = "LMS Security Services & Hardening | Infinity SoftHub";
 $pageDescription = "Comprehensive security solutions for LMS platforms - SSL implementation, data protection, compliance management, and proactive monitoring.";
 $pageKeywords = "LMS security, Moodle security, SSL implementation, data protection, GDPR compliance, security auditing";
 $activePage = 'services';
-require_once '../includes/header.php';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$securityFaqs = [
+    ['q' => 'What does a Moodle security audit include?', 'a' => 'We review the Moodle version and plugins for known vulnerabilities, check user roles and permissions, server and PHP settings, HTTPS, backups, password and login policies, and file permissions. You get a written report with each issue ranked by risk and a plan to fix it.'],
+    ['q' => 'How often should Moodle be updated?', 'a' => 'Moodle publishes security fixes regularly, so plan to apply minor updates within a few weeks of release and to stay on a supported major version. We test every update on a staging copy before it goes live.'],
+    ['q' => 'Can you make our LMS GDPR compliant?', 'a' => 'We can configure the technical side: the Moodle privacy and data-request tools, data retention rules, encryption, access logs and hosting in your region. Legal compliance also depends on your policies and contracts, which your data protection officer or lawyer should review.'],
+    ['q' => 'Do you offer round-the-clock monitoring?', 'a' => 'We set up uptime and error alerts and agree on response times as part of a support retainer. We do not run a 24/7 security operations centre, and we say so up front.'],
+    ['q' => 'Can you help after our site has been hacked?', 'a' => 'Yes. We take the site offline safely, find how the attacker got in, clean or restore from a known-good backup, patch the weakness and reset credentials, then explain what changed.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'LMS Security Services',
+            'serviceType' => 'LMS security hardening and auditing',
+            'url' => 'https://infinitysofthub.com/services/security-solutions.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@type' => 'Organization', 'name' => 'Infinity SoftHub Technologies', 'url' => 'https://infinitysofthub.com/'],
+        ],
+        faq_schema_array($securityFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- Page Hero -->
@@ -31,7 +57,7 @@ require_once '../includes/header.php';
                     <li><strong>SSL/TLS Implementation</strong> - HTTPS encryption for all traffic</li>
                     <li><strong>Data Protection</strong> - GDPR, FERPA, COPPA compliance</li>
                     <li><strong>Access Control</strong> - Role-based permissions, 2FA</li>
-                    <li><strong>Proactive Monitoring</strong> - 24/7 threat detection</li>
+                    <li><strong>Proactive Monitoring</strong> - Uptime and error alerts</li>
                     <li><strong>Backup Security</strong> - Encrypted, offsite backups</li>
                 </ul>
                 <div style="margin-top:2rem;">
@@ -83,10 +109,45 @@ require_once '../includes/header.php';
             </div>
             <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-eye"></i></div>
-                <h4>24/7 Monitoring</h4>
-                <p>Proactive threat detection and incident response services.</p>
+                <h4>Monitoring & Alerts</h4>
+                <p>Uptime checks, error alerts and agreed response times for incidents.</p>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Detailed guide -->
+<section class="content-section service-guide">
+    <div class="container" style="max-width:900px; line-height:1.8;">
+
+            <h2>Why LMS platforms need extra security</h2>
+            <p>A learning platform holds personal data about students and staff: names, emails, grades, certificates and sometimes payment details. It also has many users with different roles, many third-party plugins and regular file uploads. Each of these is a common way in for attackers. Most LMS breaches we see come from outdated plugins, weak admin passwords and permissions that grant more access than a role needs.</p>
+
+            <h2>How we secure a Moodle or LearnDash site</h2>
+            <ol style="padding-left:1.25rem;">
+                <li><strong>Audit:</strong> we scan the core version, plugins and themes, review roles and capabilities, and check server, PHP and database settings.</li>
+                <li><strong>Report:</strong> you get a plain-language list of issues ranked high, medium or low, with the fix for each.</li>
+                <li><strong>Fix on staging:</strong> updates and configuration changes are tested on a copy of your site first.</li>
+                <li><strong>Harden:</strong> HTTPS everywhere, secure headers, login limits, multi-factor authentication for admins, least-privilege roles and safe file permissions.</li>
+                <li><strong>Back up and monitor:</strong> automatic off-site backups, a tested restore process, uptime alerts and error logging.</li>
+            </ol>
+
+            <h2>Common fixes we make</h2>
+            <ul style="padding-left:1.25rem;">
+                <li>Removing unused or abandoned plugins and updating the rest.</li>
+                <li>Enforcing strong passwords and adding multi-factor authentication for managers and admins.</li>
+                <li>Moving the Moodle data folder outside the web root and locking down file permissions.</li>
+                <li>Turning off debugging output and hiding version details on live sites.</li>
+                <li>Setting up SSO with Microsoft Entra ID, Google Workspace or SAML, so staff use one secure login.</li>
+                <li>Configuring the Moodle privacy tools for data export and deletion requests.</li>
+            </ul>
+
+            <h2>Who this service is for</h2>
+            <p>Universities, schools, training companies and HR teams that run Moodle, LearnDash or a custom LMS and want an independent review, need to pass a client or IT security questionnaire, or have had a security incident and want to prevent the next one.</p>
+
+            <h2>Frequently asked questions</h2>
+            <?php echo render_faq($securityFaqs); ?>
+            <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem;">Page last updated: October 2026</p>
     </div>
 </section>
 

@@ -3,7 +3,33 @@ $pageTitle = "Enterprise LMS & Corporate Training | Infinity SoftHub";
 $pageDescription = "Custom enterprise LMS & corporate training platforms: SCORM compliant systems, employee onboarding portals, virtual classrooms, and LMS solutions.";
 $pageKeywords = "enterprise LMS development, corporate training platform, custom learning management system, SCORM compliant LMS, employee onboarding software, staff training portal, virtual classroom software";
 $activePage = 'services';
-require_once '../includes/header.php';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$lmsFaqs = [
+    ['q' => 'Should we build a custom LMS or use Moodle?', 'a' => 'For most organisations, customising Moodle or another proven open-source LMS is faster and cheaper than building from scratch, and you avoid licence fees. A fully custom LMS makes sense only when your workflow is very different from how standard platforms work.'],
+    ['q' => 'What is SCORM and do we need it?', 'a' => 'SCORM is a standard format for e-learning packages made in tools like Articulate Storyline or Adobe Captivate. If you buy or author courses in these tools, your LMS needs to support SCORM (or xAPI) to play them and record results.'],
+    ['q' => 'Can the LMS connect to our HR system?', 'a' => 'Yes. We connect the LMS to HR and identity systems so new employees are enrolled automatically, leavers lose access, and completion data flows back for reporting.'],
+    ['q' => 'Can staff log in with their work account?', 'a' => 'Yes. We set up single sign-on with Microsoft Entra ID (Azure AD), Google Workspace, Okta or any SAML or OAuth provider.'],
+    ['q' => 'How do you price an enterprise LMS project?', 'a' => 'After a discovery call we send a written scope with either a fixed price for defined work or an hourly estimate, plus an optional monthly support retainer. There are no licence fees for open-source platforms like Moodle.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'Enterprise LMS & Corporate Training Platforms',
+            'serviceType' => 'Enterprise LMS development',
+            'url' => 'https://infinitysofthub.com/services/lms-solutions.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@type' => 'Organization', 'name' => 'Infinity SoftHub Technologies', 'url' => 'https://infinitysofthub.com/'],
+        ],
+        faq_schema_array($lmsFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- Page Hero -->
@@ -134,6 +160,37 @@ require_once '../includes/header.php';
                 <span class="tech-logo-label"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Teachable</span>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Detailed guide -->
+<section class="content-section service-guide">
+    <div class="container" style="max-width:900px; line-height:1.8;">
+
+            <h2>Training platforms built around how your organisation works</h2>
+            <p>Corporate training has different needs from a school or university. Courses are assigned by role, deadlines matter, managers need reports, and compliance training has to be tracked and renewed. We build and customise learning platforms, usually on Moodle&trade; or LearnDash, that handle these needs without forcing your teams into a rigid off-the-shelf product.</p>
+
+            <h2>What an enterprise LMS can include</h2>
+            <ul style="padding-left:1.25rem;">
+                <li><strong>Onboarding programmes:</strong> new hires are enrolled automatically into the right courses for their role and location.</li>
+                <li><strong>Compliance training:</strong> mandatory courses with due dates, reminders, certificates and automatic renewal.</li>
+                <li><strong>SCORM and xAPI support:</strong> play courses made in Articulate, Captivate or iSpring and record results.</li>
+                <li><strong>Single sign-on:</strong> staff log in with Microsoft, Google, Okta or another SAML provider.</li>
+                <li><strong>HR and CRM integration:</strong> sync users, departments and managers, and send completion data back.</li>
+                <li><strong>Manager dashboards:</strong> team progress, overdue training and exportable reports.</li>
+                <li><strong>Virtual classrooms:</strong> Zoom, Microsoft Teams or BigBlueButton sessions inside the course.</li>
+                <li><strong>Mobile learning:</strong> responsive design and native iOS and Android apps where needed.</li>
+            </ul>
+
+            <h2>Our process</h2>
+            <p>We begin with discovery: who your learners are, how training is assigned today and which systems the LMS must connect to. We then recommend a platform, write a scope and build on a staging site that your team can test. After launch we train your administrators and offer ongoing support for updates, new features and integrations.</p>
+
+            <h2>Why companies choose us</h2>
+            <p>We have worked with Moodle since 2019 and build both the platform and the integrations around it. You deal directly with the developers doing the work, get a reply within 24 hours, and own all custom code. Learn more about our <a href="<?php echo base_url('services/moodle-all-development.php'); ?>">Moodle development services</a> and <a href="<?php echo base_url('services/security-solutions.php'); ?>">LMS security services</a>.</p>
+
+            <h2>Frequently asked questions</h2>
+            <?php echo render_faq($lmsFaqs); ?>
+            <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem;">Page last updated: October 2026</p>
     </div>
 </section>
 

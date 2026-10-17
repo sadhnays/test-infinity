@@ -5,8 +5,24 @@ $pageDescription = "Try our interactive browser coding sandbox. Custom SQL & Pyt
 $pageKeywords = "browser coding sandbox, online SQL editor for learning, Python interactive coding lab, automated code grading software, web compiler widget, coding assessment platform";
 $activePage = 'demos';
 
-// Ensure base URL can find includes
-require_once '../includes/header.php';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$sqlFaqs = [
+    ['q' => 'Can a SQL lab like this run inside Moodle?', 'a' => 'Yes. We package the coding lab as a Moodle activity or embed it in a page, lesson or quiz, so learners stay inside the course and their attempts can feed the gradebook.'],
+    ['q' => 'Can it work with LearnDash or another LMS?', 'a' => 'Yes. For LearnDash we embed the lab in lessons and topics through a WordPress plugin or shortcode. For other platforms we can use LTI or an iframe embed, depending on what the LMS supports.'],
+    ['q' => 'Does the learner need to install anything?', 'a' => 'No. This demo runs entirely in the browser with an in-memory dataset, so nothing is installed and no real database is touched. Production labs can run in the browser or against a sandboxed server-side database.'],
+    ['q' => 'Can queries be graded automatically?', 'a' => 'Yes. A lab can compare the learner\'s result set with the expected result, check for required clauses such as JOIN or GROUP BY, and send a score and feedback back to the course.'],
+    ['q' => 'Is SQL the only language supported?', 'a' => 'No. The same approach works for Python, JavaScript and other languages. The editor, the test cases and the grading rules are configured for each course.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        faq_schema_array($sqlFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <style>
@@ -291,6 +307,41 @@ require_once '../includes/header.php';
                 </div>
             </main>
         </div>
+
+        <section class="sql-explainer" style="margin-top:4rem; max-width:900px; color:#cbd5e1; line-height:1.8;">
+            <h2 style="color:#f8fafc;">What is an LMS coding lab?</h2>
+            <p>An LMS coding lab is a code editor that sits inside an online course. Learners write and run code on the course page instead of switching to another tool, and the course can check their answers. This page shows a small SQL version of the labs we build for Moodle&trade; and LearnDash courses.</p>
+
+            <h2 style="color:#f8fafc; margin-top:2.5rem;">How this demo works</h2>
+            <p>The sandbox above holds three sample tables: <code>students</code>, <code>courses</code> and <code>grades</code>. Click a table name to load a query, edit it, then press <strong>Run Query</strong>. The query runs in your browser against an in-memory dataset, so nothing is sent to a server and nothing is stored. Try these:</p>
+            <ul style="padding-left:1.25rem;">
+                <li><code>SELECT * FROM students WHERE gpa &gt; 3.5;</code> lists high-scoring students.</li>
+                <li><code>SELECT * FROM courses;</code> shows every course and its credits.</li>
+                <li><code>SELECT * FROM grades WHERE grade = 'A';</code> filters grades.</li>
+            </ul>
+
+            <h2 style="color:#f8fafc; margin-top:2.5rem;">What a production lab adds</h2>
+            <p>A demo shows the editor. A lab built for a real course also needs:</p>
+            <ul style="padding-left:1.25rem;">
+                <li><strong>Exercises with expected results</strong>, written with the course author for each lesson.</li>
+                <li><strong>Automatic grading</strong> that compares the learner's output with the expected output and returns feedback.</li>
+                <li><strong>Gradebook sync</strong>, so scores appear in the Moodle or LearnDash gradebook next to quizzes and assignments.</li>
+                <li><strong>A safe sandbox</strong>: a browser-only database, or an isolated server database that resets after each attempt.</li>
+                <li><strong>Hints and attempt limits</strong> set by the teacher.</li>
+                <li><strong>Reports</strong> that show teachers where learners get stuck.</li>
+            </ul>
+
+            <h2 style="color:#f8fafc; margin-top:2.5rem;">Who uses coding labs</h2>
+            <p>Coding labs suit data and programming courses at universities, bootcamps and training companies, and internal training teams that teach SQL or Python to analysts. They replace screenshots and copy-paste exercises with practice that learners can run and teachers can grade.</p>
+
+            <h2 style="color:#f8fafc; margin-top:2.5rem;">Frequently asked questions</h2>
+            <div class="sql-faq" style="color:#0f172a;">
+                <?php echo render_faq($sqlFaqs); ?>
+            </div>
+
+            <p style="margin-top:2rem;">Need a coding lab in your course? See our <a href="<?php echo base_url('services/moodle-all-development.php'); ?>" style="color:#22d3ee;">Moodle development services</a> or <a href="<?php echo base_url('contact.php'); ?>" style="color:#22d3ee;">tell us about your project</a>. We reply within 24 hours.</p>
+            <p style="font-size:0.85rem; color:#94a3b8;">Page last updated: October 2026</p>
+        </section>
     </div>
 </div>
 

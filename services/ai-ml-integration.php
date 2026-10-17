@@ -4,7 +4,33 @@ $pageDescription = "AI & ML integration for learning platforms: RAG learning ass
 $pageKeywords = "AI powered learning assistant, RAG course search, AI tutor integration, adaptive learning platform, AI automated quiz generator, intelligent tutoring system, OpenAI LangChain learning";
 $activePage = 'services';
 
-require_once '../includes/header.php';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$aiFaqs = [
+    ['q' => 'What is a RAG learning assistant?', 'a' => 'RAG stands for retrieval-augmented generation. The assistant searches your own course material first, such as PDFs, lesson pages and notes, then uses a large language model to answer the learner using only that material. This keeps answers tied to your course instead of the open internet.'],
+    ['q' => 'Can AI grade student work?', 'a' => 'AI can draft scores and written feedback for essays, short answers and code against your rubric. We recommend that a teacher reviews AI grades before they are released, and we build that review step into the workflow.'],
+    ['q' => 'Which AI models do you use?', 'a' => 'We work with OpenAI and Anthropic Claude APIs and with open-source models that can be hosted on your own servers. The choice depends on your budget, data rules and the quality you need.'],
+    ['q' => 'Is student data sent to the AI provider?', 'a' => 'Only the text needed to answer a request is sent, and we can remove names and other personal details first. For stricter data rules we can use providers with data-residency options or self-hosted models.'],
+    ['q' => 'Can you add AI to an existing Moodle or LearnDash site?', 'a' => 'Yes. We add AI features as plugins or blocks inside your current platform, so learners and teachers do not have to use a separate tool.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'AI & ML Integration for Learning Platforms',
+            'serviceType' => 'AI integration for LMS',
+            'url' => 'https://infinitysofthub.com/services/ai-ml-integration.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@type' => 'Organization', 'name' => 'Infinity SoftHub Technologies', 'url' => 'https://infinitysofthub.com/'],
+        ],
+        faq_schema_array($aiFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
     <!-- Page Hero -->
@@ -151,6 +177,35 @@ require_once '../includes/header.php';
             </div>
         </div>
     </section>
+
+<!-- Detailed guide -->
+<section class="content-section service-guide">
+    <div class="container" style="max-width:900px; line-height:1.8;">
+
+            <h2>AI features that work inside your LMS</h2>
+            <p>Most AI tools for education sit outside the learning platform, which means learners copy and paste between tabs and teachers lose track of what happened. We build AI features directly into Moodle, LearnDash or your custom LMS, so they use your course content, respect your user roles and save results where teachers already look.</p>
+
+            <h2>What we build</h2>
+            <ul style="padding-left:1.25rem;">
+                <li><strong>Course Q&amp;A assistants:</strong> a chat block that answers learner questions from your own PDFs, lessons and notes using retrieval-augmented generation.</li>
+                <li><strong>Assisted grading:</strong> draft scores and feedback for essays, short answers and code, checked by a teacher before release.</li>
+                <li><strong>Quiz and content generation:</strong> question banks, summaries and practice questions created from your lesson material for teachers to edit.</li>
+                <li><strong>Adaptive learning paths:</strong> suggestions for the next activity based on quiz results and progress.</li>
+                <li><strong>Search across courses:</strong> semantic search that finds the right lesson even when the learner uses different words.</li>
+                <li><strong>Analytics:</strong> early warnings for learners who are falling behind, based on activity and grades.</li>
+            </ul>
+
+            <h2>How we approach AI projects</h2>
+            <p>We start small. First we pick one task where AI clearly saves time, such as answering repeated learner questions, and build a working prototype on a copy of your site. We test it with real course content and check the answers for accuracy. Only when it works well do we roll it out, with usage limits, logging and a clear way for teachers to switch it off.</p>
+
+            <h2>Responsible use</h2>
+            <p>AI can be wrong. Every feature we build shows where an answer came from, keeps a human in the loop for grades, and limits the personal data sent to any provider. You decide which model is used and where your data is processed. See our <a href="<?php echo base_url('demos/sql-playground.php'); ?>">coding lab demo</a> and <a href="<?php echo base_url('case-studies.php'); ?>">case studies</a> for related work.</p>
+
+            <h2>Frequently asked questions</h2>
+            <?php echo render_faq($aiFaqs); ?>
+            <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem;">Page last updated: October 2026</p>
+    </div>
+</section>
 
     <!-- CTA Section -->
     <section class="content-section bg-alt">

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://infinitysofthub.com/about.php</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://infinitysofthub.com/case-studies.php</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://infinitysofthub.com/demos/sql-playground.php</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://infinitysofthub.com/our-locations.php</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -87,7 +87,7 @@
   </url>
   <url>
     <loc>https://infinitysofthub.com/services/ai-ml-integration.php</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -102,7 +102,7 @@
   </url>
   <url>
     <loc>https://infinitysofthub.com/services/ecommerce-development.php</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -117,17 +117,17 @@
   </url>
   <url>
     <loc>https://infinitysofthub.com/services/joomla-development.php</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://infinitysofthub.com/services/learndash-development.php</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://infinitysofthub.com/services/lms-solutions.php</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -137,7 +137,7 @@
   </url>
   <url>
     <loc>https://infinitysofthub.com/services/mobile-elearning.php</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -151,47 +151,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://infinitysofthub.com/services/moodle-lms-development-brazil.php</loc>
-    <lastmod>2026-09-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://infinitysofthub.com/services/moodle-lms-development-canada.php</loc>
     <lastmod>2026-09-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://infinitysofthub.com/services/moodle-lms-development-denmark.php</loc>
-    <lastmod>2026-09-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://infinitysofthub.com/services/moodle-lms-development-netherlands.php</loc>
-    <lastmod>2026-09-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://infinitysofthub.com/services/moodle-lms-development-norway.php</loc>
-    <lastmod>2026-09-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://infinitysofthub.com/services/moodle-lms-development-poland.php</loc>
-    <lastmod>2026-09-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://infinitysofthub.com/services/moodle-lms-development-singapore.php</loc>
-    <lastmod>2026-09-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://infinitysofthub.com/services/moodle-lms-development-spain.php</loc>
-    <lastmod>2026-09-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://infinitysofthub.com/services/moodle-lms-development-sweden.php</loc>
     <lastmod>2026-09-29</lastmod>
     <priority>0.7</priority>
   </url>
@@ -207,7 +172,7 @@
   </url>
   <url>
     <loc>https://infinitysofthub.com/services/security-solutions.php</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -234,5 +199,10 @@
     <loc>https://infinitysofthub.com/what-we-do.php</loc>
     <lastmod>2026-09-29</lastmod>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://infinitysofthub.com/services/moodle-lms-development-europe.php</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>

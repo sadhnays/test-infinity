@@ -3,7 +3,33 @@ $pageTitle = "LearnDash Development | WordPress LMS | Infinity SoftHub";
 $pageDescription = "Professional LearnDash development services. Custom WordPress LMS solutions with LearnDash - course building, quiz systems, certificates & more.";
 $pageKeywords = "LearnDash development, LearnDash WordPress LMS, LearnDash course development, LearnDash customization, WordPress LMS";
 $activePage = 'services';
-require_once '../includes/header.php';
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/functions.php';
+
+$learndashFaqs = [
+    ['q' => 'What is LearnDash?', 'a' => 'LearnDash is a learning management plugin for WordPress. It adds courses, lessons, quizzes, certificates and student progress to a WordPress site, so you can sell or deliver training from your own website.'],
+    ['q' => 'Should I choose LearnDash or Moodle?', 'a' => 'LearnDash suits businesses that already use WordPress and want to sell courses or run a branded training site. Moodle suits schools, universities and organisations that need complex grading, many teachers or a large number of courses. We build on both and can advise after a short call.'],
+    ['q' => 'Can you sell LearnDash courses with WooCommerce or memberships?', 'a' => 'Yes. We connect LearnDash with WooCommerce, Stripe or PayPal for one-off sales, subscriptions and bundles, and with membership plugins for access levels.'],
+    ['q' => 'Can you migrate courses from another platform to LearnDash?', 'a' => 'Yes. We move course content, quizzes and, where the source platform allows export, users and progress. We test the migration on a staging site before switching over.'],
+    ['q' => 'Do you build custom LearnDash plugins?', 'a' => 'Yes. We write custom PHP plugins for features LearnDash does not offer out of the box, such as custom reports, integrations with your CRM or HR system, or new quiz types. You own the code.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'LearnDash Development',
+            'serviceType' => 'LearnDash and WordPress LMS development',
+            'url' => 'https://infinitysofthub.com/services/learndash-development.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@type' => 'Organization', 'name' => 'Infinity SoftHub Technologies', 'url' => 'https://infinitysofthub.com/'],
+        ],
+        faq_schema_array($learndashFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <style>
@@ -165,14 +191,12 @@ require_once '../includes/header.php';
     <div class="container">
         <div class="grid grid-4 stagger">
             <div class="stats-card" data-aos="zoom-in">
-                <div class="stats-number counter" data-target="50">0</div>
-                <div class="stats-suffix">+</div>
-                <div class="stats-label">Projects</div>
+                <div class="stats-number">Full-Stack</div>
+                <div class="stats-label">WordPress, PHP &amp; LMS</div>
             </div>
             <div class="stats-card" data-aos="zoom-in">
-                <div class="stats-number counter" data-target="500">0</div>
-                <div class="stats-suffix">+</div>
-                <div class="stats-label">Courses Built</div>
+                <div class="stats-number">24h</div>
+                <div class="stats-label">Reply to every enquiry</div>
             </div>
             <div class="stats-card" data-aos="zoom-in">
                 <div class="stats-number">5+</div>
@@ -183,6 +207,35 @@ require_once '../includes/header.php';
                 <div class="stats-label">Satisfaction</div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Detailed guide -->
+<section class="content-section service-guide">
+    <div class="container" style="max-width:900px; line-height:1.8;">
+
+            <h2>What we do with LearnDash</h2>
+            <p>LearnDash turns a WordPress website into a learning platform. Out of the box it gives you courses, lessons, quizzes and certificates. Most businesses need more than that: a design that matches their brand, a checkout that works with their payment provider, reports their managers can read, and integrations with the tools they already use. That is where we come in.</p>
+
+            <h2>Typical LearnDash projects</h2>
+            <ul style="padding-left:1.25rem;">
+                <li><strong>Course-selling websites:</strong> LearnDash with WooCommerce or Stripe, coupons, bundles and subscriptions.</li>
+                <li><strong>Employee and partner training:</strong> groups, group leaders, assigned courses, due dates and completion reports.</li>
+                <li><strong>Membership sites:</strong> content locked by plan, drip-fed lessons and member dashboards.</li>
+                <li><strong>Custom features:</strong> new quiz types, custom certificates, gamification and points, and reports built for your team.</li>
+                <li><strong>Integrations:</strong> CRMs, email marketing tools, Zoom, and AI features such as automated feedback or course search.</li>
+                <li><strong>Speed and stability fixes:</strong> slow course pages, plugin conflicts and broken upgrades.</li>
+            </ul>
+
+            <h2>How a LearnDash project runs</h2>
+            <p>We start with a short call to understand your courses, learners and how you sell or assign training. We then send a written scope with a fixed price or an hourly estimate. Work is done on a staging site that you can review at any time. Once you approve, we move it live, check payments and emails end to end, and hand over admin notes so your team can add courses on their own.</p>
+
+            <h2>Why work with us on LearnDash</h2>
+            <p>We are full-stack PHP and WordPress developers who also build Moodle platforms, so we understand both the WordPress side and how learning platforms should work for teachers and learners. You talk directly to the developer, you get a reply within 24 hours, and you own every line of custom code we write. Read our guide to <a href="https://infinitysofthub.com/blog/">LMS development on our blog</a>, or compare with our <a href="<?php echo base_url('services/moodle-all-development.php'); ?>">Moodle development services</a>.</p>
+
+            <h2>Frequently asked questions</h2>
+            <?php echo render_faq($learndashFaqs); ?>
+            <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem;">Page last updated: October 2026</p>
     </div>
 </section>
 

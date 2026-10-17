@@ -275,10 +275,40 @@ require_once 'includes/header.php';
                     <p>Remote LMS customization, migrations and support for Australian education and corporate-training projects.</p>
                     <a class="market-link" href="<?php echo base_url('services/moodle-lms-development-australia.php'); ?>">Explore services for Australia <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </article>
+
+                <article class="office-card market-card" data-aos="fade-up">
+                    <div class="flag" aria-hidden="true">🇪🇺</div>
+                    <span class="remote-label"><i class="fas fa-globe" aria-hidden="true"></i> Remote delivery</span>
+                    <h3>Europe</h3>
+                    <p>Moodle development for universities and training teams in the Netherlands, Nordics, Poland, Spain and the rest of Europe, with EU hosting options.</p>
+                    <a class="market-link" href="<?php echo base_url('services/moodle-lms-development-europe.php'); ?>">Explore services for Europe <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </article>
+
+                <article class="office-card market-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flag" aria-hidden="true">🇸🇬</div>
+                    <span class="remote-label"><i class="fas fa-globe" aria-hidden="true"></i> Remote delivery</span>
+                    <h3>Singapore</h3>
+                    <p>LMS development and support for Singapore training providers, with working hours that overlap closely with India.</p>
+                    <a class="market-link" href="<?php echo base_url('services/moodle-lms-development-singapore.php'); ?>">Explore services for Singapore <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </article>
+            </div>
+
+            <div class="remote-how" data-aos="fade-up" style="max-width:900px; margin:3rem auto 0; line-height:1.8;">
+                <h2>How remote delivery works</h2>
+                <p>Every project is run from our Faridabad office. Here is what working with us looks like from another country:</p>
+                <ul style="padding-left:1.25rem;">
+                    <li><strong>Overlapping hours:</strong> India (IST, UTC+5:30) overlaps with UK and European mornings and afternoons, Singapore and Australian business days, and US early mornings or late evenings. We agree on regular call times at the start.</li>
+                    <li><strong>One point of contact:</strong> you speak with the person who manages your project, not a rotating support queue.</li>
+                    <li><strong>Written updates:</strong> progress, questions and decisions are shared in writing, so nothing depends on a call.</li>
+                    <li><strong>Staging first:</strong> changes are tested on a staging copy of your site before they reach your live platform.</li>
+                    <li><strong>Your infrastructure, your code:</strong> we can work on your own hosting in your region, and you own the custom code we write.</li>
+                </ul>
+                <p>We reply to every enquiry within 24 hours.</p>
+                <p style="font-size:0.85rem; color:var(--text-gray);">Page last updated: October 2026</p>
             </div>
 
             <p class="delivery-note" data-aos="fade-up">
-                <strong>Location clarification:</strong> USA, UK, Canada and Australia are markets we serve remotely. Infinity SoftHub Technologies does not present these countries as physical office locations.
+                <strong>Location clarification:</strong> USA, UK, Canada, Australia, Europe and Singapore are markets we serve remotely. Infinity SoftHub Technologies does not present these countries as physical office locations.
             </p>
         </div>
     </section>
