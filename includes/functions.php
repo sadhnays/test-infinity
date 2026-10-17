@@ -144,7 +144,6 @@ function get_db_connection() {
     }
     return $pdo;
 }
-?>
 
 // Answer-first summary box placed under the page hero (helps AI engines and snippets).
 if (!function_exists('render_summary_box')) {
