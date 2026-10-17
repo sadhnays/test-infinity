@@ -21,7 +21,6 @@ $sitemapSections = [
     'LMS & Learning Solutions' => [
         'LMS Solutions' => 'services/lms-solutions.php',
         'Complete LMS Development' => 'services/moodle-all-development.php',
-        'Custom LMS Plugins & Integrations' => 'services/moodle-development.php',
         'IOMAD Multi-Tenant LMS' => 'services/iomad-multi-tenant-lms.php',
         'LearnDash Development' => 'services/learndash-development.php',
         'Mobile e-Learning' => 'services/mobile-elearning.php',

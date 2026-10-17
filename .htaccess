@@ -39,11 +39,12 @@ DirectoryIndex index.php index.html
 # ------------------------------------------------------------------
 <IfModule mod_alias.c>
     RedirectMatch 301 ^/blog\.php$ https://infinitysofthub.com/blog/
+    RedirectMatch 301 ^/services/moodle-development\.php$ https://infinitysofthub.com/services/moodle-all-development.php
     RedirectMatch 301 ^/services/ai-ml-integration\.html$ https://infinitysofthub.com/services/ai-ml-integration.php
     RedirectMatch 301 ^/services/hosting-migration\.html$ https://infinitysofthub.com/services/hosting-migration.php
     RedirectMatch 301 ^/services/lms-solutions\.html$ https://infinitysofthub.com/services/lms-solutions.php
     RedirectMatch 301 ^/services/mobile-app-development\.html$ https://infinitysofthub.com/services/mobile-app-development.php
-    RedirectMatch 301 ^/services/moodle-development\.html$ https://infinitysofthub.com/services/moodle-development.php
+    RedirectMatch 301 ^/services/moodle-development\.html$ https://infinitysofthub.com/services/moodle-all-development.php
     RedirectMatch 301 ^/services/security-solutions\.html$ https://infinitysofthub.com/services/security-solutions.php
 
     # Legacy pages from the previous site (removed Sep 2026)
