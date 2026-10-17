@@ -47,6 +47,9 @@ require_once __DIR__ . '/../includes/header.php';
         </div>
     </section>
 
+<?php echo render_summary_box('AI integration for an LMS adds features such as course Q&amp;A assistants, AI-assisted grading and quiz generation inside Moodle or LearnDash. Since version 4.5, Moodle includes an AI subsystem for connecting AI providers. Infinity SoftHub builds custom AI tools on top of it or alongside it, with teacher review and limits on personal data.'); ?>
+
+
     <!-- Service Description -->
     <section class="content-section">
         <div class="container">
@@ -204,6 +207,7 @@ require_once __DIR__ . '/../includes/header.php';
 
             <h2>Frequently asked questions</h2>
             <?php echo render_faq($aiFaqs); ?>
+            <?php echo render_references([['label' => 'Moodle AI subsystem (Moodle Docs)', 'url' => 'https://docs.moodle.org/en/AI_subsystem'], ['label' => 'Moodle AI tools (Moodle Docs)', 'url' => 'https://docs.moodle.org/en/AI_tools']]); ?>
             <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem;">Page last updated: October 2026</p>
     </div>
 </section>

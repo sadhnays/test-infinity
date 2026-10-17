@@ -4673,3 +4673,19 @@ section.hero.animated-bg div.container.hero-container div.hero-content div.hero-
 .proof-strip strong {
     color: var(--text-dark);
 }
+
+/* Answer-first summary and references */
+.summary-section { padding: 2rem 0 0; }
+.summary-box {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--bg-light, #f5f8ff);
+    border-left: 4px solid var(--accent, #2563eb);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+}
+.summary-box p { margin: 0; line-height: 1.7; color: var(--text-dark, #1e293b); }
+.references { max-width: 900px; margin: 2.5rem auto 0; font-size: 0.95rem; }
+.references h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+.references ul { padding-left: 1.25rem; margin: 0; }
+.references li { margin-bottom: 0.35rem; }

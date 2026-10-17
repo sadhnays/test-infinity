@@ -56,6 +56,9 @@ require_once '../includes/header.php';
     </div>
 </section>
 
+<?php echo render_summary_box('Infinity SoftHub is a remote Moodle development team in India working with universities, schools and training companies across Europe. We host platforms in EU data centres on request, configure Moodle\'s privacy tools for GDPR requests, build to WCAG 2.1 AA accessibility, and overlap with European working hours (India is 3.5 to 4.5 hours ahead of Central European Time).'); ?>
+
+
 <!-- Intro -->
 <section class="content-section">
     <div class="container">
@@ -195,6 +198,10 @@ require_once '../includes/header.php';
         <p style="margin-top:2rem; font-size:0.9rem; color:var(--text-gray);">Page last updated: October 2026. Moodle™ is a registered trademark of Moodle Pty Ltd; Infinity SoftHub is an independent developer and not affiliated with Moodle HQ.</p>
     </div>
 </section>
+
+<section class="content-section"><div class="container">
+    <?php echo render_references([['label' => 'Moodle and GDPR (Moodle Docs)', 'url' => 'https://docs.moodle.org/en/GDPR'], ['label' => 'General Data Protection Regulation (EUR-Lex)', 'url' => 'https://eur-lex.europa.eu/eli/reg/2016/679/oj'], ['label' => 'WCAG 2.1 (W3C)', 'url' => 'https://www.w3.org/TR/WCAG21/']]); ?>
+</div></section>
 
 <!-- CTA -->
 <section class="content-section bg-alt">

@@ -145,3 +145,18 @@ function get_db_connection() {
     return $pdo;
 }
 ?>
+
+// Answer-first summary box placed under the page hero (helps AI engines and snippets).
+function render_summary_box($html) {
+    return '<section class="summary-section"><div class="container"><div class="summary-box">'
+        . '<p><strong>In short:</strong> ' . $html . '</p></div></div></section>';
+}
+
+// Outbound references to authoritative sources: [['label' => .., 'url' => ..], ...]
+function render_references($refs) {
+    $html = '<aside class="references"><h3>References</h3><ul>';
+    foreach ($refs as $r) {
+        $html .= '<li><a href="' . e($r['url']) . '" target="_blank" rel="noopener">' . e($r['label']) . '</a></li>';
+    }
+    return $html . '</ul></aside>';
+}

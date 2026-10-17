@@ -86,6 +86,9 @@ require_once '../includes/header.php';
         </div>
     </section>
 
+<?php echo render_summary_box('IOMAD is a free, open-source multi-tenant version of Moodle, developed by e-Learn Design, that lets one site serve many companies, each with its own users, courses, branding and reports. Infinity SoftHub sets up, customises, migrates and supports IOMAD platforms for training providers and organisations that deliver learning to several clients or departments.'); ?>
+
+
     <section class="content-section">
         <div class="container">
             <div class="content-grid-2 mt-3rem" style="align-items:center;">
@@ -305,7 +308,11 @@ require_once '../includes/header.php';
         </div>
     </section>
 
-    <section class="content-section">
+    <section class="content-section"><div class="container">
+    <?php echo render_references([['label' => 'IOMAD official site', 'url' => 'https://www.iomad.org/'], ['label' => 'Moodle vs multi-tenancy Moodle (e-Learn Design)', 'url' => 'https://www.e-learndesign.scot/moodle-quick-guides/moodle-vs-multi-tenancy-moodle/'], ['label' => 'Moodle Versions and support dates (Moodle Docs)', 'url' => 'https://docs.moodle.org/dev/Moodle_Versions']]); ?>
+</div></section>
+
+<section class="content-section">
         <div class="container">
             <div class="cta-section anim-fade-up cta-narrow" data-aos="fade-up">
                 <h2 class="cta-title">Planning a <span class="cta-highlight">Multi-Tenant LMS?</span></h2>

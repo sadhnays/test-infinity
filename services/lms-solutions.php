@@ -46,6 +46,9 @@ require_once __DIR__ . '/../includes/header.php';
     </div>
 </section>
 
+<?php echo render_summary_box('An enterprise LMS is a learning platform for staff training: onboarding, compliance courses, SCORM content, single sign-on and manager reports. Infinity SoftHub builds these on Moodle, IOMAD or LearnDash instead of from scratch, so you avoid licence fees and keep full control of your platform and data.'); ?>
+
+
 <!-- Overview -->
 <section class="content-section">
     <div class="container">
@@ -191,6 +194,7 @@ require_once __DIR__ . '/../includes/header.php';
 
             <h2>Frequently asked questions</h2>
             <?php echo render_faq($lmsFaqs); ?>
+            <?php echo render_references([['label' => 'SCORM and xAPI standards (ADL Initiative)', 'url' => 'https://adlnet.gov/'], ['label' => 'Moodle plugins directory', 'url' => 'https://moodle.org/plugins/']]); ?>
             <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem;">Page last updated: October 2026</p>
     </div>
 </section>

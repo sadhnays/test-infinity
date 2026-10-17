@@ -220,6 +220,9 @@ require_once __DIR__ . '/../includes/header.php';
     </div>
 </section>
 
+<?php echo render_summary_box('Mobile e-learning lets people take courses on phones and tablets, online or offline. Moodle has an official app for iOS and Android. Infinity SoftHub configures and brands the app experience, makes existing courses work well on small screens, or builds custom apps connected to your Moodle or LearnDash site.'); ?>
+
+
 <!-- Service Overview -->
 <section class="content-section">
     <div class="container">

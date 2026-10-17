@@ -65,6 +65,9 @@ require_once '../includes/header.php';
         </div>
     </section>
 
+<?php echo render_summary_box('Infinity SoftHub Technologies is a Moodle development company in Faridabad, India, founded in 2021 and working with Moodle since 2019. We build custom Moodle plugins, themes, integrations, mobile apps and AI tools, upgrade older sites to Moodle 4.5 LTS or 5.x, and support live platforms for schools, universities and training teams worldwide.'); ?>
+
+
     <!-- What we do -->
     <section class="content-section">
         <div class="container">
@@ -205,7 +208,7 @@ require_once '../includes/header.php';
                         <tr><th style="text-align:left; padding:12px; border-bottom:2px solid var(--border);">Area</th><th style="text-align:left; padding:12px; border-bottom:2px solid var(--border);">What we work with</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td style="padding:12px; border-bottom:1px solid var(--border);"><strong>Moodle versions</strong></td><td style="padding:12px; border-bottom:1px solid var(--border);">Current Moodle releases and older 3.x and 4.x sites that need upgrading</td></tr>
+                        <tr><td style="padding:12px; border-bottom:1px solid var(--border);"><strong>Moodle versions</strong></td><td style="padding:12px; border-bottom:1px solid var(--border);">Moodle 4.5 LTS (security fixes until October 2027) and the Moodle 5.x releases, plus upgrades of older 3.x and 4.x sites</td></tr>
                         <tr><td style="padding:12px; border-bottom:1px solid var(--border);"><strong>Back end</strong></td><td style="padding:12px; border-bottom:1px solid var(--border);">PHP, MySQL / MariaDB / PostgreSQL, Moodle APIs, web services, scheduled tasks</td></tr>
                         <tr><td style="padding:12px; border-bottom:1px solid var(--border);"><strong>Front end</strong></td><td style="padding:12px; border-bottom:1px solid var(--border);">Mustache templates, SCSS, AMD JavaScript modules, Bootstrap, React for custom tools</td></tr>
                         <tr><td style="padding:12px; border-bottom:1px solid var(--border);"><strong>Content</strong></td><td style="padding:12px; border-bottom:1px solid var(--border);">SCORM, H5P, video activities, quizzes, badges, certificates</td></tr>
@@ -377,6 +380,10 @@ require_once '../includes/header.php';
             <p class="text-secondary mt-2rem" style="font-size:0.9rem;">Page last updated: October 2026.</p>
         </div>
     </section>
+
+<section class="content-section"><div class="container">
+    <?php echo render_references([['label' => 'Moodle Versions and support dates (Moodle Docs)', 'url' => 'https://docs.moodle.org/dev/Moodle_Versions'], ['label' => 'Moodle plugins directory', 'url' => 'https://moodle.org/plugins/'], ['label' => 'Moodle security announcements (moodle.org)', 'url' => 'https://moodle.org/security/']]); ?>
+</div></section>
 
     <!-- CTA -->
     <section class="content-section">

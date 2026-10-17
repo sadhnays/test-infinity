@@ -46,6 +46,9 @@ require_once __DIR__ . '/../includes/header.php';
     </div>
 </section>
 
+<?php echo render_summary_box('Moodle hosting and migration means moving your LMS to a reliable server, upgrading it to a supported version and keeping it backed up. Moodle 4.1 LTS stopped receiving security fixes in December 2025, and Moodle 4.5 LTS is supported until October 2027. We upgrade older sites step by step on staging and keep the old server until you confirm everything works.'); ?>
+
+
 <!-- Overview -->
 <section class="content-section">
     <div class="container">
@@ -61,7 +64,7 @@ require_once __DIR__ . '/../includes/header.php';
                     <li><strong>Daily Backups</strong> - Automated backups with 30-day retention</li>
                     <li><strong>24/7 Monitoring</strong> - Proactive monitoring and alerts</li>
                     <li><strong>CDN Integration</strong> - Global content delivery network</li>
-                    <li><strong>Zero-Downtime Migration</strong> - Seamless site transfers</li>
+                    <li><strong>Planned Migration</strong> - Cutover in a quiet time window</li>
                 </ul>
                 <div style="margin-top:2rem;">
                     <a href="<?php echo base_url('contact.php'); ?>" class="btn btn-primary">
@@ -97,8 +100,8 @@ require_once __DIR__ . '/../includes/header.php';
             </div>
             <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-exchange-alt"></i></div>
-                <h4>Zero-Downtime Migration</h4>
-                <p>Seamless migration from your existing LMS or Moodle version with zero user impact.</p>
+                <h4>Planned Migration</h4>
+                <p>Migration from your existing LMS or Moodle version, rehearsed on staging and switched over in a low-traffic window.</p>
             </div>
             <div class="feature-card" data-aos="zoom-in">
                 <div class="feature-icon"><i class="fa fa-tachometer-alt"></i></div>
@@ -179,6 +182,7 @@ require_once __DIR__ . '/../includes/header.php';
     <div class="container" style="max-width:900px;">
         <h2 style="text-align:center;">Frequently asked questions</h2>
         <?php echo render_faq($hostingFaqs); ?>
+            <?php echo render_references([['label' => 'Moodle Versions and support dates (Moodle Docs)', 'url' => 'https://docs.moodle.org/dev/Moodle_Versions'], ['label' => 'Moodle security recommendations (Moodle Docs)', 'url' => 'https://docs.moodle.org/en/Security_recommendations']]); ?>
         <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem; text-align:center;">Page last updated: October 2026</p>
     </div>
 </section>

@@ -79,6 +79,9 @@ require_once __DIR__ . '/../includes/header.php';
     </div>
 </section>
 
+<?php echo render_summary_box('LearnDash is a WordPress plugin that turns a website into a learning platform with courses, quizzes and certificates. Infinity SoftHub builds and customises LearnDash sites: course-selling stores, employee training portals, membership sites, custom plugins and integrations. Work is tested on a staging site first, and you own all custom code.'); ?>
+
+
 <!-- Service Overview -->
 <section class="content-section">
     <div class="container">
@@ -236,6 +239,7 @@ require_once __DIR__ . '/../includes/header.php';
 
             <h2>Frequently asked questions</h2>
             <?php echo render_faq($learndashFaqs); ?>
+            <?php echo render_references([['label' => 'LearnDash official site', 'url' => 'https://www.learndash.com/'], ['label' => 'WordPress.org', 'url' => 'https://wordpress.org/']]); ?>
             <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem;">Page last updated: October 2026</p>
     </div>
 </section>

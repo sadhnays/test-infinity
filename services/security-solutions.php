@@ -46,6 +46,9 @@ require_once __DIR__ . '/../includes/header.php';
     </div>
 </section>
 
+<?php echo render_summary_box('LMS security means keeping your Moodle or LearnDash site patched, limiting roles and logins, encrypting data and keeping tested backups. Infinity SoftHub audits LMS platforms, gives you a ranked list of risks, fixes them on a staging copy first, and sets up monitoring and backups so problems are caught early.'); ?>
+
+
 <!-- Overview -->
 <section class="content-section">
     <div class="container">
@@ -148,6 +151,7 @@ require_once __DIR__ . '/../includes/header.php';
 
             <h2>Frequently asked questions</h2>
             <?php echo render_faq($securityFaqs); ?>
+            <?php echo render_references([['label' => 'Moodle security recommendations (Moodle Docs)', 'url' => 'https://docs.moodle.org/en/Security_recommendations'], ['label' => 'Moodle security announcements (moodle.org)', 'url' => 'https://moodle.org/security/'], ['label' => 'OWASP Top 10 web application risks', 'url' => 'https://owasp.org/www-project-top-ten/']]); ?>
             <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem;">Page last updated: October 2026</p>
     </div>
 </section>

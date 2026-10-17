@@ -20,7 +20,7 @@ Moodle™ is a registered trademark of Moodle Pty Ltd. Infinity SoftHub is an in
 - [LearnDash Development](https://infinitysofthub.com/services/learndash-development.php): WordPress LMS builds, course selling with WooCommerce or Stripe, memberships and custom plugins.
 - [AI & ML Integration for LMS](https://infinitysofthub.com/services/ai-ml-integration.php): RAG course assistants, AI-assisted grading with teacher review, quiz generation and semantic search.
 - [Mobile e-Learning](https://infinitysofthub.com/services/mobile-elearning.php): Responsive LMS, offline learning and iOS/Android apps connected to Moodle or LearnDash.
-- [Moodle Setup, Hosting & Migration](https://infinitysofthub.com/services/hosting-migration.php): Hosting on AWS, Azure or DigitalOcean, version upgrades, migrations and backups.
+- [Moodle Setup, Hosting & Migration](https://infinitysofthub.com/services/hosting-migration.php): Hosting on AWS, Azure or DigitalOcean, version upgrades, planned migrations and backups.
 - [LMS Security](https://infinitysofthub.com/services/security-solutions.php): Moodle security audits, hardening, MFA, SSO, backups and monitoring.
 - [Interactive SQL Coding Lab (demo)](https://infinitysofthub.com/demos/sql-playground.php): Live browser SQL sandbox showing the coding labs built for Moodle and LearnDash courses.
 
