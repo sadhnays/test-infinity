@@ -250,55 +250,6 @@ $breadcrumbSchema = breadcrumb_schema($pageTitle);
 
     </script>
 <?php endif; ?>
-    <!-- Loading Screen Styles -->
-    <style>
-    /* Loading Screen */
-    .loader-wrapper {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 99999;
-        transition: opacity 0.5s ease, visibility 0.5s ease;
-    }
-    .loader-wrapper.loaded {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }
-    .loader-inner {
-        text-align: center;
-    }
-    .loader-logo {
-        width: 200px;
-        margin-bottom: 20px;
-    }
-    .loader-spinner {
-        width: 40px;
-        height: 40px;
-        border: 3px solid #f3f3f3;
-        border-top: 3px solid #0066ff;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-        margin: 0 auto;
-    }
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-    .loader-text {
-        color: #0066ff;
-        font-size: 14px;
-        margin-top: 15px;
-        font-weight: 500;
-        letter-spacing: 1px;
-    }
-    </style>
 </head>
 <body>
 <!--email_off-->
@@ -306,28 +257,6 @@ $breadcrumbSchema = breadcrumb_schema($pageTitle);
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7V2VKMT"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!-- Loading Screen with Logo -->
-    <div class="loader-wrapper" id="loaderWrapper" aria-hidden="true">
-        <div class="loader-inner">
-            <img src="<?php echo asset('images/ish-logo.svg'); ?>" alt="Infinity SoftHub Technologies logo" class="loader-logo" width="200" height="50">
-            <div class="loader-spinner"></div>
-            <div class="loader-text">Loading...</div>
-        </div>
-    </div>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var loader = document.getElementById('loaderWrapper');
-        if (loader) {
-            loader.classList.add('loaded');
-        }
-    });
-    setTimeout(function() {
-        var el = document.getElementById('loaderWrapper');
-        if (el && !el.classList.contains('loaded')) {
-            el.classList.add('loaded');
-        }
-    }, 1200);
-    </script>
     <!-- Diagonal Sticky Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
