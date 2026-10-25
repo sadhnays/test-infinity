@@ -1,7 +1,7 @@
 <?php
 // index.php - Homepage
-$pageTitle = "Custom LMS & AI Learning Solutions | Infinity SoftHub";
-$pageDescription = "Custom LMS development worldwide: Moodle plugins, IOMAD, SQL and Python coding labs, AI learning assistants, integrations and hosting.";
+$pageTitle = "Moodle & Custom LMS Development Agency | Infinity SoftHub";
+$pageDescription = "Founder-led Moodle and custom LMS development agency in India. Plugins, themes, IOMAD, SQL labs, AI assistants and hosting. Remote delivery worldwide.";
 $pageKeywords = "custom LMS development, corporate training platform, virtual classroom software, SCORM compliant LMS, LearnDash developer, SQL coding lab, AI learning assistant, employee onboarding portal";
 $activePage = 'home';
 
@@ -302,8 +302,8 @@ require_once 'includes/header.php';
 
                     <!-- Main Heading -->
                     <h1 class="hero-main-title" data-aos="fade-up" data-aos-delay="100">
-                        Custom LMS & AI-Powered
-                        <span class="title-highlight">Learning Solutions</span>
+                        Moodle &amp; Custom LMS
+                        <span class="title-highlight">Development Agency</span>
                     </h1>
 
                     <!-- Description -->
