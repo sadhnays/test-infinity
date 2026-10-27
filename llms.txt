@@ -29,7 +29,7 @@ Moodle™ is a registered trademark of Moodle Pty Ltd. Infinity SoftHub is an in
 - [UK](https://infinitysofthub.com/services/moodle-lms-development-uk.php)
 - [Canada](https://infinitysofthub.com/services/moodle-lms-development-canada.php)
 - [Australia](https://infinitysofthub.com/services/moodle-lms-development-australia.php)
-- [Europe](https://infinitysofthub.com/services/moodle-lms-development-europe.php): Netherlands, Sweden, Denmark, Norway, Poland, Spain and the rest of the EU, with EU hosting options.
+- [Europe](https://infinitysofthub.com/services/moodle-lms-development-europe.php): Germany, France, Spain, Netherlands, Sweden, Denmark, Norway, Poland and the rest of the EU, with EU hosting options.
 - [Singapore](https://infinitysofthub.com/services/moodle-lms-development-singapore.php)
 
 ## Guides (blog)

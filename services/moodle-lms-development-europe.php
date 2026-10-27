@@ -2,10 +2,10 @@
 // services/moodle-lms-development-europe.php
 // Replaces the former thin Denmark, Netherlands, Norway, Poland, Spain and Sweden pages (301-redirected here).
 $pageTitle = "Moodle Developer Europe | Custom Moodle LMS | Infinity SoftHub";
-$pageDescription = "Moodle developers for European universities and training teams: custom plugins, upgrades, EU-region hosting, local language packs and GDPR-aware setup.";
-$pageKeywords = "Moodle developer Europe, Moodle development Netherlands, Moodle developer Sweden, Moodle developer Denmark, Moodle developer Norway, Moodle Poland, Moodle Spain, GDPR LMS";
+$pageDescription = "Moodle developers for European universities and training teams in Germany, France, Spain and beyond: plugins, upgrades, EU hosting and GDPR-aware setup.";
+$pageKeywords = "Moodle developer Europe, Moodle development Netherlands, Moodle developer Sweden, Moodle developer Denmark, Moodle developer Norway, Moodle Poland, Moodle Spain, Moodle developer Germany, Moodle France, GDPR LMS";
 $activePage = 'services';
-$pageModified = '2026-10-17';
+$pageModified = '2026-10-28';
 
 require_once '../includes/functions.php';
 
@@ -16,8 +16,8 @@ $euFaqs = [
      'a' => 'Yes. We can set up and manage Moodle on AWS, Azure or Google Cloud in EU regions such as Frankfurt, Stockholm or Ireland, or work on your existing hosting provider or university servers.'],
     ['q' => 'Is your Moodle setup GDPR compliant?',
      'a' => 'GDPR compliance depends on your organisation as data controller, so we do not promise it on our own. We help you put the technical side in place: EU hosting, Moodle privacy and data-request tools, data retention settings, role permissions, audit logs and a data processing agreement for our work.'],
-    ['q' => 'Can Moodle run in Danish, Dutch, Norwegian, Polish, Spanish or Swedish?',
-     'a' => 'Yes. Moodle has official language packs for these languages. We install them, translate custom plugins and themes, and can set up multilingual courses so learners switch language themselves.'],
+    ['q' => 'Can Moodle run in German, French, Spanish, Dutch, Danish, Norwegian, Polish or Swedish?',
+     'a' => 'Yes. Moodle has official language packs for these languages, including both formal and informal German. We install them, translate custom plugins and themes, and can set up multilingual courses so learners switch language themselves.'],
     ['q' => 'Can you connect Moodle to our university login?',
      'a' => 'Yes. We set up single sign-on with SAML, OpenID Connect or OAuth 2.0, including Microsoft Entra ID, Google Workspace and identity federations that use SAML.'],
     ['q' => 'How are European projects priced?',
@@ -82,7 +82,7 @@ require_once '../includes/header.php';
             <div class="anim-fade-left">
                 <div style="background: linear-gradient(135deg, #0b1528, #1e2e4a); border-radius: var(--radius-xl); padding: 2.5rem; border: 1px solid #2563eb; height: 100%; display: flex; flex-direction: column; justify-content: center;">
                     <h3 style="color: #60a5fa; margin-bottom: 1rem;"><i class="fa fa-graduation-cap"></i> Countries we work with</h3>
-                    <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">Netherlands, Sweden, Denmark, Norway, Poland, Spain, Germany, Ireland and other EU and EEA countries.</p>
+                    <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">Netherlands, Sweden, Denmark, Norway, Poland, Spain, Germany, France, Ireland and other EU and EEA countries.</p>
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                         <span style="background: #1e2e4a; color: #60a5fa; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.8rem; font-weight: 600;">Moodle™</span>
                         <span style="background: #1e2e4a; color: #60a5fa; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.8rem; font-weight: 600;">IOMAD</span>
@@ -155,6 +155,14 @@ require_once '../includes/header.php';
             <div class="feature-card anim-fade-up">
                 <h4>Spain</h4>
                 <p>Spanish and co-official language packs such as Catalan, multilingual courses, and certificate and compliance training portals.</p>
+            </div>
+            <div class="feature-card anim-fade-up">
+                <h4>Germany</h4>
+                <p>German language packs (formal and informal), hosting in the Frankfurt region, and single sign-on with SAML-based institutional logins, for universities and corporate training teams.</p>
+            </div>
+            <div class="feature-card anim-fade-up">
+                <h4>France</h4>
+                <p>French interface and bilingual French and English courses, custom plugins and mobile app access to Moodle, and reporting for training providers and schools.</p>
             </div>
         </div>
     </div>
