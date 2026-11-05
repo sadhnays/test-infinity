@@ -1,8 +1,35 @@
 <?php
-$pageTitle = "Education LMS & Virtual Classrooms | Infinity SoftHub";
-$pageDescription = "LMS and e-learning for schools, universities and training providers: virtual classrooms, online exams and distance learning platforms.";
-$pageKeywords = "virtual classroom software, distance learning platform, higher education LMS, K12 learning management system, online exam software, virtual school portal";
+$pageTitle = "Moodle & LMS for Schools and Universities | Infinity SoftHub";
+$pageDescription = "Moodle and LMS development for schools, universities and training providers: custom plugins, IOMAD, SIS integrations, exams, upgrades and hosting.";
+$pageKeywords = "Moodle for schools, Moodle for universities, higher education LMS, K12 learning management system, online exam software, virtual classroom, Moodle development education";
 $activePage = 'industries';
+$pageModified = '2026-11-05';
+require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/includes/functions.php';
+
+$educationFaqs = [
+    ['q' => 'Which LMS is best for a school or university?', 'a' => 'Moodle is the most common choice for schools and universities because it is open source, has no per-user licence fee and handles grading, many teachers and large course catalogues well. LearnDash suits smaller training sites that already run on WordPress. We build on both and can advise after a short call.'],
+    ['q' => 'Can you connect Moodle to our student information system?', 'a' => 'Yes. We build integrations that create users, enrol students into courses and send grades back using your SIS or ERP, through its API, a CSV feed or single sign-on. We test the sync on a staging site before it touches live data.'],
+    ['q' => 'Can one Moodle site serve several schools or departments?', 'a' => 'Yes. IOMAD is a multi-tenant Moodle setup where each school, department or company has its own users, branding and reports on one installation. See our IOMAD multi-tenant LMS service for details.'],
+    ['q' => 'Can you set up online exams and quizzes in Moodle?', 'a' => 'Yes. We configure question banks, timed and randomised quizzes, proctoring or lockdown browser plugins where your policy needs them, and reports for results and certificates.'],
+    ['q' => 'Can you upgrade or migrate our existing Moodle site?', 'a' => 'Yes. We upgrade Moodle to a supported version, check plugins and themes for compatibility, and migrate from another LMS or host. The work is done on a staging copy first, with a backup and a rollback plan.'],
+    ['q' => 'Do you work with institutions outside India?', 'a' => 'Yes. We work remotely with schools, universities and training providers in the USA, UK, Canada, Australia and Europe. We agree overlap hours at the start of the project, and you own all custom code.'],
+];
+$pageSchema = json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Service',
+            'name' => 'Moodle and LMS development for education',
+            'serviceType' => 'Moodle and LMS development for schools, universities and training providers',
+            'url' => 'https://infinitysofthub.com/education.php',
+            'description' => $pageDescription,
+            'areaServed' => 'Worldwide',
+            'provider' => ['@id' => 'https://infinitysofthub.com/#organization'],
+        ],
+        faq_schema_array($educationFaqs),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
 require_once 'includes/header.php';
 ?>
@@ -25,6 +52,8 @@ require_once 'includes/header.php';
             </div>
         </div>
     </section>
+
+    <?php echo render_summary_box('We build and support Moodle and other learning platforms for schools, universities and training providers. Typical work: custom plugins, IOMAD multi-tenant setups, student information system integrations, online exams, upgrades and migrations, and managed hosting. Work is tested on a staging site first and you own the custom code.'); ?>
 
     <!-- Industry Overview -->
     <section class="content-section">
@@ -192,6 +221,31 @@ require_once 'includes/header.php';
                     <p>Phased deployment with comprehensive training for educators, administrators, and students, plus ongoing support and maintenance.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Moodle for education -->
+    <section class="content-section">
+        <div class="container">
+            <h2>What do schools and universities use Moodle for?</h2>
+            <p class="text-secondary mb-1rem">Most education projects we take on start with one of four needs: running courses for a single school or college, giving each department or campus its own space, moving an old platform to a supported Moodle version, or connecting the LMS to the systems the institution already runs. We build for all four. See our full list of <a href="<?php echo base_url('services/moodle-all-development.php'); ?>">Moodle development services</a>.</p>
+
+            <h2>How do we build for education?</h2>
+            <ul class="check-list">
+                <li><strong>Custom plugins and themes:</strong> grading rules, attendance, reports and a theme that matches your school brand. Our <a href="<?php echo base_url('services/moodle-all-development.php'); ?>">Moodle plugin and theme work</a> follows Moodle coding standards so upgrades stay safe.</li>
+                <li><strong>Multi-school setups:</strong> separate branding, users and reports per school or department with <a href="<?php echo base_url('services/iomad-multi-tenant-lms.php'); ?>">IOMAD multi-tenant LMS</a>.</li>
+                <li><strong>Integrations:</strong> student information systems, single sign-on, video classes and payment gateways, including AI learning assistants where they help teachers.</li>
+                <li><strong>Mobile learning:</strong> a mobile-friendly experience for students, covered in our <a href="<?php echo base_url('services/mobile-elearning.php'); ?>">mobile e-learning service</a>.</li>
+                <li><strong>Upgrades, hosting and support:</strong> version upgrades, backups, monitoring and a named developer who answers within one working day. See <a href="<?php echo base_url('services/hosting-migration.php'); ?>">hosting and migration</a>.</li>
+            </ul>
+
+            <h2>How does an education project work?</h2>
+            <p class="text-secondary mb-1rem">We start with a short call to understand your learners, teachers and systems. You then get a written scope with a fixed price or hourly estimate. We build on a staging site that you can review at any time, move it live after you approve, and hand over admin notes so your team can run it day to day. Your data stays under your control, and we agree privacy and access rules with you at the start. If you are outside India, we also cover our <a href="<?php echo base_url('services/moodle-lms-development-usa.php'); ?>">USA</a>, <a href="<?php echo base_url('services/moodle-lms-development-uk.php'); ?>">UK</a>, <a href="<?php echo base_url('services/moodle-lms-development-canada.php'); ?>">Canada</a>, <a href="<?php echo base_url('services/moodle-lms-development-australia.php'); ?>">Australia</a> and <a href="<?php echo base_url('services/moodle-lms-development-europe.php'); ?>">Europe</a> services.</p>
+
+            <h2>Frequently asked questions</h2>
+            <?php echo render_faq($educationFaqs); ?>
+            <?php echo render_references([['label' => 'Moodle official site', 'url' => 'https://moodle.org/'], ['label' => 'IOMAD multi-tenant Moodle', 'url' => 'https://www.iomad.org/']]); ?>
+            <p style="font-size:0.85rem; color:var(--text-gray); margin-top:2rem;">Page last updated: November 2026</p>
         </div>
     </section>
 
