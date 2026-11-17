@@ -1,48 +1,48 @@
 /* ==========================================================
-   Midnight redesign layer for Infinity SoftHub
+   Logo-blue redesign layer for Infinity SoftHub
    Loaded after new-style.css. Overrides tokens first, then
    restyles the navbar, hero, shared components and footer.
 
    Palette
-   - Ink indigo  #13163F  hero, footer, dark sections
-   - Deep indigo #0B0D2B  footer base, code panel
-   - Chalk       #F6F7FB  page background
-   - Sage        #E3E6F7  borders, quiet panels
+   - Ink indigo  #071A4A  hero, footer, dark sections
+   - Deep indigo #040F30  footer base, code panel
+   - Chalk       #F5F8FD  page background
+   - Sage        #E2EBFA  borders, quiet panels
    - Highlighter #F4C430  buttons and marks (one accent only)
-   - Slate       #1A1D3F  body text
-   - Muted       #585F82  secondary text (5.9:1 on chalk)
+   - Slate       #0F2040  body text
+   - Muted       #4F6385  secondary text (5.9:1 on chalk)
    Type
    - Bricolage Grotesque for headings, Instrument Sans for body,
      JetBrains Mono only inside the SQL lab panel.
    ========================================================== */
 
 :root {
-    --primary: #13163F;
-    --primary-dark: #0B0D2B;
-    --secondary: #222A73;
-    --accent: #3A3FD6;
-    --accent-light: #5560F0;
-    --accent-blue: #3A3FD6;
-    --accent-green: #3A3FD6;
-    --accent-cyan: #3A3FD6;
-    --bg-light: #F6F7FB;
+    --primary: #071A4A;
+    --primary-dark: #040F30;
+    --secondary: #0A2E7A;
+    --accent: #0062F5;
+    --accent-light: #2F80FF;
+    --accent-blue: #0062F5;
+    --accent-green: #0062F5;
+    --accent-cyan: #0062F5;
+    --bg-light: #F5F8FD;
     --white: #FFFFFF;
-    --border: #E3E6F7;
-    --glass-border: #E3E6F7;
-    --text-dark: #1A1D3F;
-    --text-gray: #585F82;
-    --text-secondary: #585F82;
+    --border: #E2EBFA;
+    --glass-border: #E2EBFA;
+    --text-dark: #0F2040;
+    --text-gray: #4F6385;
+    --text-secondary: #4F6385;
 
-    --ink: #13163F;
-    --ink-deep: #0B0D2B;
-    --chalk: #F6F7FB;
-    --sage: #E3E6F7;
+    --ink: #071A4A;
+    --ink-deep: #040F30;
+    --chalk: #F5F8FD;
+    --sage: #E2EBFA;
     --mark: #F4C430;
     --mark-hover: #E5B51C;
 
     --shadow-sm: none;
-    --shadow-md: 0 1px 0 rgba(19,22,63, 0.06);
-    --shadow-lg: 0 12px 32px rgba(11,13,43, 0.14);
+    --shadow-md: 0 1px 0 rgba(7,26,74, 0.06);
+    --shadow-lg: 0 12px 32px rgba(4,15,48, 0.14);
     --radius-sm: 6px;
     --radius-md: 8px;
     --radius-lg: 10px;
@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, .section-title, .logo {
     max-width: 54ch;
     font-size: 1.125rem;
     line-height: 1.65;
-    color: #D5D9F0;
+    color: #D2DFF3;
 }
 
 .hero-lab-actions {
@@ -207,12 +207,12 @@ h1, h2, h3, h4, h5, .section-title, .logo {
 
 .hero-lab .btn-line {
     color: var(--white);
-    border: 2px solid rgba(246,247,251, 0.45);
+    border: 2px solid rgba(245,248,253, 0.45);
 }
 
 .hero-lab .btn-line:hover {
     border-color: var(--white);
-    background: rgba(246,247,251, 0.08);
+    background: rgba(245,248,253, 0.08);
 }
 
 .hero-lab-audience {
@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, .section-title, .logo {
     max-width: 54ch;
     font-size: 0.95rem;
     line-height: 1.6;
-    color: #B9BEE0;
+    color: #B6C8E8;
 }
 
 /* SQL lab panel */
@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, .section-title, .logo {
 
 .lab-window {
     background: var(--ink-deep);
-    border: 1px solid #2C3270;
+    border: 1px solid #17387F;
     border-radius: var(--radius-xl);
     overflow: hidden;
     box-shadow: 0 24px 48px rgba(0, 0, 0, 0.28);
@@ -242,9 +242,9 @@ h1, h2, h3, h4, h5, .section-title, .logo {
     justify-content: space-between;
     gap: 1rem;
     padding: 0.7rem 1rem;
-    border-bottom: 1px solid #2C3270;
+    border-bottom: 1px solid #17387F;
     font-size: 0.85rem;
-    color: #B9BEE0;
+    color: #B6C8E8;
 }
 
 .lab-bar strong {
@@ -267,16 +267,16 @@ h1, h2, h3, h4, h5, .section-title, .logo {
     font-family: 'JetBrains Mono', ui-monospace, monospace;
     font-size: 0.82rem;
     line-height: 1.75;
-    color: #EAECF8;
+    color: #E9F0FB;
     overflow-x: auto;
     white-space: pre;
 }
 
 .lab-code .k { color: var(--mark); font-weight: 500; }
-.lab-code .t { color: #A8E3F5; }
+.lab-code .t { color: #8FE6FF; }
 
 .lab-result {
-    border-top: 1px solid #2C3270;
+    border-top: 1px solid #17387F;
     padding: 0.9rem 1.25rem 1.1rem;
 }
 
@@ -285,15 +285,15 @@ h1, h2, h3, h4, h5, .section-title, .logo {
     border-collapse: collapse;
     font-family: 'JetBrains Mono', ui-monospace, monospace;
     font-size: 0.8rem;
-    color: #EAECF8;
+    color: #E9F0FB;
 }
 
 .lab-result th {
     text-align: left;
     font-weight: 500;
-    color: #A3A9D0;
+    color: #9DB3D9;
     padding: 0.25rem 0.5rem 0.4rem 0;
-    border-bottom: 1px solid #2C3270;
+    border-bottom: 1px solid #17387F;
 }
 
 .lab-result td {
@@ -308,14 +308,14 @@ h1, h2, h3, h4, h5, .section-title, .logo {
 .lab-check {
     margin-top: 0.8rem;
     font-size: 0.82rem;
-    color: #A8E3F5;
+    color: #8FE6FF;
 }
 
 .lab figcaption {
     margin-top: 0.85rem;
     font-size: 0.85rem;
     line-height: 1.5;
-    color: #B9BEE0;
+    color: #B6C8E8;
 }
 
 /* Facts row under the hero */
@@ -325,19 +325,19 @@ h1, h2, h3, h4, h5, .section-title, .logo {
     padding: 0;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    border-top: 1px solid #2C3270;
+    border-top: 1px solid #17387F;
 }
 
 .hero-facts li {
     padding: 1.25rem 1.25rem 1.5rem 0;
     font-size: 0.95rem;
     line-height: 1.5;
-    color: #D5D9F0;
+    color: #D2DFF3;
 }
 
 .hero-facts li + li {
     padding-left: 1.25rem;
-    border-left: 1px solid #2C3270;
+    border-left: 1px solid #17387F;
 }
 
 .hero-facts strong {
@@ -384,8 +384,8 @@ body .gradient-text {
 
 /* Technology cards: neutral tones instead of one colour per logo */
 .tech-card {
-    --tech-color: #3A3FD6 !important;
-    --tech-bg: #E8EBF8 !important;
+    --tech-color: #0062F5 !important;
+    --tech-bg: #E7EEFA !important;
 }
 
 .tech-card .tech-use {
@@ -433,7 +433,7 @@ body .gradient-text {
 body .chatbot-toggle {
     background: var(--mark) !important;
     color: var(--ink) !important;
-    box-shadow: 0 6px 18px rgba(11,13,43, 0.28) !important;
+    box-shadow: 0 6px 18px rgba(4,15,48, 0.28) !important;
 }
 
 body .chatbot-toggle:hover {
@@ -443,7 +443,7 @@ body .chatbot-toggle:hover {
 /* Badges sitting on the dark hero */
 .page-hero .badge,
 .page-hero .badge-primary {
-    background: rgba(246,247,251, 0.14);
+    background: rgba(245,248,253, 0.14);
     color: var(--chalk);
     border-color: transparent;
 }
@@ -468,13 +468,13 @@ body .cta-fullwidth .btn:first-child:hover {
 body .cta-fullwidth .btn:last-child {
     background: transparent;
     color: var(--white);
-    border: 2px solid rgba(246,247,251, 0.45);
+    border: 2px solid rgba(245,248,253, 0.45);
 }
 
 /* ===== Footer ===== */
 .footer {
     background: var(--ink-deep);
-    color: #CBCFEA;
+    color: #C6D6EE;
 }
 
 .footer h3,
@@ -484,7 +484,7 @@ body .cta-fullwidth .btn:last-child {
 }
 
 .footer-col a {
-    color: #CBCFEA;
+    color: #C6D6EE;
 }
 
 .footer-col a:hover {
@@ -498,7 +498,7 @@ body .cta-fullwidth .btn:last-child {
 }
 
 .footer-bottom {
-    border-top: 1px solid #2C3270;
+    border-top: 1px solid #17387F;
 }
 
 /* ===== Responsive ===== */
@@ -527,7 +527,7 @@ body .cta-fullwidth .btn:last-child {
     }
 
     .hero-facts li:nth-child(n+3) {
-        border-top: 1px solid #2C3270;
+        border-top: 1px solid #17387F;
     }
 }
 
@@ -543,7 +543,7 @@ body .cta-fullwidth .btn:last-child {
     }
 
     .hero-facts li + li {
-        border-top: 1px solid #2C3270;
+        border-top: 1px solid #17387F;
     }
 
     .lab-code {

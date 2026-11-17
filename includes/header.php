@@ -173,7 +173,7 @@ $breadcrumbSchema = breadcrumb_schema($pageTitle);
     <link rel="alternate" hreflang="en" href="<?php echo e($canonical); ?>">
     <link rel="alternate" hreflang="x-default" href="<?php echo e($canonical); ?>">
 <?php endif; ?>
-    <meta name="theme-color" content="#13163F">
+    <meta name="theme-color" content="#071A4A">
 
     <!-- Open Graph / Social -->
     <meta property="og:locale" content="en_US">
