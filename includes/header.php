@@ -173,7 +173,7 @@ $breadcrumbSchema = breadcrumb_schema($pageTitle);
     <link rel="alternate" hreflang="en" href="<?php echo e($canonical); ?>">
     <link rel="alternate" hreflang="x-default" href="<?php echo e($canonical); ?>">
 <?php endif; ?>
-    <meta name="theme-color" content="#062b6f">
+    <meta name="theme-color" content="#13163F">
 
     <!-- Open Graph / Social -->
     <meta property="og:locale" content="en_US">
@@ -215,7 +215,7 @@ $breadcrumbSchema = breadcrumb_schema($pageTitle);
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
     <!-- Google Fonts (non-blocking) -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- Defer non-critical stylesheets to eliminate render-blocking -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -223,7 +223,7 @@ $breadcrumbSchema = breadcrumb_schema($pageTitle);
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="<?php echo versioned_asset('css/chatbot.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -232,6 +232,8 @@ $breadcrumbSchema = breadcrumb_schema($pageTitle);
 
     <!-- Main styles (synchronous to prevent Flash of Unstyled Content) -->
     <link rel="stylesheet" href="<?php echo versioned_asset('css/new-style.css'); ?>">
+    <!-- Chalkboard redesign layer (overrides tokens, navbar, hero, footer) -->
+    <link rel="stylesheet" href="<?php echo versioned_asset('css/redesign.css'); ?>">
 
     <!-- Structured data -->
     <script type="application/ld+json">

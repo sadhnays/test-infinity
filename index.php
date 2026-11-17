@@ -256,7 +256,7 @@ require_once 'includes/header.php';
     cursor: default;
 }
 .tech-icons i:hover {
-    color: #00ccff;
+    color: #5560F0;
     transform: translateY(-3px);
 }
 
@@ -278,122 +278,54 @@ require_once 'includes/header.php';
 </style>
 
     <!-- Hero Section - Modern 2-Column Split -->
-    <section class="hero animated-bg" id="home">
-        <!-- Grid overlay & Particles -->
-        <div class="hero-grid"></div>
-        <div class="hero-scan-line"></div>
-        <div class="hero-float-elements">
-            <div class="float-icon float-1"><i class="fas fa-code"></i></div>
-            <div class="float-icon float-2"><i class="fas fa-cloud"></i></div>
-            <div class="float-icon float-3"><i class="fas fa-robot"></i></div>
-            <div class="float-icon float-4"><i class="fas fa-graduation-cap"></i></div>
-            <div class="float-icon float-5"><i class="fas fa-chart-line"></i></div>
-        </div>
-
+    <section class="hero-lab" id="home">
         <div class="container">
-            <div class="hero-split">
-                <!-- Left Column: Content -->
-                <div class="hero-left-content">
-                    <!-- Subtitle -->
-                    <p class="hero-subtitle-tag" data-aos="fade-down">
-                        <span class="tag-dot"></span>
-                        Founder-Led LMS Engineering • 6+ Years of Experience
-                    </p>
-
-                    <!-- Main Heading -->
-                    <h1 class="hero-main-title" data-aos="fade-up" data-aos-delay="100">
-                        Moodle &amp; Custom LMS
-                        <span class="title-highlight">Development Agency</span>
-                    </h1>
-
-                    <!-- Description -->
-                    <p class="hero-main-desc" data-aos="fade-up" data-aos-delay="200">
-                        We build custom learning platforms, plugins, SQL and Python coding labs, AI study assistants, dashboards, integrations, and cloud deployments. Our experience includes solutions for Moodle™ LMS and LearnDash.
-                    </p>
-
-                    <!-- CTA Buttons -->
-                    <div class="hero-cta-group" data-aos="fade-up" data-aos-delay="300">
-                        <a href="<?php echo base_url('contact.php'); ?>" class="cta-primary">
-                            <i class="fas fa-comments"></i> Discuss Your LMS Project
-                        </a>
-                        <a href="<?php echo base_url('what-we-do.php'); ?>" class="cta-secondary">
-                            <i class="fas fa-layer-group"></i> Explore LMS Solutions
-                        </a>
+            <div class="hero-lab-grid">
+                <div class="hero-lab-copy">
+                    <h1>Moodle &amp; Custom LMS Development Agency</h1>
+                    <p class="hero-lab-desc">We build custom learning platforms, plugins, SQL and Python coding labs, AI study assistants, dashboards, integrations, and cloud deployments. Our experience includes solutions for Moodle&trade; LMS and LearnDash.</p>
+                    <div class="hero-lab-actions">
+                        <a href="<?php echo base_url('contact.php'); ?>" class="btn-mark">Discuss your LMS project</a>
+                        <a href="<?php echo base_url('what-we-do.php'); ?>" class="btn-line">Explore LMS solutions</a>
                     </div>
-
-                    <!-- Trust Badges -->
-                    <div class="hero-trust" data-aos="fade-up" data-aos-delay="400">
-                        <span class="trust-text">Built for schools, universities, training providers, and EdTech teams worldwide</span>
-                        <div class="trust-icons">
-                            <i class="fas fa-check-circle" aria-hidden="true"></i>
-                        </div>
-                    </div>
-
-                    <!-- Tech Stack Icons -->
-                    <div class="hero-tech" data-aos="fade-up" data-aos-delay="500">
-                        <span class="tech-label">Core stack:</span>
-                        <div class="tech-icons-row">
-                            <i class="fab fa-php" title="PHP"></i>
-                            <i class="fab fa-python" title="Python"></i>
-                            <i class="fab fa-react" title="React"></i>
-                            <i class="fab fa-docker" title="Docker"></i>
-                            <i class="fab fa-aws" title="AWS"></i>
-                        </div>
-                    </div>
+                    <p class="hero-lab-audience">Built for schools, universities, training providers, and EdTech teams worldwide.</p>
                 </div>
 
-                <!-- Right Column: Premium Visual Graphic -->
-                <div class="hero-right-visual" data-aos="fade-left" data-aos-delay="200">
-                    <div class="visual-glow"></div>
-                    <div class="visual-image-wrapper">
-                        <img src="<?php echo asset('images/hero_tech_visual.webp'); ?>" alt="Custom Moodle LMS and AI learning platform development" class="hero-premium-image" width="1024" height="1024" fetchpriority="high" decoding="async">
-                    </div>
-                    <!-- Floating glassmorphic cards -->
-                    <div class="floating-glass-card card-top">
-                        <div class="card-icon"><i class="fas fa-brain"></i></div>
-                        <div class="card-content">
-                            <h4>AI Learning Assistants</h4>
-                            <p>Document Q&amp;A and semantic search</p>
+                <figure class="lab">
+                    <div class="lab-window">
+                        <div class="lab-bar">
+                            <span><strong>SQL lab</strong> &nbsp;Lesson 4: Counting enrolments</span>
+                            <span class="lab-run">Run</span>
+                        </div>
+<pre class="lab-code"><span class="k">SELECT</span> c.shortname,
+       <span class="k">COUNT</span>(ue.id) <span class="k">AS</span> learners
+<span class="k">FROM</span> mdl_course c
+<span class="k">JOIN</span> mdl_enrol e <span class="k">ON</span> e.courseid = c.id
+<span class="k">JOIN</span> mdl_user_enrolments ue <span class="k">ON</span> ue.enrolid = e.id
+<span class="k">GROUP BY</span> c.shortname
+<span class="k">ORDER BY</span> learners <span class="k">DESC</span>;</pre>
+                        <div class="lab-result">
+                            <table>
+                                <thead><tr><th>shortname</th><th>learners</th></tr></thead>
+                                <tbody>
+                                    <tr><td>SQL101</td><td>42</td></tr>
+                                    <tr><td>PY-INTRO</td><td>37</td></tr>
+                                    <tr><td>DATA-VIZ</td><td>29</td></tr>
+                                </tbody>
+                            </table>
+                            <p class="lab-check">1 of 1 check passed</p>
                         </div>
                     </div>
-                    <div class="floating-glass-card card-bottom">
-                        <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <div class="card-content">
-                            <h4>SQL &amp; Python Labs</h4>
-                            <p>Interactive practice inside your LMS</p>
-                        </div>
-                    </div>
-                </div>
+                    <figcaption>Example: an auto-graded SQL lab running inside a Moodle lesson.</figcaption>
+                </figure>
             </div>
 
-            <!-- Stats Numbers -->
-            <div class="hero-stats-numbers-container" data-aos="fade-up" data-aos-delay="600">
-                <div class="hero-stats-numbers">
-                    <div class="stat-item-hero">
-                        <span class="stat-num">6+</span>
-                        <span class="stat-lbl">Years of LMS Experience</span>
-                    </div>
-                    <div class="stat-item-hero">
-                        <span class="stat-num"><i class="fas fa-puzzle-piece" aria-hidden="true"></i></span>
-                        <span class="stat-lbl">Custom Plugins &amp; APIs</span>
-                    </div>
-                    <div class="stat-item-hero">
-                        <span class="stat-num"><i class="fas fa-code" aria-hidden="true"></i></span>
-                        <span class="stat-lbl">Interactive Coding Labs</span>
-                    </div>
-                    <div class="stat-item-hero">
-                        <span class="stat-num"><i class="fas fa-globe" aria-hidden="true"></i></span>
-                        <span class="stat-lbl">Remote Collaboration Worldwide</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Wave Divider -->
-        <div class="hero-wave">
-            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-                <path fill="#ffffff" d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z"></path>
-            </svg>
+            <ul class="hero-facts">
+                <li><strong>Founder-led</strong>6+ years building LMS platforms</li>
+                <li><strong>Plugins and APIs</strong>Custom Moodle and LearnDash code</li>
+                <li><strong>Coding labs</strong>Interactive SQL and Python practice</li>
+                <li><strong>Remote delivery</strong>Clients across the USA, UK, Europe and more</li>
+            </ul>
         </div>
     </section>
 
@@ -430,7 +362,7 @@ require_once 'includes/header.php';
     .tag-dot {
         width: 10px;
         height: 10px;
-        background: #00D4FF;
+        background: #5560F0;
         border-radius: 50%;
         animation: pulse-dot 2s ease-in-out infinite;
     }
@@ -449,7 +381,7 @@ require_once 'includes/header.php';
     }
 
     .title-highlight {
-        background: linear-gradient(135deg, #00D4FF, #00FF88);
+        background: linear-gradient(135deg, #5560F0, #00FF88);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -463,7 +395,7 @@ require_once 'includes/header.php';
     }
 
     .hero-main-desc strong {
-        color: #00D4FF;
+        color: #5560F0;
     }
 
     /* CTA Buttons */
@@ -479,19 +411,19 @@ require_once 'includes/header.php';
         display: inline-flex;
         align-items: center;
         gap: 0.5rem;
-        background: linear-gradient(135deg, #00D4FF, #0066FF);
+        background: linear-gradient(135deg, #5560F0, #3A3FD6);
         color: white;
         padding: 1rem 2rem;
         border-radius: 50px;
         font-weight: 600;
         text-decoration: none;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+        box-shadow: 0 4px 20px rgba(85,96,240, 0.3);
     }
 
     .cta-primary:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 30px rgba(0, 212, 255, 0.5);
+        box-shadow: 0 8px 30px rgba(85,96,240, 0.5);
     }
 
     .cta-secondary {
@@ -545,7 +477,7 @@ require_once 'includes/header.php';
         position: absolute;
         width: 320px;
         height: 320px;
-        background: radial-gradient(circle, rgba(0, 212, 255, 0.35) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(85,96,240, 0.35) 0%, transparent 70%);
         z-index: 1;
         filter: blur(40px);
     }
@@ -612,7 +544,7 @@ require_once 'includes/header.php';
         width: 40px;
         height: 40px;
         border-radius: 12px;
-        background: linear-gradient(135deg, #00D4FF, #0066FF);
+        background: linear-gradient(135deg, #5560F0, #3A3FD6);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -648,7 +580,7 @@ require_once 'includes/header.php';
 
     .float-icon {
         position: absolute;
-        color: rgba(0, 212, 255, 0.1);
+        color: rgba(85,96,240, 0.1);
         font-size: 2rem;
         animation: float-around 20s ease-in-out infinite;
     }
@@ -707,7 +639,7 @@ require_once 'includes/header.php';
     }
 
     .tech-icons-row i:hover {
-        color: #00D4FF;
+        color: #5560F0;
         transform: translateY(-3px);
     }
 
@@ -735,7 +667,7 @@ require_once 'includes/header.php';
         display: block;
         font-size: 2.2rem;
         font-weight: 800;
-        color: #00D4FF;
+        color: #5560F0;
         line-height: 1;
         margin-bottom: 0.5rem;
     }
@@ -838,8 +770,8 @@ require_once 'includes/header.php';
 
     .service-card:hover {
         transform: translateY(-8px);
-        box-shadow: 0 20px 40px rgba(11, 61, 145, 0.1);
-        border-color: rgba(37, 99, 235, 0.35);
+        box-shadow: 0 20px 40px rgba(34,42,115, 0.1);
+        border-color: rgba(58,63,214, 0.35);
     }
 
     .service-image-wrapper {
@@ -864,14 +796,14 @@ require_once 'includes/header.php';
         position: absolute;
         top: 1rem;
         right: 1rem;
-        background: linear-gradient(135deg, #00D4FF, #0066FF);
+        background: linear-gradient(135deg, #5560F0, #3A3FD6);
         color: white;
         padding: 0.35rem 0.85rem;
         border-radius: 50px;
         font-size: 0.75rem;
         font-weight: 700;
         letter-spacing: 0.5px;
-        box-shadow: 0 4px 10px rgba(0, 102, 255, 0.3);
+        box-shadow: 0 4px 10px rgba(58,63,214, 0.3);
         z-index: 2;
     }
 
@@ -891,7 +823,7 @@ require_once 'includes/header.php';
         height: 60px;
         border-radius: 16px;
         background: #ffffff;
-        box-shadow: 0 8px 24px rgba(11, 61, 145, 0.15);
+        box-shadow: 0 8px 24px rgba(34,42,115, 0.15);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -902,16 +834,16 @@ require_once 'includes/header.php';
 
     .service-icon-box i {
         font-size: 1.4rem;
-        background: linear-gradient(135deg, #0066FF, #00CCFF);
+        background: linear-gradient(135deg, #3A3FD6, #5560F0);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
 
     .service-card:hover .service-icon-box {
-        background: linear-gradient(135deg, #0066FF, #00CCFF);
+        background: linear-gradient(135deg, #3A3FD6, #5560F0);
         transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0, 102, 255, 0.35);
+        box-shadow: 0 10px 25px rgba(58,63,214, 0.35);
     }
 
     .service-card:hover .service-icon-box i {
@@ -1002,7 +934,7 @@ require_once 'includes/header.php';
     }
 
     .values-tabs-vertical .tab-btn:hover {
-        border-color: rgba(37, 99, 235, 0.3);
+        border-color: rgba(58,63,214, 0.3);
         background: rgba(245, 247, 251, 0.5);
         transform: translateX(5px);
         box-shadow: none;
@@ -1010,8 +942,8 @@ require_once 'includes/header.php';
 
     .values-tabs-vertical .tab-btn.active {
         border-color: var(--accent);
-        background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(0, 212, 255, 0.05) 100%);
-        box-shadow: 0 10px 25px rgba(11, 61, 145, 0.05);
+        background: linear-gradient(135deg, rgba(58,63,214, 0.05) 0%, rgba(85,96,240, 0.05) 100%);
+        box-shadow: 0 10px 25px rgba(34,42,115, 0.05);
         transform: translateX(8px);
         color: var(--accent);
     }
@@ -1062,7 +994,7 @@ require_once 'includes/header.php';
         background: #ffffff;
         border-radius: 24px;
         padding: 3.5rem 3rem;
-        box-shadow: 0 15px 35px rgba(11, 61, 145, 0.06);
+        box-shadow: 0 15px 35px rgba(34,42,115, 0.06);
         border: 1px solid rgba(229, 234, 243, 0.7);
         position: relative;
         overflow: hidden;
@@ -1089,14 +1021,14 @@ require_once 'includes/header.php';
         left: 0;
         width: 6px;
         height: 100%;
-        background: linear-gradient(to bottom, #00D4FF, #0066FF);
+        background: linear-gradient(to bottom, #5560F0, #3A3FD6);
     }
 
     .values-display-wrapper .value-card .display-icon {
         width: 80px;
         height: 80px;
         border-radius: 20px;
-        background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(0, 212, 255, 0.08) 100%);
+        background: linear-gradient(135deg, rgba(58,63,214, 0.08) 0%, rgba(85,96,240, 0.08) 100%);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1105,7 +1037,7 @@ require_once 'includes/header.php';
 
     .values-display-wrapper .value-card .display-icon i {
         font-size: 2.2rem;
-        background: linear-gradient(135deg, #0066FF, #00CCFF);
+        background: linear-gradient(135deg, #3A3FD6, #5560F0);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -1185,16 +1117,16 @@ require_once 'includes/header.php';
 
     .tech-tab-btn:hover {
         background: #f1f5f9;
-        border-color: rgba(0, 102, 255, 0.3);
-        color: #0066ff;
+        border-color: rgba(58,63,214, 0.3);
+        color: #3A3FD6;
         transform: translateY(-1px);
     }
 
     .tech-tab-btn.active {
-        background: linear-gradient(135deg, #0066ff, #0052cc);
+        background: linear-gradient(135deg, #3A3FD6, #0052cc);
         color: #ffffff;
         border-color: transparent;
-        box-shadow: 0 4px 12px rgba(0, 102, 255, 0.25);
+        box-shadow: 0 4px 12px rgba(58,63,214, 0.25);
     }
 
     .tech-grid-v2 {
@@ -2108,8 +2040,8 @@ require_once 'includes/header.php';
         transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
     .marquee-logo-item:hover {
-        border-color: rgba(37, 99, 235, 0.3);
-        box-shadow: 0 12px 30px rgba(11, 61, 145, 0.08);
+        border-color: rgba(58,63,214, 0.3);
+        box-shadow: 0 12px 30px rgba(34,42,115, 0.08);
         transform: translateY(-4px);
     }
     .marquee-logo-item img {
@@ -2131,7 +2063,7 @@ require_once 'includes/header.php';
         flex-wrap: wrap;
         margin-top: 2.5rem;
         padding: 1.75rem 2.5rem;
-        background: linear-gradient(135deg, rgba(37, 99, 235, 0.04) 0%, rgba(0, 212, 255, 0.04) 100%);
+        background: linear-gradient(135deg, rgba(58,63,214, 0.04) 0%, rgba(85,96,240, 0.04) 100%);
         border: 1px solid rgba(229, 234, 243, 0.7);
         border-radius: 20px;
     }
@@ -2144,7 +2076,7 @@ require_once 'includes/header.php';
     }
     .trust-stat i {
         font-size: 1.25rem;
-        background: linear-gradient(135deg, #0066FF, #00CCFF);
+        background: linear-gradient(135deg, #3A3FD6, #5560F0);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -2199,7 +2131,7 @@ require_once 'includes/header.php';
     <style>
     .home-faq-list { display:grid; gap:1rem; margin-top:2rem; }
     .home-faq-item { background:#fff; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.06); padding:1.1rem 1.5rem; }
-    .home-faq-item summary { cursor:pointer; font-weight:600; font-size:1.05rem; color:var(--accent, #062b6f); list-style:none; }
+    .home-faq-item summary { cursor:pointer; font-weight:600; font-size:1.05rem; color:var(--accent, #13163F); list-style:none; }
     .home-faq-item summary::-webkit-details-marker { display:none; }
     .home-faq-item summary::after { content:'+'; float:right; font-weight:700; }
     .home-faq-item[open] summary::after { content:'\2212'; }
@@ -2211,7 +2143,7 @@ require_once 'includes/header.php';
         <div class="container">
             <div data-aos="fade-up" style="max-width:800px; margin:0 auto;">
                 <h2>
-                    Ready to Build or Improve Your <span style="color:#60A5FA;">Learning Platform?</span>
+                    Ready to Build or Improve Your Learning Platform?
                 </h2>
                 <p>
                     Tell us about your LMS, coding-lab, integration, migration, or AI-learning requirement. We will review the challenge and recommend a practical technical approach for your platform.
