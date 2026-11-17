@@ -256,7 +256,7 @@ require_once 'includes/header.php';
     cursor: default;
 }
 .tech-icons i:hover {
-    color: #2F80FF;
+    color: #3B82F6;
     transform: translateY(-3px);
 }
 
@@ -329,6 +329,18 @@ require_once 'includes/header.php';
         </div>
     </section>
 
+    <!-- Proof strip -->
+    <section class="proof-strip" aria-label="Track record">
+        <div class="container">
+            <ul>
+                <li><strong>Top Rated</strong><span>on Upwork for Moodle and LMS work</span></li>
+                <li><strong>4.7 / 5</strong><span>from 17 client reviews</span></li>
+                <li><strong>100%</strong><span>job success on Upwork</span></li>
+                <li><strong>629 hours</strong><span>worked, across 35 Upwork jobs</span></li>
+            </ul>
+        </div>
+    </section>
+
     <style>
     /* Hero Grid Layout split */
     .hero-split {
@@ -362,7 +374,7 @@ require_once 'includes/header.php';
     .tag-dot {
         width: 10px;
         height: 10px;
-        background: #2F80FF;
+        background: #3B82F6;
         border-radius: 50%;
         animation: pulse-dot 2s ease-in-out infinite;
     }
@@ -381,7 +393,7 @@ require_once 'includes/header.php';
     }
 
     .title-highlight {
-        background: linear-gradient(135deg, #2F80FF, #00FF88);
+        background: linear-gradient(135deg, #3B82F6, #00FF88);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -395,7 +407,7 @@ require_once 'includes/header.php';
     }
 
     .hero-main-desc strong {
-        color: #2F80FF;
+        color: #3B82F6;
     }
 
     /* CTA Buttons */
@@ -411,19 +423,19 @@ require_once 'includes/header.php';
         display: inline-flex;
         align-items: center;
         gap: 0.5rem;
-        background: linear-gradient(135deg, #2F80FF, #0062F5);
+        background: linear-gradient(135deg, #3B82F6, #2563EB);
         color: white;
         padding: 1rem 2rem;
         border-radius: 50px;
         font-weight: 600;
         text-decoration: none;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 20px rgba(47,128,255, 0.3);
+        box-shadow: 0 4px 20px rgba(59,130,246, 0.3);
     }
 
     .cta-primary:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 30px rgba(47,128,255, 0.5);
+        box-shadow: 0 8px 30px rgba(59,130,246, 0.5);
     }
 
     .cta-secondary {
@@ -477,7 +489,7 @@ require_once 'includes/header.php';
         position: absolute;
         width: 320px;
         height: 320px;
-        background: radial-gradient(circle, rgba(47,128,255, 0.35) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(59,130,246, 0.35) 0%, transparent 70%);
         z-index: 1;
         filter: blur(40px);
     }
@@ -544,7 +556,7 @@ require_once 'includes/header.php';
         width: 40px;
         height: 40px;
         border-radius: 12px;
-        background: linear-gradient(135deg, #2F80FF, #0062F5);
+        background: linear-gradient(135deg, #3B82F6, #2563EB);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -580,7 +592,7 @@ require_once 'includes/header.php';
 
     .float-icon {
         position: absolute;
-        color: rgba(47,128,255, 0.1);
+        color: rgba(59,130,246, 0.1);
         font-size: 2rem;
         animation: float-around 20s ease-in-out infinite;
     }
@@ -639,7 +651,7 @@ require_once 'includes/header.php';
     }
 
     .tech-icons-row i:hover {
-        color: #2F80FF;
+        color: #3B82F6;
         transform: translateY(-3px);
     }
 
@@ -667,7 +679,7 @@ require_once 'includes/header.php';
         display: block;
         font-size: 2.2rem;
         font-weight: 800;
-        color: #2F80FF;
+        color: #3B82F6;
         line-height: 1;
         margin-bottom: 0.5rem;
     }
@@ -770,8 +782,8 @@ require_once 'includes/header.php';
 
     .service-card:hover {
         transform: translateY(-8px);
-        box-shadow: 0 20px 40px rgba(10,46,122, 0.1);
-        border-color: rgba(0,98,245, 0.35);
+        box-shadow: 0 20px 40px rgba(11,61,145, 0.1);
+        border-color: rgba(37,99,235, 0.35);
     }
 
     .service-image-wrapper {
@@ -796,14 +808,14 @@ require_once 'includes/header.php';
         position: absolute;
         top: 1rem;
         right: 1rem;
-        background: linear-gradient(135deg, #2F80FF, #0062F5);
+        background: linear-gradient(135deg, #3B82F6, #2563EB);
         color: white;
         padding: 0.35rem 0.85rem;
         border-radius: 50px;
         font-size: 0.75rem;
         font-weight: 700;
         letter-spacing: 0.5px;
-        box-shadow: 0 4px 10px rgba(0,98,245, 0.3);
+        box-shadow: 0 4px 10px rgba(37,99,235, 0.3);
         z-index: 2;
     }
 
@@ -823,7 +835,7 @@ require_once 'includes/header.php';
         height: 60px;
         border-radius: 16px;
         background: #ffffff;
-        box-shadow: 0 8px 24px rgba(10,46,122, 0.15);
+        box-shadow: 0 8px 24px rgba(11,61,145, 0.15);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -834,16 +846,16 @@ require_once 'includes/header.php';
 
     .service-icon-box i {
         font-size: 1.4rem;
-        background: linear-gradient(135deg, #0062F5, #2F80FF);
+        background: linear-gradient(135deg, #2563EB, #3B82F6);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
 
     .service-card:hover .service-icon-box {
-        background: linear-gradient(135deg, #0062F5, #2F80FF);
+        background: linear-gradient(135deg, #2563EB, #3B82F6);
         transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,98,245, 0.35);
+        box-shadow: 0 10px 25px rgba(37,99,235, 0.35);
     }
 
     .service-card:hover .service-icon-box i {
@@ -934,7 +946,7 @@ require_once 'includes/header.php';
     }
 
     .values-tabs-vertical .tab-btn:hover {
-        border-color: rgba(0,98,245, 0.3);
+        border-color: rgba(37,99,235, 0.3);
         background: rgba(245, 247, 251, 0.5);
         transform: translateX(5px);
         box-shadow: none;
@@ -942,8 +954,8 @@ require_once 'includes/header.php';
 
     .values-tabs-vertical .tab-btn.active {
         border-color: var(--accent);
-        background: linear-gradient(135deg, rgba(0,98,245, 0.05) 0%, rgba(47,128,255, 0.05) 100%);
-        box-shadow: 0 10px 25px rgba(10,46,122, 0.05);
+        background: linear-gradient(135deg, rgba(37,99,235, 0.05) 0%, rgba(59,130,246, 0.05) 100%);
+        box-shadow: 0 10px 25px rgba(11,61,145, 0.05);
         transform: translateX(8px);
         color: var(--accent);
     }
@@ -994,7 +1006,7 @@ require_once 'includes/header.php';
         background: #ffffff;
         border-radius: 24px;
         padding: 3.5rem 3rem;
-        box-shadow: 0 15px 35px rgba(10,46,122, 0.06);
+        box-shadow: 0 15px 35px rgba(11,61,145, 0.06);
         border: 1px solid rgba(229, 234, 243, 0.7);
         position: relative;
         overflow: hidden;
@@ -1021,14 +1033,14 @@ require_once 'includes/header.php';
         left: 0;
         width: 6px;
         height: 100%;
-        background: linear-gradient(to bottom, #2F80FF, #0062F5);
+        background: linear-gradient(to bottom, #3B82F6, #2563EB);
     }
 
     .values-display-wrapper .value-card .display-icon {
         width: 80px;
         height: 80px;
         border-radius: 20px;
-        background: linear-gradient(135deg, rgba(0,98,245, 0.08) 0%, rgba(47,128,255, 0.08) 100%);
+        background: linear-gradient(135deg, rgba(37,99,235, 0.08) 0%, rgba(59,130,246, 0.08) 100%);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1037,7 +1049,7 @@ require_once 'includes/header.php';
 
     .values-display-wrapper .value-card .display-icon i {
         font-size: 2.2rem;
-        background: linear-gradient(135deg, #0062F5, #2F80FF);
+        background: linear-gradient(135deg, #2563EB, #3B82F6);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -1117,16 +1129,16 @@ require_once 'includes/header.php';
 
     .tech-tab-btn:hover {
         background: #f1f5f9;
-        border-color: rgba(0,98,245, 0.3);
-        color: #0062F5;
+        border-color: rgba(37,99,235, 0.3);
+        color: #2563EB;
         transform: translateY(-1px);
     }
 
     .tech-tab-btn.active {
-        background: linear-gradient(135deg, #0062F5, #0052cc);
+        background: linear-gradient(135deg, #2563EB, #0052cc);
         color: #ffffff;
         border-color: transparent;
-        box-shadow: 0 4px 12px rgba(0,98,245, 0.25);
+        box-shadow: 0 4px 12px rgba(37,99,235, 0.25);
     }
 
     .tech-grid-v2 {
@@ -1359,78 +1371,19 @@ require_once 'includes/header.php';
         </div>
     </section>
 
-    <!-- Core Values Section -->
-    <section class="section core-values" id="values">
+    <!-- How we work -->
+    <section class="section how-we-work" id="process">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Our Core <span class="gradient-text">Values</span></h2>
-                <p class="section-subtitle">Guiding principles that drive our success</p>
+            <div class="how-head">
+                <h2 class="section-title">How a project runs</h2>
+                <p class="section-subtitle">Four stages, with you in the loop at each one.</p>
             </div>
-
-            <div class="values-container" data-aos="fade-up">
-                <!-- Left: Tabs -->
-                <div class="values-tabs-vertical">
-                    <button class="tab-btn active" data-tab="1">
-                        <span class="btn-num">01</span>
-                        <h4>Integrity</h4>
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                    <button class="tab-btn" data-tab="2">
-                        <span class="btn-num">02</span>
-                        <h4>Innovation</h4>
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                    <button class="tab-btn" data-tab="3">
-                        <span class="btn-num">03</span>
-                        <h4>Excellence</h4>
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                    <button class="tab-btn" data-tab="4">
-                        <span class="btn-num">04</span>
-                        <h4>Collaboration</h4>
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-
-                <!-- Right: Active Value Details -->
-                <div class="values-display-wrapper">
-                    <!-- Integrity Card -->
-                    <div class="value-card active" data-tab="1">
-                        <div class="display-icon">
-                            <i aria-hidden="true" class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Integrity</h3>
-                        <p>We uphold the highest standards of honesty, ethics, and transparency in all our professional engagements. We believe that trust is the foundation of long-term partnerships, and we commit to delivering on our promises with complete visibility.</p>
-                    </div>
-
-                    <!-- Innovation Card -->
-                    <div class="value-card" data-tab="2">
-                        <div class="display-icon">
-                            <i aria-hidden="true" class="fas fa-lightbulb"></i>
-                        </div>
-                        <h3>Innovation</h3>
-                        <p>We embrace creative thinking and leverage emerging technologies to solve complex enterprise challenges. Our team is constantly researching modern architectures, AI frameworks, and e-learning breakthroughs to keep your platform future-proof.</p>
-                    </div>
-
-                    <!-- Excellence Card -->
-                    <div class="value-card" data-tab="3">
-                        <div class="display-icon">
-                            <i aria-hidden="true" class="fas fa-trophy"></i>
-                        </div>
-                        <h3>Excellence</h3>
-                        <p>We are relentlessly committed to delivering exceptional quality in every line of code, infrastructure setup, and learning system we deploy. We set high benchmarks and follow rigorous engineering standards to ensure your success.</p>
-                    </div>
-
-                    <!-- Collaboration Card -->
-                    <div class="value-card" data-tab="4">
-                        <div class="display-icon">
-                            <i aria-hidden="true" class="fas fa-handshake"></i>
-                        </div>
-                        <h3>Collaboration</h3>
-                        <p>We view our clients as true partners, working closely at every step to align on requirements, design decisions, and system capabilities. By working together as one cohesive team, we build digital ecosystems that deliver true impact.</p>
-                    </div>
-                </div>
-            </div>
+            <ol class="how-steps">
+                <li><h3>Discuss</h3><p>We look at your LMS, your users and what is not working today.</p></li>
+                <li><h3>Scope</h3><p>You get a written scope with milestones, timeline and cost before work starts.</p></li>
+                <li><h3>Build</h3><p>Work happens on a staging site, with demos along the way so you can review early.</p></li>
+                <li><h3>Launch and support</h3><p>We deploy, migrate your data, train your team and stay on for fixes and upgrades.</p></li>
+            </ol>
         </div>
     </section>
 
@@ -2040,8 +1993,8 @@ require_once 'includes/header.php';
         transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
     .marquee-logo-item:hover {
-        border-color: rgba(0,98,245, 0.3);
-        box-shadow: 0 12px 30px rgba(10,46,122, 0.08);
+        border-color: rgba(37,99,235, 0.3);
+        box-shadow: 0 12px 30px rgba(11,61,145, 0.08);
         transform: translateY(-4px);
     }
     .marquee-logo-item img {
@@ -2063,7 +2016,7 @@ require_once 'includes/header.php';
         flex-wrap: wrap;
         margin-top: 2.5rem;
         padding: 1.75rem 2.5rem;
-        background: linear-gradient(135deg, rgba(0,98,245, 0.04) 0%, rgba(47,128,255, 0.04) 100%);
+        background: linear-gradient(135deg, rgba(37,99,235, 0.04) 0%, rgba(59,130,246, 0.04) 100%);
         border: 1px solid rgba(229, 234, 243, 0.7);
         border-radius: 20px;
     }
@@ -2076,7 +2029,7 @@ require_once 'includes/header.php';
     }
     .trust-stat i {
         font-size: 1.25rem;
-        background: linear-gradient(135deg, #0062F5, #2F80FF);
+        background: linear-gradient(135deg, #2563EB, #3B82F6);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -2112,6 +2065,81 @@ require_once 'includes/header.php';
     }
     </style>
 
+    <!-- Core Values Section -->
+    <section class="section core-values" id="values">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Core <span class="gradient-text">Values</span></h2>
+                <p class="section-subtitle">Guiding principles that drive our success</p>
+            </div>
+
+            <div class="values-container" data-aos="fade-up">
+                <!-- Left: Tabs -->
+                <div class="values-tabs-vertical">
+                    <button class="tab-btn active" data-tab="1">
+                        <span class="btn-num">01</span>
+                        <h4>Integrity</h4>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="tab-btn" data-tab="2">
+                        <span class="btn-num">02</span>
+                        <h4>Innovation</h4>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="tab-btn" data-tab="3">
+                        <span class="btn-num">03</span>
+                        <h4>Excellence</h4>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="tab-btn" data-tab="4">
+                        <span class="btn-num">04</span>
+                        <h4>Collaboration</h4>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Right: Active Value Details -->
+                <div class="values-display-wrapper">
+                    <!-- Integrity Card -->
+                    <div class="value-card active" data-tab="1">
+                        <div class="display-icon">
+                            <i aria-hidden="true" class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Integrity</h3>
+                        <p>We uphold the highest standards of honesty, ethics, and transparency in all our professional engagements. We believe that trust is the foundation of long-term partnerships, and we commit to delivering on our promises with complete visibility.</p>
+                    </div>
+
+                    <!-- Innovation Card -->
+                    <div class="value-card" data-tab="2">
+                        <div class="display-icon">
+                            <i aria-hidden="true" class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>We embrace creative thinking and leverage emerging technologies to solve complex enterprise challenges. Our team is constantly researching modern architectures, AI frameworks, and e-learning breakthroughs to keep your platform future-proof.</p>
+                    </div>
+
+                    <!-- Excellence Card -->
+                    <div class="value-card" data-tab="3">
+                        <div class="display-icon">
+                            <i aria-hidden="true" class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Excellence</h3>
+                        <p>We are relentlessly committed to delivering exceptional quality in every line of code, infrastructure setup, and learning system we deploy. We set high benchmarks and follow rigorous engineering standards to ensure your success.</p>
+                    </div>
+
+                    <!-- Collaboration Card -->
+                    <div class="value-card" data-tab="4">
+                        <div class="display-icon">
+                            <i aria-hidden="true" class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Collaboration</h3>
+                        <p>We view our clients as true partners, working closely at every step to align on requirements, design decisions, and system capabilities. By working together as one cohesive team, we build digital ecosystems that deliver true impact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section -->
     <section class="section home-faq" id="faq">
         <div class="container" style="max-width:900px;">
@@ -2131,7 +2159,7 @@ require_once 'includes/header.php';
     <style>
     .home-faq-list { display:grid; gap:1rem; margin-top:2rem; }
     .home-faq-item { background:#fff; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.06); padding:1.1rem 1.5rem; }
-    .home-faq-item summary { cursor:pointer; font-weight:600; font-size:1.05rem; color:var(--accent, #071A4A); list-style:none; }
+    .home-faq-item summary { cursor:pointer; font-weight:600; font-size:1.05rem; color:var(--accent, #062B6F); list-style:none; }
     .home-faq-item summary::-webkit-details-marker { display:none; }
     .home-faq-item summary::after { content:'+'; float:right; font-weight:700; }
     .home-faq-item[open] summary::after { content:'\2212'; }
