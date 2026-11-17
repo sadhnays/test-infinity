@@ -1380,9 +1380,9 @@ require_once 'includes/header.php';
             </div>
             <ol class="how-steps">
                 <li><h3>Discuss</h3><p>We look at your LMS, your users and what is not working today.</p></li>
-                <li><h3>Scope</h3><p>You get a written scope with milestones, timeline and cost before work starts.</p></li>
-                <li><h3>Build</h3><p>Work happens on a staging site, with demos along the way so you can review early.</p></li>
-                <li><h3>Launch and support</h3><p>We deploy, migrate your data, train your team and stay on for fixes and upgrades.</p></li>
+                <li><h3>Scope</h3><p>We agree the scope, milestones and timeline before any work starts.</p></li>
+                <li><h3>Build</h3><p>You see progress at each milestone, so changes are made early.</p></li>
+                <li><h3>Launch and support</h3><p>We deploy, migrate your data and stay on for fixes and upgrades.</p></li>
             </ol>
         </div>
     </section>
