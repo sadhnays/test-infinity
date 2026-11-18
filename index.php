@@ -278,30 +278,122 @@ require_once 'includes/header.php';
 </style>
 
     <!-- Hero Section - Modern 2-Column Split -->
-    <section class="hero-lab" id="home">
+    <section class="hero animated-bg" id="home">
+        <!-- Grid overlay & Particles -->
+        <div class="hero-grid"></div>
+        <div class="hero-scan-line"></div>
+        <div class="hero-float-elements">
+            <div class="float-icon float-1"><i class="fas fa-code"></i></div>
+            <div class="float-icon float-2"><i class="fas fa-cloud"></i></div>
+            <div class="float-icon float-3"><i class="fas fa-robot"></i></div>
+            <div class="float-icon float-4"><i class="fas fa-graduation-cap"></i></div>
+            <div class="float-icon float-5"><i class="fas fa-chart-line"></i></div>
+        </div>
+
         <div class="container">
-            <div class="hero-lab-grid">
-                <div class="hero-lab-copy">
-                    <h1>Moodle &amp; Custom LMS Development Agency</h1>
-                    <p class="hero-lab-desc">We build custom learning platforms, plugins, SQL and Python coding labs, AI study assistants, dashboards, integrations, and cloud deployments. Our experience includes solutions for Moodle&trade; LMS and LearnDash.</p>
-                    <div class="hero-lab-actions">
-                        <a href="<?php echo base_url('contact.php'); ?>" class="btn-mark">Discuss your LMS project</a>
-                        <a href="<?php echo base_url('what-we-do.php'); ?>" class="btn-line">Explore LMS solutions</a>
+            <div class="hero-split">
+                <!-- Left Column: Content -->
+                <div class="hero-left-content">
+                    <!-- Subtitle -->
+                    <p class="hero-subtitle-tag" data-aos="fade-down">
+                        <span class="tag-dot"></span>
+                        Founder-Led LMS Engineering • 6+ Years of Experience
+                    </p>
+
+                    <!-- Main Heading -->
+                    <h1 class="hero-main-title" data-aos="fade-up" data-aos-delay="100">
+                        Moodle &amp; Custom LMS
+                        <span class="title-highlight">Development Agency</span>
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="hero-main-desc" data-aos="fade-up" data-aos-delay="200">
+                        We build custom learning platforms, plugins, SQL and Python coding labs, AI study assistants, dashboards, integrations, and cloud deployments. Our experience includes solutions for Moodle™ LMS and LearnDash.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-cta-group" data-aos="fade-up" data-aos-delay="300">
+                        <a href="<?php echo base_url('contact.php'); ?>" class="cta-primary">
+                            <i class="fas fa-comments"></i> Discuss Your LMS Project
+                        </a>
+                        <a href="<?php echo base_url('what-we-do.php'); ?>" class="cta-secondary">
+                            <i class="fas fa-layer-group"></i> Explore LMS Solutions
+                        </a>
                     </div>
-                    <p class="hero-lab-audience">Built for schools, universities, training providers, and EdTech teams worldwide.</p>
+
+                    <!-- Trust Badges -->
+                    <div class="hero-trust" data-aos="fade-up" data-aos-delay="400">
+                        <span class="trust-text">Built for schools, universities, training providers, and EdTech teams worldwide</span>
+                        <div class="trust-icons">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack Icons -->
+                    <div class="hero-tech" data-aos="fade-up" data-aos-delay="500">
+                        <span class="tech-label">Core stack:</span>
+                        <div class="tech-icons-row">
+                            <i class="fab fa-php" title="PHP"></i>
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fab fa-react" title="React"></i>
+                            <i class="fab fa-docker" title="Docker"></i>
+                            <i class="fab fa-aws" title="AWS"></i>
+                        </div>
+                    </div>
                 </div>
 
-                <figure class="hero-shot">
-                    <img src="<?php echo asset('images/about/service_moodle.webp'); ?>" alt="Custom Moodle learning dashboard built by Infinity SoftHub" width="720" height="540" fetchpriority="high">
-                </figure>
+                <!-- Right Column: Premium Visual Graphic -->
+                <div class="hero-right-visual" data-aos="fade-left" data-aos-delay="200">
+                    <div class="visual-glow"></div>
+                    <div class="visual-image-wrapper">
+                        <img src="<?php echo asset('images/hero_tech_visual.webp'); ?>" alt="Custom Moodle LMS and AI learning platform development" class="hero-premium-image" width="1024" height="1024" fetchpriority="high" decoding="async">
+                    </div>
+                    <!-- Floating glassmorphic cards -->
+                    <div class="floating-glass-card card-top">
+                        <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        <div class="card-content">
+                            <h4>AI Learning Assistants</h4>
+                            <p>Document Q&amp;A and semantic search</p>
+                        </div>
+                    </div>
+                    <div class="floating-glass-card card-bottom">
+                        <div class="card-icon"><i class="fas fa-puzzle-piece"></i></div>
+                        <div class="card-content">
+                            <h4>Custom Plugins &amp; APIs</h4>
+                            <p>Moodle and LearnDash code built for you</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <ul class="hero-facts">
-                <li><strong>Founder-led</strong>6+ years building LMS platforms</li>
-                <li><strong>Plugins and APIs</strong>Custom Moodle and LearnDash code</li>
-                <li><strong>AI assistants</strong>Document Q&amp;A and semantic search</li>
-                <li><strong>Remote delivery</strong>Clients across the USA, UK, Europe and more</li>
-            </ul>
+            <!-- Stats Numbers -->
+            <div class="hero-stats-numbers-container" data-aos="fade-up" data-aos-delay="600">
+                <div class="hero-stats-numbers">
+                    <div class="stat-item-hero">
+                        <span class="stat-num">6+</span>
+                        <span class="stat-lbl">Years of LMS Experience</span>
+                    </div>
+                    <div class="stat-item-hero">
+                        <span class="stat-num"><i class="fas fa-puzzle-piece" aria-hidden="true"></i></span>
+                        <span class="stat-lbl">Custom Plugins &amp; APIs</span>
+                    </div>
+                    <div class="stat-item-hero">
+                        <span class="stat-num"><i class="fas fa-cloud" aria-hidden="true"></i></span>
+                        <span class="stat-lbl">Cloud Deployment &amp; Hosting</span>
+                    </div>
+                    <div class="stat-item-hero">
+                        <span class="stat-num"><i class="fas fa-globe" aria-hidden="true"></i></span>
+                        <span class="stat-lbl">Remote Collaboration Worldwide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave Divider -->
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path fill="#ffffff" d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z"></path>
+            </svg>
         </div>
     </section>
 
