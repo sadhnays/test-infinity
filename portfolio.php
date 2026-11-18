@@ -15,11 +15,13 @@ $projectsData = [
         'badge' => 'IOMAD / Game-based Learning',
         'badgeClass' => 'badge-success',
         'image' => asset('images/portfolio/learning-games-welcome.webp'),
+        'modalImage' => asset('images/portfolio/learning-games-wide.webp'),
         'description' => 'A family learning space where parents sign in and manage their children, and children play interactive learning games. IOMAD runs the users and learning data behind the scenes, while the student side is a React interface with Phaser game scenes and animation.',
         'highlights' => ['Built on IOMAD', 'React student interface', 'Phaser game scenes with animation', 'Interactive learning games', 'Parent sign-in and family space'],
         'tech' => ['IOMAD', 'Moodle', 'React', 'Phaser', 'JavaScript', 'Animation'],
         'type' => 'EdTech / Kids Learning',
         'solution' => 'We used IOMAD as the learning backend, designed a friendly student UI/UX in React, and built the games with Phaser and animation so practice feels like play.',
+        'demo' => ['url' => 'https://game.edutechspark.com/play/', 'email' => 'testm1@gmail.com', 'password' => 'Play!367a3f18ff4653ad2274f7457Aa'],
     ],
     'university-lms' => [
         'title' => 'University LMS Transformation',
@@ -488,9 +490,10 @@ $projectsData = [
                         <h4>Interactive Learning Games for Kids</h4>
                         <p class="text-secondary mb-1rem">A family learning space where children play interactive learning games and parents manage their accounts. IOMAD runs the learning backend, with a React student interface and Phaser game scenes with animation.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Demo available on request</span>
+                            <span class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Live demo with login</span>
                             <span class="check-item ml-1rem"><i class="fas fa-check-circle" aria-hidden="true"></i> Parent sign-in</span>
                         </div>
+                        <button type="button" class="demo-chip" onclick="event.stopPropagation(); openProjectDetail('learning-games')"><i class="fas fa-play-circle" aria-hidden="true"></i> Try the live demo</button>
                         <div class="project-tech">
                             <span class="tech-tag">IOMAD</span>
                             <span class="tech-tag">React</span>
@@ -1096,7 +1099,7 @@ function openProjectDetail(projectId) {
     }).join('');
 
     body.innerHTML =
-        '<img src="' + data.image + '" alt="' + data.title + '" class="project-detail-img" onerror="this.src=\'https://via.placeholder.com/800x350/062B6F/ffffff?text=Project\'">' +
+        '<img src="' + (data.modalImage || data.image) + '" alt="' + data.title + '" class="project-detail-img" onerror="this.src=\'https://via.placeholder.com/800x350/062B6F/ffffff?text=Project\'">' +
         '<div class="project-detail-content">' +
             '<div class="badge ' + data.badgeClass + ' mb-1rem">' + data.badge + '</div>' +
             '<h3 class="project-detail-title">' + data.title + '</h3>' +
@@ -1105,6 +1108,15 @@ function openProjectDetail(projectId) {
                 '<span><i class="fas fa-tag"></i> ' + data.type + '</span>' +
             '</div>' +
             '<p class="project-detail-desc">' + data.description + '</p>' +
+            (data.demo ? '<div class="demo-login" role="group" aria-label="Demo login">' +
+                '<div class="demo-login-head"><i class="fas fa-play-circle" aria-hidden="true"></i> Try the live demo</div>' +
+                '<dl class="demo-login-creds">' +
+                    '<div><dt>Email</dt><dd><code>' + data.demo.email + '</code></dd></div>' +
+                    '<div><dt>Password</dt><dd><code>' + data.demo.password + '</code></dd></div>' +
+                '</dl>' +
+                '<a class="btn btn-primary demo-login-btn" href="' + data.demo.url + '" target="_blank" rel="noopener">Open the demo <span class="sr-only">(opens in a new tab)</span></a>' +
+                '<p class="demo-login-note">Shared demo account. Please do not change the password or add real children\'s details.</p>' +
+            '</div>' : '') +
             (data.challenge ? '<h4 class="project-detail-section-title">The Challenge</h4>' +
             '<div class="project-challenge-content">' +
                 '<div class="challenge-icon"><i class="fas fa-exclamation-triangle"></i></div>' +
