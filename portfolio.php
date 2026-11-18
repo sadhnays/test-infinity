@@ -477,7 +477,7 @@ $projectsData = [
             <div class="grid grid-3 stagger">
                 <div class="card portfolio-card portfolio-featured" data-aos="fade-up" data-project="learning-games" onclick="openProjectDetail('learning-games')">
                     <div class="card-img-wrapper">
-                        <img width="850" height="640" src="<?php echo asset('images/portfolio/learning-games-welcome.webp'); ?>" alt="Interactive learning games platform for kids, built on IOMAD with React and Phaser" class="card-img" loading="lazy">
+                        <img width="1200" height="904" src="<?php echo asset('images/portfolio/learning-games-welcome.webp'); ?>" alt="Interactive learning games platform for kids, built on IOMAD with React and Phaser" class="card-img" loading="lazy">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
