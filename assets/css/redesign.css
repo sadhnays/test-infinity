@@ -617,10 +617,10 @@ body .cta-fullwidth .btn:last-child {
 
 /* Tech stack: compact tiles, no long descriptions */
 .tech-grid-v2 { grid-template-columns: repeat(4, 1fr) !important; gap: 12px !important; }
-.tech-grid-v2 .tech-card { display: grid; grid-template-columns: 40px 1fr; column-gap: 14px; align-items: center; padding: 14px 16px !important; min-height: 0 !important; }
-.tech-grid-v2 .tech-card .tech-card-icon { grid-row: 1 / span 2; margin: 0 !important; }
-.tech-grid-v2 .tech-card h4 { margin: 0; font-size: 1rem; }
-.tech-grid-v2 .tech-card .tech-use { font-size: .82rem; }
+.tech-grid-v2 .tech-card { display: grid; grid-template-columns: 54px 1fr; column-gap: 16px; row-gap: 2px; align-content: center; align-items: center; padding: 16px 18px !important; min-height: 0 !important; }
+.tech-grid-v2 .tech-card .tech-card-icon { grid-row: 1 / span 2; width: 54px; height: 54px; margin: 0 !important; }
+.tech-grid-v2 .tech-card h4 { margin: 0; font-size: 1.05rem; line-height: 1.25; align-self: end; }
+.tech-grid-v2 .tech-card .tech-use { margin: 0 !important; font-size: .78rem; align-self: start; }
 .tech-grid-v2 .tech-card p { display: none; }
 
 /* FAQ: heading on the left, questions on the right */
@@ -658,3 +658,12 @@ body .cta-fullwidth .btn:last-child {
 /* Hero visual: framed dashboard image */
 .hero-shot { margin: 0; border-radius: var(--radius-lg, 12px); overflow: hidden; border: 1px solid rgba(255,255,255,.16); box-shadow: 0 24px 60px rgba(0,0,0,.35); background: var(--ink-deep); }
 .hero-shot img { display: block; width: 100%; height: auto; max-height: 440px; object-fit: cover; }
+
+/* Tech icons: gentle float, staggered; stronger pop on hover */
+@keyframes techFloat { 0%,100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-4px) rotate(-6deg); } }
+.tech-grid-v2 .tech-card-icon i { display: inline-block; animation: techFloat 3.6s ease-in-out infinite; }
+.tech-grid-v2 .tech-card:nth-child(3n+2) .tech-card-icon i { animation-delay: -1.2s; }
+.tech-grid-v2 .tech-card:nth-child(3n) .tech-card-icon i { animation-delay: -2.4s; }
+.tech-grid-v2 .tech-card:nth-child(4n+1) .tech-card-icon i { animation-duration: 4.2s; }
+.tech-grid-v2 .tech-card:hover .tech-card-icon i { animation-duration: 1.2s; }
+@media (prefers-reduced-motion: reduce) { .tech-grid-v2 .tech-card-icon i { animation: none; } }

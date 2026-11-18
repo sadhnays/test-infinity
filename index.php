@@ -299,7 +299,7 @@ require_once 'includes/header.php';
             <ul class="hero-facts">
                 <li><strong>Founder-led</strong>6+ years building LMS platforms</li>
                 <li><strong>Plugins and APIs</strong>Custom Moodle and LearnDash code</li>
-                <li><strong>Coding labs</strong>Interactive SQL and Python practice</li>
+                <li><strong>AI assistants</strong>Document Q&amp;A and semantic search</li>
                 <li><strong>Remote delivery</strong>Clients across the USA, UK, Europe and more</li>
             </ul>
         </div>
@@ -1515,9 +1515,9 @@ require_once 'includes/header.php';
                 </div>
 
                 <div class="mini-card">
-                    <i aria-hidden="true" class="fas fa-code"></i>
-                    <h4>Coding Labs</h4>
-                    <p>Interactive SQL and Python practice environments inside the LMS.</p>
+                    <i aria-hidden="true" class="fas fa-chart-line"></i>
+                    <h4>Dashboards</h4>
+                    <p>Reports and analytics for learners, instructors and managers.</p>
                 </div>
 
                 <div class="mini-card">
