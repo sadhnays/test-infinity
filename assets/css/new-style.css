@@ -5287,7 +5287,7 @@ body .cta-fullwidth .btn:last-child {
 .industries .service-link-card:not(:nth-child(5)) .service-image-wrapper { display: none; }
 .services .service-link-card:not(:first-child) .service-card-content,
 .industries .service-link-card:not(:nth-child(5)) .service-card-content {
-    display: grid; grid-template-columns: 44px 1fr auto; column-gap: 16px; align-items: center; padding: 16px 20px;
+    display: grid; grid-template-columns: 60px 1fr auto; column-gap: 20px; align-items: center; padding: 16px 20px;
 }
 .services .service-link-card:not(:first-child) .service-icon-box,
 .industries .service-link-card:not(:nth-child(5)) .service-icon-box { grid-row: 1 / span 2; position: static; margin: 0; transform: none; }
@@ -5386,3 +5386,13 @@ body .values-tabs-vertical .tab-btn .btn-num { opacity: 1; color: #5B6B86; }
 body .values-tabs-vertical .tab-btn.active .btn-num { color: var(--accent); }
 /* Screen-reader-only text */
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+/* Compact service rows: icon box keeps its 60px size and never sits on the text */
+.services .service-link-card:not(:first-child) .service-icon-box,
+.industries .service-link-card:not(:nth-child(5)) .service-icon-box { width: 60px; height: 60px; flex: none; }
+
+/* Featured card: spare height goes to the picture, not to blank space under the text */
+.services .service-link-card:first-child .service-card-content,
+.industries .service-link-card:nth-child(5) .service-card-content { flex-grow: 0; }
+.services .service-link-card:first-child .service-image-wrapper,
+.industries .service-link-card:nth-child(5) .service-image-wrapper { height: auto; }
