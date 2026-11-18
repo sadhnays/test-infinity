@@ -401,7 +401,7 @@ require_once 'includes/header.php';
     <section class="proof-strip" aria-label="Track record">
         <div class="container">
             <ul>
-                <li><strong>Top Rated</strong><span>on Upwork for Moodle and LMS work</span></li>
+                <li><a class="proof-link" href="https://www.upwork.com/freelancers/sadhnay" target="_blank" rel="noopener noreferrer" aria-label="Top Rated on Upwork, open the Upwork profile in a new tab"><strong>Top Rated</strong><span>on Upwork for Moodle and LMS work</span></a></li>
                 <li><strong>4.7 / 5</strong><span>from 17 client reviews</span></li>
                 <li><strong>100%</strong><span>job success on Upwork</span></li>
                 <li><strong>629 hours</strong><span>worked, across 35 Upwork jobs</span></li>
