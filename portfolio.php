@@ -1086,6 +1086,26 @@ $projectsData = [
 // ==========================================
 var projectData = <?php echo json_encode($projectsData); ?>;
 
+function copyDemoValue(btn) {
+    var text = btn.getAttribute('data-copy');
+    var label = btn.querySelector('span');
+    function done(ok) {
+        label.textContent = ok ? 'Copied' : 'Press Ctrl+C';
+        setTimeout(function () { label.textContent = 'Copy'; }, 1800);
+    }
+    function fallback() {
+        var t = document.createElement('textarea');
+        t.value = text; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+        document.body.appendChild(t); t.select();
+        var ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(t); done(ok);
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+    } else { fallback(); }
+}
+
 function openProjectDetail(projectId) {
     var data = projectData[projectId];
     if (!data) return;
@@ -1111,8 +1131,8 @@ function openProjectDetail(projectId) {
             (data.demo ? '<div class="demo-login" role="group" aria-label="Demo login">' +
                 '<div class="demo-login-head"><i class="fas fa-play-circle" aria-hidden="true"></i> Try the live demo</div>' +
                 '<dl class="demo-login-creds">' +
-                    '<div><dt>Email</dt><dd><code>' + data.demo.email + '</code></dd></div>' +
-                    '<div><dt>Password</dt><dd><code>' + data.demo.password + '</code></dd></div>' +
+                    '<div><dt>Email</dt><dd><code>' + data.demo.email + '</code> <button type="button" class="demo-copy" data-copy="' + data.demo.email + '" onclick="copyDemoValue(this)"><i class="far fa-copy" aria-hidden="true"></i> <span>Copy</span><span class="sr-only"> email</span></button></dd></div>' +
+                    '<div><dt>Password</dt><dd><code>' + data.demo.password + '</code> <button type="button" class="demo-copy" data-copy="' + data.demo.password + '" onclick="copyDemoValue(this)"><i class="far fa-copy" aria-hidden="true"></i> <span>Copy</span><span class="sr-only"> password</span></button></dd></div>' +
                 '</dl>' +
                 '<a class="btn btn-primary demo-login-btn" href="' + data.demo.url + '" target="_blank" rel="noopener">Open the demo <span class="sr-only">(opens in a new tab)</span></a>' +
                 '<p class="demo-login-note">Shared demo account. Please do not change the password or add real children\'s details.</p>' +

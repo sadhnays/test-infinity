@@ -5424,3 +5424,7 @@ img { height: auto; }
 .demo-chip { margin-top: 1rem; display: inline-flex; align-items: center; gap: .5rem; padding: .55rem 1.1rem; border: 0; border-radius: 999px; background: #2563EB; color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
 .demo-chip:hover { background: #1D4ED8; }
 @media (max-width: 520px) { .demo-login-creds > div { grid-template-columns: 1fr; gap: .2rem; } }
+
+.demo-login-creds dd { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+.demo-copy { display: inline-flex; align-items: center; gap: .4rem; padding: .35rem .75rem; border: 1px solid #2563EB; border-radius: 8px; background: #fff; color: #1D4ED8; font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer; }
+.demo-copy:hover { background: #2563EB; color: #fff; }
