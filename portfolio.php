@@ -10,6 +10,17 @@ require_once 'includes/header.php';
 
 // Build project data for JavaScript (safe JSON encoding)
 $projectsData = [
+    'learning-games' => [
+        'title' => 'Interactive Learning Games for Kids',
+        'badge' => 'IOMAD / Game-based Learning',
+        'badgeClass' => 'badge-success',
+        'image' => asset('images/portfolio/learning-games-welcome.webp'),
+        'description' => 'A family learning space where parents sign in and manage their children, and children play interactive learning games matched to their age and grade. IOMAD runs the users and learning data behind the scenes, while the student side is a React interface with Phaser game scenes and animation.',
+        'highlights' => ['Built on IOMAD', 'React student interface', 'Phaser game scenes with animation', 'Activities matched to age and grade', 'Parent sign-in and family space'],
+        'tech' => ['IOMAD', 'Moodle', 'React', 'Phaser', 'JavaScript', 'Animation'],
+        'type' => 'EdTech / Kids Learning',
+        'solution' => 'We used IOMAD as the learning backend, designed a friendly student UI/UX in React, and built the games with Phaser and animation so practice feels like play. Content is organised by age and grade.',
+    ],
     'university-lms' => [
         'title' => 'University LMS Transformation',
         'badge' => 'Moodle / LMS',
@@ -464,6 +475,31 @@ $projectsData = [
             </div>
 
             <div class="grid grid-3 stagger">
+                <div class="card portfolio-card portfolio-featured" data-aos="fade-up" data-project="learning-games" onclick="openProjectDetail('learning-games')">
+                    <div class="card-img-wrapper">
+                        <img width="850" height="640" src="<?php echo asset('images/portfolio/learning-games-welcome.webp'); ?>" alt="Interactive learning games platform for kids, built on IOMAD with React and Phaser" class="card-img" loading="lazy">
+                        <div class="card-overlay">
+                            <i class="fas fa-eye"></i>
+                            <span>View Details</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="badge badge-success mb-1rem">New project / Kids learning</div>
+                        <h4>Interactive Learning Games for Kids</h4>
+                        <p class="text-secondary mb-1rem">A family learning space where children play games matched to their age and grade, and parents manage their accounts. IOMAD runs the learning backend, with a React student interface and Phaser game scenes with animation.</p>
+                        <div class="mt-1-5rem">
+                            <span class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Age and grade based</span>
+                            <span class="check-item ml-1rem"><i class="fas fa-check-circle" aria-hidden="true"></i> Parent sign-in</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">IOMAD</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Phaser</span>
+                            <span class="tech-tag">Animation</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="card portfolio-card" data-aos="zoom-in" data-project="medical-lms" onclick="openProjectDetail('medical-lms')">
                     <div class="card-img-wrapper">
                         <img width="1600" height="1066" src="<?php echo asset('images/about/ai-lms2.webp'); ?>" alt="Medical Training LMS" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/EF4444/ffffff?text=Medical+LMS'">
@@ -1065,30 +1101,30 @@ function openProjectDetail(projectId) {
             '<div class="badge ' + data.badgeClass + ' mb-1rem">' + data.badge + '</div>' +
             '<h3 class="project-detail-title">' + data.title + '</h3>' +
             '<div class="project-detail-meta">' +
-                '<span><i class="fas fa-clock"></i> ' + data.duration + '</span>' +
+                (data.duration ? '<span><i class="fas fa-clock"></i> ' + data.duration + '</span>' : '') +
                 '<span><i class="fas fa-tag"></i> ' + data.type + '</span>' +
             '</div>' +
             '<p class="project-detail-desc">' + data.description + '</p>' +
-            '<h4 class="project-detail-section-title">The Challenge</h4>' +
+            (data.challenge ? '<h4 class="project-detail-section-title">The Challenge</h4>' +
             '<div class="project-challenge-content">' +
                 '<div class="challenge-icon"><i class="fas fa-exclamation-triangle"></i></div>' +
                 '<p>' + data.challenge + '</p>' +
-            '</div>' +
-            '<h4 class="project-detail-section-title">Our Solution</h4>' +
+            '</div>' : '') +
+            (data.solution ? '<h4 class="project-detail-section-title">Our Solution</h4>' +
             '<div class="project-solution-content">' +
                 '<div class="solution-icon"><i class="fas fa-lightbulb"></i></div>' +
                 '<p>' + data.solution + '</p>' +
-            '</div>' +
+            '</div>' : '') +
             '<h4 class="project-detail-section-title">Key Highlights</h4>' +
             '<ul class="project-highlights">' + highlightsHtml + '</ul>' +
             '<h4 class="project-detail-section-title">Technology Stack</h4>' +
             '<div class="project-tech-stack">' + techHtml + '</div>' +
-            '<h4 class="project-detail-section-title">Results</h4>' +
+            (data.results && data.results.length ? '<h4 class="project-detail-section-title">Results</h4>' +
             '<div class="results-grid">' +
                 data.results.map(function(r) {
                     return '<div class="result-card"><div class="result-icon"><i class="fas fa-chart-line"></i></div><p>' + r + '</p></div>';
                 }).join('') +
-            '</div>' +
+            '</div>' : '') +
         '</div>';
 
     document.getElementById('projectModal').classList.add('active');
