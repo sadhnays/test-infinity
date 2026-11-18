@@ -86,7 +86,7 @@ function ish_blog_enqueue_assets() {
         'ish-main-site',
         get_main_site_url('assets/css/new-style.css'),
         array('ish-blog-fonts'),
-        '2026.08'
+        '2026.11'
     );
     wp_enqueue_style(
         'ish-blog-style',

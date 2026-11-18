@@ -106,8 +106,17 @@ select {
 }
 
 /* Header and primary navigation */
-.ish-blog-site .navbar {
+.ish-blog-site .navbar,
+.ish-blog-site .navbar.scrolled {
+    background: #f5f7fb;
+    box-shadow: 0 1px 0 #e5eaf3;
+    clip-path: none;
     min-height: 80px;
+}
+
+.ish-blog-site .navbar::before,
+.ish-blog-site .navbar.scrolled::before {
+    display: none;
 }
 
 .ish-blog-site .nav-container {
@@ -152,7 +161,7 @@ select {
 }
 
 .ish-nav-menu > li > a {
-    color: rgba(255, 255, 255, 0.94);
+    color: var(--ish-ink);
     display: block;
     font-size: 0.9rem;
     font-weight: 600;
@@ -179,7 +188,7 @@ select {
 .ish-nav-menu > li:focus-within > a,
 .ish-nav-menu > .current-menu-item > a,
 .ish-nav-menu > .current-menu-ancestor > a {
-    color: var(--ish-white);
+    color: var(--ish-primary);
 }
 
 .ish-nav-menu > li:hover > a::after,
@@ -1726,7 +1735,7 @@ select {
     }
 
     .ish-blog-site .nav-toggle {
-        color: var(--ish-white);
+        color: var(--ish-ink);
         display: inline-flex;
         margin-left: auto;
     }
