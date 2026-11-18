@@ -75,7 +75,7 @@ require_once __DIR__ . '/../includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div style="position:relative;">
-                        <img src="<?php echo asset('images/about/Mobile-app2.webp'); ?>" alt="iOS and Android mobile app development including LMS apps" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Mobile+Apps'">
+                        <img width="1600" height="1068" src="<?php echo asset('images/about/Mobile-app2.webp'); ?>" alt="iOS and Android mobile app development including LMS apps" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Mobile+Apps'">
                         <div class="exp-number-badge">
                             <div class="exp-number">50+</div>
                             <div class="exp-label">Apps Delivered</div>

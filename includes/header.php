@@ -232,8 +232,6 @@ $breadcrumbSchema = breadcrumb_schema($pageTitle);
 
     <!-- Main styles (synchronous to prevent Flash of Unstyled Content) -->
     <link rel="stylesheet" href="<?php echo versioned_asset('css/new-style.css'); ?>">
-    <!-- Chalkboard redesign layer (overrides tokens, navbar, hero, footer) -->
-    <link rel="stylesheet" href="<?php echo versioned_asset('css/redesign.css'); ?>">
 
     <!-- Structured data -->
     <script type="application/ld+json">

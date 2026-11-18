@@ -292,7 +292,7 @@ $projectsData = [
             <div class="grid grid-3 stagger">
                 <div class="card portfolio-card" data-aos="zoom-in" data-project="university-lms" onclick="openProjectDetail('university-lms')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/moodle-lms-development.webp'); ?>" alt="University LMS Transformation" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/0066ff/ffffff?text=University+LMS'">
+                        <img width="1600" height="912" src="<?php echo asset('images/about/moodle-lms-development.webp'); ?>" alt="University LMS Transformation" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/0066ff/ffffff?text=University+LMS'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -316,7 +316,7 @@ $projectsData = [
 
                 <div class="card portfolio-card" data-aos="zoom-in" data-aos-delay="100" data-project="angular-app" onclick="openProjectDetail('angular-app')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/custom.webp'); ?>" alt="Enterprise Dashboard Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/0B3D91/ffffff?text=Angular+App'">
+                        <img width="1200" height="1200" src="<?php echo asset('images/about/custom.webp'); ?>" alt="Enterprise Dashboard Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/0B3D91/ffffff?text=Angular+App'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -340,7 +340,7 @@ $projectsData = [
 
                 <div class="card portfolio-card" data-aos="zoom-in" data-aos-delay="200" data-project="wordpress-cms" onclick="openProjectDetail('wordpress-cms')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/hosting-migration.webp'); ?>" alt="Corporate Website & Blog Portal" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/10B981/ffffff?text=WordPress+CMS'">
+                        <img width="800" height="457" src="<?php echo asset('images/about/hosting-migration.webp'); ?>" alt="Corporate Website & Blog Portal" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/10B981/ffffff?text=WordPress+CMS'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -379,7 +379,7 @@ $projectsData = [
             <div class="grid grid-3 stagger">
                 <div class="card portfolio-card" data-aos="zoom-in" data-project="mobile-cms" onclick="openProjectDetail('mobile-cms')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/Mobile-app.webp'); ?>" alt="Retail Mobile App & CMS" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/8B5CF6/ffffff?text=Mobile+CMS'">
+                        <img width="1200" height="1200" src="<?php echo asset('images/about/Mobile-app.webp'); ?>" alt="Retail Mobile App & CMS" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/8B5CF6/ffffff?text=Mobile+CMS'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -403,7 +403,7 @@ $projectsData = [
 
                 <div class="card portfolio-card" data-aos="zoom-in" data-aos-delay="100" data-project="fitness-app" onclick="openProjectDetail('fitness-app')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/Mobile-app2.webp'); ?>" alt="Fitness Tracking App" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/2563EB/ffffff?text=Fitness+App'">
+                        <img width="1600" height="1068" src="<?php echo asset('images/about/Mobile-app2.webp'); ?>" alt="Fitness Tracking App" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/2563EB/ffffff?text=Fitness+App'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -427,7 +427,7 @@ $projectsData = [
 
                 <div class="card portfolio-card" data-aos="zoom-in" data-aos-delay="200" data-project="cloud-migration" onclick="openProjectDetail('cloud-migration')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/Cloud-ai.webp'); ?>" alt="Cloud Migration Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/60A5FA/ffffff?text=Cloud+Migration'">
+                        <img width="1200" height="684" src="<?php echo asset('images/about/Cloud-ai.webp'); ?>" alt="Cloud Migration Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/60A5FA/ffffff?text=Cloud+Migration'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -466,7 +466,7 @@ $projectsData = [
             <div class="grid grid-3 stagger">
                 <div class="card portfolio-card" data-aos="zoom-in" data-project="medical-lms" onclick="openProjectDetail('medical-lms')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/ai-lms2.webp'); ?>" alt="Medical Training LMS" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/EF4444/ffffff?text=Medical+LMS'">
+                        <img width="1600" height="1066" src="<?php echo asset('images/about/ai-lms2.webp'); ?>" alt="Medical Training LMS" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/EF4444/ffffff?text=Medical+LMS'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -490,7 +490,7 @@ $projectsData = [
 
                 <div class="card portfolio-card" data-aos="zoom-in" data-aos-delay="100" data-project="e-learning" onclick="openProjectDetail('e-learning')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/moodle-development.webp'); ?>" alt="E-Learning Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/06B6D4/ffffff?text=E-Learning'">
+                        <img width="1600" height="1200" src="<?php echo asset('images/about/moodle-development.webp'); ?>" alt="E-Learning Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/06B6D4/ffffff?text=E-Learning'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -514,7 +514,7 @@ $projectsData = [
 
                 <div class="card portfolio-card" data-aos="zoom-in" data-aos-delay="200" data-project="corporate-training" onclick="openProjectDetail('corporate-training')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/hosting-migration.webp'); ?>" alt="Enterprise Training Portal" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/F59E0B/ffffff?text=Corporate+Training'">
+                        <img width="800" height="457" src="<?php echo asset('images/about/hosting-migration.webp'); ?>" alt="Enterprise Training Portal" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/F59E0B/ffffff?text=Corporate+Training'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -553,7 +553,7 @@ $projectsData = [
             <div class="grid grid-3 stagger">
                 <div class="card portfolio-card" data-aos="zoom-in" data-project="security-solutions" onclick="openProjectDetail('security-solutions')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/security-solutions.webp'); ?>" alt="Security Solutions" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/6366F1/ffffff?text=Security+Solutions'">
+                        <img width="1600" height="1068" src="<?php echo asset('images/about/security-solutions.webp'); ?>" alt="Security Solutions" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/6366F1/ffffff?text=Security+Solutions'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -577,7 +577,7 @@ $projectsData = [
 
                 <div class="card portfolio-card" data-aos="zoom-in" data-aos-delay="100" data-project="data-analytics" onclick="openProjectDetail('data-analytics')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/digital-marketing.webp'); ?>" alt="Data Analytics Dashboard" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/EC4899/ffffff?text=Data+Analytics'">
+                        <img width="1600" height="1013" src="<?php echo asset('images/about/digital-marketing.webp'); ?>" alt="Data Analytics Dashboard" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/EC4899/ffffff?text=Data+Analytics'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -601,7 +601,7 @@ $projectsData = [
 
                 <div class="card portfolio-card" data-aos="zoom-in" data-aos-delay="200" data-project="ui-ux-design" onclick="openProjectDetail('ui-ux-design')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/ui-ux.webp'); ?>" alt="UI/UX Design System" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/06B6D4/ffffff?text=UI+UX+Design'">
+                        <img width="1600" height="912" src="<?php echo asset('images/about/ui-ux.webp'); ?>" alt="UI/UX Design System" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/06B6D4/ffffff?text=UI+UX+Design'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -640,7 +640,7 @@ $projectsData = [
             <div class="grid grid-3 stagger">
                 <div class="card portfolio-card" data-aos="zoom-in" data-project="client-k12" onclick="openProjectDetail('client-k12')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/moodle-lms-development.webp'); ?>" alt="K12 School Platform" class="card-img" loading="lazy">
+                        <img width="1600" height="912" src="<?php echo asset('images/about/moodle-lms-development.webp'); ?>" alt="K12 School Platform" class="card-img" loading="lazy">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -664,7 +664,7 @@ $projectsData = [
 
                 <div class="card portfolio-card" data-aos="zoom-in" data-aos-delay="100" data-project="client-talent" onclick="openProjectDetail('client-talent')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/Professional-businessman.webp'); ?>" alt="Multi-Talent Platform" class="card-img" loading="lazy">
+                        <img width="1600" height="912" src="<?php echo asset('images/about/Professional-businessman.webp'); ?>" alt="Multi-Talent Platform" class="card-img" loading="lazy">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -688,7 +688,7 @@ $projectsData = [
 
                 <div class="card portfolio-card" data-aos="zoom-in" data-aos-delay="200" data-project="client-networking" onclick="openProjectDetail('client-networking')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/ai-lms.webp'); ?>" alt="Networking Training Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/F59E0B/ffffff?text=Networking+Training'">
+                        <img width="1600" height="810" src="<?php echo asset('images/about/ai-lms.webp'); ?>" alt="Networking Training Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/F59E0B/ffffff?text=Networking+Training'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -727,7 +727,7 @@ $projectsData = [
             <div class="grid grid-3 stagger">
                 <div class="card portfolio-card" data-aos="zoom-in" data-project="video-learning" onclick="openProjectDetail('video-learning')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/ai-lms.webp'); ?>" alt="Video Learning App" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/2563EB/ffffff?text=Video+Learning'">
+                        <img width="1600" height="810" src="<?php echo asset('images/about/ai-lms.webp'); ?>" alt="Video Learning App" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/2563EB/ffffff?text=Video+Learning'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -751,7 +751,7 @@ $projectsData = [
 
                 <div class="card portfolio-card" data-aos="zoom-in" data-aos-delay="100" data-project="new-learning" onclick="openProjectDetail('new-learning')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/Power-BI-consulting.webp'); ?>" alt="Next Gen Learning Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/0B3D91/ffffff?text=New+Learning'">
+                        <img width="826" height="465" src="<?php echo asset('images/Power-BI-consulting.webp'); ?>" alt="Next Gen Learning Platform" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/0B3D91/ffffff?text=New+Learning'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -775,7 +775,7 @@ $projectsData = [
 
                 <div class="card portfolio-card" data-aos="zoom-in" data-aos-delay="200" data-project="bi-intelligence" onclick="openProjectDetail('bi-intelligence')">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/Data-driven marketing concept, professional marketer analyzing marketing data and analytics, digital marketing dashboard with charts and graphs, customer data visualization, ROI metrics, conversion rates, marketing .webp'); ?>" alt="BI Intelligence Tool" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/6366F1/ffffff?text=BI+Intelligence'">
+                        <img width="1600" height="912" src="<?php echo asset('images/about/Data-driven marketing concept, professional marketer analyzing marketing data and analytics, digital marketing dashboard with charts and graphs, customer data visualization, ROI metrics, conversion rates, marketing .webp'); ?>" alt="BI Intelligence Tool" class="card-img" loading="lazy" onerror="this.src='https://via.placeholder.com/600x220/6366F1/ffffff?text=BI+Intelligence'">
                         <div class="card-overlay">
                             <i class="fas fa-eye"></i>
                             <span>View Details</span>
@@ -815,56 +815,56 @@ $projectsData = [
                 <div class="image-slider-wrapper">
                     <div class="image-slider-track" id="imageSliderTrack">
                         <div class="image-slide">
-                            <img src="<?php echo asset('images/about/moodle-lms-development.webp'); ?>" alt="Custom Moodle LMS development project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/0066ff/ffffff?text=Project+1'">
+                            <img width="1600" height="912" src="<?php echo asset('images/about/moodle-lms-development.webp'); ?>" alt="Custom Moodle LMS development project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/0066ff/ffffff?text=Project+1'">
                             <div class="slide-caption">
                                 <h4>University LMS Transformation</h4>
                                 <p>Custom Moodle platform for 10,000+ students</p>
                             </div>
                         </div>
                         <div class="image-slide">
-                            <img src="<?php echo asset('images/about/ai-lms2.webp'); ?>" alt="AI-powered LMS project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/10B981/ffffff?text=Project+2'">
+                            <img width="1600" height="1066" src="<?php echo asset('images/about/ai-lms2.webp'); ?>" alt="AI-powered LMS project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/10B981/ffffff?text=Project+2'">
                             <div class="slide-caption">
                                 <h4>Enterprise Training Platform</h4>
                                 <p>Angular-based corporate training portal</p>
                             </div>
                         </div>
                         <div class="image-slide">
-                            <img src="<?php echo asset('images/about/Digital-Solutions.webp'); ?>" alt="Digital solutions project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/2563EB/ffffff?text=Project+3'">
+                            <img width="1200" height="1200" src="<?php echo asset('images/about/Digital-Solutions.webp'); ?>" alt="Digital solutions project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/2563EB/ffffff?text=Project+3'">
                             <div class="slide-caption">
                                 <h4>Product Training Portal</h4>
                                 <p>Interactive e-commerce education platform</p>
                             </div>
                         </div>
                         <div class="image-slide">
-                            <img src="<?php echo asset('images/about/ui-ux.webp'); ?>" alt="UI/UX design project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/06B6D4/ffffff?text=Project+4'">
+                            <img width="1600" height="912" src="<?php echo asset('images/about/ui-ux.webp'); ?>" alt="UI/UX design project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/06B6D4/ffffff?text=Project+4'">
                             <div class="slide-caption">
                                 <h4>UI/UX Design System</h4>
                                 <p>Complete component library with 50+ elements</p>
                             </div>
                         </div>
                         <div class="image-slide">
-                            <img src="<?php echo asset('images/about/Cloud-ai.webp'); ?>" alt="Cloud and AI platform project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/6366F1/ffffff?text=Project+5'">
+                            <img width="1200" height="684" src="<?php echo asset('images/about/Cloud-ai.webp'); ?>" alt="Cloud and AI platform project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/6366F1/ffffff?text=Project+5'">
                             <div class="slide-caption">
                                 <h4>Cloud Migration Platform</h4>
                                 <p>50+ servers migrated to AWS with zero downtime</p>
                             </div>
                         </div>
                         <div class="image-slide">
-                            <img src="<?php echo asset('images/about/digital-marketing.webp'); ?>" alt="Digital marketing project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/EC4899/ffffff?text=Project+6'">
+                            <img width="1600" height="1013" src="<?php echo asset('images/about/digital-marketing.webp'); ?>" alt="Digital marketing project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/EC4899/ffffff?text=Project+6'">
                             <div class="slide-caption">
                                 <h4>Digital Marketing Platform</h4>
                                 <p>SEO campaign with 300% organic traffic increase</p>
                             </div>
                         </div>
                         <div class="image-slide">
-                            <img src="<?php echo asset('images/about/moodle-development.webp'); ?>" alt="Moodle development project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/F59E0B/ffffff?text=Project+7'">
+                            <img width="1600" height="1200" src="<?php echo asset('images/about/moodle-development.webp'); ?>" alt="Moodle development project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/F59E0B/ffffff?text=Project+7'">
                             <div class="slide-caption">
                                 <h4>Medical Training LMS</h4>
                                 <p>Specialized Moodle for healthcare professionals</p>
                             </div>
                         </div>
                         <div class="image-slide">
-                            <img src="<?php echo asset('images/about/hosting-migration.webp'); ?>" alt="LMS hosting and migration project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/041E4D/ffffff?text=Project+8'">
+                            <img width="800" height="457" src="<?php echo asset('images/about/hosting-migration.webp'); ?>" alt="LMS hosting and migration project" loading="lazy" onerror="this.src='https://via.placeholder.com/800x400/041E4D/ffffff?text=Project+8'">
                             <div class="slide-caption">
                                 <h4>Hosting Migration</h4>
                                 <p>Seamless cloud infrastructure migration</p>

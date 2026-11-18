@@ -91,7 +91,7 @@ require_once '../includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div style="position:relative;">
-                        <img src="<?php echo asset('images/about/moodle-lms-development.webp'); ?>" alt="Moodle development company building a custom LMS platform" class="img-rounded" loading="lazy" width="1600" height="912">
+                        <img width="1600" height="912" src="<?php echo asset('images/about/moodle-lms-development.webp'); ?>" alt="Moodle development company building a custom LMS platform" class="img-rounded" loading="lazy" width="1600" height="912">
                         <div class="exp-number-badge">
                             <div class="exp-number">6+</div>
                             <div class="exp-label">Years with Moodle</div>

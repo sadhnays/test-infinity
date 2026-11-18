@@ -73,7 +73,7 @@ require_once __DIR__ . '/../includes/header.php';
                 </div>
             </div>
             <div class="anim-fade-left">
-                <img src="<?php echo asset('images/about/hosting-migration.webp'); ?>" alt="Moodle hosting, upgrade and LMS migration services" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/0066ff/ffffff?text=Hosting+Migration'">
+                <img width="800" height="457" src="<?php echo asset('images/about/hosting-migration.webp'); ?>" alt="Moodle hosting, upgrade and LMS migration services" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/0066ff/ffffff?text=Hosting+Migration'">
             </div>
         </div>
     </div>

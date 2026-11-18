@@ -46,7 +46,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div class="img-wrapper">
-                        <img src="<?php echo asset('images/about/about_team_collaboration.webp'); ?>" alt="Infinity SoftHub Software Engineering Team" class="img-rounded" loading="lazy">
+                        <img width="800" height="800" src="<?php echo asset('images/about/about_team_collaboration.webp'); ?>" alt="Infinity SoftHub Software Engineering Team" class="img-rounded" loading="lazy">
                         <div class="experience-badge glassmorphic">
                             <div class="exp-number">15+</div>
                             <div class="exp-label">Years IT Expertise</div>
@@ -96,7 +96,7 @@ require_once 'includes/header.php';
             <div class="content-grid-2 mt-3rem">
                 <div class="anim-fade-right" data-aos="fade-right">
                     <div class="img-wrapper">
-                        <img src="<?php echo asset('images/about/about_developers_team.webp'); ?>" alt="Infinity SoftHub Software Developers Coding Workstations" class="img-rounded" loading="lazy">
+                        <img width="1024" height="1024" src="<?php echo asset('images/about/about_developers_team.webp'); ?>" alt="Infinity SoftHub Software Developers Coding Workstations" class="img-rounded" loading="lazy">
                     </div>
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
@@ -188,7 +188,7 @@ require_once 'includes/header.php';
                 <!-- Project 1 -->
                 <div class="card" data-aos="fade-up">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/about_university_lms.webp'); ?>" alt="Scalable Academic LMS Platform Customization" class="card-img" loading="lazy">
+                        <img width="1024" height="1024" src="<?php echo asset('images/about/about_university_lms.webp'); ?>" alt="Scalable Academic LMS Platform Customization" class="card-img" loading="lazy">
                         <div class="card-overlay"></div>
                     </div>
                     <div class="card-body">
@@ -204,7 +204,7 @@ require_once 'includes/header.php';
                 <!-- Project 2 -->
                 <div class="card" data-aos="fade-up">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/about_enterprise_training.webp'); ?>" alt="Custom Corporate Training Dashboard Portal" class="card-img" loading="lazy">
+                        <img width="1024" height="1024" src="<?php echo asset('images/about/about_enterprise_training.webp'); ?>" alt="Custom Corporate Training Dashboard Portal" class="card-img" loading="lazy">
                         <div class="card-overlay"></div>
                     </div>
                     <div class="card-body">
@@ -220,7 +220,7 @@ require_once 'includes/header.php';
                 <!-- Project 3 -->
                 <div class="card" data-aos="fade-up">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/about_medical_training.webp'); ?>" alt="Specialized Medical Education Platform" class="card-img" loading="lazy">
+                        <img width="1024" height="1024" src="<?php echo asset('images/about/about_medical_training.webp'); ?>" alt="Specialized Medical Education Platform" class="card-img" loading="lazy">
                         <div class="card-overlay"></div>
                     </div>
                     <div class="card-body">
@@ -236,7 +236,7 @@ require_once 'includes/header.php';
                 <!-- Project 4 -->
                 <div class="card" data-aos="fade-up">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo asset('images/about/about_product_training.webp'); ?>" alt="Ecommerce Customer Portal with Automated Certificates" class="card-img" loading="lazy">
+                        <img width="1024" height="1024" src="<?php echo asset('images/about/about_product_training.webp'); ?>" alt="Ecommerce Customer Portal with Automated Certificates" class="card-img" loading="lazy">
                         <div class="card-overlay"></div>
                     </div>
                     <div class="card-body">

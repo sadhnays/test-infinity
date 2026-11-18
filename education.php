@@ -78,7 +78,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div style="position:relative;">
-                        <img src="<?php echo asset('images/Industries-We-Serve/Education.webp'); ?>" alt="Moodle LMS and virtual classroom solutions for schools and universities" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Education+IT'">
+                        <img width="1200" height="960" src="<?php echo asset('images/Industries-We-Serve/Education.webp'); ?>" alt="Moodle LMS and virtual classroom solutions for schools and universities" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=Education+IT'">
                         <div class="exp-number-badge">
                             <div class="exp-number">100+</div>
                             <div class="exp-label">Education Projects</div>

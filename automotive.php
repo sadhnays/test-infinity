@@ -47,7 +47,7 @@ require_once 'includes/header.php';
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <h2 class="main-heading mt-2 aos-init" data-aos="fade-up" data-aos-delay="100">OCR-Based Document Management for a Two-Wheeler Manufacturer</h2>
-                        <div class="pt-2 pb-5 aos-init" data-aos="fade-up" data-aos-delay="100"><img src="<?php echo asset('images/industry/auto-motive.webp'); ?>" class="img-fluid blogImg-xl" alt="OCR-based document management system for an automotive manufacturer" loading="lazy"></div>
+                        <div class="pt-2 pb-5 aos-init" data-aos="fade-up" data-aos-delay="100"><img width="900" height="600" src="<?php echo asset('images/industry/auto-motive.webp'); ?>" class="img-fluid blogImg-xl" alt="OCR-based document management system for an automotive manufacturer" loading="lazy"></div>
                         <div class="pr-4">
                             <div class="col-lg-12 pl-0">
                                 <h4 class="blog-heading">About the Client:</h4>

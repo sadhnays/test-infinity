@@ -328,7 +328,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div class="img-wrapper">
-                        <img src="<?php echo asset('images/about/what_we_do_lms.webp'); ?>" alt="Infinity SoftHub Moodle IT Development Workspace Design" class="img-rounded" loading="lazy">
+                        <img width="800" height="800" src="<?php echo asset('images/about/what_we_do_lms.webp'); ?>" alt="Infinity SoftHub Moodle IT Development Workspace Design" class="img-rounded" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -362,7 +362,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="anim-fade-right" data-aos="fade-right">
                     <div class="img-wrapper">
-                        <img src="<?php echo asset('images/about/what_we_do_ai.webp'); ?>" alt="Infinity SoftHub AI Cloud Automation Network Layout" class="img-rounded" loading="lazy">
+                        <img width="700" height="700" src="<?php echo asset('images/about/what_we_do_ai.webp'); ?>" alt="Infinity SoftHub AI Cloud Automation Network Layout" class="img-rounded" loading="lazy">
                     </div>
                 </div>
             </div>

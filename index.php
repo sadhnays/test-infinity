@@ -346,20 +346,20 @@ require_once 'includes/header.php';
                 <div class="hero-right-visual" data-aos="fade-left" data-aos-delay="200">
                     <div class="visual-glow"></div>
                     <div class="visual-image-wrapper">
-                        <img src="<?php echo asset('images/hero_tech_visual.webp'); ?>" alt="Custom Moodle LMS and AI learning platform development" class="hero-premium-image" width="1024" height="1024" fetchpriority="high" decoding="async">
+                        <img width="1024" height="1024" src="<?php echo asset('images/hero_tech_visual.webp'); ?>" srcset="<?php echo asset('images/hero_tech_visual-480w.webp'); ?> 480w, <?php echo asset('images/hero_tech_visual-768w.webp'); ?> 768w, <?php echo asset('images/hero_tech_visual.webp'); ?> 1024w" sizes="(max-width: 991px) 92vw, 520px" alt="Custom Moodle LMS and AI learning platform development" class="hero-premium-image" width="1024" height="1024" fetchpriority="high" decoding="async">
                     </div>
                     <!-- Floating glassmorphic cards -->
                     <div class="floating-glass-card card-top">
                         <div class="card-icon"><i class="fas fa-brain"></i></div>
                         <div class="card-content">
-                            <h4>AI Learning Assistants</h4>
+                            <h4 aria-level="2">AI Learning Assistants</h4>
                             <p>Document Q&amp;A and semantic search</p>
                         </div>
                     </div>
                     <div class="floating-glass-card card-bottom">
                         <div class="card-icon"><i class="fas fa-puzzle-piece"></i></div>
                         <div class="card-content">
-                            <h4>Custom Plugins &amp; APIs</h4>
+                            <h4 aria-level="2">Custom Plugins &amp; APIs</h4>
                             <p>Moodle and LearnDash code built for you</p>
                         </div>
                     </div>
@@ -401,7 +401,7 @@ require_once 'includes/header.php';
     <section class="proof-strip" aria-label="Track record">
         <div class="container">
             <ul>
-                <li><a class="proof-link" href="https://www.upwork.com/freelancers/sadhnay" target="_blank" rel="noopener noreferrer" aria-label="Top Rated on Upwork, open the Upwork profile in a new tab"><strong>Top Rated</strong><span>on Upwork for Moodle and LMS work</span></a></li>
+                <li><a class="proof-link" href="https://www.upwork.com/freelancers/sadhnay" target="_blank" rel="noopener noreferrer" ><strong>Top Rated</strong><span>on Upwork for Moodle and LMS work</span><span class="sr-only"> (opens in a new tab)</span></a></li>
                 <li><strong>4.7 / 5</strong><span>from 17 client reviews</span></li>
                 <li><strong>100%</strong><span>job success on Upwork</span></li>
                 <li><strong>629 hours</strong><span>worked, across 35 Upwork jobs</span></li>
@@ -1342,7 +1342,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/moodle-all-development.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/about/service_moodle.webp'); ?>" alt="Moodle LMS Development and Platform Setup" class="service-image" loading="lazy" width="400" height="300">
+                            <img width="1024" height="1024" src="<?php echo asset('images/about/service_moodle.webp'); ?>" srcset="<?php echo asset('images/about/service_moodle-640w.webp'); ?> 640w, <?php echo asset('images/about/service_moodle.webp'); ?> 1024w" sizes="(max-width: 991px) 92vw, 600px" alt="Moodle LMS Development and Platform Setup" class="service-image" loading="lazy" width="400" height="300">
                             <div class="service-badge">Core Specialty</div>
                         </div>
                         <div class="service-card-content">
@@ -1359,7 +1359,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/web-development.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/about/service_web.webp'); ?>" alt="Custom Enterprise Web Development and Systems Integration" class="service-image" loading="lazy" width="400" height="300">
+                            <img width="1024" height="1024" src="<?php echo asset('images/about/service_web.webp'); ?>" alt="Custom Enterprise Web Development and Systems Integration" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1375,7 +1375,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/mobile-app-development.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/about/service_mobile.webp'); ?>" alt="Native and Hybrid Mobile App Development" class="service-image" loading="lazy" width="400" height="300">
+                            <img width="1024" height="1024" src="<?php echo asset('images/about/service_mobile.webp'); ?>" alt="Native and Hybrid Mobile App Development" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1391,7 +1391,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/ai-ml-integration.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/about/service_ai.webp'); ?>" alt="Intelligent Artificial Intelligence and Machine Learning Models" class="service-image" loading="lazy" width="400" height="300">
+                            <img width="800" height="800" src="<?php echo asset('images/about/service_ai.webp'); ?>" alt="Intelligent Artificial Intelligence and Machine Learning Models" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1407,7 +1407,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/cloud-solutions.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/about/service_cloud.webp'); ?>" alt="Cloud Server Deployments and DevOps Architecture" class="service-image" loading="lazy" width="400" height="300">
+                            <img width="800" height="800" src="<?php echo asset('images/about/service_cloud.webp'); ?>" alt="Cloud Server Deployments and DevOps Architecture" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1423,7 +1423,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('services/ui-ux-design.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="500">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/about/service_uiux.webp'); ?>" alt="UI UX Wireframing and Prototyping Systems" class="service-image" loading="lazy" width="400" height="300">
+                            <img width="800" height="800" src="<?php echo asset('images/about/service_uiux.webp'); ?>" alt="UI UX Wireframing and Prototyping Systems" class="service-image" loading="lazy" width="400" height="300">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1468,7 +1468,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('healthcare.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/Industries-We-Serve/Healthcare.webp'); ?>" alt="Healthcare LMS and medical training solutions" class="service-image" loading="lazy">
+                            <img width="1200" height="800" src="<?php echo asset('images/Industries-We-Serve/Healthcare.webp'); ?>" alt="Healthcare LMS and medical training solutions" class="service-image" loading="lazy">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1485,7 +1485,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('finance.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/Industries-We-Serve/Finance.webp'); ?>" alt="Finance compliance training LMS" class="service-image" loading="lazy">
+                            <img width="1200" height="800" src="<?php echo asset('images/Industries-We-Serve/Finance.webp'); ?>" alt="Finance compliance training LMS" class="service-image" loading="lazy">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1502,7 +1502,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('retail.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/Industries-We-Serve/Retail.webp'); ?>" alt="Retail staff training LMS and e-commerce" class="service-image" loading="lazy">
+                            <img width="1200" height="800" src="<?php echo asset('images/Industries-We-Serve/Retail.webp'); ?>" alt="Retail staff training LMS and e-commerce" class="service-image" loading="lazy">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1519,7 +1519,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('manufacturing.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/Industries-We-Serve/Manufacturing.webp'); ?>" alt="Manufacturing workforce training LMS" class="service-image" loading="lazy">
+                            <img width="1200" height="800" src="<?php echo asset('images/Industries-We-Serve/Manufacturing.webp'); ?>" alt="Manufacturing workforce training LMS" class="service-image" loading="lazy">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1536,7 +1536,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('education.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/Industries-We-Serve/Education.webp'); ?>" alt="Moodle LMS for schools and universities" class="service-image" loading="lazy">
+                            <img width="1200" height="960" src="<?php echo asset('images/Industries-We-Serve/Education.webp'); ?>" srcset="<?php echo asset('images/Industries-We-Serve/Education-640w.webp'); ?> 640w, <?php echo asset('images/Industries-We-Serve/Education-900w.webp'); ?> 900w, <?php echo asset('images/Industries-We-Serve/Education.webp'); ?> 1200w" sizes="(max-width: 991px) 92vw, 600px" alt="Moodle LMS for schools and universities" class="service-image" loading="lazy" width="1200" height="960">
                             <div class="service-badge">Key Focus</div>
                         </div>
                         <div class="service-card-content">
@@ -1554,7 +1554,7 @@ require_once 'includes/header.php';
                 <a href="<?php echo base_url('logistics.php'); ?>" class="service-link-card">
                     <div class="service-card" data-aos="fade-up" data-aos-delay="500">
                         <div class="service-image-wrapper">
-                            <img src="<?php echo asset('images/Industries-We-Serve/Logistics.webp'); ?>" alt="Logistics training and software solutions" class="service-image" loading="lazy">
+                            <img width="1200" height="960" src="<?php echo asset('images/Industries-We-Serve/Logistics.webp'); ?>" alt="Logistics training and software solutions" class="service-image" loading="lazy">
                         </div>
                         <div class="service-card-content">
                             <div class="service-icon-box">
@@ -1602,25 +1602,25 @@ require_once 'includes/header.php';
             <div class="about-cards" data-aos="fade-left">
                 <div class="mini-card">
                     <i aria-hidden="true" class="fas fa-puzzle-piece"></i>
-                    <h4>Custom Plugins</h4>
+                    <h4 aria-level="3">Custom Plugins</h4>
                     <p>Functionality designed around your learning and business workflow.</p>
                 </div>
 
                 <div class="mini-card">
                     <i aria-hidden="true" class="fas fa-chart-line"></i>
-                    <h4>Dashboards</h4>
+                    <h4 aria-level="3">Dashboards</h4>
                     <p>Reports and analytics for learners, instructors and managers.</p>
                 </div>
 
                 <div class="mini-card">
                     <i aria-hidden="true" class="fas fa-brain"></i>
-                    <h4>AI Assistants</h4>
+                    <h4 aria-level="3">AI Assistants</h4>
                     <p>Document Q&amp;A, semantic search, and guided coding support.</p>
                 </div>
 
                 <div class="mini-card">
                     <i aria-hidden="true" class="fas fa-cloud-upload-alt"></i>
-                    <h4>Deployment &amp; Support</h4>
+                    <h4 aria-level="3">Deployment &amp; Support</h4>
                     <p>Upgrades, migrations, optimization, backups, and cloud operations.</p>
                 </div>
             </div>
@@ -1639,28 +1639,28 @@ require_once 'includes/header.php';
                     <div class="feature-icon-wrapper">
                         <i aria-hidden="true" class="fas fa-award"></i>
                     </div>
-                    <h4>6+ Years of LMS Experience</h4>
+                    <h4 aria-level="3">6+ Years of LMS Experience</h4>
                     <p>Hands-on experience with LMS architecture, customization, integrations, upgrades, troubleshooting, and long-term maintenance.</p>
                 </div>
                 <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-icon-wrapper">
                         <i aria-hidden="true" class="fas fa-users"></i>
                     </div>
-                    <h4>Direct Technical Collaboration</h4>
+                    <h4 aria-level="3">Direct Technical Collaboration</h4>
                     <p>Clear communication, practical recommendations, defined milestones, and regular progress updates throughout delivery.</p>
                 </div>
                 <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon-wrapper">
                         <i aria-hidden="true" class="fas fa-puzzle-piece"></i>
                     </div>
-                    <h4>LMS + AI + Full-Stack</h4>
+                    <h4 aria-level="3">LMS + AI + Full-Stack</h4>
                     <p>One engineering partner for plugins, backends, APIs, interfaces, AI workflows, databases, and deployment.</p>
                 </div>
                 <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-icon-wrapper">
                         <i aria-hidden="true" class="fas fa-expand-arrows-alt"></i>
                     </div>
-                    <h4>Maintainable, Scalable Systems</h4>
+                    <h4 aria-level="3">Maintainable, Scalable Systems</h4>
                     <p>Solutions designed for security, performance, future integrations, growing learner volumes, and easier maintenance.</p>
                 </div>
             </div>
@@ -1691,7 +1691,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                     </div>
-                    <h4>Moodle LMS</h4>
+                    <h4 aria-level="3">Moodle LMS</h4>
                     <span class="tech-use">E-Learning Systems</span>
                     <p>Custom educational platforms, bespoke plugin development, secure installations, and LMS optimization for global institutions.</p>
                 </div>
@@ -1700,7 +1700,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
                     </div>
-                    <h4>LMS Plugins</h4>
+                    <h4 aria-level="3">LMS Plugins</h4>
                     <span class="tech-use">Feature Extensions</span>
                     <p>Designing modular code, customized enrollment plugins, third-party API hook-ins, and dynamic dashboard reports.</p>
                 </div>
@@ -1709,7 +1709,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
                     </div>
-                    <h4>H5P & SCORM</h4>
+                    <h4 aria-level="3">H5P & SCORM</h4>
                     <span class="tech-use">Interactive Content</span>
                     <p>Developing rich self-assessment tools, learning modules, and SCORM/xAPI compliance for accurate learner progress tracking.</p>
                 </div>
@@ -1718,7 +1718,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fab fa-react" aria-hidden="true"></i>
                     </div>
-                    <h4>ReactJS</h4>
+                    <h4 aria-level="3">ReactJS</h4>
                     <span class="tech-use">Frontend Framework</span>
                     <p>Architecting highly interactive, responsive single page applications (SPAs) and component-driven user dashboards.</p>
                 </div>
@@ -1727,7 +1727,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fab fa-js" aria-hidden="true"></i>
                     </div>
-                    <h4>JavaScript (ES6+)</h4>
+                    <h4 aria-level="3">JavaScript (ES6+)</h4>
                     <span class="tech-use">Client-Side Logic</span>
                     <p>Writing highly performant, custom-tailored scripting to power smooth user interactions and client-side integrations.</p>
                 </div>
@@ -1736,7 +1736,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fab fa-html5" aria-hidden="true"></i>
                     </div>
-                    <h4>HTML5 & CSS3</h4>
+                    <h4 aria-level="3">HTML5 & CSS3</h4>
                     <span class="tech-use">Structure & Styling</span>
                     <p>Utilizing semantic elements for search engine friendliness and advanced styling techniques for pixel-perfect screens.</p>
                 </div>
@@ -1745,7 +1745,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fab fa-php" aria-hidden="true"></i>
                     </div>
-                    <h4>PHP & Laravel</h4>
+                    <h4 aria-level="3">PHP & Laravel</h4>
                     <span class="tech-use">Backend & APIs</span>
                     <p>Engineering secure server controllers, database schema management, RESTful endpoint routers, and backend services.</p>
                 </div>
@@ -1754,7 +1754,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fab fa-node-js" aria-hidden="true"></i>
                     </div>
-                    <h4>Node.js</h4>
+                    <h4 aria-level="3">Node.js</h4>
                     <span class="tech-use">Event-Driven Services</span>
                     <p>Developing lightweight, asynchronous backend services, WebSocket communication layers, and API microservices.</p>
                 </div>
@@ -1763,7 +1763,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fab fa-python" aria-hidden="true"></i>
                     </div>
-                    <h4>Python</h4>
+                    <h4 aria-level="3">Python</h4>
                     <span class="tech-use">AI Models & Scripts</span>
                     <p>Writing analytics pipelines, automated scheduling routines, background workers, and statistical data calculations.</p>
                 </div>
@@ -1772,7 +1772,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fab fa-aws" aria-hidden="true"></i>
                     </div>
-                    <h4>AWS Cloud</h4>
+                    <h4 aria-level="3">AWS Cloud</h4>
                     <span class="tech-use">Cloud Infrastructure</span>
                     <p>Configuring highly available cloud computing instances, data backups, CDN delivery networks, and identity policies.</p>
                 </div>
@@ -1781,7 +1781,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fab fa-microsoft" aria-hidden="true"></i>
                     </div>
-                    <h4>MS Azure</h4>
+                    <h4 aria-level="3">MS Azure</h4>
                     <span class="tech-use">Enterprise Hosting</span>
                     <p>Managing enterprise level network structures, cloud integrations, and robust single-sign-on (SSO) frameworks.</p>
                 </div>
@@ -1790,7 +1790,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fab fa-docker" aria-hidden="true"></i>
                     </div>
-                    <h4>Docker</h4>
+                    <h4 aria-level="3">Docker</h4>
                     <span class="tech-use">Containerization</span>
                     <p>Standardizing system environments using container images for error-free deployment operations across environments.</p>
                 </div>
@@ -1799,7 +1799,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fas fa-brain" aria-hidden="true"></i>
                     </div>
-                    <h4>AI & ML</h4>
+                    <h4 aria-level="3">AI & ML</h4>
                     <span class="tech-use">Intelligent Systems</span>
                     <p>Integrating machine learning classification tools, recommender engines, predictive math formulas, and analytics.</p>
                 </div>
@@ -1808,7 +1808,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fas fa-microchip" aria-hidden="true"></i>
                     </div>
-                    <h4>TensorFlow</h4>
+                    <h4 aria-level="3">TensorFlow</h4>
                     <span class="tech-use">Deep Learning</span>
                     <p>Training and serving neural networks to power custom computer vision tasks and advanced pattern calculations.</p>
                 </div>
@@ -1817,7 +1817,7 @@ require_once 'includes/header.php';
                     <div class="tech-card-icon">
                         <i class="fas fa-cogs" aria-hidden="true"></i>
                     </div>
-                    <h4>RPA & Integration</h4>
+                    <h4 aria-level="3">RPA & Integration</h4>
                     <span class="tech-use">Workflow Automation</span>
                     <p>Designing workflows to automate business routines, scheduling tasks, and handling dynamic software API triggers.</p>
                 </div>
@@ -1908,7 +1908,7 @@ require_once 'includes/header.php';
                     <span>Upwork profile, September 2026</span>
                 </div>
 
-                <a class="upwork-profile-link" href="https://www.upwork.com/freelancers/sadhnay" target="_blank" rel="noopener noreferrer" aria-label="View Sadhna Y.'s Upwork profile in a new tab">
+                <a class="upwork-profile-link" href="https://www.upwork.com/freelancers/sadhnay" target="_blank" rel="noopener noreferrer" aria-label="View Upwork Profile, opens in a new tab">
                     View Upwork Profile <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                 </a>
             </div>
@@ -1943,41 +1943,41 @@ require_once 'includes/header.php';
                 <div class="logo-marquee-track">
                     <!-- First set -->
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="Snak Consultancy (S.N.A.K) client logo" loading="lazy" width="160" height="60">
+                        <img width="96" height="44" src="<?php echo asset('images/clients/logo.webp'); ?>" alt="Snak Consultancy (S.N.A.K) client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="DataSoSi client logo" loading="lazy" width="160" height="60">
+                        <img width="245" height="75" src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="DataSoSi client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Cherish Club client logo" loading="lazy" width="160" height="60">
+                        <img width="1600" height="494" src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Cherish Club client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Hidaya Academy client logo" loading="lazy" width="160" height="60">
+                        <img width="300" height="169" src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Hidaya Academy client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="Xtra Dog Academy client logo" loading="lazy" width="160" height="60">
+                        <img width="1600" height="477" src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="Xtra Dog Academy client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Growth Source client logo" loading="lazy" width="160" height="60">
+                        <img width="130" height="72" src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Growth Source client logo" loading="lazy" width="160" height="60">
                     </div>
                     <!-- Duplicate set for seamless loop -->
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo.webp'); ?>" alt="Snak Consultancy (S.N.A.K) client logo" loading="lazy" width="160" height="60">
+                        <img width="96" height="44" src="<?php echo asset('images/clients/logo.webp'); ?>" alt="Snak Consultancy (S.N.A.K) client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="DataSoSi client logo" loading="lazy" width="160" height="60">
+                        <img width="245" height="75" src="<?php echo asset('images/clients/datasosi-logo-final-v3-1.webp'); ?>" alt="DataSoSi client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Cherish Club client logo" loading="lazy" width="160" height="60">
+                        <img width="1600" height="494" src="<?php echo asset('images/clients/63f1e54c7e596_Logo-01-2048x632.webp'); ?>" alt="Cherish Club client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Hidaya Academy client logo" loading="lazy" width="160" height="60">
+                        <img width="300" height="169" src="<?php echo asset('images/clients/Logo_1-removebg-preview-300x169-1.webp'); ?>" alt="Hidaya Academy client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="Xtra Dog Academy client logo" loading="lazy" width="160" height="60">
+                        <img width="1600" height="477" src="<?php echo asset('images/clients/xd-academy-logo-blue-bg.webp'); ?>" alt="Xtra Dog Academy client logo" loading="lazy" width="160" height="60">
                     </div>
                     <div class="marquee-logo-item">
-                        <img src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Growth Source client logo" loading="lazy" width="160" height="60">
+                        <img width="130" height="72" src="<?php echo asset('images/clients/logo_dc12b217ec79ff9b16bcb03607178ce7_1x.png'); ?>" alt="Growth Source client logo" loading="lazy" width="160" height="60">
                     </div>
                 </div>
             </div>
@@ -2146,22 +2146,22 @@ require_once 'includes/header.php';
                 <div class="values-tabs-vertical">
                     <button class="tab-btn active" data-tab="1">
                         <span class="btn-num">01</span>
-                        <h4>Integrity</h4>
+                        <h4 aria-level="3">Integrity</h4>
                         <i class="fas fa-chevron-right"></i>
                     </button>
                     <button class="tab-btn" data-tab="2">
                         <span class="btn-num">02</span>
-                        <h4>Innovation</h4>
+                        <h4 aria-level="3">Innovation</h4>
                         <i class="fas fa-chevron-right"></i>
                     </button>
                     <button class="tab-btn" data-tab="3">
                         <span class="btn-num">03</span>
-                        <h4>Excellence</h4>
+                        <h4 aria-level="3">Excellence</h4>
                         <i class="fas fa-chevron-right"></i>
                     </button>
                     <button class="tab-btn" data-tab="4">
                         <span class="btn-num">04</span>
-                        <h4>Collaboration</h4>
+                        <h4 aria-level="3">Collaboration</h4>
                         <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>

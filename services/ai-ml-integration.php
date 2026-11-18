@@ -73,7 +73,7 @@ require_once __DIR__ . '/../includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div style="position:relative;">
-                        <img src="<?php echo asset('images/about/ai-lms.webp'); ?>" alt="AI learning assistant integrated into a Moodle LMS" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=AI+ML+Integration'">
+                        <img width="1600" height="810" src="<?php echo asset('images/about/ai-lms.webp'); ?>" alt="AI learning assistant integrated into a Moodle LMS" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0066ff/ffffff?text=AI+ML+Integration'">
                         <div class="exp-number-badge">
                             <div class="exp-number">85%</div>
                             <div class="exp-label">Accuracy Rate</div>

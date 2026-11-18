@@ -49,7 +49,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="anim-fade-left" data-aos="fade-left">
                     <div style="position:relative;">
-                        <img src="<?php echo asset('images/Industries-We-Serve/Manufacturing.webp'); ?>" alt="Manufacturing workforce training LMS and factory software" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Manufacturing+IT'">
+                        <img width="1200" height="800" src="<?php echo asset('images/Industries-We-Serve/Manufacturing.webp'); ?>" alt="Manufacturing workforce training LMS and factory software" class="img-rounded" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Manufacturing+IT'">
                         <div class="exp-number-badge">
                             <div class="exp-number">120+</div>
                             <div class="exp-label">Manufacturing Projects</div>

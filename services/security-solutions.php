@@ -71,7 +71,7 @@ require_once __DIR__ . '/../includes/header.php';
                 </div>
             </div>
             <div class="anim-fade-left">
-                <img src="<?php echo asset('images/about/security-solutions.webp'); ?>" alt="LMS security, SSL and data protection services" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/0066ff/ffffff?text=Security+Solutions'">
+                <img width="1600" height="1068" src="<?php echo asset('images/about/security-solutions.webp'); ?>" alt="LMS security, SSL and data protection services" style="width:100%; border-radius:var(--radius-xl);" loading="lazy" onerror="this.src='https://via.placeholder.com/600x500/0066ff/ffffff?text=Security+Solutions'">
             </div>
         </div>
     </div>

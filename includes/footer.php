@@ -2,7 +2,7 @@
     <footer class="footer" id="contact">
         <div class="container footer-container">
             <div class="footer-col">
-                <img src="<?php echo asset('images/ish-logo.svg'); ?>" alt="Infinity SoftHub Technologies - Moodle and LMS development company logo" style="height:45px; margin-bottom:15px; filter:brightness(0) invert(1);">
+                <img src="<?php echo asset('images/ish-logo.svg'); ?>" alt="Infinity SoftHub Technologies - Moodle and LMS development company logo" width="190" height="45" style="height:45px; width:auto; margin-bottom:15px; filter:brightness(0) invert(1);">
                 <p>Founder-led custom LMS development, AI-powered learning tools, coding labs, integrations, and cloud deployment for organizations worldwide.</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/infinitysofthub" target="_blank" rel="noopener noreferrer" aria-label="Infinity SoftHub on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
@@ -13,7 +13,7 @@
             </div>
 
             <div class="footer-col">
-                <h4>Quick Links</h4>
+                <h4 aria-level="3">Quick Links</h4>
                 <a href="<?php echo base_url(''); ?>">Home</a>
                 <a href="<?php echo base_url('about.php'); ?>">About Us</a>
                 <a href="<?php echo base_url('what-we-do.php'); ?>">Services</a>
@@ -24,7 +24,7 @@
             </div>
 
             <div class="footer-col">
-                <h4>Our Services</h4>
+                <h4 aria-level="3">Our Services</h4>
                 <a href="<?php echo base_url('services/moodle-all-development.php'); ?>">LMS Development</a>
                 <a href="<?php echo base_url('services/web-development.php'); ?>">Web Development</a>
                 <a href="<?php echo base_url('services/mobile-app-development.php'); ?>">Mobile Apps</a>
@@ -35,7 +35,7 @@
             </div>
 
             <div class="footer-col">
-                <h4>Contact Us</h4>
+                <h4 aria-level="3">Contact Us</h4>
                 <p><i class="fas fa-map-marker-alt"></i> Plot No. 6 & 7, Wazirpur Road, Jeevan Nagar, Sector 87, Neharpar, Faridabad, Haryana - 121014</p>
                 <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+911292985010">+91-129-2985010</a></p>
                 <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@infinitysofthub.com">info@infinitysofthub.com</a></p>

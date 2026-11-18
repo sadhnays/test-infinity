@@ -70,7 +70,7 @@ require_once __DIR__ . '/../includes/header.php';
             </div>
             <div class="anim-fade-left" data-aos="fade-left">
                 <div style="position:relative;">
-                    <img src="<?php echo asset('images/about/Cloud-ai.webp'); ?>" alt="Cloud hosting on AWS and Azure for LMS platforms" class="img-rounded" loading="lazy">
+                    <img width="1200" height="684" src="<?php echo asset('images/about/Cloud-ai.webp'); ?>" alt="Cloud hosting on AWS and Azure for LMS platforms" class="img-rounded" loading="lazy">
                     <div class="exp-number-badge">
                         <div class="exp-number">99.9%</div>
                         <div class="exp-label">Uptime Guarantee</div>
