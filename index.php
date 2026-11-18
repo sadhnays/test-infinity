@@ -291,32 +291,8 @@ require_once 'includes/header.php';
                     <p class="hero-lab-audience">Built for schools, universities, training providers, and EdTech teams worldwide.</p>
                 </div>
 
-                <figure class="lab">
-                    <div class="lab-window">
-                        <div class="lab-bar">
-                            <span><strong>SQL lab</strong> &nbsp;Lesson 4: Counting enrolments</span>
-                            <span class="lab-run">Run</span>
-                        </div>
-<pre class="lab-code"><span class="k">SELECT</span> c.shortname,
-       <span class="k">COUNT</span>(ue.id) <span class="k">AS</span> learners
-<span class="k">FROM</span> mdl_course c
-<span class="k">JOIN</span> mdl_enrol e <span class="k">ON</span> e.courseid = c.id
-<span class="k">JOIN</span> mdl_user_enrolments ue <span class="k">ON</span> ue.enrolid = e.id
-<span class="k">GROUP BY</span> c.shortname
-<span class="k">ORDER BY</span> learners <span class="k">DESC</span>;</pre>
-                        <div class="lab-result">
-                            <table>
-                                <thead><tr><th>shortname</th><th>learners</th></tr></thead>
-                                <tbody>
-                                    <tr><td>SQL101</td><td>42</td></tr>
-                                    <tr><td>PY-INTRO</td><td>37</td></tr>
-                                    <tr><td>DATA-VIZ</td><td>29</td></tr>
-                                </tbody>
-                            </table>
-                            <p class="lab-check">1 of 1 check passed</p>
-                        </div>
-                    </div>
-                    <figcaption>Example: an auto-graded SQL lab running inside a Moodle lesson.</figcaption>
+                <figure class="hero-shot">
+                    <img src="<?php echo asset('images/about/service_moodle.webp'); ?>" alt="Custom Moodle learning dashboard built by Infinity SoftHub" width="720" height="540" fetchpriority="high">
                 </figure>
             </div>
 

@@ -654,3 +654,7 @@ body .cta-fullwidth .btn:last-child {
 .services .service-link-card:first-child .service-image,
 .industries .service-link-card:nth-child(5) .service-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .how-head .section-subtitle { margin-left: 0; text-align: left; }
+
+/* Hero visual: framed dashboard image */
+.hero-shot { margin: 0; border-radius: var(--radius-lg, 12px); overflow: hidden; border: 1px solid rgba(255,255,255,.16); box-shadow: 0 24px 60px rgba(0,0,0,.35); background: var(--ink-deep); }
+.hero-shot img { display: block; width: 100%; height: auto; max-height: 440px; object-fit: cover; }
