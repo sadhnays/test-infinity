@@ -5396,3 +5396,6 @@ body .values-tabs-vertical .tab-btn.active .btn-num { color: var(--accent); }
 .industries .service-link-card:nth-child(5) .service-card-content { flex-grow: 0; }
 .services .service-link-card:first-child .service-image-wrapper,
 .industries .service-link-card:nth-child(5) .service-image-wrapper { height: auto; }
+
+/* Images that now carry width/height attributes must keep their shape when CSS sets only a width */
+img { height: auto; }
