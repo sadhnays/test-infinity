@@ -15,11 +15,11 @@ $projectsData = [
         'badge' => 'IOMAD / Game-based Learning',
         'badgeClass' => 'badge-success',
         'image' => asset('images/portfolio/learning-games-welcome.webp'),
-        'description' => 'A family learning space where parents sign in and manage their children, and children play interactive learning games matched to their age and grade. IOMAD runs the users and learning data behind the scenes, while the student side is a React interface with Phaser game scenes and animation.',
-        'highlights' => ['Built on IOMAD', 'React student interface', 'Phaser game scenes with animation', 'Activities matched to age and grade', 'Parent sign-in and family space'],
+        'description' => 'A family learning space where parents sign in and manage their children, and children play interactive learning games. IOMAD runs the users and learning data behind the scenes, while the student side is a React interface with Phaser game scenes and animation.',
+        'highlights' => ['Built on IOMAD', 'React student interface', 'Phaser game scenes with animation', 'Interactive learning games', 'Parent sign-in and family space'],
         'tech' => ['IOMAD', 'Moodle', 'React', 'Phaser', 'JavaScript', 'Animation'],
         'type' => 'EdTech / Kids Learning',
-        'solution' => 'We used IOMAD as the learning backend, designed a friendly student UI/UX in React, and built the games with Phaser and animation so practice feels like play. Content is organised by age and grade.',
+        'solution' => 'We used IOMAD as the learning backend, designed a friendly student UI/UX in React, and built the games with Phaser and animation so practice feels like play.',
     ],
     'university-lms' => [
         'title' => 'University LMS Transformation',
@@ -486,9 +486,9 @@ $projectsData = [
                     <div class="card-body">
                         <div class="badge badge-success mb-1rem">New project / Kids learning</div>
                         <h4>Interactive Learning Games for Kids</h4>
-                        <p class="text-secondary mb-1rem">A family learning space where children play games matched to their age and grade, and parents manage their accounts. IOMAD runs the learning backend, with a React student interface and Phaser game scenes with animation.</p>
+                        <p class="text-secondary mb-1rem">A family learning space where children play interactive learning games and parents manage their accounts. IOMAD runs the learning backend, with a React student interface and Phaser game scenes with animation.</p>
                         <div class="mt-1-5rem">
-                            <span class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Age and grade based</span>
+                            <span class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Demo available on request</span>
                             <span class="check-item ml-1rem"><i class="fas fa-check-circle" aria-hidden="true"></i> Parent sign-in</span>
                         </div>
                         <div class="project-tech">
